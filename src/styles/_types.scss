@@ -1,0 +1,35 @@
+@import "./_variables";
+
+.type {
+    background-image: url(types.png);
+}
+
+@each $name, $value in $types {
+  .#{$name}-main {
+    background: $value;
+    border-color: darken($value, $type--darken-percentage-border);
+    &:hover {
+      border-color: darken($value, $type--darken-percentage-border-hover);  
+    }
+  }
+}
+@each $name, $value in $types {
+  .#{$name}-second {
+    border-color: darken($value, $type--darken-percentage-border);
+    &:hover {
+      border-color: darken($value, $type--darken-percentage-border-hover);  
+    }
+  }
+}
+
+@for $n from 1 through length($types) {
+  $i: $n - 1;
+  $col: floor($i/6);
+  $row: $i - (6 * $col);
+  $keypair: nth($types, $n);
+  $name: nth($keypair, 1);
+  
+  .type.#{$name} {
+    background-position: #{$col * $types--column-offset} #{$row * $types--row-offset};
+  }
+}
