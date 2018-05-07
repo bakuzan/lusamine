@@ -1,0 +1,22 @@
+[
+  {
+    "nationalPokedexNumber": 3,
+    "suffix": "",
+    "typeIds": [2, 7]
+  },
+  {
+    "nationalPokedexNumber": 6,
+    "suffix": "x",
+    "typeIds": [3, 15]
+  },
+  {
+    "nationalPokedexNumber": 6,
+    "suffix": "y",
+    "typeIds": [3, 6]
+  },
+  {
+    "nationalPokedexNumber": 9,
+    "suffix": "",
+    "typeIds": [4]
+  }
+]

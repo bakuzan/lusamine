@@ -1,0 +1,12 @@
+[
+  {
+    "nationalPokedexNumber": 19,
+    "region": "alolan",
+    "typeIds": [16, 1]
+  },
+  {
+    "nationalPokedexNumber": 20,
+    "region": "alolan",
+    "typeIds": [16, 1]
+  }
+]
