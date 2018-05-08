@@ -1,12 +1,12 @@
 [
   {
     "nationalPokedexNumber": 19,
-    "region": "alolan",
+    "regionId": 7,
     "typeIds": [16, 1]
   },
   {
     "nationalPokedexNumber": 20,
-    "region": "alolan",
+    "regionId": 7,
     "typeIds": [16, 1]
   }
 ]

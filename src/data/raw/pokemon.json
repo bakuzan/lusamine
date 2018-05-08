@@ -45,5 +45,70 @@
     "nationalPokedexNumber": 9,
     "name": "blastoise",
     "typeIds": [4]
+  },
+  {
+    "nationalPokedexNumber": 10,
+    "name": "catepie",
+    "typeIds": [2]
+  },
+  {
+    "nationalPokedexNumber": 11,
+    "name": "metapod",
+    "typeIds": [2]
+  },
+  {
+    "nationalPokedexNumber": 12,
+    "name": "butterfree",
+    "typeIds": [2, 6]
+  },
+  {
+    "nationalPokedexNumber": 13,
+    "name": "weedle",
+    "typeIds": [2, 7]
+  },
+  {
+    "nationalPokedexNumber": 14,
+    "name": "kakuna",
+    "typeIds": [2, 7]
+  },
+  {
+    "nationalPokedexNumber": 15,
+    "name": "beedrill",
+    "typeIds": [2, 7]
+  },
+  {
+    "nationalPokedexNumber": 16,
+    "name": "pidgey",
+    "typeIds": [1, 6]
+  },
+  {
+    "nationalPokedexNumber": 17,
+    "name": "pidgeotto",
+    "typeIds": [1, 6]
+  },
+  {
+    "nationalPokedexNumber": 18,
+    "name": "pidgeot",
+    "typeIds": [1, 6]
+  },
+  {
+    "nationalPokedexNumber": 19,
+    "name": "rattata",
+    "typeIds": [1]
+  },
+  {
+    "nationalPokedexNumber": 20,
+    "name": "ratticate",
+    "typeIds": [1]
+  },
+  {
+    "nationalPokedexNumber": 21,
+    "name": "spearow",
+    "typeIds": [1, 6]
+  },
+  {
+    "nationalPokedexNumber": 22,
+    "name": "fearow",
+    "typeIds": [1, 6]
   }
 ]
