@@ -110,5 +110,35 @@
     "nationalPokedexNumber": 22,
     "name": "fearow",
     "typeIds": [1, 6]
+  },
+  {
+    "nationalPokedexNumber": 23,
+    "name": "ekans",
+    "typeIds": [7]
+  },
+  {
+    "nationalPokedexNumber": 24,
+    "name": "arbok",
+    "typeIds": [7]
+  },
+  {
+    "nationalPokedexNumber": 25,
+    "name": "pikachu",
+    "typeIds": [12]
+  },
+  {
+    "nationalPokedexNumber": 26,
+    "name": "raichu",
+    "typeIds": [12]
+  },
+  {
+    "nationalPokedexNumber": 27,
+    "name": "sandshrew",
+    "typeIds": [8]
+  },
+  {
+    "nationalPokedexNumber": 28,
+    "name": "sandslash",
+    "typeIds": [8]
   }
 ]

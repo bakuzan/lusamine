@@ -68,5 +68,20 @@
     "nationalPokedexNumber": 21,
     "evolvesTo": 22,
     "mechanism": 1
+  },
+  {
+    "nationalPokedexNumber": 23,
+    "evolvesTo": 24,
+    "mechanism": 1
+  },
+  {
+    "nationalPokedexNumber": 25,
+    "evolvesTo": 26,
+    "mechanism": 2
+  },
+  {
+    "nationalPokedexNumber": 27,
+    "evolvesTo": 28,
+    "mechanism": 1
   }
 ]

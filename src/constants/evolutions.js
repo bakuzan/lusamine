@@ -1,6 +1,4 @@
-export default [
-  {
-    id: 1,
-    description: 'Leveling up'
-  }
-];
+export default Object.freeze({
+  leveling: 1,
+  stone: 2
+});

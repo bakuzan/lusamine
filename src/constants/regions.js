@@ -1,30 +1,9 @@
-export default [
-  {
-    id: 1,
-    name: 'kanto'
-  },
-  {
-    id: 2,
-    name: 'johto'
-  },
-  {
-    id: 3,
-    name: 'hoenn'
-  },
-  {
-    id: 4,
-    name: 'sinnoh'
-  },
-  {
-    id: 5,
-    name: 'unova'
-  },
-  {
-    id: 6,
-    name: 'kalos'
-  },
-  {
-    id: 7,
-    name: 'alola'
-  }
-];
+export default Object.freeze({
+  kanto: 1,
+  johto: 2,
+  hoenn: 3,
+  sinnoh: 4,
+  unova: 5,
+  kalos: 6,
+  alola: 7
+});
