@@ -148,5 +148,10 @@
     "nationalPokedexNumber": 50,
     "evolvesTo": 51,
     "mechanism": 1
+  },
+  {
+    "nationalPokedexNumber": 52,
+    "evolvesTo": 53,
+    "mechanism": 1
   }
 ]

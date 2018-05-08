@@ -43,5 +43,15 @@
     "nationalPokedexNumber": 51,
     "regionId": 7,
     "typeIds": [8, 17]
+  },
+  {
+    "nationalPokedexNumber": 52,
+    "regionId": 7,
+    "typeIds": [16]
+  },
+  {
+    "nationalPokedexNumber": 53,
+    "regionId": 7,
+    "typeIds": [16]
   }
 ]

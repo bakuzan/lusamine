@@ -7,10 +7,17 @@ import List from 'components/List/List';
 class PlannerPage extends React.Component {
   render() {
     return (
-      <div>
+      <div id="team-planner">
         <Filters />
-        <Team />
-        <List />
+        <div>
+          <Team />
+          <List
+            items={[]}
+            itemTemplate={(item, i) => {
+              return <div key={i}>placeholder</div>;
+            }}
+          />
+        </div>
       </div>
     );
   }

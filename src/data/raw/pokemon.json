@@ -255,5 +255,15 @@
     "nationalPokedexNumber": 51,
     "name": "dugtrio",
     "typeIds": [8]
+  },
+  {
+    "nationalPokedexNumber": 52,
+    "name": "meowth",
+    "typeIds": [1]
+  },
+  {
+    "nationalPokedexNumber": 53,
+    "name": "persian",
+    "typeIds": [1]
   }
 ]
