@@ -153,5 +153,60 @@
     "nationalPokedexNumber": 52,
     "evolvesTo": 53,
     "mechanism": 1
+  },
+  {
+    "nationalPokedexNumber": 54,
+    "evolvesTo": 55,
+    "mechanism": 1
+  },
+  {
+    "nationalPokedexNumber": 56,
+    "evolvesTo": 57,
+    "mechanism": 1
+  },
+  {
+    "nationalPokedexNumber": 58,
+    "evolvesTo": 59,
+    "mechanism": 2
+  },
+  {
+    "nationalPokedexNumber": 60,
+    "evolvesTo": 61,
+    "mechanism": 1
+  },
+  {
+    "nationalPokedexNumber": 61,
+    "evolvesTo": 62,
+    "mechanism": 2
+  },
+  {
+    "nationalPokedexNumber": 63,
+    "evolvesTo": 64,
+    "mechanism": 1
+  },
+  {
+    "nationalPokedexNumber": 64,
+    "evolvesTo": 65,
+    "mechanism": 3
+  },
+  {
+    "nationalPokedexNumber": 66,
+    "evolvesTo": 67,
+    "mechanism": 1
+  },
+  {
+    "nationalPokedexNumber": 67,
+    "evolvesTo": 68,
+    "mechanism": 3
+  },
+  {
+    "nationalPokedexNumber": 69,
+    "evolvesTo": 70,
+    "mechanism": 1
+  },
+  {
+    "nationalPokedexNumber": 70,
+    "evolvesTo": 71,
+    "mechanism": 2
   }
 ]

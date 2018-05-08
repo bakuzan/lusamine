@@ -265,5 +265,95 @@
     "nationalPokedexNumber": 53,
     "name": "persian",
     "typeIds": [1]
+  },
+  {
+    "nationalPokedexNumber": 54,
+    "name": "psyduck",
+    "typeIds": [4]
+  },
+  {
+    "nationalPokedexNumber": 55,
+    "name": "golduck",
+    "typeIds": [4]
+  },
+  {
+    "nationalPokedexNumber": 56,
+    "name": "mankey",
+    "typeIds": [5]
+  },
+  {
+    "nationalPokedexNumber": 57,
+    "name": "primeape",
+    "typeIds": [5]
+  },
+  {
+    "nationalPokedexNumber": 58,
+    "name": "growlithe",
+    "typeIds": [3]
+  },
+  {
+    "nationalPokedexNumber": 59,
+    "name": "arcanine",
+    "typeIds": [3]
+  },
+  {
+    "nationalPokedexNumber": 60,
+    "name": "poliwag",
+    "typeIds": [4]
+  },
+  {
+    "nationalPokedexNumber": 61,
+    "name": "poliwhirl",
+    "typeIds": [4]
+  },
+  {
+    "nationalPokedexNumber": 62,
+    "name": "poliwrath",
+    "typeIds": [4, 5]
+  },
+  {
+    "nationalPokedexNumber": 63,
+    "name": "abra",
+    "typeIds": [13]
+  },
+  {
+    "nationalPokedexNumber": 64,
+    "name": "kadabra",
+    "typeIds": [13]
+  },
+  {
+    "nationalPokedexNumber": 65,
+    "name": "alakazam",
+    "typeIds": [13]
+  },
+  {
+    "nationalPokedexNumber": 66,
+    "name": "machop",
+    "typeIds": [13]
+  },
+  {
+    "nationalPokedexNumber": 67,
+    "name": "machoke",
+    "typeIds": [13]
+  },
+  {
+    "nationalPokedexNumber": 68,
+    "name": "machamp",
+    "typeIds": [13]
+  },
+  {
+    "nationalPokedexNumber": 69,
+    "name": "bellsprout",
+    "typeIds": [2, 7]
+  },
+  {
+    "nationalPokedexNumber": 70,
+    "name": "weepinbell",
+    "typeIds": [2, 7]
+  },
+  {
+    "nationalPokedexNumber": 71,
+    "name": "victreebell",
+    "typeIds": [2, 7]
   }
 ]
