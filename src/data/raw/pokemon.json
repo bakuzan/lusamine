@@ -140,5 +140,120 @@
     "nationalPokedexNumber": 28,
     "name": "sandslash",
     "typeIds": [8]
+  },
+  {
+    "nationalPokedexNumber": 29,
+    "name": "nidoran",
+    "typeIds": [7]
+  },
+  {
+    "nationalPokedexNumber": 30,
+    "name": "nidorina",
+    "typeIds": [7]
+  },
+  {
+    "nationalPokedexNumber": 31,
+    "name": "nidoqueen",
+    "typeIds": [7, 8]
+  },
+  {
+    "nationalPokedexNumber": 32,
+    "name": "nidoran",
+    "typeIds": [7]
+  },
+  {
+    "nationalPokedexNumber": 33,
+    "name": "nidorino",
+    "typeIds": [7]
+  },
+  {
+    "nationalPokedexNumber": 34,
+    "name": "nidoking",
+    "typeIds": [7, 8]
+  },
+  {
+    "nationalPokedexNumber": 35,
+    "name": "clefairy",
+    "typeIds": [18]
+  },
+  {
+    "nationalPokedexNumber": 36,
+    "name": "clefable",
+    "typeIds": [18]
+  },
+  {
+    "nationalPokedexNumber": 37,
+    "name": "vulpix",
+    "typeIds": [3]
+  },
+  {
+    "nationalPokedexNumber": 38,
+    "name": "ninetales",
+    "typeIds": [3]
+  },
+  {
+    "nationalPokedexNumber": 39,
+    "name": "jigglypuff",
+    "typeIds": [1, 18]
+  },
+  {
+    "nationalPokedexNumber": 40,
+    "name": "wigglytuff",
+    "typeIds": [1, 18]
+  },
+  {
+    "nationalPokedexNumber": 41,
+    "name": "zubat",
+    "typeIds": [7, 6]
+  },
+  {
+    "nationalPokedexNumber": 42,
+    "name": "golbat",
+    "typeIds": [7, 6]
+  },
+  {
+    "nationalPokedexNumber": 43,
+    "name": "oddish",
+    "typeIds": [2, 7]
+  },
+  {
+    "nationalPokedexNumber": 44,
+    "name": "gloom",
+    "typeIds": [2, 7]
+  },
+  {
+    "nationalPokedexNumber": 45,
+    "name": "vileplume",
+    "typeIds": [2, 7]
+  },
+  {
+    "nationalPokedexNumber": 46,
+    "name": "paras",
+    "typeIds": [10, 2]
+  },
+  {
+    "nationalPokedexNumber": 47,
+    "name": "parasect",
+    "typeIds": [10, 2]
+  },
+  {
+    "nationalPokedexNumber": 48,
+    "name": "venonat",
+    "typeIds": [10, 7]
+  },
+  {
+    "nationalPokedexNumber": 49,
+    "name": "venomoth",
+    "typeIds": [10, 7]
+  },
+  {
+    "nationalPokedexNumber": 50,
+    "name": "diglett",
+    "typeIds": [8]
+  },
+  {
+    "nationalPokedexNumber": 51,
+    "name": "dugtrio",
+    "typeIds": [8]
   }
 ]
