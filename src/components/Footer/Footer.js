@@ -2,7 +2,7 @@ import React from 'react';
 
 const Footer = props => {
   return (
-    <section>
+    <section className="footer">
       <p>
         Inspired by another
         <NewTabLink href="https://richi3f.github.io/pokemon-team-planner/national_dex.html">

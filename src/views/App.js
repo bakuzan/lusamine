@@ -9,7 +9,11 @@ class App extends Component {
   render() {
     return (
       <div>
-        <Header leftAlignTitle title="Pokémon team planner" />
+        <Header
+          className="header-bar"
+          leftAlignTitle
+          title="Pokémon team planner"
+        />
         <main>
           <Switch>
             <Route path="/saved-teams" />

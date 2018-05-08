@@ -4,7 +4,7 @@ import { ClearableInput } from 'meiko';
 
 const Filters = props => {
   return (
-    <section>
+    <section className="filters">
       <ClearableInput />
     </section>
   );
