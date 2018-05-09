@@ -10,7 +10,7 @@ class App extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      isScrolled: false
+      isPageScrolled: false
     };
   }
 
@@ -29,7 +29,10 @@ class App extends Component {
     console.log(this.state);
     return (
       <div className="app app--theme_default">
-        <HeaderBar title="team planner" />
+        <HeaderBar
+          title="team planner"
+          isPageScrolled={this.state.isPageScrolled}
+        />
         <main>
           <Switch>
             <Route path="/saved-teams" />
