@@ -8,7 +8,7 @@ const Footer = props => {
   return (
     <section className="footer">
       <p>
-        Inspired by another
+        Inspired by another{' '}
         <NewTabLink href="https://richi3f.github.io/pokemon-team-planner/national_dex.html">
           Pokémon Team Planner
         </NewTabLink>
