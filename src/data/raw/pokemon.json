@@ -353,7 +353,157 @@
   },
   {
     "nationalPokedexNumber": 71,
-    "name": "victreebell",
+    "name": "victreebel",
     "typeIds": [2, 7]
+  },
+  {
+    "nationalPokedexNumber": 72,
+    "name": "tentacool",
+    "typeIds": [4, 7]
+  },
+  {
+    "nationalPokedexNumber": 73,
+    "name": "tentacruel",
+    "typeIds": [4, 7]
+  },
+  {
+    "nationalPokedexNumber": 74,
+    "name": "geodude",
+    "typeIds": [9, 8]
+  },
+  {
+    "nationalPokedexNumber": 75,
+    "name": "graveler",
+    "typeIds": [9, 8]
+  },
+  {
+    "nationalPokedexNumber": 76,
+    "name": "golem",
+    "typeIds": [9, 8]
+  },
+  {
+    "nationalPokedexNumber": 77,
+    "name": "ponyta",
+    "typeIds": [3]
+  },
+  {
+    "nationalPokedexNumber": 78,
+    "name": "rapidash",
+    "typeIds": [3]
+  },
+  {
+    "nationalPokedexNumber": 79,
+    "name": "slowpoke",
+    "typeIds": [4, 13]
+  },
+  {
+    "nationalPokedexNumber": 80,
+    "name": "slowbro",
+    "typeIds": [4, 13]
+  },
+  {
+    "nationalPokedexNumber": 81,
+    "name": "magnemite",
+    "typeIds": [12, 17]
+  },
+  {
+    "nationalPokedexNumber": 82,
+    "name": "magneton",
+    "typeIds": [12, 17]
+  },
+  {
+    "nationalPokedexNumber": 83,
+    "name": "farfetch'd",
+    "typeIds": [1, 6]
+  },
+  {
+    "nationalPokedexNumber": 84,
+    "name": "doduo",
+    "typeIds": [1, 6]
+  },
+  {
+    "nationalPokedexNumber": 85,
+    "name": "dodrio",
+    "typeIds": [1, 6]
+  },
+  {
+    "nationalPokedexNumber": 86,
+    "name": "seal",
+    "typeIds": [4]
+  },
+  {
+    "nationalPokedexNumber": 87,
+    "name": "dewgong",
+    "typeIds": [4, 14]
+  },
+  {
+    "nationalPokedexNumber": 88,
+    "name": "grimer",
+    "typeIds": [7]
+  },
+  {
+    "nationalPokedexNumber": 89,
+    "name": "muk",
+    "typeIds": [7]
+  },
+  {
+    "nationalPokedexNumber": 90,
+    "name": "shellder",
+    "typeIds": [4]
+  },
+  {
+    "nationalPokedexNumber": 91,
+    "name": "cloyster",
+    "typeIds": [4, 14]
+  },
+  {
+    "nationalPokedexNumber": 92,
+    "name": "ghastly",
+    "typeIds": [11, 7]
+  },
+  {
+    "nationalPokedexNumber": 93,
+    "name": "haunter",
+    "typeIds": [11, 7]
+  },
+  {
+    "nationalPokedexNumber": 94,
+    "name": "gengar",
+    "typeIds": [11, 7]
+  },
+  {
+    "nationalPokedexNumber": 95,
+    "name": "onix",
+    "typeIds": [9, 8]
+  },
+  {
+    "nationalPokedexNumber": 96,
+    "name": "drowzee",
+    "typeIds": [13]
+  },
+  {
+    "nationalPokedexNumber": 97,
+    "name": "hypno",
+    "typeIds": [13]
+  },
+  {
+    "nationalPokedexNumber": 98,
+    "name": "krabby",
+    "typeIds": [4]
+  },
+  {
+    "nationalPokedexNumber": 99,
+    "name": "kingler",
+    "typeIds": [4]
+  },
+  {
+    "nationalPokedexNumber": 100,
+    "name": "voltorb",
+    "typeIds": [12]
+  },
+  {
+    "nationalPokedexNumber": 101,
+    "name": "electrode",
+    "typeIds": [12]
   }
 ]
