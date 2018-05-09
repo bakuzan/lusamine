@@ -1,5 +1,9 @@
 import React from 'react';
 
+import { NewTabLink } from 'meiko';
+
+import './Footer.css';
+
 const Footer = props => {
   return (
     <section className="footer">

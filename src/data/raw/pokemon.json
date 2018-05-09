@@ -505,5 +505,110 @@
     "nationalPokedexNumber": 101,
     "name": "electrode",
     "typeIds": [12]
+  },
+  {
+    "nationalPokedexNumber": 102,
+    "name": "exeggcute",
+    "typeIds": [2, 13]
+  },
+  {
+    "nationalPokedexNumber": 103,
+    "name": "exeggutor",
+    "typeIds": [2, 13]
+  },
+  {
+    "nationalPokedexNumber": 104,
+    "name": "cubone",
+    "typeIds": [8]
+  },
+  {
+    "nationalPokedexNumber": 105,
+    "name": "marowak",
+    "typeIds": [8]
+  },
+  {
+    "nationalPokedexNumber": 106,
+    "name": "hitmonlee",
+    "typeIds": [5]
+  },
+  {
+    "nationalPokedexNumber": 107,
+    "name": "hitmonchan",
+    "typeIds": [5]
+  },
+  {
+    "nationalPokedexNumber": 108,
+    "name": "lickitung",
+    "typeIds": [1]
+  },
+  {
+    "nationalPokedexNumber": 109,
+    "name": "koffing",
+    "typeIds": [7]
+  },
+  {
+    "nationalPokedexNumber": 110,
+    "name": "weezing",
+    "typeIds": [7]
+  },
+  {
+    "nationalPokedexNumber": 111,
+    "name": "rhyhorn",
+    "typeIds": [8, 9]
+  },
+  {
+    "nationalPokedexNumber": 112,
+    "name": "rhydon",
+    "typeIds": [8, 9]
+  },
+  {
+    "nationalPokedexNumber": 113,
+    "name": "chansey",
+    "typeIds": [1]
+  },
+  {
+    "nationalPokedexNumber": 114,
+    "name": "tangela",
+    "typeIds": [2]
+  },
+  {
+    "nationalPokedexNumber": 115,
+    "name": "kangaskhan",
+    "typeIds": [1]
+  },
+  {
+    "nationalPokedexNumber": 116,
+    "name": "horsea",
+    "typeIds": [4]
+  },
+  {
+    "nationalPokedexNumber": 117,
+    "name": "seadra",
+    "typeIds": [4]
+  },
+  {
+    "nationalPokedexNumber": 118,
+    "name": "goldeen",
+    "typeIds": [4]
+  },
+  {
+    "nationalPokedexNumber": 119,
+    "name": "seaking",
+    "typeIds": [4]
+  },
+  {
+    "nationalPokedexNumber": 120,
+    "name": "staryu",
+    "typeIds": [4]
+  },
+  {
+    "nationalPokedexNumber": 121,
+    "name": "starmie",
+    "typeIds": [4, 13]
+  },
+  {
+    "nationalPokedexNumber": 122,
+    "name": "mr. mime",
+    "typeIds": [13, 18]
   }
 ]
