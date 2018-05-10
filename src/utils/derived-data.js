@@ -1,11 +1,11 @@
 import Generations from 'constants/generations';
 
 const GEN2_START = 152;
-const GEN3_START = 0;
-const GEN4_START = 0;
-const GEN5_START = 0;
-const GEN6_START = 0;
-const GEN7_START = 0;
+const GEN3_START = 252;
+const GEN4_START = 387;
+const GEN5_START = 494;
+const GEN6_START = 650;
+const GEN7_START = 722;
 export const getGeneration = dexNum => {
   if (dexNum < GEN2_START) return Generations.gen1;
   if (dexNum < GEN3_START) return Generations.gen2;

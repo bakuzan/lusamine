@@ -610,5 +610,150 @@
     "nationalPokedexNumber": 122,
     "name": "mr. mime",
     "typeIds": [13, 18]
+  },
+  {
+    "nationalPokedexNumber": 123,
+    "name": "scyther",
+    "typeIds": [10, 6]
+  },
+  {
+    "nationalPokedexNumber": 124,
+    "name": "jynx",
+    "typeIds": [14, 13]
+  },
+  {
+    "nationalPokedexNumber": 125,
+    "name": "electabuzz",
+    "typeIds": [12]
+  },
+  {
+    "nationalPokedexNumber": 126,
+    "name": "magmar",
+    "typeIds": [3]
+  },
+  {
+    "nationalPokedexNumber": 127,
+    "name": "pinsir",
+    "typeIds": [10]
+  },
+  {
+    "nationalPokedexNumber": 128,
+    "name": "tauros",
+    "typeIds": [1]
+  },
+  {
+    "nationalPokedexNumber": 129,
+    "name": "magikarp",
+    "typeIds": [4]
+  },
+  {
+    "nationalPokedexNumber": 130,
+    "name": "gyarados",
+    "typeIds": [4, 6]
+  },
+  {
+    "nationalPokedexNumber": 131,
+    "name": "lapras",
+    "typeIds": [4, 14]
+  },
+  {
+    "nationalPokedexNumber": 132,
+    "name": "ditto",
+    "typeIds": [1]
+  },
+  {
+    "nationalPokedexNumber": 133,
+    "name": "evee",
+    "typeIds": [1]
+  },
+  {
+    "nationalPokedexNumber": 134,
+    "name": "vaporeon",
+    "typeIds": [4]
+  },
+  {
+    "nationalPokedexNumber": 135,
+    "name": "jolteon",
+    "typeIds": [12]
+  },
+  {
+    "nationalPokedexNumber": 136,
+    "name": "flareon",
+    "typeIds": [3]
+  },
+  {
+    "nationalPokedexNumber": 137,
+    "name": "porygon",
+    "typeIds": [1]
+  },
+  {
+    "nationalPokedexNumber": 138,
+    "name": "omantye",
+    "typeIds": [9, 4]
+  },
+  {
+    "nationalPokedexNumber": 139,
+    "name": "omastar",
+    "typeIds": [9, 4]
+  },
+  {
+    "nationalPokedexNumber": 140,
+    "name": "kabuto",
+    "typeIds": [9, 4]
+  },
+  {
+    "nationalPokedexNumber": 141,
+    "name": "kabutops",
+    "typeIds": [9, 4]
+  },
+  {
+    "nationalPokedexNumber": 142,
+    "name": "aerodactyl",
+    "typeIds": [9, 6]
+  },
+  {
+    "nationalPokedexNumber": 143,
+    "name": "snorlax",
+    "typeIds": [1]
+  },
+  {
+    "nationalPokedexNumber": 144,
+    "name": "articuno",
+    "typeIds": [14, 6]
+  },
+  {
+    "nationalPokedexNumber": 145,
+    "name": "zapdos",
+    "typeIds": [12, 6]
+  },
+  {
+    "nationalPokedexNumber": 146,
+    "name": "moltres",
+    "typeIds": [3, 6]
+  },
+  {
+    "nationalPokedexNumber": 147,
+    "name": "dratini",
+    "typeIds": [15]
+  },
+  {
+    "nationalPokedexNumber": 148,
+    "name": "dragonair",
+    "typeIds": [15]
+  },
+  {
+    "nationalPokedexNumber": 149,
+    "name": "dragonite",
+    "typeIds": [15, 6]
+  },
+  {
+    "nationalPokedexNumber": 150,
+    "name": "mewtwo",
+    "typeIds": [13]
+  },
+  {
+    "nationalPokedexNumber": 151,
+    "name": "mew",
+    "typeIds": [13]
   }
 ]
