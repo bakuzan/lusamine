@@ -4,7 +4,7 @@ import { Utils } from 'meiko';
 
 import HeaderBar from 'components/HeaderBar/HeaderBar';
 import Footer from 'components/Footer/Footer';
-import PlannerPage from 'views/PlannerPage';
+import TeamPlanner from 'views/TeamPlanner';
 import { PokedexContext } from 'context';
 import { getWindowScrollPosition } from 'utils/common';
 import getPokedex from 'data';
@@ -41,7 +41,7 @@ class App extends Component {
           <main>
             <Switch>
               <Route path="/saved-teams" />
-              <Route path="/" component={PlannerPage} />
+              <Route path="/" component={TeamPlanner} />
             </Switch>
           </main>
           <Footer />

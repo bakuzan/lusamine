@@ -6,6 +6,8 @@ import List from 'components/List/List';
 import Sprite from 'components/Sprite/Sprite';
 import { PokedexContext } from 'context';
 
+import './TeamPlanner.css';
+
 function iteratePokedexToList(dex) {
   return Array.from(dex).map(([id, item]) => item);
 }
@@ -33,11 +35,14 @@ class PlannerPage extends React.Component {
     return (
       <PokedexContext.Consumer>
         {pokedex => (
-          <div id="team-planner">
-            <Filters searchProps={searchProps} />
-            <div>
+          <div className="team-planner">
+            <div className="team-planner__container team-planner__container--width-20">
+              <Filters searchProps={searchProps} />
+            </div>
+            <div className="team-planner__container team-planner__container--width-80">
               <Team />
               <List
+                shouldWrap
                 items={iteratePokedexToList(pokedex)}
                 itemTemplate={(item, i) => <Sprite key={i} data={item} />}
               />

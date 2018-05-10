@@ -1,0 +1,20 @@
+@import '../../styles/_variables';
+
+.type {
+  background-image: url('../assets/types.png');
+}
+
+@for $n from 1 through length($types) {
+  $i: $n - 1;
+  $col: floor($i/6);
+  $row: $i - (6 * $col);
+  $keypair: nth($types, $n);
+  $name: nth($keypair, 1);
+
+  .type--#{$name} {
+    background-position: #{$col *
+      $types--column-offset}
+      #{$row *
+      $types--row-offset};
+  }
+}

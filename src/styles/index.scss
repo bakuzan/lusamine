@@ -1,5 +1,4 @@
 @import './_variables';
-@import './_types';
 @import './_themes';
 
 body {
@@ -11,10 +10,4 @@ main {
   padding: 5px {
     top: $header--height;
   }
-}
-
-#team-planner {
-  display: flex;
-  flex-direction: row;
-  margin: 10px 0;
 }

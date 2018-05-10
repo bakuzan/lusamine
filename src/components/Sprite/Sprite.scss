@@ -1,0 +1,26 @@
+@import '../../styles/_variables';
+
+.sprite {
+  width: $sprite--size;
+  height: $sprite--size;
+  border: 2px solid;
+  border-radius: 50%;
+}
+
+@each $name, $value in $types {
+  .sprite--#{$name}_position-first {
+    background: $value;
+    border-color: darken($value, $type--darken-percentage-border);
+    &:hover {
+      border-color: darken($value, $type--darken-percentage-border-hover);
+    }
+  }
+}
+@each $name, $value in $types {
+  .sprite--#{$name}_position-second {
+    border-color: darken($value, $type--darken-percentage-border);
+    &:hover {
+      border-color: darken($value, $type--darken-percentage-border-hover);
+    }
+  }
+}
