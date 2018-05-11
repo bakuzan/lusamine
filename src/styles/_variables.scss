@@ -60,8 +60,9 @@ $pokemon-names: (
 );
 
 $sprite--size: 40px;
-$sprites--row-offset: -29px;
+$sprites--row-offset: -30px;
 $sprites--column-offset: -40px;
+$sprites--height: abs($sprites--row-offset);
 $type--darken-percentage-border: 36%;
 $type--darken-percentage-border-hover: 18%;
 $types--column-offset: -50px;

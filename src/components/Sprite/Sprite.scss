@@ -26,8 +26,23 @@
 }
 
 .sprite__pokemon {
-  height: 100%;
+  height: $sprites--height;
   background-image: url(../../assets/sprites.png);
+  margin: 5px 0;
+  cursor: pointer;
+}
+.sprite__pokemon:hover {
+  animation: bounce 0.25s infinite;
+}
+
+@keyframes bounce {
+  0%,
+  100% {
+    margin-top: 5px;
+  }
+  50% {
+    margin-top: 3px;
+  }
 }
 
 @for $n from 1 through length($pokemon-names) {
