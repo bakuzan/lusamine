@@ -24,3 +24,22 @@
     }
   }
 }
+
+.sprite__pokemon {
+  height: 100%;
+  background-image: url(../../assets/sprites.png);
+}
+
+@for $n from 1 through length($pokemon-names) {
+  $i: $n - 1;
+  $row: floor($i/16);
+  $col: $i - (16 * $row);
+  $name: nth($pokemon-names, $n);
+
+  .sprite__pokemon--#{$name} {
+    background-position: #{$col *
+      $sprites--column-offset}
+      #{$row *
+      $sprites--row-offset};
+  }
+}

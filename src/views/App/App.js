@@ -4,7 +4,7 @@ import { Utils } from 'meiko';
 
 import HeaderBar from 'components/HeaderBar/HeaderBar';
 import Footer from 'components/Footer/Footer';
-import TeamPlanner from 'views/TeamPlanner';
+import TeamPlanner from 'views/TeamPlanner/TeamPlanner';
 import { PokedexContext } from 'context';
 import { getWindowScrollPosition } from 'utils/common';
 import getPokedex from 'data';
