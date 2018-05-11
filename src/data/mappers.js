@@ -1,3 +1,5 @@
+import { getGeneration } from 'utils/derived-data';
+
 function mapTypesToPokemon(types) {
   return types.map(t => ({
     id: t.id,
@@ -18,6 +20,7 @@ export function mapPokemonData(id, data, types, evolutions) {
     nationalPokedexNumber: data.nationalPokedexNumber,
     name: data.name,
     types: mapTypesToPokemon(types),
-    evolutions: mapEvolutionsToPokemon(evolutions)
+    evolutions: mapEvolutionsToPokemon(evolutions),
+    generation: getGeneration(data.nationalPokedexNumber)
   };
 }

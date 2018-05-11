@@ -36,10 +36,10 @@ class PlannerPage extends React.Component {
       <PokedexContext.Consumer>
         {pokedex => (
           <div className="team-planner">
-            <div className="team-planner__container team-planner__container--width-20">
+            <div className="team-planner__container team-planner__container--width_20">
               <Filters searchProps={searchProps} />
             </div>
-            <div className="team-planner__container team-planner__container--width-80">
+            <div className="team-planner__container team-planner__container--width_80">
               <Team />
               <List
                 shouldWrap

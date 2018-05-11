@@ -755,5 +755,260 @@
     "nationalPokedexNumber": 151,
     "name": "mew",
     "typeIds": [13]
+  },
+  {
+    "nationalPokedexNumber": 152,
+    "name": "chikorita",
+    "typeIds": [2]
+  },
+  {
+    "nationalPokedexNumber": 153,
+    "name": "bayleef",
+    "typeIds": [2]
+  },
+  {
+    "nationalPokedexNumber": 154,
+    "name": "meganium",
+    "typeIds": [2]
+  },
+  {
+    "nationalPokedexNumber": 155,
+    "name": "cyndaquil",
+    "typeIds": [3]
+  },
+  {
+    "nationalPokedexNumber": 156,
+    "name": "quilava",
+    "typeIds": [3]
+  },
+  {
+    "nationalPokedexNumber": 157,
+    "name": "typhlosion",
+    "typeIds": [3]
+  },
+  {
+    "nationalPokedexNumber": 158,
+    "name": "totodile",
+    "typeIds": [4]
+  },
+  {
+    "nationalPokedexNumber": 159,
+    "name": "croconaw",
+    "typeIds": [4]
+  },
+  {
+    "nationalPokedexNumber": 160,
+    "name": "feraligatr",
+    "typeIds": [4]
+  },
+  {
+    "nationalPokedexNumber": 161,
+    "name": "sentret",
+    "typeIds": [1]
+  },
+  {
+    "nationalPokedexNumber": 162,
+    "name": "furret",
+    "typeIds": [1]
+  },
+  {
+    "nationalPokedexNumber": 163,
+    "name": "hoothoot",
+    "typeIds": [1, 6]
+  },
+  {
+    "nationalPokedexNumber": 164,
+    "name": "noctowl",
+    "typeIds": [1, 6]
+  },
+  {
+    "nationalPokedexNumber": 165,
+    "name": "ledyba",
+    "typeIds": [10, 6]
+  },
+  {
+    "nationalPokedexNumber": 166,
+    "name": "ledian",
+    "typeIds": [10, 6]
+  },
+  {
+    "nationalPokedexNumber": 167,
+    "name": "spinarak",
+    "typeIds": [10, 7]
+  },
+  {
+    "nationalPokedexNumber": 168,
+    "name": "ariados",
+    "typeIds": [10, 7]
+  },
+  {
+    "nationalPokedexNumber": 169,
+    "name": "crobat",
+    "typeIds": [7, 6]
+  },
+  {
+    "nationalPokedexNumber": 170,
+    "name": "chinchou",
+    "typeIds": [4, 12]
+  },
+  {
+    "nationalPokedexNumber": 171,
+    "name": "lanturn",
+    "typeIds": [4, 12]
+  },
+  {
+    "nationalPokedexNumber": 172,
+    "name": "pichu",
+    "typeIds": [12]
+  },
+  {
+    "nationalPokedexNumber": 173,
+    "name": "cleffa",
+    "typeIds": [18]
+  },
+  {
+    "nationalPokedexNumber": 174,
+    "name": "igglybuff",
+    "typeIds": [1, 18]
+  },
+  {
+    "nationalPokedexNumber": 175,
+    "name": "togepi",
+    "typeIds": [18]
+  },
+  {
+    "nationalPokedexNumber": 176,
+    "name": "togetic",
+    "typeIds": [18, 6]
+  },
+  {
+    "nationalPokedexNumber": 177,
+    "name": "natu",
+    "typeIds": [13, 6]
+  },
+  {
+    "nationalPokedexNumber": 178,
+    "name": "xatu",
+    "typeIds": [13, 6]
+  },
+  {
+    "nationalPokedexNumber": 179,
+    "name": "mareep",
+    "typeIds": [12]
+  },
+  {
+    "nationalPokedexNumber": 180,
+    "name": "flaaffy",
+    "typeIds": [12]
+  },
+  {
+    "nationalPokedexNumber": 181,
+    "name": "ampharos",
+    "typeIds": [12]
+  },
+  {
+    "nationalPokedexNumber": 182,
+    "name": "bellossom",
+    "typeIds": [2]
+  },
+  {
+    "nationalPokedexNumber": 183,
+    "name": "marill",
+    "typeIds": [4, 18]
+  },
+  {
+    "nationalPokedexNumber": 184,
+    "name": "azumarill",
+    "typeIds": [4, 18]
+  },
+  {
+    "nationalPokedexNumber": 185,
+    "name": "sudowoodo",
+    "typeIds": [9]
+  },
+  {
+    "nationalPokedexNumber": 186,
+    "name": "politoed",
+    "typeIds": [4]
+  },
+  {
+    "nationalPokedexNumber": 187,
+    "name": "hoppip",
+    "typeIds": [2, 6]
+  },
+  {
+    "nationalPokedexNumber": 188,
+    "name": "skiploom",
+    "typeIds": [2, 6]
+  },
+  {
+    "nationalPokedexNumber": 189,
+    "name": "jumpluff",
+    "typeIds": [2, 6]
+  },
+  {
+    "nationalPokedexNumber": 190,
+    "name": "aipom",
+    "typeIds": [1]
+  },
+  {
+    "nationalPokedexNumber": 191,
+    "name": "sunkern",
+    "typeIds": [2]
+  },
+  {
+    "nationalPokedexNumber": 192,
+    "name": "sunflora",
+    "typeIds": [2]
+  },
+  {
+    "nationalPokedexNumber": 193,
+    "name": "yanma",
+    "typeIds": [10, 6]
+  },
+  {
+    "nationalPokedexNumber": 194,
+    "name": "wooper",
+    "typeIds": [4, 8]
+  },
+  {
+    "nationalPokedexNumber": 195,
+    "name": "quagsire",
+    "typeIds": [4, 8]
+  },
+  {
+    "nationalPokedexNumber": 196,
+    "name": "espeon",
+    "typeIds": [13]
+  },
+  {
+    "nationalPokedexNumber": 197,
+    "name": "umbreon",
+    "typeIds": [16]
+  },
+  {
+    "nationalPokedexNumber": 198,
+    "name": "murkrow",
+    "typeIds": [16]
+  },
+  {
+    "nationalPokedexNumber": 199,
+    "name": "slowking",
+    "typeIds": [4, 13]
+  },
+  {
+    "nationalPokedexNumber": 200,
+    "name": "misdreavus",
+    "typeIds": [11]
+  },
+  {
+    "nationalPokedexNumber": 201,
+    "name": "unown",
+    "typeIds": [13]
+  },
+  {
+    "nationalPokedexNumber": 202,
+    "name": "wobbufet",
+    "typeIds": [13]
   }
 ]

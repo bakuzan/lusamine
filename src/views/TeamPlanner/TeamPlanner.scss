@@ -2,15 +2,16 @@
   display: flex;
   flex-direction: row;
   margin: 10px 0;
-}
 
-.team-planner__container {
-  display: flex;
-  flex-direction: column;
-}
-.team-planner__container--width-20 {
-  flex: 1 1 20%;
-}
-.team-planner__container--width-80 {
-  flex: 1 1 80%;
+  &__container {
+    display: flex;
+    flex-direction: column;
+
+    &--width_20 {
+      flex: 1 1 20%;
+    }
+    &--width_80 {
+      flex: 1 1 80%;
+    }
+  }
 }
