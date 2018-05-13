@@ -63,6 +63,8 @@ $sprite--size: 40px;
 $sprites--row-offset: -30px;
 $sprites--column-offset: -40px;
 $sprites--height: abs($sprites--row-offset);
+$sprite-pokemon--margin-top: 5px;
+$sprite-pokemon--margin-top-reduced: $sprite-pokemon--margin-top - 2px;
 $type--darken-percentage-border: 36%;
 $type--darken-percentage-border-hover: 18%;
 $types--column-offset: -50px;

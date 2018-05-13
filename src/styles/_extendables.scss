@@ -1,0 +1,19 @@
+%typed-colour-modifiers {
+  @each $name, $value in $types {
+    &--#{$name}_position-first {
+      background: $value;
+      border-color: darken($value, $type--darken-percentage-border);
+      &:hover {
+        border-color: darken($value, $type--darken-percentage-border-hover);
+      }
+    }
+  }
+  @each $name, $value in $types {
+    &--#{$name}_position-second {
+      border-color: darken($value, $type--darken-percentage-border);
+      &:hover {
+        border-color: darken($value, $type--darken-percentage-border-hover);
+      }
+    }
+  }
+}

@@ -1,47 +1,33 @@
 @import '../../styles/_variables';
+@import '../../styles/_extendables';
 
 .sprite {
   width: $sprite--size;
   height: $sprite--size;
   border: 2px solid;
   border-radius: 50%;
-}
 
-@each $name, $value in $types {
-  .sprite--#{$name}_position-first {
-    background: $value;
-    border-color: darken($value, $type--darken-percentage-border);
-    &:hover {
-      border-color: darken($value, $type--darken-percentage-border-hover);
-    }
-  }
-}
-@each $name, $value in $types {
-  .sprite--#{$name}_position-second {
-    border-color: darken($value, $type--darken-percentage-border);
-    &:hover {
-      border-color: darken($value, $type--darken-percentage-border-hover);
-    }
-  }
+  @extend %typed-colour-modifiers;
 }
 
 .sprite__pokemon {
   height: $sprites--height;
   background-image: url(../../assets/sprites.png);
-  margin: 5px 0;
+  margin: $sprite-pokemon--margin-top 0;
   cursor: pointer;
-}
-.sprite__pokemon:hover {
-  animation: bounce 0.25s infinite;
+
+  &:hover {
+    animation: bounce 0.25s infinite;
+  }
 }
 
 @keyframes bounce {
   0%,
   100% {
-    margin-top: 5px;
+    margin-top: $sprite-pokemon--margin-top;
   }
   50% {
-    margin-top: 3px;
+    margin-top: $sprite-pokemon--margin-top-reduced;
   }
 }
 

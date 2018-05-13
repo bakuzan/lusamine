@@ -40,7 +40,7 @@ class PlannerPage extends React.Component {
               <Filters searchProps={searchProps} />
             </div>
             <div className="team-planner__container team-planner__container--width_80">
-              <Team />
+              <Team members={[]} />
               <List
                 shouldWrap
                 items={iteratePokedexToList(pokedex)}
