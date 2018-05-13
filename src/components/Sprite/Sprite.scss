@@ -12,12 +12,19 @@
 
 .sprite__pokemon {
   height: $sprites--height;
+  width: $sprites--width;
+  background-color: transparent;
   background-image: url(../../assets/sprites.png);
   margin: $sprite-pokemon--margin-top 0;
-  cursor: pointer;
+  appearance: none;
+  border: none;
+  cursor: default;
 
   &:hover {
     animation: bounce 0.25s infinite;
+  }
+  &--can-click {
+    cursor: pointer;
   }
 }
 

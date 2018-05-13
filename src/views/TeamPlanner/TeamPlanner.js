@@ -8,25 +8,42 @@ import { PokedexContext } from 'context';
 
 import './TeamPlanner.css';
 
-function iteratePokedexToList(dex) {
-  return Array.from(dex).map(([id, item]) => item);
+function iteratePokedexToList(dex, filters) {
+  const exclusions = filters.currentTeamIds;
+  return Array.from(dex).reduce((acc, [id, item]) => {
+    if (exclusions.has(id)) return acc;
+    return [...acc, item];
+  }, []);
+}
+
+function selectMembersFromPokedex(dex, memberIds) {
+  return Array.from(memberIds).map(id => dex.get(id));
 }
 
 class PlannerPage extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      search: ''
+      search: '',
+      currentTeamIds: new Set([])
     };
 
     this.handleSearchInput = this.handleSearchInput.bind(this);
+    this.handleSpriteSelection = this.handleSpriteSelection.bind(this);
   }
 
   handleSearchInput(e) {
     this.setState({ search: e.target.value });
   }
 
+  handleSpriteSelection(dataId) {
+    this.setState(prev => ({
+      currentTeamIds: prev.currentTeamIds.add(dataId)
+    }));
+  }
+
   render() {
+    const { currentTeamIds } = this.state;
     const searchProps = {
       value: this.state.search,
       onChange: this.handleSearchInput
@@ -40,11 +57,21 @@ class PlannerPage extends React.Component {
               <Filters searchProps={searchProps} />
             </div>
             <div className="team-planner__container team-planner__container--width_80">
-              <Team members={[]} />
+              <Team
+                members={selectMembersFromPokedex(pokedex, currentTeamIds)}
+              />
               <List
                 shouldWrap
-                items={iteratePokedexToList(pokedex)}
-                itemTemplate={(item, i) => <Sprite key={i} data={item} />}
+                items={iteratePokedexToList(pokedex, {
+                  currentTeamIds
+                })}
+                itemTemplate={(item, i) => (
+                  <Sprite
+                    key={i}
+                    data={item}
+                    onClick={this.handleSpriteSelection}
+                  />
+                )}
               />
             </div>
           </div>

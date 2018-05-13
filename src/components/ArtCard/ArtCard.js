@@ -5,6 +5,7 @@ import React from 'react';
 import { buildSelectorsForArtCard } from 'utils/selectors';
 
 const ArtCard = props => {
+  console.log('ART CARD', props);
   const artCardClasses = buildSelectorsForArtCard(props.data);
   return (
     <div className={classNames('art-card', artCardClasses.types)}>

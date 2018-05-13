@@ -1,3 +1,5 @@
+import { generateEmptyPokemonId } from 'data/id-generators';
+import { MAX_PARTY_SIZE } from 'constants/misc';
 import Generations from 'constants/generations';
 
 const GEN2_START = 152;
@@ -14,4 +16,24 @@ export const getGeneration = dexNum => {
   if (dexNum < GEN6_START) return Generations.gen5;
   if (dexNum < GEN7_START) return Generations.gen6;
   return Generations.gen7;
+};
+
+function createEmptyPokemon() {
+  return {
+    id: generateEmptyPokemonId(),
+    nationalPokedexNumber: 0,
+    name: 'empty',
+    types: [],
+    evolutions: [],
+    generation: null
+  };
+}
+
+export const padPartyWithEmptySlots = party => {
+  const emptyCount = MAX_PARTY_SIZE - party.length;
+  const emptySlots = Array(emptyCount)
+    .fill(null)
+    .map(createEmptyPokemon);
+
+  return [...party, ...emptySlots];
 };

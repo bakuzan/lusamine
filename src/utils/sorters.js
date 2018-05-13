@@ -7,7 +7,7 @@ export default function sortCombinedData([aId, a], [bId, b]) {
   const bNPN = b.nationalPokedexNumber;
   if (aNPN < bNPN) return -1;
   if (aNPN > bNPN) return 1;
-  console.log('bad id! ', a, b);
+
   const aPrefix = getIdPrefix(aId);
   const bPrefix = getIdPrefix(bId);
   const aEnum = IdPrefixes[aPrefix];

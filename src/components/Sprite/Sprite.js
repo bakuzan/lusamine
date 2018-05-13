@@ -7,12 +7,16 @@ import { buildSelectorsForSprite } from 'utils/selectors';
 import './Sprite.css';
 
 const Sprite = props => {
-  console.log('SPRITE>', props);
   const spriteClasses = buildSelectorsForSprite(props.data);
+  const hasClick = !!props.onClick;
   return (
-    <li className={classNames('sprite', spriteClasses.types)}>
-      <div
-        className={classNames('sprite__pokemon', spriteClasses.name)}
+    <li className={classNames('margin-one', 'sprite', spriteClasses.types)}>
+      <button
+        type="button"
+        onClick={() => props.onClick(props.data.id)}
+        className={classNames('sprite__pokemon', spriteClasses.name, {
+          'sprite__pokemon--can-click': hasClick
+        })}
         title={capitaliseEachWord(props.data.name)}
       />
     </li>
@@ -20,7 +24,8 @@ const Sprite = props => {
 };
 
 Sprite.propTypes = {
-  data: PropTypes.object.isRequired
+  data: PropTypes.object.isRequired,
+  onClick: PropTypes.func
 };
 
 export default Sprite;
