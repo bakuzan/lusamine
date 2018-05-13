@@ -55,11 +55,12 @@ export function transformVariantPokemonData(data) {
 }
 
 function reduceMapsToArray(combined, aMap) {
-  return [...combinded, ...Array.from(aMap)];
+  return [...combined, ...Array.from(aMap)];
 }
 
 export function combineAndSortMaps(...maps) {
-  const combindData = maps.reduce(reduceMapsToArray, []).sort(sortCombinedData);
-
-  return new Map([...combindedData]);
+  const combinedData = maps
+    .reduce(reduceMapsToArray, [])
+    .sort(sortCombinedData);
+  return new Map([...combinedData]);
 }

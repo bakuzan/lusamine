@@ -1,4 +1,6 @@
-%typed-colour-modifiers {
+// This will probably be refactored later
+// as this will duplicate the css! (that's bad)
+@mixin typed-colour-modifiers {
   @each $name, $value in $types {
     &--#{$name}_position-first {
       background: $value;

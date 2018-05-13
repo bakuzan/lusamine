@@ -1,7 +1,7 @@
 @import '../../styles/_variables';
 
 .type {
-  background-image: url('../assets/types.png');
+  background-image: url('../../assets/types.png');
 }
 
 @for $n from 1 through length($types) {

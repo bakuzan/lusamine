@@ -1,5 +1,5 @@
 @import '../../styles/_variables';
-@import '../../styles/_extendables';
+@import '../../styles/_mixins';
 
 .sprite {
   width: $sprite--size;
@@ -7,7 +7,7 @@
   border: 2px solid;
   border-radius: 50%;
 
-  @extend %typed-colour-modifiers;
+  @include typed-colour-modifiers;
 }
 
 .sprite__pokemon {

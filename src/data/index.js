@@ -1,7 +1,8 @@
 import {
   transformPokemonData,
   transformMegaPokemonData,
-  transformVariantPokemonData
+  transformVariantPokemonData,
+  combineAndSortMaps
 } from './transformers';
 
 import pokemon from './raw/pokemon.json';

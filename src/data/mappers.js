@@ -3,7 +3,7 @@ import { Utils } from 'meiko';
 import Regions from 'constants/regions';
 import { getGeneration } from 'utils/derived-data';
 
-const { capitalise, getKeyByValue } = Utils.Common;
+const { getKeyByValue } = Utils.Common;
 
 function mapTypesToPokemon(types) {
   return types.map(t => ({
@@ -35,14 +35,12 @@ export function mapMegaPokemonData(id, data, types, basePokemon) {
   return {
     id,
     nationalPokedexNumber: data.nationalPokedexNumber,
-    name: `Mega ${basePokemon.name}${suffix}`,
+    name: `mega ${basePokemon.name}${suffix}`,
     types: mapTypesToPokemon(types),
     evolutions: [],
     generation: getGeneration(data.nationalPokedexNumber)
   };
 }
-
-const getRegionName = compose(capitalise, getKeyByValue);
 
 export function mapVariantsPokemonData(
   id,
@@ -51,7 +49,7 @@ export function mapVariantsPokemonData(
   evolutions,
   basePokemon
 ) {
-  const regionName = getRegionName(Regions, data.regionId);
+  const regionName = getKeyByValue(Regions, data.regionId);
   return {
     id,
     nationalPokedexNumber: data.nationalPokedexNumber,
