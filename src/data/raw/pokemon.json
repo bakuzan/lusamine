@@ -1,7 +1,5 @@
 [
   {
-    "temp":
-      "https://bulbapedia.bulbagarden.net/wiki/List_of_Pokémon_by_National_Pokédex_number",
     "nationalPokedexNumber": 1,
     "name": "bulbasaur",
     "typeIds": [2, 7]

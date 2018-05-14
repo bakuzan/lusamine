@@ -17,7 +17,7 @@
     "react-scripts": "1.1.4"
   },
   "lint-staged": {
-    "src/**/*.{js,jsx,json,scss}": [
+    "{src,tools}/**/*.{js,jsx,json,scss}": [
       "prettier --single-quote --write",
       "git add"
     ]
@@ -36,6 +36,11 @@
     "build-js": "react-scripts build",
     "build": "npm-run-all build-css build-js",
     "test": "react-scripts test --env=jsdom",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "scrape-data": "node --experimental-modules ./tools/index.mjs"
+  },
+  "devDependencies": {
+    "cheerio": "^1.0.0-rc.2",
+    "request": "^2.85.0"
   }
 }
