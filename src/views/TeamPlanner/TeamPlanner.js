@@ -5,47 +5,54 @@ import Team from 'components/Team/Team';
 import List from 'components/List/List';
 import Sprite from 'components/Sprite/Sprite';
 import { PokedexContext } from 'context';
+import {
+  getUrlQueryStringAsObject,
+  createSetFromIdString,
+  createIdStringFromSet
+} from 'utils/common';
+import * as TPU from './TeamPlannerUtils';
 
 import './TeamPlanner.css';
-
-function iteratePokedexToList(dex, filters) {
-  const exclusions = filters.currentTeamIds;
-  return Array.from(dex).reduce((acc, [id, item]) => {
-    if (exclusions.has(id)) return acc;
-    return [...acc, item];
-  }, []);
-}
-
-function selectMembersFromPokedex(dex, memberIds) {
-  return Array.from(memberIds).map(id => dex.get(id));
-}
 
 class PlannerPage extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
       search: '',
-      currentTeamIds: new Set([])
+      currentTeamIds: createSetFromIdString(
+        getUrlQueryStringAsObject(props.location).team
+      )
     };
 
     this.handleSearchInput = this.handleSearchInput.bind(this);
     this.handleSpriteSelection = this.handleSpriteSelection.bind(this);
   }
 
+  componentDidUpdate(prevProps) {
+    console.log('UPDATED', prevProps, this.props);
+    const queryObject = getUrlQueryStringAsObject(this.props.location);
+    const currentIds = createIdStringFromSet(this.state.currentTeamIds);
+    if (queryObject.team !== currentIds) {
+      this.setState({
+        currentTeamIds: createSetFromIdString(queryObject.team)
+      });
+    }
+  }
+
   handleSearchInput(e) {
-    this.setState({ search: e.target.value });
+    this.setState({ search: e.target.value.toLowerCase() });
   }
 
   handleSpriteSelection(dataId) {
-    this.setState(prev => ({
-      currentTeamIds: prev.currentTeamIds.add(dataId)
-    }));
+    console.log('CLICKED', this.props);
+    const idStr = createIdStringFromSet(this.state.currentTeamIds);
+    this.props.history.push(`${this.props.match.path}?team=${idStr}`);
   }
 
   render() {
-    const { currentTeamIds } = this.state;
+    const { search, currentTeamIds } = this.state;
     const searchProps = {
-      value: this.state.search,
+      value: search,
       onChange: this.handleSearchInput
     };
 
@@ -58,12 +65,13 @@ class PlannerPage extends React.Component {
             </div>
             <div className="team-planner__container team-planner__container--width_80">
               <Team
-                members={selectMembersFromPokedex(pokedex, currentTeamIds)}
+                members={TPU.selectMembersFromPokedex(pokedex, currentTeamIds)}
               />
               <List
                 shouldWrap
-                items={iteratePokedexToList(pokedex, {
-                  currentTeamIds
+                items={TPU.iteratePokedexToList(pokedex, {
+                  currentTeamIds,
+                  search
                 })}
                 itemTemplate={(item, i) => (
                   <Sprite

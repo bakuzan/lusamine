@@ -88,5 +88,45 @@
     "nationalPokedexNumber": 105,
     "regionId": 7,
     "typeIds": [3, 11]
+  },
+  {
+    "nationalPokedexNumber": 485,
+    "regionId": 7,
+    "typeIds": [3, 17]
+  },
+  {
+    "nationalPokedexNumber": 486,
+    "regionId": 7,
+    "typeIds": [1]
+  },
+  {
+    "nationalPokedexNumber": 488,
+    "regionId": 7,
+    "typeIds": [13]
+  },
+  {
+    "nationalPokedexNumber": 489,
+    "regionId": 7,
+    "typeIds": [4]
+  },
+  {
+    "nationalPokedexNumber": 491,
+    "regionId": 7,
+    "typeIds": [16]
+  },
+  {
+    "nationalPokedexNumber": 492,
+    "regionId": 7,
+    "typeIds": [2]
+  },
+  {
+    "nationalPokedexNumber": 492,
+    "regionId": 7,
+    "typeIds": [2, 6]
+  },
+  {
+    "nationalPokedexNumber": 493,
+    "regionId": 7,
+    "typeIds": [1]
   }
 ]

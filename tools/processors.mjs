@@ -67,7 +67,7 @@ function megaProcessor($) {
         .reduce((acc, tr) => {
           const $row = cheerio.load(tr);
           const children = $row('td');
-          if (!children) return acc;
+          if (!children || children.length === 0) return acc;
           const isSecondMega = children.length === 4;
           const tdData = isSecondMega 
             ? children.first()
@@ -75,9 +75,10 @@ function megaProcessor($) {
           const typeIndex = isSecondMega
            ? 1
            : 5;
-          const tdTypes = children.eq(typeIndex)
-          .children()
-          .map(x => x.children().first());
+          const tdTypes = [
+            children.eq(typeIndex).children().eq(0),
+            children.eq(typeIndex).children().eq(1)
+          ];
           
           const item = Mappers.mapElementsToMegaJson(tdData, tdTypes);
     

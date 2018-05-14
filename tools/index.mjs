@@ -38,8 +38,8 @@ function scrapePokemonData(options) {
   //   url: "https://bulbapedia.bulbagarden.net/wiki/List_of_Pokémon_by_evolution_family",
   //   processor: Processors.evolutionProcessor
   // },
-  // {
-  //   url: "https://bulbapedia.bulbagarden.net/wiki/Mega_Evolution",
-  //   processor: Processors.megaProcessor
-  // }
+  {
+    url: "https://bulbapedia.bulbagarden.net/wiki/Mega_Evolution",
+    processor: Processors.megaProcessor
+  }
 ].forEach(scrapePokemonData)

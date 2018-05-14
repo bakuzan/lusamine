@@ -1,6 +1,6 @@
 import {Types} from './enums';
 
-const fixNPNStringToInt = str =>
+const fixNPNStringToInt = (str = "") =>
   Number(str.replace(/\D/g, ""));
 
 const processTdNPN = td =>
@@ -10,7 +10,7 @@ const processTdTypes = tds =>
   tds
   .reduce((types, td) => {
     if (!td || !td.children()) return types;
-    const key = (td.children().first().text() || "").toLowerCase();
+    const key = (td.children().first().text() || "").toLowerCase().trim();
     if (!key) return types;
     return [...types, Types[key]];
   }, []);
@@ -36,11 +36,11 @@ function mapElementsToEvolutionJson() {
 }
 
 function mapElementsToMegaJson(tdData, tdTypes) {
-  const aHref = tdData.first().attr('href');
+  const aHref = tdData.children('a').attr('href');
   const nationalPokedexNumber = fixNPNStringToInt(aHref);
   const strMatch = aHref.match(/_\w./g);
   const suffix = strMatch
-    ? strMatch[0].split("")[1]
+    ? strMatch[0].split("")[1].toLowerCase()
     : "";
   return {
     nationalPokedexNumber,

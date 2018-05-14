@@ -4,6 +4,7 @@
   "private": true,
   "homepage": "https://bakuzan.github.io/lusamine/",
   "dependencies": {
+    "classnames": "^2.2.5",
     "husky": "^0.14.3",
     "lint-staged": "^7.0.5",
     "meiko": "file:../meiko",
