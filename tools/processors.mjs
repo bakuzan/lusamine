@@ -6,6 +6,13 @@ import * as Enums from './enums';
 const buildOuputUrl = fileName => 
   path.join("./tools/output", fileName);
 
+const checkImgForVariant = td => {
+  const src = td.children().first()
+  .children().first().attr("src");
+  return src && 
+  src.match(/AMS\.png$/);
+}
+
 function pokedexProcessor($) {
   const jsonEntries = Array.from($('table > tbody'))
   .slice(Enums.TABLE_COUNT_OFFSET, Enums.GENERATION_COUNT + Enums.TABLE_COUNT_OFFSET)
@@ -16,7 +23,10 @@ function pokedexProcessor($) {
         const children = $row('td');
         if (!children) return acc;
 
-        const isVariant = !children.first().text().trim();
+        const isVariant = (
+          !children.first().text().trim() &&
+          checkImgForVariant(children.eq(2))
+        );
         const tdNPN = children.eq(1);
         const tdName = children.eq(3);
         const tdTypes = [

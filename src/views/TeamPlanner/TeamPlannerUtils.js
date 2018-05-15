@@ -7,5 +7,5 @@ export function iteratePokedexToList(dex, filters) {
 }
 
 export function selectMembersFromPokedex(dex, memberIds) {
-  return Array.from(memberIds).map(id => dex.get(id));
+  return new Map(Array.from(memberIds).map(id => [id, dex.get(id)]));
 }

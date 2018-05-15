@@ -29,10 +29,10 @@ class PlannerPage extends React.Component {
   }
 
   componentDidUpdate(prevProps) {
-    console.log('UPDATED', prevProps, this.props);
     const queryObject = getUrlQueryStringAsObject(this.props.location);
     const currentIds = createIdStringFromSet(this.state.currentTeamIds);
-    if (queryObject.team !== currentIds) {
+    if ((currentIds || queryObject.team) && queryObject.team !== currentIds) {
+      console.log('UPDATED', 'qo:', queryObject, 'ids: ', typeof currentIds);
       this.setState({
         currentTeamIds: createSetFromIdString(queryObject.team)
       });
@@ -44,8 +44,8 @@ class PlannerPage extends React.Component {
   }
 
   handleSpriteSelection(dataId) {
-    console.log('CLICKED', this.props);
-    const idStr = createIdStringFromSet(this.state.currentTeamIds);
+    console.log('CLICKED', dataId);
+    const idStr = createIdStringFromSet(this.state.currentTeamIds, dataId);
     this.props.history.push(`${this.props.match.path}?team=${idStr}`);
   }
 

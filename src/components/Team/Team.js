@@ -3,18 +3,37 @@ import React from 'react';
 
 import List from 'components/List/List';
 import TeamMember from 'components/TeamMember/TeamMember';
-import { MAX_PARTY_SIZE } from 'constants/misc';
 import { padPartyWithEmptySlots } from 'utils/derived-data';
+import { iterateMapToArray, iterateKeysToArray } from 'utils/common';
 
-class Team extends React.Component {
-  padMembersIfNotFull() {
-    const { members } = this.props;
-    if (members.length === MAX_PARTY_SIZE) return members;
-    return padPartyWithEmptySlots(members);
+class Team extends React.PureComponent {
+  constructor(props) {
+    super(props);
+    this.state = {
+      emptyMembers: padPartyWithEmptySlots([]),
+      members: new Map([])
+    };
+  }
+
+  static getDerivedStateFromProps(nextProps, prevState) {
+    const members = iterateKeysToArray(nextProps.members);
+    const oldMembers = iterateKeysToArray(prevState.members);
+
+    if (members !== oldMembers) {
+      return { members: nextProps.members };
+    }
+
+    return null;
+  }
+
+  padPartyToSixMembers(members) {
+    const emptys = iterateMapToArray(this.state.emptyMembers);
+    const memArr = iterateMapToArray(members);
+    return [...memArr, ...emptys].slice(0, 6);
   }
 
   render() {
-    const members = this.padMembersIfNotFull();
+    const members = this.padPartyToSixMembers(this.state.members);
     console.log('TEAM', members);
     return (
       <section className="team">
@@ -28,7 +47,7 @@ class Team extends React.Component {
 }
 
 Team.propTypes = {
-  members: PropTypes.arrayOf(PropTypes.object)
+  members: PropTypes.object
 };
 
 export default Team;

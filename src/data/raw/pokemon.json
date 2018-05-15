@@ -2505,6 +2505,16 @@
     "typeIds": [4, 15]
   },
   {
+    "nationalPokedexNumber": 485,
+    "name": "heatran",
+    "typeIds": [3, 17]
+  },
+  {
+    "nationalPokedexNumber": 486,
+    "name": "regigigas",
+    "typeIds": [1]
+  },
+  {
     "nationalPokedexNumber": 487,
     "name": "giratina",
     "typeIds": [11, 15]
@@ -2513,11 +2523,41 @@
     "nationalPokedexNumber": 487,
     "name": "giratina",
     "typeIds": [11, 15]
+  },
+  {
+    "nationalPokedexNumber": 488,
+    "name": "cresselia",
+    "typeIds": [13]
+  },
+  {
+    "nationalPokedexNumber": 489,
+    "name": "phione",
+    "typeIds": [4]
   },
   {
     "nationalPokedexNumber": 490,
     "name": "manaphy",
     "typeIds": [4]
+  },
+  {
+    "nationalPokedexNumber": 491,
+    "name": "darkrai",
+    "typeIds": [16]
+  },
+  {
+    "nationalPokedexNumber": 492,
+    "name": "shaymin",
+    "typeIds": [2]
+  },
+  {
+    "nationalPokedexNumber": 492,
+    "name": "shaymin",
+    "typeIds": [2, 6]
+  },
+  {
+    "nationalPokedexNumber": 493,
+    "name": "arceus",
+    "typeIds": [1]
   },
   {
     "nationalPokedexNumber": 494,

@@ -1,0 +1,25 @@
+@import '../../styles/_variables';
+
+.art-card__pokemon {
+  height: $art-card--height;
+  width: $art-card--width;
+  background-color: transparent;
+  background-image: url(../../assets/art.png);
+  border: none;
+  cursor: default;
+}
+
+$empty: (empty);
+$art-names: join($empty, $pokemon-names, 'comma');
+@for $n from 1 through length($art-names) {
+  $i: $n - 1;
+  $row: floor($i/30);
+  $col: $i - (30 * $row);
+  $name: nth($art-names, $n);
+  .art-card__pokemon--#{$name} {
+    background-position: #{$col *
+      $art-card--column-offset}
+      #{$row *
+      $art-card--row-offset};
+  }
+}

@@ -6,21 +6,23 @@ import ArtCard from 'components/ArtCard/ArtCard';
 import TypeBlock from 'components/TypeBlock/TypeBlock';
 import { capitaliseEachWord } from 'utils/common';
 
+import './TeamMember.css';
+
 const TeamMember = ({ data, ...props }) => {
   return (
-    <div
+    <li
       className={classNames('team__member', {
         'team__member--selected': false
       })}
     >
-      <ArtCard data={{}} />
+      <ArtCard data={data} />
       <div className={classNames('name-bubble')}>
         {capitaliseEachWord(data.name)}
       </div>
       <div>
         {data.types.map(type => <TypeBlock key={type.id} value={type.name} />)}
       </div>
-    </div>
+    </li>
   );
 };
 

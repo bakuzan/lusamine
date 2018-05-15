@@ -1,5 +1,6 @@
 const constructNameClass = className => name => {
-  return `${className}__pokemon--${name.replace(/ /g, '-')}`;
+  const pokemonName = name.replace(/ /g, '-').replace(/[.':]/g, '');
+  return `${className}__pokemon--${pokemonName}`;
 };
 
 const constructNameClassForSprite = constructNameClass('sprite');

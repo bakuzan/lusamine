@@ -12,6 +12,7 @@ export const capitaliseEachWord = str =>
     .join(' ');
 
 export const getUrlQueryStringAsObject = location => {
+  if (!location.search) return {};
   return location.search
     .slice(1)
     .split('&')
@@ -27,5 +28,9 @@ export function createIdStringFromSet(idSet, newValue) {
   return Array.from(new Set(values)).join(',');
 }
 
-export const createSetFromIdString = str =>
-  new Set(str.split(',').map(o => Number(o)));
+export const createSetFromIdString = (str = '') =>
+  str ? new Set(str.split(',')) : new Set([]);
+
+export const iterateMapToArray = m => Array.from(m.values());
+
+export const iterateKeysToArray = m => Array.from(m.keys());

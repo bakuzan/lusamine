@@ -34,13 +34,6 @@ class App extends Component {
 
   render() {
     const isPageScrolled = !!this.state.windowScrollPosition;
-    // Temp to get css name order
-    console.log(
-      Array.from(this.state.pokedex).reduce(
-        (p, [id, item]) => `${p}\n${item.name},`,
-        ''
-      )
-    );
 
     return (
       <PokedexContext.Provider value={this.state.pokedex}>

@@ -1,63 +1,15 @@
 @import './_colours';
+@import './_pokmon-map';
 
 $app--font-size: 16px;
 
+$art-card--row-offset: -96px;
+$art-card--column-offset: -96px;
+$art-card--height: abs($art-card--row-offset);
+$art-card--width: abs($art-card--column-offset);
+
 $header--box-shadow-colour: $lusamine--eyes;
 $header--height: 50px;
-
-$pokemon-names: (
-  bulbasaur,
-  ivysaur,
-  venusaur,
-  mega-venusaur,
-  charmander,
-  charmeleon,
-  charizard,
-  mega-charizard-x,
-  mega-charizard-y,
-  squirtle,
-  wartortle,
-  blastoise,
-  mega-blastoise,
-  catepie,
-  metapod,
-  butterfree,
-  weedle,
-  kakuna,
-  beedrill,
-  mega-beedrill,
-  pidgey,
-  pidgeotto,
-  pidgeot,
-  mega-pidgeot,
-  rattata,
-  alolan-rattata,
-  ratticate,
-  alolan-ratticate,
-  spearow,
-  fearow,
-  ekans,
-  arbok,
-  pikachu,
-  raichu,
-  alolan-raichu,
-  sandshrew,
-  alolan-sandshrew,
-  sandslash,
-  alolan-sandslash,
-  nidoran,
-  nidorina,
-  nidoqueen,
-  nidoran,
-  nidorino,
-  nidoking,
-  clefairy,
-  clefable,
-  vulpix,
-  alolan-vulpix,
-  ninetales,
-  alolan-ninetales
-);
 
 $sprite--size: 40px;
 $sprites--row-offset: -30px;

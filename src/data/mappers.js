@@ -50,6 +50,7 @@ export function mapVariantsPokemonData(
   basePokemon
 ) {
   const regionName = getKeyByValue(Regions, data.regionId);
+  if (!basePokemon) console.log(data, basePokemon);
   return {
     id,
     nationalPokedexNumber: data.nationalPokedexNumber,
