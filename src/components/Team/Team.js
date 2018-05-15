@@ -11,8 +11,11 @@ class Team extends React.PureComponent {
     super(props);
     this.state = {
       emptyMembers: padPartyWithEmptySlots([]),
-      members: new Map([])
+      members: new Map([]),
+      selectedMemberId: null
     };
+
+    this.handleMemberSelect = this.handleMemberSelect.bind(this);
   }
 
   static getDerivedStateFromProps(nextProps, prevState) {
@@ -32,14 +35,27 @@ class Team extends React.PureComponent {
     return [...memArr, ...emptys].slice(0, 6);
   }
 
+  handleMemberSelect(dataId) {
+    const selectedMemberId =
+      this.state.selectedMemberId === dataId ? null : dataId;
+    this.setState({ selectedMemberId });
+  }
+
   render() {
     const members = this.padPartyToSixMembers(this.state.members);
     console.log('TEAM', members);
     return (
-      <section className="team">
+      <section>
         <List
           items={members}
-          itemTemplate={item => <TeamMember key={item.id} data={item} />}
+          itemTemplate={item => (
+            <TeamMember
+              key={item.id}
+              data={item}
+              isSelected={this.state.selectedMemberId === item.id}
+              onClick={this.handleMemberSelect}
+            />
+          )}
         />
       </section>
     );

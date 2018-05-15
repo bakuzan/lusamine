@@ -1,27 +1,53 @@
 import classNames from 'classnames';
 import PropTypes from 'prop-types';
 import React from 'react';
-import { Header, Image } from 'meiko';
+
+import { Header, Image, Utils } from 'meiko';
 import Logo from 'assets/logo.png';
+import { getWindowScrollPosition } from 'utils/common';
+
 import './HeaderBar.css';
 
-const HeaderBar = props => {
-  const headerClasses = classNames('header-bar', {
-    'header-bar--page-scrolled': props.isPageScrolled
-  });
+class HeaderBar extends React.PureComponent {
+  constructor(props) {
+    super(props);
+    this.state = {
+      windowScrollPosition: 0
+    };
+  }
 
-  return (
-    <Header
-      className={headerClasses}
-      leftAlignTitle
-      title={props.title}
-      navLeft={<Image className="logo" alt="Pokémon Logo" src={Logo} />}
-    />
-  );
-};
+  componentDidMount() {
+    this.scrollListeners = Utils.Common.createListeners('scroll', () => {
+      const windowScrollPosition = getWindowScrollPosition();
+      if (windowScrollPosition !== this.state.windowScrollPosition) {
+        this.setState({ windowScrollPosition });
+      }
+    })();
+    this.scrollListeners.listen();
+  }
+
+  componentWillUnmount() {
+    this.scrollListeners.remove();
+  }
+
+  render() {
+    const isPageScrolled = !!this.state.windowScrollPosition;
+    const headerClasses = classNames('header-bar', {
+      'header-bar--page-scrolled': isPageScrolled
+    });
+
+    return (
+      <Header
+        className={headerClasses}
+        leftAlignTitle
+        title={this.props.title}
+        navLeft={<Image className="logo" alt="Pokémon Logo" src={Logo} />}
+      />
+    );
+  }
+}
 
 HeaderBar.propTypes = {
-  isPageScrolled: PropTypes.bool,
   title: PropTypes.string
 };
 

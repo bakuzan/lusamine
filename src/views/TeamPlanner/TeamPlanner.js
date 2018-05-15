@@ -1,3 +1,4 @@
+import classNames from 'classnames';
 import React from 'react';
 
 import Filters from 'components/Filters/Filters';
@@ -5,6 +6,7 @@ import Team from 'components/Team/Team';
 import List from 'components/List/List';
 import Sprite from 'components/Sprite/Sprite';
 import { PokedexContext } from 'context';
+import Strings from 'constants/strings';
 import {
   getUrlQueryStringAsObject,
   createSetFromIdString,
@@ -51,22 +53,31 @@ class PlannerPage extends React.Component {
 
   render() {
     const { search, currentTeamIds } = this.state;
-    const searchProps = {
-      value: search,
-      onChange: this.handleSearchInput
+    const filterProps = {
+      searchProps: {
+        value: search,
+        onChange: this.handleSearchInput
+      }
     };
 
     return (
       <PokedexContext.Consumer>
         {pokedex => (
           <div className="team-planner">
-            <div className="team-planner__container team-planner__container--width_20">
-              <Filters searchProps={searchProps} />
+            <div
+              className={classNames(
+                'team-planner__container',
+                'team-planner__container--width_20',
+                'team-planner__container--hide-on_small'
+              )}
+            >
+              <Filters hiddenOn={Strings.small} {...filterProps} />
             </div>
             <div className="team-planner__container team-planner__container--width_80">
               <Team
                 members={TPU.selectMembersFromPokedex(pokedex, currentTeamIds)}
               />
+              <Filters hiddenOn={Strings.large} {...filterProps} />
               <List
                 shouldWrap
                 items={TPU.iteratePokedexToList(pokedex, {

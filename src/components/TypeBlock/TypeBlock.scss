@@ -1,6 +1,9 @@
 @import '../../styles/_variables';
 
 .type {
+  width: $type--width;
+  height: $type--height;
+  background-color: transparent;
   background-image: url('../../assets/types.png');
 }
 

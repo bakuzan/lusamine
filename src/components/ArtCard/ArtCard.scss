@@ -1,4 +1,14 @@
 @import '../../styles/_variables';
+@import '../../styles/_mixins';
+
+.art-card {
+  width: $art-card--size;
+  height: $art-card--size;
+  border: 2px solid;
+  border-radius: 50%;
+
+  @include typed-colour-modifiers;
+}
 
 .art-card__pokemon {
   height: $art-card--height;

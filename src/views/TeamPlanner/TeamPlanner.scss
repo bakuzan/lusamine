@@ -1,3 +1,5 @@
+@import '../../styles/_mixins';
+
 .team-planner {
   display: flex;
   flex-direction: row;
@@ -12,6 +14,15 @@
     }
     &--width_80 {
       flex: 1 1 80%;
+    }
+
+    &--hide-on_small {
+      @include respond-to(sm) {
+        display: none;
+      }
+      @include respond-to(xs) {
+        display: none;
+      }
     }
   }
 }

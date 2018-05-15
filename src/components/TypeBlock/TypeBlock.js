@@ -4,7 +4,9 @@ import React from 'react';
 
 import './TypeBlock.css';
 
-const TypeBlock = props => <div className={classNames('type', props.value)} />;
+const TypeBlock = props => (
+  <div className={classNames('type', `type--${props.value}`)} />
+);
 
 TypeBlock.propTypes = {
   value: PropTypes.string.isRequired

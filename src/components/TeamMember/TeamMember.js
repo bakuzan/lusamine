@@ -8,18 +8,18 @@ import { capitaliseEachWord } from 'utils/common';
 
 import './TeamMember.css';
 
-const TeamMember = ({ data, ...props }) => {
+const TeamMember = ({ data, isSelected, ...props }) => {
   return (
     <li
-      className={classNames('team__member', {
-        'team__member--selected': false
+      className={classNames('team-member', {
+        'team-member--selected': isSelected
       })}
     >
       <ArtCard data={data} />
-      <div className={classNames('name-bubble')}>
+      <div className={classNames('team-member__name-bubble')}>
         {capitaliseEachWord(data.name)}
       </div>
-      <div>
+      <div className={classNames('team-member__types')}>
         {data.types.map(type => <TypeBlock key={type.id} value={type.name} />)}
       </div>
     </li>
@@ -27,7 +27,9 @@ const TeamMember = ({ data, ...props }) => {
 };
 
 TeamMember.propTypes = {
-  data: PropTypes.object.isRequired
+  data: PropTypes.object.isRequired,
+  isSelected: PropTypes.bool,
+  onClick: PropTypes.func
 };
 
 export default TeamMember;

@@ -12,7 +12,7 @@ class Sprite extends React.PureComponent {
     const spriteClasses = buildSelectorsForSprite(data);
     const hasClick = !!onClick;
     const spriteClick = hasClick ? () => onClick(data.id) : null;
-
+    const capitalisedName = capitaliseEachWord(data.name);
     return (
       <li className={classNames('margin-one', 'sprite', spriteClasses.types)}>
         <button
@@ -21,7 +21,8 @@ class Sprite extends React.PureComponent {
           className={classNames('sprite__pokemon', spriteClasses.name, {
             'sprite__pokemon--can-click': hasClick
           })}
-          title={capitaliseEachWord(data.name)}
+          aria-label={capitalisedName}
+          title={capitalisedName}
         />
       </li>
     );
