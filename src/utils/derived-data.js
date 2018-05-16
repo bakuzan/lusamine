@@ -19,21 +19,24 @@ export const getGeneration = dexNum => {
 };
 
 function createEmptyPokemon() {
-  return {
-    id: generateEmptyPokemonId(),
-    nationalPokedexNumber: 0,
-    name: 'empty',
-    types: [],
-    evolutions: [],
-    generation: null
-  };
+  const id = generateEmptyPokemonId();
+  return [
+    id,
+    {
+      id,
+      nationalPokedexNumber: 0,
+      name: 'empty',
+      types: [],
+      evolutions: [],
+      generation: null
+    }
+  ];
 }
 
-export const padPartyWithEmptySlots = party => {
-  const emptyCount = MAX_PARTY_SIZE - party.length;
-  const emptySlots = Array(emptyCount)
+export const generateEmptySlots = () => {
+  const emptySlots = Array(MAX_PARTY_SIZE)
     .fill(null)
     .map(createEmptyPokemon);
 
-  return [...party, ...emptySlots];
+  return new Map(emptySlots);
 };

@@ -19,13 +19,12 @@
   cursor: default;
 }
 
-$empty: (empty);
-$art-names: join($empty, $pokemon-names, 'comma');
-@for $n from 1 through length($art-names) {
+$art-card-pokemon: join($empty, $art-names, 'comma');
+@for $n from 1 through length($art-card-pokemon) {
   $i: $n - 1;
   $row: floor($i/30);
   $col: $i - (30 * $row);
-  $name: nth($art-names, $n);
+  $name: nth($art-card-pokemon, $n);
   .art-card__pokemon--#{$name} {
     background-position: #{$col *
       $art-card--column-offset}

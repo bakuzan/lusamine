@@ -1,5 +1,5 @@
 @import './_colours';
-@import './_pokmon-map';
+@import './pokemon-names/_index.scss';
 
 // Screen Variables
 
@@ -26,12 +26,14 @@ $art-card--column-offset: -96px;
 $art-card--height: abs($art-card--row-offset);
 $art-card--width: abs($art-card--column-offset);
 
+$empty: (empty);
+
 $header--box-shadow-colour: $highlighted;
 $header--height: 50px;
 
 $sprite--size: 40px;
 $sprites--row-offset: -30px;
-$sprites--column-offset: -40px;
+$sprites--column-offset: -30px;
 $sprites--height: abs($sprites--row-offset);
 $sprites--width: abs($sprites--column-offset);
 $sprite-pokemon--margin-top: 5px;

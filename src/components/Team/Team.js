@@ -3,14 +3,14 @@ import React from 'react';
 
 import List from 'components/List/List';
 import TeamMember from 'components/TeamMember/TeamMember';
-import { padPartyWithEmptySlots } from 'utils/derived-data';
+import { generateEmptySlots } from 'utils/derived-data';
 import { iterateMapToArray, iterateKeysToArray } from 'utils/common';
 
 class Team extends React.PureComponent {
   constructor(props) {
     super(props);
     this.state = {
-      emptyMembers: padPartyWithEmptySlots([]),
+      emptyMembers: generateEmptySlots(),
       members: new Map([]),
       selectedMemberId: null
     };

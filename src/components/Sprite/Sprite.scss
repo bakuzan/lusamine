@@ -2,6 +2,8 @@
 @import '../../styles/_mixins';
 
 .sprite {
+  display: flex;
+  justify-content: center;
   width: $sprite--size;
   height: $sprite--size;
   border: 2px solid;
@@ -39,11 +41,13 @@
   }
 }
 
-@for $n from 1 through length($pokemon-names) {
+$pokemon-in-row: 31;
+$sprite-pokemon: join($empty, $sprite-names, 'comma');
+@for $n from 1 through length($sprite-pokemon) {
   $i: $n - 1;
-  $row: floor($i/16);
-  $col: $i - (16 * $row);
-  $name: nth($pokemon-names, $n);
+  $row: floor($i/$pokemon-in-row);
+  $col: $i - ($pokemon-in-row * $row);
+  $name: nth($sprite-pokemon, $n);
 
   .sprite__pokemon--#{$name} {
     background-position: #{$col *
