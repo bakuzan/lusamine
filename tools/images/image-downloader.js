@@ -27,3 +27,5 @@ const padInt = i => `${i}`.padStart(3, '0');
 //     outputFile: `art/${paddedInt}.png`
 //   })
 // });
+
+// Sprites:
