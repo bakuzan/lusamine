@@ -28,6 +28,7 @@ class PlannerPage extends React.Component {
 
     this.handleSearchInput = this.handleSearchInput.bind(this);
     this.handleSpriteSelection = this.handleSpriteSelection.bind(this);
+    this.handleMembersUpdate = this.handleMembersUpdate.bind(this);
   }
 
   componentDidUpdate(prevProps) {
@@ -41,14 +42,22 @@ class PlannerPage extends React.Component {
     }
   }
 
+  updateTeamQueryString(memberIds, newId) {
+    const idStr = createIdStringFromSet(memberIds, newId);
+    this.props.history.push(`${this.props.match.path}?team=${idStr}`);
+  }
+
   handleSearchInput(e) {
     this.setState({ search: e.target.value.toLowerCase() });
   }
 
   handleSpriteSelection(dataId) {
     console.log('CLICKED', dataId);
-    const idStr = createIdStringFromSet(this.state.currentTeamIds, dataId);
-    this.props.history.push(`${this.props.match.path}?team=${idStr}`);
+    this.updateTeamQueryString(this.state.currentTeamIds, dataId);
+  }
+
+  handleMembersUpdate(membersIds) {
+    this.updateTeamQueryString(membersIds);
   }
 
   render() {
@@ -76,6 +85,7 @@ class PlannerPage extends React.Component {
             <div className="team-planner__container team-planner__container--width_80">
               <Team
                 members={TPU.selectMembersFromPokedex(pokedex, currentTeamIds)}
+                onMembersUpdate={this.handleMembersUpdate}
               />
               <Filters hiddenOn={Strings.large} {...filterProps} />
               <List

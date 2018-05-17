@@ -16,6 +16,7 @@ class Team extends React.PureComponent {
     };
 
     this.handleMemberSelect = this.handleMemberSelect.bind(this);
+    this.handleMemberRemove = this.handleMemberRemove.bind(this);
   }
 
   static getDerivedStateFromProps(nextProps, prevState) {
@@ -41,8 +42,16 @@ class Team extends React.PureComponent {
     this.setState({ selectedMemberId });
   }
 
+  handleMemberRemove(dataId) {
+    const members = new Map([...this.state.members.entries()]);
+    members.delete(dataId);
+    const memberIds = new Set(iterateKeysToArray(members));
+    this.props.onMembersUpdate(memberIds);
+  }
+
   render() {
     const members = this.padPartyToSixMembers(this.state.members);
+    const canRemove = !!this.props.onMembersUpdate;
     console.log('TEAM', members);
     return (
       <section>
@@ -54,6 +63,7 @@ class Team extends React.PureComponent {
               data={item}
               isSelected={this.state.selectedMemberId === item.id}
               onClick={this.handleMemberSelect}
+              remove={canRemove && this.handleMemberRemove}
             />
           )}
         />
@@ -63,7 +73,8 @@ class Team extends React.PureComponent {
 }
 
 Team.propTypes = {
-  members: PropTypes.object
+  members: PropTypes.object,
+  onMembersUpdate: PropTypes.func
 };
 
 export default Team;

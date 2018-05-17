@@ -1,11 +1,15 @@
+$clear-button--size: 25px;
+
 .lusamine-button.clear-button {
-  height: 25px;
+  height: $clear-button--size;
+  width: $clear-button--size;
   padding: 0.5em;
   border-radius: 50%;
   margin: 0;
 
   &:before {
-    position: absolute;
-    font-size: 0.8em;
+    font-size: 0.5em;
+    font-weight: bold;
+    transform: translateY(-15%) translateX(-5%);
   }
 }

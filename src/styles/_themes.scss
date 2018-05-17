@@ -8,6 +8,7 @@ $theme-maps: (
       header-background: $lusamine--hair,
       header-colour: $black,
       button--background: $lusamine--hair,
+      button--colour-hover: $lusamine--eyes,
       button--background-hover: $lusamine--dress-highlight
     )
 );
@@ -32,6 +33,7 @@ $theme-maps: (
           map-get($values, button--background-hover),
           $button--darken-percentage
         );
+        color: map-get($values, button--colour-hover);
       }
     }
   }

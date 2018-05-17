@@ -9,8 +9,9 @@ import { capitaliseEachWord } from 'utils/common';
 
 import './TeamMember.css';
 
-const TeamMember = ({ data, isSelected, onClick, ...props }) => {
+const TeamMember = ({ data, isSelected, onClick, remove, ...props }) => {
   const hasData = !data.isEmpty;
+  const canRemove = hasData && isSelected && !!remove;
   const memberClick = hasData ? () => onClick(data.id) : null;
 
   return (
@@ -23,7 +24,7 @@ const TeamMember = ({ data, isSelected, onClick, ...props }) => {
       role="button"
     >
       <div className={classNames('team-member__clear-container')}>
-        {hasData && isSelected && <ClearButton />}
+        {canRemove && <ClearButton onClick={() => remove(data.id)} />}
       </div>
       <ArtCard data={data} />
       <div className={classNames('team-member__name-bubble')}>
@@ -39,7 +40,8 @@ const TeamMember = ({ data, isSelected, onClick, ...props }) => {
 TeamMember.propTypes = {
   data: PropTypes.object.isRequired,
   isSelected: PropTypes.bool,
-  onClick: PropTypes.func
+  onClick: PropTypes.func,
+  remove: PropTypes.func
 };
 
 export default TeamMember;
