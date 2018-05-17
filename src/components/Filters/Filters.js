@@ -2,7 +2,7 @@ import PropTypes from 'prop-types';
 import classNames from 'classnames';
 import React from 'react';
 
-import { ClearableInput } from 'meiko';
+import { ClearableInput, MultiSelect } from 'meiko';
 import Strings from 'constants/strings';
 
 import './Filters.css';
@@ -16,6 +16,13 @@ const Filters = props => {
       })}
     >
       <ClearableInput {...props.searchProps} />
+      <MultiSelect
+        name="generations"
+        id="generations"
+        placeholder="Select generation(s)"
+        label="Generation"
+        {...props.generationProps}
+      />
     </section>
   );
 };

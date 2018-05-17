@@ -20,13 +20,15 @@ class PlannerPage extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      search: '',
       currentTeamIds: createSetFromIdString(
         getUrlQueryStringAsObject(props.location).team
-      )
+      ),
+      search: '',
+      generations: TPU.generationDefaults
     };
 
     this.handleSearchInput = this.handleSearchInput.bind(this);
+    this.handleGenerationFilter = this.handleGenerationFilter.bind(this);
     this.handleSpriteSelection = this.handleSpriteSelection.bind(this);
     this.handleMembersUpdate = this.handleMembersUpdate.bind(this);
   }
@@ -51,6 +53,10 @@ class PlannerPage extends React.Component {
     this.setState({ search: e.target.value.toLowerCase() });
   }
 
+  handleGenerationFilter(generations) {
+    this.setState({ generations });
+  }
+
   handleSpriteSelection(dataId) {
     console.log('CLICKED', dataId);
     this.updateTeamQueryString(this.state.currentTeamIds, dataId);
@@ -61,11 +67,16 @@ class PlannerPage extends React.Component {
   }
 
   render() {
-    const { search, currentTeamIds } = this.state;
+    const { search, generations, currentTeamIds } = this.state;
     const filterProps = {
       searchProps: {
         value: search,
         onChange: this.handleSearchInput
+      },
+      generationProps: {
+        values: generations,
+        options: TPU.generationOptions,
+        onUpdate: this.handleGenerationFilter
       }
     };
 
