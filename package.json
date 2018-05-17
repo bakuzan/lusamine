@@ -38,10 +38,12 @@
     "build": "npm-run-all build-css build-js",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject",
+    "deploy": "npm run build&&gh-pages -d build",
     "scrape-data": "node --experimental-modules ./tools/index.mjs"
   },
   "devDependencies": {
     "cheerio": "^1.0.0-rc.2",
+    "gh-pages": "^1.1.0",
     "node-sprite-generator": "^0.10.2",
     "request": "^2.85.0"
   }

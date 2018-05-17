@@ -4,9 +4,23 @@ const sprites = require('./sprites');
 
 const basePath = './tools/name-manipulation/output';
 
+const MEGA = '-mega';
+const ALOLA = '-alola';
+function formatName(str) {
+  let result;
+  if (str.includes(MEGA)) {
+    result = `mega-${str.replace(MEGA, '')}`;
+  } else if (str.includes(ALOLA)) {
+    result = `alola-${str.replace(ALOLA, '')}`;
+  } else {
+    result = str;
+  }
+  return result;
+}
+
 function prep(obj) {
   return Object.keys(obj).map(name => ({
-    name,
+    name: formatName(name),
     values: obj[name]
   }));
 }
