@@ -6,7 +6,9 @@ $theme-maps: (
       base-background: $lusamine--hair,
       base-colour: $black,
       header-background: $lusamine--hair,
-      header-colour: $black
+      header-colour: $black,
+      button--background: $lusamine--hair,
+      button--background-hover: $lusamine--dress-highlight
     )
 );
 @each $theme-name, $values in $theme-maps {
@@ -22,6 +24,15 @@ $theme-maps: (
     .header-bar {
       background-color: $header-background;
       color: $header-colour;
+    }
+    .lusamine-button {
+      background-color: map-get($values, button--background);
+      &:hover {
+        background-color: darken(
+          map-get($values, button--background-hover),
+          $button--darken-percentage
+        );
+      }
     }
   }
 }

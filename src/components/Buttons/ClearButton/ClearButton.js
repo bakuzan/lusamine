@@ -9,7 +9,7 @@ const { Icons } = Constants;
 const ClearButton = ({ className, ...props }) => (
   <Button
     icon={Icons.cross}
-    className={classNames('clear-button', className)}
+    className={classNames('lusamine-button', 'clear-button', className)}
     {...props}
   />
 );

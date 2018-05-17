@@ -28,7 +28,8 @@ function createEmptyPokemon() {
       name: 'empty',
       types: [],
       evolutions: [],
-      generation: null
+      generation: null,
+      isEmpty: true
     }
   ];
 }

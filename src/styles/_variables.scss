@@ -26,6 +26,8 @@ $art-card--column-offset: -96px;
 $art-card--height: abs($art-card--row-offset);
 $art-card--width: abs($art-card--column-offset);
 
+$button--darken-percentage: 10%;
+
 $empty: (empty);
 
 $header--box-shadow-colour: $highlighted;

@@ -10,16 +10,20 @@ import { capitaliseEachWord } from 'utils/common';
 import './TeamMember.css';
 
 const TeamMember = ({ data, isSelected, onClick, ...props }) => {
+  const hasData = !data.isEmpty;
+  const memberClick = hasData ? () => onClick(data.id) : null;
+
   return (
     <li
+      id={data.id}
       className={classNames('team-member', {
         'team-member--selected': isSelected
       })}
-      onClick={() => onClick(data.id)}
+      onClick={memberClick}
       role="button"
     >
       <div className={classNames('team-member__clear-container')}>
-        <ClearButton />
+        {hasData && isSelected && <ClearButton />}
       </div>
       <ArtCard data={data} />
       <div className={classNames('team-member__name-bubble')}>
