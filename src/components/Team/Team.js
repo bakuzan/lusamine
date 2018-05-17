@@ -4,7 +4,11 @@ import React from 'react';
 import List from 'components/List/List';
 import TeamMember from 'components/TeamMember/TeamMember';
 import { generateEmptySlots } from 'utils/derived-data';
-import { iterateMapToArray, iterateKeysToArray } from 'utils/common';
+import {
+  iterateMapToArray,
+  iterateKeysToArray,
+  swapArrayPositions
+} from 'utils/common';
 
 class Team extends React.PureComponent {
   constructor(props) {
@@ -17,6 +21,7 @@ class Team extends React.PureComponent {
 
     this.handleMemberSelect = this.handleMemberSelect.bind(this);
     this.handleMemberRemove = this.handleMemberRemove.bind(this);
+    this.handleMemberMove = this.handleMemberMove.bind(this);
   }
 
   static getDerivedStateFromProps(nextProps, prevState) {
@@ -24,7 +29,12 @@ class Team extends React.PureComponent {
     const oldMembers = iterateKeysToArray(prevState.members);
 
     if (members !== oldMembers) {
-      return { members: nextProps.members };
+      return {
+        members: nextProps.members,
+        selectedMemberId: members.includes(prevState.selectedMemberId)
+          ? prevState.selectedMemberId
+          : null
+      };
     }
 
     return null;
@@ -49,21 +59,35 @@ class Team extends React.PureComponent {
     this.props.onMembersUpdate(memberIds);
   }
 
+  handleMemberMove(dataId, direction) {
+    const members = iterateKeysToArray(this.state.members);
+    const oldIndex = members.findIndex(x => x === dataId);
+    const newIndex = oldIndex + direction;
+    const newOrderMembers = swapArrayPositions(members, oldIndex, newIndex);
+    const memberIds = new Set(newOrderMembers);
+    this.props.onMembersUpdate(memberIds);
+  }
+
   render() {
+    const lastMemberIndex = this.state.members.size - 1;
     const members = this.padPartyToSixMembers(this.state.members);
     const canRemove = !!this.props.onMembersUpdate;
+    const canReOrder = !!this.props.onMembersUpdate;
     console.log('TEAM', members);
     return (
       <section>
         <List
           items={members}
-          itemTemplate={item => (
+          itemTemplate={(item, i) => (
             <TeamMember
               key={item.id}
+              index={i}
+              partyEndIndex={lastMemberIndex}
               data={item}
               isSelected={this.state.selectedMemberId === item.id}
               onClick={this.handleMemberSelect}
               remove={canRemove && this.handleMemberRemove}
+              move={canReOrder && this.handleMemberMove}
             />
           )}
         />

@@ -1,5 +1,5 @@
 import { generateEmptyPokemonId } from 'data/id-generators';
-import { MAX_PARTY_SIZE } from 'constants/misc';
+import Party from 'constants/party';
 import Generations from 'constants/generations';
 
 const GEN2_START = 152;
@@ -35,7 +35,7 @@ function createEmptyPokemon() {
 }
 
 export const generateEmptySlots = () => {
-  const emptySlots = Array(MAX_PARTY_SIZE)
+  const emptySlots = Array(Party.MAX_SIZE)
     .fill(null)
     .map(createEmptyPokemon);
 

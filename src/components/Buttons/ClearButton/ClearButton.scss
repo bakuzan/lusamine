@@ -1,12 +1,4 @@
-$clear-button--size: 25px;
-
-.lusamine-button.clear-button {
-  height: $clear-button--size;
-  width: $clear-button--size;
-  padding: 0.5em;
-  border-radius: 50%;
-  margin: 0;
-
+.lusamine-icon-button.clear-button {
   &:before {
     font-size: 0.5em;
     font-weight: bold;

@@ -35,7 +35,7 @@ class PlannerPage extends React.Component {
     const queryObject = getUrlQueryStringAsObject(this.props.location);
     const currentIds = createIdStringFromSet(this.state.currentTeamIds);
     if ((currentIds || queryObject.team) && queryObject.team !== currentIds) {
-      console.log('UPDATED', 'qo:', queryObject, 'ids: ', typeof currentIds);
+      console.log('UPDATED', 'qo:', queryObject, 'ids: ', currentIds);
       this.setState({
         currentTeamIds: createSetFromIdString(queryObject.team)
       });

@@ -1,6 +1,8 @@
 @import '../../styles/_mixins';
 
 .filters {
+  padding: 5px;
+
   &--hide-on_small {
     @include respond-to(sm) {
       display: none;

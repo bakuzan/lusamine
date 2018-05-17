@@ -34,3 +34,11 @@ export const createSetFromIdString = (str = '') =>
 export const iterateMapToArray = m => Array.from(m.values());
 
 export const iterateKeysToArray = m => Array.from(m.keys());
+
+export const swapArrayPositions = (arr, from, to) => {
+  const list = arr.slice(0);
+  const fromValue = list[from];
+  list[from] = list[to];
+  list[to] = fromValue;
+  return list;
+};
