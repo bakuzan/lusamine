@@ -17,8 +17,9 @@ const Filters = props => {
     >
       <ClearableInput {...props.searchProps} />
       <MultiSelect
-        name="generations"
         id="generations"
+        className="generations"
+        name="generations"
         placeholder="Select generation(s)"
         label="Generation"
         {...props.generationProps}

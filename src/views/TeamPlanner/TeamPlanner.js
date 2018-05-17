@@ -68,6 +68,11 @@ class PlannerPage extends React.Component {
 
   render() {
     const { search, generations, currentTeamIds } = this.state;
+    const dexFilters = {
+      currentTeamIds,
+      search,
+      generations
+    };
     const filterProps = {
       searchProps: {
         value: search,
@@ -101,10 +106,7 @@ class PlannerPage extends React.Component {
               <Filters hiddenOn={Strings.large} {...filterProps} />
               <List
                 shouldWrap
-                items={TPU.iteratePokedexToList(pokedex, {
-                  currentTeamIds,
-                  search
-                })}
+                items={TPU.iteratePokedexToList(pokedex, dexFilters)}
                 itemTemplate={(item, i) => (
                   <Sprite
                     key={i}

@@ -2,8 +2,14 @@ import Generations from 'constants/generations';
 
 export function iteratePokedexToList(dex, filters) {
   const exclusions = filters.currentTeamIds;
+  const gens = filters.generations;
   return Array.from(dex).reduce((acc, [id, item]) => {
-    if (exclusions.has(id) || !item.name.includes(filters.search)) return acc;
+    if (
+      exclusions.has(id) ||
+      !item.name.includes(filters.search) ||
+      !gens.includes(item.generation)
+    )
+      return acc;
     return [...acc, item];
   }, []);
 }
