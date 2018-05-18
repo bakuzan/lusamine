@@ -1,6 +1,6 @@
 import { generateEmptyPokemonId } from 'data/id-generators';
-import Party from 'constants/party';
-import Generations from 'constants/generations';
+import Constants from 'constants/index';
+const { Party, Generations, Strings } = Constants;
 
 const GEN2_START = 152;
 const GEN3_START = 252;
@@ -41,3 +41,8 @@ export const generateEmptySlots = () => {
 
   return new Map(emptySlots);
 };
+
+const checkPokemonId = check => mon => mon.id.startsWith(`${check}_`);
+
+export const isMegaPokemon = checkPokemonId(Strings.idPrefix.mega);
+export const isVariantPokemon = checkPokemonId(Strings.idPrefix.variant);

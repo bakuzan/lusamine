@@ -2,11 +2,22 @@ import { Utils } from 'meiko';
 
 import Types from 'constants/types';
 import Generations from 'constants/generations';
+import { isMegaPokemon, isVariantPokemon } from 'utils/derived-data';
 
 const { capitalise } = Utils.Common;
 
 function applyDexFilters(item, filters, typeMatches) {
-  const { currentTeamIds, generations, types, resists, search } = filters;
+  const {
+    currentTeamIds,
+    generations,
+    types,
+    resists,
+    search,
+    includeMega,
+    includeVariants
+  } = filters;
+  if (!includeMega && isMegaPokemon(item)) return true;
+  if (!includeVariants && isVariantPokemon(item)) return true;
   return (
     currentTeamIds.has(item.id) ||
     !item.name.includes(search) ||

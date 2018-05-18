@@ -26,11 +26,14 @@ class PlannerPage extends React.Component {
       search: '',
       generations: TPU.generationDefaults,
       types: TPU.typeDefaults,
-      resists: TPU.typeDefaults
+      resists: TPU.typeDefaults,
+      includeMega: true,
+      includeVariants: true
     };
 
     this.handleSearchInput = this.handleSearchInput.bind(this);
     this.handleMultiSelectFilter = this.handleMultiSelectFilter.bind(this);
+    this.handleTickboxFilter = this.handleTickboxFilter.bind(this);
     this.handleSpriteSelection = this.handleSpriteSelection.bind(this);
     this.handleMembersUpdate = this.handleMembersUpdate.bind(this);
   }
@@ -56,8 +59,12 @@ class PlannerPage extends React.Component {
   }
 
   handleMultiSelectFilter(value, name) {
-    console.log(value, name);
     this.setState({ [name]: value });
+  }
+
+  handleTickboxFilter(e) {
+    const { name, checked } = e.target;
+    this.setState({ [name]: checked });
   }
 
   handleSpriteSelection(dataId) {
@@ -70,27 +77,34 @@ class PlannerPage extends React.Component {
   }
 
   render() {
-    const { search, generations, types, resists, currentTeamIds } = this.state;
     const dexFilters = { ...this.state };
     const filterProps = {
       searchProps: {
-        value: search,
+        value: dexFilters.search,
         onChange: this.handleSearchInput
       },
       generationProps: {
-        values: generations,
+        values: dexFilters.generations,
         options: TPU.generationOptions,
         onUpdate: this.handleMultiSelectFilter
       },
       typeProps: {
-        values: types,
+        values: dexFilters.types,
         options: TPU.typeOptions,
         onUpdate: this.handleMultiSelectFilter
       },
       resistsProps: {
-        values: resists,
+        values: dexFilters.resists,
         options: TPU.typeOptions,
         onUpdate: this.handleMultiSelectFilter
+      },
+      includeMegaProps: {
+        checked: dexFilters.includeMega,
+        onChange: this.handleTickboxFilter
+      },
+      includeVariantsProps: {
+        checked: dexFilters.includeVariants,
+        onChange: this.handleTickboxFilter
       }
     };
     console.log(this.state);
@@ -109,7 +123,10 @@ class PlannerPage extends React.Component {
             </div>
             <div className="team-planner__container team-planner__container--width_80">
               <Team
-                members={TPU.selectMembersFromPokedex(pokedex, currentTeamIds)}
+                members={TPU.selectMembersFromPokedex(
+                  pokedex,
+                  this.state.currentTeamIds
+                )}
                 onMembersUpdate={this.handleMembersUpdate}
               />
               <Filters hiddenOn={Strings.large} {...filterProps} />

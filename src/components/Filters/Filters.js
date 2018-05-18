@@ -2,7 +2,7 @@ import PropTypes from 'prop-types';
 import classNames from 'classnames';
 import React from 'react';
 
-import { ClearableInput } from 'meiko';
+import { ClearableInput, Tickbox } from 'meiko';
 import MultiSelect from 'components/MultiSelect';
 import Strings from 'constants/strings';
 
@@ -36,7 +36,17 @@ const Filters = props => {
         name="resists"
         placeholder="Select resistance(s)"
         label="Resists"
-        {...props.typeProps}
+        {...props.resistsProps}
+      />
+      <Tickbox
+        name="includeMega"
+        text="Include Megas"
+        {...props.includeMegaProps}
+      />
+      <Tickbox
+        name="includeVariants"
+        text="Include variants"
+        {...props.includeVariantsProps}
       />
     </section>
   );
