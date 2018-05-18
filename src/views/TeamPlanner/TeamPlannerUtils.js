@@ -1,15 +1,27 @@
+import { Utils } from 'meiko';
+
+import Types from 'constants/types';
 import Generations from 'constants/generations';
 
-export function iteratePokedexToList(dex, filters) {
-  const exclusions = filters.currentTeamIds;
-  const gens = filters.generations;
+const { capitalise } = Utils.Common;
+
+function applyDexFilters(item, filters, typeMatches) {
+  const { currentTeamIds, generations, types, resists, search } = filters;
+  return (
+    currentTeamIds.has(item.id) ||
+    !item.name.includes(search) ||
+    !generations.includes(item.generation) ||
+    !item.types.some(x => types.includes(x.id)) ||
+    !item.types.some(x => {
+      const { resists: resistsForType } = typeMatches.get(x.id);
+      return resists.some(r => resistsForType.includes(r));
+    })
+  );
+}
+
+export function iteratePokedexToList(dex, filters, typeMatches) {
   return Array.from(dex).reduce((acc, [id, item]) => {
-    if (
-      exclusions.has(id) ||
-      !item.name.includes(filters.search) ||
-      !gens.includes(item.generation)
-    )
-      return acc;
+    if (applyDexFilters(item, filters, typeMatches)) return acc;
     return [...acc, item];
   }, []);
 }
@@ -18,10 +30,19 @@ export function selectMembersFromPokedex(dex, memberIds) {
   return new Map(Array.from(memberIds).map(id => [id, dex.get(id)]));
 }
 
-export const generationOptions = Object.keys(Generations).map(k => ({
-  value: Generations[k],
-  text: k // TODO needs processing! from gen1, to Gen 1
-}));
-export const generationDefaults = Object.keys(Generations).map(
-  k => Generations[k]
+const getAllEnumValues = obj => Object.keys(obj).map(k => obj[k]);
+
+const getEnumOptions = (obj, fn) =>
+  Object.keys(obj).map(k => ({
+    value: obj[k],
+    text: fn(k)
+  }));
+
+export const generationOptions = getEnumOptions(
+  Generations,
+  k => `${capitalise(k.slice(0, 3))} ${k.slice(-1)}`
 );
+export const generationDefaults = getAllEnumValues(Generations);
+
+export const typeOptions = getEnumOptions(Types, k => capitalise(k));
+export const typeDefaults = getAllEnumValues(Types);

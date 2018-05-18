@@ -8,7 +8,6 @@ import './ArtCard.css';
 
 class ArtCard extends React.PureComponent {
   render() {
-    console.log(`ART CARD ${this.props.data.id}:`, this.props);
     const artCardClasses = buildSelectorsForArtCard(this.props.data);
     return (
       <div className={classNames('art-card', artCardClasses.types)}>

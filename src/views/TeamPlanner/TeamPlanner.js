@@ -5,7 +5,7 @@ import Filters from 'components/Filters/Filters';
 import Team from 'components/Team/Team';
 import List from 'components/List/List';
 import Sprite from 'components/Sprite/Sprite';
-import { PokedexContext } from 'context';
+import { PokedexContext, TypeContext } from 'context';
 import Strings from 'constants/strings';
 import {
   getUrlQueryStringAsObject,
@@ -24,11 +24,13 @@ class PlannerPage extends React.Component {
         getUrlQueryStringAsObject(props.location).team
       ),
       search: '',
-      generations: TPU.generationDefaults
+      generations: TPU.generationDefaults,
+      types: TPU.typeDefaults,
+      resists: TPU.typeDefaults
     };
 
     this.handleSearchInput = this.handleSearchInput.bind(this);
-    this.handleGenerationFilter = this.handleGenerationFilter.bind(this);
+    this.handleMultiSelectFilter = this.handleMultiSelectFilter.bind(this);
     this.handleSpriteSelection = this.handleSpriteSelection.bind(this);
     this.handleMembersUpdate = this.handleMembersUpdate.bind(this);
   }
@@ -53,8 +55,9 @@ class PlannerPage extends React.Component {
     this.setState({ search: e.target.value.toLowerCase() });
   }
 
-  handleGenerationFilter(generations) {
-    this.setState({ generations });
+  handleMultiSelectFilter(value, name) {
+    console.log(value, name);
+    this.setState({ [name]: value });
   }
 
   handleSpriteSelection(dataId) {
@@ -67,12 +70,8 @@ class PlannerPage extends React.Component {
   }
 
   render() {
-    const { search, generations, currentTeamIds } = this.state;
-    const dexFilters = {
-      currentTeamIds,
-      search,
-      generations
-    };
+    const { search, generations, types, resists, currentTeamIds } = this.state;
+    const dexFilters = { ...this.state };
     const filterProps = {
       searchProps: {
         value: search,
@@ -81,10 +80,20 @@ class PlannerPage extends React.Component {
       generationProps: {
         values: generations,
         options: TPU.generationOptions,
-        onUpdate: this.handleGenerationFilter
+        onUpdate: this.handleMultiSelectFilter
+      },
+      typeProps: {
+        values: types,
+        options: TPU.typeOptions,
+        onUpdate: this.handleMultiSelectFilter
+      },
+      resistsProps: {
+        values: resists,
+        options: TPU.typeOptions,
+        onUpdate: this.handleMultiSelectFilter
       }
     };
-
+    console.log(this.state);
     return (
       <PokedexContext.Consumer>
         {pokedex => (
@@ -104,17 +113,25 @@ class PlannerPage extends React.Component {
                 onMembersUpdate={this.handleMembersUpdate}
               />
               <Filters hiddenOn={Strings.large} {...filterProps} />
-              <List
-                shouldWrap
-                items={TPU.iteratePokedexToList(pokedex, dexFilters)}
-                itemTemplate={(item, i) => (
-                  <Sprite
-                    key={i}
-                    data={item}
-                    onClick={this.handleSpriteSelection}
+              <TypeContext.Consumer>
+                {typeMatches => (
+                  <List
+                    shouldWrap
+                    items={TPU.iteratePokedexToList(
+                      pokedex,
+                      dexFilters,
+                      typeMatches
+                    )}
+                    itemTemplate={(item, i) => (
+                      <Sprite
+                        key={i}
+                        data={item}
+                        onClick={this.handleSpriteSelection}
+                      />
+                    )}
                   />
                 )}
-              />
+              </TypeContext.Consumer>
             </div>
           </div>
         )}

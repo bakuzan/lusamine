@@ -36,5 +36,8 @@ $theme-maps: (
         color: map-get($values, button--colour-hover);
       }
     }
+    .lusamine-multiselect-list {
+      background-color: $base-background;
+    }
   }
 }
