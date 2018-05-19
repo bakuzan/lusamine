@@ -24,8 +24,11 @@ function applyDexFilters(item, filters, typeMatches) {
     !generations.includes(item.generation) ||
     !item.types.some(x => types.includes(x.id)) ||
     !item.types.some(x => {
-      const { resists: resistsForType } = typeMatches.get(x.id);
-      return resists.some(r => resistsForType.includes(r));
+      const { resists: resistsForType, unaffectedBy } = typeMatches.get(x.id);
+      return (
+        resists.some(r => resistsForType.includes(r)) ||
+        resists.some(r => unaffectedBy.includes(r))
+      );
     })
   );
 }
