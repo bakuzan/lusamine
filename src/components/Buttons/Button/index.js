@@ -4,8 +4,15 @@ import React from 'react';
 import { Button as MButton } from 'meiko';
 import './index.css';
 
-export const Button = ({ className, ...props }) => (
-  <MButton className={classNames('lusamine-button', className)} {...props} />
+export const Button = ({ className, isAction, ...props }) => (
+  <MButton
+    className={classNames(
+      'lusamine-button',
+      { 'lusamine-button--action': isAction },
+      className
+    )}
+    {...props}
+  />
 );
 
 export const IconButton = ({ className, ...props }) => (

@@ -60,3 +60,16 @@ export const generationDefaults = getAllEnumValues(Generations);
 
 export const typeOptions = getEnumOptions(Types, k => capitalise(k));
 export const typeDefaults = getAllEnumValues(Types);
+
+export const selectRandomSetOfIds = dex => {
+  const pokemonIds = [...dex.keys()];
+  const randomTeam = new Set([]);
+  return Array(6)
+    .fill(null)
+    .reduce(team => {
+      const randomIndex = Math.floor(Math.random() * pokemonIds.length);
+      const selectedId = pokemonIds[randomIndex];
+      team.add(selectedId);
+      return team;
+    }, randomTeam);
+};

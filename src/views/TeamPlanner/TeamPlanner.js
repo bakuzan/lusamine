@@ -1,6 +1,7 @@
 import classNames from 'classnames';
 import React from 'react';
 
+import { Button } from 'components/Buttons';
 import Filters from 'components/Filters/Filters';
 import Team from 'components/Team/Team';
 import List from 'components/List/List';
@@ -39,6 +40,8 @@ class PlannerPage extends React.Component {
     this.handleTickboxFilter = this.handleTickboxFilter.bind(this);
     this.handleSpriteSelection = this.handleSpriteSelection.bind(this);
     this.handleMembersUpdate = this.handleMembersUpdate.bind(this);
+    this.handleClearTeam = this.handleClearTeam.bind(this);
+    this.handleRandomTeam = this.handleRandomTeam.bind(this);
   }
 
   componentDidUpdate(prevProps) {
@@ -54,7 +57,6 @@ class PlannerPage extends React.Component {
 
   updateTeamQueryString(memberIds, newId) {
     const idStr = createIdStringFromSet(memberIds, newId);
-    console.log(this.props.match);
     this.props.history.push(`${this.props.match.path}?team=${idStr}`);
   }
 
@@ -80,6 +82,17 @@ class PlannerPage extends React.Component {
 
   handleMembersUpdate(membersIds) {
     this.updateTeamQueryString(membersIds);
+  }
+
+  handleClearTeam() {
+    this.updateTeamQueryString(new Set([]));
+  }
+
+  handleRandomTeam(dex) {
+    return () => {
+      const randomSetOfIds = TPU.selectRandomSetOfIds(dex);
+      this.updateTeamQueryString(randomSetOfIds);
+    };
   }
 
   render() {
@@ -128,6 +141,14 @@ class PlannerPage extends React.Component {
               <Filters hiddenOn={Strings.small} {...filterProps} />
             </div>
             <div className="team-planner__container team-planner__container--width_80">
+              <div className="team-planner__button-actions">
+                <Button isAction onClick={this.handleRandomTeam(pokedex)}>
+                  Randomise
+                </Button>
+                <Button isAction onClick={this.handleClearTeam}>
+                  Clear team
+                </Button>
+              </div>
               <Team
                 members={TPU.selectMembersFromPokedex(
                   pokedex,

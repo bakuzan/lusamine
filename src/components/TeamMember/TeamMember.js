@@ -46,7 +46,8 @@ class TeamMember extends React.PureComponent {
       <li
         id={data.id}
         className={classNames('team-member', {
-          'team-member--selected': isSelected
+          'team-member--selected': isSelected,
+          'team-member--empty': !hasData
         })}
         onClick={memberClick}
         role="button"
@@ -56,7 +57,10 @@ class TeamMember extends React.PureComponent {
             <ClearButton title="Remove" onClick={() => remove(data.id)} />
           )}
         </div>
-        <ArtCard data={data} />
+        <ArtCard
+          className={classNames({ 'team-member__art': hasData })}
+          data={data}
+        />
         <div className={classNames('team-member__name-bubble')}>
           {capitaliseEachWord(data.name)}
         </div>

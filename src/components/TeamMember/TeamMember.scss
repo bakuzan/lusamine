@@ -14,9 +14,14 @@
   width: calc(100% / 6);
   padding: 5px;
   border: 2px solid transparent;
+  cursor: pointer;
 
   @include respond-to(xs) {
     width: calc(100% / 3);
+  }
+
+  &--empty {
+    cursor: default;
   }
 
   &--selected {
@@ -36,6 +41,7 @@
 
   &__types {
     display: flex;
+    height: $type--height;
   }
 
   &__order-container {
@@ -44,4 +50,8 @@
     @extend %member-container;
     padding: 5px 0;
   }
+}
+
+.team-member__art {
+  cursor: pointer;
 }

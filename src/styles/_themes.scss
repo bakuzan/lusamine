@@ -9,7 +9,8 @@ $theme-maps: (
       header-colour: $black,
       button--background: $lusamine--hair,
       button--colour-hover: $lusamine--eyes,
-      button--background-hover: $lusamine--dress-highlight
+      button--background-hover: $lusamine--dress-highlight,
+      button--action-border-colour: $lusamine--dress-highlight
     )
 );
 @each $theme-name, $values in $theme-maps {
@@ -35,6 +36,9 @@ $theme-maps: (
         );
         color: map-get($values, button--colour-hover);
       }
+    }
+    .lusamine-button--action {
+      border: 1px solid map-get($values, button--action-border-colour);
     }
     .lusamine-multiselect-list {
       background-color: $base-background;

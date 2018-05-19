@@ -11,7 +11,13 @@ class ArtCard extends React.PureComponent {
     const artCardClasses = buildSelectorsForArtCard(this.props.data);
     return (
       <div className={classNames('art-card', artCardClasses.types)}>
-        <div className={classNames('art-card__pokemon', artCardClasses.name)} />
+        <div
+          className={classNames(
+            'art-card__pokemon',
+            this.props.className,
+            artCardClasses.name
+          )}
+        />
       </div>
     );
   }

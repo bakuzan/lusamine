@@ -75,23 +75,21 @@ class Team extends React.PureComponent {
     const canReOrder = !!this.props.onMembersUpdate;
     console.log('TEAM', members);
     return (
-      <section>
-        <List
-          items={members}
-          itemTemplate={(item, i) => (
-            <TeamMember
-              key={item.id}
-              index={i}
-              partyEndIndex={lastMemberIndex}
-              data={item}
-              isSelected={this.state.selectedMemberId === item.id}
-              onClick={this.handleMemberSelect}
-              remove={canRemove && this.handleMemberRemove}
-              move={canReOrder && this.handleMemberMove}
-            />
-          )}
-        />
-      </section>
+      <List
+        items={members}
+        itemTemplate={(item, i) => (
+          <TeamMember
+            key={item.id}
+            index={i}
+            partyEndIndex={lastMemberIndex}
+            data={item}
+            isSelected={this.state.selectedMemberId === item.id}
+            onClick={this.handleMemberSelect}
+            remove={canRemove && this.handleMemberRemove}
+            move={canReOrder && this.handleMemberMove}
+          />
+        )}
+      />
     );
   }
 }
