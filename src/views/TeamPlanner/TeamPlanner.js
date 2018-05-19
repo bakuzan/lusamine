@@ -6,15 +6,18 @@ import Team from 'components/Team/Team';
 import List from 'components/List/List';
 import Sprite from 'components/Sprite/Sprite';
 import { PokedexContext, TypeContext } from 'context';
-import Strings from 'constants/strings';
+import Constants from 'constants/index';
 import {
   getUrlQueryStringAsObject,
   createSetFromIdString,
   createIdStringFromSet
 } from 'utils/common';
+import { getPartySizeAlertMessage } from 'utils/feedback';
 import * as TPU from './TeamPlannerUtils';
 
 import './TeamPlanner.css';
+
+const { Strings, Party } = Constants;
 
 class PlannerPage extends React.Component {
   constructor(props) {
@@ -68,6 +71,8 @@ class PlannerPage extends React.Component {
   }
 
   handleSpriteSelection(dataId) {
+    if (this.state.currentTeamIds.size === Party.MAX_SIZE)
+      return this.props.sendAlert(getPartySizeAlertMessage());
     console.log('CLICKED', dataId);
     this.updateTeamQueryString(this.state.currentTeamIds, dataId);
   }

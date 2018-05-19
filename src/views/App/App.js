@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import { Switch, Route } from 'react-router-dom';
 
 import HeaderBar from 'components/HeaderBar/HeaderBar';
+import AlertContainer from 'components/AlertContainer';
 import Footer from 'components/Footer/Footer';
 import TeamPlanner from 'views/TeamPlanner/TeamPlanner';
 import { PokedexContext, TypeContext } from 'context';
@@ -26,12 +27,21 @@ class App extends Component {
         <TypeContext.Provider value={this.state.typeMatchups}>
           <div className="app app--theme_default">
             <HeaderBar title="team planner" />
-            <main>
-              <Switch>
-                <Route path="/saved-teams" />
-                <Route path="/" component={TeamPlanner} />
-              </Switch>
-            </main>
+            <AlertContainer>
+              {triggerAlert => (
+                <main>
+                  <Switch>
+                    <Route path="/saved-teams" />
+                    <Route
+                      path="/"
+                      render={props => (
+                        <TeamPlanner {...props} sendAlert={triggerAlert} />
+                      )}
+                    />
+                  </Switch>
+                </main>
+              )}
+            </AlertContainer>
             <Footer />
           </div>
         </TypeContext.Provider>
