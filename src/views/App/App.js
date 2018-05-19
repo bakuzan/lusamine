@@ -18,7 +18,9 @@ class App extends Component {
   }
 
   render() {
+    const { match } = this.props;
     console.groupCollapsed('App');
+    console.log(this.props);
     console.log('pokedex', this.state.pokedex);
     console.log('types', this.state.typeMatchups);
     console.groupEnd();
@@ -31,9 +33,9 @@ class App extends Component {
               {triggerAlert => (
                 <main>
                   <Switch>
-                    <Route path="/saved-teams" />
+                    <Route path={`${match.url}/saved-teams`} />
                     <Route
-                      path="/"
+                      path={match.url}
                       render={props => (
                         <TeamPlanner {...props} sendAlert={triggerAlert} />
                       )}

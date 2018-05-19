@@ -54,6 +54,7 @@ class PlannerPage extends React.Component {
 
   updateTeamQueryString(memberIds, newId) {
     const idStr = createIdStringFromSet(memberIds, newId);
+    console.log(this.props.match);
     this.props.history.push(`${this.props.match.path}?team=${idStr}`);
   }
 
@@ -112,7 +113,7 @@ class PlannerPage extends React.Component {
         onChange: this.handleTickboxFilter
       }
     };
-    console.log(this.state);
+    console.log('Team planner state: ', this.state);
     return (
       <PokedexContext.Consumer>
         {pokedex => (
