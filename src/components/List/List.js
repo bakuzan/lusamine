@@ -7,17 +7,21 @@ import Strings from 'constants/strings';
 const List = props => {
   const hasItems = props.items.length > 0;
   return (
-    <div id={props.id} className={props.className}>
-      <ul className={classNames('list', { column: props.shouldWrap })}>
-        {!hasItems && <li key="NONE">{Strings.emptyList}</li>}
-        {hasItems && props.items.map(props.itemTemplate)}
-      </ul>
-    </div>
+    <ul
+      className={classNames('list', props.className, {
+        column: props.shouldWrap
+      })}
+    >
+      {!hasItems && <li key="NONE">{Strings.emptyList}</li>}
+      {hasItems && props.items.map(props.itemTemplate)}
+    </ul>
   );
 };
 
 List.propTypes = {
-  shouldWrap: PropTypes.bool
+  shouldWrap: PropTypes.bool,
+  items: PropTypes.arrayOf(PropTypes.object).isRequired,
+  itemTemplate: PropTypes.func.isRequired
 };
 
 export default List;

@@ -9,6 +9,7 @@
   &__container {
     display: flex;
     flex-direction: column;
+    max-width: 100%;
 
     &--width_20 {
       flex: 1 1 20%;
@@ -29,5 +30,8 @@
   &__button-actions {
     display: flex;
     justify-content: flex-end;
+  }
+  &__sprite-list {
+    justify-content: space-evenly;
   }
 }

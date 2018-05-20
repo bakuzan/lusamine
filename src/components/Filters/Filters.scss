@@ -1,6 +1,8 @@
 @import '../../styles/_mixins';
 
 .filters {
+  display: flex;
+  flex-flow: wrap;
   padding: 5px;
 
   &--hide-on_small {

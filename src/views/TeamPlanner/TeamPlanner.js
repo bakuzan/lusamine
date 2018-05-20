@@ -160,6 +160,7 @@ class PlannerPage extends React.Component {
               <TypeContext.Consumer>
                 {typeMatches => (
                   <List
+                    className="team-planner__sprite-list"
                     shouldWrap
                     items={TPU.iteratePokedexToList(
                       pokedex,

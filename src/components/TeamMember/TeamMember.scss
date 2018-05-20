@@ -1,6 +1,11 @@
 @import '../../styles/_mixins';
 @import '../../styles/_variables';
 
+$team-member--account-for-padding: $team-member--padding * 2;
+$team-member--account-for-border: $team-member--border-width * 2;
+$team-member--width-adjustment: $team-member--account-for-border +
+  $team-member--account-for-padding;
+
 %member-container {
   width: 100%;
   height: 1.5em;
@@ -11,13 +16,13 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: calc(100% / 6);
-  padding: 5px;
-  border: 2px solid transparent;
+  width: calc(100% / 6 - #{$team-member--width-adjustment});
+  padding: $team-member--padding;
+  border: $team-member--border-width solid transparent;
   cursor: pointer;
 
   @include respond-to(xs) {
-    width: calc(100% / 3);
+    width: calc(100% / 3 - #{$team-member--width-adjustment});
   }
 
   &--empty {

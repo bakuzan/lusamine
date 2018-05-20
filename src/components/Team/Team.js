@@ -1,4 +1,5 @@
 import PropTypes from 'prop-types';
+import classNames from 'classnames';
 import React from 'react';
 
 import List from 'components/List/List';
@@ -9,6 +10,8 @@ import {
   iterateKeysToArray,
   swapArrayPositions
 } from 'utils/common';
+
+import './Team.css';
 
 class Team extends React.PureComponent {
   constructor(props) {
@@ -76,6 +79,7 @@ class Team extends React.PureComponent {
     console.log('TEAM', members);
     return (
       <List
+        className={classNames('team')}
         items={members}
         itemTemplate={(item, i) => (
           <TeamMember
