@@ -3,6 +3,7 @@ import classNames from 'classnames';
 import React from 'react';
 
 import List from 'components/List/List';
+import TeamBreakdown from 'components/TeamBreakdown/TeamBreakdown';
 import TeamMember from 'components/TeamMember/TeamMember';
 import { generateEmptySlots } from 'utils/derived-data';
 import {
@@ -78,22 +79,25 @@ class Team extends React.PureComponent {
     const canReOrder = !!this.props.onMembersUpdate;
     console.log('TEAM', members);
     return (
-      <List
-        className={classNames('team')}
-        items={members}
-        itemTemplate={(item, i) => (
-          <TeamMember
-            key={item.id}
-            index={i}
-            partyEndIndex={lastMemberIndex}
-            data={item}
-            isSelected={this.state.selectedMemberId === item.id}
-            onClick={this.handleMemberSelect}
-            remove={canRemove && this.handleMemberRemove}
-            move={canReOrder && this.handleMemberMove}
-          />
-        )}
-      />
+      <div>
+        <List
+          className={classNames('team')}
+          items={members}
+          itemTemplate={(item, i) => (
+            <TeamMember
+              key={item.id}
+              index={i}
+              partyEndIndex={lastMemberIndex}
+              data={item}
+              isSelected={this.state.selectedMemberId === item.id}
+              onClick={this.handleMemberSelect}
+              remove={canRemove && this.handleMemberRemove}
+              move={canReOrder && this.handleMemberMove}
+            />
+          )}
+        />
+        <TeamBreakdown members={this.state.members} />
+      </div>
     );
   }
 }
