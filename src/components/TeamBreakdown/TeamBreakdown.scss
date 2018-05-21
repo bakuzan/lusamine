@@ -11,6 +11,10 @@
       display: none;
     }
   }
+  &__list,
+  &__item {
+    max-width: calc(100% - 10px);
+  }
 }
 
 .team-breakdown__action {

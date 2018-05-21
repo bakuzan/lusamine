@@ -8,5 +8,10 @@ export default {
     mega: 'm',
     variant: 'v',
     empty: 'e'
+  },
+  typeBreakdown: {
+    weakTo: 'weakTo',
+    resists: 'resists',
+    unaffectedBy: 'unaffectedBy'
   }
 };

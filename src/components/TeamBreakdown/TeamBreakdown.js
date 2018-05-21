@@ -5,7 +5,9 @@ import React from 'react';
 import { TypeContext } from 'context';
 import { Button } from 'components/Buttons';
 import List from 'components/List/List';
+import TeamBreakdownPanel from 'components/TeamBreakdownPanel/TeamBreakdownPanel';
 import * as TBU from './TeamBreakdownUtils';
+import { capitaliseEachWord } from 'utils/common';
 
 import './TeamBreakdown.css';
 
@@ -47,10 +49,18 @@ class TeamBreakdown extends React.Component {
               })}
             >
               <List
+                shouldWrap
+                className={classNames('team-breakdown__list')}
                 items={TBU.buildTeamWeaknessCounts(types, members)}
-                itemTemplate={item => {
-                  return <li key={item.id}>{JSON.stringify(item)}</li>;
-                }}
+                itemTemplate={item => (
+                  <li
+                    key={item.key}
+                    className={classNames('team-breakdown__item')}
+                  >
+                    <div>{capitaliseEachWord(item.key)}</div>
+                    <TeamBreakdownPanel types={types} data={item.counts} />
+                  </li>
+                )}
               />
             </div>
           </div>
