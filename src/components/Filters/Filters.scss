@@ -20,5 +20,9 @@
     @include respond-to(md) {
       display: none;
     }
+
+    .filters__input {
+      flex-basis: 50%;
+    }
   }
 }

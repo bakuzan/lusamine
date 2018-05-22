@@ -15,11 +15,26 @@
   &__item {
     max-width: calc(100% - 10px);
   }
+  &__item {
+    border: 1px solid transparent;
+    margin: 0.5em 0;
+  }
 }
 
 .team-breakdown__action {
   &--hide {
     visibility: hidden;
     pointer-events: none;
+  }
+}
+
+.breakdown-item-title {
+  display: flex;
+  flex: 1;
+  margin-top: -10px;
+
+  &__text {
+    background-color: transparent;
+    padding: 0 5px;
   }
 }

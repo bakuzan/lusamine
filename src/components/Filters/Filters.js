@@ -8,6 +8,8 @@ import Strings from 'constants/strings';
 
 import './Filters.css';
 
+const FILTERS_INPUT_CLASS = 'filters__input';
+
 const Filters = props => {
   const hideOnCertainScreens = !!props.hiddenOn;
   return (
@@ -16,13 +18,17 @@ const Filters = props => {
         [`filters--hide-on_${props.hiddenOn}`]: hideOnCertainScreens
       })}
     >
-      <ClearableInput {...props.searchProps} />
+      <ClearableInput
+        {...props.searchProps}
+        className={classNames(FILTERS_INPUT_CLASS)}
+      />
       <MultiSelect
         id="generations"
         name="generations"
         placeholder="Select generation(s)"
         label="Generation"
         {...props.generationProps}
+        className={classNames(FILTERS_INPUT_CLASS)}
       />
       <MultiSelect
         id="types"
@@ -30,6 +36,7 @@ const Filters = props => {
         placeholder="Select type(s)"
         label="Type"
         {...props.typeProps}
+        className={classNames(FILTERS_INPUT_CLASS)}
       />
       <MultiSelect
         id="resists"
@@ -37,16 +44,19 @@ const Filters = props => {
         placeholder="Select resistance(s)"
         label="Resists"
         {...props.resistsProps}
+        className={classNames(FILTERS_INPUT_CLASS)}
       />
       <Tickbox
         name="includeMega"
         text="Include Megas"
         {...props.includeMegaProps}
+        className={classNames(FILTERS_INPUT_CLASS)}
       />
       <Tickbox
         name="includeVariants"
         text="Include variants"
         {...props.includeVariantsProps}
+        className={classNames(FILTERS_INPUT_CLASS)}
       />
     </section>
   );

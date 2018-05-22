@@ -48,7 +48,6 @@ class PlannerPage extends React.Component {
     const queryObject = getUrlQueryStringAsObject(this.props.location);
     const currentIds = createIdStringFromSet(this.state.currentTeamIds);
     if ((currentIds || queryObject.team) && queryObject.team !== currentIds) {
-      console.log('UPDATED', 'qo:', queryObject, 'ids: ', currentIds);
       this.setState({
         currentTeamIds: createSetFromIdString(queryObject.team)
       });
@@ -76,7 +75,7 @@ class PlannerPage extends React.Component {
   handleSpriteSelection(dataId) {
     if (this.state.currentTeamIds.size === Party.MAX_SIZE)
       return this.props.sendAlert(getPartySizeAlertMessage());
-    console.log('CLICKED', dataId);
+
     this.updateTeamQueryString(this.state.currentTeamIds, dataId);
   }
 
@@ -126,7 +125,7 @@ class PlannerPage extends React.Component {
         onChange: this.handleTickboxFilter
       }
     };
-    console.log('Team planner state: ', this.state);
+
     return (
       <PokedexContext.Consumer>
         {pokedex => (

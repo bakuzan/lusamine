@@ -1,5 +1,22 @@
+@import '../../styles/_mixins';
+
+@mixin create-rows($n) {
+  width: calc(100% / (18 /#{$n}));
+}
+
 .breakdown-panel {
   &__item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    @include create-rows(2);
+
+    @include respond-to(sm) {
+      @include create-rows(3);
+    }
+    @include respond-to(xs) {
+      @include create-rows(4);
+    }
   }
   &__count {
     text-align: center;

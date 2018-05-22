@@ -30,7 +30,6 @@ export function buildTeamWeaknessCounts(types, members) {
     types,
     memberTypeIds
   );
-  console.log('TBU', weakCounts, resistCounts, unaffectedCounts);
   return [
     { key: Strings.typeBreakdown.weakTo, counts: weakCounts },
     { key: Strings.typeBreakdown.resists, counts: resistCounts },

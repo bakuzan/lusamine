@@ -34,6 +34,7 @@ class TeamBreakdown extends React.Component {
         {types => (
           <div className={classNames('team-breakdown')}>
             <Button
+              isAction
               className={classNames('team-breakdown__action', {
                 'team-breakdown__action--hide': noMembers
               })}
@@ -57,7 +58,11 @@ class TeamBreakdown extends React.Component {
                     key={item.key}
                     className={classNames('team-breakdown__item')}
                   >
-                    <div>{capitaliseEachWord(item.key)}</div>
+                    <div className={classNames('breakdown-item-title')}>
+                      <div className={classNames('breakdown-item-title__text')}>
+                        {capitaliseEachWord(item.key)}
+                      </div>
+                    </div>
                     <TeamBreakdownPanel types={types} data={item.counts} />
                   </li>
                 )}

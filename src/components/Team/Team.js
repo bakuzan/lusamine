@@ -77,7 +77,7 @@ class Team extends React.PureComponent {
     const members = this.padPartyToSixMembers(this.state.members);
     const canRemove = !!this.props.onMembersUpdate;
     const canReOrder = !!this.props.onMembersUpdate;
-    console.log('TEAM', members);
+
     return (
       <div>
         <List

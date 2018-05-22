@@ -10,7 +10,8 @@ $theme-maps: (
       button--background: $lusamine--hair,
       button--colour-hover: $lusamine--eyes,
       button--background-hover: $lusamine--dress-highlight,
-      button--action-border-colour: $lusamine--dress-highlight
+      button--action-border-colour: $lusamine--dress-highlight,
+      team-breakdown-item--border-colour: $lusamine--eyes
     )
 );
 @each $theme-name, $values in $theme-maps {
@@ -22,6 +23,12 @@ $theme-maps: (
     &.app {
       background-color: $base-background;
       color: $base-colour;
+    }
+    .team-breakdown__item {
+      border-color: map-get($values, team-breakdown-item--border-colour);
+    }
+    .breakdown-item-title__text {
+      background-color: $base-background;
     }
     .header-bar {
       background-color: $header-background;
