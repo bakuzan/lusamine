@@ -5,6 +5,8 @@ import HeaderBar from 'components/HeaderBar/HeaderBar';
 import AlertContainer from 'components/AlertContainer';
 import Footer from 'components/Footer/Footer';
 import TeamPlanner from 'views/TeamPlanner/TeamPlanner';
+import TeamViewer from 'views/TeamViewer/TeamViewer';
+import Routes from 'constants/routes';
 import { PokedexContext, TypeContext } from 'context';
 import { constructPokedex, getTypeMatchups } from 'data';
 
@@ -33,7 +35,10 @@ class App extends Component {
               {triggerAlert => (
                 <main>
                   <Switch>
-                    <Route path={`${match.url}/saved-teams`} />
+                    <Route
+                      path={`${match.url}${Routes.savedTeams}`}
+                      component={TeamViewer}
+                    />
                     <Route
                       path={match.url}
                       render={props => (

@@ -4,6 +4,7 @@ import Evolutions from './evolutions';
 import Strings from './strings';
 import Generations from './generations';
 import Party from './party';
+import Routes from './routes';
 
 export default {
   Types,
@@ -11,5 +12,6 @@ export default {
   Evolutions,
   Strings,
   Generations,
-  Party
+  Party,
+  Routes
 };

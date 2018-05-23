@@ -3,12 +3,14 @@ import PropTypes from 'prop-types';
 import React from 'react';
 
 import { Header, Image, Utils } from 'meiko';
+import { ButtonisedNavLink } from 'components/Buttons';
 import Logo from 'assets/logo.png';
+import Routes from 'constants/routes';
 import { getWindowScrollPosition } from 'utils/common';
 
 import './HeaderBar.css';
 
-class HeaderBar extends React.PureComponent {
+class HeaderBar extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -31,6 +33,7 @@ class HeaderBar extends React.PureComponent {
   }
 
   render() {
+    const savedTeamsUrl = `${Routes.base}${Routes.savedTeams}`;
     const isPageScrolled = !!this.state.windowScrollPosition;
     const headerClasses = classNames('header-bar', {
       'header-bar--page-scrolled': isPageScrolled
@@ -38,10 +41,21 @@ class HeaderBar extends React.PureComponent {
 
     return (
       <Header
+        id="lusamine-header"
         className={headerClasses}
         leftAlignTitle
         title={this.props.title}
         navLeft={<Image className="logo" alt="Pokémon Logo" src={Logo} />}
+        navRight={
+          <React.Fragment>
+            <ButtonisedNavLink key="PLANNER" exact to={Routes.base}>
+              Team Planner
+            </ButtonisedNavLink>
+            <ButtonisedNavLink key="SAVED" to={savedTeamsUrl}>
+              Saved Teams
+            </ButtonisedNavLink>
+          </React.Fragment>
+        }
       />
     );
   }

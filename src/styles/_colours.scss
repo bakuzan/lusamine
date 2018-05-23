@@ -1,3 +1,5 @@
+$darken-amount: 5%;
+
 // Generic Colours
 $black: #000;
 
@@ -8,6 +10,11 @@ $lusamine--dress: #fff;
 $lusamine--dress-highlight: #e3d974;
 $lusamine--eyes: #76a165;
 $lusamine--hair: #f9f6c4;
+
+$primary-background: $lusamine--hair;
+$primary-colour-contrast: $lusamine--eyes;
+$accent-background: $lusamine--dress-highlight;
+$accent-colour-contrast: lighten($lusamine--eyes, $darken-amount);
 
 $types: (
   'fighting': #d67873,

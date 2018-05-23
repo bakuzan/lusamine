@@ -1,6 +1,9 @@
 import { Utils } from 'meiko';
+import Strings from 'constants/strings';
 
 const { Common } = Utils;
+
+export const generateUniqueId = Common.generateUniqueId();
 
 export const getWindowScrollPosition = () =>
   window.scrollY || window.pageYOffset || document.documentElement.scrollTop;
@@ -42,3 +45,10 @@ export const swapArrayPositions = (arr, from, to) => {
   list[to] = fromValue;
   return list;
 };
+
+export const getSavedTeams = () =>
+  Common.getObjectFromLocalStorageByProperty(Strings.savedTeamsStorage);
+
+export const saveTeams = Common.persistObjectToLocalStorage(
+  Strings.savedTeamsStorage
+);

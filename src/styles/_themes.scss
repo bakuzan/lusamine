@@ -1,3 +1,4 @@
+@import '../../node_modules/meiko/dist/templates/_header-links-template';
 @import './_variables.scss';
 
 $theme-maps: (
@@ -11,7 +12,8 @@ $theme-maps: (
       button--colour-hover: $lusamine--eyes,
       button--background-hover: $lusamine--dress-highlight,
       button--action-border-colour: $lusamine--dress-highlight,
-      team-breakdown-item--border-colour: $lusamine--eyes
+      team-breakdown-item--border-colour: $lusamine--eyes,
+      button-link--colour: $lusamine--eyes
     )
 );
 @each $theme-name, $values in $theme-maps {
@@ -19,6 +21,7 @@ $theme-maps: (
   $base-colour: map-get($values, base-colour);
   $header-background: map-get($values, header-background);
   $header-colour: map-get($values, header-colour);
+  $button-link--colour: map-get($values, button-link--colour);
   .app--theme_#{$theme-name} {
     &.app {
       background-color: $base-background;
@@ -33,6 +36,7 @@ $theme-maps: (
     .header-bar {
       background-color: $header-background;
       color: $header-colour;
+      @include applicationHeaderLinks;
     }
     .lusamine-button {
       background-color: map-get($values, button--background);
@@ -42,6 +46,12 @@ $theme-maps: (
           $button--darken-percentage
         );
         color: map-get($values, button--colour-hover);
+      }
+    }
+    .lusamine-button-link {
+      color: $button-link--colour;
+      &:hover {
+        color: darken($button-link--colour, $button--darken-percentage);
       }
     }
     .lusamine-button--action {

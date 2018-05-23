@@ -11,7 +11,9 @@ import Constants from 'constants/index';
 import {
   getUrlQueryStringAsObject,
   createSetFromIdString,
-  createIdStringFromSet
+  createIdStringFromSet,
+  saveTeams,
+  generateUniqueId
 } from 'utils/common';
 import { getPartySizeAlertMessage } from 'utils/feedback';
 import * as TPU from './TeamPlannerUtils';
@@ -94,6 +96,13 @@ class PlannerPage extends React.Component {
     };
   }
 
+  handleSaveTeam() {
+    if (this.state.currentTeamIds.size === 0) return;
+    saveTeams({
+      [generateUniqueId()]: createIdStringFromSet(this.state.currentTeamIds)
+    });
+  }
+
   render() {
     const dexFilters = { ...this.state };
     const filterProps = {
@@ -143,6 +152,9 @@ class PlannerPage extends React.Component {
               <div className="team-planner__button-actions">
                 <Button isAction onClick={this.handleRandomTeam(pokedex)}>
                   Randomise
+                </Button>
+                <Button isAction onClick={this.handleSaveTeam}>
+                  Save team
                 </Button>
                 <Button isAction onClick={this.handleClearTeam}>
                   Clear team

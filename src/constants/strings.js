@@ -13,5 +13,6 @@ export default {
     weakTo: 'weakTo',
     resists: 'resists',
     unaffectedBy: 'unaffectedBy'
-  }
+  },
+  savedTeamsStorage: 'savedTeams'
 };
