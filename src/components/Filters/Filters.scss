@@ -12,6 +12,10 @@
     @include respond-to(xs) {
       display: none;
     }
+
+    .filters__input {
+      flex-basis: 100%;
+    }
   }
   &--hide-on_large {
     @include respond-to(lg) {

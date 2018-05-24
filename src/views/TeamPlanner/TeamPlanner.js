@@ -44,6 +44,7 @@ class PlannerPage extends React.Component {
     this.handleMembersUpdate = this.handleMembersUpdate.bind(this);
     this.handleClearTeam = this.handleClearTeam.bind(this);
     this.handleRandomTeam = this.handleRandomTeam.bind(this);
+    this.handleSaveTeam = this.handleSaveTeam.bind(this);
   }
 
   componentDidUpdate(prevProps) {
@@ -98,9 +99,11 @@ class PlannerPage extends React.Component {
 
   handleSaveTeam() {
     if (this.state.currentTeamIds.size === 0) return;
-    saveTeams({
-      [generateUniqueId()]: createIdStringFromSet(this.state.currentTeamIds)
-    });
+    const teamId = generateUniqueId();
+    const saveTeamData = {
+      [teamId]: createIdStringFromSet(this.state.currentTeamIds)
+    };
+    saveTeams(saveTeamData);
   }
 
   render() {
@@ -134,7 +137,7 @@ class PlannerPage extends React.Component {
         onChange: this.handleTickboxFilter
       }
     };
-
+    console.log(this.state);
     return (
       <PokedexContext.Consumer>
         {pokedex => (

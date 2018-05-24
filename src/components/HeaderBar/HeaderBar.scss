@@ -1,7 +1,13 @@
 @import '../../styles/_variables';
 
-.header-bar--page-scrolled {
-  box-shadow: 0px 2px 5px 1px $header--box-shadow-colour;
+.header-bar {
+  &--page-scrolled {
+    box-shadow: 0px 2px 5px 1px $header--box-shadow-colour;
+  }
+
+  & > div:last-child {
+    display: flex;
+  }
 }
 
 .logo {

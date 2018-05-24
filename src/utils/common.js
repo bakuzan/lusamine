@@ -3,7 +3,7 @@ import Strings from 'constants/strings';
 
 const { Common } = Utils;
 
-export const generateUniqueId = Common.generateUniqueId();
+export const generateUniqueId = Common.generateUniqueId;
 
 export const getWindowScrollPosition = () =>
   window.scrollY || window.pageYOffset || document.documentElement.scrollTop;
@@ -27,7 +27,8 @@ export const getUrlQueryStringAsObject = location => {
 };
 
 export function createIdStringFromSet(idSet, newValue) {
-  const values = newValue ? [...idSet, newValue] : [...idSet];
+  const ids = [...idSet];
+  const values = newValue ? [...ids, newValue] : ids;
   return Array.from(new Set(values)).join(',');
 }
 

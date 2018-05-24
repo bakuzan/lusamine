@@ -1,0 +1,12 @@
+.no-data-message {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 50%;
+  margin: 0 auto;
+  margin-top: 10%;
+
+  &__text {
+    padding: 10px;
+  }
+}

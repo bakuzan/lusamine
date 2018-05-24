@@ -20,12 +20,13 @@ class TeamViewer extends React.Component {
   }
 
   render() {
-    console.log(this.state);
+    const { savedTeams } = this.state;
+    if (this.state.loadedTeams && !savedTeams) return <TeamViewerMessage />;
 
-    if (this.state.loadedTeams && !this.state.savedTeams)
-      return <TeamViewerMessage />;
+    const teams = Object.keys(savedTeams).map(k => savedTeams[k].split(','));
 
-    return <div className="team-viewer">saved team page</div>;
+    console.log('render viewer > ', teams, savedTeams);
+    return <div className="team-viewer" />;
   }
 }
 
