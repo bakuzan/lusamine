@@ -77,6 +77,8 @@ class Team extends React.PureComponent {
     const members = this.padPartyToSixMembers(this.state.members);
     const canRemove = !!this.props.onMembersUpdate;
     const canReOrder = !!this.props.onMembersUpdate;
+    const removeMember = canRemove ? this.handleMemberRemove : null;
+    const moveMember = canReOrder ? this.handleMemberMove : null;
 
     return (
       <div>
@@ -91,8 +93,8 @@ class Team extends React.PureComponent {
               data={item}
               isSelected={this.state.selectedMemberId === item.id}
               onClick={this.handleMemberSelect}
-              remove={canRemove && this.handleMemberRemove}
-              move={canReOrder && this.handleMemberMove}
+              remove={removeMember}
+              move={moveMember}
             />
           )}
         />

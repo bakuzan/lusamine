@@ -53,3 +53,13 @@ export const getSavedTeams = () =>
 export const saveTeams = Common.persistObjectToLocalStorage(
   Strings.savedTeamsStorage
 );
+
+export const replaceTeams = teams => {
+  const data = JSON.stringify(teams);
+  localStorage.setItem(Strings.savedTeamsStorage, data);
+  return teams;
+};
+
+export function selectMembersFromPokedex(dex, memberIds) {
+  return new Map(Array.from(memberIds).map(id => [id, dex.get(id)]));
+}

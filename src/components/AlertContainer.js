@@ -38,7 +38,11 @@ class AlertContainer extends React.Component {
     };
     return (
       <React.Fragment>
-        <Alert alerts={this.state.alerts} actions={actions} />
+        <Alert
+          messageClassName="lusamine-alert"
+          alerts={this.state.alerts}
+          actions={actions}
+        />
         {this.props.children(this.handleTriggeredAlert)}
       </React.Fragment>
     );

@@ -1,0 +1,16 @@
+.team-viewer {
+  padding: 10px;
+
+  &__team {
+    display: flex;
+    flex-direction: column;
+    padding: 5px;
+    border: 1px solid transparent;
+  }
+}
+
+.saved-team__actions {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}

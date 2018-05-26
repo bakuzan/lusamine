@@ -23,11 +23,13 @@ $theme-maps: (
   $header-colour: map-get($values, header-colour);
   $button-link--colour: map-get($values, button-link--colour);
   .app--theme_#{$theme-name} {
-    &.app {
+    &.app,
+    .lusamine-alert {
       background-color: $base-background;
       color: $base-colour;
     }
-    .team-breakdown__item {
+    .team-breakdown__item,
+    .saved-team {
       border-color: map-get($values, team-breakdown-item--border-colour);
     }
     .breakdown-item-title__text {
@@ -48,6 +50,7 @@ $theme-maps: (
         color: map-get($values, button--colour-hover);
       }
     }
+
     .lusamine-button-link {
       color: $button-link--colour;
       &:hover {

@@ -13,7 +13,8 @@ import {
   createSetFromIdString,
   createIdStringFromSet,
   saveTeams,
-  generateUniqueId
+  generateUniqueId,
+  selectMembersFromPokedex
 } from 'utils/common';
 import { getPartySizeAlertMessage } from 'utils/feedback';
 import * as TPU from './TeamPlannerUtils';
@@ -164,7 +165,7 @@ class PlannerPage extends React.Component {
                 </Button>
               </div>
               <Team
-                members={TPU.selectMembersFromPokedex(
+                members={selectMembersFromPokedex(
                   pokedex,
                   this.state.currentTeamIds
                 )}

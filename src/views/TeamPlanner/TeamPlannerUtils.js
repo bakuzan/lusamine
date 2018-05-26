@@ -40,10 +40,6 @@ export function iteratePokedexToList(dex, filters, typeMatches) {
   }, []);
 }
 
-export function selectMembersFromPokedex(dex, memberIds) {
-  return new Map(Array.from(memberIds).map(id => [id, dex.get(id)]));
-}
-
 const getAllEnumValues = obj => Object.keys(obj).map(k => obj[k]);
 
 const getEnumOptions = (obj, fn) =>
