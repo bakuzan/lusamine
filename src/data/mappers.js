@@ -5,11 +5,14 @@ import { getGeneration } from 'utils/derived-data';
 
 const { getKeyByValue } = Utils.Common;
 
-function mapTypesToPokemon(types) {
-  return types.map(t => ({
-    id: t.id,
-    name: t.name
-  }));
+function mapTypesToPokemon(typeIds, types) {
+  return typeIds.map(id => {
+    const type = types.find(x => x.id === id);
+    return {
+      id: type.id,
+      name: type.name
+    };
+  });
 }
 
 function mapEvolutionsToPokemon(evolutions) {
@@ -24,7 +27,7 @@ export function mapPokemonData(id, data, types, evolutions) {
     id,
     nationalPokedexNumber: data.nationalPokedexNumber,
     name: data.name,
-    types: mapTypesToPokemon(types),
+    types: mapTypesToPokemon(data.typeIds, types),
     evolutions: mapEvolutionsToPokemon(evolutions),
     generation: getGeneration(data.nationalPokedexNumber)
   };
@@ -36,7 +39,7 @@ export function mapMegaPokemonData(id, data, types, basePokemon) {
     id,
     nationalPokedexNumber: data.nationalPokedexNumber,
     name: `mega ${basePokemon.name}${suffix}`,
-    types: mapTypesToPokemon(types),
+    types: mapTypesToPokemon(data.typeIds, types),
     evolutions: [],
     generation: getGeneration(data.nationalPokedexNumber)
   };
@@ -54,7 +57,7 @@ export function mapVariantsPokemonData(
     id,
     nationalPokedexNumber: data.nationalPokedexNumber,
     name: `${regionName} ${basePokemon.name}`,
-    types: mapTypesToPokemon(types),
+    types: mapTypesToPokemon(data.typeIds, types),
     evolutions: mapEvolutionsToPokemon(evolutions),
     generation: getGeneration(data.nationalPokedexNumber)
   };
