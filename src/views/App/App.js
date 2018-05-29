@@ -20,7 +20,7 @@ class App extends Component {
   }
 
   render() {
-    const { match } = this.props;
+    const { match, location } = this.props;
     console.groupCollapsed('App');
     console.log(this.props);
     console.log('pokedex', this.state.pokedex);
@@ -30,7 +30,7 @@ class App extends Component {
       <PokedexContext.Provider value={this.state.pokedex}>
         <TypeContext.Provider value={this.state.typeMatchups}>
           <div className="app app--theme_default">
-            <HeaderBar title="team planner" />
+            <HeaderBar currentPath={location.pathname} />
             <AlertContainer>
               {triggerAlert => (
                 <main>

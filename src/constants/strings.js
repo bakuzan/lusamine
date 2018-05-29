@@ -14,5 +14,9 @@ export default {
     resists: 'resists',
     unaffectedBy: 'unaffectedBy'
   },
-  savedTeamsStorage: 'savedTeams'
+  savedTeamsStorage: 'savedTeams',
+  pageTitle: {
+    planner: 'team planner',
+    savedTeams: 'saved teams'
+  }
 };

@@ -5,10 +5,18 @@ import React from 'react';
 import { Header, Image, Utils } from 'meiko';
 import { ButtonisedNavLink } from 'components/Buttons';
 import Logo from 'assets/logo.png';
+import Strings from 'constants/strings';
 import Routes from 'constants/routes';
 import { getWindowScrollPosition } from 'utils/common';
 
 import './HeaderBar.css';
+
+const PLANNER = 'planner';
+const SAVED_TEAMS = 'saved-teams';
+const getPageTitleForCurrentPath = path =>
+  path.includes(SAVED_TEAMS)
+    ? Strings.pageTitle.savedTeams
+    : Strings.pageTitle.planner;
 
 class HeaderBar extends React.Component {
   constructor(props) {
@@ -38,20 +46,21 @@ class HeaderBar extends React.Component {
     const headerClasses = classNames('header-bar', {
       'header-bar--page-scrolled': isPageScrolled
     });
+    const pageTitle = getPageTitleForCurrentPath(this.props.currentPath);
 
     return (
       <Header
         id="lusamine-header"
         className={headerClasses}
         leftAlignTitle
-        title={this.props.title}
+        title={pageTitle}
         navLeft={<Image className="logo" alt="Pokémon Logo" src={Logo} />}
         navRight={
           <React.Fragment>
-            <ButtonisedNavLink key="PLANNER" exact to={Routes.base}>
+            <ButtonisedNavLink key={PLANNER} exact to={Routes.base}>
               Team Planner
             </ButtonisedNavLink>
-            <ButtonisedNavLink key="SAVED" to={savedTeamsUrl}>
+            <ButtonisedNavLink key={SAVED_TEAMS} to={savedTeamsUrl}>
               Saved Teams
             </ButtonisedNavLink>
           </React.Fragment>
@@ -62,7 +71,7 @@ class HeaderBar extends React.Component {
 }
 
 HeaderBar.propTypes = {
-  title: PropTypes.string
+  currentPath: PropTypes.string.isRequired
 };
 
 export default HeaderBar;
