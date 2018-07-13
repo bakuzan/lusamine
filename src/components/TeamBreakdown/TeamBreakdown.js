@@ -63,7 +63,11 @@ class TeamBreakdown extends React.Component {
                         {capitaliseEachWord(item.key)}
                       </div>
                     </div>
-                    <TeamBreakdownPanel types={types} data={item.counts} />
+                    <TeamBreakdownPanel
+                      panelModifier={item.goodCountModifier}
+                      types={types}
+                      data={item.counts}
+                    />
                   </li>
                 )}
               />

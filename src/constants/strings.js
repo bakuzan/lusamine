@@ -18,5 +18,11 @@ export default {
   pageTitle: {
     planner: 'team planner',
     savedTeams: 'saved teams'
+  },
+  scoreModifier: {
+    none: 'none',
+    low: 'low',
+    medium: 'medium',
+    high: 'high'
   }
 };

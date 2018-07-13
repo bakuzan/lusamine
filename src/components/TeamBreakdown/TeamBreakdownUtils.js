@@ -31,8 +31,20 @@ export function buildTeamWeaknessCounts(types, members) {
     memberTypeIds
   );
   return [
-    { key: Strings.typeBreakdown.weakTo, counts: weakCounts },
-    { key: Strings.typeBreakdown.resists, counts: resistCounts },
-    { key: Strings.typeBreakdown.unaffectedBy, counts: unaffectedCounts }
+    {
+      key: Strings.typeBreakdown.weakTo,
+      counts: weakCounts,
+      goodCountModifier: Strings.scoreModifier.none
+    },
+    {
+      key: Strings.typeBreakdown.resists,
+      counts: resistCounts,
+      goodCountModifier: Strings.scoreModifier.high
+    },
+    {
+      key: Strings.typeBreakdown.unaffectedBy,
+      counts: unaffectedCounts,
+      goodCountModifier: Strings.scoreModifier.high
+    }
   ];
 }

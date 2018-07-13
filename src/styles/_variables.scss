@@ -27,6 +27,11 @@ $art-card--column-offset: -96px;
 $art-card--height: abs($art-card--row-offset);
 $art-card--width: abs($art-card--column-offset);
 
+$breakdown-indicator-colours: (
+  none: (none: $green, low: $yellow, medium: $orange, high: $red),
+  high: (none: $grey, low: $yellow, medium: $blue, high: $green)
+);
+
 $button--darken-percentage: 10%;
 
 $empty: (empty);

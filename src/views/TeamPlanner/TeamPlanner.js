@@ -51,6 +51,7 @@ class PlannerPage extends React.Component {
   componentDidUpdate(prevProps) {
     const queryObject = getUrlQueryStringAsObject(this.props.location);
     const currentIds = createIdStringFromSet(this.state.currentTeamIds);
+
     if ((currentIds || queryObject.team) && queryObject.team !== currentIds) {
       this.setState({
         currentTeamIds: createSetFromIdString(queryObject.team)
@@ -138,7 +139,7 @@ class PlannerPage extends React.Component {
         onChange: this.handleTickboxFilter
       }
     };
-    console.log(this.state);
+
     return (
       <PokedexContext.Consumer>
         {pokedex => (
