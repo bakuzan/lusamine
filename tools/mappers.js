@@ -11,9 +11,18 @@ const fixNPNStringToInt = (str = '') => Number(str.replace(/\D/g, ''));
 
 const processTdNPN = td => fixNPNStringToInt(td.text() || '');
 
-const getNPNFromHref = td => {
-  const aHref = td.children('a').attr('href');
-  return fixNPNStringToInt(aHref);
+const getNPNFromImg = td => {
+  const el = td
+    .children()
+    .first()
+    .children()
+    .first();
+  const src = el.attr('src');
+  if (!src) {
+    return Number(0);
+  }
+  const strNum = src.replace(/^.*\/|\D/g, '');
+  return Number(strNum);
 };
 
 const processTdTypes = tds =>
@@ -58,8 +67,8 @@ function mapElementsToVariantPokemonJson(tdNPN, regionId, tdTypes) {
 
 function mapElementsToEvolutionJson(rawData) {
   return rawData.map(r => {
-    const fromNPN = getNPNFromHref(r.from);
-    const toNPN = getNPNFromHref(r.to);
+    const fromNPN = getNPNFromImg(r.from);
+    const toNPN = getNPNFromImg(r.to);
 
     return {
       nationalPokedexNumber: fromNPN,
@@ -70,9 +79,7 @@ function mapElementsToEvolutionJson(rawData) {
 }
 
 function mapElementsToMegaJson(tdData, tdTypes) {
-  const aHref = getNPNFromHref(tdData)
-    .children('a')
-    .attr('href');
+  const aHref = tdData.children('a').attr('href');
   const nationalPokedexNumber = fixNPNStringToInt(aHref);
   const strMatch = aHref.match(/_\w./g);
   const suffix = strMatch ? strMatch[0].split('')[1].toLowerCase() : '';

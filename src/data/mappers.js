@@ -16,10 +16,15 @@ function mapTypesToPokemon(typeIds, types) {
 }
 
 function mapEvolutionsToPokemon(evolutions) {
-  return evolutions.map(e => ({
-    evolvesTo: e.evolvesTo,
-    mechanism: e.mechanism
-  }));
+  return evolutions
+    .map(e => ({
+      evolvesTo: e.evolvesTo,
+      mechanism: e.mechanism
+    }))
+    .filter((o, i, arr) => {
+      const index = arr.findIndex(x => x.evolvesTo === o.evolvesTo);
+      return index === i;
+    });
 }
 
 export function mapPokemonData(id, data, types, evolutions) {

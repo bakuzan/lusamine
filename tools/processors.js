@@ -1,5 +1,4 @@
 const path = require('path');
-const cheerio = require('cheerio');
 const Mappers = require('./mappers');
 const Enums = require('./enums');
 
@@ -23,8 +22,8 @@ function pokedexProcessor($) {
     )
     .reduce(function(result, data) {
       return Array.from(data.children).reduce((acc, tr) => {
-        const $row = cheerio.load(tr);
-        const children = $row('td');
+        const children = $('td', tr);
+
         if (!children) return acc;
 
         const isVariant =
@@ -64,15 +63,19 @@ function pokedexProcessor($) {
 
 function evolutionProcessor($) {
   const evolutions = Array.from($('table.roundy > tbody'))
-    .slice(0, 2)
+    .slice(0, Enums.GENERATION_COUNT)
     .reduce(function(result, data) {
       return Array.from(data.children).reduce((acc, tr, i, trs) => {
-        const $prevRow = i !== 0 ? cherrio.load(trs[i - 1]) : null;
-        const prevChildren = $prevRow('td');
+        const prevChildren = i !== 0 ? $('td', trs[i - 1]) : null;
 
-        const $row = cheerio.load(tr);
-        const children = $row('td');
+        const children = $('td', tr);
+
         if (!children || children.length === 0) return acc;
+
+        const ignore =
+          (children.length === 3 && children.eq(2).attr('colspan') === '6') ||
+          (children.length === 4 && children.eq(3).attr('colspan') === '5');
+        if (ignore) return acc;
 
         const isSecondRow = children.length < 5;
         const isSingleEvo = children.length < 8;
@@ -80,28 +83,28 @@ function evolutionProcessor($) {
 
         if (!isSecondRow) {
           rawEvolutions.push({
-            from: children.eq(1),
-            how: children.eq(3),
-            to: children.eq(4)
+            from: children.eq(0),
+            how: children.eq(2),
+            to: children.eq(3)
           });
 
           if (!isSingleEvo) {
             rawEvolutions.push({
-              from: children.eq(4),
-              how: children.eq(6),
-              to: children.eq(7)
+              from: children.eq(3),
+              how: children.eq(5),
+              to: children.eq(6)
             });
           }
         } else {
           const prevIsSingle = prevChildren.length < 8;
           const fromName = prevIsSingle
-            ? prevChildren.eq(1)
-            : prevChildren.eq(4);
+            ? prevChildren.eq(0)
+            : prevChildren.eq(3);
 
           rawEvolutions.push({
             from: fromName,
-            how: children.eq(1),
-            to: children.eq(2)
+            how: children.eq(0),
+            to: children.eq(1)
           });
         }
 
@@ -124,8 +127,8 @@ function megaProcessor($) {
     .slice(0, 2)
     .reduce(function(result, data) {
       return Array.from(data.children).reduce((acc, tr) => {
-        const $row = cheerio.load(tr);
-        const children = $row('td');
+        const children = $('td', tr);
+
         if (!children || children.length === 0) return acc;
         const isSecondMega = children.length === 4;
         const tdData = isSecondMega ? children.first() : children.eq(4);
