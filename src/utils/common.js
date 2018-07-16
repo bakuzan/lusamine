@@ -7,7 +7,8 @@ export const {
   capitalise,
   capitaliseEachWord,
   separateAndCapitalise,
-  separateAndCapitaliseAll
+  separateAndCapitaliseAll,
+  getKeyByValue
 } = Common;
 
 export const generateUniqueId = Common.generateUniqueId;
@@ -37,8 +38,8 @@ export const createSetFromIdString = (str = '') =>
   str ? new Set(str.split(',')) : new Set([]);
 
 export const iterateMapToArray = m => Array.from(m.values());
-
 export const iterateKeysToArray = m => Array.from(m.keys());
+export const iterateMapToArrayEntries = m => Array.from(m.entries());
 
 export const swapArrayPositions = (arr, from, to) => {
   const list = arr.slice(0);

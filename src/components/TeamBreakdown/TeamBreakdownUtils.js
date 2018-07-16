@@ -1,4 +1,11 @@
 import Strings from 'constants/strings';
+import Generations from 'constants/generations';
+import { EvolutionForms } from 'constants/evolutions';
+import {
+  iterateMapToArray,
+  separateAndCapitaliseAll,
+  getKeyByValue
+} from 'utils/common';
 
 const generateCountMap = property => (typesEmpty, typesData, memberTypeIds) => {
   const countMap = new Map(typesEmpty.slice());
@@ -48,3 +55,50 @@ export function buildTeamWeaknessCounts(types, members) {
     }
   ];
 }
+
+const buildGenerationCounts = members => {
+  const genCounts = new Map([]);
+  return members.reduce((result, mem) => {
+    const value = result.has(mem.generation) ? result.get(mem.generation) : 0;
+
+    return result.set(mem.generation, value + 1);
+  }, genCounts);
+};
+
+const buildEvolutionFormCounts = members => {
+  const counts = new Map([
+    [EvolutionForms.notEvolved, 0],
+    [EvolutionForms.fullyEvolved, 0]
+  ]);
+
+  return members.reduce((result, mem) => {
+    const key = mem.evolutions.length
+      ? EvolutionForms.notEvolved
+      : EvolutionForms.fullyEvolved;
+
+    const value = result.get(key);
+    return result.set(key, value + 1);
+  }, counts);
+};
+
+export const buildStatCounts = members => {
+  const items = iterateMapToArray(members);
+  return [
+    {
+      key: 'Generations',
+      getKeyName: val => {
+        const name = getKeyByValue(Generations, val);
+        return separateAndCapitaliseAll(name);
+      },
+      counts: buildGenerationCounts(items)
+    },
+    {
+      key: 'Evolutions',
+      getKeyName: val => {
+        const name = getKeyByValue(EvolutionForms, val);
+        return separateAndCapitaliseAll(name);
+      },
+      counts: buildEvolutionFormCounts(items)
+    }
+  ];
+};

@@ -20,7 +20,9 @@ const List = props => {
 
 List.propTypes = {
   shouldWrap: PropTypes.bool,
-  items: PropTypes.arrayOf(PropTypes.object).isRequired,
+  items: PropTypes.arrayOf(
+    PropTypes.oneOfType([PropTypes.object, PropTypes.string, PropTypes.number])
+  ).isRequired,
   itemTemplate: PropTypes.func.isRequired
 };
 

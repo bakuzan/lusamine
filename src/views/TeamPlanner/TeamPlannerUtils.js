@@ -1,7 +1,7 @@
 import Types from 'constants/types';
 import Generations from 'constants/generations';
 import { EvolutionForms } from 'constants/evolutions';
-import { capitalise, separateAndCapitalise } from 'utils/common';
+import { capitalise, separateAndCapitaliseAll } from 'utils/common';
 import { isMegaPokemon, isVariantPokemon } from 'utils/derived-data';
 
 function isExcludedEvolutionType(pEvolutions, evolutionFilters) {
@@ -71,7 +71,7 @@ export const typeOptions = getEnumOptions(Types, k => capitalise(k));
 export const typeDefaults = getAllEnumValues(Types);
 
 export const evolutionOptions = getEnumOptions(EvolutionForms, k =>
-  separateAndCapitalise(k)
+  separateAndCapitaliseAll(k)
 );
 export const evolutionDefaults = getAllEnumValues(EvolutionForms);
 

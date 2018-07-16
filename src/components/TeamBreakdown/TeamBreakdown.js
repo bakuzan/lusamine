@@ -6,6 +6,7 @@ import { TypeContext } from 'context';
 import { Button } from 'components/Buttons';
 import List from 'components/List/List';
 import TeamBreakdownPanel from 'components/TeamBreakdownPanel/TeamBreakdownPanel';
+import TeamBreakdownStatPanel from 'components/TeamBreakdownStatPanel/TeamBreakdownStatPanel';
 import * as TBU from './TeamBreakdownUtils';
 import { capitaliseEachWord } from 'utils/common';
 
@@ -49,6 +50,27 @@ class TeamBreakdown extends React.Component {
                 'team-breakdown__content--collapsed': this.state.isCollapsed
               })}
             >
+              <List
+                shouldWrap
+                className={classNames('team-breakdown__list')}
+                items={TBU.buildStatCounts(members)}
+                itemTemplate={item => (
+                  <li
+                    key={item.key}
+                    className={classNames('team-breakdown__item')}
+                  >
+                    <div className={classNames('breakdown-item-title')}>
+                      <div className={classNames('breakdown-item-title__text')}>
+                        {item.key}
+                      </div>
+                    </div>
+                    <TeamBreakdownStatPanel
+                      nameSource={item.getKeyName}
+                      data={item.counts}
+                    />
+                  </li>
+                )}
+              />
               <List
                 shouldWrap
                 className={classNames('team-breakdown__list')}
