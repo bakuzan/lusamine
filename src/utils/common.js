@@ -3,16 +3,17 @@ import Strings from 'constants/strings';
 
 const { Common } = Utils;
 
+export const {
+  capitalise,
+  capitaliseEachWord,
+  separateAndCapitalise,
+  separateAndCapitaliseAll
+} = Common;
+
 export const generateUniqueId = Common.generateUniqueId;
 
 export const getWindowScrollPosition = () =>
   window.scrollY || window.pageYOffset || document.documentElement.scrollTop;
-
-export const capitaliseEachWord = str =>
-  str
-    .split(' ')
-    .map(Common.capitalise)
-    .join(' ');
 
 export const getUrlQueryStringAsObject = location => {
   if (!location.search) return {};

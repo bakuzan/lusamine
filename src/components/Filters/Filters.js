@@ -46,6 +46,14 @@ const Filters = props => {
         {...props.resistsProps}
         className={classNames(FILTERS_INPUT_CLASS)}
       />
+      <MultiSelect
+        id="evolutions"
+        name="evolutions"
+        placeholder="Select evolution form(s)"
+        label="Evolution Forms"
+        {...props.evolutionsProps}
+        className={classNames(FILTERS_INPUT_CLASS)}
+      />
       <Tickbox
         name="includeMega"
         text="Include Megas"
@@ -77,6 +85,8 @@ Filters.propTypes = {
   }).isRequired,
   generationProps: multiselectPropTypes,
   typeProps: multiselectPropTypes,
+  resistsProps: multiselectPropTypes,
+  evolutionsProps: multiselectPropTypes,
   hiddenOn: PropTypes.oneOf([Strings.large, Strings.small])
 };
 

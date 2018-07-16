@@ -15,3 +15,8 @@ export default Object.freeze({
 
   May need to make this more specific, but is currently out of scope.
 */
+
+export const EvolutionForms = Object.freeze({
+  notEvolved: 1,
+  fullyEvolved: 2
+});

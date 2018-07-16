@@ -1,10 +1,20 @@
-import { Utils } from 'meiko';
-
 import Types from 'constants/types';
 import Generations from 'constants/generations';
+import { EvolutionForms } from 'constants/evolutions';
+import { capitalise, separateAndCapitalise } from 'utils/common';
 import { isMegaPokemon, isVariantPokemon } from 'utils/derived-data';
 
-const { capitalise } = Utils.Common;
+function isExcludedEvolutionType(pEvolutions, evolutionFilters) {
+  const length = evolutionFilters.length;
+  if (length === 2) return false;
+  if (length === 0) return true;
+
+  const filter = evolutionFilters[0];
+  return (
+    (filter === EvolutionForms.notEvolved && !pEvolutions.length) ||
+    (filter === EvolutionForms.fullyEvolved && pEvolutions.length)
+  );
+}
 
 function applyDexFilters(item, filters, typeMatches) {
   const {
@@ -12,12 +22,14 @@ function applyDexFilters(item, filters, typeMatches) {
     generations,
     types,
     resists,
+    evolutions,
     search,
     includeMega,
     includeVariants
   } = filters;
   if (!includeMega && isMegaPokemon(item)) return true;
   if (!includeVariants && isVariantPokemon(item)) return true;
+
   return (
     currentTeamIds.has(item.id) ||
     !item.name.includes(search) ||
@@ -29,7 +41,8 @@ function applyDexFilters(item, filters, typeMatches) {
         resists.some(r => resistsForType.includes(r)) ||
         resists.some(r => unaffectedBy.includes(r))
       );
-    })
+    }) ||
+    isExcludedEvolutionType(item.evolutions, evolutions)
   );
 }
 
@@ -56,6 +69,11 @@ export const generationDefaults = getAllEnumValues(Generations);
 
 export const typeOptions = getEnumOptions(Types, k => capitalise(k));
 export const typeDefaults = getAllEnumValues(Types);
+
+export const evolutionOptions = getEnumOptions(EvolutionForms, k =>
+  separateAndCapitalise(k)
+);
+export const evolutionDefaults = getAllEnumValues(EvolutionForms);
 
 export const selectRandomSetOfIds = dex => {
   const pokemonIds = [...dex.keys()];

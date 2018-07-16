@@ -34,6 +34,7 @@ class PlannerPage extends React.Component {
       generations: TPU.generationDefaults,
       types: TPU.typeDefaults,
       resists: TPU.typeDefaults,
+      evolutions: TPU.evolutionDefaults,
       includeMega: true,
       includeVariants: true
     };
@@ -128,6 +129,11 @@ class PlannerPage extends React.Component {
       resistsProps: {
         values: dexFilters.resists,
         options: TPU.typeOptions,
+        onUpdate: this.handleMultiSelectFilter
+      },
+      evolutionsProps: {
+        values: dexFilters.evolutions,
+        options: TPU.evolutionOptions,
         onUpdate: this.handleMultiSelectFilter
       },
       includeMegaProps: {
