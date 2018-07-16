@@ -50,7 +50,6 @@ $theme-maps: (
         color: map-get($values, button--colour-hover);
       }
     }
-
     .lusamine-button-link {
       color: $button-link--colour;
       &:hover {
@@ -62,6 +61,7 @@ $theme-maps: (
     }
     .lusamine-multiselect-list {
       background-color: $base-background;
+      z-index: 2;
     }
   }
 }
