@@ -34,12 +34,12 @@ function applyDexFilters(item, filters, typeMatches) {
     currentTeamIds.has(item.id) ||
     !item.name.includes(search) ||
     !generations.includes(item.generation) ||
-    !item.types.some(x => types.includes(x.id)) ||
-    !item.types.some(x => {
+    !item.types.some((x) => types.includes(x.id)) ||
+    !item.types.some((x) => {
       const { resists: resistsForType, unaffectedBy } = typeMatches.get(x.id);
       return (
-        resists.some(r => resistsForType.includes(r)) ||
-        resists.some(r => unaffectedBy.includes(r))
+        resists.some((r) => resistsForType.includes(r)) ||
+        resists.some((r) => unaffectedBy.includes(r))
       );
     }) ||
     isExcludedEvolutionType(item.evolutions, evolutions)
@@ -53,37 +53,38 @@ export function iteratePokedexToList(dex, filters, typeMatches) {
   }, []);
 }
 
-const getAllEnumValues = obj => Object.keys(obj).map(k => obj[k]);
+const getAllEnumValues = (obj) => Object.keys(obj).map((k) => obj[k]);
 
 const getEnumOptions = (obj, fn) =>
-  Object.keys(obj).map(k => ({
+  Object.keys(obj).map((k) => ({
     value: obj[k],
     text: fn(k)
   }));
 
 export const generationOptions = getEnumOptions(
   Generations,
-  k => `${capitalise(k.slice(0, 3))} ${k.slice(-1)}`
+  (k) => `${capitalise(k.slice(0, 3))} ${k.slice(-1)}`
 );
 export const generationDefaults = getAllEnumValues(Generations);
 
-export const typeOptions = getEnumOptions(Types, k => capitalise(k));
+export const typeOptions = getEnumOptions(Types, (k) => capitalise(k));
 export const typeDefaults = getAllEnumValues(Types);
 
-export const evolutionOptions = getEnumOptions(EvolutionForms, k =>
+export const evolutionOptions = getEnumOptions(EvolutionForms, (k) =>
   separateAndCapitaliseAll(k)
 );
 export const evolutionDefaults = getAllEnumValues(EvolutionForms);
 
-export const selectRandomSetOfIds = dex => {
-  const pokemonIds = [...dex.keys()];
+export const selectRandomSetOfIds = (dex, filters, typeMatches) => {
   const randomTeam = new Set([]);
+  const pokemon = iteratePokedexToList(dex, filters, typeMatches);
+
   return Array(6)
     .fill(null)
-    .reduce(team => {
-      const randomIndex = Math.floor(Math.random() * pokemonIds.length);
-      const selectedId = pokemonIds[randomIndex];
-      team.add(selectedId);
-      return team;
+    .reduce((team) => {
+      const randomIndex = Math.floor(Math.random() * pokemon.length);
+      const selected = pokemon[randomIndex];
+
+      return team.add(selected.id);
     }, randomTeam);
 };

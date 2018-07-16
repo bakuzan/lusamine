@@ -93,9 +93,15 @@ class PlannerPage extends React.Component {
     this.updateTeamQueryString(new Set([]));
   }
 
-  handleRandomTeam(dex) {
+  handleRandomTeam(dex, typeMatches) {
     return () => {
-      const randomSetOfIds = TPU.selectRandomSetOfIds(dex);
+      const filters = { ...this.state };
+      const randomSetOfIds = TPU.selectRandomSetOfIds(
+        dex,
+        filters,
+        typeMatches
+      );
+
       this.updateTeamQueryString(randomSetOfIds);
     };
   }
@@ -106,6 +112,7 @@ class PlannerPage extends React.Component {
     const saveTeamData = {
       [teamId]: createIdStringFromSet(this.state.currentTeamIds)
     };
+
     saveTeams(saveTeamData);
   }
 
@@ -148,7 +155,7 @@ class PlannerPage extends React.Component {
 
     return (
       <PokedexContext.Consumer>
-        {pokedex => (
+        {(pokedex) => (
           <div className="team-planner">
             <div
               className={classNames(
@@ -159,28 +166,31 @@ class PlannerPage extends React.Component {
             >
               <Filters hiddenOn={Strings.small} {...filterProps} />
             </div>
-            <div className="team-planner__container team-planner__container--width_80">
-              <div className="team-planner__button-actions">
-                <Button isAction onClick={this.handleRandomTeam(pokedex)}>
-                  Randomise
-                </Button>
-                <Button isAction onClick={this.handleSaveTeam}>
-                  Save team
-                </Button>
-                <Button isAction onClick={this.handleClearTeam}>
-                  Clear team
-                </Button>
-              </div>
-              <Team
-                members={selectMembersFromPokedex(
-                  pokedex,
-                  this.state.currentTeamIds
-                )}
-                onMembersUpdate={this.handleMembersUpdate}
-              />
-              <Filters hiddenOn={Strings.large} {...filterProps} />
-              <TypeContext.Consumer>
-                {typeMatches => (
+            <TypeContext.Consumer>
+              {(typeMatches) => (
+                <div className="team-planner__container team-planner__container--width_80">
+                  <div className="team-planner__button-actions">
+                    <Button
+                      isAction
+                      onClick={this.handleRandomTeam(pokedex, typeMatches)}
+                    >
+                      Randomise
+                    </Button>
+                    <Button isAction onClick={this.handleSaveTeam}>
+                      Save team
+                    </Button>
+                    <Button isAction onClick={this.handleClearTeam}>
+                      Clear team
+                    </Button>
+                  </div>
+                  <Team
+                    members={selectMembersFromPokedex(
+                      pokedex,
+                      this.state.currentTeamIds
+                    )}
+                    onMembersUpdate={this.handleMembersUpdate}
+                  />
+                  <Filters hiddenOn={Strings.large} {...filterProps} />
                   <List
                     className="team-planner__sprite-list"
                     shouldWrap
@@ -197,9 +207,9 @@ class PlannerPage extends React.Component {
                       />
                     )}
                   />
-                )}
-              </TypeContext.Consumer>
-            </div>
+                </div>
+              )}
+            </TypeContext.Consumer>
           </div>
         )}
       </PokedexContext.Consumer>
