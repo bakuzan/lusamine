@@ -4,22 +4,42 @@ import React from 'react';
 
 import ArtCard from 'components/ArtCard/ArtCard';
 import { ClearButton, LeftButton, RightButton } from 'components/Buttons';
+import { withDragAndDrop } from 'components/DragAndDrop';
 import TypeBlock from 'components/TypeBlock/TypeBlock';
 import Orders from 'constants/orders';
 import Party from 'constants/party';
-import { capitaliseEachWord } from 'utils/common';
+import { capitaliseEachWord, objectsAreEqual } from 'utils/common';
 
 import './TeamMember.css';
 
-class TeamMember extends React.PureComponent {
+class TeamMember extends React.Component {
   constructor(props) {
     super(props);
 
     this.handleMove = this.handleMove.bind(this);
   }
 
+  shouldComponentUpdate(nextProps) {
+    const isDraggingChanged = nextProps.isDragging !== this.props.isDragging;
+    const isOverChanged = nextProps.isOver !== this.props.isOver;
+    const isSelectedChanged = nextProps.isSelected !== this.props.isSelected;
+    const indexChanged = nextProps.index !== this.props.index;
+    const partyEndIndexChanged =
+      nextProps.partyEndIndex !== this.props.partyEndIndex;
+    const dataChanged = !objectsAreEqual(nextProps.data, this.props.data);
+
+    return (
+      isDraggingChanged ||
+      isOverChanged ||
+      isSelectedChanged ||
+      dataChanged ||
+      indexChanged ||
+      partyEndIndexChanged
+    );
+  }
+
   handleMove(direction) {
-    return e => {
+    return (e) => {
       e.stopPropagation();
       this.props.move(this.props.data.id, direction);
     };
@@ -33,7 +53,9 @@ class TeamMember extends React.PureComponent {
       onClick,
       remove,
       move,
-      partyEndIndex
+      partyEndIndex,
+      isDragging,
+      isOver
     } = this.props;
     const hasData = !data.isEmpty;
     const canRemove = hasData && isSelected && !!remove;
@@ -47,7 +69,9 @@ class TeamMember extends React.PureComponent {
         id={data.id}
         className={classNames('team-member', {
           'team-member--selected': isSelected,
-          'team-member--empty': !hasData
+          'team-member--empty': !hasData,
+          'team-member--dragging': isDragging,
+          'team-member--is-over': isOver
         })}
         onClick={memberClick}
         role="button"
@@ -65,7 +89,7 @@ class TeamMember extends React.PureComponent {
           {capitaliseEachWord(data.name)}
         </div>
         <div className={classNames('team-member__types')}>
-          {data.types.map(type => (
+          {data.types.map((type) => (
             <TypeBlock key={type.id} value={type.name} />
           ))}
         </div>
@@ -100,3 +124,4 @@ TeamMember.propTypes = {
 };
 
 export default TeamMember;
+export const TeamMemberDraggable = withDragAndDrop(TeamMember);

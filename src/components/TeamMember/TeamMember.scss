@@ -33,6 +33,17 @@ $team-member--width-adjustment: $team-member--account-for-border +
     border-color: $team-member--border-colour;
   }
 
+  &--dragging {
+    opacity: 0;
+  }
+
+  &--is-over {
+    border: {
+      style: dashed;
+      color: $team-member--border-colour;
+    }
+  }
+
   &__clear-container {
     display: flex;
     justify-content: flex-end;
