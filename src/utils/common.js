@@ -1,5 +1,6 @@
 import { Utils } from 'meiko';
 import Strings from 'constants/strings';
+import SETTINGS_DEFAULTS from 'constants/settings';
 
 const { Common } = Utils;
 
@@ -71,6 +72,14 @@ export const replaceTeams = (teams) => {
   localStorage.setItem(Strings.savedTeamsStorage, data);
   return teams;
 };
+
+export const getSettings = () =>
+  Common.getObjectFromLocalStorageByProperty(Strings.settingsStorage) ||
+  SETTINGS_DEFAULTS;
+
+export const saveSettings = Common.persistObjectToLocalStorage(
+  Strings.settingsStorage
+);
 
 export function selectMembersFromPokedex(dex, memberIds) {
   return new Map(Array.from(memberIds).map((id) => [id, dex.get(id)]));

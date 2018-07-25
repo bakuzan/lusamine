@@ -15,9 +15,11 @@ export default {
     unaffectedBy: 'unaffectedBy'
   },
   savedTeamsStorage: 'savedTeams',
+  settingsStorage: 'lusamineSettings',
   pageTitle: {
     planner: 'team planner',
-    savedTeams: 'saved teams'
+    savedTeams: 'saved teams',
+    settings: 'settings'
   },
   scoreModifier: {
     none: 'none',

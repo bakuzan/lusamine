@@ -6,6 +6,7 @@ import AlertContainer from 'components/AlertContainer';
 import Footer from 'components/Footer/Footer';
 import TeamPlanner from 'views/TeamPlanner/TeamPlanner';
 import TeamViewer from 'views/TeamViewer/TeamViewer';
+import Settings from 'views/Settings';
 import Routes from 'constants/routes';
 import { PokedexContext, TypeContext } from 'context';
 import { constructPokedex, getTypeMatchups } from 'data';
@@ -32,7 +33,7 @@ class App extends Component {
           <div className="app app--theme_default">
             <HeaderBar currentPath={location.pathname} />
             <AlertContainer>
-              {triggerAlert => (
+              {(triggerAlert) => (
                 <main>
                   <Switch>
                     <Route
@@ -40,8 +41,12 @@ class App extends Component {
                       component={TeamViewer}
                     />
                     <Route
+                      path={`${match.url}${Routes.settings}`}
+                      component={Settings}
+                    />
+                    <Route
                       path={match.url}
-                      render={props => (
+                      render={(props) => (
                         <TeamPlanner {...props} sendAlert={triggerAlert} />
                       )}
                     />

@@ -13,10 +13,13 @@ import './HeaderBar.css';
 
 const PLANNER = 'planner';
 const SAVED_TEAMS = 'saved-teams';
-const getPageTitleForCurrentPath = path =>
+const SETTINGS = 'settings';
+const getPageTitleForCurrentPath = (path) =>
   path.includes(SAVED_TEAMS)
     ? Strings.pageTitle.savedTeams
-    : Strings.pageTitle.planner;
+    : path.includes(SETTINGS)
+      ? Strings.pageTitle.settings
+      : Strings.pageTitle.planner;
 
 class HeaderBar extends React.Component {
   constructor(props) {
@@ -42,11 +45,13 @@ class HeaderBar extends React.Component {
 
   render() {
     const savedTeamsUrl = `${Routes.base}${Routes.savedTeams}`;
+    const settingsUrl = `${Routes.base}${Routes.settings}`;
+    const pageTitle = getPageTitleForCurrentPath(this.props.currentPath);
+
     const isPageScrolled = !!this.state.windowScrollPosition;
     const headerClasses = classNames('header-bar', {
       'header-bar--page-scrolled': isPageScrolled
     });
-    const pageTitle = getPageTitleForCurrentPath(this.props.currentPath);
 
     return (
       <Header
@@ -62,6 +67,9 @@ class HeaderBar extends React.Component {
             </ButtonisedNavLink>
             <ButtonisedNavLink key={SAVED_TEAMS} to={savedTeamsUrl}>
               Saved Teams
+            </ButtonisedNavLink>
+            <ButtonisedNavLink key={SETTINGS} to={settingsUrl}>
+              Settings
             </ButtonisedNavLink>
           </React.Fragment>
         }
