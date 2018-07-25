@@ -23,13 +23,14 @@ class Settings extends React.Component {
     this.setState({ [name]: checked }, () =>
       saveSettings({
         ...SETTINGS_DEFAULTS,
-        ...this.state.settings
+        ...this.state
       })
     );
   }
 
   render() {
     const settings = this.state;
+
     return (
       <div className="settings">
         <Tickbox

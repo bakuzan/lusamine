@@ -13,7 +13,8 @@ import {
   iterateMapToArray,
   iterateKeysToArray,
   swapArrayPositions,
-  moveToNewArrayPosition
+  moveToNewArrayPosition,
+  getSettings
 } from 'utils/common';
 
 import './Team.css';
@@ -24,7 +25,8 @@ class Team extends React.PureComponent {
     this.state = {
       emptyMembers: generateEmptySlots(),
       members: new Map([]),
-      selectedMemberId: null
+      selectedMemberId: null,
+      settings: getSettings()
     };
 
     this.handleMemberSelect = this.handleMemberSelect.bind(this);
@@ -96,9 +98,11 @@ class Team extends React.PureComponent {
     const canReOrder = !!this.props.onMembersUpdate;
 
     const removeMember = canRemove ? this.handleMemberRemove : null;
-    const [moveMember, moveMemberDnD, Member] = canReOrder
-      ? [this.handleMemberMove, this.handleMemberDnD, TeamMemberDraggable]
-      : [null, null, TeamMember];
+    const moveMember = canReOrder ? this.handleMemberMove : null;
+    const [moveMemberDnD, Member] =
+      canReOrder && this.state.settings.canDragAndDrop
+        ? [this.handleMemberDnD, TeamMemberDraggable]
+        : [null, TeamMember];
 
     return (
       <div>
