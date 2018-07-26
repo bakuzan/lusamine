@@ -62,13 +62,22 @@ class HeaderBar extends React.Component {
         navLeft={<Image className="logo" alt="Pokémon Logo" src={Logo} />}
         navRight={
           <React.Fragment>
-            <ButtonisedNavLink key={PLANNER} exact to={Routes.base}>
+            <ButtonisedNavLink
+              key={PLANNER}
+              id={PLANNER}
+              exact
+              to={Routes.base}
+            >
               Team Planner
             </ButtonisedNavLink>
-            <ButtonisedNavLink key={SAVED_TEAMS} to={savedTeamsUrl}>
+            <ButtonisedNavLink
+              key={SAVED_TEAMS}
+              id={SAVED_TEAMS}
+              to={savedTeamsUrl}
+            >
               Saved Teams
             </ButtonisedNavLink>
-            <ButtonisedNavLink key={SETTINGS} to={settingsUrl}>
+            <ButtonisedNavLink key={SETTINGS} id={SETTINGS} to={settingsUrl}>
               Settings
             </ButtonisedNavLink>
           </React.Fragment>

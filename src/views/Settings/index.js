@@ -34,6 +34,7 @@ class Settings extends React.Component {
     return (
       <div className="settings">
         <Tickbox
+          id="can-dnd"
           name="canDragAndDrop"
           text="Enable Drag and Drop"
           checked={settings.canDragAndDrop}

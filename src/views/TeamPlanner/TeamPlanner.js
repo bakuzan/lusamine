@@ -171,15 +171,24 @@ class PlannerPage extends React.Component {
                 <div className="team-planner__container team-planner__container--width_80">
                   <div className="team-planner__button-actions">
                     <Button
+                      id="randomise-team"
                       isAction
                       onClick={this.handleRandomTeam(pokedex, typeMatches)}
                     >
                       Randomise
                     </Button>
-                    <Button isAction onClick={this.handleSaveTeam}>
+                    <Button
+                      id="save-team"
+                      isAction
+                      onClick={this.handleSaveTeam}
+                    >
                       Save team
                     </Button>
-                    <Button isAction onClick={this.handleClearTeam}>
+                    <Button
+                      id="clear-team"
+                      isAction
+                      onClick={this.handleClearTeam}
+                    >
                       Clear team
                     </Button>
                   </div>

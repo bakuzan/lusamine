@@ -18,11 +18,14 @@ const memberTarget = {
     const clientOffset = monitor.getClientOffset();
     const hoverClientX = clientOffset.x - hoverBoundingRect.left;
 
-    // Dragging downwards/upwards
+    // Dragging left/right
     if (dragIndex < hoverIndex && hoverClientX < hoverMiddleX) return;
     if (dragIndex > hoverIndex && hoverClientX > hoverMiddleX) return;
 
     props.moveDnD(dragIndex, hoverIndex);
+
+    // Prevents trashing
+    monitor.getItem().index = hoverIndex;
   }
 };
 

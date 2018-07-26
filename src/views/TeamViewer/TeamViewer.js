@@ -35,7 +35,7 @@ class TeamViewer extends React.Component {
   handleDeleteTeam(teamId) {
     const { savedTeams } = this.state;
     const teams = Object.keys(savedTeams)
-      .filter(k => k !== teamId)
+      .filter((k) => k !== teamId)
       .reduce(
         (p, c) => ({
           ...p,
@@ -55,12 +55,11 @@ class TeamViewer extends React.Component {
 
     const teams = TVU.mapSavedTeamsToDisplayModel(savedTeams);
 
-    console.log('render viewer > ', teams, savedTeams);
     return (
       <PokedexContext.Consumer>
-        {pokedex => (
+        {(pokedex) => (
           <div className="team-viewer">
-            {teams.map(t => (
+            {teams.map((t) => (
               <div
                 key={t.id}
                 className={classNames('team-viewer__team saved-team')}
