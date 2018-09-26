@@ -126,7 +126,6 @@ class Team extends React.PureComponent {
       .withGroup(highlightArgs.dataType)
       .selectMembers(highlightArgs.dataId);
 
-    console.log('TEAM', this.props, highlightMembers);
     return (
       <div>
         <List

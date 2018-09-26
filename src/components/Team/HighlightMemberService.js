@@ -12,6 +12,7 @@ class HighlightMemberService {
     this.__cache = {};
     this.__members = null;
     this.__types = null;
+    this.__dataId = null;
   }
 
   forMembers(members) {
@@ -30,10 +31,10 @@ class HighlightMemberService {
   }
 
   selectMembers(dataId) {
-    this.dataId = dataId;
+    this.__dataId = dataId;
 
     const idString = createIdStringFromSet(iterateKeysToArray(this.__members));
-    const cacheKey = `${idString}${this.__group}${this.dataId}`;
+    const cacheKey = `${idString}${this.__group}${dataId}`;
     const cachedValue = this.__cache[cacheKey];
     if (cachedValue) return cachedValue;
 
@@ -44,10 +45,12 @@ class HighlightMemberService {
       case Strings.typeBreakdown.weakTo:
       case Strings.typeBreakdown.resists:
       case Strings.typeBreakdown.unaffectedBy:
-        const typeIds = this.__types.get(dataId)[this.__group];
-        result = membersArr.filter((x) =>
-          x.types.some((t) => typeIds.includes(t.id))
-        );
+        result = membersArr.filter((x) => {
+          return x.types.some((t) => {
+            const typeIds = this.__types.get(t.id)[this.__group];
+            return typeIds.includes(this.__dataId);
+          });
+        });
         break;
       case 'Evolutions':
         result = membersArr.filter(

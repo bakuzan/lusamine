@@ -33,6 +33,13 @@ $team-member--width-adjustment: $team-member--account-for-border +
     border-color: $team-member--border-colour;
   }
 
+  &--highlighted {
+    border: {
+      style: dashed;
+      color: $team-member--border-colour-highlight;
+    }
+  }
+
   &--dragging {
     opacity: 0;
   }
