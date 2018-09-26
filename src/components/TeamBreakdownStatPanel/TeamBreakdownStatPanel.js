@@ -5,7 +5,12 @@ import React from 'react';
 import List from 'components/List/List';
 import { iterateKeysToArray } from 'utils/common';
 
-const TeamBreakdownStatPanel = ({ nameSource, data }) => {
+const TeamBreakdownStatPanel = ({
+  id,
+  nameSource,
+  data,
+  onMouseState = {}
+}) => {
   const keys = iterateKeysToArray(data).sort();
 
   return (
@@ -13,12 +18,16 @@ const TeamBreakdownStatPanel = ({ nameSource, data }) => {
       shouldWrap
       className={classNames('one')}
       items={keys}
-      itemTemplate={key => {
+      itemTemplate={(key) => {
         const name = nameSource(key);
         const value = data.get(key);
+        const mouseState = Object.keys(onMouseState).reduce(
+          (p, k) => ({ ...p, [k]: () => onMouseState[k](id, key) }),
+          {}
+        );
 
         return (
-          <li key={key} className={classNames('padding-5')}>
+          <li key={key} className={classNames('padding-5')} {...mouseState}>
             {`${name} - ${value}`}
           </li>
         );
@@ -28,8 +37,13 @@ const TeamBreakdownStatPanel = ({ nameSource, data }) => {
 };
 
 TeamBreakdownStatPanel.propTypes = {
+  id: PropTypes.string.isRequired,
   nameSource: PropTypes.func.isRequired,
-  data: PropTypes.object.isRequired
+  data: PropTypes.object.isRequired,
+  onMouseState: PropTypes.shape({
+    onMouseEnter: PropTypes.func.isRequired,
+    onMouseLeave: PropTypes.func.isRequired
+  }).isRequired
 };
 
 export default TeamBreakdownStatPanel;

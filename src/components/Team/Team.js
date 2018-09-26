@@ -16,6 +16,7 @@ import {
   moveToNewArrayPosition,
   getSettings
 } from 'utils/common';
+import highlighter from './HighlightMemberService';
 
 import './Team.css';
 
@@ -26,13 +27,15 @@ class Team extends React.PureComponent {
       emptyMembers: generateEmptySlots(),
       members: new Map([]),
       selectedMemberId: null,
-      settings: getSettings()
+      settings: getSettings(),
+      highlightArgs: {}
     };
 
     this.handleMemberSelect = this.handleMemberSelect.bind(this);
     this.handleMemberRemove = this.handleMemberRemove.bind(this);
     this.handleMemberMove = this.handleMemberMove.bind(this);
     this.handleMemberDnD = this.handleMemberDnD.bind(this);
+    this.handleMouseState = this.handleMouseState.bind(this);
   }
 
   static getDerivedStateFromProps(nextProps, prevState) {
@@ -90,7 +93,20 @@ class Team extends React.PureComponent {
     this.props.onMembersUpdate(memberIds);
   }
 
+  handleMouseState(dataType, dataId) {
+    this.setState((prev) => {
+      const isSame =
+        prev.highlightArgs.dataType === dataType &&
+        prev.highlightArgs.dataId === dataId;
+
+      return isSame
+        ? { highlightArgs: {} }
+        : { highlightArgs: { dataType, dataId } };
+    });
+  }
+
   render() {
+    const { highlightArgs, settings } = this.state;
     const lastMemberIndex = this.state.members.size - 1;
     const members = this.padPartyToSixMembers(this.state.members);
 
@@ -100,10 +116,17 @@ class Team extends React.PureComponent {
     const removeMember = canRemove ? this.handleMemberRemove : null;
     const moveMember = canReOrder ? this.handleMemberMove : null;
     const [moveMemberDnD, Member] =
-      canReOrder && this.state.settings.canDragAndDrop
+      canReOrder && settings.canDragAndDrop
         ? [this.handleMemberDnD, TeamMemberDraggable]
         : [null, TeamMember];
 
+    const highlightMembers = highlighter
+      .withTypes(this.props.types)
+      .forMembers(this.state.members)
+      .withGroup(highlightArgs.dataType)
+      .selectMembers(highlightArgs.dataId);
+
+    console.log('TEAM', this.props, highlightMembers);
     return (
       <div>
         <List
@@ -116,6 +139,7 @@ class Team extends React.PureComponent {
               partyEndIndex={lastMemberIndex}
               data={item}
               isSelected={this.state.selectedMemberId === item.id}
+              isHighlighted={highlightMembers.includes(item.id)}
               onClick={this.handleMemberSelect}
               remove={removeMember}
               move={moveMember}
@@ -123,13 +147,17 @@ class Team extends React.PureComponent {
             />
           )}
         />
-        <TeamBreakdown members={this.state.members} />
+        <TeamBreakdown
+          members={this.state.members}
+          onMouseState={this.handleMouseState}
+        />
       </div>
     );
   }
 }
 
 Team.propTypes = {
+  types: PropTypes.object,
   members: PropTypes.object,
   onMembersUpdate: PropTypes.func
 };

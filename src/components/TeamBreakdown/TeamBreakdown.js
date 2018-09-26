@@ -20,21 +20,31 @@ class TeamBreakdown extends React.Component {
     };
 
     this.handleToggle = this.handleToggle.bind(this);
+    this.handleMouseEnterLeave = this.handleMouseEnterLeave.bind(this);
   }
 
   handleToggle() {
-    this.setState(prev => ({ isCollapsed: !prev.isCollapsed }));
+    this.setState((prev) => ({ isCollapsed: !prev.isCollapsed }));
+  }
+
+  handleMouseEnterLeave(dataType, dataId) {
+    this.props.onMouseState(dataType, dataId);
   }
 
   render() {
     const { members } = this.props;
     const noMembers = members.size === 0;
+    const mouseState = {
+      onMouseEnter: this.handleMouseEnterLeave,
+      onMouseLeave: this.handleMouseEnterLeave
+    };
 
     return (
       <TypeContext.Consumer>
-        {types => (
+        {(types) => (
           <div className={classNames('team-breakdown')}>
             <Button
+              id="toggle-breakdown"
               isAction
               className={classNames('team-breakdown__action', {
                 'team-breakdown__action--hide': noMembers
@@ -54,7 +64,7 @@ class TeamBreakdown extends React.Component {
                 shouldWrap
                 className={classNames('team-breakdown__list')}
                 items={TBU.buildStatCounts(members)}
-                itemTemplate={item => (
+                itemTemplate={(item) => (
                   <li
                     key={item.key}
                     className={classNames('team-breakdown__item')}
@@ -65,8 +75,10 @@ class TeamBreakdown extends React.Component {
                       </div>
                     </div>
                     <TeamBreakdownStatPanel
+                      id={item.key}
                       nameSource={item.getKeyName}
                       data={item.counts}
+                      onMouseState={{ ...mouseState }}
                     />
                   </li>
                 )}
@@ -75,7 +87,7 @@ class TeamBreakdown extends React.Component {
                 shouldWrap
                 className={classNames('team-breakdown__list')}
                 items={TBU.buildTeamWeaknessCounts(types, members)}
-                itemTemplate={item => (
+                itemTemplate={(item) => (
                   <li
                     key={item.key}
                     className={classNames('team-breakdown__item')}
@@ -86,9 +98,11 @@ class TeamBreakdown extends React.Component {
                       </div>
                     </div>
                     <TeamBreakdownPanel
+                      id={item.key}
                       panelModifier={item.goodCountModifier}
                       types={types}
                       data={item.counts}
+                      onMouseState={{ ...mouseState }}
                     />
                   </li>
                 )}
@@ -102,7 +116,8 @@ class TeamBreakdown extends React.Component {
 }
 
 TeamBreakdown.propTypes = {
-  members: PropTypes.object
+  members: PropTypes.object,
+  onMouseState: PropTypes.func.isRequired
 };
 
 export default TeamBreakdown;

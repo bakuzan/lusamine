@@ -10,7 +10,7 @@ import './TeamBreakdownPanel.css';
 
 class TeamBreakdownPanel extends React.Component {
   render() {
-    const { data, types, panelModifier } = this.props;
+    const { id, data, types, panelModifier, onMouseState = {} } = this.props;
     const typesList = [...types.values()];
 
     return (
@@ -20,10 +20,14 @@ class TeamBreakdownPanel extends React.Component {
           `breakdown-panel--good-is_${panelModifier}`
         ])}
         items={typesList}
-        itemTemplate={t => {
+        itemTemplate={(t) => {
           const score = data.get(t.id);
           const typeStatusClass = TBPU.getClassForScore(score);
           const title = TBPU.getScoreDescription(panelModifier, score);
+          const mouseState = Object.keys(onMouseState).reduce(
+            (p, k) => ({ ...p, [k]: () => onMouseState[k](id, t.id) }),
+            {}
+          );
 
           return (
             <li
@@ -34,6 +38,7 @@ class TeamBreakdownPanel extends React.Component {
                 typeStatusClass
               )}
               title={title}
+              {...mouseState}
             >
               <TypeBlock value={t.name} />
               <div className={classNames('breakdown-panel__count')}>
@@ -48,9 +53,14 @@ class TeamBreakdownPanel extends React.Component {
 }
 
 TeamBreakdownPanel.propTypes = {
+  id: PropTypes.string.isRequired,
   panelModifier: PropTypes.string,
   types: PropTypes.object.isRequired,
-  data: PropTypes.object.isRequired
+  data: PropTypes.object.isRequired,
+  onMouseState: PropTypes.shape({
+    onMouseEnter: PropTypes.func.isRequired,
+    onMouseLeave: PropTypes.func.isRequired
+  }).isRequired
 };
 
 export default TeamBreakdownPanel;

@@ -13,7 +13,8 @@ export default {
   planner: {
     randomise: clickOn('randomise-team'),
     save: clickOn('save-team'),
-    clear: clickOn('clear-team')
+    clear: clickOn('clear-team'),
+    toggleBreakdown: clickOn('toggle-breakdown')
   },
   settings: {
     toggleCanDnD: clickOn('can-dnd')

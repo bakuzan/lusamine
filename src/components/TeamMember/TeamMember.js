@@ -23,6 +23,8 @@ class TeamMember extends React.Component {
     const isDraggingChanged = nextProps.isDragging !== this.props.isDragging;
     const isOverChanged = nextProps.isOver !== this.props.isOver;
     const isSelectedChanged = nextProps.isSelected !== this.props.isSelected;
+    const isHighlightedChanged =
+      nextProps.isHighlighted !== this.props.isHighlighted;
     const indexChanged = nextProps.index !== this.props.index;
     const partyEndIndexChanged =
       nextProps.partyEndIndex !== this.props.partyEndIndex;
@@ -32,6 +34,7 @@ class TeamMember extends React.Component {
       isDraggingChanged ||
       isOverChanged ||
       isSelectedChanged ||
+      isHighlightedChanged ||
       dataChanged ||
       indexChanged ||
       partyEndIndexChanged
@@ -50,6 +53,7 @@ class TeamMember extends React.Component {
       index,
       data,
       isSelected,
+      isHighlighted,
       onClick,
       remove,
       move,
@@ -69,6 +73,7 @@ class TeamMember extends React.Component {
         id={data.id}
         className={classNames('team-member', {
           'team-member--selected': isSelected,
+          'team-member--highlighted': isHighlighted,
           'team-member--empty': !hasData,
           'team-member--dragging': isDragging,
           'team-member--is-over': isOver
@@ -117,6 +122,7 @@ class TeamMember extends React.Component {
 TeamMember.propTypes = {
   data: PropTypes.object.isRequired,
   isSelected: PropTypes.bool,
+  isHighlighted: PropTypes.bool,
   onClick: PropTypes.func,
   remove: PropTypes.func,
   move: PropTypes.func,

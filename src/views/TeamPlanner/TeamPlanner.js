@@ -193,6 +193,7 @@ class PlannerPage extends React.Component {
                     </Button>
                   </div>
                   <Team
+                    types={typeMatches}
                     members={selectMembersFromPokedex(
                       pokedex,
                       this.state.currentTeamIds
