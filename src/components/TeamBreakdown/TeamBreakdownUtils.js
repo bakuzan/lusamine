@@ -7,15 +7,20 @@ import {
   getKeyByValue
 } from 'utils/common';
 
-const generateCountMap = property => (typesEmpty, typesData, memberTypeIds) => {
+const generateCountMap = (property) => (
+  typesEmpty,
+  typesData,
+  memberTypeIds
+) => {
   const countMap = new Map(typesEmpty.slice());
-  return memberTypeIds.reduce((counts, id) => {
-    const values = typesData.get(id)[property];
-    return values.reduce((p, v) => {
-      const currentValue = counts.get(v);
-      p.set(v, currentValue + 1);
-      return p;
-    }, counts);
+  return memberTypeIds.reduce((counts, typeIds) => {
+    console.log(typesData, typeIds);
+    const values = typeIds.reduce(
+      (p, t) => [...p, ...typesData.get(t.id)[property]],
+      []
+    );
+    const uniqueValues = [...new Set([...values]).values()];
+    return uniqueValues.reduce((p, v) => p.set(v, counts.get(v) + 1), counts);
   }, countMap);
 };
 const getWeakToCount = generateCountMap(Strings.typeBreakdown.weakTo);
@@ -26,10 +31,10 @@ const getUnaffectedByCount = generateCountMap(
 
 export function buildTeamWeaknessCounts(types, members) {
   const memberTypeIds = [...members.values()].reduce(
-    (p, c) => [...p, ...c.types.map(x => x.id)],
+    (p, c) => [...p, c.types.map((x) => x.id)],
     []
   );
-  const typesMapEmpty = [...types.values()].map(t => [t.id, 0]);
+  const typesMapEmpty = [...types.values()].map((t) => [t.id, 0]);
   const weakCounts = getWeakToCount(typesMapEmpty, types, memberTypeIds);
   const resistCounts = getResistsCount(typesMapEmpty, types, memberTypeIds);
   const unaffectedCounts = getUnaffectedByCount(
@@ -56,7 +61,7 @@ export function buildTeamWeaknessCounts(types, members) {
   ];
 }
 
-const buildGenerationCounts = members => {
+const buildGenerationCounts = (members) => {
   const genCounts = new Map([]);
   return members.reduce((result, mem) => {
     const value = result.has(mem.generation) ? result.get(mem.generation) : 0;
@@ -65,7 +70,7 @@ const buildGenerationCounts = members => {
   }, genCounts);
 };
 
-const buildEvolutionFormCounts = members => {
+const buildEvolutionFormCounts = (members) => {
   const counts = new Map([
     [EvolutionForms.notEvolved, 0],
     [EvolutionForms.fullyEvolved, 0]
@@ -81,12 +86,12 @@ const buildEvolutionFormCounts = members => {
   }, counts);
 };
 
-export const buildStatCounts = members => {
+export const buildStatCounts = (members) => {
   const items = iterateMapToArray(members);
   return [
     {
       key: 'Generations',
-      getKeyName: val => {
+      getKeyName: (val) => {
         const name = getKeyByValue(Generations, val);
         return separateAndCapitaliseAll(name);
       },
@@ -94,7 +99,7 @@ export const buildStatCounts = members => {
     },
     {
       key: 'Evolutions',
-      getKeyName: val => {
+      getKeyName: (val) => {
         const name = getKeyByValue(EvolutionForms, val);
         return separateAndCapitaliseAll(name);
       },
