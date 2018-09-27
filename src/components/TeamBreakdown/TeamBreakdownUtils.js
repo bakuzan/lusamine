@@ -14,9 +14,8 @@ const generateCountMap = (property) => (
 ) => {
   const countMap = new Map(typesEmpty.slice());
   return memberTypeIds.reduce((counts, typeIds) => {
-    console.log(typesData, typeIds);
     const values = typeIds.reduce(
-      (p, t) => [...p, ...typesData.get(t.id)[property]],
+      (p, tId) => [...p, ...typesData.get(tId)[property]],
       []
     );
     const uniqueValues = [...new Set([...values]).values()];
