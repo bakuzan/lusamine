@@ -3,7 +3,7 @@ import React from 'react';
 import { ButtonisedNavLink } from 'components/Buttons';
 import Routes from 'constants/routes';
 
-import './TeamViewerMessage.css';
+import './TeamViewerMessage.scss';
 
 const TeamViewerMessage = () => (
   <div className="no-data-message">

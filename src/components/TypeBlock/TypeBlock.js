@@ -2,9 +2,9 @@ import PropTypes from 'prop-types';
 import classNames from 'classnames';
 import React from 'react';
 
-import './TypeBlock.css';
+import './TypeBlock.scss';
 
-const TypeBlock = props => (
+const TypeBlock = (props) => (
   <div className={classNames('type', `type--${props.value}`)} />
 );
 

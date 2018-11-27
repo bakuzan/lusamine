@@ -2,9 +2,9 @@ import React from 'react';
 
 import { NewTabLink } from 'meiko';
 
-import './Footer.css';
+import './Footer.scss';
 
-const Footer = props => {
+const Footer = (props) => {
   return (
     <section className="footer">
       <p>

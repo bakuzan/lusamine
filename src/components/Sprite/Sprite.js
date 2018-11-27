@@ -4,7 +4,7 @@ import React from 'react';
 
 import { capitaliseEachWord } from 'utils/common';
 import { buildSelectorsForSprite } from 'utils/selectors';
-import './Sprite.css';
+import './Sprite.scss';
 
 class Sprite extends React.PureComponent {
   render() {

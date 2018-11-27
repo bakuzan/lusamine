@@ -12,9 +12,11 @@ import {
   selectMembersFromPokedex
 } from 'utils/common';
 
-import './TeamViewer.css';
+import './TeamViewer.scss';
 
 class TeamViewer extends React.Component {
+  static contextType = PokedexContext;
+
   constructor(props) {
     super(props);
     this.state = {
@@ -49,6 +51,7 @@ class TeamViewer extends React.Component {
   }
 
   render() {
+    let pokedex = this.context;
     const { savedTeams } = this.state;
     if (!this.state.loadedTeams) return null;
     if (this.state.loadedTeams && !savedTeams) return <TeamViewerMessage />;
@@ -56,31 +59,25 @@ class TeamViewer extends React.Component {
     const teams = TVU.mapSavedTeamsToDisplayModel(savedTeams);
 
     return (
-      <PokedexContext.Consumer>
-        {(pokedex) => (
-          <div className="team-viewer">
-            {teams.map((t) => (
-              <div
-                key={t.id}
-                className={classNames('team-viewer__team saved-team')}
-              >
-                <div className={classNames('saved-team__actions')}>
-                  <ButtonisedNavLink to={TVU.createTeamUrl(t.idString)}>
-                    Load team
-                  </ButtonisedNavLink>
-                  <ClearButton
-                    title="Delete"
-                    onClick={() => this.handleDeleteTeam(t.id)}
-                  />
-                </div>
-                <Team
-                  members={selectMembersFromPokedex(pokedex, t.memberIds)}
-                />
-              </div>
-            ))}
+      <div className="team-viewer">
+        {teams.map((t) => (
+          <div
+            key={t.id}
+            className={classNames('team-viewer__team saved-team')}
+          >
+            <div className={classNames('saved-team__actions')}>
+              <ButtonisedNavLink to={TVU.createTeamUrl(t.idString)}>
+                Load team
+              </ButtonisedNavLink>
+              <ClearButton
+                title="Delete"
+                onClick={() => this.handleDeleteTeam(t.id)}
+              />
+            </div>
+            <Team members={selectMembersFromPokedex(pokedex, t.memberIds)} />
           </div>
-        )}
-      </PokedexContext.Consumer>
+        ))}
+      </div>
     );
   }
 }

@@ -6,11 +6,11 @@ import { ClearableInput, Tickbox } from 'meiko';
 import MultiSelect from 'components/MultiSelect';
 import Strings from 'constants/strings';
 
-import './Filters.css';
+import './Filters.scss';
 
 const FILTERS_INPUT_CLASS = 'filters__input';
 
-const Filters = props => {
+const Filters = (props) => {
   const hideOnCertainScreens = !!props.hiddenOn;
   return (
     <section

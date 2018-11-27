@@ -10,7 +10,7 @@ import Orders from 'constants/orders';
 import Party from 'constants/party';
 import { capitaliseEachWord, objectsAreEqual } from 'utils/common';
 
-import './TeamMember.css';
+import './TeamMember.scss';
 
 class TeamMember extends React.Component {
   constructor(props) {

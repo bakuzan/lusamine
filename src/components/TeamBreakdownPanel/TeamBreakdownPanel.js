@@ -6,7 +6,7 @@ import List from 'components/List/List';
 import TypeBlock from 'components/TypeBlock/TypeBlock';
 import * as TBPU from './TeamBreakdownPanelUtils';
 
-import './TeamBreakdownPanel.css';
+import './TeamBreakdownPanel.scss';
 
 class TeamBreakdownPanel extends React.Component {
   render() {

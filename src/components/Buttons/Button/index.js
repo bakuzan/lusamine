@@ -2,7 +2,7 @@ import classNames from 'classnames';
 import React from 'react';
 
 import { Button as MButton } from 'meiko';
-import './index.css';
+import './index.scss';
 
 export const Button = ({ className, isAction, ...props }) => (
   <MButton

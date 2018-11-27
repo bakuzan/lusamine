@@ -9,7 +9,7 @@ import Strings from 'constants/strings';
 import Routes from 'constants/routes';
 import { getWindowScrollPosition } from 'utils/common';
 
-import './HeaderBar.css';
+import './HeaderBar.scss';
 
 const PLANNER = 'planner';
 const SAVED_TEAMS = 'saved-teams';

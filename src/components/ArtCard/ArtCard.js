@@ -4,7 +4,7 @@ import React from 'react';
 
 import { buildSelectorsForArtCard } from 'utils/selectors';
 
-import './ArtCard.css';
+import './ArtCard.scss';
 
 class ArtCard extends React.PureComponent {
   render() {

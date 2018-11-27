@@ -3,7 +3,7 @@ import React from 'react';
 
 import { Constants } from 'meiko';
 import { IconButton } from 'components/Buttons/Button';
-import './ClearButton.css';
+import './ClearButton.scss';
 
 const { Icons } = Constants;
 

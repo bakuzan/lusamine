@@ -19,7 +19,7 @@ import {
 import { getPartySizeAlertMessage } from 'utils/feedback';
 import * as TPU from './TeamPlannerUtils';
 
-import './TeamPlanner.css';
+import './TeamPlanner.scss';
 
 const { Strings, Party } = Constants;
 

@@ -10,9 +10,11 @@ import TeamBreakdownStatPanel from 'components/TeamBreakdownStatPanel/TeamBreakd
 import * as TBU from './TeamBreakdownUtils';
 import { capitaliseEachWord } from 'utils/common';
 
-import './TeamBreakdown.css';
+import './TeamBreakdown.scss';
 
 class TeamBreakdown extends React.Component {
+  static contextType = TypeContext;
+
   constructor(props) {
     super(props);
     this.state = {
@@ -32,6 +34,7 @@ class TeamBreakdown extends React.Component {
   }
 
   render() {
+    let types = this.context;
     const { members } = this.props;
     const noMembers = members.size === 0;
     const mouseState = {
@@ -40,77 +43,67 @@ class TeamBreakdown extends React.Component {
     };
 
     return (
-      <TypeContext.Consumer>
-        {(types) => (
-          <div className={classNames('team-breakdown')}>
-            <Button
-              id="toggle-breakdown"
-              isAction
-              className={classNames('team-breakdown__action', {
-                'team-breakdown__action--hide': noMembers
-              })}
-              onClick={this.handleToggle}
-            >
-              {this.state.isCollapsed
-                ? `Show team breakdown`
-                : `Hide team breakdown`}
-            </Button>
-            <div
-              className={classNames('team-breakdown__content', {
-                'team-breakdown__content--collapsed': this.state.isCollapsed
-              })}
-            >
-              <List
-                shouldWrap
-                className={classNames('team-breakdown__list')}
-                items={TBU.buildStatCounts(members)}
-                itemTemplate={(item) => (
-                  <li
-                    key={item.key}
-                    className={classNames('team-breakdown__item')}
-                  >
-                    <div className={classNames('breakdown-item-title')}>
-                      <div className={classNames('breakdown-item-title__text')}>
-                        {item.key}
-                      </div>
-                    </div>
-                    <TeamBreakdownStatPanel
-                      id={item.key}
-                      nameSource={item.getKeyName}
-                      data={item.counts}
-                      onMouseState={{ ...mouseState }}
-                    />
-                  </li>
-                )}
-              />
-              <List
-                shouldWrap
-                className={classNames('team-breakdown__list')}
-                items={TBU.buildTeamWeaknessCounts(types, members)}
-                itemTemplate={(item) => (
-                  <li
-                    key={item.key}
-                    className={classNames('team-breakdown__item')}
-                  >
-                    <div className={classNames('breakdown-item-title')}>
-                      <div className={classNames('breakdown-item-title__text')}>
-                        {capitaliseEachWord(item.key)}
-                      </div>
-                    </div>
-                    <TeamBreakdownPanel
-                      id={item.key}
-                      panelModifier={item.goodCountModifier}
-                      types={types}
-                      data={item.counts}
-                      onMouseState={{ ...mouseState }}
-                    />
-                  </li>
-                )}
-              />
-            </div>
-          </div>
-        )}
-      </TypeContext.Consumer>
+      <div className={classNames('team-breakdown')}>
+        <Button
+          id="toggle-breakdown"
+          isAction
+          className={classNames('team-breakdown__action', {
+            'team-breakdown__action--hide': noMembers
+          })}
+          onClick={this.handleToggle}
+        >
+          {this.state.isCollapsed
+            ? `Show team breakdown`
+            : `Hide team breakdown`}
+        </Button>
+        <div
+          className={classNames('team-breakdown__content', {
+            'team-breakdown__content--collapsed': this.state.isCollapsed
+          })}
+        >
+          <List
+            shouldWrap
+            className={classNames('team-breakdown__list')}
+            items={TBU.buildStatCounts(members)}
+            itemTemplate={(item) => (
+              <li key={item.key} className={classNames('team-breakdown__item')}>
+                <div className={classNames('breakdown-item-title')}>
+                  <div className={classNames('breakdown-item-title__text')}>
+                    {item.key}
+                  </div>
+                </div>
+                <TeamBreakdownStatPanel
+                  id={item.key}
+                  nameSource={item.getKeyName}
+                  data={item.counts}
+                  onMouseState={{ ...mouseState }}
+                />
+              </li>
+            )}
+          />
+          <List
+            shouldWrap
+            className={classNames('team-breakdown__list')}
+            items={TBU.buildTeamWeaknessCounts(types, members)}
+            itemTemplate={(item) => (
+              <li key={item.key} className={classNames('team-breakdown__item')}>
+                <div className={classNames('breakdown-item-title')}>
+                  <div className={classNames('breakdown-item-title__text')}>
+                    {capitaliseEachWord(item.key)}
+                  </div>
+                </div>
+                <TeamBreakdownPanel
+                  id={item.key}
+                  panelModifier={item.goodCountModifier}
+                  types={types}
+                  data={item.counts}
+                  onMouseState={{ ...mouseState }}
+                />
+              </li>
+            )}
+          />
+        </div>
+      </div>
     );
   }
 }

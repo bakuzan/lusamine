@@ -18,7 +18,7 @@ import {
 } from 'utils/common';
 import highlighter from './HighlightMemberService';
 
-import './Team.css';
+import './Team.scss';
 
 class Team extends React.PureComponent {
   constructor(props) {
