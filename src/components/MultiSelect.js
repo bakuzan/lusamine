@@ -1,7 +1,7 @@
 import classNames from 'classnames';
 import React from 'react';
 
-import { MultiSelect as MMultiSelect } from 'meiko';
+import { MultiSelect as MMultiSelect } from 'meiko-lib';
 
 const MultiSelect = ({ listClassName, ...props }) => (
   <MMultiSelect

@@ -1,19 +1,26 @@
-import { Utils } from 'meiko';
-import Strings from 'constants/strings';
-import SETTINGS_DEFAULTS from 'constants/settings';
-
-const { Common } = Utils;
-
-export const {
+import {
   capitalise,
   capitaliseEachWord,
   separateAndCapitalise,
   separateAndCapitaliseAll,
   getKeyByValue,
-  objectsAreEqual
-} = Common;
+  objectsAreEqual,
+  generateUniqueId,
+  persistObjectToLocalStorage,
+  getObjectFromLocalStorageByProperty
+} from 'meiko-lib';
+import Strings from 'constants/strings';
+import SETTINGS_DEFAULTS from 'constants/settings';
 
-export const generateUniqueId = Common.generateUniqueId;
+export {
+  capitalise,
+  capitaliseEachWord,
+  separateAndCapitalise,
+  separateAndCapitaliseAll,
+  getKeyByValue,
+  objectsAreEqual,
+  generateUniqueId
+};
 
 export const getWindowScrollPosition = () =>
   window.scrollY || window.pageYOffset || document.documentElement.scrollTop;
@@ -61,11 +68,9 @@ export const moveToNewArrayPosition = (arr, from, to) => {
 };
 
 export const getSavedTeams = () =>
-  Common.getObjectFromLocalStorageByProperty(Strings.savedTeamsStorage);
+  getObjectFromLocalStorageByProperty(Strings.savedTeamsStorage);
 
-export const saveTeams = Common.persistObjectToLocalStorage(
-  Strings.savedTeamsStorage
-);
+export const saveTeams = persistObjectToLocalStorage(Strings.savedTeamsStorage);
 
 export const replaceTeams = (teams) => {
   const data = JSON.stringify(teams);
@@ -74,10 +79,10 @@ export const replaceTeams = (teams) => {
 };
 
 export const getSettings = () =>
-  Common.getObjectFromLocalStorageByProperty(Strings.settingsStorage) ||
+  getObjectFromLocalStorageByProperty(Strings.settingsStorage) ||
   SETTINGS_DEFAULTS;
 
-export const saveSettings = Common.persistObjectToLocalStorage(
+export const saveSettings = persistObjectToLocalStorage(
   Strings.settingsStorage
 );
 

@@ -1,11 +1,9 @@
 import classNames from 'classnames';
 import React from 'react';
 
-import { Constants } from 'meiko';
+import { Icons } from 'meiko-lib';
 import { IconButton } from 'components/Buttons/Button';
 import './ClearButton.scss';
-
-const { Icons } = Constants;
 
 const ClearButton = ({ className, ...props }) => (
   <IconButton

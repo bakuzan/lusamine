@@ -1,7 +1,7 @@
 import classNames from 'classnames';
 import React from 'react';
 
-import { Button as MButton } from 'meiko';
+import { Button as MButton } from 'meiko-lib';
 import './index.scss';
 
 export const Button = ({ className, isAction, ...props }) => (

@@ -1,13 +1,11 @@
-import { Utils } from 'meiko';
+import { getKeyByValue } from 'meiko-lib';
 
 import Regions from 'constants/regions';
 import { getGeneration } from 'utils/derived-data';
 
-const { getKeyByValue } = Utils.Common;
-
 function mapTypesToPokemon(typeIds, types) {
-  return typeIds.map(id => {
-    const type = types.find(x => x.id === id);
+  return typeIds.map((id) => {
+    const type = types.find((x) => x.id === id);
     return {
       id: type.id,
       name: type.name
@@ -17,12 +15,12 @@ function mapTypesToPokemon(typeIds, types) {
 
 function mapEvolutionsToPokemon(evolutions) {
   return evolutions
-    .map(e => ({
+    .map((e) => ({
       evolvesTo: e.evolvesTo,
       mechanism: e.mechanism
     }))
     .filter((o, i, arr) => {
-      const index = arr.findIndex(x => x.evolvesTo === o.evolvesTo);
+      const index = arr.findIndex((x) => x.evolvesTo === o.evolvesTo);
       return index === i;
     });
 }

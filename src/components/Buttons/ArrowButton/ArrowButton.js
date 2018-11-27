@@ -1,11 +1,9 @@
 import classNames from 'classnames';
 import React from 'react';
 
-import { Constants } from 'meiko';
+import { Icons } from 'meiko-lib';
 import { IconButton } from 'components/Buttons/Button';
 import './ArrowButton.scss';
-
-const { Icons } = Constants;
 
 const ArrowButton = ({ className, ...props }) => (
   <IconButton className={classNames('arrow-button', className)} {...props} />

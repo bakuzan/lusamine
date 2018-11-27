@@ -1,6 +1,4 @@
-import { Utils } from 'meiko';
-
-const { generateUniqueId } = Utils.Common;
+import { generateUniqueId } from './common';
 
 export function getPartySizeAlertMessage() {
   return {

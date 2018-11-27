@@ -1,6 +1,6 @@
 import { NavLink } from 'react-router-dom';
 
-import { withButtonisation, withCustomButtonWrapper } from 'meiko';
+import { withButtonisation, withCustomButtonWrapper } from 'meiko-lib';
 
 import * as LusamineButton from './Button';
 import clear_button from './ClearButton/ClearButton';

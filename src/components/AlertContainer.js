@@ -1,7 +1,7 @@
 import PropTypes from 'prop-types';
 import React from 'react';
 
-import { Alert } from 'meiko';
+import { Alert } from 'meiko-lib';
 
 class AlertContainer extends React.Component {
   constructor(props) {
@@ -27,8 +27,8 @@ class AlertContainer extends React.Component {
   }
 
   handleDismiss(alertId) {
-    this.setState(prev => ({
-      alerts: prev.alerts.filter(x => x.id !== alertId)
+    this.setState((prev) => ({
+      alerts: prev.alerts.filter((x) => x.id !== alertId)
     }));
   }
 

@@ -2,7 +2,7 @@ import classNames from 'classnames';
 import PropTypes from 'prop-types';
 import React from 'react';
 
-import { Header, Image, Utils } from 'meiko';
+import { Header, Image, createListeners } from 'meiko-lib';
 import { ButtonisedNavLink } from 'components/Buttons';
 import Logo from 'assets/logo.png';
 import Strings from 'constants/strings';
@@ -30,7 +30,7 @@ class HeaderBar extends React.Component {
   }
 
   componentDidMount() {
-    this.scrollListeners = Utils.Common.createListeners('scroll', () => {
+    this.scrollListeners = createListeners('scroll', () => {
       const windowScrollPosition = getWindowScrollPosition();
       if (windowScrollPosition !== this.state.windowScrollPosition) {
         this.setState({ windowScrollPosition });

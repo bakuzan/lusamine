@@ -2,7 +2,7 @@ import PropTypes from 'prop-types';
 import classNames from 'classnames';
 import React from 'react';
 
-import { ClearableInput, Tickbox } from 'meiko';
+import { ClearableInput, Tickbox } from 'meiko-lib';
 import MultiSelect from 'components/MultiSelect';
 import Strings from 'constants/strings';
 
