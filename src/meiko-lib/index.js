@@ -1,5 +1,5 @@
+import Alert from 'meiko/modules/components/Alert';
 import {
-  Alert,
   Button,
   withButtonisation,
   withCustomButtonWrapper,
@@ -9,22 +9,22 @@ import {
   MultiSelect,
   NewTabLink,
   Tickbox
-} from 'meiko/lib/components';
-import generateUniqueId from 'meiko/lib/utils/generateUniqueId';
-import createListeners from 'meiko/lib/utils/createListeners';
+} from 'meiko/modules/components';
+import generateUniqueId from 'meiko/modules/utils/generateUniqueId';
+import createListeners from 'meiko/modules/utils/createListeners';
 import {
   capitalise,
   capitaliseEachWord,
   separateAndCapitalise,
   separateAndCapitaliseAll
-} from 'meiko/lib/utils/capitalise';
-import objectsAreEqual from 'meiko/lib/utils/objectsAreEqual';
-import getKeyByValue from 'meiko/lib/utils/getKeyByValue';
+} from 'meiko/modules/utils/capitalise';
+import objectsAreEqual from 'meiko/modules/utils/objectsAreEqual';
+import getKeyByValue from 'meiko/modules/utils/getKeyByValue';
 import {
   persistObjectToLocalStorage,
   getObjectFromLocalStorageByProperty
-} from 'meiko/lib/utils/localStorage';
-import Icons from 'meiko/lib/constants/icons';
+} from 'meiko/modules/utils/localStorage';
+import Icons from 'meiko/modules/constants/icons';
 
 export {
   Alert,
