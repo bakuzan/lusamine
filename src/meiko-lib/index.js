@@ -2,14 +2,15 @@ import Alert from 'meiko/modules/components/Alert';
 import {
   Button,
   withButtonisation,
-  withCustomButtonWrapper,
-  ClearableInput,
-  Header,
-  Image,
-  MultiSelect,
-  NewTabLink,
-  Tickbox
-} from 'meiko/modules/components';
+  withCustomButtonWrapper
+} from 'meiko/modules/components/Button';
+import ClearableInput from 'meiko/modules/components/ClearableInput';
+import Header from 'meiko/modules/components/Header';
+import Image from 'meiko/modules/components/Image';
+import MultiSelect from 'meiko/modules/components/MultiSelect';
+import NewTabLink from 'meiko/modules/components/NewTabLink';
+import Tickbox from 'meiko/modules/components/Tickbox';
+
 import generateUniqueId from 'meiko/modules/utils/generateUniqueId';
 import createListeners from 'meiko/modules/utils/createListeners';
 import {
