@@ -7,9 +7,13 @@ import Footer from 'components/Footer/Footer';
 import TeamPlanner from 'views/TeamPlanner/TeamPlanner';
 import TeamViewer from 'views/TeamViewer/TeamViewer';
 import Settings from 'views/Settings';
+import { AppInformation } from 'meiko-lib';
 import Routes from 'constants/routes';
 import { PokedexContext, TypeContext } from 'context';
 import { constructPokedex, getTypeMatchups } from 'data';
+
+const BRANCH = process.env.REACT_APP_BRANCH;
+const VERSION = process.env.REACT_APP_VERSION;
 
 class App extends Component {
   constructor(props) {
@@ -27,6 +31,7 @@ class App extends Component {
     console.log('pokedex', this.state.pokedex);
     console.log('types', this.state.typeMatchups);
     console.groupEnd();
+
     return (
       <PokedexContext.Provider value={this.state.pokedex}>
         <TypeContext.Provider value={this.state.typeMatchups}>
@@ -55,6 +60,7 @@ class App extends Component {
               )}
             </AlertContainer>
             <Footer />
+            <AppInformation branch={BRANCH} version={VERSION} />
           </div>
         </TypeContext.Provider>
       </PokedexContext.Provider>

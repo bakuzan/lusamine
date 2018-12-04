@@ -10,6 +10,7 @@ import Image from 'meiko/modules/components/Image';
 import MultiSelect from 'meiko/modules/components/MultiSelect';
 import NewTabLink from 'meiko/modules/components/NewTabLink';
 import Tickbox from 'meiko/modules/components/Tickbox';
+import AppInformation from 'meiko/modules/components/AppInformation';
 
 import generateUniqueId from 'meiko/modules/utils/generateUniqueId';
 import createListeners from 'meiko/modules/utils/createListeners';
@@ -38,6 +39,7 @@ export {
   MultiSelect,
   NewTabLink,
   Tickbox,
+  AppInformation,
   //constants
   Icons,
   // fns

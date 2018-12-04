@@ -24,7 +24,8 @@ $theme-maps: (
   $button-link--colour: map-get($values, button-link--colour);
   .app--theme_#{$theme-name} {
     &.app,
-    .lusamine-alert {
+    .lusamine-alert,
+    .app-information__detail {
       background-color: $base-background;
       color: $base-colour;
     }
@@ -50,7 +51,8 @@ $theme-maps: (
         color: map-get($values, button--colour-hover);
       }
     }
-    .lusamine-button-link {
+    .lusamine-button-link,
+    .app-information {
       color: $button-link--colour;
       &:hover {
         color: darken($button-link--colour, $button--darken-percentage);
