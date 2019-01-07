@@ -7,7 +7,8 @@ import {
   objectsAreEqual,
   generateUniqueId,
   persistObjectToLocalStorage,
-  getObjectFromLocalStorageByProperty
+  getObjectFromLocalStorageByProperty,
+  isString
 } from 'meiko-lib';
 import Strings from 'constants/strings';
 import SETTINGS_DEFAULTS from 'constants/settings';
@@ -67,8 +68,28 @@ export const moveToNewArrayPosition = (arr, from, to) => {
   return list;
 };
 
-export const getSavedTeams = () =>
-  getObjectFromLocalStorageByProperty(Strings.savedTeamsStorage);
+export const getSavedTeams = () => {
+  const teams = getObjectFromLocalStorageByProperty(Strings.savedTeamsStorage);
+  if (!teams) {
+    return;
+  }
+
+  const teamKeys = Object.keys(teams);
+  const containsV1Data = teamKeys.some((k) => isString(teams[k]));
+  if (containsV1Data) {
+    return teamKeys.reduce((p, k) => {
+      const data = teams[k];
+      return {
+        ...p,
+        [k]: isString(data)
+          ? { name: generateUniqueId(), idString: data }
+          : data
+      };
+    }, {});
+  } else {
+    return teams;
+  }
+};
 
 export const saveTeams = persistObjectToLocalStorage(Strings.savedTeamsStorage);
 

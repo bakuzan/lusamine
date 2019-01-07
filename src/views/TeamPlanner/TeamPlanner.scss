@@ -31,7 +31,10 @@
     display: flex;
     justify-content: flex-end;
   }
+  &__team-creator {
+    margin: 5px 0;
+  }
   &__sprite-list {
-    justify-content: space-evenly;
+    grid-template-columns: repeat(auto-fit, 46px);
   }
 }

@@ -74,7 +74,10 @@ class TeamViewer extends React.Component {
                 onClick={() => this.handleDeleteTeam(t.id)}
               />
             </div>
-            <Team members={selectMembersFromPokedex(pokedex, t.memberIds)} />
+            <Team
+              name={t.name}
+              members={selectMembersFromPokedex(pokedex, t.memberIds)}
+            />
           </div>
         ))}
       </div>

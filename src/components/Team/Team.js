@@ -128,6 +128,7 @@ class Team extends React.PureComponent {
 
     return (
       <div>
+        {this.props.name && <div className="team-name">{this.props.name}</div>}
         <List
           className={classNames('team')}
           items={members}
@@ -156,6 +157,7 @@ class Team extends React.PureComponent {
 }
 
 Team.propTypes = {
+  name: PropTypes.string,
   types: PropTypes.object,
   members: PropTypes.object,
   onMembersUpdate: PropTypes.func

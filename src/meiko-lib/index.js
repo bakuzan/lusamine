@@ -11,6 +11,7 @@ import MultiSelect from 'meiko/modules/components/MultiSelect';
 import NewTabLink from 'meiko/modules/components/NewTabLink';
 import Tickbox from 'meiko/modules/components/Tickbox';
 import AppInformation from 'meiko/modules/components/AppInformation';
+import Grid from 'meiko/modules/components/Grid';
 
 import generateUniqueId from 'meiko/modules/utils/generateUniqueId';
 import createListeners from 'meiko/modules/utils/createListeners';
@@ -26,6 +27,7 @@ import {
   persistObjectToLocalStorage,
   getObjectFromLocalStorageByProperty
 } from 'meiko/modules/utils/localStorage';
+import { isString } from 'meiko/modules/utils/typeof';
 import Icons from 'meiko/modules/constants/icons';
 
 export {
@@ -34,6 +36,7 @@ export {
   withButtonisation,
   withCustomButtonWrapper,
   ClearableInput,
+  Grid,
   Header,
   Image,
   MultiSelect,
@@ -52,5 +55,6 @@ export {
   generateUniqueId,
   createListeners,
   persistObjectToLocalStorage,
-  getObjectFromLocalStorageByProperty
+  getObjectFromLocalStorageByProperty,
+  isString
 };

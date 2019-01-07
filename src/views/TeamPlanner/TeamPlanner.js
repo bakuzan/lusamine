@@ -1,10 +1,10 @@
 import classNames from 'classnames';
 import React from 'react';
 
+import { Grid, ClearableInput } from 'meiko-lib';
 import { Button } from 'components/Buttons';
 import Filters from 'components/Filters/Filters';
 import Team from 'components/Team/Team';
-import List from 'components/List/List';
 import Sprite from 'components/Sprite/Sprite';
 import { PokedexContext, TypeContext } from 'context';
 import Constants from 'constants/index';
@@ -27,6 +27,7 @@ class PlannerPage extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
+      currentTeamName: '',
       currentTeamIds: createSetFromIdString(
         getUrlQueryStringAsObject(props.location).team
       ),
@@ -39,6 +40,7 @@ class PlannerPage extends React.Component {
       includeVariants: true
     };
 
+    this.handleNameInput = this.handleNameInput.bind(this);
     this.handleSearchInput = this.handleSearchInput.bind(this);
     this.handleMultiSelectFilter = this.handleMultiSelectFilter.bind(this);
     this.handleTickboxFilter = this.handleTickboxFilter.bind(this);
@@ -49,7 +51,7 @@ class PlannerPage extends React.Component {
     this.handleSaveTeam = this.handleSaveTeam.bind(this);
   }
 
-  componentDidUpdate(prevProps) {
+  componentDidUpdate() {
     const queryObject = getUrlQueryStringAsObject(this.props.location);
     const currentIds = createIdStringFromSet(this.state.currentTeamIds);
 
@@ -63,6 +65,10 @@ class PlannerPage extends React.Component {
   updateTeamQueryString(memberIds, newId) {
     const idStr = createIdStringFromSet(memberIds, newId);
     this.props.history.push(`${this.props.match.path}?team=${idStr}`);
+  }
+
+  handleNameInput(e) {
+    this.setState({ currentTeamName: e.target.value });
   }
 
   handleSearchInput(e) {
@@ -107,10 +113,16 @@ class PlannerPage extends React.Component {
   }
 
   handleSaveTeam() {
-    if (this.state.currentTeamIds.size === 0) return;
+    if (this.state.currentTeamIds.size === 0) {
+      return;
+    }
+
     const teamId = generateUniqueId();
     const saveTeamData = {
-      [teamId]: createIdStringFromSet(this.state.currentTeamIds)
+      [teamId]: {
+        name: this.state.currentTeamName,
+        idString: createIdStringFromSet(this.state.currentTeamIds)
+      }
     };
 
     saveTeams(saveTeamData);
@@ -192,31 +204,40 @@ class PlannerPage extends React.Component {
                       Clear team
                     </Button>
                   </div>
-                  <Team
-                    types={typeMatches}
-                    members={selectMembersFromPokedex(
-                      pokedex,
-                      this.state.currentTeamIds
-                    )}
-                    onMembersUpdate={this.handleMembersUpdate}
-                  />
+                  <div className="team-planner__team-creator">
+                    <ClearableInput
+                      id="current-team-name"
+                      name="currentTeamName"
+                      label="Team Name"
+                      value={this.state.currentTeamName}
+                      onChange={this.handleNameInput}
+                    />
+                    <Team
+                      types={typeMatches}
+                      members={selectMembersFromPokedex(
+                        pokedex,
+                        this.state.currentTeamIds
+                      )}
+                      onMembersUpdate={this.handleMembersUpdate}
+                    />
+                  </div>
                   <Filters hiddenOn={Strings.large} {...filterProps} />
-                  <List
+                  <Grid
                     className="team-planner__sprite-list"
-                    shouldWrap
                     items={TPU.iteratePokedexToList(
                       pokedex,
                       dexFilters,
                       typeMatches
                     )}
-                    itemTemplate={(item, i) => (
+                  >
+                    {(item, i) => (
                       <Sprite
                         key={i}
                         data={item}
                         onClick={this.handleSpriteSelection}
                       />
                     )}
-                  />
+                  </Grid>
                 </div>
               )}
             </TypeContext.Consumer>

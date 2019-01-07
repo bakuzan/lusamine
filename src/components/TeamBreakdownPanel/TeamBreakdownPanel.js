@@ -14,6 +14,40 @@ class TeamBreakdownPanel extends React.Component {
     const typesList = [...types.values()];
 
     return (
+      // <Grid
+      // className={classNames('breakdown-panel', [
+      //   `breakdown-panel--good-is_${panelModifier}`
+      // ])}
+      // items={typesList}
+      // >
+      // {(t) => {
+      //     const score = data.get(t.id);
+      //     const typeStatusClass = TBPU.getClassForScore(score);
+      //     const title = TBPU.getScoreDescription(panelModifier, score);
+      //     const mouseState = Object.keys(onMouseState).reduce(
+      //       (p, k) => ({ ...p, [k]: () => onMouseState[k](id, t.id) }),
+      //       {}
+      //     );
+
+      //     return (
+      //       <li
+      //         key={t.id}
+      //         className={classNames(
+      //           TBPU.BREAKDOWN_ITEM_CLASS,
+      //           'list-item-bottom-spacing',
+      //           typeStatusClass
+      //         )}
+      //         title={title}
+      //         {...mouseState}
+      //       >
+      //         <TypeBlock value={t.name} />
+      //         <div className={classNames('breakdown-panel__count')}>
+      //           {score}
+      //         </div>
+      //       </li>
+      //     );
+      //   }}
+      // </Grid>
       <List
         shouldWrap
         className={classNames('breakdown-panel', [

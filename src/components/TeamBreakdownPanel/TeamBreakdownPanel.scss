@@ -6,6 +6,8 @@
 }
 
 .breakdown-panel {
+  grid-template-columns: repeat(auto-fit, 50px);
+
   &__item {
     position: relative;
     display: flex;
