@@ -1,24 +1,20 @@
 @import '../../styles/_mixins';
 @import '../../styles/_variables';
 
-@mixin create-rows($n) {
-  width: calc(100% / (18 /#{$n}));
-}
+$indicator-size: 10px;
+$breakdown-panel--item-width: $type--width + $indicator-size;
 
 .breakdown-panel {
+  grid-auto-rows: 1fr;
+  grid-template-columns: repeat(auto-fit, $breakdown-panel--item-width);
+  justify-content: space-evenly;
+
   &__item {
     position: relative;
     display: flex;
     flex-direction: column;
     align-items: center;
-    @include create-rows(2);
-
-    @include respond-to(sm) {
-      @include create-rows(3);
-    }
-    @include respond-to(xs) {
-      @include create-rows(4);
-    }
+    width: $breakdown-panel--item-width;
   }
   &__count {
     text-align: center;
@@ -26,16 +22,15 @@
 }
 
 @mixin after-indicator {
-  $indicator-size: 10px;
-
   &:after {
     content: ' ';
     position: absolute;
-    top: -8px;
-    right: 8px;
+    top: 50%;
+    right: 10px;
     width: $indicator-size;
     height: $indicator-size;
     border-radius: 50%;
+    transform: translateY(50%);
     @content;
   }
 }

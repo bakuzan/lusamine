@@ -36,5 +36,7 @@
   }
   &__sprite-list {
     grid-template-columns: repeat(auto-fit, 46px);
+    grid-auto-rows: 1fr;
+    justify-content: space-evenly;
   }
 }

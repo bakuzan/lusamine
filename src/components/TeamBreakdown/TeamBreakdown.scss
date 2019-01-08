@@ -1,3 +1,5 @@
+@import '../../styles/_mixins.scss';
+
 .team-breakdown {
   display: flex;
   flex-direction: column;
@@ -37,4 +39,21 @@
     background-color: transparent;
     padding: 0 5px;
   }
+}
+
+.stat-breakdown-list {
+  flex-direction: column;
+
+  @include respond-to(lg) {
+    flex-direction: row;
+
+    &__item {
+      margin: 0.5em 0.1em;
+    }
+  }
+}
+
+.type-breakdown-list,
+.type-breakdown-list__item {
+  width: 100%;
 }

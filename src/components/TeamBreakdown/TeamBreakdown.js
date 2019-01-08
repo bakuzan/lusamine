@@ -62,11 +62,19 @@ class TeamBreakdown extends React.Component {
           })}
         >
           <List
-            shouldWrap
-            className={classNames('team-breakdown__list')}
+            className={classNames(
+              'team-breakdown__list',
+              'stat-breakdown-list'
+            )}
             items={TBU.buildStatCounts(members)}
             itemTemplate={(item) => (
-              <li key={item.key} className={classNames('team-breakdown__item')}>
+              <li
+                key={item.key}
+                className={classNames(
+                  'team-breakdown__item',
+                  'stat-breakdown-list__item'
+                )}
+              >
                 <div className={classNames('breakdown-item-title')}>
                   <div className={classNames('breakdown-item-title__text')}>
                     {item.key}
@@ -82,11 +90,20 @@ class TeamBreakdown extends React.Component {
             )}
           />
           <List
-            shouldWrap
-            className={classNames('team-breakdown__list')}
+            columns={1}
+            className={classNames(
+              'team-breakdown__list',
+              'type-breakdown-list'
+            )}
             items={TBU.buildTeamWeaknessCounts(types, members)}
             itemTemplate={(item) => (
-              <li key={item.key} className={classNames('team-breakdown__item')}>
+              <li
+                key={item.key}
+                className={classNames(
+                  'team-breakdown__item',
+                  'type-breakdown-list__item'
+                )}
+              >
                 <div className={classNames('breakdown-item-title')}>
                   <div className={classNames('breakdown-item-title__text')}>
                     {capitaliseEachWord(item.key)}
