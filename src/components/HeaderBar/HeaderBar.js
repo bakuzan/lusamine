@@ -5,7 +5,7 @@ import React from 'react';
 import { Header, Image, createListeners } from 'meiko-lib';
 import { ButtonisedNavLink } from 'components/Buttons';
 import Logo from 'assets/logo.png';
-import Strings from 'constants/strings';
+
 import Routes from 'constants/routes';
 import { getWindowScrollPosition } from 'utils/common';
 
@@ -14,12 +14,6 @@ import './HeaderBar.scss';
 const PLANNER = 'planner';
 const SAVED_TEAMS = 'saved-teams';
 const SETTINGS = 'settings';
-const getPageTitleForCurrentPath = (path) =>
-  path.includes(SAVED_TEAMS)
-    ? Strings.pageTitle.savedTeams
-    : path.includes(SETTINGS)
-      ? Strings.pageTitle.settings
-      : Strings.pageTitle.planner;
 
 class HeaderBar extends React.Component {
   constructor(props) {
@@ -46,7 +40,6 @@ class HeaderBar extends React.Component {
   render() {
     const savedTeamsUrl = `${Routes.base}${Routes.savedTeams}`;
     const settingsUrl = `${Routes.base}${Routes.settings}`;
-    const pageTitle = getPageTitleForCurrentPath(this.props.currentPath);
 
     const isPageScrolled = !!this.state.windowScrollPosition;
     const headerClasses = classNames('header-bar', {
@@ -58,7 +51,7 @@ class HeaderBar extends React.Component {
         id="lusamine-header"
         className={headerClasses}
         leftAlignTitle
-        title={pageTitle}
+        title={this.props.pageTitle}
         navLeft={<Image className="logo" alt="Pokémon Logo" src={Logo} />}
         navRight={
           <React.Fragment>
@@ -88,7 +81,7 @@ class HeaderBar extends React.Component {
 }
 
 HeaderBar.propTypes = {
-  currentPath: PropTypes.string.isRequired
+  pageTitle: PropTypes.string.isRequired
 };
 
 export default HeaderBar;

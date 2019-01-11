@@ -21,6 +21,11 @@ export default {
     savedTeams: 'saved teams',
     settings: 'settings'
   },
+  pageDescription: {
+    planner: 'Plan a new pokemon team',
+    savedTeams: 'View previously saved pokemon teams',
+    settings: 'Adjustable application settings'
+  },
   scoreModifier: {
     none: 'none',
     low: 'low',
