@@ -16,23 +16,23 @@ self.__precacheManifest = [
     "url": "/lusamine/static/js/runtime~main.c8c5e3ff.js"
   },
   {
-    "revision": "183c0315832472a7f306",
-    "url": "/lusamine/static/js/main.183c0315.chunk.js"
+    "revision": "535db62290571d17f1b5",
+    "url": "/lusamine/static/js/main.535db622.chunk.js"
   },
   {
-    "revision": "14d556d2d32e000b0a03",
-    "url": "/lusamine/static/js/1.14d556d2.chunk.js"
+    "revision": "7ae98f206924a3ba61c2",
+    "url": "/lusamine/static/js/1.7ae98f20.chunk.js"
   },
   {
-    "revision": "183c0315832472a7f306",
-    "url": "/lusamine/static/css/main.21481e62.chunk.css"
+    "revision": "535db62290571d17f1b5",
+    "url": "/lusamine/static/css/main.28f0bbc7.chunk.css"
   },
   {
-    "revision": "14d556d2d32e000b0a03",
-    "url": "/lusamine/static/css/1.ea211085.chunk.css"
+    "revision": "7ae98f206924a3ba61c2",
+    "url": "/lusamine/static/css/1.ee06d71e.chunk.css"
   },
   {
-    "revision": "ef9f669b81145be4c144f4e83c109d00",
+    "revision": "79180367dad3eac16f3c8706234901ee",
     "url": "/lusamine/index.html"
   }
 ];
