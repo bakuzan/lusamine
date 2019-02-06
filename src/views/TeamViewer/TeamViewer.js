@@ -4,7 +4,7 @@ import React from 'react';
 import { ClearButton, ButtonisedNavLink } from 'components/Buttons';
 import Team from 'components/Team/Team';
 import TeamViewerMessage from 'views/TeamViewer/TeamViewerMessage';
-import { PokedexContext } from 'context';
+import { PokedexContext, TypeContext } from 'context';
 import * as TVU from './TeamViewerUtils';
 import {
   getSavedTeams,
@@ -59,28 +59,33 @@ class TeamViewer extends React.Component {
     const teams = TVU.mapSavedTeamsToDisplayModel(savedTeams);
 
     return (
-      <div className="team-viewer">
-        {teams.map((t) => (
-          <div
-            key={t.id}
-            className={classNames('team-viewer__team saved-team')}
-          >
-            <div className={classNames('saved-team__actions')}>
-              <ButtonisedNavLink to={TVU.createTeamUrl(t.idString)}>
-                Load team
-              </ButtonisedNavLink>
-              <ClearButton
-                title="Delete"
-                onClick={() => this.handleDeleteTeam(t.id)}
-              />
-            </div>
-            <Team
-              name={t.name}
-              members={selectMembersFromPokedex(pokedex, t.memberIds)}
-            />
+      <TypeContext.Consumer>
+        {(typeMatches) => (
+          <div className="team-viewer">
+            {teams.map((t) => (
+              <div
+                key={t.id}
+                className={classNames('team-viewer__team saved-team')}
+              >
+                <div className={classNames('saved-team__actions')}>
+                  <ButtonisedNavLink to={TVU.createTeamUrl(t.idString)}>
+                    Load team
+                  </ButtonisedNavLink>
+                  <ClearButton
+                    title="Delete"
+                    onClick={() => this.handleDeleteTeam(t.id)}
+                  />
+                </div>
+                <Team
+                  name={t.name}
+                  types={typeMatches}
+                  members={selectMembersFromPokedex(pokedex, t.memberIds)}
+                />
+              </div>
+            ))}
           </div>
-        ))}
-      </div>
+        )}
+      </TypeContext.Consumer>
     );
   }
 }

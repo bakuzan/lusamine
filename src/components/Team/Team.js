@@ -158,7 +158,7 @@ class Team extends React.PureComponent {
 
 Team.propTypes = {
   name: PropTypes.string,
-  types: PropTypes.object,
+  types: PropTypes.object.isRequired,
   members: PropTypes.object,
   onMembersUpdate: PropTypes.func
 };
