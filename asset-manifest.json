@@ -1,7 +1,7 @@
 {
   "main.css": "/lusamine/static/css/main.28f0bbc7.chunk.css",
-  "main.js": "/lusamine/static/js/main.535db622.chunk.js",
-  "main.js.map": "/lusamine/static/js/main.535db622.chunk.js.map",
+  "main.js": "/lusamine/static/js/main.43542800.chunk.js",
+  "main.js.map": "/lusamine/static/js/main.43542800.chunk.js.map",
   "static/css/1.ee06d71e.chunk.css": "/lusamine/static/css/1.ee06d71e.chunk.css",
   "static/js/1.7ae98f20.chunk.js": "/lusamine/static/js/1.7ae98f20.chunk.js",
   "static/js/1.7ae98f20.chunk.js.map": "/lusamine/static/js/1.7ae98f20.chunk.js.map",
@@ -13,6 +13,6 @@
   "static/media/ArtCard.scss": "/lusamine/static/media/art.5b4cd3e3.png",
   "static/css/1.ee06d71e.chunk.css.map": "/lusamine/static/css/1.ee06d71e.chunk.css.map",
   "index.html": "/lusamine/index.html",
-  "precache-manifest.493115b4570f53ae077bc74ced4d4acf.js": "/lusamine/precache-manifest.493115b4570f53ae077bc74ced4d4acf.js",
+  "precache-manifest.64c3ffacbd847d5b0f049aea770eb98f.js": "/lusamine/precache-manifest.64c3ffacbd847d5b0f049aea770eb98f.js",
   "service-worker.js": "/lusamine/service-worker.js"
 }
