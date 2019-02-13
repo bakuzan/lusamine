@@ -6,7 +6,7 @@ import Routes from 'constants/routes';
 import registerServiceWorker from './registerServiceWorker';
 import Driver from './driver';
 
-import 'meiko/dist/bundle.min.css';
+// import 'meiko/dist/bundle.min.css';
 import './styles/index.scss';
 
 window.Lusamine = Driver;

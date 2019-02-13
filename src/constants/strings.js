@@ -17,8 +17,8 @@ export default {
   savedTeamsStorage: 'savedTeams',
   settingsStorage: 'lusamineSettings',
   pageTitle: {
-    planner: 'team planner',
-    savedTeams: 'saved teams',
+    planner: 'Pokémon team planner',
+    savedTeams: 'saved Pokémon teams',
     settings: 'settings'
   },
   pageDescription: {

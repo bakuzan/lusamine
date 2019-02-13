@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import { Switch, Route } from 'react-router-dom';
 import { Helmet } from 'react-helmet';
 
+import { GlobalBaseStyle } from 'meiko-lib';
 import HeaderBar from 'components/HeaderBar/HeaderBar';
 import AlertContainer from 'components/AlertContainer';
 import Footer from 'components/Footer/Footer';
@@ -66,6 +67,7 @@ class App extends Component {
               <title>{pageTitle}</title>
               <meta name="description" content={pageDescription} />
             </Helmet>
+            <GlobalBaseStyle />
             <HeaderBar pageTitle={pageHeader} />
             <AlertContainer>
               {(triggerAlert) => (

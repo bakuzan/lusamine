@@ -1,3 +1,4 @@
+import React from 'react';
 import { NavLink } from 'react-router-dom';
 
 import { withButtonisation, withCustomButtonWrapper } from 'meiko-lib';
@@ -13,6 +14,6 @@ export const LeftButton = ArrowButton.LeftButton;
 export const RightButton = ArrowButton.RightButton;
 
 export const ButtonisedNavLink = withCustomButtonWrapper(
-  withButtonisation(NavLink),
+  withButtonisation(({ link, ...props }) => <NavLink {...props} />),
   { className: 'lusamine-button-link', link: true }
 );

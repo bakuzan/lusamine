@@ -1,20 +1,12 @@
 @import './_variables';
 
-// This will probably be refactored later
-// as this will duplicate the css! (that's bad)
 @mixin typed-colour-modifiers {
   @each $name, $value in $types {
     &--#{$name}_position-first {
       background: $value;
-      border-color: darken($value, $type--darken-percentage-border);
-      &:focus,
-      &:hover {
-        border-color: darken($value, $type--darken-percentage-border-hover);
-        outline: none;
-      }
     }
-  }
-  @each $name, $value in $types {
+
+    &--#{$name}_position-first,
     &--#{$name}_position-second {
       border-color: darken($value, $type--darken-percentage-border);
       &:focus,
