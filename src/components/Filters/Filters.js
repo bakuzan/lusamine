@@ -5,13 +5,22 @@ import React from 'react';
 import { ClearableInput, Tickbox } from 'meiko-lib';
 import MultiSelect from 'components/MultiSelect';
 import Strings from 'constants/strings';
+import { useWindowSize } from 'hooks/useWindowSize';
 
 import './Filters.scss';
 
 const FILTERS_INPUT_CLASS = 'filters__input';
+const media = new Map([['small', (n) => n <= 991], ['large', (n) => n > 991]]);
 
-const Filters = (props) => {
+function Filters(props) {
   const hideOnCertainScreens = !!props.hiddenOn;
+  const shouldHide = media.get(props.hiddenOn);
+  const size = useWindowSize();
+
+  if (shouldHide(size.width)) {
+    return null;
+  }
+
   return (
     <section
       className={classNames('filters', {
@@ -68,7 +77,7 @@ const Filters = (props) => {
       />
     </section>
   );
-};
+}
 
 const multiselectPropTypes = PropTypes.shape({
   values: PropTypes.arrayOf(
