@@ -7,43 +7,49 @@ import types from './raw/types.json';
 import evolutions from './raw/evolutions.json';
 
 export function transformPokemonData(data) {
-  return data.reduce((p, c) => {
-    const id = IdGenerators.generatePokemonId(c);
-    const pokemonTypes = types.filter(x => c.typeIds.includes(x.id));
+  return data.reduce((p, c, order) => {
+    const id = IdGenerators.generatePokemonId(p, c);
+    const pokemonTypes = types.filter((x) => c.typeIds.includes(x.id));
     const pokemonEvolutions = evolutions.filter(
-      x => x.nationalPokedexNumber === c.nationalPokedexNumber
+      (x) => x.nationalPokedexNumber === c.nationalPokedexNumber
     );
-    p.set(id, Mappers.mapPokemonData(id, c, pokemonTypes, pokemonEvolutions));
+    p.set(
+      id,
+      Mappers.mapPokemonData({ id, order }, c, pokemonTypes, pokemonEvolutions)
+    );
     return p;
   }, new Map());
 }
 
 export function transformMegaPokemonData(data) {
-  return data.reduce((p, c) => {
-    const id = IdGenerators.generateMegaPokemonId(c);
+  return data.reduce((p, c, order) => {
+    const id = IdGenerators.generateMegaPokemonId(p, c);
     const basePokemon = pokemon.find(
-      x => x.nationalPokedexNumber === c.nationalPokedexNumber
+      (x) => x.nationalPokedexNumber === c.nationalPokedexNumber
     );
-    const pokemonTypes = types.filter(x => c.typeIds.includes(x.id));
-    p.set(id, Mappers.mapMegaPokemonData(id, c, pokemonTypes, basePokemon));
+    const pokemonTypes = types.filter((x) => c.typeIds.includes(x.id));
+    p.set(
+      id,
+      Mappers.mapMegaPokemonData({ id, order }, c, pokemonTypes, basePokemon)
+    );
     return p;
   }, new Map());
 }
 
 export function transformVariantPokemonData(data) {
-  return data.reduce((p, c) => {
-    const id = IdGenerators.generateVariantPokemonId(c);
+  return data.reduce((p, c, order) => {
+    const id = IdGenerators.generateVariantPokemonId(p, c);
     const basePokemon = pokemon.find(
-      x => x.nationalPokedexNumber === c.nationalPokedexNumber
+      (x) => x.nationalPokedexNumber === c.nationalPokedexNumber
     );
-    const pokemonTypes = types.filter(x => c.typeIds.includes(x.id));
+    const pokemonTypes = types.filter((x) => c.typeIds.includes(x.id));
     const pokemonEvolutions = evolutions.filter(
-      x => x.nationalPokedexNumber === c.nationalPokedexNumber
+      (x) => x.nationalPokedexNumber === c.nationalPokedexNumber
     );
     p.set(
       id,
       Mappers.mapVariantsPokemonData(
-        id,
+        { id, order },
         c,
         pokemonTypes,
         pokemonEvolutions,

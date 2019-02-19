@@ -1,9 +1,6 @@
 @import './_colours';
-// not used currently.
-// @import './pokemon-names/_index.scss';
 
 // Screen Variables
-
 $screen-xs: 480px;
 $screen-sm: 768px;
 $screen-md: 992px;
@@ -40,10 +37,6 @@ $header--box-shadow-colour: $highlighted;
 $header--height: 50px;
 
 $sprite--size: 40px;
-$sprites--row-offset: -30px;
-$sprites--column-offset: -30px;
-$sprites--height: abs($sprites--row-offset);
-$sprites--width: abs($sprites--column-offset);
 $sprite-pokemon--margin-top: 5px;
 $sprite-pokemon--margin-top-reduced: $sprite-pokemon--margin-top - 2px;
 

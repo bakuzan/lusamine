@@ -2,241 +2,289 @@
   {
     "nationalPokedexNumber": 3,
     "suffix": "",
-    "typeIds": [2, 7]
-  },
-  {
-    "nationalPokedexNumber": 6,
-    "suffix": "x",
-    "typeIds": [3, 15]
+    "typeIds": [2, 7],
+    "introduced": "XY"
   },
   {
     "nationalPokedexNumber": 6,
     "suffix": "y",
-    "typeIds": [3, 6]
+    "typeIds": [3, 6],
+    "introduced": "XY"
+  },
+  {
+    "nationalPokedexNumber": 6,
+    "suffix": "x",
+    "typeIds": [3, 15],
+    "introduced": "XY"
   },
   {
     "nationalPokedexNumber": 9,
     "suffix": "",
-    "typeIds": [4]
-  },
-  {
-    "nationalPokedexNumber": 65,
-    "suffix": "",
-    "typeIds": [13]
-  },
-  {
-    "nationalPokedexNumber": 94,
-    "suffix": "",
-    "typeIds": [11, 7]
-  },
-  {
-    "nationalPokedexNumber": 115,
-    "suffix": "",
-    "typeIds": [1]
-  },
-  {
-    "nationalPokedexNumber": 127,
-    "suffix": "",
-    "typeIds": [10, 6]
-  },
-  {
-    "nationalPokedexNumber": 130,
-    "suffix": "",
-    "typeIds": [4, 16]
-  },
-  {
-    "nationalPokedexNumber": 142,
-    "suffix": "",
-    "typeIds": [9, 6]
-  },
-  {
-    "nationalPokedexNumber": 150,
-    "suffix": "x",
-    "typeIds": [13, 5]
-  },
-  {
-    "nationalPokedexNumber": 150,
-    "suffix": "y",
-    "typeIds": [13]
-  },
-  {
-    "nationalPokedexNumber": 181,
-    "suffix": "",
-    "typeIds": [12, 15]
-  },
-  {
-    "nationalPokedexNumber": 212,
-    "suffix": "",
-    "typeIds": [10, 17]
-  },
-  {
-    "nationalPokedexNumber": 214,
-    "suffix": "",
-    "typeIds": [10, 5]
-  },
-  {
-    "nationalPokedexNumber": 229,
-    "suffix": "",
-    "typeIds": [16, 3]
-  },
-  {
-    "nationalPokedexNumber": 248,
-    "suffix": "",
-    "typeIds": [9, 16]
-  },
-  {
-    "nationalPokedexNumber": 257,
-    "suffix": "",
-    "typeIds": [3, 5]
-  },
-  {
-    "nationalPokedexNumber": 282,
-    "suffix": "",
-    "typeIds": [13, 18]
-  },
-  {
-    "nationalPokedexNumber": 303,
-    "suffix": "",
-    "typeIds": [17, 18]
-  },
-  {
-    "nationalPokedexNumber": 306,
-    "suffix": "",
-    "typeIds": [17]
-  },
-  {
-    "nationalPokedexNumber": 308,
-    "suffix": "",
-    "typeIds": [5, 13]
-  },
-  {
-    "nationalPokedexNumber": 310,
-    "suffix": "",
-    "typeIds": [12]
-  },
-  {
-    "nationalPokedexNumber": 354,
-    "suffix": "",
-    "typeIds": [11]
-  },
-  {
-    "nationalPokedexNumber": 359,
-    "suffix": "",
-    "typeIds": [16]
-  },
-  {
-    "nationalPokedexNumber": 445,
-    "suffix": "",
-    "typeIds": [15, 8]
-  },
-  {
-    "nationalPokedexNumber": 448,
-    "suffix": "",
-    "typeIds": [5, 17]
-  },
-  {
-    "nationalPokedexNumber": 460,
-    "suffix": "",
-    "typeIds": [2, 14]
+    "typeIds": [4],
+    "introduced": "XY"
   },
   {
     "nationalPokedexNumber": 15,
     "suffix": "",
-    "typeIds": [10, 7]
+    "typeIds": [10, 7],
+    "introduced": "ORAS"
   },
   {
     "nationalPokedexNumber": 18,
     "suffix": "",
-    "typeIds": [1, 6]
+    "typeIds": [1, 6],
+    "introduced": "ORAS"
+  },
+  {
+    "nationalPokedexNumber": 65,
+    "suffix": "",
+    "typeIds": [13],
+    "introduced": "XY"
   },
   {
     "nationalPokedexNumber": 80,
     "suffix": "",
-    "typeIds": [4, 13]
+    "typeIds": [4, 13],
+    "introduced": "ORAS"
+  },
+  {
+    "nationalPokedexNumber": 94,
+    "suffix": "",
+    "typeIds": [11, 7],
+    "introduced": "XY"
+  },
+  {
+    "nationalPokedexNumber": 115,
+    "suffix": "",
+    "typeIds": [1],
+    "introduced": "XY"
+  },
+  {
+    "nationalPokedexNumber": 127,
+    "suffix": "",
+    "typeIds": [10, 6],
+    "introduced": "XY"
+  },
+  {
+    "nationalPokedexNumber": 130,
+    "suffix": "",
+    "typeIds": [4, 16],
+    "introduced": "XY"
+  },
+  {
+    "nationalPokedexNumber": 142,
+    "suffix": "",
+    "typeIds": [9, 6],
+    "introduced": "XY"
+  },
+  {
+    "nationalPokedexNumber": 150,
+    "suffix": "y",
+    "typeIds": [13],
+    "introduced": "XY"
+  },
+  {
+    "nationalPokedexNumber": 150,
+    "suffix": "x",
+    "typeIds": [13, 5],
+    "introduced": "XY"
+  },
+  {
+    "nationalPokedexNumber": 181,
+    "suffix": "",
+    "typeIds": [12, 15],
+    "introduced": "XY"
   },
   {
     "nationalPokedexNumber": 208,
     "suffix": "",
-    "typeIds": [17, 8]
+    "typeIds": [17, 8],
+    "introduced": "ORAS"
+  },
+  {
+    "nationalPokedexNumber": 212,
+    "suffix": "",
+    "typeIds": [10, 17],
+    "introduced": "XY"
+  },
+  {
+    "nationalPokedexNumber": 214,
+    "suffix": "",
+    "typeIds": [10, 5],
+    "introduced": "XY"
+  },
+  {
+    "nationalPokedexNumber": 229,
+    "suffix": "",
+    "typeIds": [16, 3],
+    "introduced": "XY"
+  },
+  {
+    "nationalPokedexNumber": 248,
+    "suffix": "",
+    "typeIds": [9, 16],
+    "introduced": "XY"
   },
   {
     "nationalPokedexNumber": 254,
     "suffix": "",
-    "typeIds": [2, 15]
+    "typeIds": [2, 15],
+    "introduced": "ORAS"
+  },
+  {
+    "nationalPokedexNumber": 257,
+    "suffix": "",
+    "typeIds": [3, 5],
+    "introduced": "XY"
   },
   {
     "nationalPokedexNumber": 260,
     "suffix": "",
-    "typeIds": [4, 8]
+    "typeIds": [4, 8],
+    "introduced": "ORAS"
+  },
+  {
+    "nationalPokedexNumber": 282,
+    "suffix": "",
+    "typeIds": [13, 18],
+    "introduced": "XY"
   },
   {
     "nationalPokedexNumber": 302,
     "suffix": "",
-    "typeIds": [16, 11]
+    "typeIds": [16, 11],
+    "introduced": "ORAS"
+  },
+  {
+    "nationalPokedexNumber": 303,
+    "suffix": "",
+    "typeIds": [17, 18],
+    "introduced": "XY"
+  },
+  {
+    "nationalPokedexNumber": 306,
+    "suffix": "",
+    "typeIds": [17],
+    "introduced": "XY"
+  },
+  {
+    "nationalPokedexNumber": 308,
+    "suffix": "",
+    "typeIds": [5, 13],
+    "introduced": "XY"
+  },
+  {
+    "nationalPokedexNumber": 310,
+    "suffix": "",
+    "typeIds": [12],
+    "introduced": "XY"
   },
   {
     "nationalPokedexNumber": 319,
     "suffix": "",
-    "typeIds": [4, 16]
+    "typeIds": [4, 16],
+    "introduced": "ORAS"
   },
   {
     "nationalPokedexNumber": 323,
     "suffix": "",
-    "typeIds": [3, 8]
+    "typeIds": [3, 8],
+    "introduced": "ORAS"
   },
   {
     "nationalPokedexNumber": 334,
     "suffix": "",
-    "typeIds": [15, 18]
+    "typeIds": [15, 18],
+    "introduced": "ORAS"
+  },
+  {
+    "nationalPokedexNumber": 354,
+    "suffix": "",
+    "typeIds": [11],
+    "introduced": "XY"
+  },
+  {
+    "nationalPokedexNumber": 359,
+    "suffix": "",
+    "typeIds": [16],
+    "introduced": "XY"
   },
   {
     "nationalPokedexNumber": 362,
     "suffix": "",
-    "typeIds": [14]
+    "typeIds": [14],
+    "introduced": "ORAS"
   },
   {
     "nationalPokedexNumber": 373,
     "suffix": "",
-    "typeIds": [15, 6]
+    "typeIds": [15, 6],
+    "introduced": "ORAS"
   },
   {
     "nationalPokedexNumber": 376,
     "suffix": "",
-    "typeIds": [17, 13]
+    "typeIds": [17, 13],
+    "introduced": "ORAS"
   },
   {
     "nationalPokedexNumber": 380,
     "suffix": "",
-    "typeIds": [15, 13]
+    "typeIds": [15, 13],
+    "introduced": "ORAS"
   },
   {
     "nationalPokedexNumber": 381,
     "suffix": "",
-    "typeIds": [15, 13]
+    "typeIds": [15, 13],
+    "introduced": "ORAS"
   },
   {
     "nationalPokedexNumber": 384,
     "suffix": "",
-    "typeIds": [15, 6]
+    "typeIds": [15, 6],
+    "introduced": "ORAS"
   },
   {
     "nationalPokedexNumber": 428,
     "suffix": "",
-    "typeIds": [1, 5]
+    "typeIds": [1, 5],
+    "introduced": "ORAS"
+  },
+  {
+    "nationalPokedexNumber": 445,
+    "suffix": "",
+    "typeIds": [15, 8],
+    "introduced": "XY"
+  },
+  {
+    "nationalPokedexNumber": 448,
+    "suffix": "",
+    "typeIds": [5, 17],
+    "introduced": "XY"
+  },
+  {
+    "nationalPokedexNumber": 460,
+    "suffix": "",
+    "typeIds": [2, 14],
+    "introduced": "XY"
   },
   {
     "nationalPokedexNumber": 475,
     "suffix": "",
-    "typeIds": [13, 5]
+    "typeIds": [13, 5],
+    "introduced": "ORAS"
   },
   {
     "nationalPokedexNumber": 531,
     "suffix": "",
-    "typeIds": [1, 18]
+    "typeIds": [1, 18],
+    "introduced": "ORAS"
   },
   {
     "nationalPokedexNumber": 719,
     "suffix": "",
-    "typeIds": [9, 18]
+    "typeIds": [9, 18],
+    "introduced": "ORAS"
   }
 ]

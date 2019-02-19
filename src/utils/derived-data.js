@@ -8,7 +8,7 @@ const GEN4_START = 387;
 const GEN5_START = 494;
 const GEN6_START = 650;
 const GEN7_START = 722;
-export const getGeneration = dexNum => {
+export const getGeneration = (dexNum) => {
   if (dexNum < GEN2_START) return Generations.gen1;
   if (dexNum < GEN3_START) return Generations.gen2;
   if (dexNum < GEN4_START) return Generations.gen3;
@@ -42,7 +42,13 @@ export const generateEmptySlots = () => {
   return new Map(emptySlots);
 };
 
-const checkPokemonId = check => mon => mon.id.startsWith(`${check}_`);
+const checkPokemonId = (check) => (mon) => mon.id.startsWith(`${check}_`);
 
 export const isMegaPokemon = checkPokemonId(Strings.idPrefix.mega);
 export const isVariantPokemon = checkPokemonId(Strings.idPrefix.variant);
+
+export function getDataFlags(data) {
+  const isMega = isMegaPokemon(data);
+  const isVariant = isVariantPokemon(data);
+  return { isMega, isVariant };
+}

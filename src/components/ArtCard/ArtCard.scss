@@ -20,20 +20,6 @@
   cursor: default;
 }
 
-// $art-card-pokemon: join($empty, $art-names, 'comma');
-// @for $n from 1 through length($art-card-pokemon) {
-//   $i: $n - 1;
-//   $row: floor($i/30);
-//   $col: $i - (30 * $row);
-//   $name: nth($art-card-pokemon, $n);
-//   .art-card__pokemon--#{$name} {
-//     background-position: #{$col *
-//       $art-card--column-offset}
-//       #{$row *
-//       $art-card--row-offset};
-//   }
-// }
-
 // Welp, the art sheet is rubbish!
 // You can't loop as some of the images are mis-sized
 
@@ -1355,13 +1341,13 @@
   &--kyogre {
     background-position: -1824px -1344px;
   }
-  &--kyogre-primal {
+  &--primal-kyogre {
     background-position: -1920px -1344px;
   }
   &--groudon {
     background-position: -2016px -1344px;
   }
-  &--groudon-primal {
+  &--primal-groudon {
     background-position: -2112px -1344px;
   }
   &--rayquaza {
