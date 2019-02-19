@@ -24,6 +24,4 @@ yarn-error.log*
 
 # temp files
 /tools/output/*
-/tools/images/art/*
-/tools/images/sprites/*
 /tools/name-manipulation/output/*.txt
