@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { Switch, Route } from 'react-router-dom';
 import { Helmet } from 'react-helmet';
 
-import { GlobalBaseStyle } from 'meiko-lib';
+import { GlobalBaseStyle, Alert } from 'meiko-lib';
 import HeaderBar from 'components/HeaderBar/HeaderBar';
 import AlertContainer from 'components/AlertContainer';
 import Footer from 'components/Footer/Footer';
@@ -42,8 +42,23 @@ class App extends Component {
     super(props);
     this.state = {
       pokedex: constructPokedex(),
-      typeMatchups: getTypeMatchups()
+      typeMatchups: getTypeMatchups(),
+      userWarning: [
+        {
+          id: 1000,
+          type: 'warning',
+          message: 'Images currently being updated.',
+          detail:
+            'Image sources are currently being updated which could result in missing or incorrect images.'
+        }
+      ]
     };
+
+    this.handleDismiss = this.handleDismiss.bind(this);
+  }
+
+  handleDismiss() {
+    this.setState({ userWarning: [] });
   }
 
   render() {
@@ -53,10 +68,10 @@ class App extends Component {
       pageHeader,
       pageDescription
     } = getPageTitleForCurrentPath(location.pathname);
+
     console.groupCollapsed('App');
-    console.log(this.props);
-    console.log('pokedex', this.state.pokedex);
-    console.log('types', this.state.typeMatchups);
+    console.log('%c pokedex', 'color: royalblue', this.state.pokedex);
+    console.log('%c types', 'color: forestgreen', this.state.typeMatchups);
     console.groupEnd();
 
     return (
@@ -69,6 +84,14 @@ class App extends Component {
             </Helmet>
             <GlobalBaseStyle />
             <HeaderBar pageTitle={pageHeader} />
+            {/* User warning about images changing */}
+            <Alert
+              messageClassName="lusamine-alert"
+              alerts={this.state.userWarning}
+              actions={{
+                dismissAlertMessage: this.handleDismiss
+              }}
+            />
             <AlertContainer>
               {(triggerAlert) => (
                 <main>

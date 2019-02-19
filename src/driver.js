@@ -14,7 +14,17 @@ export default {
     randomise: clickOn('randomise-team'),
     save: clickOn('save-team'),
     clear: clickOn('clear-team'),
-    toggleBreakdown: clickOn('toggle-breakdown')
+    toggleBreakdown: clickOn('toggle-breakdown'),
+    add: (id) => clickOn(`sprite-${id}`)(),
+    remove: (id) => {
+      const baseUrl = `${window.location.origin}${window.location.pathname}`;
+      const newSearch = window.location.search
+        .replace(id, '')
+        .replace(',,', ',')
+        .replace('=,', '=');
+
+      window.location.href = `${baseUrl}${newSearch}`;
+    }
   },
   settings: {
     toggleCanDnD: clickOn('can-dnd')

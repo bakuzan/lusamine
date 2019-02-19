@@ -19,13 +19,16 @@ const Sprite = React.memo(function(props) {
   const spriteClasses = buildSelectorsForSprite(data);
   const hasClick = !!onClick;
   const spriteClick = hasClick ? () => onClick(data.id) : null;
-  const capitalisedName = capitaliseEachWord(data.name);
+  const capitalisedName = capitaliseEachWord(
+    `${data.name}${data.form ? ` (${data.form})` : ''}`
+  );
 
   return (
     <li className={classNames('margin-one', 'sprite', spriteClasses.types)}>
       <button
         type="button"
         onClick={spriteClick}
+        id={`sprite-${data.id}`}
         className={classNames(
           'sprite__pokemon',
           {

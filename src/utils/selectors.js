@@ -3,12 +3,13 @@ const MEGA_X = '-x';
 const MEGA_Y = '-y';
 const ALOLA = 'alola-';
 
-const constructNameClass = className => name => {
+const constructNameClass = (className) => (name, form) => {
   let pokemonName = name
     .replace(/ /g, '-')
     .replace(/[.':]/g, '')
     .replace(/♂/g, '-male')
     .replace(/♀/g, '');
+
   if (pokemonName.includes(MEGA)) {
     pokemonName = `${pokemonName.replace(MEGA, '')}-mega`;
     if (pokemonName.includes(MEGA_X)) {
@@ -19,15 +20,16 @@ const constructNameClass = className => name => {
   } else if (pokemonName.includes(ALOLA)) {
     pokemonName = `${pokemonName.replace(ALOLA, '')}-alola`;
   }
-  return `${className}__pokemon--${pokemonName}`;
+
+  return `${className}__pokemon--${pokemonName}${form ? `-${form}` : ''}`;
 };
 
 const constructNameClassForSprite = constructNameClass('sprite');
 
 const constructNameClassForArtCard = constructNameClass('art-card');
 
-const indexToText = i => (i === 0 ? 'position-first' : 'position-second');
-const constructTypeClasses = className => types => {
+const indexToText = (i) => (i === 0 ? 'position-first' : 'position-second');
+const constructTypeClasses = (className) => (types) => {
   return types
     .reduce((p, c, i) => `${p} ${className}--${c.name}_${indexToText(i)}`, '')
     .trim();
@@ -48,7 +50,7 @@ export function buildSelectorsForSprite(data) {
 
 export function buildSelectorsForArtCard(data) {
   const types = constructTypeClassesForArtCard(data.types);
-  const name = constructNameClassForArtCard(data.name);
+  const name = constructNameClassForArtCard(data.name, data.form);
   return {
     types,
     name

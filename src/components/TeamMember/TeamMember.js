@@ -91,7 +91,9 @@ class TeamMember extends React.Component {
           data={data}
         />
         <div className={classNames('team-member__name-bubble')}>
-          {capitaliseEachWord(data.name)}
+          {capitaliseEachWord(
+            `${data.name}${data.form ? ` (${data.form})` : ''}`
+          )}
         </div>
         <div className={classNames('team-member__types')}>
           {data.types.map((type) => (

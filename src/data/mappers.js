@@ -31,6 +31,7 @@ export function mapPokemonData({ id, order }, data, types, evolutions) {
     order,
     nationalPokedexNumber: data.nationalPokedexNumber,
     name: data.name,
+    form: data.form,
     types: mapTypesToPokemon(data.typeIds, types),
     evolutions: mapEvolutionsToPokemon(evolutions),
     generation: getGeneration(data.nationalPokedexNumber)
@@ -44,6 +45,7 @@ export function mapMegaPokemonData({ id, order }, data, types, basePokemon) {
     order,
     nationalPokedexNumber: data.nationalPokedexNumber,
     name: `mega ${basePokemon.name}${suffix}`,
+    form: '',
     types: mapTypesToPokemon(data.typeIds, types),
     evolutions: [],
     generation: getGeneration(data.nationalPokedexNumber)
@@ -63,6 +65,7 @@ export function mapVariantsPokemonData(
     order,
     nationalPokedexNumber: data.nationalPokedexNumber,
     name: `${regionName} ${basePokemon.name}`,
+    form: '',
     types: mapTypesToPokemon(data.typeIds, types),
     evolutions: mapEvolutionsToPokemon(evolutions),
     generation: getGeneration(data.nationalPokedexNumber)
