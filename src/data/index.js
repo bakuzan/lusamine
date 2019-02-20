@@ -10,11 +10,36 @@ import megas from './raw/mega-evolutions.json';
 import regionalVariants from './raw/regional-variants.json';
 import types from './raw/types.json';
 
+const SPRITES_PER_ROW = 31;
+const ART_PER_ROW = 30; // GUESS
+
 export function constructPokedex() {
   const pokemonMap = transformPokemonData(pokemon);
   const megasMap = transformMegaPokemonData(megas);
   const variantsMap = transformVariantPokemonData(regionalVariants);
-  return combineAndSortMaps(pokemonMap, megasMap, variantsMap);
+
+  return combineAndSortMaps(
+    ([id, mon], order) => {
+      const sOffset = -42;
+      const aOffset = -102;
+      const sy = -2 + sOffset * Math.floor(order / SPRITES_PER_ROW);
+      const sx = -2 + sOffset * (order % SPRITES_PER_ROW);
+      const ay = -2 + aOffset * Math.floor(order / ART_PER_ROW);
+      const ax = -2 + aOffset * (order % ART_PER_ROW);
+      // TODO check these values
+      return [
+        id,
+        {
+          ...mon,
+          spritePosition: { backgroundPosition: `${sx}px ${sy}px` },
+          artPosition: { backgroundPosition: `${ax}px ${ay}px` }
+        }
+      ];
+    },
+    pokemonMap,
+    megasMap,
+    variantsMap
+  );
 }
 
 export function getTypeMatchups() {

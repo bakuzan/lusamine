@@ -27,12 +27,16 @@ function applyDexFilters(item, filters, typeMatches) {
     includeMega,
     includeVariants
   } = filters;
-  if (!includeMega && isMegaPokemon(item)) return true;
-  if (!includeVariants && isVariantPokemon(item)) return true;
+  if (!includeMega && isMegaPokemon(item)) {
+    return true;
+  }
+  if (!includeVariants && isVariantPokemon(item)) {
+    return true;
+  }
 
   return (
     currentTeamIds.has(item.id) ||
-    !item.name.includes(search) ||
+    ![item.id, item.name, item.form].some((x) => x.includes(search)) ||
     !generations.includes(item.generation) ||
     !item.types.some((x) => types.includes(x.id)) ||
     !item.types.some((x) => {
@@ -47,8 +51,11 @@ function applyDexFilters(item, filters, typeMatches) {
 }
 
 export function iteratePokedexToList(dex, filters, typeMatches) {
-  return Array.from(dex).reduce((acc, [id, item]) => {
-    if (applyDexFilters(item, filters, typeMatches)) return acc;
+  return Array.from(dex).reduce((acc, [_, item]) => {
+    if (applyDexFilters(item, filters, typeMatches)) {
+      return acc;
+    }
+
     return [...acc, item];
   }, []);
 }

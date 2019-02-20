@@ -1,36 +1,24 @@
 @import '../../styles/_variables';
 @import '../../styles/_mixins';
+@import '../../styles/_extensions';
 
 .sprite {
+  @extend %image-container-border;
   display: flex;
   justify-content: center;
   width: $sprite--size;
   height: $sprite--size;
-  border: 2px solid;
-  border-radius: 50%;
 
   @include typed-colour-modifiers;
 }
 
 .sprite__pokemon {
+  @extend %image-element;
   height: $sprite--size;
   width: $sprite--size;
-  background-color: transparent;
   background-image: url(../../assets/sprites.png);
   background-image: url(../../assets/sprites.webp);
   margin: $sprite-pokemon--margin-top 0;
-  appearance: none;
-  border: none;
-  cursor: default;
-
-  &--mega {
-    background-image: url(../../assets/sprites-mega.png);
-    background-image: url(../../assets/sprites-mega.webp);
-  }
-  &--variant {
-    background-image: url(../../assets/sprites-variants.png);
-    background-image: url(../../assets/sprites-variants.webp);
-  }
 
   &--can-click {
     cursor: pointer;

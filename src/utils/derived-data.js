@@ -46,9 +46,3 @@ const checkPokemonId = (check) => (mon) => mon.id.startsWith(`${check}_`);
 
 export const isMegaPokemon = checkPokemonId(Strings.idPrefix.mega);
 export const isVariantPokemon = checkPokemonId(Strings.idPrefix.variant);
-
-export function getDataFlags(data) {
-  const isMega = isMegaPokemon(data);
-  const isVariant = isVariantPokemon(data);
-  return { isMega, isVariant };
-}

@@ -1,0 +1,11 @@
+%image-container-border {
+  border: 2px solid;
+  border-radius: 50%;
+}
+
+%image-element {
+  background-color: transparent;
+  appearance: none;
+  border: none;
+  cursor: default;
+}

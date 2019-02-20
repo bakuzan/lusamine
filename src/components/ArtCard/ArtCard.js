@@ -8,6 +8,7 @@ import './ArtCard.scss';
 
 class ArtCard extends React.PureComponent {
   render() {
+    const backgroundPosition = this.props.data.artPosition;
     const artCardClasses = buildSelectorsForArtCard(this.props.data);
     return (
       <div className={classNames('art-card', artCardClasses.types)}>
@@ -17,6 +18,7 @@ class ArtCard extends React.PureComponent {
             this.props.className,
             artCardClasses.name
           )}
+          style={backgroundPosition}
         />
       </div>
     );

@@ -25,10 +25,9 @@ function mapEvolutionsToPokemon(evolutions) {
     });
 }
 
-export function mapPokemonData({ id, order }, data, types, evolutions) {
+export function mapPokemonData(id, data, types, evolutions) {
   return {
     id,
-    order,
     nationalPokedexNumber: data.nationalPokedexNumber,
     name: data.name,
     form: data.form,
@@ -38,11 +37,10 @@ export function mapPokemonData({ id, order }, data, types, evolutions) {
   };
 }
 
-export function mapMegaPokemonData({ id, order }, data, types, basePokemon) {
+export function mapMegaPokemonData(id, data, types, basePokemon) {
   const suffix = data.suffix ? ` ${data.suffix}` : '';
   return {
     id,
-    order,
     nationalPokedexNumber: data.nationalPokedexNumber,
     name: `mega ${basePokemon.name}${suffix}`,
     form: '',
@@ -53,7 +51,7 @@ export function mapMegaPokemonData({ id, order }, data, types, basePokemon) {
 }
 
 export function mapVariantsPokemonData(
-  { id, order },
+  id,
   data,
   types,
   evolutions,
@@ -62,7 +60,6 @@ export function mapVariantsPokemonData(
   const regionName = getKeyByValue(Regions, data.regionId);
   return {
     id,
-    order,
     nationalPokedexNumber: data.nationalPokedexNumber,
     name: `${regionName} ${basePokemon.name}`,
     form: '',
