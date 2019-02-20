@@ -24,6 +24,8 @@ import './TeamPlanner.scss';
 const { Strings, Party } = Constants;
 
 class PlannerPage extends React.Component {
+  static contextType = PokedexContext;
+
   constructor(props) {
     super(props);
     this.state = {
@@ -129,6 +131,7 @@ class PlannerPage extends React.Component {
   }
 
   render() {
+    let pokedex = this.context;
     const dexFilters = { ...this.state };
     const filterProps = {
       searchProps: {
@@ -166,69 +169,67 @@ class PlannerPage extends React.Component {
     };
 
     return (
-      <PokedexContext.Consumer>
-        {(pokedex) => (
-          <div className="team-planner">
-            <div
-              className={classNames(
-                'team-planner__container',
-                'team-planner__container--width_20',
-                'team-planner__container--hide-on_small'
-              )}
-            >
-              <Filters hiddenOn={Strings.small} {...filterProps} />
-            </div>
-            <TypeContext.Consumer>
-              {(typeMatches) => (
-                <div className="team-planner__container team-planner__container--width_80">
-                  <div className="team-planner__button-actions">
-                    <Button
-                      id="randomise-team"
-                      isAction
-                      onClick={this.handleRandomTeam(pokedex, typeMatches)}
-                    >
-                      Randomise
-                    </Button>
-                    <Button
-                      id="save-team"
-                      isAction
-                      onClick={this.handleSaveTeam}
-                    >
-                      Save team
-                    </Button>
-                    <Button
-                      id="clear-team"
-                      isAction
-                      onClick={this.handleClearTeam}
-                    >
-                      Clear team
-                    </Button>
-                  </div>
-                  <div className="team-planner__team-creator">
-                    <ClearableInput
-                      id="current-team-name"
-                      name="currentTeamName"
-                      label="Team Name"
-                      value={this.state.currentTeamName}
-                      onChange={this.handleNameInput}
-                    />
-                    <Team
-                      types={typeMatches}
-                      members={selectMembersFromPokedex(
-                        pokedex,
-                        this.state.currentTeamIds
-                      )}
-                      onMembersUpdate={this.handleMembersUpdate}
-                    />
-                  </div>
-                  <Filters hiddenOn={Strings.large} {...filterProps} />
+      <div className="team-planner">
+        <div
+          className={classNames(
+            'team-planner__container',
+            'team-planner__container--width_20',
+            'team-planner__container--hide-on_small'
+          )}
+        >
+          <Filters hiddenOn={Strings.small} {...filterProps} />
+        </div>
+        <TypeContext.Consumer>
+          {(typeMatches) => {
+            const filteredSprites = TPU.iteratePokedexToList(
+              pokedex,
+              dexFilters,
+              typeMatches
+            );
+
+            return (
+              <div className="team-planner__container team-planner__container--width_80">
+                <div className="team-planner__button-actions">
+                  <Button
+                    id="randomise-team"
+                    isAction
+                    onClick={this.handleRandomTeam(pokedex, typeMatches)}
+                  >
+                    Randomise
+                  </Button>
+                  <Button id="save-team" isAction onClick={this.handleSaveTeam}>
+                    Save team
+                  </Button>
+                  <Button
+                    id="clear-team"
+                    isAction
+                    onClick={this.handleClearTeam}
+                  >
+                    Clear team
+                  </Button>
+                </div>
+                <div className="team-planner__team-creator">
+                  <ClearableInput
+                    id="current-team-name"
+                    name="currentTeamName"
+                    label="Team Name"
+                    value={this.state.currentTeamName}
+                    onChange={this.handleNameInput}
+                  />
+                  <Team
+                    types={typeMatches}
+                    members={selectMembersFromPokedex(
+                      pokedex,
+                      this.state.currentTeamIds
+                    )}
+                    onMembersUpdate={this.handleMembersUpdate}
+                  />
+                </div>
+                <Filters hiddenOn={Strings.large} {...filterProps} />
+                {!!filteredSprites.length && (
                   <Grid
                     className="team-planner__sprite-list"
-                    items={TPU.iteratePokedexToList(
-                      pokedex,
-                      dexFilters,
-                      typeMatches
-                    )}
+                    items={filteredSprites}
                   >
                     {(item, i) => (
                       <Sprite
@@ -238,12 +239,15 @@ class PlannerPage extends React.Component {
                       />
                     )}
                   </Grid>
-                </div>
-              )}
-            </TypeContext.Consumer>
-          </div>
-        )}
-      </PokedexContext.Consumer>
+                )}
+                {!filteredSprites.length && (
+                  <div>No pokemon available for the current filter.</div>
+                )}
+              </div>
+            );
+          }}
+        </TypeContext.Consumer>
+      </div>
     );
   }
 }

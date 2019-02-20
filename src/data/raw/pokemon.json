@@ -2861,31 +2861,31 @@
     "nationalPokedexNumber": 479,
     "name": "rotom",
     "typeIds": [12, 3],
-    "form": "fan"
-  },
-  {
-    "nationalPokedexNumber": 479,
-    "name": "rotom",
-    "typeIds": [12, 4],
-    "form": "frost"
-  },
-  {
-    "nationalPokedexNumber": 479,
-    "name": "rotom",
-    "typeIds": [12, 14],
     "form": "heat"
   },
   {
     "nationalPokedexNumber": 479,
     "name": "rotom",
+    "typeIds": [12, 4],
+    "form": "wash"
+  },
+  {
+    "nationalPokedexNumber": 479,
+    "name": "rotom",
+    "typeIds": [12, 14],
+    "form": "frost"
+  },
+  {
+    "nationalPokedexNumber": 479,
+    "name": "rotom",
     "typeIds": [12, 6],
-    "form": "mow"
+    "form": "fan"
   },
   {
     "nationalPokedexNumber": 479,
     "name": "rotom",
     "typeIds": [12, 2],
-    "form": "wash"
+    "form": "mow"
   },
   {
     "nationalPokedexNumber": 480,

@@ -2,14 +2,17 @@ import PropTypes from 'prop-types';
 import classNames from 'classnames';
 import React from 'react';
 
+import { capitaliseEachWord } from 'utils/common';
 import { buildSelectorsForArtCard } from 'utils/selectors';
 
 import './ArtCard.scss';
 
 class ArtCard extends React.PureComponent {
   render() {
-    const backgroundPosition = this.props.data.artPosition;
-    const artCardClasses = buildSelectorsForArtCard(this.props.data);
+    const { data } = this.props;
+    const backgroundPosition = data.artPosition;
+    const artCardClasses = buildSelectorsForArtCard(data);
+
     return (
       <div className={classNames('art-card', artCardClasses.types)}>
         <div
@@ -19,6 +22,11 @@ class ArtCard extends React.PureComponent {
             artCardClasses.name
           )}
           style={backgroundPosition}
+          aria-label={capitaliseEachWord(
+            `${data.name}${
+              data.form ? ` (${capitaliseEachWord(data.form)})` : ''
+            }`
+          )}
         />
       </div>
     );

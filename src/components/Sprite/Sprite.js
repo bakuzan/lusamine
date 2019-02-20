@@ -15,7 +15,7 @@ const Sprite = React.memo(function(props) {
   const hasClick = !!onClick;
   const spriteClick = hasClick ? () => onClick(data.id) : null;
   const capitalisedName = capitaliseEachWord(
-    `${data.name}${data.form ? ` (${data.form})` : ''}`
+    `${data.name}${data.form ? ` (${capitaliseEachWord(data.form)})` : ''}`
   );
 
   return (
