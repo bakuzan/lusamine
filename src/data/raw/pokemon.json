@@ -2887,7 +2887,12 @@
     "typeIds": [12, 2],
     "form": "wash"
   },
-  { "nationalPokedexNumber": 480, "name": "uxie", "typeIds": [13], "form": "" },
+  {
+    "nationalPokedexNumber": 480,
+    "name": "uxie",
+    "typeIds": [13],
+    "form": ""
+  },
   {
     "nationalPokedexNumber": 481,
     "name": "mesprit",
@@ -4340,6 +4345,18 @@
     "form": ""
   },
   {
+    "nationalPokedexNumber": 718,
+    "name": "zygarde",
+    "typeIds": [15, 8],
+    "form": "10%"
+  },
+  {
+    "nationalPokedexNumber": 718,
+    "name": "zygarde",
+    "typeIds": [15, 8],
+    "form": "complete"
+  },
+  {
     "nationalPokedexNumber": 719,
     "name": "diancie",
     "typeIds": [9, 18],
@@ -4524,6 +4541,18 @@
     "name": "lycanroc",
     "typeIds": [9],
     "form": ""
+  },
+  {
+    "nationalPokedexNumber": 745,
+    "name": "lycanroc",
+    "typeIds": [9],
+    "form": "midnight"
+  },
+  {
+    "nationalPokedexNumber": 745,
+    "name": "lycanroc",
+    "typeIds": [9],
+    "form": "dusk"
   },
   {
     "nationalPokedexNumber": 746,
