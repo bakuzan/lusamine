@@ -99,9 +99,11 @@ export const replaceTeams = (teams) => {
   return teams;
 };
 
-export const getSettings = () =>
-  getObjectFromLocalStorageByProperty(Strings.settingsStorage) ||
-  SETTINGS_DEFAULTS;
+export const getSettings = () => ({
+  ...SETTINGS_DEFAULTS,
+  ...(getObjectFromLocalStorageByProperty(Strings.settingsStorage) ||
+    SETTINGS_DEFAULTS)
+});
 
 export const saveSettings = persistObjectToLocalStorage(
   Strings.settingsStorage

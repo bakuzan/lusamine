@@ -231,9 +231,9 @@ class PlannerPage extends React.Component {
                     className="team-planner__sprite-list"
                     items={filteredSprites}
                   >
-                    {(item, i) => (
+                    {(item) => (
                       <Sprite
-                        key={i}
+                        key={item.id}
                         data={item}
                         onClick={this.handleSpriteSelection}
                       />
@@ -241,7 +241,7 @@ class PlannerPage extends React.Component {
                   </Grid>
                 )}
                 {!filteredSprites.length && (
-                  <div>No pokemon available for the current filter.</div>
+                  <div>No pokemon available for the current filters.</div>
                 )}
               </div>
             );

@@ -26,6 +26,9 @@ const memberTarget = {
 
     // Prevents trashing
     monitor.getItem().index = hoverIndex;
+  },
+  canDrop(props) {
+    return !props.data.isEmpty;
   }
 };
 

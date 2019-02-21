@@ -16,7 +16,7 @@ const TeamBreakdownStatPanel = ({
   return (
     <List
       shouldWrap
-      className={classNames('one')}
+      columns={1}
       items={keys}
       itemTemplate={(key) => {
         const name = nameSource(key);

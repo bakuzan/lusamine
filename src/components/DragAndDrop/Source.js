@@ -5,6 +5,9 @@ import DnDType from 'constants/dnd-type';
 const memberSource = {
   beginDrag(props) {
     return { ...props };
+  },
+  canDrag(props) {
+    return !props.data.isEmpty;
   }
 };
 

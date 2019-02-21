@@ -29,6 +29,7 @@ function Filters(props) {
     >
       <ClearableInput
         {...props.searchProps}
+        id="search"
         className={classNames(FILTERS_INPUT_CLASS)}
       />
       <MultiSelect

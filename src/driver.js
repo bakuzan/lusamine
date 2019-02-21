@@ -1,7 +1,15 @@
-const clickOn = (selector) => () => {
+function getElement(selector) {
   const el = document.getElementById(selector);
-  if (!el) return console.warn(`${selector} not found.`);
-  el.click();
+  if (!el) {
+    console.warn(`${selector} not found.`);
+  }
+
+  return el;
+}
+
+const clickOn = (selector) => () => {
+  const el = getElement(selector);
+  el && el.click();
 };
 
 export default {

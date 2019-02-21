@@ -59,7 +59,8 @@ class TeamMember extends React.Component {
       move,
       partyEndIndex,
       isDragging,
-      isOver
+      isOver,
+      canDrop
     } = this.props;
     const hasData = !data.isEmpty;
     const canRemove = hasData && isSelected && !!remove;
@@ -76,7 +77,7 @@ class TeamMember extends React.Component {
           'team-member--highlighted': isHighlighted,
           'team-member--empty': !hasData,
           'team-member--dragging': isDragging,
-          'team-member--is-over': isOver
+          'team-member--is-over': isOver && canDrop
         })}
         onClick={memberClick}
         role="button"

@@ -4,6 +4,8 @@ import { EvolutionForms } from 'constants/evolutions';
 import { capitalise, separateAndCapitaliseAll } from 'utils/common';
 import { isMegaPokemon, isVariantPokemon } from 'utils/derived-data';
 
+const padInt = (n) => `${n}`.padStart(3, '0');
+
 function isExcludedEvolutionType(pEvolutions, evolutionFilters) {
   const length = evolutionFilters.length;
   if (length === 2) return false;
@@ -34,9 +36,11 @@ function applyDexFilters(item, filters, typeMatches) {
     return true;
   }
 
+  const npn = padInt(item.nationalPokedexNumber);
+
   return (
     currentTeamIds.has(item.id) ||
-    ![item.id, item.name, item.form].some((x) => x.includes(search)) ||
+    ![npn, item.name, item.form].some((x) => x.includes(search)) ||
     !generations.includes(item.generation) ||
     !item.types.some((x) => types.includes(x.id)) ||
     !item.types.some((x) => {

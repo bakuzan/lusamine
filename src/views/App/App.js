@@ -15,6 +15,7 @@ import Routes from 'constants/routes';
 import { PokedexContext, TypeContext } from 'context';
 import { constructPokedex, getTypeMatchups } from 'data';
 import { capitaliseEachWord } from 'utils/common';
+import { getSettings, saveSettings } from '../../utils/common';
 
 const BRANCH = process.env.REACT_APP_BRANCH;
 const VERSION = process.env.REACT_APP_VERSION;
@@ -43,7 +44,7 @@ class App extends Component {
     this.state = {
       pokedex: constructPokedex(),
       typeMatchups: getTypeMatchups(),
-      userWarning: [
+      userMessages: [
         {
           id: 1000,
           type: 'warning',
@@ -57,8 +58,11 @@ class App extends Component {
     this.handleDismiss = this.handleDismiss.bind(this);
   }
 
-  handleDismiss() {
-    this.setState({ userWarning: [] });
+  handleDismiss(messageId) {
+    this.setState({ userMessages: [] }, () => {
+      const settings = getSettings();
+      saveSettings({ readMessages: [...settings.readMessages, messageId] });
+    });
   }
 
   render() {
@@ -68,6 +72,12 @@ class App extends Component {
       pageHeader,
       pageDescription
     } = getPageTitleForCurrentPath(location.pathname);
+
+    const settings = getSettings();
+    const messages = this.state.userMessages.filter(
+      (x) => !settings.readMessages.includes(x.id)
+    );
+    const hasMessages = !!messages.length;
 
     console.groupCollapsed('App');
     console.log('%c pokedex', 'color: royalblue', this.state.pokedex);
@@ -84,14 +94,15 @@ class App extends Component {
             </Helmet>
             <GlobalBaseStyle />
             <HeaderBar pageTitle={pageHeader} />
-            {/* User warning about images changing */}
-            <Alert
-              messageClassName="lusamine-alert"
-              alerts={this.state.userWarning}
-              actions={{
-                dismissAlertMessage: this.handleDismiss
-              }}
-            />
+            {hasMessages && (
+              <Alert
+                messageClassName="lusamine-alert"
+                alerts={messages}
+                actions={{
+                  dismissAlertMessage: this.handleDismiss
+                }}
+              />
+            )}
             <AlertContainer>
               {(triggerAlert) => (
                 <main>

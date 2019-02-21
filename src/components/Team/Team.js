@@ -2,7 +2,7 @@ import PropTypes from 'prop-types';
 import classNames from 'classnames';
 import React from 'react';
 
-import DragAndDropContext from 'components/DragAndDrop';
+import DnDBackend from 'components/DragAndDrop';
 import List from 'components/List/List';
 import TeamBreakdown from 'components/TeamBreakdown/TeamBreakdown';
 import TeamMember, {
@@ -83,6 +83,10 @@ class Team extends React.PureComponent {
   }
 
   handleMemberDnD(dragIndex, hoverIndex) {
+    if (dragIndex === hoverIndex) {
+      return; // ignore these
+    }
+
     const members = iterateKeysToArray(this.state.members);
     const newOrderMembers = moveToNewArrayPosition(
       members,
@@ -163,4 +167,4 @@ Team.propTypes = {
   onMembersUpdate: PropTypes.func
 };
 
-export default DragAndDropContext(Team);
+export default DnDBackend(Team);
