@@ -1,6 +1,6 @@
 {
   "name": "lusamine",
-  "version": "0.14.0",
+  "version": "1.0.0",
   "private": true,
   "homepage": "https://bakuzan.github.io/lusamine/",
   "dependencies": {
@@ -27,14 +27,15 @@
       "git add"
     ]
   },
-  "pre-commit": ["precommit-msg", "lint"],
+  "pre-commit": [
+    "precommit-msg",
+    "lint"
+  ],
   "scripts": {
     "precommit-msg": "echo 'Precommit checks...'",
     "lint": "lint-staged",
-    "start":
-      "for /f %i in ('git rev-parse --abbrev-ref HEAD') do set REACT_APP_BRANCH=%i && react-scripts start",
-    "build":
-      "for /f %i in ('git rev-parse --abbrev-ref HEAD') do set REACT_APP_BRANCH=%i && react-scripts build",
+    "start": "for /f %i in ('git rev-parse --abbrev-ref HEAD') do set REACT_APP_BRANCH=%i && react-scripts start",
+    "build": "for /f %i in ('git rev-parse --abbrev-ref HEAD') do set REACT_APP_BRANCH=%i && react-scripts build",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject",
     "deploy": "npm run build&&gh-pages -d build",
@@ -46,5 +47,10 @@
     "node-sprite-generator": "^0.10.2",
     "request": "^2.85.0"
   },
-  "browserslist": ["> 1%", "not dead", "not ie <= 11", "not op_mini all"]
+  "browserslist": [
+    "> 1%",
+    "not dead",
+    "not ie <= 11",
+    "not op_mini all"
+  ]
 }
