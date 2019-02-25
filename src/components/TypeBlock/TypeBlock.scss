@@ -5,6 +5,7 @@
   height: $type--height;
   background-color: transparent;
   background-image: url('../../assets/types.png');
+  background-image: url('../../assets/types.webp');
 }
 
 @for $n from 1 through length($types) {

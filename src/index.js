@@ -4,12 +4,13 @@ import { BrowserRouter, Switch, Route, Redirect } from 'react-router-dom';
 import App from 'views/App/App';
 import Routes from 'constants/routes';
 import registerServiceWorker from './registerServiceWorker';
+import preloadImages from './preloadImages';
 import Driver from './driver';
 
-// import 'meiko/dist/bundle.min.css';
 import './styles/index.scss';
 
 window.Lusamine = Driver;
+preloadImages();
 
 ReactDOM.render(
   <BrowserRouter>
