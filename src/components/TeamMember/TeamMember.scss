@@ -51,6 +51,16 @@ $team-member--width-adjustment: $team-member--account-for-border +
     }
   }
 
+  &__npn {
+    display: flex;
+    flex: 1;
+    justify-content: center;
+
+    &--with-remove {
+      margin-left: $icon-button--size;
+    }
+  }
+
   &__clear-container {
     display: flex;
     justify-content: flex-end;

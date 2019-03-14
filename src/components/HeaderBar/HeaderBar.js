@@ -13,6 +13,7 @@ import './HeaderBar.scss';
 
 const PLANNER = 'planner';
 const SAVED_TEAMS = 'saved-teams';
+const TRAINER_TEAMS = 'trainer-teams';
 const SETTINGS = 'settings';
 
 class HeaderBar extends React.Component {
@@ -40,6 +41,7 @@ class HeaderBar extends React.Component {
   render() {
     const savedTeamsUrl = `${Routes.base}${Routes.savedTeams}`;
     const settingsUrl = `${Routes.base}${Routes.settings}`;
+    const trainerTeamsUrl = `${Routes.base}${Routes.trainerTeams}`;
 
     const isPageScrolled = !!this.state.windowScrollPosition;
     const headerClasses = classNames('header-bar', {
@@ -69,6 +71,13 @@ class HeaderBar extends React.Component {
               to={savedTeamsUrl}
             >
               Saved Teams
+            </ButtonisedNavLink>
+            <ButtonisedNavLink
+              key={TRAINER_TEAMS}
+              id={TRAINER_TEAMS}
+              to={trainerTeamsUrl}
+            >
+              Trainer Teams
             </ButtonisedNavLink>
             <ButtonisedNavLink key={SETTINGS} id={SETTINGS} to={settingsUrl}>
               Settings

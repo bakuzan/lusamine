@@ -3,16 +3,16 @@ import React from 'react';
 
 import { ClearButton, ButtonisedNavLink } from 'components/Buttons';
 import Team from 'components/Team/Team';
-import TeamViewerMessage from 'views/TeamViewer/TeamViewerMessage';
+import TeamViewerMessage from './TeamViewerMessage';
 import { PokedexContext, TypeContext } from 'context';
-import * as TVU from './TeamViewerUtils';
+import * as TVU from '../TeamViewerUtils';
 import {
   getSavedTeams,
   replaceTeams,
   selectMembersFromPokedex
 } from 'utils/common';
 
-import './TeamViewer.scss';
+import '../TeamViewer.scss';
 
 class TeamViewer extends React.Component {
   static contextType = PokedexContext;
@@ -72,7 +72,8 @@ class TeamViewer extends React.Component {
                     Load team
                   </ButtonisedNavLink>
                   <ClearButton
-                    title="Delete"
+                    title="Delete Team"
+                    aria-label="Delete Team"
                     onClick={() => this.handleDeleteTeam(t.id)}
                   />
                 </div>

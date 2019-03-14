@@ -26,12 +26,10 @@ class Team extends React.PureComponent {
     this.state = {
       emptyMembers: generateEmptySlots(),
       members: new Map([]),
-      selectedMemberId: null,
       settings: getSettings(),
       highlightArgs: {}
     };
 
-    this.handleMemberSelect = this.handleMemberSelect.bind(this);
     this.handleMemberRemove = this.handleMemberRemove.bind(this);
     this.handleMemberMove = this.handleMemberMove.bind(this);
     this.handleMemberDnD = this.handleMemberDnD.bind(this);
@@ -44,10 +42,7 @@ class Team extends React.PureComponent {
 
     if (members !== oldMembers) {
       return {
-        members: nextProps.members,
-        selectedMemberId: members.includes(prevState.selectedMemberId)
-          ? prevState.selectedMemberId
-          : null
+        members: nextProps.members
       };
     }
 
@@ -58,12 +53,6 @@ class Team extends React.PureComponent {
     const emptys = iterateMapToArray(this.state.emptyMembers);
     const memArr = iterateMapToArray(members);
     return [...memArr, ...emptys].slice(0, 6);
-  }
-
-  handleMemberSelect(dataId) {
-    const selectedMemberId =
-      this.state.selectedMemberId === dataId ? null : dataId;
-    this.setState({ selectedMemberId });
   }
 
   handleMemberRemove(dataId) {
@@ -142,9 +131,7 @@ class Team extends React.PureComponent {
               index={i}
               partyEndIndex={lastMemberIndex}
               data={item}
-              isSelected={this.state.selectedMemberId === item.id}
               isHighlighted={highlightMembers.includes(item.id)}
-              onClick={this.handleMemberSelect}
               remove={removeMember}
               move={moveMember}
               moveDnD={moveMemberDnD}

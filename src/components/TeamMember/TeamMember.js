@@ -22,18 +22,16 @@ class TeamMember extends React.Component {
   shouldComponentUpdate(nextProps) {
     const isDraggingChanged = nextProps.isDragging !== this.props.isDragging;
     const isOverChanged = nextProps.isOver !== this.props.isOver;
-    const isSelectedChanged = nextProps.isSelected !== this.props.isSelected;
+    const indexChanged = nextProps.index !== this.props.index;
+    const dataChanged = !objectsAreEqual(nextProps.data, this.props.data);
     const isHighlightedChanged =
       nextProps.isHighlighted !== this.props.isHighlighted;
-    const indexChanged = nextProps.index !== this.props.index;
     const partyEndIndexChanged =
       nextProps.partyEndIndex !== this.props.partyEndIndex;
-    const dataChanged = !objectsAreEqual(nextProps.data, this.props.data);
 
     return (
       isDraggingChanged ||
       isOverChanged ||
-      isSelectedChanged ||
       isHighlightedChanged ||
       dataChanged ||
       indexChanged ||
@@ -52,9 +50,7 @@ class TeamMember extends React.Component {
     const {
       index,
       data,
-      isSelected,
       isHighlighted,
-      onClick,
       remove,
       move,
       partyEndIndex,
@@ -63,28 +59,36 @@ class TeamMember extends React.Component {
       canDrop
     } = this.props;
     const hasData = !data.isEmpty;
-    const canRemove = hasData && isSelected && !!remove;
-    const canReOrder = hasData && isSelected && !!move;
-    const notFirst = index !== Party.START_INDEX;
-    const notLast = index !== partyEndIndex;
-    const memberClick = hasData ? () => onClick(data.id) : null;
+    const canRemove = hasData && !!remove;
+    const canReOrder = hasData && !!move;
+    const isFirst = index === Party.START_INDEX;
+    const isLast = index === partyEndIndex;
 
     return (
       <li
         id={data.id}
         className={classNames('team-member', {
-          'team-member--selected': isSelected,
           'team-member--highlighted': isHighlighted,
           'team-member--empty': !hasData,
           'team-member--dragging': isDragging,
           'team-member--is-over': isOver && canDrop
         })}
-        onClick={memberClick}
-        role="button"
       >
         <div className={classNames('team-member__clear-container')}>
+          {hasData && (
+            <div
+              className={classNames('team-member__npn', {
+                'team-member__npn--with-remove': canRemove
+              })}
+            >{`#${data.nationalPokedexNumber}`}</div>
+          )}
           {canRemove && (
-            <ClearButton title="Remove" onClick={() => remove(data.id)} />
+            <ClearButton
+              className="team-member__action"
+              title="Remove member"
+              aria-label="Remove member"
+              onClick={() => remove(data.id)}
+            />
           )}
         </div>
         <ArtCard
@@ -100,20 +104,20 @@ class TeamMember extends React.Component {
           ))}
         </div>
         <div className={classNames('team-member__order-container')}>
-          {canReOrder &&
-            notFirst && (
-              <LeftButton
-                title="Move Left"
-                onClick={this.handleMove(Orders.moveLeft)}
-              />
-            )}
-          {canReOrder &&
-            notLast && (
-              <RightButton
-                title="Move Right"
-                onClick={this.handleMove(Orders.moveRight)}
-              />
-            )}
+          {canReOrder && (
+            <LeftButton
+              className="team-member__action"
+              disabled={isFirst}
+              onClick={this.handleMove(Orders.moveLeft)}
+            />
+          )}
+          {canReOrder && (
+            <RightButton
+              className="team-member__action"
+              disabled={isLast}
+              onClick={this.handleMove(Orders.moveRight)}
+            />
+          )}
         </div>
       </li>
     );
@@ -122,9 +126,7 @@ class TeamMember extends React.Component {
 
 TeamMember.propTypes = {
   data: PropTypes.object.isRequired,
-  isSelected: PropTypes.bool,
   isHighlighted: PropTypes.bool,
-  onClick: PropTypes.func,
   remove: PropTypes.func,
   move: PropTypes.func,
   partyEndIndex: PropTypes.number

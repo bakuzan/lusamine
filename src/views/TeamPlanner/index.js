@@ -10,6 +10,7 @@ import { PokedexContext, TypeContext } from 'context';
 import Constants from 'constants/index';
 import {
   getUrlQueryStringAsObject,
+  combineValuesIntoSet,
   createSetFromIdString,
   createIdStringFromSet,
   saveTeams,
@@ -53,20 +54,14 @@ class PlannerPage extends React.Component {
     this.handleSaveTeam = this.handleSaveTeam.bind(this);
   }
 
-  componentDidUpdate() {
-    const queryObject = getUrlQueryStringAsObject(this.props.location);
-    const currentIds = createIdStringFromSet(this.state.currentTeamIds);
-
-    if ((currentIds || queryObject.team) && queryObject.team !== currentIds) {
-      this.setState({
-        currentTeamIds: createSetFromIdString(queryObject.team)
-      });
-    }
-  }
-
   updateTeamQueryString(memberIds, newId) {
+    const { match, history } = this.props;
     const idStr = createIdStringFromSet(memberIds, newId);
-    this.props.history.push(`${this.props.match.path}?team=${idStr}`);
+    const newTeamIds = combineValuesIntoSet(memberIds, newId);
+
+    this.setState({ currentTeamIds: newTeamIds }, () =>
+      history.push(`${match.path}?team=${idStr}`)
+    );
   }
 
   handleNameInput(e) {
@@ -87,8 +82,9 @@ class PlannerPage extends React.Component {
   }
 
   handleSpriteSelection(dataId) {
-    if (this.state.currentTeamIds.size === Party.MAX_SIZE)
+    if (this.state.currentTeamIds.size === Party.MAX_SIZE) {
       return this.props.sendAlert(getPartySizeAlertMessage());
+    }
 
     this.updateTeamQueryString(this.state.currentTeamIds, dataId);
   }
@@ -168,6 +164,7 @@ class PlannerPage extends React.Component {
       }
     };
 
+    console.log(this.state);
     return (
       <div className="team-planner">
         <div

@@ -1,0 +1,46 @@
+[
+  {
+    "name": "Blue - GSC Viridian Gym",
+    "memberIds": ["p_18", "p_65", "p_112", "p_130", "p_103", "p_59"]
+  },
+  {
+    "name": "Lance - GSC Champion",
+    "memberIds": ["p_130", "p_149", "p_6", "p_142", "p_149", "p_149"]
+  },
+  {
+    "name": "Red - GSC Trainer",
+    "memberIds": ["p_25", "p_196", "p_143", "p_3", "p_6", "p_9"]
+  },
+  {
+    "name": "Steven Stone - RS Champion",
+    "memberIds": ["p_227", "p_344", "p_306", "p_346", "p_348", "p_376"]
+  },
+  {
+    "name": "Wallace - Emerald Champion",
+    "memberIds": ["p_321", "p_73", "p_272", "p_340", "p_130", "p_350"]
+  },
+  {
+    "name": "Cynthia - DP Champion",
+    "memberIds": ["p_442", "p_407", "p_423", "m_448", "p_350", "p_445"]
+  },
+  {
+    "name": "Alder - BW Champion",
+    "memberIds": ["p_617", "p_626", "p_621", "p_584", "p_589", "p_637"]
+  },
+  {
+    "name": "Iris - BW2 Champion",
+    "memberIds": ["p_635", "p_621", "p_567", "p_306", "p_131", "p_612"]
+  },
+  {
+    "name": "Diantha - XY Champion",
+    "memberIds": ["p_701", "p_697", "p_699", "p_711", "p_706", "p_282"]
+  },
+  {
+    "name": "Lusamine - USUM Aether President",
+    "memberIds": ["p_36", "p_549", "p_428", "p_350", "p_760"]
+  },
+  {
+    "name": "Trace - LGE Champion",
+    "memberIds": ["p_18", "p_45", "p_105", "p_78", "p_80", "p_26"]
+  }
+]

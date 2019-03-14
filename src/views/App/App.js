@@ -6,8 +6,9 @@ import { GlobalBaseStyle, Alert } from 'meiko-lib';
 import HeaderBar from 'components/HeaderBar/HeaderBar';
 import AlertContainer from 'components/AlertContainer';
 import Footer from 'components/Footer/Footer';
-import TeamPlanner from 'views/TeamPlanner/TeamPlanner';
-import TeamViewer from 'views/TeamViewer/TeamViewer';
+import TeamPlanner from 'views/TeamPlanner';
+import SavedTeamViewer from 'views/TeamViewer/SavedTeams';
+import TrainerTeamViewer from 'views/TeamViewer/TrainerTeams';
 import Settings from 'views/Settings';
 import { AppInformation } from 'meiko-lib';
 import Strings from 'constants/strings';
@@ -108,8 +109,12 @@ class App extends Component {
                 <main>
                   <Switch>
                     <Route
+                      path={`${match.url}${Routes.trainerTeams}`}
+                      component={TrainerTeamViewer}
+                    />
+                    <Route
                       path={`${match.url}${Routes.savedTeams}`}
-                      component={TeamViewer}
+                      component={SavedTeamViewer}
                     />
                     <Route
                       path={`${match.url}${Routes.settings}`}

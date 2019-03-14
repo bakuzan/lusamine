@@ -9,6 +9,7 @@ import pokemon from './raw/pokemon.json';
 import megas from './raw/mega-evolutions.json';
 import regionalVariants from './raw/regional-variants.json';
 import types from './raw/types.json';
+import trainerTeams from './raw/trainerTeams.json';
 
 const SPRITES_PER_ROW = 30;
 const ART_PER_ROW = 30;
@@ -47,4 +48,8 @@ export function getTypeMatchups() {
     p.set(c.id, c);
     return p;
   }, new Map());
+}
+
+export function getTrainerTeams() {
+  return trainerTeams;
 }

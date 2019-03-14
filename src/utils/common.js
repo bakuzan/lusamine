@@ -38,10 +38,14 @@ export const getUrlQueryStringAsObject = (location) => {
     }, {});
 };
 
-export function createIdStringFromSet(idSet, newValue) {
+export function combineValuesIntoSet(idSet, newValue) {
   const ids = [...idSet];
   const values = newValue ? [...ids, newValue] : ids;
-  return Array.from(new Set(values)).join(',');
+  return new Set(values);
+}
+export function createIdStringFromSet(idSet, newValue) {
+  const values = combineValuesIntoSet(idSet, newValue);
+  return Array.from(values).join(',');
 }
 
 export const createSetFromIdString = (str = '') =>
