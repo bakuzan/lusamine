@@ -16,7 +16,16 @@ function TrainerTeamViewer() {
   const [teams] = useState(
     TVU.mapTrainerTeamsToDisplayModel(getTrainerTeams())
   );
-
+  console.groupCollapsed('DevOnly! Trainer Teams');
+  console.log(
+    '%c teams',
+    'color: magenta',
+    teams.map((x) => ({
+      ...x,
+      members: x.memberIds.map((id) => pokedex.get(id))
+    }))
+  );
+  console.groupEnd();
   return (
     <div className="team-viewer">
       {teams.map((t) => (

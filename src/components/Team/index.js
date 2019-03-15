@@ -14,7 +14,6 @@ import {
   moveToNewArrayPosition,
   getSettings
 } from 'utils/common';
-import highlighter from './HighlightMemberService';
 
 import './Team.scss';
 
@@ -104,6 +103,7 @@ class Team extends React.PureComponent {
 
   render() {
     const { highlight, settings } = this.state;
+
     const highlightMembers = highlight.memberIds;
     const lastMemberIndex = this.state.members.size - 1;
     const members = this.padPartyToSixMembers(this.state.members);
@@ -117,12 +117,6 @@ class Team extends React.PureComponent {
       canReOrder && settings.canDragAndDrop
         ? [this.handleMemberDnD, TeamMemberDraggable]
         : [null, TeamMember];
-
-    // highlighter
-    //   .withTypes(this.props.types)
-    //   .forMembers(this.state.members)
-    //   .withGroup(highlight.dataType)
-    //   .selectMembers(highlight.dataId);
 
     return (
       <div>

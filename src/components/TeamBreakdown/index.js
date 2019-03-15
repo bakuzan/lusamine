@@ -5,8 +5,8 @@ import React from 'react';
 import { TypeContext } from 'context';
 import { Button } from 'components/Buttons';
 import List from 'components/List';
-import TeamBreakdownPanel from 'components/TeamBreakdownPanel';
-import TeamBreakdownStatPanel from 'components/TeamBreakdownStatPanel';
+import EffectiveTypePanel from 'components/TeamBreakdownPanel/EffectiveTypePanel';
+import StatBreakdownPanel from 'components/TeamBreakdownPanel/StatPanel';
 import * as TBU from './TeamBreakdownUtils';
 import { capitaliseEachWord } from 'utils/common';
 
@@ -29,8 +29,8 @@ class TeamBreakdown extends React.Component {
     this.setState((prev) => ({ isCollapsed: !prev.isCollapsed }));
   }
 
-  handleMouseEnterLeave(dataType, dataId) {
-    this.props.onMouseState(dataType, dataId);
+  handleMouseEnterLeave(...values) {
+    this.props.onMouseState(...values);
   }
 
   render() {
@@ -43,10 +43,7 @@ class TeamBreakdown extends React.Component {
     };
 
     const statCounts = TBU.buildStatCounts(members);
-    const oldWeaknessCounts = TBU.buildTeamWeaknessCounts(types, members);
-    const weaknessCounts = TBU.NEW_buildTeamWeaknessCounts(types, members);
-    console.log('weakness > ', oldWeaknessCounts);
-    console.log('NEW weakness > ', weaknessCounts);
+    const weaknessCounts = TBU.buildTeamWeaknessCounts(types, members);
 
     return (
       <div className={classNames('team-breakdown')}>
@@ -86,7 +83,7 @@ class TeamBreakdown extends React.Component {
                     {item.key}
                   </div>
                 </div>
-                <TeamBreakdownStatPanel
+                <StatBreakdownPanel
                   id={item.key}
                   nameSource={item.getKeyName}
                   data={item.counts}
@@ -115,7 +112,7 @@ class TeamBreakdown extends React.Component {
                     {capitaliseEachWord(item.key)}
                   </div>
                 </div>
-                <TeamBreakdownPanel
+                <EffectiveTypePanel
                   id={item.key}
                   panelModifier={item.goodCountModifier}
                   types={types}
