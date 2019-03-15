@@ -6,8 +6,8 @@ import {
 } from './transformers';
 
 import pokemon from './raw/pokemon.json';
-import megas from './raw/mega-evolutions.json';
-import regionalVariants from './raw/regional-variants.json';
+import megas from './raw/megaEvolutions.json';
+import regionalVariants from './raw/regionalVariants.json';
 import types from './raw/types.json';
 import trainerTeams from './raw/trainerTeams.json';
 

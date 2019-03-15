@@ -1,4 +1,4 @@
-import * as DeriveData from './derived-data';
+import * as DeriveData from './derivedData';
 import * as Common from './common';
 
 export default {

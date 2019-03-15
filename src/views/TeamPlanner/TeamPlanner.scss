@@ -39,5 +39,12 @@
     grid-auto-rows: 1fr;
     justify-content: flex-start;
     grid-column-gap: 2px;
+
+    @include respond-to(sm) {
+      justify-content: space-evenly;
+    }
+    @include respond-to(xs) {
+      justify-content: space-evenly;
+    }
   }
 }

@@ -1,0 +1,20 @@
+@import '~styles/_variables';
+
+.easter-egg {
+  position: fixed;
+  top: $header--height;
+  right: 5px;
+  display: flex;
+  padding: 5px;
+  z-index: map-get($z-index, easter-egg);
+
+  &__player {
+    display: flex;
+    flex-direction: column;
+    padding: 0 5px;
+  }
+  &__label {
+    padding: 3px 0;
+    font-size: 0.8em;
+  }
+}

@@ -16,11 +16,6 @@ $lusamine--dress-highlight: #e3d974;
 $lusamine--eyes: #567647; // #76a165; original colour, poor contrast with #f9f6c4
 $lusamine--hair: #f9f6c4;
 
-$primary-background: $lusamine--hair;
-$primary-colour-contrast: $lusamine--eyes;
-$accent-background: $lusamine--dress-highlight;
-$accent-colour-contrast: darken($lusamine--eyes, 6%);
-
 $types: (
   'fighting': #d67873,
   'fire': #f5ac78,

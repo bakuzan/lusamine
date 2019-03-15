@@ -1,5 +1,5 @@
 import * as Mappers from './mappers';
-import * as IdGenerators from './id-generators';
+import * as IdGenerators from './idGenerators';
 import sortCombinedData from 'utils/sorters';
 
 import pokemon from './raw/pokemon.json';

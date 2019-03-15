@@ -2,10 +2,10 @@ import PropTypes from 'prop-types';
 import classNames from 'classnames';
 import React from 'react';
 
-import ArtCard from 'components/ArtCard/ArtCard';
+import ArtCard from 'components/ArtCard';
 import { ClearButton, LeftButton, RightButton } from 'components/Buttons';
 import { withDragAndDrop } from 'components/DragAndDrop';
-import TypeBlock from 'components/TypeBlock/TypeBlock';
+import TypeBlock from 'components/TypeBlock';
 import Orders from 'constants/orders';
 import Party from 'constants/party';
 import { capitaliseEachWord, objectsAreEqual } from 'utils/common';

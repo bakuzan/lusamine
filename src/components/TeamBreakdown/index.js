@@ -4,9 +4,9 @@ import React from 'react';
 
 import { TypeContext } from 'context';
 import { Button } from 'components/Buttons';
-import List from 'components/List/List';
-import TeamBreakdownPanel from 'components/TeamBreakdownPanel/TeamBreakdownPanel';
-import TeamBreakdownStatPanel from 'components/TeamBreakdownStatPanel/TeamBreakdownStatPanel';
+import List from 'components/List';
+import TeamBreakdownPanel from 'components/TeamBreakdownPanel';
+import TeamBreakdownStatPanel from 'components/TeamBreakdownStatPanel';
 import * as TBU from './TeamBreakdownUtils';
 import { capitaliseEachWord } from 'utils/common';
 
@@ -42,6 +42,12 @@ class TeamBreakdown extends React.Component {
       onMouseLeave: this.handleMouseEnterLeave
     };
 
+    const statCounts = TBU.buildStatCounts(members);
+    const oldWeaknessCounts = TBU.buildTeamWeaknessCounts(types, members);
+    const weaknessCounts = TBU.NEW_buildTeamWeaknessCounts(types, members);
+    console.log('weakness > ', oldWeaknessCounts);
+    console.log('NEW weakness > ', weaknessCounts);
+
     return (
       <div className={classNames('team-breakdown')}>
         <Button
@@ -66,7 +72,7 @@ class TeamBreakdown extends React.Component {
               'team-breakdown__list',
               'stat-breakdown-list'
             )}
-            items={TBU.buildStatCounts(members)}
+            items={statCounts}
             itemTemplate={(item) => (
               <li
                 key={item.key}
@@ -95,7 +101,7 @@ class TeamBreakdown extends React.Component {
               'team-breakdown__list',
               'type-breakdown-list'
             )}
-            items={TBU.buildTeamWeaknessCounts(types, members)}
+            items={weaknessCounts}
             itemTemplate={(item) => (
               <li
                 key={item.key}

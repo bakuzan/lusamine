@@ -3,9 +3,10 @@ import { Switch, Route } from 'react-router-dom';
 import { Helmet } from 'react-helmet';
 
 import { GlobalBaseStyle, Alert } from 'meiko-lib';
-import HeaderBar from 'components/HeaderBar/HeaderBar';
+import HeaderBar from 'components/HeaderBar';
 import AlertContainer from 'components/AlertContainer';
-import Footer from 'components/Footer/Footer';
+import Footer from 'components/Footer';
+import EasterEgg from 'components/EasterEgg';
 import TeamPlanner from 'views/TeamPlanner';
 import SavedTeamViewer from 'views/TeamViewer/SavedTeams';
 import TrainerTeamViewer from 'views/TeamViewer/TrainerTeams';
@@ -15,8 +16,7 @@ import Strings from 'constants/strings';
 import Routes from 'constants/routes';
 import { PokedexContext, TypeContext } from 'context';
 import { constructPokedex, getTypeMatchups } from 'data';
-import { capitaliseEachWord } from 'utils/common';
-import { getSettings, saveSettings } from '../../utils/common';
+import { capitaliseEachWord, getSettings, saveSettings } from 'utils/common';
 
 const BRANCH = process.env.REACT_APP_BRANCH;
 const VERSION = process.env.REACT_APP_VERSION;
@@ -45,15 +45,7 @@ class App extends Component {
     this.state = {
       pokedex: constructPokedex(),
       typeMatchups: getTypeMatchups(),
-      userMessages: [
-        {
-          id: 1000,
-          type: 'warning',
-          message: 'Images currently being updated.',
-          detail:
-            'Image sources are currently being updated which could result in missing or incorrect images.'
-        }
-      ]
+      userMessages: []
     };
 
     this.handleDismiss = this.handleDismiss.bind(this);
@@ -104,6 +96,7 @@ class App extends Component {
                 }}
               />
             )}
+            <EasterEgg />
             <AlertContainer>
               {(triggerAlert) => (
                 <main>

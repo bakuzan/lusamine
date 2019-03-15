@@ -1,7 +1,7 @@
 import { getKeyByValue } from 'meiko-lib';
 
 import Regions from 'constants/regions';
-import { getGeneration } from 'utils/derived-data';
+import { getGeneration } from 'utils/derivedData';
 
 function mapTypesToPokemon(typeIds, types) {
   return typeIds.map((id) => {

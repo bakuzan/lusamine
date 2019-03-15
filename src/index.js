@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import { BrowserRouter, Switch, Route, Redirect } from 'react-router-dom';
-import App from 'views/App/App';
+import App from 'views/App';
 import Routes from 'constants/routes';
 import registerServiceWorker from './registerServiceWorker';
 import preloadImages from './preloadImages';

@@ -3,9 +3,9 @@ import React from 'react';
 
 import { Grid, ClearableInput } from 'meiko-lib';
 import { Button } from 'components/Buttons';
-import Filters from 'components/Filters/Filters';
-import Team from 'components/Team/Team';
-import Sprite from 'components/Sprite/Sprite';
+import Filters from 'components/Filters';
+import Team from 'components/Team';
+import Sprite from 'components/Sprite';
 import { PokedexContext, TypeContext } from 'context';
 import Constants from 'constants/index';
 import {
@@ -164,7 +164,6 @@ class PlannerPage extends React.Component {
       }
     };
 
-    console.log(this.state);
     return (
       <div className="team-planner">
         <div

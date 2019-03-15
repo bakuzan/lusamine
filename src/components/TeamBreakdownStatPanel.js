@@ -2,7 +2,7 @@ import classNames from 'classnames';
 import PropTypes from 'prop-types';
 import React from 'react';
 
-import List from 'components/List/List';
+import List from 'components/List';
 import { iterateKeysToArray } from 'utils/common';
 
 const TeamBreakdownStatPanel = ({

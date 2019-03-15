@@ -2,17 +2,17 @@ import classNames from 'classnames';
 import React from 'react';
 
 import { ClearButton, ButtonisedNavLink } from 'components/Buttons';
-import Team from 'components/Team/Team';
+import Team from 'components/Team';
 import TeamViewerMessage from './TeamViewerMessage';
 import { PokedexContext, TypeContext } from 'context';
-import * as TVU from '../TeamViewerUtils';
+import * as TVU from './TeamViewerUtils';
 import {
   getSavedTeams,
   replaceTeams,
   selectMembersFromPokedex
 } from 'utils/common';
 
-import '../TeamViewer.scss';
+import './TeamViewer.scss';
 
 class TeamViewer extends React.Component {
   static contextType = PokedexContext;

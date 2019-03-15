@@ -1,4 +1,4 @@
-import { generateEmptyPokemonId } from 'data/id-generators';
+import { generateEmptyPokemonId } from 'data/idGenerators';
 import Constants from 'constants/index';
 const { Party, Generations, Strings } = Constants;
 

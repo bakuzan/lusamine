@@ -1,6 +1,6 @@
 import { DragSource } from 'react-dnd';
 
-import DnDType from 'constants/dnd-type';
+import DnDType from 'constants/dndType';
 
 const memberSource = {
   beginDrag(props) {

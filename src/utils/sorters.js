@@ -1,6 +1,6 @@
-import IdPrefixes from 'constants/id-prefixes';
+import IdPrefixes from 'constants/idPrefixes';
 
-const getIdPrefix = id => id.split('_')[0];
+const getIdPrefix = (id) => id.split('_')[0];
 
 export default function sortCombinedData([aId, a], [bId, b]) {
   const aNPN = a.nationalPokedexNumber;

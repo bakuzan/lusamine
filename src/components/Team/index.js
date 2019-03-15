@@ -3,12 +3,10 @@ import classNames from 'classnames';
 import React from 'react';
 
 import DnDBackend from 'components/DragAndDrop';
-import List from 'components/List/List';
-import TeamBreakdown from 'components/TeamBreakdown/TeamBreakdown';
-import TeamMember, {
-  TeamMemberDraggable
-} from 'components/TeamMember/TeamMember';
-import { generateEmptySlots } from 'utils/derived-data';
+import List from 'components/List';
+import TeamBreakdown from 'components/TeamBreakdown';
+import TeamMember, { TeamMemberDraggable } from 'components/TeamMember';
+import { generateEmptySlots } from 'utils/derivedData';
 import {
   iterateMapToArray,
   iterateKeysToArray,
@@ -20,6 +18,12 @@ import highlighter from './HighlightMemberService';
 
 import './Team.scss';
 
+const highlightDefaultState = {
+  dataType: null,
+  dataId: null,
+  memberIds: []
+};
+
 class Team extends React.PureComponent {
   constructor(props) {
     super(props);
@@ -27,7 +31,7 @@ class Team extends React.PureComponent {
       emptyMembers: generateEmptySlots(),
       members: new Map([]),
       settings: getSettings(),
-      highlightArgs: {}
+      highlight: { ...highlightDefaultState }
     };
 
     this.handleMemberRemove = this.handleMemberRemove.bind(this);
@@ -86,20 +90,21 @@ class Team extends React.PureComponent {
     this.props.onMembersUpdate(memberIds);
   }
 
-  handleMouseState(dataType, dataId) {
+  handleMouseState(dataType, dataId, memberIds) {
     this.setState((prev) => {
       const isSame =
-        prev.highlightArgs.dataType === dataType &&
-        prev.highlightArgs.dataId === dataId;
+        prev.highlight.dataType === dataType &&
+        prev.highlight.dataId === dataId;
 
       return isSame
-        ? { highlightArgs: {} }
-        : { highlightArgs: { dataType, dataId } };
+        ? { highlight: { ...highlightDefaultState } }
+        : { highlight: { dataType, dataId, memberIds } };
     });
   }
 
   render() {
-    const { highlightArgs, settings } = this.state;
+    const { highlight, settings } = this.state;
+    const highlightMembers = highlight.memberIds;
     const lastMemberIndex = this.state.members.size - 1;
     const members = this.padPartyToSixMembers(this.state.members);
 
@@ -113,11 +118,11 @@ class Team extends React.PureComponent {
         ? [this.handleMemberDnD, TeamMemberDraggable]
         : [null, TeamMember];
 
-    const highlightMembers = highlighter
-      .withTypes(this.props.types)
-      .forMembers(this.state.members)
-      .withGroup(highlightArgs.dataType)
-      .selectMembers(highlightArgs.dataId);
+    // highlighter
+    //   .withTypes(this.props.types)
+    //   .forMembers(this.state.members)
+    //   .withGroup(highlight.dataType)
+    //   .selectMembers(highlight.dataId);
 
     return (
       <div>

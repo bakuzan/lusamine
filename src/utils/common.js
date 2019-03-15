@@ -116,3 +116,12 @@ export const saveSettings = persistObjectToLocalStorage(
 export function selectMembersFromPokedex(dex, memberIds) {
   return new Map(Array.from(memberIds).map((id) => [id, dex.get(id)]));
 }
+
+export function selectMembersFromPokedexAllowDuplicates(dex, memberIds) {
+  return new Map(
+    Array.from(memberIds).map((id, i) => {
+      const customId = `${id}-d${i}`;
+      return [customId, { ...dex.get(id), id: customId }];
+    })
+  );
+}
