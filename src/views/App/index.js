@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { Switch, Route } from 'react-router-dom';
 import { Helmet } from 'react-helmet';
 
-import { GlobalBaseStyle, Alert } from 'meiko-lib';
+import { Alert } from 'meiko-lib';
 import HeaderBar from 'components/HeaderBar';
 import AlertContainer from 'components/AlertContainer';
 import Footer from 'components/Footer';
@@ -16,7 +16,7 @@ import Strings from 'constants/strings';
 import Routes from 'constants/routes';
 import { PokedexContext, TypeContext } from 'context';
 import { constructPokedex, getTypeMatchups } from 'data';
-import { capitaliseEachWord, getSettings, saveSettings } from 'utils/common';
+import { capitaliseEachWord, settingsStore } from 'utils/common';
 
 const BRANCH = process.env.REACT_APP_BRANCH;
 const VERSION = process.env.REACT_APP_VERSION;
@@ -53,8 +53,10 @@ class App extends Component {
 
   handleDismiss(messageId) {
     this.setState({ userMessages: [] }, () => {
-      const settings = getSettings();
-      saveSettings({ readMessages: [...settings.readMessages, messageId] });
+      const settings = settingsStore.get();
+      settingsStore.set({
+        readMessages: [...settings.readMessages, messageId]
+      });
     });
   }
 
@@ -66,7 +68,7 @@ class App extends Component {
       pageDescription
     } = getPageTitleForCurrentPath(location.pathname);
 
-    const settings = getSettings();
+    const settings = settingsStore.get();
     const messages = this.state.userMessages.filter(
       (x) => !settings.readMessages.includes(x.id)
     );
@@ -85,7 +87,6 @@ class App extends Component {
               <title>{pageTitle}</title>
               <meta name="description" content={pageDescription} />
             </Helmet>
-            <GlobalBaseStyle />
             <HeaderBar pageTitle={pageHeader} />
             {hasMessages && (
               <Alert

@@ -1,4 +1,4 @@
-import { generateUniqueId } from 'meiko-lib';
+import { generateUniqueId } from 'utils/common';
 import Strings from 'constants/strings';
 
 const defaultIdSuffix = (o) => o.nationalPokedexNumber;

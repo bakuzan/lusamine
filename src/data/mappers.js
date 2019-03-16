@@ -1,4 +1,4 @@
-import { getKeyByValue } from 'meiko-lib';
+import { getKeyByValue } from 'utils/common';
 
 import Regions from 'constants/regions';
 import { getGeneration } from 'utils/derivedData';

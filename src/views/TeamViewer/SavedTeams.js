@@ -6,11 +6,7 @@ import Team from 'components/Team';
 import TeamViewerMessage from './TeamViewerMessage';
 import { PokedexContext, TypeContext } from 'context';
 import * as TVU from './TeamViewerUtils';
-import {
-  getSavedTeams,
-  replaceTeams,
-  selectMembersFromPokedex
-} from 'utils/common';
+import { teamsStore, selectMembersFromPokedex } from 'utils/common';
 
 import './TeamViewer.scss';
 
@@ -30,7 +26,7 @@ class TeamViewer extends React.Component {
   componentDidMount() {
     this.setState({
       loadedTeams: true,
-      savedTeams: getSavedTeams()
+      savedTeams: teamsStore.get()
     });
   }
 
@@ -46,7 +42,7 @@ class TeamViewer extends React.Component {
         {}
       );
 
-    const updatedTeams = replaceTeams(teams);
+    const updatedTeams = teamsStore.replace(teams);
     this.setState({ savedTeams: updatedTeams });
   }
 

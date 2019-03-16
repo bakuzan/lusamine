@@ -13,9 +13,9 @@ import {
   combineValuesIntoSet,
   createSetFromIdString,
   createIdStringFromSet,
-  saveTeams,
   generateUniqueId,
-  selectMembersFromPokedex
+  selectMembersFromPokedex,
+  teamsStore
 } from 'utils/common';
 import { getPartySizeAlertMessage } from 'utils/feedback';
 import * as TPU from './TeamPlannerUtils';
@@ -123,7 +123,7 @@ class PlannerPage extends React.Component {
       }
     };
 
-    saveTeams(saveTeamData);
+    teamsStore.set(saveTeamData);
   }
 
   render() {

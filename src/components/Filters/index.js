@@ -65,12 +65,14 @@ function Filters(props) {
         className={classNames(FILTERS_INPUT_CLASS)}
       />
       <Tickbox
+        id="includeMega"
         name="includeMega"
         text="Include Megas"
         {...props.includeMegaProps}
         className={classNames(FILTERS_INPUT_CLASS)}
       />
       <Tickbox
+        id="includeVariants"
         name="includeVariants"
         text="Include variants"
         {...props.includeVariantsProps}

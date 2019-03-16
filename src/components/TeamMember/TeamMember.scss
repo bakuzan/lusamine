@@ -61,7 +61,8 @@ $team-member--width-adjustment: $team-member--account-for-border +
     }
   }
 
-  &__clear-container {
+  &__clear-container,
+  &__back-container {
     display: flex;
     justify-content: flex-end;
     @extend %member-container;
@@ -81,7 +82,13 @@ $team-member--width-adjustment: $team-member--account-for-border +
     display: flex;
     justify-content: space-around;
     @extend %member-container;
-    padding: 5px 0;
+    padding: 8px 0;
+  }
+
+  &__evolve {
+    min-width: 25px;
+    padding: 0;
+    margin: 0 auto;
   }
 }
 

@@ -2,8 +2,9 @@ import classNames from 'classnames';
 import PropTypes from 'prop-types';
 import React from 'react';
 
-import { Header, Image, createListeners } from 'meiko-lib';
+import { Header, Image } from 'meiko-lib';
 import { ButtonisedNavLink } from 'components/Buttons';
+import { createListeners } from 'utils/common';
 import Logo from 'assets/logo.png';
 
 import Routes from 'constants/routes';

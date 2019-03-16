@@ -1,4 +1,6 @@
 export default Object.freeze({
+  readMessages: [],
   canDragAndDrop: true,
-  readMessages: []
+  canUseArrows: true,
+  canEvolve: false
 });

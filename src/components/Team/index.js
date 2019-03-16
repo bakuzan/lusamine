@@ -12,7 +12,7 @@ import {
   iterateKeysToArray,
   swapArrayPositions,
   moveToNewArrayPosition,
-  getSettings
+  settingsStore
 } from 'utils/common';
 
 import './Team.scss';
@@ -29,12 +29,13 @@ class Team extends React.PureComponent {
     this.state = {
       emptyMembers: generateEmptySlots(),
       members: new Map([]),
-      settings: getSettings(),
+      settings: settingsStore.get(),
       highlight: { ...highlightDefaultState }
     };
 
     this.handleMemberRemove = this.handleMemberRemove.bind(this);
     this.handleMemberMove = this.handleMemberMove.bind(this);
+    this.handleMemberEvolve = this.handleMemberEvolve.bind(this);
     this.handleMemberDnD = this.handleMemberDnD.bind(this);
     this.handleMouseState = this.handleMouseState.bind(this);
   }
@@ -74,6 +75,13 @@ class Team extends React.PureComponent {
     this.props.onMembersUpdate(memberIds);
   }
 
+  handleMemberEvolve(dataId, evolveToId) {
+    const members = iterateKeysToArray(this.state.members);
+    const newMembers = members.map((x) => (x === dataId ? evolveToId : x));
+    const memberIds = new Set(newMembers);
+    this.props.onMembersUpdate(memberIds);
+  }
+
   handleMemberDnD(dragIndex, hoverIndex) {
     if (dragIndex === hoverIndex) {
       return; // ignore these
@@ -110,9 +118,11 @@ class Team extends React.PureComponent {
 
     const canRemove = !!this.props.onMembersUpdate;
     const canReOrder = !!this.props.onMembersUpdate;
+    const canEvolve = !!this.props.onMembersUpdate;
 
     const removeMember = canRemove ? this.handleMemberRemove : null;
     const moveMember = canReOrder ? this.handleMemberMove : null;
+    const evolveMember = canEvolve ? this.handleMemberEvolve : null;
     const [moveMemberDnD, Member] =
       canReOrder && settings.canDragAndDrop
         ? [this.handleMemberDnD, TeamMemberDraggable]
@@ -134,6 +144,7 @@ class Team extends React.PureComponent {
               remove={removeMember}
               move={moveMember}
               moveDnD={moveMemberDnD}
+              evolve={evolveMember}
             />
           )}
         />

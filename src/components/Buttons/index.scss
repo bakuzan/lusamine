@@ -1,0 +1,24 @@
+@import '~styles/_variables';
+
+.lusamine-button.lusamine-icon-button {
+  height: $icon-button--size;
+  width: $icon-button--size;
+  padding: 0.5em;
+  border-radius: 50%;
+  margin: 0;
+}
+
+.back-button::before {
+  transform: translateY(-40%);
+}
+.clear-button::before {
+  font-size: 0.5em;
+  font-weight: bold;
+  transform: translateY(-15%) translateX(-5%);
+}
+
+.lusamine-icon-button.arrow-button {
+  &:before {
+    transform: translateY(-40%) translateX(5%);
+  }
+}

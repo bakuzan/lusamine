@@ -1,15 +1,6 @@
-import {
-  capitalise,
-  capitaliseEachWord,
-  separateAndCapitalise,
-  separateAndCapitaliseAll,
-  getKeyByValue,
-  objectsAreEqual,
-  generateUniqueId,
-  persistObjectToLocalStorage,
-  getObjectFromLocalStorageByProperty,
-  isString
-} from 'meiko-lib';
+import generateUniqueId from 'ayaka/generateUniqueId';
+import isString from 'ayaka/isString';
+import Store from 'ayaka/localStorage';
 import Strings from 'constants/strings';
 import SETTINGS_DEFAULTS from 'constants/settings';
 
@@ -17,11 +8,14 @@ export {
   capitalise,
   capitaliseEachWord,
   separateAndCapitalise,
-  separateAndCapitaliseAll,
-  getKeyByValue,
-  objectsAreEqual,
-  generateUniqueId
-};
+  separateAndCapitaliseAll
+} from 'ayaka/capitalise';
+
+export { default as getKeyByValue } from 'ayaka/getKeyByValue';
+export { default as objectsAreEqual } from 'ayaka/objectsAreEqual';
+export { default as createListeners } from 'ayaka/createListeners';
+
+export { isString, generateUniqueId };
 
 export const getWindowScrollPosition = () =>
   window.scrollY || window.pageYOffset || document.documentElement.scrollTop;
@@ -72,9 +66,9 @@ export const moveToNewArrayPosition = (arr, from, to) => {
   return list;
 };
 
-export const getSavedTeams = () => {
-  const teams = getObjectFromLocalStorageByProperty(Strings.savedTeamsStorage);
-  if (!teams) {
+export const teamsStore = new Store(Strings.savedTeamsStorage, {});
+teamsStore.upgrade((teams) => {
+  if (Object.keys(teams).length === 0) {
     return;
   }
 
@@ -93,24 +87,11 @@ export const getSavedTeams = () => {
   } else {
     return teams;
   }
-};
-
-export const saveTeams = persistObjectToLocalStorage(Strings.savedTeamsStorage);
-
-export const replaceTeams = (teams) => {
-  const data = JSON.stringify(teams);
-  localStorage.setItem(Strings.savedTeamsStorage, data);
-  return teams;
-};
-
-export const getSettings = () => ({
-  ...SETTINGS_DEFAULTS,
-  ...(getObjectFromLocalStorageByProperty(Strings.settingsStorage) ||
-    SETTINGS_DEFAULTS)
 });
 
-export const saveSettings = persistObjectToLocalStorage(
-  Strings.settingsStorage
+export const settingsStore = new Store(
+  Strings.settingsStorage,
+  SETTINGS_DEFAULTS
 );
 
 export function selectMembersFromPokedex(dex, memberIds) {
