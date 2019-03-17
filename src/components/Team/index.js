@@ -118,11 +118,12 @@ class Team extends React.PureComponent {
 
     const canRemove = !!this.props.onMembersUpdate;
     const canReOrder = !!this.props.onMembersUpdate;
-    const canEvolve = !!this.props.onMembersUpdate;
+    const canEvolve = !!this.props.onMembersUpdate && settings.canEvolve;
 
     const removeMember = canRemove ? this.handleMemberRemove : null;
-    const moveMember = canReOrder ? this.handleMemberMove : null;
     const evolveMember = canEvolve ? this.handleMemberEvolve : null;
+    const moveMember =
+      canReOrder && settings.canUseArrows ? this.handleMemberMove : null;
     const [moveMemberDnD, Member] =
       canReOrder && settings.canDragAndDrop
         ? [this.handleMemberDnD, TeamMemberDraggable]

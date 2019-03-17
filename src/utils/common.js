@@ -93,6 +93,7 @@ export const settingsStore = new Store(
   Strings.settingsStorage,
   SETTINGS_DEFAULTS
 );
+settingsStore.upgrade((d) => ({ ...SETTINGS_DEFAULTS, ...d }));
 
 export function selectMembersFromPokedex(dex, memberIds) {
   return new Map(Array.from(memberIds).map((id) => [id, dex.get(id)]));

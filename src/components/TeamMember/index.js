@@ -1,6 +1,6 @@
 import PropTypes from 'prop-types';
 import classNames from 'classnames';
-import React from 'react';
+import React, { useState, useContext, useMemo } from 'react';
 
 import { Icons } from 'meiko-lib';
 import ArtCard from 'components/ArtCard';
@@ -13,56 +13,36 @@ import {
 } from 'components/Buttons';
 import { withDragAndDrop } from 'components/DragAndDrop';
 import TypeBlock from 'components/TypeBlock';
+import List from 'components/List';
 import Orders from 'constants/orders';
 import Party from 'constants/party';
+import { PokedexContext } from 'context';
 import { capitaliseEachWord } from 'utils/common';
-
+import generateEvolutionOptions from './generateEvolutionOptions';
 import pokeball from 'assets/pokeball.png';
 
 import './TeamMember.scss';
 
-class TeamMember extends React.Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      displayEvolveMenu: false
-    };
-  }
-
-  // shouldComponentUpdate(nextProps) {
-  //   const isDraggingChanged = nextProps.isDragging !== this.props.isDragging;
-  //   const isOverChanged = nextProps.isOver !== this.props.isOver;
-  //   const indexChanged = nextProps.index !== this.props.index;
-  //   const dataChanged = !objectsAreEqual(nextProps.data, this.props.data);
-  //   const isHighlightedChanged =
-  //     nextProps.isHighlighted !== this.props.isHighlighted;
-  //   const partyEndIndexChanged =
-  //     nextProps.partyEndIndex !== this.props.partyEndIndex;
-
-  //   return (
-  //     isDraggingChanged ||
-  //     isOverChanged ||
-  //     isHighlightedChanged ||
-  //     dataChanged ||
-  //     indexChanged ||
-  //     partyEndIndexChanged
-  //   );
-  // }
-
-  render() {
-    const { displayEvolveMenu } = this.state;
-    const {
+const TeamMember = React.memo(
+  React.forwardRef(function TeamMember(
+    {
       index,
+      partyEndIndex,
       data,
       isHighlighted,
+      isDragging,
+      isOver,
       remove,
       move,
       evolve,
-      partyEndIndex,
-      isDragging,
-      isOver,
-      canDrop
-    } = this.props;
+      canDrop,
+      ...props
+    },
+    ref
+  ) {
+    const pokedex = useContext(PokedexContext);
+    const [displayEvolveMenu, setDisplayEvolveMenu] = useState(false);
+
     const hasData = !data.isEmpty;
     const canRemove = hasData && !!remove;
     const canReOrder = hasData && !!move;
@@ -70,12 +50,16 @@ class TeamMember extends React.Component {
     const isFirst = index === Party.START_INDEX;
     const isLast = index === partyEndIndex;
 
-    const evolutions = [];
-    console.log('TEAM MEM >', this.props);
+    const evolutions = useMemo(() => generateEvolutionOptions(pokedex, data), [
+      data.id
+    ]);
+    const disableEvolve = evolutions.length === 0;
+    console.log('OPTIONS > ', evolutions);
 
     if (displayEvolveMenu) {
       return (
         <li
+          ref={ref}
           id={data.id}
           className={classNames('team-member', {
             'team-member--highlighted': isHighlighted,
@@ -88,28 +72,37 @@ class TeamMember extends React.Component {
             <IconButton
               className="team-member__action back-button"
               icon={Icons.left}
-              title="Back member"
-              aria-label="Back member"
-              onClick={() => this.setState({ displayEvolveMenu: false })}
+              title="Back to member card"
+              aria-label="Back to member card"
+              onClick={() => setDisplayEvolveMenu(false)}
             />
           </div>
-          <ul>
-            {evolutions.map((x) => {
+          <List
+            columns={1}
+            items={evolutions}
+            itemTemplate={([text, x]) => {
               return (
                 <li key={x.id}>
-                  <Button onClick={() => evolve(data.id, x.id)}>
-                    {`#${x.nationalPokedexNumber} ${x.name}`}
+                  <Button
+                    className="team-member__evolution-button"
+                    aria-label={`${text} ${x.name}`}
+                    onClick={() => evolve(data.id, x.id)}
+                  >
+                    {`${text} #${x.nationalPokedexNumber} ${capitaliseEachWord(
+                      x.name
+                    )}`}
                   </Button>
                 </li>
               );
-            })}
-          </ul>
+            }}
+          />
         </li>
       );
     }
 
     return (
       <li
+        ref={ref}
         id={data.id}
         className={classNames('team-member', {
           'team-member--highlighted': isHighlighted,
@@ -129,8 +122,8 @@ class TeamMember extends React.Component {
           {canRemove && (
             <ClearButton
               className="team-member__action"
-              title="Remove member"
-              aria-label="Remove member"
+              title="Remove member from team"
+              aria-label="Remove member from team"
               onClick={() => remove(data.id)}
             />
           )}
@@ -152,17 +145,16 @@ class TeamMember extends React.Component {
             <LeftButton
               className="team-member__action"
               disabled={isFirst}
-              onClick={() =>
-                this.props.move(this.props.data.id, Orders.moveLeft)
-              }
+              onClick={() => props.move(props.data.id, Orders.moveLeft)}
             />
           )}
           {canEvolve && (
             <Button
               className="team-member__action team-member__evolve"
-              title="Evolve member"
-              aria-label="Evolve member"
-              onClick={() => this.setState({ displayEvolveMenu: true })}
+              title="Open evolve member list"
+              aria-label="Open evolve member list"
+              disabled={disableEvolve}
+              onClick={() => setDisplayEvolveMenu(true)}
             >
               <img src={pokeball} alt="pokeball" width={24} height={24} />
             </Button>
@@ -171,16 +163,14 @@ class TeamMember extends React.Component {
             <RightButton
               className="team-member__action"
               disabled={isLast}
-              onClick={() =>
-                this.props.move(this.props.data.id, Orders.moveRight)
-              }
+              onClick={() => props.move(props.data.id, Orders.moveRight)}
             />
           )}
         </div>
       </li>
     );
-  }
-}
+  })
+);
 
 TeamMember.propTypes = {
   data: PropTypes.object.isRequired,

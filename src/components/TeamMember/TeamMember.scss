@@ -90,6 +90,11 @@ $team-member--width-adjustment: $team-member--account-for-border +
     padding: 0;
     margin: 0 auto;
   }
+
+  &__evolution-button {
+    margin: auto;
+    white-space: pre-line;
+  }
 }
 
 .team-member__art {
