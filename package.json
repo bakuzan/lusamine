@@ -43,8 +43,7 @@
   "devDependencies": {
     "cheerio": "^1.0.0-rc.2",
     "gh-pages": "^1.1.0",
-    "node-sprite-generator": "^0.10.2",
-    "request": "^2.85.0"
+    "request": "^2.88.0"
   },
   "browserslist": ["> 1%", "not dead", "not ie <= 11", "not op_mini all"]
 }
