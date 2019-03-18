@@ -16,6 +16,7 @@ function TrainerTeamViewer() {
   const [teams] = useState(
     TVU.mapTrainerTeamsToDisplayModel(getTrainerTeams())
   );
+  // LOG
   console.groupCollapsed('DevOnly! Trainer Teams');
   console.log(
     '%c teams',

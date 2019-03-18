@@ -54,6 +54,7 @@ const TeamMember = React.memo(
       data.id
     ]);
     const disableEvolve = evolutions.length === 0;
+    // LOG
     console.log('OPTIONS > ', evolutions);
 
     if (displayEvolveMenu) {

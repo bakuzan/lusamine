@@ -61,6 +61,7 @@ class HeaderBar extends React.Component {
             <ButtonisedNavLink
               key={PLANNER}
               id={PLANNER}
+              className="header-bar__link"
               exact
               to={Routes.base}
             >
@@ -69,6 +70,7 @@ class HeaderBar extends React.Component {
             <ButtonisedNavLink
               key={SAVED_TEAMS}
               id={SAVED_TEAMS}
+              className="header-bar__link"
               to={savedTeamsUrl}
             >
               Saved Teams
@@ -76,11 +78,17 @@ class HeaderBar extends React.Component {
             <ButtonisedNavLink
               key={TRAINER_TEAMS}
               id={TRAINER_TEAMS}
+              className="header-bar__link"
               to={trainerTeamsUrl}
             >
               Trainer Teams
             </ButtonisedNavLink>
-            <ButtonisedNavLink key={SETTINGS} id={SETTINGS} to={settingsUrl}>
+            <ButtonisedNavLink
+              key={SETTINGS}
+              id={SETTINGS}
+              className="header-bar__link"
+              to={settingsUrl}
+            >
               Settings
             </ButtonisedNavLink>
           </React.Fragment>

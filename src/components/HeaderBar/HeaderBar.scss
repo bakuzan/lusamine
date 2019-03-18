@@ -1,6 +1,16 @@
-@import '../../styles/_variables';
+@import '~styles/_variables';
+@import '~styles/_mixins';
 
 .header-bar {
+  h1 {
+    @include respond-to(sm) {
+      font-size: 1.25em;
+    }
+    @include respond-to(xs) {
+      font-size: 1em;
+    }
+  }
+
   &--page-scrolled {
     box-shadow: 0px 2px 5px 1px $header--box-shadow-colour;
   }
@@ -8,8 +18,24 @@
   & > div:last-child {
     display: flex;
   }
+
+  &__link {
+    @include respond-to(xs) {
+      align-items: flex-start;
+      white-space: pre-line;
+    }
+  }
 }
 
 .logo {
   padding: 0.5em;
+}
+
+@media (max-width: 600px) {
+  .header-bar div:first-child {
+    padding: 0.5em;
+  }
+  .logo {
+    display: none;
+  }
 }
