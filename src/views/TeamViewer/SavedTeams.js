@@ -49,8 +49,14 @@ class TeamViewer extends React.Component {
   render() {
     let pokedex = this.context;
     const { savedTeams } = this.state;
-    if (!this.state.loadedTeams) return null;
-    if (this.state.loadedTeams && !savedTeams) return <TeamViewerMessage />;
+
+    if (!this.state.loadedTeams) {
+      return null;
+    }
+
+    if (!savedTeams || Object.keys(savedTeams).length === 0) {
+      return <TeamViewerMessage />;
+    }
 
     const teams = TVU.mapSavedTeamsToDisplayModel(savedTeams);
 

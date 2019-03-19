@@ -69,7 +69,7 @@ export const moveToNewArrayPosition = (arr, from, to) => {
 export const teamsStore = new Store(Strings.savedTeamsStorage, {});
 teamsStore.upgrade((teams) => {
   if (Object.keys(teams).length === 0) {
-    return;
+    return {};
   }
 
   const teamKeys = Object.keys(teams);
