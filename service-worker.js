@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.3/workbox-sw.js");
 
 importScripts(
-  "/lusamine/precache-manifest.6bb23eb8035b53b144acd2381966063c.js"
+  "/lusamine/precache-manifest.c59a2807ea5883ada8142bca32571f0b.js"
 );
 
 workbox.clientsClaim();
