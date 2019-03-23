@@ -4,7 +4,7 @@ self.__precacheManifest = [
     "url": "/lusamine/static/media/art.f0c60420.webp"
   },
   {
-    "revision": "cc99931ec1789f026627",
+    "revision": "1c5c0e546d255243dadb",
     "url": "/lusamine/static/css/main.837b1820.chunk.css"
   },
   {
@@ -28,8 +28,8 @@ self.__precacheManifest = [
     "url": "/lusamine/static/media/pokemon-opening.0d0730eb.ogg"
   },
   {
-    "revision": "cc99931ec1789f026627",
-    "url": "/lusamine/static/js/main.cc99931e.chunk.js"
+    "revision": "1c5c0e546d255243dadb",
+    "url": "/lusamine/static/js/main.1c5c0e54.chunk.js"
   },
   {
     "revision": "96ef307ee32a542b7951688080cb2d69",
@@ -56,7 +56,7 @@ self.__precacheManifest = [
     "url": "/lusamine/static/css/2.08487aeb.chunk.css"
   },
   {
-    "revision": "5fd5ad2a9924c6f9b5fca2d33083ef73",
+    "revision": "9c72e364c7d3761b454b595d9a102777",
     "url": "/lusamine/index.html"
   }
 ];
