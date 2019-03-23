@@ -19,7 +19,8 @@ export default {
   pageTitle: {
     planner: 'Pokémon team planner',
     savedTeams: 'saved Pokémon teams',
-    settings: 'settings'
+    settings: 'settings',
+    trainerTeams: 'trainer Pokémon teams'
   },
   pageDescription: {
     planner: 'Plan a new pokemon team',

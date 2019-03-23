@@ -21,20 +21,23 @@ import { capitaliseEachWord, settingsStore } from 'utils/common';
 const BRANCH = process.env.REACT_APP_BRANCH;
 const VERSION = process.env.REACT_APP_VERSION;
 
+const TRAINER_TEAMS = 'trainer-teams';
 const SAVED_TEAMS = 'saved-teams';
 const SETTINGS = 'settings';
 
 const getPageTitleForCurrentPath = (path) => {
   const key = path.includes(SAVED_TEAMS)
     ? 'savedTeams'
+    : path.includes(TRAINER_TEAMS)
+    ? 'trainerTeams'
     : path.includes(SETTINGS)
-      ? 'settings'
-      : 'planner';
+    ? 'settings'
+    : 'planner';
 
-  const pageHeader = Strings.pageTitle[key];
+  const pageHeader = capitaliseEachWord(Strings.pageTitle[key]);
   return {
-    pageTitle: `Lusamine - ${capitaliseEachWord(pageHeader)}`,
-    pageHeader,
+    pageTitle: `Lusamine - ${pageHeader}`,
+    pageHeader: pageHeader.replace('Pokémon ', ''),
     pageDescription: Strings.pageDescription[key]
   };
 };
