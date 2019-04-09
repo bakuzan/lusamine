@@ -2,12 +2,7 @@ import classNames from 'classnames';
 import React from 'react';
 import { NavLink } from 'react-router-dom';
 
-import {
-  withButtonisation,
-  withCustomButtonWrapper,
-  Button as MButton,
-  Icons
-} from 'meiko-lib';
+import { withButtonisation, Button as MButton, Icons } from 'meiko-lib';
 
 import './index.scss';
 
@@ -54,7 +49,11 @@ export const RightButton = (props) => (
   <ArrowButton {...props} icon={Icons.right} help="Move Right" />
 );
 
-export const ButtonisedNavLink = withCustomButtonWrapper(
-  withButtonisation(({ link, ...props }) => <NavLink {...props} />),
-  { className: 'lusamine-button-link', link: true }
+export const ButtonisedNavLink = withButtonisation(
+  ({ className, ...props }) => (
+    <NavLink
+      className={classNames('lusamine-button-link', className)}
+      {...props}
+    />
+  )
 );

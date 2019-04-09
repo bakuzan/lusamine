@@ -1,26 +1,23 @@
-import Alert from 'meiko/components/Alert';
-import {
-  Button,
-  withButtonisation,
-  withCustomButtonWrapper
-} from 'meiko/components/Button';
-import ClearableInput from 'meiko/components/ClearableInput';
-import Header from 'meiko/components/Header';
-import Image from 'meiko/components/Image';
-import MultiSelect from 'meiko/components/MultiSelect';
-import NewTabLink from 'meiko/components/NewTabLink';
-import Tickbox from 'meiko/components/Tickbox';
-import AppInformation from 'meiko/components/AppInformation';
-import Grid from 'meiko/components/Grid';
-import List from 'meiko/components/List';
+import Alert from 'meiko/Alert';
+import { Button, withButtonisation } from 'meiko/Button';
+import ClearableInput from 'meiko/ClearableInput';
+import Header from 'meiko/Header';
+import Image from 'meiko/Image';
+import MultiSelect from 'meiko/MultiSelect';
+import NewTabLink from 'meiko/NewTabLink';
+import Tickbox from 'meiko/Tickbox';
+import AppInformation from 'meiko/AppInformation';
+import Grid from 'meiko/Grid';
+import List from 'meiko/List';
 
 import Icons from 'meiko/constants/icons';
+
+import { useGlobalStyles } from 'meiko/hooks/useGlobalStyles';
 
 export {
   Alert,
   Button,
   withButtonisation,
-  withCustomButtonWrapper,
   ClearableInput,
   Grid,
   Header,
@@ -31,5 +28,7 @@ export {
   Tickbox,
   AppInformation,
   // constants
-  Icons
+  Icons,
+  // hooks
+  useGlobalStyles
 };

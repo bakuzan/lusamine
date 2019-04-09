@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 
 import { ClearButton } from 'components/Buttons';
 import { useKonami } from 'hooks/useKonami';
@@ -10,9 +10,16 @@ import './EasterEgg.scss';
 
 function EasterEgg() {
   const [isPlaying, setPlaying] = useState(false);
+  const [show, setShow] = useState(false);
   const [usedKonamiCode, reset] = useKonami();
 
-  if (!usedKonamiCode) {
+  useEffect(() => {
+    if (usedKonamiCode && !show) {
+      setShow(true);
+    }
+  }, [show, usedKonamiCode]);
+
+  if (!show) {
     return null;
   }
 
@@ -38,7 +45,10 @@ function EasterEgg() {
         id="easter-egg-cancel"
         aria-label="Close easter egg"
         btnStyle="primary"
-        onClick={reset}
+        onClick={() => {
+          setShow(false);
+          reset();
+        }}
       />
     </div>
   );

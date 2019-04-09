@@ -2,8 +2,7 @@ import PropTypes from 'prop-types';
 import classNames from 'classnames';
 import React from 'react';
 
-import { ClearableInput, Tickbox } from 'meiko-lib';
-import MultiSelect from 'components/MultiSelect';
+import { ClearableInput, Tickbox, MultiSelect } from 'meiko-lib';
 import Strings from 'constants/strings';
 import { useWindowSize } from 'hooks/useWindowSize';
 
@@ -30,6 +29,7 @@ function Filters(props) {
       <ClearableInput
         {...props.searchProps}
         id="search"
+        label="Search"
         className={classNames(FILTERS_INPUT_CLASS)}
       />
       <MultiSelect
@@ -69,14 +69,14 @@ function Filters(props) {
         name="includeMega"
         text="Include Megas"
         {...props.includeMegaProps}
-        className={classNames(FILTERS_INPUT_CLASS)}
+        containerClassName={classNames(FILTERS_INPUT_CLASS)}
       />
       <Tickbox
         id="includeVariants"
         name="includeVariants"
         text="Include variants"
         {...props.includeVariantsProps}
-        className={classNames(FILTERS_INPUT_CLASS)}
+        containerClassName={classNames(FILTERS_INPUT_CLASS)}
       />
     </section>
   );

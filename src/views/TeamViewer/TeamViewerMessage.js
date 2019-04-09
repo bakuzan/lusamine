@@ -8,8 +8,10 @@ import './TeamViewerMessage.scss';
 const TeamViewerMessage = () => (
   <div className="no-data-message">
     <div className="no-data-message__text">You have no saved teams</div>
-    <ButtonisedNavLink to={Routes.base}>Create a team</ButtonisedNavLink>
-    <ButtonisedNavLink to={Routes.lusamineTeam}>
+    <ButtonisedNavLink to={Routes.base} link>
+      Create a team
+    </ButtonisedNavLink>
+    <ButtonisedNavLink to={Routes.lusamineTeam} link>
       Load an example team
     </ButtonisedNavLink>
   </div>

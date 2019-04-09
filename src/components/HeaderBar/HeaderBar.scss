@@ -3,10 +3,10 @@
 
 .header-bar {
   h1 {
-    @include respond-to(sm) {
+    @include respondTo(sm) {
       font-size: 1.25em;
     }
-    @include respond-to(xs) {
+    @include respondTo(xs) {
       font-size: 1em;
     }
   }
@@ -17,10 +17,11 @@
 
   & > div:last-child {
     display: flex;
+    height: 100%;
   }
 
   &__link {
-    @include respond-to(xs) {
+    @include respondTo(xs) {
       align-items: flex-start;
       white-space: pre-line;
     }

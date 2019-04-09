@@ -32,7 +32,7 @@ function TrainerTeamViewer() {
       {teams.map((t) => (
         <div key={t.id} className={classNames('team-viewer__team saved-team')}>
           <div className={classNames('saved-team__actions')}>
-            <ButtonisedNavLink to={TVU.createTeamUrl(t.idString)}>
+            <ButtonisedNavLink to={TVU.createTeamUrl(t.idString)} link>
               Load team
             </ButtonisedNavLink>
           </div>

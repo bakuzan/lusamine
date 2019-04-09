@@ -1,8 +1,8 @@
-import React, { Component } from 'react';
+import React, { useState, useMemo } from 'react';
 import { Switch, Route } from 'react-router-dom';
-import { Helmet } from 'react-helmet';
+import { Helmet, HelmetProvider } from 'react-helmet-async';
 
-import { Alert } from 'meiko-lib';
+import { Alert, AppInformation, useGlobalStyles } from 'meiko-lib';
 import HeaderBar from 'components/HeaderBar';
 import AlertContainer from 'components/AlertContainer';
 import Footer from 'components/Footer';
@@ -11,129 +11,99 @@ import TeamPlanner from 'views/TeamPlanner';
 import SavedTeamViewer from 'views/TeamViewer/SavedTeams';
 import TrainerTeamViewer from 'views/TeamViewer/TrainerTeams';
 import Settings from 'views/Settings';
-import { AppInformation } from 'meiko-lib';
-import Strings from 'constants/strings';
+
 import Routes from 'constants/routes';
 import { PokedexContext, TypeContext } from 'context';
 import { constructPokedex, getTypeMatchups } from 'data';
-import { capitaliseEachWord, settingsStore } from 'utils/common';
+import { settingsStore } from 'utils/common';
+import logData from './logData';
+import getPageTitleForCurrentPath from './getPageTitle';
 
 const BRANCH = process.env.REACT_APP_BRANCH;
 const VERSION = process.env.REACT_APP_VERSION;
 
-const TRAINER_TEAMS = 'trainer-teams';
-const SAVED_TEAMS = 'saved-teams';
-const SETTINGS = 'settings';
+const systemMessages = [];
 
-const getPageTitleForCurrentPath = (path) => {
-  const key = path.includes(SAVED_TEAMS)
-    ? 'savedTeams'
-    : path.includes(TRAINER_TEAMS)
-    ? 'trainerTeams'
-    : path.includes(SETTINGS)
-    ? 'settings'
-    : 'planner';
+function App({ match, location }) {
+  useGlobalStyles();
 
-  const pageHeader = capitaliseEachWord(Strings.pageTitle[key]);
-  return {
-    pageTitle: `Lusamine - ${pageHeader}`,
-    pageHeader: pageHeader.replace('Pokémon ', ''),
-    pageDescription: Strings.pageDescription[key]
-  };
-};
+  const [pokedex] = useState(constructPokedex());
+  const [typeMatchups] = useState(getTypeMatchups());
+  const [userMessages, setUserMessages] = useState(systemMessages);
 
-class App extends Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      pokedex: constructPokedex(),
-      typeMatchups: getTypeMatchups(),
-      userMessages: []
-    };
+  const path = location.pathname;
+  const { pageTitle, pageHeader, pageDescription } = useMemo(
+    () => getPageTitleForCurrentPath(path),
+    [path]
+  );
 
-    this.handleDismiss = this.handleDismiss.bind(this);
-  }
+  const settings = settingsStore.get();
+  const messages = userMessages.filter(
+    (x) => !settings.readMessages.includes(x.id)
+  );
+  const hasMessages = messages.length > 0;
 
-  handleDismiss(messageId) {
-    this.setState({ userMessages: [] }, () => {
-      const settings = settingsStore.get();
-      settingsStore.set({
-        readMessages: [...settings.readMessages, messageId]
-      });
-    });
-  }
+  logData({ pokedex, typeMatchups });
 
-  render() {
-    const { match, location } = this.props;
-    const {
-      pageTitle,
-      pageHeader,
-      pageDescription
-    } = getPageTitleForCurrentPath(location.pathname);
-
-    const settings = settingsStore.get();
-    const messages = this.state.userMessages.filter(
-      (x) => !settings.readMessages.includes(x.id)
-    );
-    const hasMessages = !!messages.length;
-
-    console.groupCollapsed('App');
-    console.log('%c pokedex', 'color: royalblue', this.state.pokedex);
-    console.log('%c types', 'color: forestgreen', this.state.typeMatchups);
-    console.groupEnd();
-
-    return (
-      <PokedexContext.Provider value={this.state.pokedex}>
-        <TypeContext.Provider value={this.state.typeMatchups}>
-          <div className="app app--theme_default">
+  return (
+    <PokedexContext.Provider value={pokedex}>
+      <TypeContext.Provider value={typeMatchups}>
+        <div className="theme theme--default">
+          <HelmetProvider>
             <Helmet>
               <title>{pageTitle}</title>
               <meta name="description" content={pageDescription} />
             </Helmet>
-            <HeaderBar pageTitle={pageHeader} />
-            {hasMessages && (
-              <Alert
-                messageClassName="lusamine-alert"
-                alerts={messages}
-                actions={{
-                  dismissAlertMessage: this.handleDismiss
-                }}
-              />
+          </HelmetProvider>
+          <HeaderBar pageTitle={pageHeader} />
+          {hasMessages && (
+            <Alert
+              messageClassName="lusamine-alert"
+              alerts={messages}
+              actions={{
+                dismissAlertMessage: (messageId) => {
+                  setUserMessages([]);
+                  const settings = settingsStore.get();
+                  settingsStore.set({
+                    readMessages: [...settings.readMessages, messageId]
+                  });
+                }
+              }}
+            />
+          )}
+          <EasterEgg />
+          <AlertContainer>
+            {(triggerAlert) => (
+              <main>
+                <Switch>
+                  <Route
+                    path={`${match.url}${Routes.trainerTeams}`}
+                    component={TrainerTeamViewer}
+                  />
+                  <Route
+                    path={`${match.url}${Routes.savedTeams}`}
+                    component={SavedTeamViewer}
+                  />
+                  <Route
+                    path={`${match.url}${Routes.settings}`}
+                    component={Settings}
+                  />
+                  <Route
+                    path={match.url}
+                    render={(props) => (
+                      <TeamPlanner {...props} sendAlert={triggerAlert} />
+                    )}
+                  />
+                </Switch>
+              </main>
             )}
-            <EasterEgg />
-            <AlertContainer>
-              {(triggerAlert) => (
-                <main>
-                  <Switch>
-                    <Route
-                      path={`${match.url}${Routes.trainerTeams}`}
-                      component={TrainerTeamViewer}
-                    />
-                    <Route
-                      path={`${match.url}${Routes.savedTeams}`}
-                      component={SavedTeamViewer}
-                    />
-                    <Route
-                      path={`${match.url}${Routes.settings}`}
-                      component={Settings}
-                    />
-                    <Route
-                      path={match.url}
-                      render={(props) => (
-                        <TeamPlanner {...props} sendAlert={triggerAlert} />
-                      )}
-                    />
-                  </Switch>
-                </main>
-              )}
-            </AlertContainer>
-            <Footer />
-            <AppInformation branch={BRANCH} version={VERSION} />
-          </div>
-        </TypeContext.Provider>
-      </PokedexContext.Provider>
-    );
-  }
+          </AlertContainer>
+          <Footer />
+          <AppInformation branch={BRANCH} version={VERSION} />
+        </div>
+      </TypeContext.Provider>
+    </PokedexContext.Provider>
+  );
 }
 
 export default App;

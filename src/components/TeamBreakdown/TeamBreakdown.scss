@@ -44,7 +44,7 @@
 .stat-breakdown-list {
   flex-direction: column;
 
-  @include respond-to(lg) {
+  @include respondTo(lg) {
     flex-direction: row;
 
     &__item {

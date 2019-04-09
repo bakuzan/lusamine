@@ -54,10 +54,9 @@ const TeamMember = React.memo(
       data.id
     ]);
     const disableEvolve = evolutions.length === 0;
-    // LOG
-    console.log('OPTIONS > ', evolutions);
 
     if (displayEvolveMenu) {
+      console.log(evolutions);
       return (
         <li
           ref={ref}
@@ -146,7 +145,7 @@ const TeamMember = React.memo(
             <LeftButton
               className="team-member__action"
               disabled={isFirst}
-              onClick={() => props.move(props.data.id, Orders.moveLeft)}
+              onClick={() => move(data.id, Orders.moveLeft)}
             />
           )}
           {canEvolve && (
@@ -164,7 +163,7 @@ const TeamMember = React.memo(
             <RightButton
               className="team-member__action"
               disabled={isLast}
-              onClick={() => props.move(props.data.id, Orders.moveRight)}
+              onClick={() => move(data.id, Orders.moveRight)}
             />
           )}
         </div>

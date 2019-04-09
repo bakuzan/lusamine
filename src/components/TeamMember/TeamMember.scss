@@ -21,7 +21,7 @@ $team-member--width-adjustment: $team-member--account-for-border +
   border: $team-member--border-width solid transparent;
   cursor: pointer;
 
-  @include respond-to(xs) {
+  @include respondTo(xs) {
     width: calc(100% / 3 - #{$team-member--width-adjustment});
   }
 

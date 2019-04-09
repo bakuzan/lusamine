@@ -19,10 +19,10 @@
     }
 
     &--hide-on_small {
-      @include respond-to(sm) {
+      @include respondTo(sm) {
         display: none;
       }
-      @include respond-to(xs) {
+      @include respondTo(xs) {
         display: none;
       }
     }
@@ -40,10 +40,10 @@
     justify-content: flex-start;
     grid-column-gap: 2px;
 
-    @include respond-to(sm) {
+    @include respondTo(sm) {
       justify-content: space-evenly;
     }
-    @include respond-to(xs) {
+    @include respondTo(xs) {
       justify-content: space-evenly;
     }
   }

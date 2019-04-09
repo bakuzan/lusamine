@@ -5,12 +5,16 @@ import DnDType from 'constants/dndType';
 
 const memberTarget = {
   hover(props, monitor, component) {
-    if (!component) return null;
+    if (!component) {
+      return null;
+    }
 
     const { data: dragItem, index: dragIndex } = monitor.getItem();
     const { data: hoverItem, index: hoverIndex } = props;
 
-    if (dragItem.id === hoverItem.id) return;
+    if (dragItem.id === hoverItem.id || !monitor.canDrop()) {
+      return;
+    }
 
     const hoverBoundingRect = findDOMNode(component).getBoundingClientRect();
 

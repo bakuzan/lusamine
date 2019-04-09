@@ -1,5 +1,3 @@
-// TODO remove this when meiko uses css-in-js!!
-import 'meiko/components/bundle.min.css';
 import './styles/index.scss';
 
 import React from 'react';

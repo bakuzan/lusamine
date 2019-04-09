@@ -7,19 +7,19 @@
     "ayaka": "file:../ayaka/build",
     "classnames": "^2.2.6",
     "husky": "^1.3.1",
-    "lint-staged": "^8.1.4",
+    "lint-staged": "^8.1.5",
     "meiko": "file:../meiko/build",
-    "node-sass": "^4.10.0",
-    "pre-commit": "^1.2.2",
-    "prettier": "^1.12.1",
-    "react": "^16.8.2",
-    "react-dnd": "^7.0.2",
-    "react-dnd-html5-backend": "^7.0.2",
-    "react-dnd-touch-backend": "^0.8.0",
-    "react-dom": "^16.8.2",
-    "react-helmet": "^5.2.0",
-    "react-router-dom": "^4.2.2",
-    "react-scripts": "2.1.5"
+    "nano-css": "^5.1.0",
+    "node-sass": "^4.11.0",
+    "prettier": "^1.16.4",
+    "react": "^16.8.6",
+    "react-dnd": "^7.4.5",
+    "react-dnd-html5-backend": "^7.4.4",
+    "react-dnd-touch-backend": "^0.8.1",
+    "react-dom": "^16.8.6",
+    "react-helmet-async": "^1.0.2",
+    "react-router-dom": "^5.0.0",
+    "react-scripts": "2.1.8"
   },
   "lint-staged": {
     "{,src,tools}/**/*.{js,jsx,json,scss}": [
@@ -27,10 +27,11 @@
       "git add"
     ]
   },
-  "pre-commit": [
-    "precommit-msg",
-    "lint"
-  ],
+  "husky": {
+    "hooks": {
+      "pre-commit": "npm run precommit-msg && npm run lint"
+    }
+  },
   "scripts": {
     "precommit-msg": "echo 'Precommit checks...'",
     "lint": "lint-staged",
@@ -38,12 +39,12 @@
     "build": "for /f %i in ('git rev-parse --abbrev-ref HEAD') do set REACT_APP_BRANCH=%i && react-scripts build",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject",
-    "deploy": "npm run build&&gh-pages -d build",
+    "deploy": "npm run build && gh-pages -d build",
     "scrape-data": "node ./tools/index.js"
   },
   "devDependencies": {
     "cheerio": "^1.0.0-rc.2",
-    "gh-pages": "^1.1.0",
+    "gh-pages": "^2.0.1",
     "request": "^2.88.0"
   },
   "browserslist": [

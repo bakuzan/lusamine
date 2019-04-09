@@ -1,6 +1,7 @@
 @import './_colours';
 
 // Screen Variables
+
 $screen-xs: 480px;
 $screen-sm: 768px;
 $screen-md: 992px;
@@ -21,8 +22,18 @@ $app--font-size: 16px;
 $art-card--size: 96px;
 
 $breakdown-indicator-colours: (
-  none: (none: $green, low: $yellow, medium: $orange, high: $red),
-  high: (none: $grey, low: $yellow, medium: $blue, high: $green)
+  none: (
+    none: $green,
+    low: $yellow,
+    medium: $orange,
+    high: $red
+  ),
+  high: (
+    none: $grey,
+    low: $yellow,
+    medium: $blue,
+    high: $green
+  )
 );
 
 $button--darken-percentage: 10%;
@@ -52,4 +63,6 @@ $type--darken-percentage-border-hover: 18%;
 $types--column-offset: -50px;
 $types--row-offset: -18px;
 
-$z-index: (easter-egg: 100);
+$z-index: (
+  easter-egg: 100
+);

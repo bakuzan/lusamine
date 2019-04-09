@@ -1,7 +1,7 @@
 @import '../../styles/_mixins';
 
 .team {
-  @include respond-to(xs) {
+  @include respondTo(xs) {
     flex-flow: wrap;
   }
 }
