@@ -1,23 +1,19 @@
 self.__precacheManifest = [
   {
-    "revision": "f0c60420cabc448a5d9d22f82512e021",
-    "url": "/lusamine/static/media/art.f0c60420.webp"
+    "revision": "96ef307ee32a542b7951688080cb2d69",
+    "url": "/lusamine/static/media/sprites.96ef307e.webp"
   },
   {
-    "revision": "1c5c0e546d255243dadb",
-    "url": "/lusamine/static/css/main.837b1820.chunk.css"
+    "revision": "3b690507677293a4de46",
+    "url": "/lusamine/static/css/main.fc07c9df.chunk.css"
   },
   {
     "revision": "fa521e0fd32484deed69",
-    "url": "/lusamine/static/js/runtime~main.fa521e0f.js"
+    "url": "/lusamine/static/js/runtime~main.a2c07b01.js"
   },
   {
-    "revision": "cf9fc0079e261f9c48bff9f3c81f1410",
-    "url": "/lusamine/static/media/sprites.cf9fc007.png"
-  },
-  {
-    "revision": "13b2e7349e1eb7e7c9e6",
-    "url": "/lusamine/static/js/2.13b2e734.chunk.js"
+    "revision": "ae12b772fe34a37aa360",
+    "url": "/lusamine/static/js/2.8e0e101d.chunk.js"
   },
   {
     "revision": "7140bc359bb73b6a5f144edeff877808",
@@ -28,12 +24,12 @@ self.__precacheManifest = [
     "url": "/lusamine/static/media/pokemon-opening.0d0730eb.ogg"
   },
   {
-    "revision": "1c5c0e546d255243dadb",
-    "url": "/lusamine/static/js/main.1c5c0e54.chunk.js"
+    "revision": "f0c60420cabc448a5d9d22f82512e021",
+    "url": "/lusamine/static/media/art.f0c60420.webp"
   },
   {
-    "revision": "96ef307ee32a542b7951688080cb2d69",
-    "url": "/lusamine/static/media/sprites.96ef307e.webp"
+    "revision": "3b690507677293a4de46",
+    "url": "/lusamine/static/js/main.84ac1861.chunk.js"
   },
   {
     "revision": "ecadccdca3265038f4b8495611daa012",
@@ -52,11 +48,11 @@ self.__precacheManifest = [
     "url": "/lusamine/static/media/art.520c5cad.png"
   },
   {
-    "revision": "13b2e7349e1eb7e7c9e6",
-    "url": "/lusamine/static/css/2.08487aeb.chunk.css"
+    "revision": "cf9fc0079e261f9c48bff9f3c81f1410",
+    "url": "/lusamine/static/media/sprites.cf9fc007.png"
   },
   {
-    "revision": "9c72e364c7d3761b454b595d9a102777",
+    "revision": "9d2ddc186aaf73b93312447937858b8e",
     "url": "/lusamine/index.html"
   }
 ];
