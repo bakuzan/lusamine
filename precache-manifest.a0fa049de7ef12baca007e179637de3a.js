@@ -4,16 +4,16 @@ self.__precacheManifest = [
     "url": "/lusamine/static/media/sprites.96ef307e.webp"
   },
   {
-    "revision": "3b690507677293a4de46",
-    "url": "/lusamine/static/css/main.fc07c9df.chunk.css"
+    "revision": "085e280800594dfb189d",
+    "url": "/lusamine/static/css/main.b7be1697.chunk.css"
   },
   {
     "revision": "fa521e0fd32484deed69",
     "url": "/lusamine/static/js/runtime~main.a2c07b01.js"
   },
   {
-    "revision": "ae12b772fe34a37aa360",
-    "url": "/lusamine/static/js/2.8e0e101d.chunk.js"
+    "revision": "0250ed09d4514b781d9f",
+    "url": "/lusamine/static/js/2.8aceded2.chunk.js"
   },
   {
     "revision": "7140bc359bb73b6a5f144edeff877808",
@@ -28,8 +28,8 @@ self.__precacheManifest = [
     "url": "/lusamine/static/media/art.f0c60420.webp"
   },
   {
-    "revision": "3b690507677293a4de46",
-    "url": "/lusamine/static/js/main.84ac1861.chunk.js"
+    "revision": "085e280800594dfb189d",
+    "url": "/lusamine/static/js/main.505b2f9d.chunk.js"
   },
   {
     "revision": "ecadccdca3265038f4b8495611daa012",
@@ -52,7 +52,7 @@ self.__precacheManifest = [
     "url": "/lusamine/static/media/sprites.cf9fc007.png"
   },
   {
-    "revision": "9d2ddc186aaf73b93312447937858b8e",
+    "revision": "55235c6e3ccb5e4d4d6d7f05e6280d09",
     "url": "/lusamine/index.html"
   }
 ];
