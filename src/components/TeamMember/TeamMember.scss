@@ -20,6 +20,8 @@ $team-member--width-adjustment: $team-member--account-for-border +
   padding: $team-member--padding;
   border: $team-member--border-width solid transparent;
   cursor: pointer;
+  // Hack to ensure nice screenshot in drag preview
+  transform: translate3d(0, 0, 0);
 
   @include respondTo(xs) {
     width: calc(100% / 3 - #{$team-member--width-adjustment});
@@ -85,16 +87,16 @@ $team-member--width-adjustment: $team-member--account-for-border +
     padding: 8px 0;
   }
 
-  &__evolve {
-    min-width: 25px;
-    padding: 0;
-    margin: 0 auto;
-  }
-
   &__evolution-button {
     margin: auto;
     white-space: pre-line;
   }
+}
+
+.team-member__evolve.team-member__evolve {
+  min-width: 25px;
+  padding: 0;
+  margin: 0 auto;
 }
 
 .team-member__art {

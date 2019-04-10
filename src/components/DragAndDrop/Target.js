@@ -28,7 +28,7 @@ const memberTarget = {
 
     props.moveDnD(dragIndex, hoverIndex);
 
-    // Prevents trashing
+    // Prevents thrashing
     monitor.getItem().index = hoverIndex;
   },
   canDrop(props) {

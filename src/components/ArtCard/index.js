@@ -7,30 +7,27 @@ import { buildSelectorsForArtCard } from 'utils/selectors';
 
 import './ArtCard.scss';
 
-class ArtCard extends React.PureComponent {
-  render() {
-    const { data } = this.props;
-    const backgroundPosition = data.artPosition;
-    const artCardClasses = buildSelectorsForArtCard(data);
+function ArtCard({ className, data }) {
+  const backgroundPosition = data.artPosition;
+  const artCardClasses = buildSelectorsForArtCard(data);
 
-    return (
-      <div className={classNames('art-card', artCardClasses.types)}>
-        <div
-          className={classNames(
-            'art-card__pokemon',
-            this.props.className,
-            artCardClasses.name
-          )}
-          style={backgroundPosition}
-          aria-label={capitaliseEachWord(
-            `${data.name}${
-              data.form ? ` (${capitaliseEachWord(data.form)})` : ''
-            }`
-          )}
-        />
-      </div>
-    );
-  }
+  return (
+    <div className={classNames('art-card', artCardClasses.types)}>
+      <div
+        className={classNames(
+          'art-card__pokemon',
+          className,
+          artCardClasses.name
+        )}
+        style={backgroundPosition}
+        aria-label={capitaliseEachWord(
+          `${data.name}${
+            data.form ? ` (${capitaliseEachWord(data.form)})` : ''
+          }`
+        )}
+      />
+    </div>
+  );
 }
 
 ArtCard.propTypes = {

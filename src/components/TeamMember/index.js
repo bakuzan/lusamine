@@ -35,8 +35,7 @@ const TeamMember = React.memo(
       remove,
       move,
       evolve,
-      canDrop,
-      ...props
+      canDrop
     },
     ref
   ) {
@@ -56,7 +55,6 @@ const TeamMember = React.memo(
     const disableEvolve = evolutions.length === 0;
 
     if (displayEvolveMenu) {
-      console.log(evolutions);
       return (
         <li
           ref={ref}
@@ -181,4 +179,4 @@ TeamMember.propTypes = {
 };
 
 export default TeamMember;
-export const TeamMemberDraggable = withDragAndDrop(TeamMember);
+export const TeamMemberDraggable = withDragAndDrop(TeamMember, ArtCard);
