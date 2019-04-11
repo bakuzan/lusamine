@@ -1,6 +1,7 @@
 import Alert from 'meiko/Alert';
 import { Button, withButtonisation } from 'meiko/Button';
 import ClearableInput from 'meiko/ClearableInput';
+import DropdownMenu from 'meiko/DropdownMenu';
 import Header from 'meiko/Header';
 import Image from 'meiko/Image';
 import MultiSelect from 'meiko/MultiSelect';
@@ -19,6 +20,7 @@ export {
   Button,
   withButtonisation,
   ClearableInput,
+  DropdownMenu,
   Grid,
   Header,
   Image,

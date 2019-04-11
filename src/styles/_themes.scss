@@ -52,6 +52,8 @@ $theme-maps: (
     color: $primary-colour;
 
     a {
+      color: $primary-colour;
+
       &:hover,
       &.active {
         background-color: $active-background;

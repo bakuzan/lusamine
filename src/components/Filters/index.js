@@ -5,11 +5,11 @@ import React from 'react';
 import { ClearableInput, Tickbox, MultiSelect } from 'meiko-lib';
 import Strings from 'constants/strings';
 import { useWindowSize } from 'hooks/useWindowSize';
+import { media } from 'utils/media';
 
 import './Filters.scss';
 
 const FILTERS_INPUT_CLASS = 'filters__input';
-const media = new Map([['small', (n) => n <= 991], ['large', (n) => n > 991]]);
 
 function Filters(props) {
   const hideOnCertainScreens = !!props.hiddenOn;
@@ -30,7 +30,7 @@ function Filters(props) {
         {...props.searchProps}
         id="search"
         label="Search"
-        className={classNames(FILTERS_INPUT_CLASS)}
+        containerClassName={classNames(FILTERS_INPUT_CLASS)}
       />
       <MultiSelect
         id="generations"

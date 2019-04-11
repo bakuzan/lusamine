@@ -36,6 +36,14 @@ main {
 .list-item-bottom-spacing {
   margin-bottom: 4px;
 }
-.settings__input {
+
+// Settings page
+.settings__input.settings__input {
+  &:first-child {
+    margin-top: 10px;
+  }
+
+  max-height: none;
+  margin-bottom: 20px;
   white-space: pre-line;
 }

@@ -3,19 +3,11 @@ import PropTypes from 'prop-types';
 import React from 'react';
 
 import { Header, Image } from 'meiko-lib';
-import { ButtonisedNavLink } from 'components/Buttons';
-import { createListeners } from 'utils/common';
+import NavigationMenu from './NavigationMenu';
+import { createListeners, getWindowScrollPosition } from 'utils/common';
 import Logo from 'assets/logo.png';
 
-import Routes from 'constants/routes';
-import { getWindowScrollPosition } from 'utils/common';
-
 import './HeaderBar.scss';
-
-const PLANNER = 'planner';
-const SAVED_TEAMS = 'saved-teams';
-const TRAINER_TEAMS = 'trainer-teams';
-const SETTINGS = 'settings';
 
 class HeaderBar extends React.Component {
   constructor(props) {
@@ -40,10 +32,6 @@ class HeaderBar extends React.Component {
   }
 
   render() {
-    const savedTeamsUrl = `${Routes.base}${Routes.savedTeams}`;
-    const settingsUrl = `${Routes.base}${Routes.settings}`;
-    const trainerTeamsUrl = `${Routes.base}${Routes.trainerTeams}`;
-
     const isPageScrolled = !!this.state.windowScrollPosition;
     const headerClasses = classNames('header-bar', {
       'header-bar--page-scrolled': isPageScrolled
@@ -56,43 +44,7 @@ class HeaderBar extends React.Component {
         leftAlignTitle
         title={this.props.pageTitle}
         navLeft={<Image className="logo" alt="Pokémon Logo" src={Logo} />}
-        navRight={
-          <React.Fragment>
-            <ButtonisedNavLink
-              key={PLANNER}
-              id={PLANNER}
-              className="header-bar__link"
-              exact
-              to={Routes.base}
-            >
-              Team Planner
-            </ButtonisedNavLink>
-            <ButtonisedNavLink
-              key={SAVED_TEAMS}
-              id={SAVED_TEAMS}
-              className="header-bar__link"
-              to={savedTeamsUrl}
-            >
-              Saved Teams
-            </ButtonisedNavLink>
-            <ButtonisedNavLink
-              key={TRAINER_TEAMS}
-              id={TRAINER_TEAMS}
-              className="header-bar__link"
-              to={trainerTeamsUrl}
-            >
-              Trainer Teams
-            </ButtonisedNavLink>
-            <ButtonisedNavLink
-              key={SETTINGS}
-              id={SETTINGS}
-              className="header-bar__link"
-              to={settingsUrl}
-            >
-              Settings
-            </ButtonisedNavLink>
-          </React.Fragment>
-        }
+        navRight={<NavigationMenu />}
       />
     );
   }
