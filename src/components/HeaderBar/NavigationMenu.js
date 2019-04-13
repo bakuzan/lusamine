@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { DropdownMenu } from 'meiko-lib';
+import { DropdownMenu, nano } from 'meiko-lib';
 import { ButtonisedNavLink } from 'components/Buttons';
 import Routes from 'constants/routes';
 import { useWindowSize } from 'hooks/useWindowSize';
@@ -61,6 +61,11 @@ function NavigationLinks({ onItemClick }) {
 
 const menuIcon = '\u22EE';
 const menuLabel = 'Open navigation menu';
+
+// unintrusive centering
+nano.put('.dropdown-menu', {
+  padding: '6px'
+});
 
 function NavigationMenu() {
   const size = useWindowSize();
