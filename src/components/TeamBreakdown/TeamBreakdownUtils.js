@@ -8,26 +8,21 @@ import {
 } from 'utils/common';
 
 export function buildTeamWeaknessCounts(types, members) {
+  const typesMapEmpty = [...types.values()].map((t) => [t.id, []]);
   const memberTypeIds = [...members.values()].reduce(
     (p, c) => [...p, { id: c.id, typeIds: c.types.map((x) => x.id) }],
     []
   );
-  const typesMapEmpty = [...types.values()].map((t) => [t.id, []]);
 
-  const unaffectedCounts = memberTypeIds.reduce((counts, mem) => {
-    const values = mem.typeIds.reduce(
-      (p, tId) => [...p, ...types.get(tId)[Strings.typeBreakdown.unaffectedBy]],
-      []
-    );
-    const uniqueValues = [...new Set([...values]).values()];
-    return uniqueValues.reduce(
-      (p, v) => p.set(v, [...p.get(v), mem.id]),
-      counts
-    );
-  }, new Map(typesMapEmpty.slice()));
-
-  const { weakCounts, resistCounts } = memberTypeIds.reduce(
+  const { unaffectedCounts, weakCounts, resistCounts } = memberTypeIds.reduce(
     (maps, mem) => {
+      const unaffectedIds = mem.typeIds.reduce(
+        (p, tId) => [
+          ...p,
+          ...types.get(tId)[Strings.typeBreakdown.unaffectedBy]
+        ],
+        []
+      );
       const weakIds = mem.typeIds.reduce(
         (p, tId) => [...p, ...types.get(tId)[Strings.typeBreakdown.weakTo]],
         []
@@ -38,10 +33,13 @@ export function buildTeamWeaknessCounts(types, members) {
       );
 
       return [...types.keys()].reduce((p, v) => {
+        const u = unaffectedIds.filter((x) => x === v).length;
         const w = weakIds.filter((x) => x === v).length;
         const r = resistsIds.filter((x) => x === v).length;
 
-        if (w > r) {
+        if (u > 0) {
+          p.unaffectedCounts.set(v, [...p.unaffectedCounts.get(v), mem.id]);
+        } else if (w > r) {
           p.weakCounts.set(v, [...p.weakCounts.get(v), mem.id]);
         } else if (w < r) {
           p.resistCounts.set(v, [...p.resistCounts.get(v), mem.id]);
@@ -51,6 +49,7 @@ export function buildTeamWeaknessCounts(types, members) {
       }, maps);
     },
     {
+      unaffectedCounts: new Map(typesMapEmpty.slice()),
       weakCounts: new Map(typesMapEmpty.slice()),
       resistCounts: new Map(typesMapEmpty.slice())
     }

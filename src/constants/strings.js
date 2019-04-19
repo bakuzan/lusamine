@@ -20,12 +20,14 @@ export default {
     planner: 'Pokémon team planner',
     savedTeams: 'saved Pokémon teams',
     settings: 'settings',
-    trainerTeams: 'trainer Pokémon teams'
+    trainerTeams: 'trainer Pokémon teams',
+    pokedex: 'pokédex'
   },
   pageDescription: {
     planner: 'Plan a new pokemon team',
     savedTeams: 'View previously saved pokemon teams',
-    settings: 'Adjustable application settings'
+    settings: 'Adjustable application settings',
+    pokedex: 'Browse the pokedex to view information about each pokemon'
   },
   scoreModifier: {
     none: 'none',

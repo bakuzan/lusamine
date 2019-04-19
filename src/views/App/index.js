@@ -11,6 +11,7 @@ import TeamPlanner from 'views/TeamPlanner';
 import SavedTeamViewer from 'views/TeamViewer/SavedTeams';
 import TrainerTeamViewer from 'views/TeamViewer/TrainerTeams';
 import Settings from 'views/Settings';
+import Pokedex from 'views/Pokedex';
 
 import Routes from 'constants/routes';
 import { PokedexContext, TypeContext } from 'context';
@@ -87,6 +88,10 @@ function App({ match, location }) {
                   <Route
                     path={`${match.url}${Routes.settings}`}
                     component={Settings}
+                  />
+                  <Route
+                    path={`${match.url}${Routes.pokedex}/:npn?`}
+                    component={Pokedex}
                   />
                   <Route
                     path={match.url}
