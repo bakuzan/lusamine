@@ -2,7 +2,7 @@ import classNames from 'classnames';
 import PropTypes from 'prop-types';
 import React from 'react';
 
-import { Grid } from 'meiko-lib';
+import { Grid } from 'mko';
 import TypeBlock from 'components/TypeBlock';
 import * as TBPU from './TeamBreakdownPanelUtils';
 
@@ -15,17 +15,22 @@ function EffectiveTypeBreakdownPanel({
   panelModifier,
   onMouseState = {}
 }) {
-  const typesList = [...types.values()];
+  const listOfMemberIds = [...types.values()].reduce((p, t) => {
+    const ids = data.get(t.id);
+    if (!ids) {
+      return p;
+    }
+    return [...p, [t, ids]];
+  }, []);
 
   return (
     <Grid
       className={classNames('breakdown-panel', [
         `breakdown-panel--good-is_${panelModifier}`
       ])}
-      items={typesList}
+      items={listOfMemberIds}
     >
-      {(t) => {
-        const memberIds = data.get(t.id);
+      {([t, memberIds]) => {
         const score = memberIds.length;
         const typeStatusClass = TBPU.getClassForScore(score);
         const title = TBPU.getScoreDescription(panelModifier, score);

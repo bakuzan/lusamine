@@ -26,7 +26,8 @@ $theme-maps: (
   $button--colour-hover: map-get($theme, button--colour-hover);
 
   // Overrides
-  .has-float-label input:focus {
+  .has-float-label input:focus,
+  .has-float-label select:focus {
     border-color: $primary-colour;
   }
 
@@ -76,78 +77,19 @@ $theme-maps: (
       color: $primary-colour;
     }
   }
+
+  .evolution-tree {
+    &__megas {
+      border-color: $primary-colour;
+    }
+
+    &__arrow {
+      &::before {
+        border-color: $primary-colour;
+      }
+      &::after {
+        border-bottom-color: $primary-colour;
+      }
+    }
+  }
 }
-
-// @each $theme-name, $values in $theme-maps {
-//   $base-background: map-get($values, base-background);
-//   $base-colour: map-get($values, base-colour);
-//   $primary-background: map-get($values, primary-background);
-//   $primary-colour: map-get($values, primary-colour);
-//   $active-background: map-get($values, active-background);
-//   $active-colour: map-get($values, active-colour);
-//   $header-background: map-get($values, header-background);
-//   $header-colour: map-get($values, header-colour);
-//   $button-link--colour: map-get($values, button-link--colour);
-//   $button--colour-hover: map-get($values, button--colour-hover);
-
-//   .app--theme_#{$theme-name} {
-//     &.app,
-//     .lusamine-alert,
-//     .app-information__detail {
-//       background-color: $base-background;
-//       color: $base-colour;
-//     }
-//     .team-breakdown__item,
-//     .saved-team {
-//       border-color: map-get($values, team-breakdown-item--border-colour);
-//     }
-//     .breakdown-item-title__text {
-//       background-color: $base-background;
-//     }
-//     .header-bar {
-//       background-color: $header-background;
-//       color: $header-colour;
-
-//       a {
-//         &:hover,
-//         &.active {
-//           background-color: $active-background;
-//           color: $active-colour;
-//         }
-//       }
-//     }
-//     .lusamine-button {
-//       background-color: map-get($values, button--background);
-//       &:hover {
-//         background-color: darken(
-//           map-get($values, button--background-hover),
-//           $button--darken-percentage
-//         );
-//         color: $button--colour-hover;
-//       }
-//     }
-//     .lusamine-button-link,
-//     .app-information {
-//       color: $button-link--colour;
-//       &:hover {
-//         color: darken($button-link--colour, $button--darken-percentage);
-//       }
-//     }
-//     .lusamine-button--action {
-//       border: 1px solid map-get($values, button--action-border-colour);
-//     }
-//     .lusamine-multiselect-list {
-//       background-color: $base-background;
-//     }
-//     .team-member__action:focus {
-//       box-shadow: 0px 0px 2px 3px $button--colour-hover;
-//     }
-
-//     .easter-egg {
-//       background-color: $active-background;
-//       &__label {
-//         color: $primary-colour;
-//       }
-//     }
-//   }
-// }

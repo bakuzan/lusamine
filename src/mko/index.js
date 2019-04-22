@@ -10,10 +10,12 @@ export { default as Tickbox } from 'meiko/Tickbox';
 export { default as AppInformation } from 'meiko/AppInformation';
 export { default as Grid } from 'meiko/Grid';
 export { default as List } from 'meiko/List';
+export { default as SelectBox } from 'meiko/SelectBox';
 
 export { default as Icons } from 'meiko/constants/icons';
 
 export { useGlobalStyles } from 'meiko/hooks/useGlobalStyles';
+export { useWindowSize } from 'meiko/hooks/useWindowSize';
 
 // Pre-setup nano fn
 export { nano } from 'meiko/styles/nano';

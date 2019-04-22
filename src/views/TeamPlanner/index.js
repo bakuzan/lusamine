@@ -1,7 +1,7 @@
 import classNames from 'classnames';
 import React from 'react';
 
-import { Grid, ClearableInput } from 'meiko-lib';
+import { Grid, ClearableInput } from 'mko';
 import { Button } from 'components/Buttons';
 import Filters from 'components/Filters';
 import Team from 'components/Team';

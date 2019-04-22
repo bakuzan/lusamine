@@ -2,7 +2,7 @@ import classNames from 'classnames';
 import PropTypes from 'prop-types';
 import React from 'react';
 
-import { Header, Image } from 'meiko-lib';
+import { Header, Image } from 'mko';
 import NavigationMenu from './NavigationMenu';
 import { createListeners, getWindowScrollPosition } from 'utils/common';
 import Logo from 'assets/logo.png';

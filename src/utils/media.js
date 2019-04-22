@@ -1,5 +1,5 @@
 export const media = new Map([
-  ['xsmall', (n) => n <= 650],
+  ['xsmall', (n) => n < 768],
   ['small', (n) => n <= 991],
   ['large', (n) => n > 991]
 ]);

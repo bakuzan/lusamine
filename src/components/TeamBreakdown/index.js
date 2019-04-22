@@ -30,12 +30,25 @@ class TeamBreakdown extends React.Component {
   }
 
   handleMouseEnterLeave(...values) {
-    this.props.onMouseState(...values);
+    const { onMouseState } = this.props;
+    if (onMouseState) {
+      onMouseState(...values);
+    }
   }
 
   render() {
     let types = this.context;
-    const { members } = this.props;
+    const {
+      className,
+      contentClassName,
+      alwaysOpen,
+      filterZeroes,
+      typeBreakdownOnly,
+      members
+    } = this.props;
+
+    const isCollapsed = !alwaysOpen && this.state.isCollapsed;
+    const renderNonTypes = !typeBreakdownOnly;
     const noMembers = members.size === 0;
     const mouseState = {
       onMouseEnter: this.handleMouseEnterLeave,
@@ -43,55 +56,65 @@ class TeamBreakdown extends React.Component {
     };
 
     const statCounts = TBU.buildStatCounts(members);
-    const weaknessCounts = TBU.buildTeamWeaknessCounts(types, members);
+    const weaknessCounts = TBU.buildTeamWeaknessCounts(
+      types,
+      members,
+      filterZeroes
+    );
 
     return (
-      <div className={classNames('team-breakdown')}>
-        <Button
-          id="toggle-breakdown"
-          isAction
-          className={classNames('team-breakdown__action', {
-            'team-breakdown__action--hide': noMembers
-          })}
-          onClick={this.handleToggle}
-        >
-          {this.state.isCollapsed
-            ? `Show team breakdown`
-            : `Hide team breakdown`}
-        </Button>
+      <div className={classNames('team-breakdown', className)}>
+        {!alwaysOpen && (
+          <Button
+            id="toggle-breakdown"
+            isAction
+            className={classNames('team-breakdown__action', {
+              'team-breakdown__action--hide': noMembers
+            })}
+            onClick={this.handleToggle}
+          >
+            {isCollapsed ? `Show team breakdown` : `Hide team breakdown`}
+          </Button>
+        )}
         <div
-          className={classNames('team-breakdown__content', {
-            'team-breakdown__content--collapsed': this.state.isCollapsed
-          })}
+          className={classNames(
+            'team-breakdown__content',
+            {
+              'team-breakdown__content--collapsed': isCollapsed
+            },
+            contentClassName
+          )}
         >
-          <List
-            className={classNames(
-              'team-breakdown__list',
-              'stat-breakdown-list'
-            )}
-            items={statCounts}
-            itemTemplate={(item) => (
-              <li
-                key={item.key}
-                className={classNames(
-                  'team-breakdown__item',
-                  'stat-breakdown-list__item'
-                )}
-              >
-                <div className={classNames('breakdown-item-title')}>
-                  <div className={classNames('breakdown-item-title__text')}>
-                    {item.key}
+          {renderNonTypes && (
+            <List
+              className={classNames(
+                'team-breakdown__list',
+                'stat-breakdown-list'
+              )}
+              items={statCounts}
+              itemTemplate={(item) => (
+                <li
+                  key={item.key}
+                  className={classNames(
+                    'team-breakdown__item',
+                    'stat-breakdown-list__item'
+                  )}
+                >
+                  <div className={classNames('breakdown-item-title')}>
+                    <div className={classNames('breakdown-item-title__text')}>
+                      {item.key}
+                    </div>
                   </div>
-                </div>
-                <StatBreakdownPanel
-                  id={item.key}
-                  nameSource={item.getKeyName}
-                  data={item.counts}
-                  onMouseState={{ ...mouseState }}
-                />
-              </li>
-            )}
-          />
+                  <StatBreakdownPanel
+                    id={item.key}
+                    nameSource={item.getKeyName}
+                    data={item.counts}
+                    onMouseState={{ ...mouseState }}
+                  />
+                </li>
+              )}
+            />
+          )}
           <List
             columns={1}
             className={classNames(
@@ -128,9 +151,20 @@ class TeamBreakdown extends React.Component {
   }
 }
 
+TeamBreakdown.defaultProps = {
+  alwaysOpen: false,
+  filterZeroes: false,
+  typeBreakdownOnly: false
+};
+
 TeamBreakdown.propTypes = {
-  members: PropTypes.object,
-  onMouseState: PropTypes.func.isRequired
+  className: PropTypes.string,
+  contentClassName: PropTypes.string,
+  alwaysOpen: PropTypes.bool,
+  filterZeroes: PropTypes.bool,
+  typeBreakdownOnly: PropTypes.bool,
+  members: PropTypes.instanceOf(Map),
+  onMouseState: PropTypes.func
 };
 
 export default TeamBreakdown;

@@ -2,23 +2,26 @@ import PropTypes from 'prop-types';
 import classNames from 'classnames';
 import React, { useState, useContext, useMemo } from 'react';
 
-import { Icons } from 'meiko-lib';
+import { Icons } from 'mko';
 import ArtCard from 'components/ArtCard';
 import {
   ClearButton,
   LeftButton,
   RightButton,
   Button,
-  IconButton
+  IconButton,
+  ButtonisedNavLink
 } from 'components/Buttons';
 import { withDragAndDrop } from 'components/DragAndDrop';
 import TypeBlock from 'components/TypeBlock';
 import List from 'components/List';
+import Routes from 'constants/routes';
 import Orders from 'constants/orders';
 import Party from 'constants/party';
 import { PokedexContext } from 'context';
 import { capitaliseEachWord } from 'utils/common';
-import generateEvolutionOptions from './generateEvolutionOptions';
+import generateEvolutionOptions from 'utils/generateEvolutionOptions';
+import { isMegaPokemon, isVariantPokemon } from 'utils/derivedData';
 import pokeball from 'assets/pokeball.png';
 
 import './TeamMember.scss';
@@ -26,6 +29,7 @@ import './TeamMember.scss';
 const TeamMember = React.memo(
   React.forwardRef(function TeamMember(
     {
+      className,
       index,
       partyEndIndex,
       data,
@@ -52,19 +56,23 @@ const TeamMember = React.memo(
     const evolutions = useMemo(() => generateEvolutionOptions(pokedex, data), [
       data.id
     ]);
-    const disableEvolve = evolutions.length === 0;
+    const disableEvolve = evolutions.count() === 0;
 
     if (displayEvolveMenu) {
       return (
         <li
           ref={ref}
           id={data.id}
-          className={classNames('team-member', {
-            'team-member--highlighted': isHighlighted,
-            'team-member--empty': !hasData,
-            'team-member--dragging': isDragging,
-            'team-member--is-over': isOver && canDrop
-          })}
+          className={classNames(
+            'team-member',
+            {
+              'team-member--highlighted': isHighlighted,
+              'team-member--empty': !hasData,
+              'team-member--dragging': isDragging,
+              'team-member--is-over': isOver && canDrop
+            },
+            className
+          )}
         >
           <div className={classNames('team-member__back-container')}>
             <IconButton
@@ -77,7 +85,7 @@ const TeamMember = React.memo(
           </div>
           <List
             columns={1}
-            items={evolutions}
+            items={evolutions.asList()}
             itemTemplate={([text, x]) => {
               return (
                 <li key={x.id}>
@@ -98,16 +106,27 @@ const TeamMember = React.memo(
       );
     }
 
+    const notBasePokemon = isMegaPokemon(data) || isVariantPokemon(data);
+    const idSource = notBasePokemon
+      ? `p_${data.nationalPokedexNumber}`
+      : data.id;
+
+    const pokedexUrl = `${Routes.base}${Routes.pokedex}/${idSource}`;
+
     return (
       <li
         ref={ref}
         id={data.id}
-        className={classNames('team-member', {
-          'team-member--highlighted': isHighlighted,
-          'team-member--empty': !hasData,
-          'team-member--dragging': isDragging,
-          'team-member--is-over': isOver && canDrop
-        })}
+        className={classNames(
+          'team-member',
+          {
+            'team-member--highlighted': isHighlighted,
+            'team-member--empty': !hasData,
+            'team-member--dragging': isDragging,
+            'team-member--is-over': isOver && canDrop
+          },
+          className
+        )}
       >
         <div className={classNames('team-member__clear-container')}>
           {hasData && (
@@ -115,7 +134,14 @@ const TeamMember = React.memo(
               className={classNames('team-member__npn', {
                 'team-member__npn--with-remove': canRemove
               })}
-            >{`#${data.nationalPokedexNumber}`}</div>
+            >
+              <ButtonisedNavLink
+                className="team-member__pokedex-link"
+                to={pokedexUrl}
+              >
+                {`#${data.nationalPokedexNumber}`}
+              </ButtonisedNavLink>
+            </div>
           )}
           {canRemove && (
             <ClearButton
@@ -171,6 +197,7 @@ const TeamMember = React.memo(
 );
 
 TeamMember.propTypes = {
+  className: PropTypes.string,
   data: PropTypes.object.isRequired,
   isHighlighted: PropTypes.bool,
   remove: PropTypes.func,

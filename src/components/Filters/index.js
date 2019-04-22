@@ -2,9 +2,8 @@ import PropTypes from 'prop-types';
 import classNames from 'classnames';
 import React from 'react';
 
-import { ClearableInput, Tickbox, MultiSelect } from 'meiko-lib';
+import { ClearableInput, Tickbox, MultiSelect, useWindowSize } from 'mko';
 import Strings from 'constants/strings';
-import { useWindowSize } from 'hooks/useWindowSize';
 import { media } from 'utils/media';
 
 import './Filters.scss';

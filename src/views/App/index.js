@@ -2,7 +2,7 @@ import React, { useState, useMemo } from 'react';
 import { Switch, Route } from 'react-router-dom';
 import { Helmet, HelmetProvider } from 'react-helmet-async';
 
-import { Alert, AppInformation, useGlobalStyles } from 'meiko-lib';
+import { Alert, AppInformation, useGlobalStyles } from 'mko';
 import HeaderBar from 'components/HeaderBar';
 import AlertContainer from 'components/AlertContainer';
 import Footer from 'components/Footer';
@@ -90,7 +90,7 @@ function App({ match, location }) {
                     component={Settings}
                   />
                   <Route
-                    path={`${match.url}${Routes.pokedex}/:npn?`}
+                    path={`${match.url}${Routes.pokedex}/:id?`}
                     component={Pokedex}
                   />
                   <Route

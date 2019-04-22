@@ -9,31 +9,36 @@
   &__container {
     display: flex;
     flex-direction: column;
-    max-width: 100%;
 
     &--width_20 {
       flex: 1 1 20%;
+      max-width: 20%;
     }
     &--width_80 {
       flex: 1 1 80%;
+      max-width: 80%;
+
+      @include respondToAll((xs, sm)) {
+        max-width: 100%;
+      }
     }
 
     &--hide-on_small {
-      @include respondTo(sm) {
-        display: none;
-      }
-      @include respondTo(xs) {
+      @include respondToAll((xs, sm)) {
         display: none;
       }
     }
   }
+
   &__button-actions {
     display: flex;
     justify-content: flex-end;
   }
+
   &__team-creator {
     margin: 5px 0;
   }
+
   &__sprite-list {
     grid-template-columns: repeat(auto-fit, 46px);
     grid-auto-rows: 1fr;

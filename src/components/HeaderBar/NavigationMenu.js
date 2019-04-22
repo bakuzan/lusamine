@@ -1,17 +1,18 @@
 import React from 'react';
 
-import { DropdownMenu, nano } from 'meiko-lib';
+import { DropdownMenu, useWindowSize, nano } from 'mko';
 import { ButtonisedNavLink } from 'components/Buttons';
 import Routes from 'constants/routes';
-import { useWindowSize } from 'hooks/useWindowSize';
 import { isXS } from 'utils/media';
 
 const PLANNER = 'planner';
+const POKEDEX = 'pokedex';
 const SAVED_TEAMS = 'saved-teams';
 const TRAINER_TEAMS = 'trainer-teams';
 const SETTINGS = 'settings';
 
 const savedTeamsUrl = `${Routes.base}${Routes.savedTeams}`;
+const pokedexUrl = `${Routes.base}${Routes.pokedex}`;
 const settingsUrl = `${Routes.base}${Routes.settings}`;
 const trainerTeamsUrl = `${Routes.base}${Routes.trainerTeams}`;
 
@@ -27,6 +28,15 @@ function NavigationLinks({ onItemClick }) {
         onClick={onItemClick}
       >
         Team Planner
+      </ButtonisedNavLink>
+      <ButtonisedNavLink
+        key={POKEDEX}
+        id={POKEDEX}
+        className="header-bar__link"
+        to={pokedexUrl}
+        onClick={onItemClick}
+      >
+        Pokedex
       </ButtonisedNavLink>
       <ButtonisedNavLink
         key={SAVED_TEAMS}

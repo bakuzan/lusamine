@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { Tickbox } from 'meiko-lib';
+import { Tickbox } from 'mko';
 import SETTINGS_DEFAULTS from 'constants/settings';
 import { settingsStore } from 'utils/common';
 

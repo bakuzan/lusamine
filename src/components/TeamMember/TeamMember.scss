@@ -8,7 +8,7 @@ $team-member--width-adjustment: $team-member--account-for-border +
 
 %member-container {
   width: 100%;
-  height: 1.5em;
+  height: 1.75em;
 }
 
 .team-member {
@@ -53,13 +53,19 @@ $team-member--width-adjustment: $team-member--account-for-border +
     }
   }
 
+  &__pokedex-link {
+    min-width: auto;
+    min-height: auto;
+    padding: 0;
+  }
+
   &__npn {
     display: flex;
     flex: 1;
     justify-content: center;
 
     &--with-remove {
-      margin-left: $icon-button--size;
+      margin-left: #{$icon-button--size * 0.67};
     }
   }
 

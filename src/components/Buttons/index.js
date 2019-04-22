@@ -2,7 +2,7 @@ import classNames from 'classnames';
 import React from 'react';
 import { NavLink } from 'react-router-dom';
 
-import { withButtonisation, Button as MButton, Icons } from 'meiko-lib';
+import { withButtonisation, Button as MButton, Icons } from 'mko';
 
 import './index.scss';
 

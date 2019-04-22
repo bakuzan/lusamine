@@ -3,11 +3,23 @@ import Generations from 'constants/generations';
 import { EvolutionForms } from 'constants/evolutions';
 import {
   iterateMapToArray,
+  iterateMapToArrayEntries,
   separateAndCapitaliseAll,
   getKeyByValue
 } from 'utils/common';
 
-export function buildTeamWeaknessCounts(types, members) {
+function withFilterZeroes(m, filterZeroes) {
+  if (filterZeroes) {
+    const filteredEntries = iterateMapToArrayEntries(m).filter(
+      ([_, ids]) => ids.length
+    );
+    return new Map(filteredEntries);
+  }
+
+  return m;
+}
+
+export function buildTeamWeaknessCounts(types, members, filterZeroes) {
   const typesMapEmpty = [...types.values()].map((t) => [t.id, []]);
   const memberTypeIds = [...members.values()].reduce(
     (p, c) => [...p, { id: c.id, typeIds: c.types.map((x) => x.id) }],
@@ -58,17 +70,17 @@ export function buildTeamWeaknessCounts(types, members) {
   return [
     {
       key: Strings.typeBreakdown.weakTo,
-      counts: weakCounts,
+      counts: withFilterZeroes(weakCounts, filterZeroes),
       goodCountModifier: Strings.scoreModifier.none
     },
     {
       key: Strings.typeBreakdown.resists,
-      counts: resistCounts,
+      counts: withFilterZeroes(resistCounts, filterZeroes),
       goodCountModifier: Strings.scoreModifier.high
     },
     {
       key: Strings.typeBreakdown.unaffectedBy,
-      counts: unaffectedCounts,
+      counts: withFilterZeroes(unaffectedCounts, filterZeroes),
       goodCountModifier: Strings.scoreModifier.high
     }
   ];
