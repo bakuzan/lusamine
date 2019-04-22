@@ -53,7 +53,7 @@ $team-member--width-adjustment: $team-member--account-for-border +
     }
   }
 
-  &__pokedex-link {
+  &__pokedex-link.team-member__pokedex-link {
     min-width: auto;
     min-height: auto;
     padding: 0;
