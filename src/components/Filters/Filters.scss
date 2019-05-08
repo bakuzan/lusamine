@@ -17,6 +17,7 @@
       flex-basis: 100%;
     }
   }
+
   &--hide-on_large {
     @include respondTo(lg) {
       display: none;

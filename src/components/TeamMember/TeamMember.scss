@@ -86,7 +86,7 @@ $team-member--width-adjustment: $team-member--account-for-border +
     height: $type--height;
   }
 
-  &__order-container {
+  &__action-container {
     display: flex;
     justify-content: space-around;
     @extend %member-container;

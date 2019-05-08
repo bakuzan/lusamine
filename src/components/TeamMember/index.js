@@ -21,7 +21,7 @@ import Party from 'constants/party';
 import { PokedexContext } from 'context';
 import { capitaliseEachWord } from 'utils/common';
 import generateEvolutionOptions from 'utils/generateEvolutionOptions';
-import { isMegaPokemon, isVariantPokemon } from 'utils/derivedData';
+import { isNotBasePokemon } from 'utils/derivedData';
 import pokeball from 'assets/pokeball.png';
 
 import './TeamMember.scss';
@@ -39,7 +39,8 @@ const TeamMember = React.memo(
       remove,
       move,
       evolve,
-      canDrop
+      canDrop,
+      ...props
     },
     ref
   ) {
@@ -47,14 +48,17 @@ const TeamMember = React.memo(
     const [displayEvolveMenu, setDisplayEvolveMenu] = useState(false);
 
     const hasData = !data.isEmpty;
+    const hasCustomActions = !!props.renderCustomActions;
     const canRemove = hasData && !!remove;
     const canReOrder = hasData && !!move;
     const canEvolve = hasData && !!evolve;
+
     const isFirst = index === Party.START_INDEX;
     const isLast = index === partyEndIndex;
 
     const evolutions = useMemo(() => generateEvolutionOptions(pokedex, data), [
-      data.id
+      pokedex,
+      data
     ]);
     const disableEvolve = evolutions.count() === 0;
 
@@ -106,8 +110,7 @@ const TeamMember = React.memo(
       );
     }
 
-    const notBasePokemon = isMegaPokemon(data) || isVariantPokemon(data);
-    const idSource = notBasePokemon
+    const idSource = isNotBasePokemon(data)
       ? `p_${data.nationalPokedexNumber}`
       : data.id;
 
@@ -164,7 +167,8 @@ const TeamMember = React.memo(
             <TypeBlock key={type.id} value={type.name} />
           ))}
         </div>
-        <div className={classNames('team-member__order-container')}>
+        <div className={classNames('team-member__action-container')}>
+          {hasCustomActions && props.renderCustomActions({ data })}
           {canReOrder && (
             <LeftButton
               className="team-member__action"
@@ -202,7 +206,8 @@ TeamMember.propTypes = {
   isHighlighted: PropTypes.bool,
   remove: PropTypes.func,
   move: PropTypes.func,
-  partyEndIndex: PropTypes.number
+  partyEndIndex: PropTypes.number,
+  renderCustomActions: PropTypes.func
 };
 
 export default TeamMember;

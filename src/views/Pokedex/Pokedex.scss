@@ -23,10 +23,12 @@
       flex-wrap: wrap;
     }
   }
+
   &__nav-button {
     display: flex;
     flex: 1;
   }
+
   &__options {
     @include respondTo(xs) {
       flex-basis: 100%;
@@ -46,9 +48,18 @@
     flex-direction: column;
   }
 
+  &__title {
+    font-size: 1.2em;
+    margin: 5px;
+  }
+
   &__block {
     display: flex;
     flex: 1;
+
+    &--column {
+      flex-direction: column;
+    }
 
     &--large {
       flex: 3;

@@ -4,7 +4,7 @@ import { NavLink } from 'react-router-dom';
 
 import { withButtonisation, Button as MButton, Icons } from 'mko';
 
-import './index.scss';
+import './Button.scss';
 
 export const Button = ({ className, isAction, ...props }) => (
   <MButton

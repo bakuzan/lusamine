@@ -1,3 +1,4 @@
+import constructObjectFromSearchParams from 'ayaka/constructObjectFromSearchParams';
 import generateUniqueId from 'ayaka/generateUniqueId';
 import isString from 'ayaka/isString';
 import Store from 'ayaka/localStorage';
@@ -20,17 +21,13 @@ export { isString, generateUniqueId };
 export const getWindowScrollPosition = () =>
   window.scrollY || window.pageYOffset || document.documentElement.scrollTop;
 
-export const getUrlQueryStringAsObject = (location) => {
-  if (!location.search) return {};
-  return location.search
-    .slice(1)
-    .split('&')
-    .reduce((obj, str) => {
-      const [key, value] = str.split('=');
-      obj[key] = decodeURIComponent(value);
-      return obj;
-    }, {});
-};
+export function getUrlQueryStringAsObject(location) {
+  if (!location.search) {
+    return {};
+  }
+
+  return constructObjectFromSearchParams(location.search);
+}
 
 export function combineValuesIntoSet(idSet, newValue) {
   const ids = [...idSet];

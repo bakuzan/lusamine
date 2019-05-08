@@ -25,9 +25,10 @@ function EffectiveTypeBreakdownPanel({
 
   return (
     <Grid
-      className={classNames('breakdown-panel', [
-        `breakdown-panel--good-is_${panelModifier}`
-      ])}
+      className={classNames('breakdown-panel', {
+        [`breakdown-panel--good-is_${panelModifier}`]: true,
+        [`breakdown-panel--empty`]: listOfMemberIds.length === 0
+      })}
       items={listOfMemberIds}
     >
       {([t, memberIds]) => {

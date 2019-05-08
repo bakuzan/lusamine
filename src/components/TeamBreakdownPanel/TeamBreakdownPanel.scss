@@ -9,6 +9,10 @@ $breakdown-panel--item-width: $type--width + $indicator-size;
   grid-template-columns: repeat(auto-fit, $breakdown-panel--item-width);
   justify-content: space-evenly;
 
+  &--empty {
+    grid-template-columns: auto;
+  }
+
   &__item {
     position: relative;
     display: flex;

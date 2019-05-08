@@ -5,71 +5,26 @@ import { Button } from 'components/Buttons';
 import TeamMember from 'components/TeamMember';
 import TeamBreakdown from 'components/TeamBreakdown';
 import List from 'components/List';
-import Routes from 'constants/routes';
+import PokedexMember from './PokedexMember';
+
 import { PokedexContext } from 'context';
-import { iterateMapToArray, capitaliseEachWord } from 'utils/common';
-import { isMegaPokemon, isVariantPokemon } from 'utils/derivedData';
+import Routes from 'constants/routes';
+import { getUrlQueryStringAsObject, capitaliseEachWord } from 'utils/common';
 import generateEvolutionOptions from 'utils/generateEvolutionOptions';
 import { isXS } from 'utils/media';
+import { merge, distinct } from 'utils/lists';
+import buildControlText from './buildControlText';
+import generateVanillaDex from './generateVanillaDex';
 
 import './Pokedex.scss';
 
 const FIRST_ID = `p_1`;
 
-function generateVanillaDex(dex) {
-  const values = iterateMapToArray(dex);
-  const basePokemon = values.filter(
-    (x) => !(isMegaPokemon(x) || isVariantPokemon(x))
-  );
-
-  let lastId = 0;
-  const baseDex = basePokemon.reduce((p, c) => {
-    const id = c.id;
-    lastId = id;
-    return p.set(id, c);
-  }, new Map([]));
-
-  return {
-    baseDex,
-    dexOptions: iterateMapToArray(baseDex).map((x) => ({
-      value: x.id,
-      text: `${capitaliseEachWord(x.name)} (#${x.nationalPokedexNumber})`
-    })),
-    lastId
-  };
-}
-
-function buildControlText(dex, dexOptions, activeId) {
-  const index = dexOptions.findIndex((x) => x.value === activeId);
-
-  return [-1, 1].map((direction) => {
-    const data = dexOptions[index + direction];
-
-    if (!data) {
-      return { label: 'End of pokedex', text: '' };
-    }
-
-    const mon = dex.get(data.value);
-
-    const isPre = direction < 0;
-    const pref = isPre ? '< ' : '';
-    const suff = isPre ? '' : ' >';
-
-    const npn = mon.nationalPokedexNumber;
-    const monName = capitaliseEachWord(mon.name);
-
-    const text = `${pref}#${npn} - ${monName}${suff}`;
-    const label = `Go to #${npn}, ${monName}`;
-
-    return { label, text };
-  });
-}
-
-function Pokedex({ match, history }) {
+function Pokedex({ match, location, history }) {
   const pokedex = useContext(PokedexContext);
   const { baseDex, dexOptions, lastId } = useMemo(
     () => generateVanillaDex(pokedex),
-    []
+    [pokedex]
   );
 
   const size = useWindowSize();
@@ -78,6 +33,9 @@ function Pokedex({ match, history }) {
   const { params } = match;
   const activeId = params.id || FIRST_ID;
   const activeMon = baseDex.get(activeId);
+
+  const { typeSourceId } = getUrlQueryStringAsObject(location);
+  const typeSourceMon = pokedex.get(typeSourceId) || activeMon;
 
   const isFirst = activeId === FIRST_ID;
   const isLast = activeId === lastId;
@@ -106,11 +64,8 @@ function Pokedex({ match, history }) {
   }
 
   const [backward, forward] = buildControlText(baseDex, dexOptions, activeId);
-  const { devolves, evolves, megas, variants } = generateEvolutionOptions(
-    pokedex,
-    activeMon,
-    true
-  );
+  const evoOptions = generateEvolutionOptions(pokedex, activeMon, true);
+  const { devolves, evolves, megas, variants, forms } = evoOptions;
 
   const hasDevolves = !!devolves.length;
   const hasEvolves = !!evolves.length;
@@ -174,10 +129,10 @@ function Pokedex({ match, history }) {
                 columns={1}
                 items={devolves}
                 itemTemplate={([_, item]) => (
-                  <TeamMember
+                  <PokedexMember
                     key={item.id}
-                    className="pokedex__member"
                     data={item}
+                    currentPath={match.url}
                   />
                 )}
               />
@@ -188,12 +143,12 @@ function Pokedex({ match, history }) {
             <List
               className="evolution-tree__list"
               columns={1}
-              items={variants}
+              items={distinct('id', merge(variants, forms))}
               itemTemplate={(item) => (
-                <TeamMember
+                <PokedexMember
                   key={item.id}
-                  className="pokedex__member"
                   data={item}
+                  currentPath={match.url}
                 />
               )}
             />
@@ -206,10 +161,10 @@ function Pokedex({ match, history }) {
                 columns={1}
                 items={evolves}
                 itemTemplate={([_, item]) => (
-                  <TeamMember
-                    className="pokedex__member"
+                  <PokedexMember
                     key={item.id}
                     data={item}
+                    currentPath={match.url}
                   />
                 )}
               />
@@ -222,26 +177,37 @@ function Pokedex({ match, history }) {
                 columns={1}
                 items={megas}
                 itemTemplate={([_, item]) => (
-                  <TeamMember
-                    className="pokedex__member"
+                  <PokedexMember
                     key={item.id}
                     data={item}
+                    currentPath={match.url}
                   />
                 )}
               />
             </li>
           )}
         </MkoList>
-        <div className="pokemon-information__block">
+        <section className="pokemon-information__block pokemon-information__block--column">
+          <header>
+            <h2 className="pokemon-information__title">
+              {capitaliseEachWord(
+                `${typeSourceMon.name}${
+                  typeSourceMon.form
+                    ? ` (${capitaliseEachWord(typeSourceMon.form)})`
+                    : ''
+                } type breakdown`
+              )}
+            </h2>
+          </header>
           <TeamBreakdown
             className="pokedex-breakdown"
             contentClassName="pokedex-breakdown__content"
             alwaysOpen
             filterZeroes
             typeBreakdownOnly
-            members={new Map([[activeMon.id, activeMon]])}
+            members={new Map([[typeSourceMon.id, typeSourceMon]])}
           />
-        </div>
+        </section>
       </div>
     </div>
   );
