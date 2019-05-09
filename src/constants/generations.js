@@ -5,5 +5,6 @@ export default Object.freeze({
   gen4: 4,
   gen5: 5,
   gen6: 6,
-  gen7: 7
+  gen7: 7,
+  gen8: 8
 });

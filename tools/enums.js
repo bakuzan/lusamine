@@ -25,8 +25,20 @@ const Regions = Object.freeze({
 
 const Evolutions = Object.freeze({
   leveling: 1,
-  stone: 2,
-  trade: 3
+  levelingHighFriendship: 2,
+  levelingWithMove: 3,
+  levelingAtLocation: 4,
+  levelingAtTime: 5,
+  levelingWithItem: 6,
+  levelingGender: 7,
+  levelingGame: 8,
+  levelingUniqueCondition: 9,
+  levelingAdditionalFactor: 10,
+  stone: 11,
+  stoneGender: 12,
+  trade: 13,
+  tradeWithItem: 14,
+  tradeForPokemon: 15
 });
 
 const TABLE_COUNT_OFFSET = 1;

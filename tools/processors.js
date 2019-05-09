@@ -2,9 +2,9 @@ const path = require('path');
 const Mappers = require('./mappers');
 const Enums = require('./enums');
 
-const buildOuputUrl = fileName => path.join('./tools/output', fileName);
+const buildOuputUrl = (fileName) => path.join('./tools/output', fileName);
 
-const checkImgForVariant = td => {
+const checkImgForVariant = (td) => {
   const src = td
     .children()
     .first()
@@ -47,8 +47,8 @@ function pokedexProcessor($) {
         return [...acc, item];
       }, result);
     }, []);
-  const pokemon = jsonEntries.filter(x => x.name);
-  const variants = jsonEntries.filter(x => !x.name);
+  const pokemon = jsonEntries.filter((x) => x.name);
+  const variants = jsonEntries.filter((x) => !x.name);
   return [
     {
       fileName: buildOuputUrl('pokemon.json'),
@@ -67,15 +67,19 @@ function evolutionProcessor($) {
     .reduce(function(result, data) {
       return Array.from(data.children).reduce((acc, tr, i, trs) => {
         const prevChildren = i !== 0 ? $('td', trs[i - 1]) : null;
-
         const children = $('td', tr);
 
-        if (!children || children.length === 0) return acc;
+        if (!children || children.length === 0) {
+          return acc;
+        }
 
         const ignore =
           (children.length === 3 && children.eq(2).attr('colspan') === '6') ||
           (children.length === 4 && children.eq(3).attr('colspan') === '5');
-        if (ignore) return acc;
+
+        if (ignore) {
+          return acc;
+        }
 
         const isSecondRow = children.length < 5;
         const isSingleEvo = children.length < 8;

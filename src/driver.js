@@ -16,7 +16,9 @@ export default {
   navigate: {
     planner: clickOn('planner'),
     savedTeams: clickOn('saved-teams'),
-    settings: clickOn('settings')
+    trainerTeams: clickOn('trainer-teams'),
+    settings: clickOn('settings'),
+    pokedex: clickOn('pokedex')
   },
   planner: {
     randomise: clickOn('randomise-team'),

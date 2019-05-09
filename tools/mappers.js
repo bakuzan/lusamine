@@ -1,6 +1,6 @@
 const { Types, Evolutions } = require('./enums');
 
-const extractName = td =>
+const extractName = (td) =>
   td
     .children()
     .first()
@@ -9,9 +9,9 @@ const extractName = td =>
 
 const fixNPNStringToInt = (str = '') => Number(str.replace(/\D/g, ''));
 
-const processTdNPN = td => fixNPNStringToInt(td.text() || '');
+const processTdNPN = (td) => fixNPNStringToInt(td.text() || '');
 
-const getNPNFromImg = td => {
+function getNPNFromImg(td) {
   const el = td
     .children()
     .first()
@@ -23,9 +23,9 @@ const getNPNFromImg = td => {
   }
   const strNum = src.replace(/^.*\/|\D/g, '');
   return Number(strNum);
-};
+}
 
-const processTdTypes = tds =>
+const processTdTypes = (tds) =>
   tds.reduce((types, td) => {
     if (!td || !td.children()) return types;
     const key = (
@@ -40,14 +40,68 @@ const processTdTypes = tds =>
     return [...types, Types[key]];
   }, []);
 
-const processEvolutionMechanism = howTd => {
-  const str = howTd.text().toLowerCase();
-  return str.includes('level')
-    ? Evolutions.leveling
-    : str.includes('trade')
-      ? Evolutions.trade
-      : Evolutions.stone;
-};
+function hasFactor(has) {
+  return (
+    (has('attack') && has('defense')) ||
+    has('with remoraid') ||
+    (has('cloak') && has('male,')) ||
+    has('cascoon')
+  );
+}
+
+function hasUnique(has) {
+  return (
+    has('level up with two hearts') ||
+    has('maximum beautytrade') ||
+    has('with dark-type in party') ||
+    has('with 3ds held upside down') ||
+    has('in rain or fog') ||
+    has('free spaceadditional')
+  );
+}
+
+function processEvolutionMechanism(howTxt) {
+  const txt = howTxt.toLowerCase();
+  function has(t) {
+    return txt.includes(t);
+  }
+
+  if (has('friendship') && !(has('(night)') || has('(day)'))) {
+    return Evolutions.levelingHighFriendship;
+  } else if (has('level up knowing')) {
+    return Evolutions.levelingWithMove;
+  } else if (
+    has('level up near') ||
+    has('level up in a') ||
+    has('level up at')
+  ) {
+    return Evolutions.levelingAtLocation;
+  } else if (has('(night)') || has('(day)') || has('(between')) {
+    return Evolutions.levelingAtTime;
+  } else if (has('level up holding')) {
+    return Evolutions.levelingWithItem;
+  } else if (has('level') && has('male)')) {
+    return Evolutions.levelingGender;
+  } else if (has('400 meltan candy') || (has('level') && has('(pokémon '))) {
+    return Evolutions.levelingGame;
+  } else if (hasUnique(has)) {
+    return Evolutions.levelingUniqueCondition;
+  } else if (hasFactor(has)) {
+    return Evolutions.levelingAdditionalFactor;
+  } else if (has('stone') && !has('male)')) {
+    return Evolutions.stone;
+  } else if (has('stone') && has('male)')) {
+    return Evolutions.stoneGender;
+  } else if (has('trade') && !has('holding') && !has('for')) {
+    return Evolutions.trade;
+  } else if (has('trade holding')) {
+    return Evolutions.tradeWithItem;
+  } else if (has('trade for')) {
+    return Evolutions.tradeForPokemon;
+  } else {
+    return Evolutions.leveling;
+  }
+}
 
 function mapElementsToPokemonJson(tdNPN, tdName, tdTypes) {
   return {
@@ -66,14 +120,15 @@ function mapElementsToVariantPokemonJson(tdNPN, regionId, tdTypes) {
 }
 
 function mapElementsToEvolutionJson(rawData) {
-  return rawData.map(r => {
+  return rawData.map((r) => {
     const fromNPN = getNPNFromImg(r.from);
     const toNPN = getNPNFromImg(r.to);
-
+    const how = r.how.text();
     return {
       nationalPokedexNumber: fromNPN,
       evolvesTo: toNPN,
-      mechanism: processEvolutionMechanism(r.how)
+      mechanism: processEvolutionMechanism(how),
+      note: how
     };
   });
 }

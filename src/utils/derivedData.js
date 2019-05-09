@@ -8,6 +8,7 @@ const GEN4_START = 387;
 const GEN5_START = 494;
 const GEN6_START = 650;
 const GEN7_START = 722;
+const GEN8_START = 810;
 export function getGeneration(dexNum) {
   if (dexNum < GEN2_START) return Generations.gen1;
   if (dexNum < GEN3_START) return Generations.gen2;
@@ -15,7 +16,8 @@ export function getGeneration(dexNum) {
   if (dexNum < GEN5_START) return Generations.gen4;
   if (dexNum < GEN6_START) return Generations.gen5;
   if (dexNum < GEN7_START) return Generations.gen6;
-  return Generations.gen7;
+  if (dexNum < GEN8_START) return Generations.gen7;
+  return Generations.gen8;
 }
 
 function createEmptyPokemon() {
