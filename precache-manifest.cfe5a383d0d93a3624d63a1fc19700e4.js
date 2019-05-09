@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "2e719b16d11a469761b00a05f82e8b51",
+    "revision": "21c3799044f9f9937b7d5e423b97a30e",
     "url": "/lusamine/index.html"
   },
   {
-    "revision": "2c6e455272826be6030b",
+    "revision": "2f0783d18992cfffc43e",
     "url": "/lusamine/static/css/main.32e11c7a.chunk.css"
   },
   {
@@ -12,8 +12,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/lusamine/static/js/2.970d8021.chunk.js"
   },
   {
-    "revision": "2c6e455272826be6030b",
-    "url": "/lusamine/static/js/main.f8e62b9e.chunk.js"
+    "revision": "2f0783d18992cfffc43e",
+    "url": "/lusamine/static/js/main.e3fce8fd.chunk.js"
   },
   {
     "revision": "fa521e0fd32484deed69",
