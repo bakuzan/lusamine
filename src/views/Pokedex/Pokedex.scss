@@ -29,7 +29,7 @@
     flex: 1;
   }
 
-  &__options {
+  &__options.pokedex__options {
     @include respondTo(xs) {
       flex-basis: 100%;
     }
