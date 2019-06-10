@@ -8,10 +8,6 @@
   &__content {
     display: flex;
     width: 100%;
-
-    &--collapsed {
-      display: none;
-    }
   }
   &__list,
   &__item {
@@ -20,13 +16,6 @@
   &__item {
     border: 1px solid transparent;
     margin: 0.5em 0;
-  }
-}
-
-.team-breakdown__action {
-  &--hide {
-    visibility: hidden;
-    pointer-events: none;
   }
 }
 
