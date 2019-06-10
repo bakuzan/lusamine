@@ -5,16 +5,21 @@ import sortCombinedData from 'utils/sorters';
 import pokemon from './raw/pokemon.json';
 import types from './raw/types.json';
 import evolutions from './raw/evolutions.json';
+import starters from './raw/starters.json';
 
 export function transformPokemonData(data) {
   return data.reduce((p, c) => {
     const id = IdGenerators.generatePokemonId(p, c);
+    const isStarter = starters.includes(c.nationalPokedexNumber);
     const pokemonTypes = types.filter((x) => c.typeIds.includes(x.id));
     const pokemonEvolutions = evolutions.filter(
       (x) => x.nationalPokedexNumber === c.nationalPokedexNumber
     );
-    p.set(id, Mappers.mapPokemonData(id, c, pokemonTypes, pokemonEvolutions));
-    return p;
+
+    return p.set(
+      id,
+      Mappers.mapPokemonData(id, c, pokemonTypes, pokemonEvolutions, isStarter)
+    );
   }, new Map());
 }
 
@@ -25,8 +30,11 @@ export function transformMegaPokemonData(data) {
       (x) => x.nationalPokedexNumber === c.nationalPokedexNumber
     );
     const pokemonTypes = types.filter((x) => c.typeIds.includes(x.id));
-    p.set(id, Mappers.mapMegaPokemonData(id, c, pokemonTypes, basePokemon));
-    return p;
+
+    return p.set(
+      id,
+      Mappers.mapMegaPokemonData(id, c, pokemonTypes, basePokemon)
+    );
   }, new Map());
 }
 
@@ -40,7 +48,8 @@ export function transformVariantPokemonData(data) {
     const pokemonEvolutions = evolutions.filter(
       (x) => x.nationalPokedexNumber === c.nationalPokedexNumber
     );
-    p.set(
+
+    return p.set(
       id,
       Mappers.mapVariantsPokemonData(
         id,
@@ -50,7 +59,6 @@ export function transformVariantPokemonData(data) {
         basePokemon
       )
     );
-    return p;
   }, new Map());
 }
 

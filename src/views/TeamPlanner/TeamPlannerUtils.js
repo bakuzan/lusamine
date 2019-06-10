@@ -27,12 +27,16 @@ function applyDexFilters(item, filters, typeMatches) {
     evolutions,
     search,
     includeMega,
-    includeVariants
+    includeVariants,
+    startersOnly
   } = filters;
   if (!includeMega && isMegaPokemon(item)) {
     return true;
   }
   if (!includeVariants && isVariantPokemon(item)) {
+    return true;
+  }
+  if (startersOnly && !item.isStarter) {
     return true;
   }
 

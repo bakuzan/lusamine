@@ -3,7 +3,7 @@
 .easter-egg {
   position: fixed;
   top: $header--height;
-  right: 5px;
+  right: 0;
   display: flex;
   padding: 5px;
   z-index: map-get($z-index, easter-egg);

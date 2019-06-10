@@ -7,14 +7,12 @@ import { isXS } from 'utils/media';
 
 const PLANNER = 'planner';
 const POKEDEX = 'pokedex';
-const SAVED_TEAMS = 'saved-teams';
-const TRAINER_TEAMS = 'trainer-teams';
+const TEAMS = 'teams';
 const SETTINGS = 'settings';
 
-const savedTeamsUrl = `${Routes.base}${Routes.savedTeams}`;
+const teamsUrl = `${Routes.base}${Routes.teams}`;
 const pokedexUrl = `${Routes.base}${Routes.pokedex}`;
 const settingsUrl = `${Routes.base}${Routes.settings}`;
-const trainerTeamsUrl = `${Routes.base}${Routes.trainerTeams}`;
 
 function NavigationLinks({ onItemClick }) {
   return (
@@ -39,22 +37,13 @@ function NavigationLinks({ onItemClick }) {
         Pokedex
       </ButtonisedNavLink>
       <ButtonisedNavLink
-        key={SAVED_TEAMS}
-        id={SAVED_TEAMS}
+        key={TEAMS}
+        id={TEAMS}
         className="header-bar__link"
-        to={savedTeamsUrl}
+        to={teamsUrl}
         onClick={onItemClick}
       >
-        Saved Teams
-      </ButtonisedNavLink>
-      <ButtonisedNavLink
-        key={TRAINER_TEAMS}
-        id={TRAINER_TEAMS}
-        className="header-bar__link"
-        to={trainerTeamsUrl}
-        onClick={onItemClick}
-      >
-        Trainer Teams
+        Teams
       </ButtonisedNavLink>
       <ButtonisedNavLink
         key={SETTINGS}

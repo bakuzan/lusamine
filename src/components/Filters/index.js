@@ -77,6 +77,13 @@ function Filters(props) {
         {...props.includeVariantsProps}
         containerClassName={classNames(FILTERS_INPUT_CLASS)}
       />
+      <Tickbox
+        id="startersOnly"
+        name="startersOnly"
+        text="Starters only"
+        {...props.startersOnlyProps}
+        containerClassName={classNames(FILTERS_INPUT_CLASS)}
+      />
     </section>
   );
 }
@@ -89,6 +96,11 @@ const multiselectPropTypes = PropTypes.shape({
   onUpdate: PropTypes.func
 }).isRequired;
 
+const checkboxPropTypes = PropTypes.shape({
+  checked: PropTypes.bool,
+  onChange: PropTypes.func
+}).isRequired;
+
 Filters.propTypes = {
   searchProps: PropTypes.shape({
     value: PropTypes.string,
@@ -98,6 +110,9 @@ Filters.propTypes = {
   typeProps: multiselectPropTypes,
   resistsProps: multiselectPropTypes,
   evolutionsProps: multiselectPropTypes,
+  includeMegaProps: checkboxPropTypes,
+  includeVariantsProps: checkboxPropTypes,
+  startersOnlyProps: checkboxPropTypes,
   hiddenOn: PropTypes.oneOf([Strings.large, Strings.small])
 };
 

@@ -25,7 +25,7 @@ function mapEvolutionsToPokemon(evolutions) {
     });
 }
 
-export function mapPokemonData(id, data, types, evolutions) {
+export function mapPokemonData(id, data, types, evolutions, isStarter) {
   return {
     id,
     nationalPokedexNumber: data.nationalPokedexNumber,
@@ -33,7 +33,8 @@ export function mapPokemonData(id, data, types, evolutions) {
     form: data.form,
     types: mapTypesToPokemon(data.typeIds, types),
     evolutions: mapEvolutionsToPokemon(evolutions),
-    generation: getGeneration(data.nationalPokedexNumber)
+    generation: getGeneration(data.nationalPokedexNumber),
+    isStarter
   };
 }
 

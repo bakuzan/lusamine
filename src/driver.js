@@ -15,8 +15,7 @@ const clickOn = (selector) => () => {
 export default {
   navigate: {
     planner: clickOn('planner'),
-    savedTeams: clickOn('saved-teams'),
-    trainerTeams: clickOn('trainer-teams'),
+    teams: clickOn('teams'),
     settings: clickOn('settings'),
     pokedex: clickOn('pokedex')
   },

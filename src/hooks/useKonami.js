@@ -2,12 +2,12 @@ import { useState, useEffect } from 'react';
 
 import { createListeners } from 'utils/common';
 
-const up = 38;
-const down = 40;
-const left = 37;
-const right = 39;
-const b = 66;
-const a = 65;
+const up = 'ArrowUp';
+const down = 'ArrowDown';
+const left = 'ArrowLeft';
+const right = 'ArrowRight';
+const b = 'KeyB';
+const a = 'KeyA';
 const konami = [up, up, down, down, left, right, left, right, b, a];
 
 export function useKonami() {
@@ -15,9 +15,9 @@ export function useKonami() {
 
   useEffect(() => {
     function onKeyDown(e) {
-      const keyCode = e.keyCode;
-      if (konami.includes(keyCode)) {
-        setQueue((p) => [...p, keyCode]);
+      const code = e.code;
+      if (konami.includes(code)) {
+        setQueue((p) => [...p, code]);
       } else {
         setQueue([]);
       }

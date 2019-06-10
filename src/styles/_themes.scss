@@ -5,18 +5,20 @@ $theme-maps: (
   default: (
     base-background: $lusamine--hair,
     base-colour: $black,
-    primary-background: $lusamine--hair,
+    primary-background: $lusamine--dress-highlight,
     primary-colour: $lusamine--eyes,
-    active-background: $lusamine--dress-highlight,
-    active-colour: darken($lusamine--eyes, 6%),
+    active-background: $lusamine--eyes,
+    active-colour: $lusamine--hair,
     header-background: $lusamine--hair,
     header-colour: $black,
     button--colour-hover: $lusamine--eyes,
     button--background: $lusamine--hair,
     button--background-hover: $lusamine--dress-highlight,
     button--action-border-colour: $lusamine--dress-highlight,
+    button-link--colour: $lusamine--eyes,
     team-breakdown-item--border-colour: $lusamine--eyes,
-    button-link--colour: $lusamine--eyes
+    faded-out-background: $grey80,
+    faded-out-colour: $black
   )
 );
 
@@ -48,18 +50,15 @@ $theme-maps: (
     background-color: $base-background;
   }
 
-  .header-bar {
+  .header-bar__link,
+  .dropdown-menu__toggler {
     background-color: $primary-background;
-    color: $primary-colour;
+    color: darken($primary-colour, 6%);
 
-    a {
-      color: $primary-colour;
-
-      &:hover,
-      &.active {
-        background-color: $active-background;
-        color: $active-colour;
-      }
+    &:hover,
+    &.active {
+      background-color: $active-background;
+      color: $active-colour;
     }
   }
 
@@ -72,7 +71,8 @@ $theme-maps: (
   }
 
   .easter-egg {
-    background-color: $active-background;
+    background-color: $primary-background;
+
     &__label {
       color: $primary-colour;
     }

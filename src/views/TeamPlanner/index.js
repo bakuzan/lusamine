@@ -40,7 +40,8 @@ class PlannerPage extends React.Component {
       resists: TPU.typeDefaults,
       evolutions: TPU.evolutionDefaults,
       includeMega: true,
-      includeVariants: true
+      includeVariants: true,
+      startersOnly: false
     };
 
     this.handleNameInput = this.handleNameInput.bind(this);
@@ -160,6 +161,10 @@ class PlannerPage extends React.Component {
       },
       includeVariantsProps: {
         checked: dexFilters.includeVariants,
+        onChange: this.handleTickboxFilter
+      },
+      startersOnlyProps: {
+        checked: dexFilters.startersOnly,
         onChange: this.handleTickboxFilter
       }
     };

@@ -8,8 +8,7 @@ import AlertContainer from 'components/AlertContainer';
 import Footer from 'components/Footer';
 import EasterEgg from 'components/EasterEgg';
 import TeamPlanner from 'views/TeamPlanner';
-import SavedTeamViewer from 'views/TeamViewer/SavedTeams';
-import TrainerTeamViewer from 'views/TeamViewer/TrainerTeams';
+import TeamViewer from 'views/TeamViewer';
 import Settings from 'views/Settings';
 import Pokedex from 'views/Pokedex';
 
@@ -78,12 +77,8 @@ function App({ match, location }) {
               <main>
                 <Switch>
                   <Route
-                    path={`${match.url}${Routes.trainerTeams}`}
-                    component={TrainerTeamViewer}
-                  />
-                  <Route
-                    path={`${match.url}${Routes.savedTeams}`}
-                    component={SavedTeamViewer}
+                    path={`${match.url}${Routes.teams}`}
+                    component={TeamViewer}
                   />
                   <Route
                     path={`${match.url}${Routes.settings}`}

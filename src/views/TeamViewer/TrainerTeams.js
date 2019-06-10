@@ -4,11 +4,9 @@ import React, { useContext, useState } from 'react';
 import { ButtonisedNavLink } from 'components/Buttons';
 import Team from 'components/Team';
 import { PokedexContext, TypeContext } from 'context';
-import * as TVU from './TeamViewerUtils';
+import * as TVU from './utils';
 import { selectMembersFromPokedexAllowDuplicates } from 'utils/common';
 import { getTrainerTeams } from 'data';
-
-import './TeamViewer.scss';
 
 function TrainerTeamViewer() {
   const pokedex = useContext(PokedexContext);

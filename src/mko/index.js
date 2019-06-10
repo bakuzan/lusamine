@@ -11,6 +11,7 @@ export { default as AppInformation } from 'meiko/AppInformation';
 export { default as Grid } from 'meiko/Grid';
 export { default as List } from 'meiko/List';
 export { default as SelectBox } from 'meiko/SelectBox';
+export { default as Tabs } from 'meiko/Tabs';
 
 export { default as Icons } from 'meiko/constants/icons';
 
