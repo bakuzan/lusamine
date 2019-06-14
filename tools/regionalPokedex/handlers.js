@@ -12,5 +12,20 @@ module.exports = {
     const bodys = Array.from($('table > tbody')).slice(1, -3);
 
     return await baseHandler($, bodys, { number: 2, name });
+  },
+  async johto(name, $) {
+    const bodys = Array.from($('table > tbody')).slice(1, -3);
+
+    return await baseHandler($, bodys, { number: 2, name, code: 'Johto' });
+  },
+  async hoenn(name, $) {
+    const bodys = Array.from($('table > tbody')).slice(0, -3);
+
+    return await baseHandler($, bodys, { number: 3, name });
+  },
+  async hoenn_oras(name, $) {
+    const bodys = Array.from($('table > tbody')).slice(0, -3);
+
+    return await baseHandler($, bodys, { number: 3, name, code: 'ORAS' });
   }
 };
