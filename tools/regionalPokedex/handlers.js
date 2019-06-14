@@ -33,7 +33,7 @@ module.exports = {
     const bodys = bodys_pt.slice(0, -1);
 
     await baseHandler($, bodys, { number: 4, name });
-    return await baseHandler($, bodys, {
+    return await baseHandler($, bodys_pt, {
       number: 4,
       name: `${name}_pt`,
       code: 'Platinum'

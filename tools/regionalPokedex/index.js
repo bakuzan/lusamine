@@ -29,7 +29,7 @@ async function fetchPage(key) {
   );
 
   try {
-    fs.accessSync(filename, fs.constants.R_OK | fs.constants.W_OK);
+    fs.accessSync(filename, fs.constants.R_OK);
     console.log('Reading from cache');
     const data = fs.readFileSync(filename, 'utf-8');
     return cheerio.load(data);
