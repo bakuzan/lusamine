@@ -24,7 +24,8 @@ export default {
     pokedex: 'pokédex'
   },
   pageDescription: {
-    planner: 'Plan a new pokemon team',
+    planner:
+      'Pokémon team planning app for casual players. Save and share your Pokémon teams.',
     savedTeams: 'View previously saved pokemon teams',
     settings: 'Adjustable application settings',
     pokedex: 'Browse the pokedex to view information about each pokemon'

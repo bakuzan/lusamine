@@ -18,7 +18,9 @@ $theme-maps: (
     button-link--colour: $lusamine--eyes,
     team-breakdown-item--border-colour: $lusamine--eyes,
     faded-out-background: $grey80,
-    faded-out-colour: $black
+    faded-out-colour: $black,
+    tooltip-background: $lusamine--eyes,
+    tooltip-colour: $lusamine--hair
   )
 );
 
@@ -26,6 +28,9 @@ $theme-maps: (
   $button-link--colour: map-get($theme, button-link--colour);
   $button--action-border-colour: map-get($theme, button--action-border-colour);
   $button--colour-hover: map-get($theme, button--colour-hover);
+
+  --tooltip-background: #{map-get($theme, tooltip-background)};
+  --tooltip-colour: #{map-get($theme, tooltip-colour)};
 
   // Overrides
   .has-float-label input:focus,

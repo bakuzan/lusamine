@@ -1,8 +1,9 @@
 import React, { useState, useMemo } from 'react';
 import { Switch, Route } from 'react-router-dom';
-import { Helmet, HelmetProvider } from 'react-helmet-async';
 
 import { Alert, AppInformation, useGlobalStyles } from 'mko';
+import { ButtonisedNavLink } from 'components/Buttons';
+import AppHelmet from 'components/Helmet';
 import HeaderBar from 'components/HeaderBar';
 import AlertContainer from 'components/AlertContainer';
 import Footer from 'components/Footer';
@@ -16,8 +17,8 @@ import Routes from 'constants/routes';
 import { PokedexContext, TypeContext } from 'context';
 import { constructPokedex, getTypeMatchups } from 'data';
 import { settingsStore } from 'utils/common';
-import logData from './logData';
-import getPageTitleForCurrentPath from './getPageTitle';
+import logData from 'utils/logData';
+import getPageTitleForCurrentPath from 'utils/getPageTitle';
 
 const BRANCH = process.env.REACT_APP_BRANCH;
 const VERSION = process.env.REACT_APP_VERSION;
@@ -31,10 +32,10 @@ function App({ match, location }) {
   const [typeMatchups] = useState(getTypeMatchups());
   const [userMessages, setUserMessages] = useState(systemMessages);
 
-  const path = location.pathname;
+  const { pathname, search } = location;
   const { pageTitle, pageHeader, pageDescription } = useMemo(
-    () => getPageTitleForCurrentPath(path),
-    [path]
+    () => getPageTitleForCurrentPath(pathname, search),
+    [pathname, search]
   );
 
   const settings = settingsStore.get();
@@ -49,12 +50,7 @@ function App({ match, location }) {
     <PokedexContext.Provider value={pokedex}>
       <TypeContext.Provider value={typeMatchups}>
         <div className="theme theme--default">
-          <HelmetProvider>
-            <Helmet>
-              <title>{pageTitle}</title>
-              <meta name="description" content={pageDescription} />
-            </Helmet>
-          </HelmetProvider>
+          <AppHelmet title={pageTitle} description={pageDescription} />
           <HeaderBar pageTitle={pageHeader} />
           {hasMessages && (
             <Alert
@@ -89,9 +85,26 @@ function App({ match, location }) {
                     component={Pokedex}
                   />
                   <Route
+                    exact
                     path={match.url}
                     render={(props) => (
                       <TeamPlanner {...props} sendAlert={triggerAlert} />
+                    )}
+                  />
+                  <Route
+                    path="*"
+                    render={(props) => (
+                      <div>
+                        <AppHelmet
+                          title="Page not found"
+                          description="Unknown route"
+                        />
+                        <p>Page not found</p>
+                        <p>You appear lost...</p>
+                        <ButtonisedNavLink to={match.url} link>
+                          Return to the homepage
+                        </ButtonisedNavLink>
+                      </div>
                     )}
                   />
                 </Switch>

@@ -3,7 +3,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import { BrowserRouter, Switch, Route, Redirect } from 'react-router-dom';
 
-import App from 'views/App';
+import App from 'components/App';
 import Routes from 'constants/routes';
 
 import registerServiceWorker from './registerServiceWorker';

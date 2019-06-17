@@ -2,6 +2,7 @@ import PropTypes from 'prop-types';
 import classNames from 'classnames';
 import React from 'react';
 
+import Tooltip from 'components/Tooltip';
 import { capitaliseEachWord } from 'utils/common';
 import { buildSelectorsForSprite } from 'utils/selectors';
 
@@ -20,21 +21,22 @@ const Sprite = React.memo(function(props) {
 
   return (
     <li className={classNames('margin-one', 'sprite', spriteClasses.types)}>
-      <button
-        type="button"
-        onClick={spriteClick}
-        id={`sprite-${data.id}`}
-        className={classNames(
-          'sprite__pokemon',
-          {
-            'sprite__pokemon--can-click': hasClick
-          },
-          spriteClasses.name
-        )}
-        style={backgroundPosition}
-        aria-label={capitalisedName}
-        title={capitalisedName}
-      />
+      <Tooltip delay={500} text={capitalisedName}>
+        <button
+          type="button"
+          onClick={spriteClick}
+          id={`sprite-${data.id}`}
+          className={classNames(
+            'sprite__pokemon',
+            {
+              'sprite__pokemon--can-click': hasClick
+            },
+            spriteClasses.name
+          )}
+          style={backgroundPosition}
+          aria-label={capitalisedName}
+        />
+      </Tooltip>
     </li>
   );
 });
