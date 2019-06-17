@@ -48,5 +48,35 @@ module.exports = {
     const bodys = Array.from($('table > tbody')).slice(0, -3);
 
     return await baseHandler($, bodys, { number: 5, name, code: 'New' });
+  },
+  async kalos(name, $) {
+    const bodys = Array.from($('table > tbody'));
+    const central = bodys.slice(0, 4);
+    const coastal = bodys.slice(4, 8);
+    const mountain = bodys.slice(8, -3);
+
+    await baseHandler($, central, {
+      number: 6,
+      name: `kalos_ce`,
+      code: 'Central'
+    });
+    await baseHandler($, coastal, {
+      number: 6,
+      name: `kalos_co`,
+      code: 'Coastal'
+    });
+    return await baseHandler($, mountain, {
+      number: 6,
+      name: `kalos_mo`,
+      code: 'Mountain'
+    });
+  },
+  async alola(name, $) {
+    // const bodys = Array.from($('table > tbody')).slice(0, -3);
+    // return await baseHandler($, bodys, { number: 5, name });
+  },
+  async alola_n(name, $) {
+    // const bodys = Array.from($('table > tbody')).slice(0, -3);
+    // return await baseHandler($, bodys, { number: 5, name, code: 'Ultra' });
   }
 };

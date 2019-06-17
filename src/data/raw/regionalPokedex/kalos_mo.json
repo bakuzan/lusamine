@@ -1,0 +1,608 @@
+[
+  {
+    "region": 6,
+    "code": "Mountain",
+    "regionalPokedexNumber": 51,
+    "nationalPokedexNumber": 198
+  },
+  {
+    "region": 6,
+    "code": "Mountain",
+    "regionalPokedexNumber": 52,
+    "nationalPokedexNumber": 430
+  },
+  {
+    "region": 6,
+    "code": "Mountain",
+    "regionalPokedexNumber": 53,
+    "nationalPokedexNumber": 590
+  },
+  {
+    "region": 6,
+    "code": "Mountain",
+    "regionalPokedexNumber": 54,
+    "nationalPokedexNumber": 591
+  },
+  {
+    "region": 6,
+    "code": "Mountain",
+    "regionalPokedexNumber": 55,
+    "nationalPokedexNumber": 270
+  },
+  {
+    "region": 6,
+    "code": "Mountain",
+    "regionalPokedexNumber": 56,
+    "nationalPokedexNumber": 271
+  },
+  {
+    "region": 6,
+    "code": "Mountain",
+    "regionalPokedexNumber": 57,
+    "nationalPokedexNumber": 272
+  },
+  {
+    "region": 6,
+    "code": "Mountain",
+    "regionalPokedexNumber": 58,
+    "nationalPokedexNumber": 418
+  },
+  {
+    "region": 6,
+    "code": "Mountain",
+    "regionalPokedexNumber": 59,
+    "nationalPokedexNumber": 419
+  },
+  {
+    "region": 6,
+    "code": "Mountain",
+    "regionalPokedexNumber": 60,
+    "nationalPokedexNumber": 550
+  },
+  {
+    "region": 6,
+    "code": "Mountain",
+    "regionalPokedexNumber": 61,
+    "nationalPokedexNumber": 708
+  },
+  {
+    "region": 6,
+    "code": "Mountain",
+    "regionalPokedexNumber": 62,
+    "nationalPokedexNumber": 709
+  },
+  {
+    "region": 6,
+    "code": "Mountain",
+    "regionalPokedexNumber": 63,
+    "nationalPokedexNumber": 710
+  },
+  {
+    "region": 6,
+    "code": "Mountain",
+    "regionalPokedexNumber": 64,
+    "nationalPokedexNumber": 711
+  },
+  {
+    "region": 6,
+    "code": "Mountain",
+    "regionalPokedexNumber": 65,
+    "nationalPokedexNumber": 607
+  },
+  {
+    "region": 6,
+    "code": "Mountain",
+    "regionalPokedexNumber": 66,
+    "nationalPokedexNumber": 608
+  },
+  {
+    "region": 6,
+    "code": "Mountain",
+    "regionalPokedexNumber": 67,
+    "nationalPokedexNumber": 609
+  },
+  {
+    "region": 6,
+    "code": "Mountain",
+    "regionalPokedexNumber": 68,
+    "nationalPokedexNumber": 479
+  },
+  {
+    "region": 6,
+    "code": "Mountain",
+    "regionalPokedexNumber": 69,
+    "nationalPokedexNumber": 81
+  },
+  {
+    "region": 6,
+    "code": "Mountain",
+    "regionalPokedexNumber": 70,
+    "nationalPokedexNumber": 82
+  },
+  {
+    "region": 6,
+    "code": "Mountain",
+    "regionalPokedexNumber": 71,
+    "nationalPokedexNumber": 462
+  },
+  {
+    "region": 6,
+    "code": "Mountain",
+    "regionalPokedexNumber": 72,
+    "nationalPokedexNumber": 100
+  },
+  {
+    "region": 6,
+    "code": "Mountain",
+    "regionalPokedexNumber": 73,
+    "nationalPokedexNumber": 101
+  },
+  {
+    "region": 6,
+    "code": "Mountain",
+    "regionalPokedexNumber": 74,
+    "nationalPokedexNumber": 568
+  },
+  {
+    "region": 6,
+    "code": "Mountain",
+    "regionalPokedexNumber": 75,
+    "nationalPokedexNumber": 569
+  },
+  {
+    "region": 6,
+    "code": "Mountain",
+    "regionalPokedexNumber": 76,
+    "nationalPokedexNumber": 220
+  },
+  {
+    "region": 6,
+    "code": "Mountain",
+    "regionalPokedexNumber": 77,
+    "nationalPokedexNumber": 221
+  },
+  {
+    "region": 6,
+    "code": "Mountain",
+    "regionalPokedexNumber": 78,
+    "nationalPokedexNumber": 473
+  },
+  {
+    "region": 6,
+    "code": "Mountain",
+    "regionalPokedexNumber": 79,
+    "nationalPokedexNumber": 712
+  },
+  {
+    "region": 6,
+    "code": "Mountain",
+    "regionalPokedexNumber": 80,
+    "nationalPokedexNumber": 713
+  },
+  {
+    "region": 6,
+    "code": "Mountain",
+    "regionalPokedexNumber": 81,
+    "nationalPokedexNumber": 613
+  },
+  {
+    "region": 6,
+    "code": "Mountain",
+    "regionalPokedexNumber": 82,
+    "nationalPokedexNumber": 614
+  },
+  {
+    "region": 6,
+    "code": "Mountain",
+    "regionalPokedexNumber": 83,
+    "nationalPokedexNumber": 238
+  },
+  {
+    "region": 6,
+    "code": "Mountain",
+    "regionalPokedexNumber": 84,
+    "nationalPokedexNumber": 124
+  },
+  {
+    "region": 6,
+    "code": "Mountain",
+    "regionalPokedexNumber": 85,
+    "nationalPokedexNumber": 582
+  },
+  {
+    "region": 6,
+    "code": "Mountain",
+    "regionalPokedexNumber": 86,
+    "nationalPokedexNumber": 583
+  },
+  {
+    "region": 6,
+    "code": "Mountain",
+    "regionalPokedexNumber": 87,
+    "nationalPokedexNumber": 584
+  },
+  {
+    "region": 6,
+    "code": "Mountain",
+    "regionalPokedexNumber": 88,
+    "nationalPokedexNumber": 459
+  },
+  {
+    "region": 6,
+    "code": "Mountain",
+    "regionalPokedexNumber": 89,
+    "nationalPokedexNumber": 460
+  },
+  {
+    "region": 6,
+    "code": "Mountain",
+    "regionalPokedexNumber": 90,
+    "nationalPokedexNumber": 225
+  },
+  {
+    "region": 6,
+    "code": "Mountain",
+    "regionalPokedexNumber": 91,
+    "nationalPokedexNumber": 215
+  },
+  {
+    "region": 6,
+    "code": "Mountain",
+    "regionalPokedexNumber": 92,
+    "nationalPokedexNumber": 461
+  },
+  {
+    "region": 6,
+    "code": "Mountain",
+    "regionalPokedexNumber": 93,
+    "nationalPokedexNumber": 532
+  },
+  {
+    "region": 6,
+    "code": "Mountain",
+    "regionalPokedexNumber": 94,
+    "nationalPokedexNumber": 533
+  },
+  {
+    "region": 6,
+    "code": "Mountain",
+    "regionalPokedexNumber": 95,
+    "nationalPokedexNumber": 534
+  },
+  {
+    "region": 6,
+    "code": "Mountain",
+    "regionalPokedexNumber": 96,
+    "nationalPokedexNumber": 324
+  },
+  {
+    "region": 6,
+    "code": "Mountain",
+    "regionalPokedexNumber": 97,
+    "nationalPokedexNumber": 27
+  },
+  {
+    "region": 6,
+    "code": "Mountain",
+    "regionalPokedexNumber": 98,
+    "nationalPokedexNumber": 28
+  },
+  {
+    "region": 6,
+    "code": "Mountain",
+    "regionalPokedexNumber": 99,
+    "nationalPokedexNumber": 304
+  },
+  {
+    "region": 6,
+    "code": "Mountain",
+    "regionalPokedexNumber": 100,
+    "nationalPokedexNumber": 305
+  },
+  {
+    "region": 6,
+    "code": "Mountain",
+    "regionalPokedexNumber": 101,
+    "nationalPokedexNumber": 306
+  },
+  {
+    "region": 6,
+    "code": "Mountain",
+    "regionalPokedexNumber": 102,
+    "nationalPokedexNumber": 246
+  },
+  {
+    "region": 6,
+    "code": "Mountain",
+    "regionalPokedexNumber": 103,
+    "nationalPokedexNumber": 247
+  },
+  {
+    "region": 6,
+    "code": "Mountain",
+    "regionalPokedexNumber": 104,
+    "nationalPokedexNumber": 248
+  },
+  {
+    "region": 6,
+    "code": "Mountain",
+    "regionalPokedexNumber": 105,
+    "nationalPokedexNumber": 631
+  },
+  {
+    "region": 6,
+    "code": "Mountain",
+    "regionalPokedexNumber": 106,
+    "nationalPokedexNumber": 632
+  },
+  {
+    "region": 6,
+    "code": "Mountain",
+    "regionalPokedexNumber": 107,
+    "nationalPokedexNumber": 167
+  },
+  {
+    "region": 6,
+    "code": "Mountain",
+    "regionalPokedexNumber": 108,
+    "nationalPokedexNumber": 168
+  },
+  {
+    "region": 6,
+    "code": "Mountain",
+    "regionalPokedexNumber": 109,
+    "nationalPokedexNumber": 21
+  },
+  {
+    "region": 6,
+    "code": "Mountain",
+    "regionalPokedexNumber": 110,
+    "nationalPokedexNumber": 22
+  },
+  {
+    "region": 6,
+    "code": "Mountain",
+    "regionalPokedexNumber": 111,
+    "nationalPokedexNumber": 615
+  },
+  {
+    "region": 6,
+    "code": "Mountain",
+    "regionalPokedexNumber": 112,
+    "nationalPokedexNumber": 227
+  },
+  {
+    "region": 6,
+    "code": "Mountain",
+    "regionalPokedexNumber": 113,
+    "nationalPokedexNumber": 714
+  },
+  {
+    "region": 6,
+    "code": "Mountain",
+    "regionalPokedexNumber": 114,
+    "nationalPokedexNumber": 715
+  },
+  {
+    "region": 6,
+    "code": "Mountain",
+    "regionalPokedexNumber": 115,
+    "nationalPokedexNumber": 207
+  },
+  {
+    "region": 6,
+    "code": "Mountain",
+    "regionalPokedexNumber": 116,
+    "nationalPokedexNumber": 472
+  },
+  {
+    "region": 6,
+    "code": "Mountain",
+    "regionalPokedexNumber": 117,
+    "nationalPokedexNumber": 163
+  },
+  {
+    "region": 6,
+    "code": "Mountain",
+    "regionalPokedexNumber": 118,
+    "nationalPokedexNumber": 164
+  },
+  {
+    "region": 6,
+    "code": "Mountain",
+    "regionalPokedexNumber": 119,
+    "nationalPokedexNumber": 174
+  },
+  {
+    "region": 6,
+    "code": "Mountain",
+    "regionalPokedexNumber": 120,
+    "nationalPokedexNumber": 39
+  },
+  {
+    "region": 6,
+    "code": "Mountain",
+    "regionalPokedexNumber": 121,
+    "nationalPokedexNumber": 40
+  },
+  {
+    "region": 6,
+    "code": "Mountain",
+    "regionalPokedexNumber": 122,
+    "nationalPokedexNumber": 353
+  },
+  {
+    "region": 6,
+    "code": "Mountain",
+    "regionalPokedexNumber": 123,
+    "nationalPokedexNumber": 354
+  },
+  {
+    "region": 6,
+    "code": "Mountain",
+    "regionalPokedexNumber": 124,
+    "nationalPokedexNumber": 570
+  },
+  {
+    "region": 6,
+    "code": "Mountain",
+    "regionalPokedexNumber": 125,
+    "nationalPokedexNumber": 571
+  },
+  {
+    "region": 6,
+    "code": "Mountain",
+    "regionalPokedexNumber": 126,
+    "nationalPokedexNumber": 574
+  },
+  {
+    "region": 6,
+    "code": "Mountain",
+    "regionalPokedexNumber": 127,
+    "nationalPokedexNumber": 575
+  },
+  {
+    "region": 6,
+    "code": "Mountain",
+    "regionalPokedexNumber": 128,
+    "nationalPokedexNumber": 576
+  },
+  {
+    "region": 6,
+    "code": "Mountain",
+    "regionalPokedexNumber": 129,
+    "nationalPokedexNumber": 438
+  },
+  {
+    "region": 6,
+    "code": "Mountain",
+    "regionalPokedexNumber": 130,
+    "nationalPokedexNumber": 185
+  },
+  {
+    "region": 6,
+    "code": "Mountain",
+    "regionalPokedexNumber": 131,
+    "nationalPokedexNumber": 327
+  },
+  {
+    "region": 6,
+    "code": "Mountain",
+    "regionalPokedexNumber": 132,
+    "nationalPokedexNumber": 216
+  },
+  {
+    "region": 6,
+    "code": "Mountain",
+    "regionalPokedexNumber": 133,
+    "nationalPokedexNumber": 217
+  },
+  {
+    "region": 6,
+    "code": "Mountain",
+    "regionalPokedexNumber": 134,
+    "nationalPokedexNumber": 108
+  },
+  {
+    "region": 6,
+    "code": "Mountain",
+    "regionalPokedexNumber": 135,
+    "nationalPokedexNumber": 463
+  },
+  {
+    "region": 6,
+    "code": "Mountain",
+    "regionalPokedexNumber": 136,
+    "nationalPokedexNumber": 123
+  },
+  {
+    "region": 6,
+    "code": "Mountain",
+    "regionalPokedexNumber": 137,
+    "nationalPokedexNumber": 212
+  },
+  {
+    "region": 6,
+    "code": "Mountain",
+    "regionalPokedexNumber": 138,
+    "nationalPokedexNumber": 132
+  },
+  {
+    "region": 6,
+    "code": "Mountain",
+    "regionalPokedexNumber": 139,
+    "nationalPokedexNumber": 333
+  },
+  {
+    "region": 6,
+    "code": "Mountain",
+    "regionalPokedexNumber": 140,
+    "nationalPokedexNumber": 334
+  },
+  {
+    "region": 6,
+    "code": "Mountain",
+    "regionalPokedexNumber": 141,
+    "nationalPokedexNumber": 621
+  },
+  {
+    "region": 6,
+    "code": "Mountain",
+    "regionalPokedexNumber": 142,
+    "nationalPokedexNumber": 633
+  },
+  {
+    "region": 6,
+    "code": "Mountain",
+    "regionalPokedexNumber": 143,
+    "nationalPokedexNumber": 634
+  },
+  {
+    "region": 6,
+    "code": "Mountain",
+    "regionalPokedexNumber": 144,
+    "nationalPokedexNumber": 635
+  },
+  {
+    "region": 6,
+    "code": "Mountain",
+    "regionalPokedexNumber": 145,
+    "nationalPokedexNumber": 147
+  },
+  {
+    "region": 6,
+    "code": "Mountain",
+    "regionalPokedexNumber": 146,
+    "nationalPokedexNumber": 148
+  },
+  {
+    "region": 6,
+    "code": "Mountain",
+    "regionalPokedexNumber": 147,
+    "nationalPokedexNumber": 149
+  },
+  {
+    "region": 6,
+    "code": "Mountain",
+    "regionalPokedexNumber": 148,
+    "nationalPokedexNumber": 716
+  },
+  {
+    "region": 6,
+    "code": "Mountain",
+    "regionalPokedexNumber": 149,
+    "nationalPokedexNumber": 717
+  },
+  {
+    "region": 6,
+    "code": "Mountain",
+    "regionalPokedexNumber": 150,
+    "nationalPokedexNumber": 718
+  },
+  {
+    "region": 6,
+    "code": "Mountain",
+    "regionalPokedexNumber": 151,
+    "nationalPokedexNumber": 150
+  }
+]

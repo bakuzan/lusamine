@@ -1,0 +1,920 @@
+[
+  {
+    "region": 6,
+    "code": "Central",
+    "regionalPokedexNumber": 1,
+    "nationalPokedexNumber": 650
+  },
+  {
+    "region": 6,
+    "code": "Central",
+    "regionalPokedexNumber": 2,
+    "nationalPokedexNumber": 651
+  },
+  {
+    "region": 6,
+    "code": "Central",
+    "regionalPokedexNumber": 3,
+    "nationalPokedexNumber": 652
+  },
+  {
+    "region": 6,
+    "code": "Central",
+    "regionalPokedexNumber": 4,
+    "nationalPokedexNumber": 653
+  },
+  {
+    "region": 6,
+    "code": "Central",
+    "regionalPokedexNumber": 5,
+    "nationalPokedexNumber": 654
+  },
+  {
+    "region": 6,
+    "code": "Central",
+    "regionalPokedexNumber": 6,
+    "nationalPokedexNumber": 655
+  },
+  {
+    "region": 6,
+    "code": "Central",
+    "regionalPokedexNumber": 7,
+    "nationalPokedexNumber": 656
+  },
+  {
+    "region": 6,
+    "code": "Central",
+    "regionalPokedexNumber": 8,
+    "nationalPokedexNumber": 657
+  },
+  {
+    "region": 6,
+    "code": "Central",
+    "regionalPokedexNumber": 9,
+    "nationalPokedexNumber": 658
+  },
+  {
+    "region": 6,
+    "code": "Central",
+    "regionalPokedexNumber": 10,
+    "nationalPokedexNumber": 659
+  },
+  {
+    "region": 6,
+    "code": "Central",
+    "regionalPokedexNumber": 11,
+    "nationalPokedexNumber": 660
+  },
+  {
+    "region": 6,
+    "code": "Central",
+    "regionalPokedexNumber": 12,
+    "nationalPokedexNumber": 263
+  },
+  {
+    "region": 6,
+    "code": "Central",
+    "regionalPokedexNumber": 13,
+    "nationalPokedexNumber": 264
+  },
+  {
+    "region": 6,
+    "code": "Central",
+    "regionalPokedexNumber": 14,
+    "nationalPokedexNumber": 661
+  },
+  {
+    "region": 6,
+    "code": "Central",
+    "regionalPokedexNumber": 15,
+    "nationalPokedexNumber": 662
+  },
+  {
+    "region": 6,
+    "code": "Central",
+    "regionalPokedexNumber": 16,
+    "nationalPokedexNumber": 663
+  },
+  {
+    "region": 6,
+    "code": "Central",
+    "regionalPokedexNumber": 17,
+    "nationalPokedexNumber": 16
+  },
+  {
+    "region": 6,
+    "code": "Central",
+    "regionalPokedexNumber": 18,
+    "nationalPokedexNumber": 17
+  },
+  {
+    "region": 6,
+    "code": "Central",
+    "regionalPokedexNumber": 19,
+    "nationalPokedexNumber": 18
+  },
+  {
+    "region": 6,
+    "code": "Central",
+    "regionalPokedexNumber": 20,
+    "nationalPokedexNumber": 664
+  },
+  {
+    "region": 6,
+    "code": "Central",
+    "regionalPokedexNumber": 21,
+    "nationalPokedexNumber": 665
+  },
+  {
+    "region": 6,
+    "code": "Central",
+    "regionalPokedexNumber": 22,
+    "nationalPokedexNumber": 666
+  },
+  {
+    "region": 6,
+    "code": "Central",
+    "regionalPokedexNumber": 23,
+    "nationalPokedexNumber": 10
+  },
+  {
+    "region": 6,
+    "code": "Central",
+    "regionalPokedexNumber": 24,
+    "nationalPokedexNumber": 11
+  },
+  {
+    "region": 6,
+    "code": "Central",
+    "regionalPokedexNumber": 25,
+    "nationalPokedexNumber": 12
+  },
+  {
+    "region": 6,
+    "code": "Central",
+    "regionalPokedexNumber": 26,
+    "nationalPokedexNumber": 13
+  },
+  {
+    "region": 6,
+    "code": "Central",
+    "regionalPokedexNumber": 27,
+    "nationalPokedexNumber": 14
+  },
+  {
+    "region": 6,
+    "code": "Central",
+    "regionalPokedexNumber": 28,
+    "nationalPokedexNumber": 15
+  },
+  {
+    "region": 6,
+    "code": "Central",
+    "regionalPokedexNumber": 29,
+    "nationalPokedexNumber": 511
+  },
+  {
+    "region": 6,
+    "code": "Central",
+    "regionalPokedexNumber": 30,
+    "nationalPokedexNumber": 512
+  },
+  {
+    "region": 6,
+    "code": "Central",
+    "regionalPokedexNumber": 31,
+    "nationalPokedexNumber": 513
+  },
+  {
+    "region": 6,
+    "code": "Central",
+    "regionalPokedexNumber": 32,
+    "nationalPokedexNumber": 514
+  },
+  {
+    "region": 6,
+    "code": "Central",
+    "regionalPokedexNumber": 33,
+    "nationalPokedexNumber": 515
+  },
+  {
+    "region": 6,
+    "code": "Central",
+    "regionalPokedexNumber": 34,
+    "nationalPokedexNumber": 516
+  },
+  {
+    "region": 6,
+    "code": "Central",
+    "regionalPokedexNumber": 35,
+    "nationalPokedexNumber": 172
+  },
+  {
+    "region": 6,
+    "code": "Central",
+    "regionalPokedexNumber": 36,
+    "nationalPokedexNumber": 25
+  },
+  {
+    "region": 6,
+    "code": "Central",
+    "regionalPokedexNumber": 37,
+    "nationalPokedexNumber": 26
+  },
+  {
+    "region": 6,
+    "code": "Central",
+    "regionalPokedexNumber": 38,
+    "nationalPokedexNumber": 399
+  },
+  {
+    "region": 6,
+    "code": "Central",
+    "regionalPokedexNumber": 39,
+    "nationalPokedexNumber": 400
+  },
+  {
+    "region": 6,
+    "code": "Central",
+    "regionalPokedexNumber": 40,
+    "nationalPokedexNumber": 206
+  },
+  {
+    "region": 6,
+    "code": "Central",
+    "regionalPokedexNumber": 41,
+    "nationalPokedexNumber": 298
+  },
+  {
+    "region": 6,
+    "code": "Central",
+    "regionalPokedexNumber": 42,
+    "nationalPokedexNumber": 183
+  },
+  {
+    "region": 6,
+    "code": "Central",
+    "regionalPokedexNumber": 43,
+    "nationalPokedexNumber": 184
+  },
+  {
+    "region": 6,
+    "code": "Central",
+    "regionalPokedexNumber": 44,
+    "nationalPokedexNumber": 412
+  },
+  {
+    "region": 6,
+    "code": "Central",
+    "regionalPokedexNumber": 45,
+    "nationalPokedexNumber": 413
+  },
+  {
+    "region": 6,
+    "code": "Central",
+    "regionalPokedexNumber": 46,
+    "nationalPokedexNumber": 414
+  },
+  {
+    "region": 6,
+    "code": "Central",
+    "regionalPokedexNumber": 47,
+    "nationalPokedexNumber": 283
+  },
+  {
+    "region": 6,
+    "code": "Central",
+    "regionalPokedexNumber": 48,
+    "nationalPokedexNumber": 284
+  },
+  {
+    "region": 6,
+    "code": "Central",
+    "regionalPokedexNumber": 49,
+    "nationalPokedexNumber": 129
+  },
+  {
+    "region": 6,
+    "code": "Central",
+    "regionalPokedexNumber": 50,
+    "nationalPokedexNumber": 130
+  },
+  {
+    "region": 6,
+    "code": "Central",
+    "regionalPokedexNumber": 51,
+    "nationalPokedexNumber": 341
+  },
+  {
+    "region": 6,
+    "code": "Central",
+    "regionalPokedexNumber": 52,
+    "nationalPokedexNumber": 342
+  },
+  {
+    "region": 6,
+    "code": "Central",
+    "regionalPokedexNumber": 53,
+    "nationalPokedexNumber": 118
+  },
+  {
+    "region": 6,
+    "code": "Central",
+    "regionalPokedexNumber": 54,
+    "nationalPokedexNumber": 119
+  },
+  {
+    "region": 6,
+    "code": "Central",
+    "regionalPokedexNumber": 55,
+    "nationalPokedexNumber": 318
+  },
+  {
+    "region": 6,
+    "code": "Central",
+    "regionalPokedexNumber": 56,
+    "nationalPokedexNumber": 319
+  },
+  {
+    "region": 6,
+    "code": "Central",
+    "regionalPokedexNumber": 57,
+    "nationalPokedexNumber": 667
+  },
+  {
+    "region": 6,
+    "code": "Central",
+    "regionalPokedexNumber": 58,
+    "nationalPokedexNumber": 668
+  },
+  {
+    "region": 6,
+    "code": "Central",
+    "regionalPokedexNumber": 59,
+    "nationalPokedexNumber": 54
+  },
+  {
+    "region": 6,
+    "code": "Central",
+    "regionalPokedexNumber": 60,
+    "nationalPokedexNumber": 55
+  },
+  {
+    "region": 6,
+    "code": "Central",
+    "regionalPokedexNumber": 61,
+    "nationalPokedexNumber": 83
+  },
+  {
+    "region": 6,
+    "code": "Central",
+    "regionalPokedexNumber": 62,
+    "nationalPokedexNumber": 447
+  },
+  {
+    "region": 6,
+    "code": "Central",
+    "regionalPokedexNumber": 63,
+    "nationalPokedexNumber": 448
+  },
+  {
+    "region": 6,
+    "code": "Central",
+    "regionalPokedexNumber": 64,
+    "nationalPokedexNumber": 280
+  },
+  {
+    "region": 6,
+    "code": "Central",
+    "regionalPokedexNumber": 65,
+    "nationalPokedexNumber": 281
+  },
+  {
+    "region": 6,
+    "code": "Central",
+    "regionalPokedexNumber": 66,
+    "nationalPokedexNumber": 282
+  },
+  {
+    "region": 6,
+    "code": "Central",
+    "regionalPokedexNumber": 67,
+    "nationalPokedexNumber": 475
+  },
+  {
+    "region": 6,
+    "code": "Central",
+    "regionalPokedexNumber": 68,
+    "nationalPokedexNumber": 669
+  },
+  {
+    "region": 6,
+    "code": "Central",
+    "regionalPokedexNumber": 69,
+    "nationalPokedexNumber": 670
+  },
+  {
+    "region": 6,
+    "code": "Central",
+    "regionalPokedexNumber": 70,
+    "nationalPokedexNumber": 671
+  },
+  {
+    "region": 6,
+    "code": "Central",
+    "regionalPokedexNumber": 71,
+    "nationalPokedexNumber": 406
+  },
+  {
+    "region": 6,
+    "code": "Central",
+    "regionalPokedexNumber": 72,
+    "nationalPokedexNumber": 315
+  },
+  {
+    "region": 6,
+    "code": "Central",
+    "regionalPokedexNumber": 73,
+    "nationalPokedexNumber": 407
+  },
+  {
+    "region": 6,
+    "code": "Central",
+    "regionalPokedexNumber": 74,
+    "nationalPokedexNumber": 165
+  },
+  {
+    "region": 6,
+    "code": "Central",
+    "regionalPokedexNumber": 75,
+    "nationalPokedexNumber": 166
+  },
+  {
+    "region": 6,
+    "code": "Central",
+    "regionalPokedexNumber": 76,
+    "nationalPokedexNumber": 415
+  },
+  {
+    "region": 6,
+    "code": "Central",
+    "regionalPokedexNumber": 77,
+    "nationalPokedexNumber": 416
+  },
+  {
+    "region": 6,
+    "code": "Central",
+    "regionalPokedexNumber": 78,
+    "nationalPokedexNumber": 300
+  },
+  {
+    "region": 6,
+    "code": "Central",
+    "regionalPokedexNumber": 79,
+    "nationalPokedexNumber": 301
+  },
+  {
+    "region": 6,
+    "code": "Central",
+    "regionalPokedexNumber": 80,
+    "nationalPokedexNumber": 1
+  },
+  {
+    "region": 6,
+    "code": "Central",
+    "regionalPokedexNumber": 81,
+    "nationalPokedexNumber": 2
+  },
+  {
+    "region": 6,
+    "code": "Central",
+    "regionalPokedexNumber": 82,
+    "nationalPokedexNumber": 3
+  },
+  {
+    "region": 6,
+    "code": "Central",
+    "regionalPokedexNumber": 83,
+    "nationalPokedexNumber": 4
+  },
+  {
+    "region": 6,
+    "code": "Central",
+    "regionalPokedexNumber": 84,
+    "nationalPokedexNumber": 5
+  },
+  {
+    "region": 6,
+    "code": "Central",
+    "regionalPokedexNumber": 85,
+    "nationalPokedexNumber": 6
+  },
+  {
+    "region": 6,
+    "code": "Central",
+    "regionalPokedexNumber": 86,
+    "nationalPokedexNumber": 7
+  },
+  {
+    "region": 6,
+    "code": "Central",
+    "regionalPokedexNumber": 87,
+    "nationalPokedexNumber": 8
+  },
+  {
+    "region": 6,
+    "code": "Central",
+    "regionalPokedexNumber": 88,
+    "nationalPokedexNumber": 9
+  },
+  {
+    "region": 6,
+    "code": "Central",
+    "regionalPokedexNumber": 89,
+    "nationalPokedexNumber": 672
+  },
+  {
+    "region": 6,
+    "code": "Central",
+    "regionalPokedexNumber": 90,
+    "nationalPokedexNumber": 673
+  },
+  {
+    "region": 6,
+    "code": "Central",
+    "regionalPokedexNumber": 91,
+    "nationalPokedexNumber": 674
+  },
+  {
+    "region": 6,
+    "code": "Central",
+    "regionalPokedexNumber": 92,
+    "nationalPokedexNumber": 675
+  },
+  {
+    "region": 6,
+    "code": "Central",
+    "regionalPokedexNumber": 93,
+    "nationalPokedexNumber": 676
+  },
+  {
+    "region": 6,
+    "code": "Central",
+    "regionalPokedexNumber": 94,
+    "nationalPokedexNumber": 84
+  },
+  {
+    "region": 6,
+    "code": "Central",
+    "regionalPokedexNumber": 95,
+    "nationalPokedexNumber": 85
+  },
+  {
+    "region": 6,
+    "code": "Central",
+    "regionalPokedexNumber": 96,
+    "nationalPokedexNumber": 311
+  },
+  {
+    "region": 6,
+    "code": "Central",
+    "regionalPokedexNumber": 97,
+    "nationalPokedexNumber": 312
+  },
+  {
+    "region": 6,
+    "code": "Central",
+    "regionalPokedexNumber": 98,
+    "nationalPokedexNumber": 316
+  },
+  {
+    "region": 6,
+    "code": "Central",
+    "regionalPokedexNumber": 99,
+    "nationalPokedexNumber": 317
+  },
+  {
+    "region": 6,
+    "code": "Central",
+    "regionalPokedexNumber": 100,
+    "nationalPokedexNumber": 559
+  },
+  {
+    "region": 6,
+    "code": "Central",
+    "regionalPokedexNumber": 101,
+    "nationalPokedexNumber": 560
+  },
+  {
+    "region": 6,
+    "code": "Central",
+    "regionalPokedexNumber": 102,
+    "nationalPokedexNumber": 63
+  },
+  {
+    "region": 6,
+    "code": "Central",
+    "regionalPokedexNumber": 103,
+    "nationalPokedexNumber": 64
+  },
+  {
+    "region": 6,
+    "code": "Central",
+    "regionalPokedexNumber": 104,
+    "nationalPokedexNumber": 65
+  },
+  {
+    "region": 6,
+    "code": "Central",
+    "regionalPokedexNumber": 105,
+    "nationalPokedexNumber": 43
+  },
+  {
+    "region": 6,
+    "code": "Central",
+    "regionalPokedexNumber": 106,
+    "nationalPokedexNumber": 44
+  },
+  {
+    "region": 6,
+    "code": "Central",
+    "regionalPokedexNumber": 107,
+    "nationalPokedexNumber": 45
+  },
+  {
+    "region": 6,
+    "code": "Central",
+    "regionalPokedexNumber": 108,
+    "nationalPokedexNumber": 182
+  },
+  {
+    "region": 6,
+    "code": "Central",
+    "regionalPokedexNumber": 109,
+    "nationalPokedexNumber": 161
+  },
+  {
+    "region": 6,
+    "code": "Central",
+    "regionalPokedexNumber": 110,
+    "nationalPokedexNumber": 162
+  },
+  {
+    "region": 6,
+    "code": "Central",
+    "regionalPokedexNumber": 111,
+    "nationalPokedexNumber": 290
+  },
+  {
+    "region": 6,
+    "code": "Central",
+    "regionalPokedexNumber": 112,
+    "nationalPokedexNumber": 291
+  },
+  {
+    "region": 6,
+    "code": "Central",
+    "regionalPokedexNumber": 113,
+    "nationalPokedexNumber": 292
+  },
+  {
+    "region": 6,
+    "code": "Central",
+    "regionalPokedexNumber": 114,
+    "nationalPokedexNumber": 677
+  },
+  {
+    "region": 6,
+    "code": "Central",
+    "regionalPokedexNumber": 115,
+    "nationalPokedexNumber": 678
+  },
+  {
+    "region": 6,
+    "code": "Central",
+    "regionalPokedexNumber": 116,
+    "nationalPokedexNumber": 352
+  },
+  {
+    "region": 6,
+    "code": "Central",
+    "regionalPokedexNumber": 117,
+    "nationalPokedexNumber": 679
+  },
+  {
+    "region": 6,
+    "code": "Central",
+    "regionalPokedexNumber": 118,
+    "nationalPokedexNumber": 680
+  },
+  {
+    "region": 6,
+    "code": "Central",
+    "regionalPokedexNumber": 119,
+    "nationalPokedexNumber": 681
+  },
+  {
+    "region": 6,
+    "code": "Central",
+    "regionalPokedexNumber": 120,
+    "nationalPokedexNumber": 543
+  },
+  {
+    "region": 6,
+    "code": "Central",
+    "regionalPokedexNumber": 121,
+    "nationalPokedexNumber": 544
+  },
+  {
+    "region": 6,
+    "code": "Central",
+    "regionalPokedexNumber": 122,
+    "nationalPokedexNumber": 545
+  },
+  {
+    "region": 6,
+    "code": "Central",
+    "regionalPokedexNumber": 123,
+    "nationalPokedexNumber": 531
+  },
+  {
+    "region": 6,
+    "code": "Central",
+    "regionalPokedexNumber": 124,
+    "nationalPokedexNumber": 235
+  },
+  {
+    "region": 6,
+    "code": "Central",
+    "regionalPokedexNumber": 125,
+    "nationalPokedexNumber": 453
+  },
+  {
+    "region": 6,
+    "code": "Central",
+    "regionalPokedexNumber": 126,
+    "nationalPokedexNumber": 454
+  },
+  {
+    "region": 6,
+    "code": "Central",
+    "regionalPokedexNumber": 127,
+    "nationalPokedexNumber": 580
+  },
+  {
+    "region": 6,
+    "code": "Central",
+    "regionalPokedexNumber": 128,
+    "nationalPokedexNumber": 581
+  },
+  {
+    "region": 6,
+    "code": "Central",
+    "regionalPokedexNumber": 129,
+    "nationalPokedexNumber": 682
+  },
+  {
+    "region": 6,
+    "code": "Central",
+    "regionalPokedexNumber": 130,
+    "nationalPokedexNumber": 683
+  },
+  {
+    "region": 6,
+    "code": "Central",
+    "regionalPokedexNumber": 131,
+    "nationalPokedexNumber": 684
+  },
+  {
+    "region": 6,
+    "code": "Central",
+    "regionalPokedexNumber": 132,
+    "nationalPokedexNumber": 685
+  },
+  {
+    "region": 6,
+    "code": "Central",
+    "regionalPokedexNumber": 133,
+    "nationalPokedexNumber": 313
+  },
+  {
+    "region": 6,
+    "code": "Central",
+    "regionalPokedexNumber": 134,
+    "nationalPokedexNumber": 314
+  },
+  {
+    "region": 6,
+    "code": "Central",
+    "regionalPokedexNumber": 135,
+    "nationalPokedexNumber": 187
+  },
+  {
+    "region": 6,
+    "code": "Central",
+    "regionalPokedexNumber": 136,
+    "nationalPokedexNumber": 188
+  },
+  {
+    "region": 6,
+    "code": "Central",
+    "regionalPokedexNumber": 137,
+    "nationalPokedexNumber": 189
+  },
+  {
+    "region": 6,
+    "code": "Central",
+    "regionalPokedexNumber": 138,
+    "nationalPokedexNumber": 446
+  },
+  {
+    "region": 6,
+    "code": "Central",
+    "regionalPokedexNumber": 139,
+    "nationalPokedexNumber": 143
+  },
+  {
+    "region": 6,
+    "code": "Central",
+    "regionalPokedexNumber": 140,
+    "nationalPokedexNumber": 293
+  },
+  {
+    "region": 6,
+    "code": "Central",
+    "regionalPokedexNumber": 141,
+    "nationalPokedexNumber": 294
+  },
+  {
+    "region": 6,
+    "code": "Central",
+    "regionalPokedexNumber": 142,
+    "nationalPokedexNumber": 295
+  },
+  {
+    "region": 6,
+    "code": "Central",
+    "regionalPokedexNumber": 143,
+    "nationalPokedexNumber": 307
+  },
+  {
+    "region": 6,
+    "code": "Central",
+    "regionalPokedexNumber": 144,
+    "nationalPokedexNumber": 308
+  },
+  {
+    "region": 6,
+    "code": "Central",
+    "regionalPokedexNumber": 145,
+    "nationalPokedexNumber": 41
+  },
+  {
+    "region": 6,
+    "code": "Central",
+    "regionalPokedexNumber": 146,
+    "nationalPokedexNumber": 42
+  },
+  {
+    "region": 6,
+    "code": "Central",
+    "regionalPokedexNumber": 147,
+    "nationalPokedexNumber": 169
+  },
+  {
+    "region": 6,
+    "code": "Central",
+    "regionalPokedexNumber": 148,
+    "nationalPokedexNumber": 610
+  },
+  {
+    "region": 6,
+    "code": "Central",
+    "regionalPokedexNumber": 149,
+    "nationalPokedexNumber": 611
+  },
+  {
+    "region": 6,
+    "code": "Central",
+    "regionalPokedexNumber": 150,
+    "nationalPokedexNumber": 612
+  },
+  {
+    "region": 6,
+    "code": "Central",
+    "regionalPokedexNumber": 151,
+    "nationalPokedexNumber": 719
+  },
+  {
+    "region": 6,
+    "code": "Central",
+    "regionalPokedexNumber": 152,
+    "nationalPokedexNumber": 720
+  },
+  {
+    "region": 6,
+    "code": "Central",
+    "regionalPokedexNumber": 153,
+    "nationalPokedexNumber": 721
+  }
+]
