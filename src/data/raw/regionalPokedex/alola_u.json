@@ -1,0 +1,8062 @@
+[
+  {
+    "region": 7,
+    "code": "Ultra",
+    "regionalPokedexNumber": 1,
+    "nationalPokedexNumber": 722,
+    "sublistings": [
+      {
+        "number": 1
+      },
+      {
+        "number": null
+      },
+      {
+        "number": null
+      },
+      {
+        "number": null
+      }
+    ]
+  },
+  {
+    "region": 7,
+    "code": "Ultra",
+    "regionalPokedexNumber": 2,
+    "nationalPokedexNumber": 723,
+    "sublistings": [
+      {
+        "number": 2
+      },
+      {
+        "number": null
+      },
+      {
+        "number": null
+      },
+      {
+        "number": null
+      }
+    ]
+  },
+  {
+    "region": 7,
+    "code": "Ultra",
+    "regionalPokedexNumber": 3,
+    "nationalPokedexNumber": 724,
+    "sublistings": [
+      {
+        "number": 3
+      },
+      {
+        "number": null
+      },
+      {
+        "number": null
+      },
+      {
+        "number": null
+      }
+    ]
+  },
+  {
+    "region": 7,
+    "code": "Ultra",
+    "regionalPokedexNumber": 4,
+    "nationalPokedexNumber": 725,
+    "sublistings": [
+      {
+        "number": 4
+      },
+      {
+        "number": null
+      },
+      {
+        "number": null
+      },
+      {
+        "number": null
+      }
+    ]
+  },
+  {
+    "region": 7,
+    "code": "Ultra",
+    "regionalPokedexNumber": 5,
+    "nationalPokedexNumber": 726,
+    "sublistings": [
+      {
+        "number": 5
+      },
+      {
+        "number": null
+      },
+      {
+        "number": null
+      },
+      {
+        "number": null
+      }
+    ]
+  },
+  {
+    "region": 7,
+    "code": "Ultra",
+    "regionalPokedexNumber": 6,
+    "nationalPokedexNumber": 727,
+    "sublistings": [
+      {
+        "number": 6
+      },
+      {
+        "number": null
+      },
+      {
+        "number": null
+      },
+      {
+        "number": null
+      }
+    ]
+  },
+  {
+    "region": 7,
+    "code": "Ultra",
+    "regionalPokedexNumber": 7,
+    "nationalPokedexNumber": 728,
+    "sublistings": [
+      {
+        "number": 7
+      },
+      {
+        "number": null
+      },
+      {
+        "number": null
+      },
+      {
+        "number": null
+      }
+    ]
+  },
+  {
+    "region": 7,
+    "code": "Ultra",
+    "regionalPokedexNumber": 8,
+    "nationalPokedexNumber": 729,
+    "sublistings": [
+      {
+        "number": 8
+      },
+      {
+        "number": null
+      },
+      {
+        "number": null
+      },
+      {
+        "number": null
+      }
+    ]
+  },
+  {
+    "region": 7,
+    "code": "Ultra",
+    "regionalPokedexNumber": 9,
+    "nationalPokedexNumber": 730,
+    "sublistings": [
+      {
+        "number": 9
+      },
+      {
+        "number": null
+      },
+      {
+        "number": null
+      },
+      {
+        "number": null
+      }
+    ]
+  },
+  {
+    "region": 7,
+    "code": "Ultra",
+    "regionalPokedexNumber": 10,
+    "nationalPokedexNumber": 731,
+    "sublistings": [
+      {
+        "number": 10
+      },
+      {
+        "number": 1
+      },
+      {
+        "number": 1
+      },
+      {
+        "number": 1
+      }
+    ]
+  },
+  {
+    "region": 7,
+    "code": "Ultra",
+    "regionalPokedexNumber": 11,
+    "nationalPokedexNumber": 732,
+    "sublistings": [
+      {
+        "number": 11
+      },
+      {
+        "number": 2
+      },
+      {
+        "number": 2
+      },
+      {
+        "number": 2
+      }
+    ]
+  },
+  {
+    "region": 7,
+    "code": "Ultra",
+    "regionalPokedexNumber": 12,
+    "nationalPokedexNumber": 733,
+    "sublistings": [
+      {
+        "number": 12
+      },
+      {
+        "number": 3
+      },
+      {
+        "number": 3
+      },
+      {
+        "number": 3
+      }
+    ]
+  },
+  {
+    "region": 7,
+    "code": "Ultra",
+    "regionalPokedexNumber": 13,
+    "nationalPokedexNumber": 734,
+    "sublistings": [
+      {
+        "number": 13
+      },
+      {
+        "number": 4
+      },
+      {
+        "number": 4
+      },
+      {
+        "number": 4
+      }
+    ]
+  },
+  {
+    "region": 7,
+    "code": "Ultra",
+    "regionalPokedexNumber": 14,
+    "nationalPokedexNumber": 735,
+    "sublistings": [
+      {
+        "number": 14
+      },
+      {
+        "number": 5
+      },
+      {
+        "number": 5
+      },
+      {
+        "number": 5
+      }
+    ]
+  },
+  {
+    "region": 7,
+    "code": "Ultra",
+    "regionalPokedexNumber": 15,
+    "nationalPokedexNumber": 19,
+    "sublistings": [
+      {
+        "number": 15
+      },
+      {
+        "number": 6
+      },
+      {
+        "number": 6
+      },
+      {
+        "number": 6
+      }
+    ]
+  },
+  {
+    "region": 7,
+    "code": "Ultra",
+    "regionalPokedexNumber": 16,
+    "nationalPokedexNumber": 20,
+    "sublistings": [
+      {
+        "number": 16
+      },
+      {
+        "number": 7
+      },
+      {
+        "number": 7
+      },
+      {
+        "number": 7
+      }
+    ]
+  },
+  {
+    "region": 7,
+    "code": "Ultra",
+    "regionalPokedexNumber": 17,
+    "nationalPokedexNumber": 10,
+    "sublistings": [
+      {
+        "number": 17
+      },
+      {
+        "number": 8
+      },
+      {
+        "number": null
+      },
+      {
+        "number": null
+      }
+    ]
+  },
+  {
+    "region": 7,
+    "code": "Ultra",
+    "regionalPokedexNumber": 18,
+    "nationalPokedexNumber": 11,
+    "sublistings": [
+      {
+        "number": 18
+      },
+      {
+        "number": 9
+      },
+      {
+        "number": null
+      },
+      {
+        "number": null
+      }
+    ]
+  },
+  {
+    "region": 7,
+    "code": "Ultra",
+    "regionalPokedexNumber": 19,
+    "nationalPokedexNumber": 12,
+    "sublistings": [
+      {
+        "number": 19
+      },
+      {
+        "number": 10
+      },
+      {
+        "number": null
+      },
+      {
+        "number": null
+      }
+    ]
+  },
+  {
+    "region": 7,
+    "code": "Ultra",
+    "regionalPokedexNumber": 20,
+    "nationalPokedexNumber": 165,
+    "sublistings": [
+      {
+        "number": 20
+      },
+      {
+        "number": null
+      },
+      {
+        "number": 8
+      },
+      {
+        "number": null
+      }
+    ]
+  },
+  {
+    "region": 7,
+    "code": "Ultra",
+    "regionalPokedexNumber": 21,
+    "nationalPokedexNumber": 166,
+    "sublistings": [
+      {
+        "number": 21
+      },
+      {
+        "number": null
+      },
+      {
+        "number": 9
+      },
+      {
+        "number": null
+      }
+    ]
+  },
+  {
+    "region": 7,
+    "code": "Ultra",
+    "regionalPokedexNumber": 22,
+    "nationalPokedexNumber": 167,
+    "sublistings": [
+      {
+        "number": 22
+      },
+      {
+        "number": null
+      },
+      {
+        "number": 10
+      },
+      {
+        "number": null
+      }
+    ]
+  },
+  {
+    "region": 7,
+    "code": "Ultra",
+    "regionalPokedexNumber": 23,
+    "nationalPokedexNumber": 168,
+    "sublistings": [
+      {
+        "number": 23
+      },
+      {
+        "number": null
+      },
+      {
+        "number": 11
+      },
+      {
+        "number": null
+      }
+    ]
+  },
+  {
+    "region": 7,
+    "code": "Ultra",
+    "regionalPokedexNumber": 24,
+    "nationalPokedexNumber": 427,
+    "sublistings": [
+      {
+        "number": 24
+      },
+      {
+        "number": null
+      },
+      {
+        "number": null
+      },
+      {
+        "number": 8
+      }
+    ]
+  },
+  {
+    "region": 7,
+    "code": "Ultra",
+    "regionalPokedexNumber": 25,
+    "nationalPokedexNumber": 428,
+    "sublistings": [
+      {
+        "number": 25
+      },
+      {
+        "number": null
+      },
+      {
+        "number": null
+      },
+      {
+        "number": 9
+      }
+    ]
+  },
+  {
+    "region": 7,
+    "code": "Ultra",
+    "regionalPokedexNumber": 26,
+    "nationalPokedexNumber": 686,
+    "sublistings": [
+      {
+        "number": 26
+      },
+      {
+        "number": null
+      },
+      {
+        "number": null
+      },
+      {
+        "number": 10
+      }
+    ]
+  },
+  {
+    "region": 7,
+    "code": "Ultra",
+    "regionalPokedexNumber": 27,
+    "nationalPokedexNumber": 687,
+    "sublistings": [
+      {
+        "number": 27
+      },
+      {
+        "number": null
+      },
+      {
+        "number": null
+      },
+      {
+        "number": 11
+      }
+    ]
+  },
+  {
+    "region": 7,
+    "code": "Ultra",
+    "regionalPokedexNumber": 28,
+    "nationalPokedexNumber": 570,
+    "sublistings": [
+      {
+        "number": 28
+      },
+      {
+        "number": null
+      },
+      {
+        "number": null
+      },
+      {
+        "number": 12
+      }
+    ]
+  },
+  {
+    "region": 7,
+    "code": "Ultra",
+    "regionalPokedexNumber": 29,
+    "nationalPokedexNumber": 571,
+    "sublistings": [
+      {
+        "number": 29
+      },
+      {
+        "number": null
+      },
+      {
+        "number": null
+      },
+      {
+        "number": 13
+      }
+    ]
+  },
+  {
+    "region": 7,
+    "code": "Ultra",
+    "regionalPokedexNumber": 30,
+    "nationalPokedexNumber": 676,
+    "sublistings": [
+      {
+        "number": 30
+      },
+      {
+        "number": null
+      },
+      {
+        "number": null
+      },
+      {
+        "number": 14
+      }
+    ]
+  },
+  {
+    "region": 7,
+    "code": "Ultra",
+    "regionalPokedexNumber": 31,
+    "nationalPokedexNumber": 172,
+    "sublistings": [
+      {
+        "number": 31
+      },
+      {
+        "number": null
+      },
+      {
+        "number": null
+      },
+      {
+        "number": null
+      }
+    ]
+  },
+  {
+    "region": 7,
+    "code": "Ultra",
+    "regionalPokedexNumber": 32,
+    "nationalPokedexNumber": 25,
+    "sublistings": [
+      {
+        "number": 32
+      },
+      {
+        "number": null
+      },
+      {
+        "number": null
+      },
+      {
+        "number": null
+      }
+    ]
+  },
+  {
+    "region": 7,
+    "code": "Ultra",
+    "regionalPokedexNumber": 33,
+    "nationalPokedexNumber": 26,
+    "sublistings": [
+      {
+        "number": 33
+      },
+      {
+        "number": null
+      },
+      {
+        "number": null
+      },
+      {
+        "number": null
+      }
+    ]
+  },
+  {
+    "region": 7,
+    "code": "Ultra",
+    "regionalPokedexNumber": 34,
+    "nationalPokedexNumber": 736,
+    "sublistings": [
+      {
+        "number": 34
+      },
+      {
+        "number": 11
+      },
+      {
+        "number": 12
+      },
+      {
+        "number": null
+      }
+    ]
+  },
+  {
+    "region": 7,
+    "code": "Ultra",
+    "regionalPokedexNumber": 35,
+    "nationalPokedexNumber": 737,
+    "sublistings": [
+      {
+        "number": 35
+      },
+      {
+        "number": 12
+      },
+      {
+        "number": 13
+      },
+      {
+        "number": null
+      }
+    ]
+  },
+  {
+    "region": 7,
+    "code": "Ultra",
+    "regionalPokedexNumber": 36,
+    "nationalPokedexNumber": 738,
+    "sublistings": [
+      {
+        "number": 36
+      },
+      {
+        "number": 13
+      },
+      {
+        "number": 14
+      },
+      {
+        "number": null
+      }
+    ]
+  },
+  {
+    "region": 7,
+    "code": "Ultra",
+    "regionalPokedexNumber": 37,
+    "nationalPokedexNumber": 438,
+    "sublistings": [
+      {
+        "number": 37
+      },
+      {
+        "number": 14
+      },
+      {
+        "number": null
+      },
+      {
+        "number": null
+      }
+    ]
+  },
+  {
+    "region": 7,
+    "code": "Ultra",
+    "regionalPokedexNumber": 38,
+    "nationalPokedexNumber": 185,
+    "sublistings": [
+      {
+        "number": 38
+      },
+      {
+        "number": 15
+      },
+      {
+        "number": null
+      },
+      {
+        "number": null
+      }
+    ]
+  },
+  {
+    "region": 7,
+    "code": "Ultra",
+    "regionalPokedexNumber": 39,
+    "nationalPokedexNumber": 440,
+    "sublistings": [
+      {
+        "number": 39
+      },
+      {
+        "number": 16
+      },
+      {
+        "number": 15
+      },
+      {
+        "number": 15
+      }
+    ]
+  },
+  {
+    "region": 7,
+    "code": "Ultra",
+    "regionalPokedexNumber": 40,
+    "nationalPokedexNumber": 113,
+    "sublistings": [
+      {
+        "number": 40
+      },
+      {
+        "number": 17
+      },
+      {
+        "number": 16
+      },
+      {
+        "number": 16
+      }
+    ]
+  },
+  {
+    "region": 7,
+    "code": "Ultra",
+    "regionalPokedexNumber": 41,
+    "nationalPokedexNumber": 242,
+    "sublistings": [
+      {
+        "number": 41
+      },
+      {
+        "number": 18
+      },
+      {
+        "number": 17
+      },
+      {
+        "number": 17
+      }
+    ]
+  },
+  {
+    "region": 7,
+    "code": "Ultra",
+    "regionalPokedexNumber": 42,
+    "nationalPokedexNumber": 446,
+    "sublistings": [
+      {
+        "number": 42
+      },
+      {
+        "number": null
+      },
+      {
+        "number": null
+      },
+      {
+        "number": null
+      }
+    ]
+  },
+  {
+    "region": 7,
+    "code": "Ultra",
+    "regionalPokedexNumber": 43,
+    "nationalPokedexNumber": 143,
+    "sublistings": [
+      {
+        "number": 43
+      },
+      {
+        "number": null
+      },
+      {
+        "number": null
+      },
+      {
+        "number": null
+      }
+    ]
+  },
+  {
+    "region": 7,
+    "code": "Ultra",
+    "regionalPokedexNumber": 44,
+    "nationalPokedexNumber": 79,
+    "sublistings": [
+      {
+        "number": 44
+      },
+      {
+        "number": null
+      },
+      {
+        "number": 18
+      },
+      {
+        "number": null
+      }
+    ]
+  },
+  {
+    "region": 7,
+    "code": "Ultra",
+    "regionalPokedexNumber": 45,
+    "nationalPokedexNumber": 80,
+    "sublistings": [
+      {
+        "number": 45
+      },
+      {
+        "number": null
+      },
+      {
+        "number": 19
+      },
+      {
+        "number": null
+      }
+    ]
+  },
+  {
+    "region": 7,
+    "code": "Ultra",
+    "regionalPokedexNumber": 46,
+    "nationalPokedexNumber": 199,
+    "sublistings": [
+      {
+        "number": 46
+      },
+      {
+        "number": null
+      },
+      {
+        "number": 20
+      },
+      {
+        "number": null
+      }
+    ]
+  },
+  {
+    "region": 7,
+    "code": "Ultra",
+    "regionalPokedexNumber": 47,
+    "nationalPokedexNumber": 278,
+    "sublistings": [
+      {
+        "number": 47
+      },
+      {
+        "number": 19
+      },
+      {
+        "number": 21
+      },
+      {
+        "number": 18
+      }
+    ]
+  },
+  {
+    "region": 7,
+    "code": "Ultra",
+    "regionalPokedexNumber": 48,
+    "nationalPokedexNumber": 279,
+    "sublistings": [
+      {
+        "number": 48
+      },
+      {
+        "number": 20
+      },
+      {
+        "number": 22
+      },
+      {
+        "number": 19
+      }
+    ]
+  },
+  {
+    "region": 7,
+    "code": "Ultra",
+    "regionalPokedexNumber": 49,
+    "nationalPokedexNumber": 63,
+    "sublistings": [
+      {
+        "number": 49
+      },
+      {
+        "number": null
+      },
+      {
+        "number": null
+      },
+      {
+        "number": null
+      }
+    ]
+  },
+  {
+    "region": 7,
+    "code": "Ultra",
+    "regionalPokedexNumber": 50,
+    "nationalPokedexNumber": 64,
+    "sublistings": [
+      {
+        "number": 50
+      },
+      {
+        "number": null
+      },
+      {
+        "number": null
+      },
+      {
+        "number": null
+      }
+    ]
+  },
+  {
+    "region": 7,
+    "code": "Ultra",
+    "regionalPokedexNumber": 51,
+    "nationalPokedexNumber": 65,
+    "sublistings": [
+      {
+        "number": 51
+      },
+      {
+        "number": null
+      },
+      {
+        "number": null
+      },
+      {
+        "number": null
+      }
+    ]
+  },
+  {
+    "region": 7,
+    "code": "Ultra",
+    "regionalPokedexNumber": 52,
+    "nationalPokedexNumber": 52,
+    "sublistings": [
+      {
+        "number": 52
+      },
+      {
+        "number": null
+      },
+      {
+        "number": 23
+      },
+      {
+        "number": null
+      }
+    ]
+  },
+  {
+    "region": 7,
+    "code": "Ultra",
+    "regionalPokedexNumber": 53,
+    "nationalPokedexNumber": 53,
+    "sublistings": [
+      {
+        "number": 53
+      },
+      {
+        "number": null
+      },
+      {
+        "number": 24
+      },
+      {
+        "number": null
+      }
+    ]
+  },
+  {
+    "region": 7,
+    "code": "Ultra",
+    "regionalPokedexNumber": 54,
+    "nationalPokedexNumber": 81,
+    "sublistings": [
+      {
+        "number": 54
+      },
+      {
+        "number": null
+      },
+      {
+        "number": 25
+      },
+      {
+        "number": null
+      }
+    ]
+  },
+  {
+    "region": 7,
+    "code": "Ultra",
+    "regionalPokedexNumber": 55,
+    "nationalPokedexNumber": 82,
+    "sublistings": [
+      {
+        "number": 55
+      },
+      {
+        "number": null
+      },
+      {
+        "number": 26
+      },
+      {
+        "number": null
+      }
+    ]
+  },
+  {
+    "region": 7,
+    "code": "Ultra",
+    "regionalPokedexNumber": 56,
+    "nationalPokedexNumber": 462,
+    "sublistings": [
+      {
+        "number": 56
+      },
+      {
+        "number": null
+      },
+      {
+        "number": 27
+      },
+      {
+        "number": null
+      }
+    ]
+  },
+  {
+    "region": 7,
+    "code": "Ultra",
+    "regionalPokedexNumber": 57,
+    "nationalPokedexNumber": 88,
+    "sublistings": [
+      {
+        "number": 57
+      },
+      {
+        "number": null
+      },
+      {
+        "number": 28
+      },
+      {
+        "number": null
+      }
+    ]
+  },
+  {
+    "region": 7,
+    "code": "Ultra",
+    "regionalPokedexNumber": 58,
+    "nationalPokedexNumber": 89,
+    "sublistings": [
+      {
+        "number": 58
+      },
+      {
+        "number": null
+      },
+      {
+        "number": 29
+      },
+      {
+        "number": null
+      }
+    ]
+  },
+  {
+    "region": 7,
+    "code": "Ultra",
+    "regionalPokedexNumber": 59,
+    "nationalPokedexNumber": 439,
+    "sublistings": [
+      {
+        "number": 59
+      },
+      {
+        "number": null
+      },
+      {
+        "number": null
+      },
+      {
+        "number": null
+      }
+    ]
+  },
+  {
+    "region": 7,
+    "code": "Ultra",
+    "regionalPokedexNumber": 60,
+    "nationalPokedexNumber": 122,
+    "sublistings": [
+      {
+        "number": 60
+      },
+      {
+        "number": null
+      },
+      {
+        "number": null
+      },
+      {
+        "number": null
+      }
+    ]
+  },
+  {
+    "region": 7,
+    "code": "Ultra",
+    "regionalPokedexNumber": 61,
+    "nationalPokedexNumber": 23,
+    "sublistings": [
+      {
+        "number": 61
+      },
+      {
+        "number": null
+      },
+      {
+        "number": null
+      },
+      {
+        "number": null
+      }
+    ]
+  },
+  {
+    "region": 7,
+    "code": "Ultra",
+    "regionalPokedexNumber": 62,
+    "nationalPokedexNumber": 24,
+    "sublistings": [
+      {
+        "number": 62
+      },
+      {
+        "number": null
+      },
+      {
+        "number": null
+      },
+      {
+        "number": null
+      }
+    ]
+  },
+  {
+    "region": 7,
+    "code": "Ultra",
+    "regionalPokedexNumber": 63,
+    "nationalPokedexNumber": 206,
+    "sublistings": [
+      {
+        "number": 63
+      },
+      {
+        "number": null
+      },
+      {
+        "number": null
+      },
+      {
+        "number": null
+      }
+    ]
+  },
+  {
+    "region": 7,
+    "code": "Ultra",
+    "regionalPokedexNumber": 64,
+    "nationalPokedexNumber": 58,
+    "sublistings": [
+      {
+        "number": 64
+      },
+      {
+        "number": null
+      },
+      {
+        "number": null
+      },
+      {
+        "number": null
+      }
+    ]
+  },
+  {
+    "region": 7,
+    "code": "Ultra",
+    "regionalPokedexNumber": 65,
+    "nationalPokedexNumber": 59,
+    "sublistings": [
+      {
+        "number": 65
+      },
+      {
+        "number": null
+      },
+      {
+        "number": null
+      },
+      {
+        "number": null
+      }
+    ]
+  },
+  {
+    "region": 7,
+    "code": "Ultra",
+    "regionalPokedexNumber": 66,
+    "nationalPokedexNumber": 96,
+    "sublistings": [
+      {
+        "number": 66
+      },
+      {
+        "number": null
+      },
+      {
+        "number": null
+      },
+      {
+        "number": 20
+      }
+    ]
+  },
+  {
+    "region": 7,
+    "code": "Ultra",
+    "regionalPokedexNumber": 67,
+    "nationalPokedexNumber": 97,
+    "sublistings": [
+      {
+        "number": 67
+      },
+      {
+        "number": null
+      },
+      {
+        "number": null
+      },
+      {
+        "number": 21
+      }
+    ]
+  },
+  {
+    "region": 7,
+    "code": "Ultra",
+    "regionalPokedexNumber": 68,
+    "nationalPokedexNumber": 296,
+    "sublistings": [
+      {
+        "number": 68
+      },
+      {
+        "number": null
+      },
+      {
+        "number": null
+      },
+      {
+        "number": 22
+      }
+    ]
+  },
+  {
+    "region": 7,
+    "code": "Ultra",
+    "regionalPokedexNumber": 69,
+    "nationalPokedexNumber": 297,
+    "sublistings": [
+      {
+        "number": 69
+      },
+      {
+        "number": null
+      },
+      {
+        "number": null
+      },
+      {
+        "number": 23
+      }
+    ]
+  },
+  {
+    "region": 7,
+    "code": "Ultra",
+    "regionalPokedexNumber": 70,
+    "nationalPokedexNumber": 235,
+    "sublistings": [
+      {
+        "number": 70
+      },
+      {
+        "number": null
+      },
+      {
+        "number": null
+      },
+      {
+        "number": null
+      }
+    ]
+  },
+  {
+    "region": 7,
+    "code": "Ultra",
+    "regionalPokedexNumber": 71,
+    "nationalPokedexNumber": 739,
+    "sublistings": [
+      {
+        "number": 71
+      },
+      {
+        "number": 21
+      },
+      {
+        "number": 30
+      },
+      {
+        "number": 24
+      }
+    ]
+  },
+  {
+    "region": 7,
+    "code": "Ultra",
+    "regionalPokedexNumber": 72,
+    "nationalPokedexNumber": 740,
+    "sublistings": [
+      {
+        "number": 72
+      },
+      {
+        "number": 22
+      },
+      {
+        "number": 31
+      },
+      {
+        "number": 25
+      }
+    ]
+  },
+  {
+    "region": 7,
+    "code": "Ultra",
+    "regionalPokedexNumber": 73,
+    "nationalPokedexNumber": 92,
+    "sublistings": [
+      {
+        "number": 73
+      },
+      {
+        "number": 23
+      },
+      {
+        "number": 32
+      },
+      {
+        "number": null
+      }
+    ]
+  },
+  {
+    "region": 7,
+    "code": "Ultra",
+    "regionalPokedexNumber": 74,
+    "nationalPokedexNumber": 93,
+    "sublistings": [
+      {
+        "number": 74
+      },
+      {
+        "number": 24
+      },
+      {
+        "number": 33
+      },
+      {
+        "number": null
+      }
+    ]
+  },
+  {
+    "region": 7,
+    "code": "Ultra",
+    "regionalPokedexNumber": 75,
+    "nationalPokedexNumber": 94,
+    "sublistings": [
+      {
+        "number": 75
+      },
+      {
+        "number": 25
+      },
+      {
+        "number": 34
+      },
+      {
+        "number": null
+      }
+    ]
+  },
+  {
+    "region": 7,
+    "code": "Ultra",
+    "regionalPokedexNumber": 76,
+    "nationalPokedexNumber": 425,
+    "sublistings": [
+      {
+        "number": 76
+      },
+      {
+        "number": null
+      },
+      {
+        "number": null
+      },
+      {
+        "number": null
+      }
+    ]
+  },
+  {
+    "region": 7,
+    "code": "Ultra",
+    "regionalPokedexNumber": 77,
+    "nationalPokedexNumber": 426,
+    "sublistings": [
+      {
+        "number": 77
+      },
+      {
+        "number": null
+      },
+      {
+        "number": null
+      },
+      {
+        "number": null
+      }
+    ]
+  },
+  {
+    "region": 7,
+    "code": "Ultra",
+    "regionalPokedexNumber": 78,
+    "nationalPokedexNumber": 198,
+    "sublistings": [
+      {
+        "number": 78
+      },
+      {
+        "number": null
+      },
+      {
+        "number": null
+      },
+      {
+        "number": null
+      }
+    ]
+  },
+  {
+    "region": 7,
+    "code": "Ultra",
+    "regionalPokedexNumber": 79,
+    "nationalPokedexNumber": 430,
+    "sublistings": [
+      {
+        "number": 79
+      },
+      {
+        "number": null
+      },
+      {
+        "number": null
+      },
+      {
+        "number": null
+      }
+    ]
+  },
+  {
+    "region": 7,
+    "code": "Ultra",
+    "regionalPokedexNumber": 80,
+    "nationalPokedexNumber": 41,
+    "sublistings": [
+      {
+        "number": 80
+      },
+      {
+        "number": 26
+      },
+      {
+        "number": 35
+      },
+      {
+        "number": 26
+      }
+    ]
+  },
+  {
+    "region": 7,
+    "code": "Ultra",
+    "regionalPokedexNumber": 81,
+    "nationalPokedexNumber": 42,
+    "sublistings": [
+      {
+        "number": 81
+      },
+      {
+        "number": 27
+      },
+      {
+        "number": 36
+      },
+      {
+        "number": 27
+      }
+    ]
+  },
+  {
+    "region": 7,
+    "code": "Ultra",
+    "regionalPokedexNumber": 82,
+    "nationalPokedexNumber": 169,
+    "sublistings": [
+      {
+        "number": 82
+      },
+      {
+        "number": 28
+      },
+      {
+        "number": 37
+      },
+      {
+        "number": 28
+      }
+    ]
+  },
+  {
+    "region": 7,
+    "code": "Ultra",
+    "regionalPokedexNumber": 83,
+    "nationalPokedexNumber": 714,
+    "sublistings": [
+      {
+        "number": 83
+      },
+      {
+        "number": null
+      },
+      {
+        "number": null
+      },
+      {
+        "number": 29
+      }
+    ]
+  },
+  {
+    "region": 7,
+    "code": "Ultra",
+    "regionalPokedexNumber": 84,
+    "nationalPokedexNumber": 715,
+    "sublistings": [
+      {
+        "number": 84
+      },
+      {
+        "number": null
+      },
+      {
+        "number": null
+      },
+      {
+        "number": 30
+      }
+    ]
+  },
+  {
+    "region": 7,
+    "code": "Ultra",
+    "regionalPokedexNumber": 85,
+    "nationalPokedexNumber": 50,
+    "sublistings": [
+      {
+        "number": 85
+      },
+      {
+        "number": 29
+      },
+      {
+        "number": 38
+      },
+      {
+        "number": 31
+      }
+    ]
+  },
+  {
+    "region": 7,
+    "code": "Ultra",
+    "regionalPokedexNumber": 86,
+    "nationalPokedexNumber": 51,
+    "sublistings": [
+      {
+        "number": 86
+      },
+      {
+        "number": 30
+      },
+      {
+        "number": 39
+      },
+      {
+        "number": 32
+      }
+    ]
+  },
+  {
+    "region": 7,
+    "code": "Ultra",
+    "regionalPokedexNumber": 87,
+    "nationalPokedexNumber": 21,
+    "sublistings": [
+      {
+        "number": 87
+      },
+      {
+        "number": null
+      },
+      {
+        "number": 40
+      },
+      {
+        "number": 33
+      }
+    ]
+  },
+  {
+    "region": 7,
+    "code": "Ultra",
+    "regionalPokedexNumber": 88,
+    "nationalPokedexNumber": 22,
+    "sublistings": [
+      {
+        "number": 88
+      },
+      {
+        "number": null
+      },
+      {
+        "number": 41
+      },
+      {
+        "number": 34
+      }
+    ]
+  },
+  {
+    "region": 7,
+    "code": "Ultra",
+    "regionalPokedexNumber": 89,
+    "nationalPokedexNumber": 627,
+    "sublistings": [
+      {
+        "number": 89
+      },
+      {
+        "number": null
+      },
+      {
+        "number": null
+      },
+      {
+        "number": 35
+      }
+    ]
+  },
+  {
+    "region": 7,
+    "code": "Ultra",
+    "regionalPokedexNumber": 90,
+    "nationalPokedexNumber": 628,
+    "sublistings": [
+      {
+        "number": 90
+      },
+      {
+        "number": null
+      },
+      {
+        "number": null
+      },
+      {
+        "number": 36
+      }
+    ]
+  },
+  {
+    "region": 7,
+    "code": "Ultra",
+    "regionalPokedexNumber": 91,
+    "nationalPokedexNumber": 629,
+    "sublistings": [
+      {
+        "number": 91
+      },
+      {
+        "number": null
+      },
+      {
+        "number": null
+      },
+      {
+        "number": 37
+      }
+    ]
+  },
+  {
+    "region": 7,
+    "code": "Ultra",
+    "regionalPokedexNumber": 92,
+    "nationalPokedexNumber": 630,
+    "sublistings": [
+      {
+        "number": 92
+      },
+      {
+        "number": null
+      },
+      {
+        "number": null
+      },
+      {
+        "number": 38
+      }
+    ]
+  },
+  {
+    "region": 7,
+    "code": "Ultra",
+    "regionalPokedexNumber": 93,
+    "nationalPokedexNumber": 56,
+    "sublistings": [
+      {
+        "number": 93
+      },
+      {
+        "number": null
+      },
+      {
+        "number": null
+      },
+      {
+        "number": 39
+      }
+    ]
+  },
+  {
+    "region": 7,
+    "code": "Ultra",
+    "regionalPokedexNumber": 94,
+    "nationalPokedexNumber": 57,
+    "sublistings": [
+      {
+        "number": 94
+      },
+      {
+        "number": null
+      },
+      {
+        "number": null
+      },
+      {
+        "number": 40
+      }
+    ]
+  },
+  {
+    "region": 7,
+    "code": "Ultra",
+    "regionalPokedexNumber": 95,
+    "nationalPokedexNumber": 225,
+    "sublistings": [
+      {
+        "number": 95
+      },
+      {
+        "number": null
+      },
+      {
+        "number": null
+      },
+      {
+        "number": null
+      }
+    ]
+  },
+  {
+    "region": 7,
+    "code": "Ultra",
+    "regionalPokedexNumber": 96,
+    "nationalPokedexNumber": 701,
+    "sublistings": [
+      {
+        "number": 96
+      },
+      {
+        "number": null
+      },
+      {
+        "number": null
+      },
+      {
+        "number": null
+      }
+    ]
+  },
+  {
+    "region": 7,
+    "code": "Ultra",
+    "regionalPokedexNumber": 97,
+    "nationalPokedexNumber": 741,
+    "sublistings": [
+      {
+        "number": 97
+      },
+      {
+        "number": 31
+      },
+      {
+        "number": 42
+      },
+      {
+        "number": 41
+      }
+    ]
+  },
+  {
+    "region": 7,
+    "code": "Ultra",
+    "regionalPokedexNumber": 98,
+    "nationalPokedexNumber": 742,
+    "sublistings": [
+      {
+        "number": 98
+      },
+      {
+        "number": null
+      },
+      {
+        "number": 43
+      },
+      {
+        "number": 42
+      }
+    ]
+  },
+  {
+    "region": 7,
+    "code": "Ultra",
+    "regionalPokedexNumber": 99,
+    "nationalPokedexNumber": 743,
+    "sublistings": [
+      {
+        "number": 99
+      },
+      {
+        "number": null
+      },
+      {
+        "number": 44
+      },
+      {
+        "number": 43
+      }
+    ]
+  },
+  {
+    "region": 7,
+    "code": "Ultra",
+    "regionalPokedexNumber": 100,
+    "nationalPokedexNumber": 669,
+    "sublistings": [
+      {
+        "number": 100
+      },
+      {
+        "number": null
+      },
+      {
+        "number": 45
+      },
+      {
+        "number": 44
+      }
+    ]
+  },
+  {
+    "region": 7,
+    "code": "Ultra",
+    "regionalPokedexNumber": 101,
+    "nationalPokedexNumber": 670,
+    "sublistings": [
+      {
+        "number": 101
+      },
+      {
+        "number": null
+      },
+      {
+        "number": 46
+      },
+      {
+        "number": 45
+      }
+    ]
+  },
+  {
+    "region": 7,
+    "code": "Ultra",
+    "regionalPokedexNumber": 102,
+    "nationalPokedexNumber": 671,
+    "sublistings": [
+      {
+        "number": 102
+      },
+      {
+        "number": null
+      },
+      {
+        "number": 47
+      },
+      {
+        "number": 46
+      }
+    ]
+  },
+  {
+    "region": 7,
+    "code": "Ultra",
+    "regionalPokedexNumber": 103,
+    "nationalPokedexNumber": 548,
+    "sublistings": [
+      {
+        "number": 103
+      },
+      {
+        "number": null
+      },
+      {
+        "number": 48
+      },
+      {
+        "number": 47
+      }
+    ]
+  },
+  {
+    "region": 7,
+    "code": "Ultra",
+    "regionalPokedexNumber": 104,
+    "nationalPokedexNumber": 549,
+    "sublistings": [
+      {
+        "number": 104
+      },
+      {
+        "number": null
+      },
+      {
+        "number": 49
+      },
+      {
+        "number": 48
+      }
+    ]
+  },
+  {
+    "region": 7,
+    "code": "Ultra",
+    "regionalPokedexNumber": 105,
+    "nationalPokedexNumber": 546,
+    "sublistings": [
+      {
+        "number": 105
+      },
+      {
+        "number": null
+      },
+      {
+        "number": 50
+      },
+      {
+        "number": 49
+      }
+    ]
+  },
+  {
+    "region": 7,
+    "code": "Ultra",
+    "regionalPokedexNumber": 106,
+    "nationalPokedexNumber": 547,
+    "sublistings": [
+      {
+        "number": 106
+      },
+      {
+        "number": null
+      },
+      {
+        "number": 51
+      },
+      {
+        "number": 50
+      }
+    ]
+  },
+  {
+    "region": 7,
+    "code": "Ultra",
+    "regionalPokedexNumber": 107,
+    "nationalPokedexNumber": 54,
+    "sublistings": [
+      {
+        "number": 107
+      },
+      {
+        "number": 32
+      },
+      {
+        "number": 52
+      },
+      {
+        "number": 51
+      }
+    ]
+  },
+  {
+    "region": 7,
+    "code": "Ultra",
+    "regionalPokedexNumber": 108,
+    "nationalPokedexNumber": 55,
+    "sublistings": [
+      {
+        "number": 108
+      },
+      {
+        "number": 33
+      },
+      {
+        "number": 53
+      },
+      {
+        "number": 52
+      }
+    ]
+  },
+  {
+    "region": 7,
+    "code": "Ultra",
+    "regionalPokedexNumber": 109,
+    "nationalPokedexNumber": 238,
+    "sublistings": [
+      {
+        "number": 109
+      },
+      {
+        "number": null
+      },
+      {
+        "number": null
+      },
+      {
+        "number": null
+      }
+    ]
+  },
+  {
+    "region": 7,
+    "code": "Ultra",
+    "regionalPokedexNumber": 110,
+    "nationalPokedexNumber": 124,
+    "sublistings": [
+      {
+        "number": 110
+      },
+      {
+        "number": null
+      },
+      {
+        "number": null
+      },
+      {
+        "number": null
+      }
+    ]
+  },
+  {
+    "region": 7,
+    "code": "Ultra",
+    "regionalPokedexNumber": 111,
+    "nationalPokedexNumber": 129,
+    "sublistings": [
+      {
+        "number": 111
+      },
+      {
+        "number": 34
+      },
+      {
+        "number": 54
+      },
+      {
+        "number": 53
+      }
+    ]
+  },
+  {
+    "region": 7,
+    "code": "Ultra",
+    "regionalPokedexNumber": 112,
+    "nationalPokedexNumber": 130,
+    "sublistings": [
+      {
+        "number": 112
+      },
+      {
+        "number": 35
+      },
+      {
+        "number": 55
+      },
+      {
+        "number": 54
+      }
+    ]
+  },
+  {
+    "region": 7,
+    "code": "Ultra",
+    "regionalPokedexNumber": 113,
+    "nationalPokedexNumber": 339,
+    "sublistings": [
+      {
+        "number": 113
+      },
+      {
+        "number": 36
+      },
+      {
+        "number": null
+      },
+      {
+        "number": 55
+      }
+    ]
+  },
+  {
+    "region": 7,
+    "code": "Ultra",
+    "regionalPokedexNumber": 114,
+    "nationalPokedexNumber": 340,
+    "sublistings": [
+      {
+        "number": 114
+      },
+      {
+        "number": 37
+      },
+      {
+        "number": null
+      },
+      {
+        "number": 56
+      }
+    ]
+  },
+  {
+    "region": 7,
+    "code": "Ultra",
+    "regionalPokedexNumber": 115,
+    "nationalPokedexNumber": 86,
+    "sublistings": [
+      {
+        "number": 115
+      },
+      {
+        "number": null
+      },
+      {
+        "number": null
+      },
+      {
+        "number": null
+      }
+    ]
+  },
+  {
+    "region": 7,
+    "code": "Ultra",
+    "regionalPokedexNumber": 116,
+    "nationalPokedexNumber": 87,
+    "sublistings": [
+      {
+        "number": 116
+      },
+      {
+        "number": null
+      },
+      {
+        "number": null
+      },
+      {
+        "number": null
+      }
+    ]
+  },
+  {
+    "region": 7,
+    "code": "Ultra",
+    "regionalPokedexNumber": 117,
+    "nationalPokedexNumber": 66,
+    "sublistings": [
+      {
+        "number": 117
+      },
+      {
+        "number": null
+      },
+      {
+        "number": null
+      },
+      {
+        "number": 57
+      }
+    ]
+  },
+  {
+    "region": 7,
+    "code": "Ultra",
+    "regionalPokedexNumber": 118,
+    "nationalPokedexNumber": 67,
+    "sublistings": [
+      {
+        "number": 118
+      },
+      {
+        "number": null
+      },
+      {
+        "number": null
+      },
+      {
+        "number": 58
+      }
+    ]
+  },
+  {
+    "region": 7,
+    "code": "Ultra",
+    "regionalPokedexNumber": 119,
+    "nationalPokedexNumber": 68,
+    "sublistings": [
+      {
+        "number": 119
+      },
+      {
+        "number": null
+      },
+      {
+        "number": null
+      },
+      {
+        "number": 59
+      }
+    ]
+  },
+  {
+    "region": 7,
+    "code": "Ultra",
+    "regionalPokedexNumber": 120,
+    "nationalPokedexNumber": 524,
+    "sublistings": [
+      {
+        "number": 120
+      },
+      {
+        "number": null
+      },
+      {
+        "number": null
+      },
+      {
+        "number": 60
+      }
+    ]
+  },
+  {
+    "region": 7,
+    "code": "Ultra",
+    "regionalPokedexNumber": 121,
+    "nationalPokedexNumber": 525,
+    "sublistings": [
+      {
+        "number": 121
+      },
+      {
+        "number": null
+      },
+      {
+        "number": null
+      },
+      {
+        "number": 61
+      }
+    ]
+  },
+  {
+    "region": 7,
+    "code": "Ultra",
+    "regionalPokedexNumber": 122,
+    "nationalPokedexNumber": 526,
+    "sublistings": [
+      {
+        "number": 122
+      },
+      {
+        "number": null
+      },
+      {
+        "number": null
+      },
+      {
+        "number": 62
+      }
+    ]
+  },
+  {
+    "region": 7,
+    "code": "Ultra",
+    "regionalPokedexNumber": 123,
+    "nationalPokedexNumber": 703,
+    "sublistings": [
+      {
+        "number": 123
+      },
+      {
+        "number": null
+      },
+      {
+        "number": null
+      },
+      {
+        "number": 63
+      }
+    ]
+  },
+  {
+    "region": 7,
+    "code": "Ultra",
+    "regionalPokedexNumber": 124,
+    "nationalPokedexNumber": 302,
+    "sublistings": [
+      {
+        "number": 124
+      },
+      {
+        "number": null
+      },
+      {
+        "number": null
+      },
+      {
+        "number": 64
+      }
+    ]
+  },
+  {
+    "region": 7,
+    "code": "Ultra",
+    "regionalPokedexNumber": 125,
+    "nationalPokedexNumber": 303,
+    "sublistings": [
+      {
+        "number": 125
+      },
+      {
+        "number": null
+      },
+      {
+        "number": null
+      },
+      {
+        "number": null
+      }
+    ]
+  },
+  {
+    "region": 7,
+    "code": "Ultra",
+    "regionalPokedexNumber": 126,
+    "nationalPokedexNumber": 744,
+    "sublistings": [
+      {
+        "number": 126
+      },
+      {
+        "number": null
+      },
+      {
+        "number": null
+      },
+      {
+        "number": 65
+      }
+    ]
+  },
+  {
+    "region": 7,
+    "code": "Ultra",
+    "regionalPokedexNumber": 127,
+    "nationalPokedexNumber": 745,
+    "sublistings": [
+      {
+        "number": 127
+      },
+      {
+        "number": null
+      },
+      {
+        "number": null
+      },
+      {
+        "number": 66
+      }
+    ]
+  },
+  {
+    "region": 7,
+    "code": "Ultra",
+    "regionalPokedexNumber": 128,
+    "nationalPokedexNumber": 327,
+    "sublistings": [
+      {
+        "number": 128
+      },
+      {
+        "number": null
+      },
+      {
+        "number": null
+      },
+      {
+        "number": null
+      }
+    ]
+  },
+  {
+    "region": 7,
+    "code": "Ultra",
+    "regionalPokedexNumber": 129,
+    "nationalPokedexNumber": 72,
+    "sublistings": [
+      {
+        "number": 129
+      },
+      {
+        "number": 38
+      },
+      {
+        "number": 56
+      },
+      {
+        "number": 67
+      }
+    ]
+  },
+  {
+    "region": 7,
+    "code": "Ultra",
+    "regionalPokedexNumber": 130,
+    "nationalPokedexNumber": 73,
+    "sublistings": [
+      {
+        "number": 130
+      },
+      {
+        "number": 39
+      },
+      {
+        "number": 57
+      },
+      {
+        "number": 68
+      }
+    ]
+  },
+  {
+    "region": 7,
+    "code": "Ultra",
+    "regionalPokedexNumber": 131,
+    "nationalPokedexNumber": 456,
+    "sublistings": [
+      {
+        "number": 131
+      },
+      {
+        "number": 40
+      },
+      {
+        "number": 58
+      },
+      {
+        "number": 69
+      }
+    ]
+  },
+  {
+    "region": 7,
+    "code": "Ultra",
+    "regionalPokedexNumber": 132,
+    "nationalPokedexNumber": 457,
+    "sublistings": [
+      {
+        "number": 132
+      },
+      {
+        "number": 41
+      },
+      {
+        "number": 59
+      },
+      {
+        "number": 70
+      }
+    ]
+  },
+  {
+    "region": 7,
+    "code": "Ultra",
+    "regionalPokedexNumber": 133,
+    "nationalPokedexNumber": 746,
+    "sublistings": [
+      {
+        "number": 133
+      },
+      {
+        "number": 42
+      },
+      {
+        "number": 60
+      },
+      {
+        "number": null
+      }
+    ]
+  },
+  {
+    "region": 7,
+    "code": "Ultra",
+    "regionalPokedexNumber": 134,
+    "nationalPokedexNumber": 370,
+    "sublistings": [
+      {
+        "number": 134
+      },
+      {
+        "number": 43
+      },
+      {
+        "number": null
+      },
+      {
+        "number": null
+      }
+    ]
+  },
+  {
+    "region": 7,
+    "code": "Ultra",
+    "regionalPokedexNumber": 135,
+    "nationalPokedexNumber": 222,
+    "sublistings": [
+      {
+        "number": 135
+      },
+      {
+        "number": 44
+      },
+      {
+        "number": null
+      },
+      {
+        "number": null
+      }
+    ]
+  },
+  {
+    "region": 7,
+    "code": "Ultra",
+    "regionalPokedexNumber": 136,
+    "nationalPokedexNumber": 747,
+    "sublistings": [
+      {
+        "number": 136
+      },
+      {
+        "number": 45
+      },
+      {
+        "number": null
+      },
+      {
+        "number": null
+      }
+    ]
+  },
+  {
+    "region": 7,
+    "code": "Ultra",
+    "regionalPokedexNumber": 137,
+    "nationalPokedexNumber": 748,
+    "sublistings": [
+      {
+        "number": 137
+      },
+      {
+        "number": 46
+      },
+      {
+        "number": null
+      },
+      {
+        "number": null
+      }
+    ]
+  },
+  {
+    "region": 7,
+    "code": "Ultra",
+    "regionalPokedexNumber": 138,
+    "nationalPokedexNumber": 90,
+    "sublistings": [
+      {
+        "number": 138
+      },
+      {
+        "number": null
+      },
+      {
+        "number": null
+      },
+      {
+        "number": null
+      }
+    ]
+  },
+  {
+    "region": 7,
+    "code": "Ultra",
+    "regionalPokedexNumber": 139,
+    "nationalPokedexNumber": 91,
+    "sublistings": [
+      {
+        "number": 139
+      },
+      {
+        "number": null
+      },
+      {
+        "number": null
+      },
+      {
+        "number": null
+      }
+    ]
+  },
+  {
+    "region": 7,
+    "code": "Ultra",
+    "regionalPokedexNumber": 140,
+    "nationalPokedexNumber": 366,
+    "sublistings": [
+      {
+        "number": 140
+      },
+      {
+        "number": null
+      },
+      {
+        "number": 61
+      },
+      {
+        "number": null
+      }
+    ]
+  },
+  {
+    "region": 7,
+    "code": "Ultra",
+    "regionalPokedexNumber": 141,
+    "nationalPokedexNumber": 367,
+    "sublistings": [
+      {
+        "number": 141
+      },
+      {
+        "number": null
+      },
+      {
+        "number": 62
+      },
+      {
+        "number": null
+      }
+    ]
+  },
+  {
+    "region": 7,
+    "code": "Ultra",
+    "regionalPokedexNumber": 142,
+    "nationalPokedexNumber": 368,
+    "sublistings": [
+      {
+        "number": 142
+      },
+      {
+        "number": null
+      },
+      {
+        "number": 63
+      },
+      {
+        "number": null
+      }
+    ]
+  },
+  {
+    "region": 7,
+    "code": "Ultra",
+    "regionalPokedexNumber": 143,
+    "nationalPokedexNumber": 223,
+    "sublistings": [
+      {
+        "number": 143
+      },
+      {
+        "number": 47
+      },
+      {
+        "number": null
+      },
+      {
+        "number": null
+      }
+    ]
+  },
+  {
+    "region": 7,
+    "code": "Ultra",
+    "regionalPokedexNumber": 144,
+    "nationalPokedexNumber": 224,
+    "sublistings": [
+      {
+        "number": 144
+      },
+      {
+        "number": 48
+      },
+      {
+        "number": null
+      },
+      {
+        "number": null
+      }
+    ]
+  },
+  {
+    "region": 7,
+    "code": "Ultra",
+    "regionalPokedexNumber": 145,
+    "nationalPokedexNumber": 458,
+    "sublistings": [
+      {
+        "number": 145
+      },
+      {
+        "number": 49
+      },
+      {
+        "number": null
+      },
+      {
+        "number": null
+      }
+    ]
+  },
+  {
+    "region": 7,
+    "code": "Ultra",
+    "regionalPokedexNumber": 146,
+    "nationalPokedexNumber": 226,
+    "sublistings": [
+      {
+        "number": 146
+      },
+      {
+        "number": 50
+      },
+      {
+        "number": null
+      },
+      {
+        "number": null
+      }
+    ]
+  },
+  {
+    "region": 7,
+    "code": "Ultra",
+    "regionalPokedexNumber": 147,
+    "nationalPokedexNumber": 371,
+    "sublistings": [
+      {
+        "number": 147
+      },
+      {
+        "number": null
+      },
+      {
+        "number": null
+      },
+      {
+        "number": null
+      }
+    ]
+  },
+  {
+    "region": 7,
+    "code": "Ultra",
+    "regionalPokedexNumber": 148,
+    "nationalPokedexNumber": 372,
+    "sublistings": [
+      {
+        "number": 148
+      },
+      {
+        "number": null
+      },
+      {
+        "number": null
+      },
+      {
+        "number": null
+      }
+    ]
+  },
+  {
+    "region": 7,
+    "code": "Ultra",
+    "regionalPokedexNumber": 149,
+    "nationalPokedexNumber": 373,
+    "sublistings": [
+      {
+        "number": 149
+      },
+      {
+        "number": null
+      },
+      {
+        "number": null
+      },
+      {
+        "number": null
+      }
+    ]
+  },
+  {
+    "region": 7,
+    "code": "Ultra",
+    "regionalPokedexNumber": 150,
+    "nationalPokedexNumber": 506,
+    "sublistings": [
+      {
+        "number": null
+      },
+      {
+        "number": 51
+      },
+      {
+        "number": null
+      },
+      {
+        "number": null
+      }
+    ]
+  },
+  {
+    "region": 7,
+    "code": "Ultra",
+    "regionalPokedexNumber": 151,
+    "nationalPokedexNumber": 507,
+    "sublistings": [
+      {
+        "number": null
+      },
+      {
+        "number": 52
+      },
+      {
+        "number": null
+      },
+      {
+        "number": null
+      }
+    ]
+  },
+  {
+    "region": 7,
+    "code": "Ultra",
+    "regionalPokedexNumber": 152,
+    "nationalPokedexNumber": 508,
+    "sublistings": [
+      {
+        "number": null
+      },
+      {
+        "number": 53
+      },
+      {
+        "number": null
+      },
+      {
+        "number": null
+      }
+    ]
+  },
+  {
+    "region": 7,
+    "code": "Ultra",
+    "regionalPokedexNumber": 153,
+    "nationalPokedexNumber": 133,
+    "sublistings": [
+      {
+        "number": null
+      },
+      {
+        "number": 54
+      },
+      {
+        "number": null
+      },
+      {
+        "number": null
+      }
+    ]
+  },
+  {
+    "region": 7,
+    "code": "Ultra",
+    "regionalPokedexNumber": 154,
+    "nationalPokedexNumber": 134,
+    "sublistings": [
+      {
+        "number": null
+      },
+      {
+        "number": 55
+      },
+      {
+        "number": null
+      },
+      {
+        "number": null
+      }
+    ]
+  },
+  {
+    "region": 7,
+    "code": "Ultra",
+    "regionalPokedexNumber": 155,
+    "nationalPokedexNumber": 135,
+    "sublistings": [
+      {
+        "number": null
+      },
+      {
+        "number": 56
+      },
+      {
+        "number": null
+      },
+      {
+        "number": null
+      }
+    ]
+  },
+  {
+    "region": 7,
+    "code": "Ultra",
+    "regionalPokedexNumber": 156,
+    "nationalPokedexNumber": 136,
+    "sublistings": [
+      {
+        "number": null
+      },
+      {
+        "number": 57
+      },
+      {
+        "number": null
+      },
+      {
+        "number": null
+      }
+    ]
+  },
+  {
+    "region": 7,
+    "code": "Ultra",
+    "regionalPokedexNumber": 157,
+    "nationalPokedexNumber": 196,
+    "sublistings": [
+      {
+        "number": null
+      },
+      {
+        "number": 58
+      },
+      {
+        "number": null
+      },
+      {
+        "number": null
+      }
+    ]
+  },
+  {
+    "region": 7,
+    "code": "Ultra",
+    "regionalPokedexNumber": 158,
+    "nationalPokedexNumber": 197,
+    "sublistings": [
+      {
+        "number": null
+      },
+      {
+        "number": 59
+      },
+      {
+        "number": null
+      },
+      {
+        "number": null
+      }
+    ]
+  },
+  {
+    "region": 7,
+    "code": "Ultra",
+    "regionalPokedexNumber": 159,
+    "nationalPokedexNumber": 470,
+    "sublistings": [
+      {
+        "number": null
+      },
+      {
+        "number": 60
+      },
+      {
+        "number": null
+      },
+      {
+        "number": null
+      }
+    ]
+  },
+  {
+    "region": 7,
+    "code": "Ultra",
+    "regionalPokedexNumber": 160,
+    "nationalPokedexNumber": 471,
+    "sublistings": [
+      {
+        "number": null
+      },
+      {
+        "number": 61
+      },
+      {
+        "number": null
+      },
+      {
+        "number": null
+      }
+    ]
+  },
+  {
+    "region": 7,
+    "code": "Ultra",
+    "regionalPokedexNumber": 161,
+    "nationalPokedexNumber": 700,
+    "sublistings": [
+      {
+        "number": null
+      },
+      {
+        "number": 62
+      },
+      {
+        "number": null
+      },
+      {
+        "number": null
+      }
+    ]
+  },
+  {
+    "region": 7,
+    "code": "Ultra",
+    "regionalPokedexNumber": 162,
+    "nationalPokedexNumber": 179,
+    "sublistings": [
+      {
+        "number": null
+      },
+      {
+        "number": 63
+      },
+      {
+        "number": null
+      },
+      {
+        "number": null
+      }
+    ]
+  },
+  {
+    "region": 7,
+    "code": "Ultra",
+    "regionalPokedexNumber": 163,
+    "nationalPokedexNumber": 180,
+    "sublistings": [
+      {
+        "number": null
+      },
+      {
+        "number": 64
+      },
+      {
+        "number": null
+      },
+      {
+        "number": null
+      }
+    ]
+  },
+  {
+    "region": 7,
+    "code": "Ultra",
+    "regionalPokedexNumber": 164,
+    "nationalPokedexNumber": 181,
+    "sublistings": [
+      {
+        "number": null
+      },
+      {
+        "number": 65
+      },
+      {
+        "number": null
+      },
+      {
+        "number": null
+      }
+    ]
+  },
+  {
+    "region": 7,
+    "code": "Ultra",
+    "regionalPokedexNumber": 165,
+    "nationalPokedexNumber": 749,
+    "sublistings": [
+      {
+        "number": null
+      },
+      {
+        "number": 66
+      },
+      {
+        "number": 64
+      },
+      {
+        "number": 71
+      }
+    ]
+  },
+  {
+    "region": 7,
+    "code": "Ultra",
+    "regionalPokedexNumber": 166,
+    "nationalPokedexNumber": 750,
+    "sublistings": [
+      {
+        "number": null
+      },
+      {
+        "number": 67
+      },
+      {
+        "number": 65
+      },
+      {
+        "number": 72
+      }
+    ]
+  },
+  {
+    "region": 7,
+    "code": "Ultra",
+    "regionalPokedexNumber": 167,
+    "nationalPokedexNumber": 174,
+    "sublistings": [
+      {
+        "number": null
+      },
+      {
+        "number": 68
+      },
+      {
+        "number": null
+      },
+      {
+        "number": null
+      }
+    ]
+  },
+  {
+    "region": 7,
+    "code": "Ultra",
+    "regionalPokedexNumber": 168,
+    "nationalPokedexNumber": 39,
+    "sublistings": [
+      {
+        "number": null
+      },
+      {
+        "number": 69
+      },
+      {
+        "number": null
+      },
+      {
+        "number": null
+      }
+    ]
+  },
+  {
+    "region": 7,
+    "code": "Ultra",
+    "regionalPokedexNumber": 169,
+    "nationalPokedexNumber": 40,
+    "sublistings": [
+      {
+        "number": null
+      },
+      {
+        "number": 70
+      },
+      {
+        "number": null
+      },
+      {
+        "number": null
+      }
+    ]
+  },
+  {
+    "region": 7,
+    "code": "Ultra",
+    "regionalPokedexNumber": 170,
+    "nationalPokedexNumber": 128,
+    "sublistings": [
+      {
+        "number": null
+      },
+      {
+        "number": 71
+      },
+      {
+        "number": null
+      },
+      {
+        "number": 73
+      }
+    ]
+  },
+  {
+    "region": 7,
+    "code": "Ultra",
+    "regionalPokedexNumber": 171,
+    "nationalPokedexNumber": 241,
+    "sublistings": [
+      {
+        "number": null
+      },
+      {
+        "number": 72
+      },
+      {
+        "number": null
+      },
+      {
+        "number": 74
+      }
+    ]
+  },
+  {
+    "region": 7,
+    "code": "Ultra",
+    "regionalPokedexNumber": 172,
+    "nationalPokedexNumber": 283,
+    "sublistings": [
+      {
+        "number": null
+      },
+      {
+        "number": 73
+      },
+      {
+        "number": 66
+      },
+      {
+        "number": null
+      }
+    ]
+  },
+  {
+    "region": 7,
+    "code": "Ultra",
+    "regionalPokedexNumber": 173,
+    "nationalPokedexNumber": 284,
+    "sublistings": [
+      {
+        "number": null
+      },
+      {
+        "number": 74
+      },
+      {
+        "number": 67
+      },
+      {
+        "number": null
+      }
+    ]
+  },
+  {
+    "region": 7,
+    "code": "Ultra",
+    "regionalPokedexNumber": 174,
+    "nationalPokedexNumber": 751,
+    "sublistings": [
+      {
+        "number": null
+      },
+      {
+        "number": 75
+      },
+      {
+        "number": 68
+      },
+      {
+        "number": null
+      }
+    ]
+  },
+  {
+    "region": 7,
+    "code": "Ultra",
+    "regionalPokedexNumber": 175,
+    "nationalPokedexNumber": 752,
+    "sublistings": [
+      {
+        "number": null
+      },
+      {
+        "number": 76
+      },
+      {
+        "number": 69
+      },
+      {
+        "number": null
+      }
+    ]
+  },
+  {
+    "region": 7,
+    "code": "Ultra",
+    "regionalPokedexNumber": 176,
+    "nationalPokedexNumber": 753,
+    "sublistings": [
+      {
+        "number": null
+      },
+      {
+        "number": 77
+      },
+      {
+        "number": null
+      },
+      {
+        "number": null
+      }
+    ]
+  },
+  {
+    "region": 7,
+    "code": "Ultra",
+    "regionalPokedexNumber": 177,
+    "nationalPokedexNumber": 754,
+    "sublistings": [
+      {
+        "number": null
+      },
+      {
+        "number": 78
+      },
+      {
+        "number": null
+      },
+      {
+        "number": null
+      }
+    ]
+  },
+  {
+    "region": 7,
+    "code": "Ultra",
+    "regionalPokedexNumber": 178,
+    "nationalPokedexNumber": 755,
+    "sublistings": [
+      {
+        "number": null
+      },
+      {
+        "number": 79
+      },
+      {
+        "number": 70
+      },
+      {
+        "number": null
+      }
+    ]
+  },
+  {
+    "region": 7,
+    "code": "Ultra",
+    "regionalPokedexNumber": 179,
+    "nationalPokedexNumber": 756,
+    "sublistings": [
+      {
+        "number": null
+      },
+      {
+        "number": 80
+      },
+      {
+        "number": 71
+      },
+      {
+        "number": null
+      }
+    ]
+  },
+  {
+    "region": 7,
+    "code": "Ultra",
+    "regionalPokedexNumber": 180,
+    "nationalPokedexNumber": 46,
+    "sublistings": [
+      {
+        "number": null
+      },
+      {
+        "number": 81
+      },
+      {
+        "number": 72
+      },
+      {
+        "number": null
+      }
+    ]
+  },
+  {
+    "region": 7,
+    "code": "Ultra",
+    "regionalPokedexNumber": 181,
+    "nationalPokedexNumber": 47,
+    "sublistings": [
+      {
+        "number": null
+      },
+      {
+        "number": 82
+      },
+      {
+        "number": 73
+      },
+      {
+        "number": null
+      }
+    ]
+  },
+  {
+    "region": 7,
+    "code": "Ultra",
+    "regionalPokedexNumber": 182,
+    "nationalPokedexNumber": 60,
+    "sublistings": [
+      {
+        "number": null
+      },
+      {
+        "number": 83
+      },
+      {
+        "number": 74
+      },
+      {
+        "number": null
+      }
+    ]
+  },
+  {
+    "region": 7,
+    "code": "Ultra",
+    "regionalPokedexNumber": 183,
+    "nationalPokedexNumber": 61,
+    "sublistings": [
+      {
+        "number": null
+      },
+      {
+        "number": 84
+      },
+      {
+        "number": 75
+      },
+      {
+        "number": null
+      }
+    ]
+  },
+  {
+    "region": 7,
+    "code": "Ultra",
+    "regionalPokedexNumber": 184,
+    "nationalPokedexNumber": 62,
+    "sublistings": [
+      {
+        "number": null
+      },
+      {
+        "number": 85
+      },
+      {
+        "number": 76
+      },
+      {
+        "number": null
+      }
+    ]
+  },
+  {
+    "region": 7,
+    "code": "Ultra",
+    "regionalPokedexNumber": 185,
+    "nationalPokedexNumber": 186,
+    "sublistings": [
+      {
+        "number": null
+      },
+      {
+        "number": 86
+      },
+      {
+        "number": 77
+      },
+      {
+        "number": null
+      }
+    ]
+  },
+  {
+    "region": 7,
+    "code": "Ultra",
+    "regionalPokedexNumber": 186,
+    "nationalPokedexNumber": 118,
+    "sublistings": [
+      {
+        "number": null
+      },
+      {
+        "number": 87
+      },
+      {
+        "number": 78
+      },
+      {
+        "number": null
+      }
+    ]
+  },
+  {
+    "region": 7,
+    "code": "Ultra",
+    "regionalPokedexNumber": 187,
+    "nationalPokedexNumber": 119,
+    "sublistings": [
+      {
+        "number": null
+      },
+      {
+        "number": 88
+      },
+      {
+        "number": 79
+      },
+      {
+        "number": null
+      }
+    ]
+  },
+  {
+    "region": 7,
+    "code": "Ultra",
+    "regionalPokedexNumber": 188,
+    "nationalPokedexNumber": 550,
+    "sublistings": [
+      {
+        "number": null
+      },
+      {
+        "number": 89
+      },
+      {
+        "number": 80
+      },
+      {
+        "number": 75
+      }
+    ]
+  },
+  {
+    "region": 7,
+    "code": "Ultra",
+    "regionalPokedexNumber": 189,
+    "nationalPokedexNumber": 349,
+    "sublistings": [
+      {
+        "number": null
+      },
+      {
+        "number": 90
+      },
+      {
+        "number": null
+      },
+      {
+        "number": null
+      }
+    ]
+  },
+  {
+    "region": 7,
+    "code": "Ultra",
+    "regionalPokedexNumber": 190,
+    "nationalPokedexNumber": 350,
+    "sublistings": [
+      {
+        "number": null
+      },
+      {
+        "number": 91
+      },
+      {
+        "number": null
+      },
+      {
+        "number": null
+      }
+    ]
+  },
+  {
+    "region": 7,
+    "code": "Ultra",
+    "regionalPokedexNumber": 191,
+    "nationalPokedexNumber": 594,
+    "sublistings": [
+      {
+        "number": null
+      },
+      {
+        "number": 92
+      },
+      {
+        "number": null
+      },
+      {
+        "number": null
+      }
+    ]
+  },
+  {
+    "region": 7,
+    "code": "Ultra",
+    "regionalPokedexNumber": 192,
+    "nationalPokedexNumber": 661,
+    "sublistings": [
+      {
+        "number": null
+      },
+      {
+        "number": 93
+      },
+      {
+        "number": null
+      },
+      {
+        "number": null
+      }
+    ]
+  },
+  {
+    "region": 7,
+    "code": "Ultra",
+    "regionalPokedexNumber": 193,
+    "nationalPokedexNumber": 662,
+    "sublistings": [
+      {
+        "number": null
+      },
+      {
+        "number": 94
+      },
+      {
+        "number": null
+      },
+      {
+        "number": null
+      }
+    ]
+  },
+  {
+    "region": 7,
+    "code": "Ultra",
+    "regionalPokedexNumber": 194,
+    "nationalPokedexNumber": 663,
+    "sublistings": [
+      {
+        "number": null
+      },
+      {
+        "number": 95
+      },
+      {
+        "number": null
+      },
+      {
+        "number": null
+      }
+    ]
+  },
+  {
+    "region": 7,
+    "code": "Ultra",
+    "regionalPokedexNumber": 195,
+    "nationalPokedexNumber": 757,
+    "sublistings": [
+      {
+        "number": null
+      },
+      {
+        "number": 96
+      },
+      {
+        "number": null
+      },
+      {
+        "number": null
+      }
+    ]
+  },
+  {
+    "region": 7,
+    "code": "Ultra",
+    "regionalPokedexNumber": 196,
+    "nationalPokedexNumber": 758,
+    "sublistings": [
+      {
+        "number": null
+      },
+      {
+        "number": 97
+      },
+      {
+        "number": null
+      },
+      {
+        "number": null
+      }
+    ]
+  },
+  {
+    "region": 7,
+    "code": "Ultra",
+    "regionalPokedexNumber": 197,
+    "nationalPokedexNumber": 104,
+    "sublistings": [
+      {
+        "number": null
+      },
+      {
+        "number": 98
+      },
+      {
+        "number": null
+      },
+      {
+        "number": null
+      }
+    ]
+  },
+  {
+    "region": 7,
+    "code": "Ultra",
+    "regionalPokedexNumber": 198,
+    "nationalPokedexNumber": 105,
+    "sublistings": [
+      {
+        "number": null
+      },
+      {
+        "number": 99
+      },
+      {
+        "number": null
+      },
+      {
+        "number": null
+      }
+    ]
+  },
+  {
+    "region": 7,
+    "code": "Ultra",
+    "regionalPokedexNumber": 199,
+    "nationalPokedexNumber": 115,
+    "sublistings": [
+      {
+        "number": null
+      },
+      {
+        "number": 100
+      },
+      {
+        "number": null
+      },
+      {
+        "number": null
+      }
+    ]
+  },
+  {
+    "region": 7,
+    "code": "Ultra",
+    "regionalPokedexNumber": 200,
+    "nationalPokedexNumber": 240,
+    "sublistings": [
+      {
+        "number": null
+      },
+      {
+        "number": 101
+      },
+      {
+        "number": null
+      },
+      {
+        "number": null
+      }
+    ]
+  },
+  {
+    "region": 7,
+    "code": "Ultra",
+    "regionalPokedexNumber": 201,
+    "nationalPokedexNumber": 126,
+    "sublistings": [
+      {
+        "number": null
+      },
+      {
+        "number": 102
+      },
+      {
+        "number": null
+      },
+      {
+        "number": null
+      }
+    ]
+  },
+  {
+    "region": 7,
+    "code": "Ultra",
+    "regionalPokedexNumber": 202,
+    "nationalPokedexNumber": 467,
+    "sublistings": [
+      {
+        "number": null
+      },
+      {
+        "number": 103
+      },
+      {
+        "number": null
+      },
+      {
+        "number": null
+      }
+    ]
+  },
+  {
+    "region": 7,
+    "code": "Ultra",
+    "regionalPokedexNumber": 203,
+    "nationalPokedexNumber": 636,
+    "sublistings": [
+      {
+        "number": null
+      },
+      {
+        "number": 104
+      },
+      {
+        "number": null
+      },
+      {
+        "number": null
+      }
+    ]
+  },
+  {
+    "region": 7,
+    "code": "Ultra",
+    "regionalPokedexNumber": 204,
+    "nationalPokedexNumber": 637,
+    "sublistings": [
+      {
+        "number": null
+      },
+      {
+        "number": 105
+      },
+      {
+        "number": null
+      },
+      {
+        "number": null
+      }
+    ]
+  },
+  {
+    "region": 7,
+    "code": "Ultra",
+    "regionalPokedexNumber": 205,
+    "nationalPokedexNumber": 759,
+    "sublistings": [
+      {
+        "number": null
+      },
+      {
+        "number": 106
+      },
+      {
+        "number": null
+      },
+      {
+        "number": 76
+      }
+    ]
+  },
+  {
+    "region": 7,
+    "code": "Ultra",
+    "regionalPokedexNumber": 206,
+    "nationalPokedexNumber": 760,
+    "sublistings": [
+      {
+        "number": null
+      },
+      {
+        "number": 107
+      },
+      {
+        "number": null
+      },
+      {
+        "number": 77
+      }
+    ]
+  },
+  {
+    "region": 7,
+    "code": "Ultra",
+    "regionalPokedexNumber": 207,
+    "nationalPokedexNumber": 761,
+    "sublistings": [
+      {
+        "number": null
+      },
+      {
+        "number": 108
+      },
+      {
+        "number": null
+      },
+      {
+        "number": null
+      }
+    ]
+  },
+  {
+    "region": 7,
+    "code": "Ultra",
+    "regionalPokedexNumber": 208,
+    "nationalPokedexNumber": 762,
+    "sublistings": [
+      {
+        "number": null
+      },
+      {
+        "number": 109
+      },
+      {
+        "number": null
+      },
+      {
+        "number": null
+      }
+    ]
+  },
+  {
+    "region": 7,
+    "code": "Ultra",
+    "regionalPokedexNumber": 209,
+    "nationalPokedexNumber": 763,
+    "sublistings": [
+      {
+        "number": null
+      },
+      {
+        "number": 110
+      },
+      {
+        "number": null
+      },
+      {
+        "number": null
+      }
+    ]
+  },
+  {
+    "region": 7,
+    "code": "Ultra",
+    "regionalPokedexNumber": 210,
+    "nationalPokedexNumber": 764,
+    "sublistings": [
+      {
+        "number": null
+      },
+      {
+        "number": 111
+      },
+      {
+        "number": null
+      },
+      {
+        "number": null
+      }
+    ]
+  },
+  {
+    "region": 7,
+    "code": "Ultra",
+    "regionalPokedexNumber": 211,
+    "nationalPokedexNumber": 127,
+    "sublistings": [
+      {
+        "number": null
+      },
+      {
+        "number": 112
+      },
+      {
+        "number": null
+      },
+      {
+        "number": 78
+      }
+    ]
+  },
+  {
+    "region": 7,
+    "code": "Ultra",
+    "regionalPokedexNumber": 212,
+    "nationalPokedexNumber": 163,
+    "sublistings": [
+      {
+        "number": null
+      },
+      {
+        "number": 113
+      },
+      {
+        "number": null
+      },
+      {
+        "number": null
+      }
+    ]
+  },
+  {
+    "region": 7,
+    "code": "Ultra",
+    "regionalPokedexNumber": 213,
+    "nationalPokedexNumber": 164,
+    "sublistings": [
+      {
+        "number": null
+      },
+      {
+        "number": 114
+      },
+      {
+        "number": null
+      },
+      {
+        "number": null
+      }
+    ]
+  },
+  {
+    "region": 7,
+    "code": "Ultra",
+    "regionalPokedexNumber": 214,
+    "nationalPokedexNumber": 352,
+    "sublistings": [
+      {
+        "number": null
+      },
+      {
+        "number": 115
+      },
+      {
+        "number": null
+      },
+      {
+        "number": null
+      }
+    ]
+  },
+  {
+    "region": 7,
+    "code": "Ultra",
+    "regionalPokedexNumber": 215,
+    "nationalPokedexNumber": 765,
+    "sublistings": [
+      {
+        "number": null
+      },
+      {
+        "number": 116
+      },
+      {
+        "number": null
+      },
+      {
+        "number": null
+      }
+    ]
+  },
+  {
+    "region": 7,
+    "code": "Ultra",
+    "regionalPokedexNumber": 216,
+    "nationalPokedexNumber": 766,
+    "sublistings": [
+      {
+        "number": null
+      },
+      {
+        "number": 117
+      },
+      {
+        "number": null
+      },
+      {
+        "number": null
+      }
+    ]
+  },
+  {
+    "region": 7,
+    "code": "Ultra",
+    "regionalPokedexNumber": 217,
+    "nationalPokedexNumber": 704,
+    "sublistings": [
+      {
+        "number": null
+      },
+      {
+        "number": 118
+      },
+      {
+        "number": 81
+      },
+      {
+        "number": 79
+      }
+    ]
+  },
+  {
+    "region": 7,
+    "code": "Ultra",
+    "regionalPokedexNumber": 218,
+    "nationalPokedexNumber": 705,
+    "sublistings": [
+      {
+        "number": null
+      },
+      {
+        "number": 119
+      },
+      {
+        "number": 82
+      },
+      {
+        "number": 80
+      }
+    ]
+  },
+  {
+    "region": 7,
+    "code": "Ultra",
+    "regionalPokedexNumber": 219,
+    "nationalPokedexNumber": 706,
+    "sublistings": [
+      {
+        "number": null
+      },
+      {
+        "number": 120
+      },
+      {
+        "number": 83
+      },
+      {
+        "number": 81
+      }
+    ]
+  },
+  {
+    "region": 7,
+    "code": "Ultra",
+    "regionalPokedexNumber": 220,
+    "nationalPokedexNumber": 351,
+    "sublistings": [
+      {
+        "number": null
+      },
+      {
+        "number": 121
+      },
+      {
+        "number": 84
+      },
+      {
+        "number": 82
+      }
+    ]
+  },
+  {
+    "region": 7,
+    "code": "Ultra",
+    "regionalPokedexNumber": 221,
+    "nationalPokedexNumber": 767,
+    "sublistings": [
+      {
+        "number": null
+      },
+      {
+        "number": 122
+      },
+      {
+        "number": null
+      },
+      {
+        "number": 83
+      }
+    ]
+  },
+  {
+    "region": 7,
+    "code": "Ultra",
+    "regionalPokedexNumber": 222,
+    "nationalPokedexNumber": 768,
+    "sublistings": [
+      {
+        "number": null
+      },
+      {
+        "number": 123
+      },
+      {
+        "number": null
+      },
+      {
+        "number": 84
+      }
+    ]
+  },
+  {
+    "region": 7,
+    "code": "Ultra",
+    "regionalPokedexNumber": 223,
+    "nationalPokedexNumber": 120,
+    "sublistings": [
+      {
+        "number": null
+      },
+      {
+        "number": 124
+      },
+      {
+        "number": null
+      },
+      {
+        "number": null
+      }
+    ]
+  },
+  {
+    "region": 7,
+    "code": "Ultra",
+    "regionalPokedexNumber": 224,
+    "nationalPokedexNumber": 121,
+    "sublistings": [
+      {
+        "number": null
+      },
+      {
+        "number": 125
+      },
+      {
+        "number": null
+      },
+      {
+        "number": null
+      }
+    ]
+  },
+  {
+    "region": 7,
+    "code": "Ultra",
+    "regionalPokedexNumber": 225,
+    "nationalPokedexNumber": 769,
+    "sublistings": [
+      {
+        "number": null
+      },
+      {
+        "number": 126
+      },
+      {
+        "number": null
+      },
+      {
+        "number": null
+      }
+    ]
+  },
+  {
+    "region": 7,
+    "code": "Ultra",
+    "regionalPokedexNumber": 226,
+    "nationalPokedexNumber": 770,
+    "sublistings": [
+      {
+        "number": null
+      },
+      {
+        "number": 127
+      },
+      {
+        "number": null
+      },
+      {
+        "number": null
+      }
+    ]
+  },
+  {
+    "region": 7,
+    "code": "Ultra",
+    "regionalPokedexNumber": 227,
+    "nationalPokedexNumber": 138,
+    "sublistings": [
+      {
+        "number": null
+      },
+      {
+        "number": 128
+      },
+      {
+        "number": null
+      },
+      {
+        "number": null
+      }
+    ]
+  },
+  {
+    "region": 7,
+    "code": "Ultra",
+    "regionalPokedexNumber": 228,
+    "nationalPokedexNumber": 139,
+    "sublistings": [
+      {
+        "number": null
+      },
+      {
+        "number": 129
+      },
+      {
+        "number": null
+      },
+      {
+        "number": null
+      }
+    ]
+  },
+  {
+    "region": 7,
+    "code": "Ultra",
+    "regionalPokedexNumber": 229,
+    "nationalPokedexNumber": 140,
+    "sublistings": [
+      {
+        "number": null
+      },
+      {
+        "number": 130
+      },
+      {
+        "number": null
+      },
+      {
+        "number": null
+      }
+    ]
+  },
+  {
+    "region": 7,
+    "code": "Ultra",
+    "regionalPokedexNumber": 230,
+    "nationalPokedexNumber": 141,
+    "sublistings": [
+      {
+        "number": null
+      },
+      {
+        "number": 131
+      },
+      {
+        "number": null
+      },
+      {
+        "number": null
+      }
+    ]
+  },
+  {
+    "region": 7,
+    "code": "Ultra",
+    "regionalPokedexNumber": 231,
+    "nationalPokedexNumber": 345,
+    "sublistings": [
+      {
+        "number": null
+      },
+      {
+        "number": 132
+      },
+      {
+        "number": null
+      },
+      {
+        "number": null
+      }
+    ]
+  },
+  {
+    "region": 7,
+    "code": "Ultra",
+    "regionalPokedexNumber": 232,
+    "nationalPokedexNumber": 346,
+    "sublistings": [
+      {
+        "number": null
+      },
+      {
+        "number": 133
+      },
+      {
+        "number": null
+      },
+      {
+        "number": null
+      }
+    ]
+  },
+  {
+    "region": 7,
+    "code": "Ultra",
+    "regionalPokedexNumber": 233,
+    "nationalPokedexNumber": 347,
+    "sublistings": [
+      {
+        "number": null
+      },
+      {
+        "number": 134
+      },
+      {
+        "number": null
+      },
+      {
+        "number": null
+      }
+    ]
+  },
+  {
+    "region": 7,
+    "code": "Ultra",
+    "regionalPokedexNumber": 234,
+    "nationalPokedexNumber": 348,
+    "sublistings": [
+      {
+        "number": null
+      },
+      {
+        "number": 135
+      },
+      {
+        "number": null
+      },
+      {
+        "number": null
+      }
+    ]
+  },
+  {
+    "region": 7,
+    "code": "Ultra",
+    "regionalPokedexNumber": 235,
+    "nationalPokedexNumber": 408,
+    "sublistings": [
+      {
+        "number": null
+      },
+      {
+        "number": 136
+      },
+      {
+        "number": null
+      },
+      {
+        "number": null
+      }
+    ]
+  },
+  {
+    "region": 7,
+    "code": "Ultra",
+    "regionalPokedexNumber": 236,
+    "nationalPokedexNumber": 409,
+    "sublistings": [
+      {
+        "number": null
+      },
+      {
+        "number": 137
+      },
+      {
+        "number": null
+      },
+      {
+        "number": null
+      }
+    ]
+  },
+  {
+    "region": 7,
+    "code": "Ultra",
+    "regionalPokedexNumber": 237,
+    "nationalPokedexNumber": 410,
+    "sublistings": [
+      {
+        "number": null
+      },
+      {
+        "number": 138
+      },
+      {
+        "number": null
+      },
+      {
+        "number": null
+      }
+    ]
+  },
+  {
+    "region": 7,
+    "code": "Ultra",
+    "regionalPokedexNumber": 238,
+    "nationalPokedexNumber": 411,
+    "sublistings": [
+      {
+        "number": null
+      },
+      {
+        "number": 139
+      },
+      {
+        "number": null
+      },
+      {
+        "number": null
+      }
+    ]
+  },
+  {
+    "region": 7,
+    "code": "Ultra",
+    "regionalPokedexNumber": 239,
+    "nationalPokedexNumber": 566,
+    "sublistings": [
+      {
+        "number": null
+      },
+      {
+        "number": 140
+      },
+      {
+        "number": null
+      },
+      {
+        "number": null
+      }
+    ]
+  },
+  {
+    "region": 7,
+    "code": "Ultra",
+    "regionalPokedexNumber": 240,
+    "nationalPokedexNumber": 567,
+    "sublistings": [
+      {
+        "number": null
+      },
+      {
+        "number": 141
+      },
+      {
+        "number": null
+      },
+      {
+        "number": null
+      }
+    ]
+  },
+  {
+    "region": 7,
+    "code": "Ultra",
+    "regionalPokedexNumber": 241,
+    "nationalPokedexNumber": 564,
+    "sublistings": [
+      {
+        "number": null
+      },
+      {
+        "number": 142
+      },
+      {
+        "number": null
+      },
+      {
+        "number": null
+      }
+    ]
+  },
+  {
+    "region": 7,
+    "code": "Ultra",
+    "regionalPokedexNumber": 242,
+    "nationalPokedexNumber": 565,
+    "sublistings": [
+      {
+        "number": null
+      },
+      {
+        "number": 143
+      },
+      {
+        "number": null
+      },
+      {
+        "number": null
+      }
+    ]
+  },
+  {
+    "region": 7,
+    "code": "Ultra",
+    "regionalPokedexNumber": 243,
+    "nationalPokedexNumber": 696,
+    "sublistings": [
+      {
+        "number": null
+      },
+      {
+        "number": 144
+      },
+      {
+        "number": null
+      },
+      {
+        "number": null
+      }
+    ]
+  },
+  {
+    "region": 7,
+    "code": "Ultra",
+    "regionalPokedexNumber": 244,
+    "nationalPokedexNumber": 697,
+    "sublistings": [
+      {
+        "number": null
+      },
+      {
+        "number": 145
+      },
+      {
+        "number": null
+      },
+      {
+        "number": null
+      }
+    ]
+  },
+  {
+    "region": 7,
+    "code": "Ultra",
+    "regionalPokedexNumber": 245,
+    "nationalPokedexNumber": 698,
+    "sublistings": [
+      {
+        "number": null
+      },
+      {
+        "number": 146
+      },
+      {
+        "number": null
+      },
+      {
+        "number": null
+      }
+    ]
+  },
+  {
+    "region": 7,
+    "code": "Ultra",
+    "regionalPokedexNumber": 246,
+    "nationalPokedexNumber": 699,
+    "sublistings": [
+      {
+        "number": null
+      },
+      {
+        "number": 147
+      },
+      {
+        "number": null
+      },
+      {
+        "number": null
+      }
+    ]
+  },
+  {
+    "region": 7,
+    "code": "Ultra",
+    "regionalPokedexNumber": 247,
+    "nationalPokedexNumber": 246,
+    "sublistings": [
+      {
+        "number": null
+      },
+      {
+        "number": 148
+      },
+      {
+        "number": null
+      },
+      {
+        "number": null
+      }
+    ]
+  },
+  {
+    "region": 7,
+    "code": "Ultra",
+    "regionalPokedexNumber": 248,
+    "nationalPokedexNumber": 247,
+    "sublistings": [
+      {
+        "number": null
+      },
+      {
+        "number": 149
+      },
+      {
+        "number": null
+      },
+      {
+        "number": null
+      }
+    ]
+  },
+  {
+    "region": 7,
+    "code": "Ultra",
+    "regionalPokedexNumber": 249,
+    "nationalPokedexNumber": 248,
+    "sublistings": [
+      {
+        "number": null
+      },
+      {
+        "number": 150
+      },
+      {
+        "number": null
+      },
+      {
+        "number": null
+      }
+    ]
+  },
+  {
+    "region": 7,
+    "code": "Ultra",
+    "regionalPokedexNumber": 250,
+    "nationalPokedexNumber": 708,
+    "sublistings": [
+      {
+        "number": null
+      },
+      {
+        "number": 151
+      },
+      {
+        "number": null
+      },
+      {
+        "number": null
+      }
+    ]
+  },
+  {
+    "region": 7,
+    "code": "Ultra",
+    "regionalPokedexNumber": 251,
+    "nationalPokedexNumber": 709,
+    "sublistings": [
+      {
+        "number": null
+      },
+      {
+        "number": 152
+      },
+      {
+        "number": null
+      },
+      {
+        "number": null
+      }
+    ]
+  },
+  {
+    "region": 7,
+    "code": "Ultra",
+    "regionalPokedexNumber": 252,
+    "nationalPokedexNumber": 177,
+    "sublistings": [
+      {
+        "number": null
+      },
+      {
+        "number": 153
+      },
+      {
+        "number": null
+      },
+      {
+        "number": null
+      }
+    ]
+  },
+  {
+    "region": 7,
+    "code": "Ultra",
+    "regionalPokedexNumber": 253,
+    "nationalPokedexNumber": 178,
+    "sublistings": [
+      {
+        "number": null
+      },
+      {
+        "number": 154
+      },
+      {
+        "number": null
+      },
+      {
+        "number": null
+      }
+    ]
+  },
+  {
+    "region": 7,
+    "code": "Ultra",
+    "regionalPokedexNumber": 254,
+    "nationalPokedexNumber": 299,
+    "sublistings": [
+      {
+        "number": null
+      },
+      {
+        "number": 155
+      },
+      {
+        "number": null
+      },
+      {
+        "number": null
+      }
+    ]
+  },
+  {
+    "region": 7,
+    "code": "Ultra",
+    "regionalPokedexNumber": 255,
+    "nationalPokedexNumber": 476,
+    "sublistings": [
+      {
+        "number": null
+      },
+      {
+        "number": 156
+      },
+      {
+        "number": null
+      },
+      {
+        "number": null
+      }
+    ]
+  },
+  {
+    "region": 7,
+    "code": "Ultra",
+    "regionalPokedexNumber": 256,
+    "nationalPokedexNumber": 771,
+    "sublistings": [
+      {
+        "number": null
+      },
+      {
+        "number": 157
+      },
+      {
+        "number": null
+      },
+      {
+        "number": null
+      }
+    ]
+  },
+  {
+    "region": 7,
+    "code": "Ultra",
+    "regionalPokedexNumber": 257,
+    "nationalPokedexNumber": 170,
+    "sublistings": [
+      {
+        "number": null
+      },
+      {
+        "number": 158
+      },
+      {
+        "number": null
+      },
+      {
+        "number": null
+      }
+    ]
+  },
+  {
+    "region": 7,
+    "code": "Ultra",
+    "regionalPokedexNumber": 258,
+    "nationalPokedexNumber": 171,
+    "sublistings": [
+      {
+        "number": null
+      },
+      {
+        "number": 159
+      },
+      {
+        "number": null
+      },
+      {
+        "number": null
+      }
+    ]
+  },
+  {
+    "region": 7,
+    "code": "Ultra",
+    "regionalPokedexNumber": 259,
+    "nationalPokedexNumber": 772,
+    "sublistings": [
+      {
+        "number": null
+      },
+      {
+        "number": null
+      },
+      {
+        "number": null
+      },
+      {
+        "number": null
+      }
+    ]
+  },
+  {
+    "region": 7,
+    "code": "Ultra",
+    "regionalPokedexNumber": 260,
+    "nationalPokedexNumber": 773,
+    "sublistings": [
+      {
+        "number": null
+      },
+      {
+        "number": null
+      },
+      {
+        "number": null
+      },
+      {
+        "number": null
+      }
+    ]
+  },
+  {
+    "region": 7,
+    "code": "Ultra",
+    "regionalPokedexNumber": 261,
+    "nationalPokedexNumber": 803,
+    "sublistings": [
+      {
+        "number": null
+      },
+      {
+        "number": null
+      },
+      {
+        "number": null
+      },
+      {
+        "number": null
+      }
+    ]
+  },
+  {
+    "region": 7,
+    "code": "Ultra",
+    "regionalPokedexNumber": 262,
+    "nationalPokedexNumber": 804,
+    "sublistings": [
+      {
+        "number": null
+      },
+      {
+        "number": null
+      },
+      {
+        "number": null
+      },
+      {
+        "number": null
+      }
+    ]
+  },
+  {
+    "region": 7,
+    "code": "Ultra",
+    "regionalPokedexNumber": 263,
+    "nationalPokedexNumber": 718,
+    "sublistings": [
+      {
+        "number": null
+      },
+      {
+        "number": null
+      },
+      {
+        "number": null
+      },
+      {
+        "number": null
+      }
+    ]
+  },
+  {
+    "region": 7,
+    "code": "Ultra",
+    "regionalPokedexNumber": 264,
+    "nationalPokedexNumber": 568,
+    "sublistings": [
+      {
+        "number": null
+      },
+      {
+        "number": null
+      },
+      {
+        "number": 85
+      },
+      {
+        "number": null
+      }
+    ]
+  },
+  {
+    "region": 7,
+    "code": "Ultra",
+    "regionalPokedexNumber": 265,
+    "nationalPokedexNumber": 569,
+    "sublistings": [
+      {
+        "number": null
+      },
+      {
+        "number": null
+      },
+      {
+        "number": 86
+      },
+      {
+        "number": null
+      }
+    ]
+  },
+  {
+    "region": 7,
+    "code": "Ultra",
+    "regionalPokedexNumber": 266,
+    "nationalPokedexNumber": 572,
+    "sublistings": [
+      {
+        "number": null
+      },
+      {
+        "number": null
+      },
+      {
+        "number": 87
+      },
+      {
+        "number": null
+      }
+    ]
+  },
+  {
+    "region": 7,
+    "code": "Ultra",
+    "regionalPokedexNumber": 267,
+    "nationalPokedexNumber": 573,
+    "sublistings": [
+      {
+        "number": null
+      },
+      {
+        "number": null
+      },
+      {
+        "number": 88
+      },
+      {
+        "number": null
+      }
+    ]
+  },
+  {
+    "region": 7,
+    "code": "Ultra",
+    "regionalPokedexNumber": 268,
+    "nationalPokedexNumber": 204,
+    "sublistings": [
+      {
+        "number": null
+      },
+      {
+        "number": null
+      },
+      {
+        "number": 89
+      },
+      {
+        "number": null
+      }
+    ]
+  },
+  {
+    "region": 7,
+    "code": "Ultra",
+    "regionalPokedexNumber": 269,
+    "nationalPokedexNumber": 205,
+    "sublistings": [
+      {
+        "number": null
+      },
+      {
+        "number": null
+      },
+      {
+        "number": 90
+      },
+      {
+        "number": null
+      }
+    ]
+  },
+  {
+    "region": 7,
+    "code": "Ultra",
+    "regionalPokedexNumber": 270,
+    "nationalPokedexNumber": 227,
+    "sublistings": [
+      {
+        "number": null
+      },
+      {
+        "number": null
+      },
+      {
+        "number": 91
+      },
+      {
+        "number": 85
+      }
+    ]
+  },
+  {
+    "region": 7,
+    "code": "Ultra",
+    "regionalPokedexNumber": 271,
+    "nationalPokedexNumber": 132,
+    "sublistings": [
+      {
+        "number": null
+      },
+      {
+        "number": null
+      },
+      {
+        "number": 92
+      },
+      {
+        "number": null
+      }
+    ]
+  },
+  {
+    "region": 7,
+    "code": "Ultra",
+    "regionalPokedexNumber": 272,
+    "nationalPokedexNumber": 173,
+    "sublistings": [
+      {
+        "number": null
+      },
+      {
+        "number": null
+      },
+      {
+        "number": 93
+      },
+      {
+        "number": null
+      }
+    ]
+  },
+  {
+    "region": 7,
+    "code": "Ultra",
+    "regionalPokedexNumber": 273,
+    "nationalPokedexNumber": 35,
+    "sublistings": [
+      {
+        "number": null
+      },
+      {
+        "number": null
+      },
+      {
+        "number": 94
+      },
+      {
+        "number": null
+      }
+    ]
+  },
+  {
+    "region": 7,
+    "code": "Ultra",
+    "regionalPokedexNumber": 274,
+    "nationalPokedexNumber": 36,
+    "sublistings": [
+      {
+        "number": null
+      },
+      {
+        "number": null
+      },
+      {
+        "number": 95
+      },
+      {
+        "number": null
+      }
+    ]
+  },
+  {
+    "region": 7,
+    "code": "Ultra",
+    "regionalPokedexNumber": 275,
+    "nationalPokedexNumber": 605,
+    "sublistings": [
+      {
+        "number": null
+      },
+      {
+        "number": null
+      },
+      {
+        "number": 96
+      },
+      {
+        "number": null
+      }
+    ]
+  },
+  {
+    "region": 7,
+    "code": "Ultra",
+    "regionalPokedexNumber": 276,
+    "nationalPokedexNumber": 606,
+    "sublistings": [
+      {
+        "number": null
+      },
+      {
+        "number": null
+      },
+      {
+        "number": 97
+      },
+      {
+        "number": null
+      }
+    ]
+  },
+  {
+    "region": 7,
+    "code": "Ultra",
+    "regionalPokedexNumber": 277,
+    "nationalPokedexNumber": 774,
+    "sublistings": [
+      {
+        "number": null
+      },
+      {
+        "number": null
+      },
+      {
+        "number": 98
+      },
+      {
+        "number": null
+      }
+    ]
+  },
+  {
+    "region": 7,
+    "code": "Ultra",
+    "regionalPokedexNumber": 278,
+    "nationalPokedexNumber": 374,
+    "sublistings": [
+      {
+        "number": null
+      },
+      {
+        "number": null
+      },
+      {
+        "number": 99
+      },
+      {
+        "number": null
+      }
+    ]
+  },
+  {
+    "region": 7,
+    "code": "Ultra",
+    "regionalPokedexNumber": 279,
+    "nationalPokedexNumber": 375,
+    "sublistings": [
+      {
+        "number": null
+      },
+      {
+        "number": null
+      },
+      {
+        "number": 100
+      },
+      {
+        "number": null
+      }
+    ]
+  },
+  {
+    "region": 7,
+    "code": "Ultra",
+    "regionalPokedexNumber": 280,
+    "nationalPokedexNumber": 376,
+    "sublistings": [
+      {
+        "number": null
+      },
+      {
+        "number": null
+      },
+      {
+        "number": 101
+      },
+      {
+        "number": null
+      }
+    ]
+  },
+  {
+    "region": 7,
+    "code": "Ultra",
+    "regionalPokedexNumber": 281,
+    "nationalPokedexNumber": 137,
+    "sublistings": [
+      {
+        "number": null
+      },
+      {
+        "number": null
+      },
+      {
+        "number": 102
+      },
+      {
+        "number": null
+      }
+    ]
+  },
+  {
+    "region": 7,
+    "code": "Ultra",
+    "regionalPokedexNumber": 282,
+    "nationalPokedexNumber": 233,
+    "sublistings": [
+      {
+        "number": null
+      },
+      {
+        "number": null
+      },
+      {
+        "number": 103
+      },
+      {
+        "number": null
+      }
+    ]
+  },
+  {
+    "region": 7,
+    "code": "Ultra",
+    "regionalPokedexNumber": 283,
+    "nationalPokedexNumber": 474,
+    "sublistings": [
+      {
+        "number": null
+      },
+      {
+        "number": null
+      },
+      {
+        "number": 104
+      },
+      {
+        "number": null
+      }
+    ]
+  },
+  {
+    "region": 7,
+    "code": "Ultra",
+    "regionalPokedexNumber": 284,
+    "nationalPokedexNumber": 674,
+    "sublistings": [
+      {
+        "number": null
+      },
+      {
+        "number": null
+      },
+      {
+        "number": 105
+      },
+      {
+        "number": null
+      }
+    ]
+  },
+  {
+    "region": 7,
+    "code": "Ultra",
+    "regionalPokedexNumber": 285,
+    "nationalPokedexNumber": 675,
+    "sublistings": [
+      {
+        "number": null
+      },
+      {
+        "number": null
+      },
+      {
+        "number": 106
+      },
+      {
+        "number": null
+      }
+    ]
+  },
+  {
+    "region": 7,
+    "code": "Ultra",
+    "regionalPokedexNumber": 286,
+    "nationalPokedexNumber": 775,
+    "sublistings": [
+      {
+        "number": null
+      },
+      {
+        "number": null
+      },
+      {
+        "number": 107
+      },
+      {
+        "number": null
+      }
+    ]
+  },
+  {
+    "region": 7,
+    "code": "Ultra",
+    "regionalPokedexNumber": 287,
+    "nationalPokedexNumber": 324,
+    "sublistings": [
+      {
+        "number": null
+      },
+      {
+        "number": null
+      },
+      {
+        "number": 108
+      },
+      {
+        "number": null
+      }
+    ]
+  },
+  {
+    "region": 7,
+    "code": "Ultra",
+    "regionalPokedexNumber": 288,
+    "nationalPokedexNumber": 776,
+    "sublistings": [
+      {
+        "number": null
+      },
+      {
+        "number": null
+      },
+      {
+        "number": 109
+      },
+      {
+        "number": null
+      }
+    ]
+  },
+  {
+    "region": 7,
+    "code": "Ultra",
+    "regionalPokedexNumber": 289,
+    "nationalPokedexNumber": 228,
+    "sublistings": [
+      {
+        "number": null
+      },
+      {
+        "number": null
+      },
+      {
+        "number": 110
+      },
+      {
+        "number": null
+      }
+    ]
+  },
+  {
+    "region": 7,
+    "code": "Ultra",
+    "regionalPokedexNumber": 290,
+    "nationalPokedexNumber": 229,
+    "sublistings": [
+      {
+        "number": null
+      },
+      {
+        "number": null
+      },
+      {
+        "number": 111
+      },
+      {
+        "number": null
+      }
+    ]
+  },
+  {
+    "region": 7,
+    "code": "Ultra",
+    "regionalPokedexNumber": 291,
+    "nationalPokedexNumber": 702,
+    "sublistings": [
+      {
+        "number": null
+      },
+      {
+        "number": null
+      },
+      {
+        "number": 112
+      },
+      {
+        "number": null
+      }
+    ]
+  },
+  {
+    "region": 7,
+    "code": "Ultra",
+    "regionalPokedexNumber": 292,
+    "nationalPokedexNumber": 777,
+    "sublistings": [
+      {
+        "number": null
+      },
+      {
+        "number": null
+      },
+      {
+        "number": 113
+      },
+      {
+        "number": null
+      }
+    ]
+  },
+  {
+    "region": 7,
+    "code": "Ultra",
+    "regionalPokedexNumber": 293,
+    "nationalPokedexNumber": 309,
+    "sublistings": [
+      {
+        "number": null
+      },
+      {
+        "number": null
+      },
+      {
+        "number": 114
+      },
+      {
+        "number": null
+      }
+    ]
+  },
+  {
+    "region": 7,
+    "code": "Ultra",
+    "regionalPokedexNumber": 294,
+    "nationalPokedexNumber": 310,
+    "sublistings": [
+      {
+        "number": null
+      },
+      {
+        "number": null
+      },
+      {
+        "number": 115
+      },
+      {
+        "number": null
+      }
+    ]
+  },
+  {
+    "region": 7,
+    "code": "Ultra",
+    "regionalPokedexNumber": 295,
+    "nationalPokedexNumber": 239,
+    "sublistings": [
+      {
+        "number": null
+      },
+      {
+        "number": null
+      },
+      {
+        "number": 116
+      },
+      {
+        "number": null
+      }
+    ]
+  },
+  {
+    "region": 7,
+    "code": "Ultra",
+    "regionalPokedexNumber": 296,
+    "nationalPokedexNumber": 125,
+    "sublistings": [
+      {
+        "number": null
+      },
+      {
+        "number": null
+      },
+      {
+        "number": 117
+      },
+      {
+        "number": null
+      }
+    ]
+  },
+  {
+    "region": 7,
+    "code": "Ultra",
+    "regionalPokedexNumber": 297,
+    "nationalPokedexNumber": 466,
+    "sublistings": [
+      {
+        "number": null
+      },
+      {
+        "number": null
+      },
+      {
+        "number": 118
+      },
+      {
+        "number": null
+      }
+    ]
+  },
+  {
+    "region": 7,
+    "code": "Ultra",
+    "regionalPokedexNumber": 298,
+    "nationalPokedexNumber": 74,
+    "sublistings": [
+      {
+        "number": null
+      },
+      {
+        "number": null
+      },
+      {
+        "number": 119
+      },
+      {
+        "number": null
+      }
+    ]
+  },
+  {
+    "region": 7,
+    "code": "Ultra",
+    "regionalPokedexNumber": 299,
+    "nationalPokedexNumber": 75,
+    "sublistings": [
+      {
+        "number": null
+      },
+      {
+        "number": null
+      },
+      {
+        "number": 120
+      },
+      {
+        "number": null
+      }
+    ]
+  },
+  {
+    "region": 7,
+    "code": "Ultra",
+    "regionalPokedexNumber": 300,
+    "nationalPokedexNumber": 76,
+    "sublistings": [
+      {
+        "number": null
+      },
+      {
+        "number": null
+      },
+      {
+        "number": 121
+      },
+      {
+        "number": null
+      }
+    ]
+  },
+  {
+    "region": 7,
+    "code": "Ultra",
+    "regionalPokedexNumber": 301,
+    "nationalPokedexNumber": 551,
+    "sublistings": [
+      {
+        "number": null
+      },
+      {
+        "number": null
+      },
+      {
+        "number": 122
+      },
+      {
+        "number": null
+      }
+    ]
+  },
+  {
+    "region": 7,
+    "code": "Ultra",
+    "regionalPokedexNumber": 302,
+    "nationalPokedexNumber": 552,
+    "sublistings": [
+      {
+        "number": null
+      },
+      {
+        "number": null
+      },
+      {
+        "number": 123
+      },
+      {
+        "number": null
+      }
+    ]
+  },
+  {
+    "region": 7,
+    "code": "Ultra",
+    "regionalPokedexNumber": 303,
+    "nationalPokedexNumber": 553,
+    "sublistings": [
+      {
+        "number": null
+      },
+      {
+        "number": null
+      },
+      {
+        "number": 124
+      },
+      {
+        "number": null
+      }
+    ]
+  },
+  {
+    "region": 7,
+    "code": "Ultra",
+    "regionalPokedexNumber": 304,
+    "nationalPokedexNumber": 328,
+    "sublistings": [
+      {
+        "number": null
+      },
+      {
+        "number": null
+      },
+      {
+        "number": 125
+      },
+      {
+        "number": null
+      }
+    ]
+  },
+  {
+    "region": 7,
+    "code": "Ultra",
+    "regionalPokedexNumber": 305,
+    "nationalPokedexNumber": 329,
+    "sublistings": [
+      {
+        "number": null
+      },
+      {
+        "number": null
+      },
+      {
+        "number": 126
+      },
+      {
+        "number": null
+      }
+    ]
+  },
+  {
+    "region": 7,
+    "code": "Ultra",
+    "regionalPokedexNumber": 306,
+    "nationalPokedexNumber": 330,
+    "sublistings": [
+      {
+        "number": null
+      },
+      {
+        "number": null
+      },
+      {
+        "number": 127
+      },
+      {
+        "number": null
+      }
+    ]
+  },
+  {
+    "region": 7,
+    "code": "Ultra",
+    "regionalPokedexNumber": 307,
+    "nationalPokedexNumber": 443,
+    "sublistings": [
+      {
+        "number": null
+      },
+      {
+        "number": null
+      },
+      {
+        "number": 128
+      },
+      {
+        "number": null
+      }
+    ]
+  },
+  {
+    "region": 7,
+    "code": "Ultra",
+    "regionalPokedexNumber": 308,
+    "nationalPokedexNumber": 444,
+    "sublistings": [
+      {
+        "number": null
+      },
+      {
+        "number": null
+      },
+      {
+        "number": 129
+      },
+      {
+        "number": null
+      }
+    ]
+  },
+  {
+    "region": 7,
+    "code": "Ultra",
+    "regionalPokedexNumber": 309,
+    "nationalPokedexNumber": 445,
+    "sublistings": [
+      {
+        "number": null
+      },
+      {
+        "number": null
+      },
+      {
+        "number": 130
+      },
+      {
+        "number": null
+      }
+    ]
+  },
+  {
+    "region": 7,
+    "code": "Ultra",
+    "regionalPokedexNumber": 310,
+    "nationalPokedexNumber": 343,
+    "sublistings": [
+      {
+        "number": null
+      },
+      {
+        "number": null
+      },
+      {
+        "number": 131
+      },
+      {
+        "number": null
+      }
+    ]
+  },
+  {
+    "region": 7,
+    "code": "Ultra",
+    "regionalPokedexNumber": 311,
+    "nationalPokedexNumber": 344,
+    "sublistings": [
+      {
+        "number": null
+      },
+      {
+        "number": null
+      },
+      {
+        "number": 132
+      },
+      {
+        "number": null
+      }
+    ]
+  },
+  {
+    "region": 7,
+    "code": "Ultra",
+    "regionalPokedexNumber": 312,
+    "nationalPokedexNumber": 622,
+    "sublistings": [
+      {
+        "number": null
+      },
+      {
+        "number": null
+      },
+      {
+        "number": 133
+      },
+      {
+        "number": null
+      }
+    ]
+  },
+  {
+    "region": 7,
+    "code": "Ultra",
+    "regionalPokedexNumber": 313,
+    "nationalPokedexNumber": 623,
+    "sublistings": [
+      {
+        "number": null
+      },
+      {
+        "number": null
+      },
+      {
+        "number": 134
+      },
+      {
+        "number": null
+      }
+    ]
+  },
+  {
+    "region": 7,
+    "code": "Ultra",
+    "regionalPokedexNumber": 314,
+    "nationalPokedexNumber": 707,
+    "sublistings": [
+      {
+        "number": null
+      },
+      {
+        "number": null
+      },
+      {
+        "number": 135
+      },
+      {
+        "number": null
+      }
+    ]
+  },
+  {
+    "region": 7,
+    "code": "Ultra",
+    "regionalPokedexNumber": 315,
+    "nationalPokedexNumber": 778,
+    "sublistings": [
+      {
+        "number": null
+      },
+      {
+        "number": null
+      },
+      {
+        "number": 136
+      },
+      {
+        "number": null
+      }
+    ]
+  },
+  {
+    "region": 7,
+    "code": "Ultra",
+    "regionalPokedexNumber": 316,
+    "nationalPokedexNumber": 353,
+    "sublistings": [
+      {
+        "number": null
+      },
+      {
+        "number": null
+      },
+      {
+        "number": 137
+      },
+      {
+        "number": null
+      }
+    ]
+  },
+  {
+    "region": 7,
+    "code": "Ultra",
+    "regionalPokedexNumber": 317,
+    "nationalPokedexNumber": 354,
+    "sublistings": [
+      {
+        "number": null
+      },
+      {
+        "number": null
+      },
+      {
+        "number": 138
+      },
+      {
+        "number": null
+      }
+    ]
+  },
+  {
+    "region": 7,
+    "code": "Ultra",
+    "regionalPokedexNumber": 318,
+    "nationalPokedexNumber": 592,
+    "sublistings": [
+      {
+        "number": null
+      },
+      {
+        "number": null
+      },
+      {
+        "number": 139
+      },
+      {
+        "number": null
+      }
+    ]
+  },
+  {
+    "region": 7,
+    "code": "Ultra",
+    "regionalPokedexNumber": 319,
+    "nationalPokedexNumber": 593,
+    "sublistings": [
+      {
+        "number": null
+      },
+      {
+        "number": null
+      },
+      {
+        "number": 140
+      },
+      {
+        "number": null
+      }
+    ]
+  },
+  {
+    "region": 7,
+    "code": "Ultra",
+    "regionalPokedexNumber": 320,
+    "nationalPokedexNumber": 779,
+    "sublistings": [
+      {
+        "number": null
+      },
+      {
+        "number": null
+      },
+      {
+        "number": 141
+      },
+      {
+        "number": null
+      }
+    ]
+  },
+  {
+    "region": 7,
+    "code": "Ultra",
+    "regionalPokedexNumber": 321,
+    "nationalPokedexNumber": 780,
+    "sublistings": [
+      {
+        "number": null
+      },
+      {
+        "number": null
+      },
+      {
+        "number": 142
+      },
+      {
+        "number": null
+      }
+    ]
+  },
+  {
+    "region": 7,
+    "code": "Ultra",
+    "regionalPokedexNumber": 322,
+    "nationalPokedexNumber": 359,
+    "sublistings": [
+      {
+        "number": null
+      },
+      {
+        "number": null
+      },
+      {
+        "number": 143
+      },
+      {
+        "number": null
+      }
+    ]
+  },
+  {
+    "region": 7,
+    "code": "Ultra",
+    "regionalPokedexNumber": 323,
+    "nationalPokedexNumber": 361,
+    "sublistings": [
+      {
+        "number": null
+      },
+      {
+        "number": null
+      },
+      {
+        "number": 144
+      },
+      {
+        "number": null
+      }
+    ]
+  },
+  {
+    "region": 7,
+    "code": "Ultra",
+    "regionalPokedexNumber": 324,
+    "nationalPokedexNumber": 362,
+    "sublistings": [
+      {
+        "number": null
+      },
+      {
+        "number": null
+      },
+      {
+        "number": 145
+      },
+      {
+        "number": null
+      }
+    ]
+  },
+  {
+    "region": 7,
+    "code": "Ultra",
+    "regionalPokedexNumber": 325,
+    "nationalPokedexNumber": 478,
+    "sublistings": [
+      {
+        "number": null
+      },
+      {
+        "number": null
+      },
+      {
+        "number": 146
+      },
+      {
+        "number": null
+      }
+    ]
+  },
+  {
+    "region": 7,
+    "code": "Ultra",
+    "regionalPokedexNumber": 326,
+    "nationalPokedexNumber": 215,
+    "sublistings": [
+      {
+        "number": null
+      },
+      {
+        "number": null
+      },
+      {
+        "number": 147
+      },
+      {
+        "number": null
+      }
+    ]
+  },
+  {
+    "region": 7,
+    "code": "Ultra",
+    "regionalPokedexNumber": 327,
+    "nationalPokedexNumber": 461,
+    "sublistings": [
+      {
+        "number": null
+      },
+      {
+        "number": null
+      },
+      {
+        "number": 148
+      },
+      {
+        "number": null
+      }
+    ]
+  },
+  {
+    "region": 7,
+    "code": "Ultra",
+    "regionalPokedexNumber": 328,
+    "nationalPokedexNumber": 27,
+    "sublistings": [
+      {
+        "number": null
+      },
+      {
+        "number": null
+      },
+      {
+        "number": 149
+      },
+      {
+        "number": null
+      }
+    ]
+  },
+  {
+    "region": 7,
+    "code": "Ultra",
+    "regionalPokedexNumber": 329,
+    "nationalPokedexNumber": 28,
+    "sublistings": [
+      {
+        "number": null
+      },
+      {
+        "number": null
+      },
+      {
+        "number": 150
+      },
+      {
+        "number": null
+      }
+    ]
+  },
+  {
+    "region": 7,
+    "code": "Ultra",
+    "regionalPokedexNumber": 330,
+    "nationalPokedexNumber": 37,
+    "sublistings": [
+      {
+        "number": null
+      },
+      {
+        "number": null
+      },
+      {
+        "number": 151
+      },
+      {
+        "number": null
+      }
+    ]
+  },
+  {
+    "region": 7,
+    "code": "Ultra",
+    "regionalPokedexNumber": 331,
+    "nationalPokedexNumber": 38,
+    "sublistings": [
+      {
+        "number": null
+      },
+      {
+        "number": null
+      },
+      {
+        "number": 152
+      },
+      {
+        "number": null
+      }
+    ]
+  },
+  {
+    "region": 7,
+    "code": "Ultra",
+    "regionalPokedexNumber": 332,
+    "nationalPokedexNumber": 582,
+    "sublistings": [
+      {
+        "number": null
+      },
+      {
+        "number": null
+      },
+      {
+        "number": 153
+      },
+      {
+        "number": null
+      }
+    ]
+  },
+  {
+    "region": 7,
+    "code": "Ultra",
+    "regionalPokedexNumber": 333,
+    "nationalPokedexNumber": 583,
+    "sublistings": [
+      {
+        "number": null
+      },
+      {
+        "number": null
+      },
+      {
+        "number": 154
+      },
+      {
+        "number": null
+      }
+    ]
+  },
+  {
+    "region": 7,
+    "code": "Ultra",
+    "regionalPokedexNumber": 334,
+    "nationalPokedexNumber": 584,
+    "sublistings": [
+      {
+        "number": null
+      },
+      {
+        "number": null
+      },
+      {
+        "number": 155
+      },
+      {
+        "number": null
+      }
+    ]
+  },
+  {
+    "region": 7,
+    "code": "Ultra",
+    "regionalPokedexNumber": 335,
+    "nationalPokedexNumber": 559,
+    "sublistings": [
+      {
+        "number": null
+      },
+      {
+        "number": null
+      },
+      {
+        "number": 156
+      },
+      {
+        "number": null
+      }
+    ]
+  },
+  {
+    "region": 7,
+    "code": "Ultra",
+    "regionalPokedexNumber": 336,
+    "nationalPokedexNumber": 560,
+    "sublistings": [
+      {
+        "number": null
+      },
+      {
+        "number": null
+      },
+      {
+        "number": 157
+      },
+      {
+        "number": null
+      }
+    ]
+  },
+  {
+    "region": 7,
+    "code": "Ultra",
+    "regionalPokedexNumber": 337,
+    "nationalPokedexNumber": 624,
+    "sublistings": [
+      {
+        "number": null
+      },
+      {
+        "number": null
+      },
+      {
+        "number": 158
+      },
+      {
+        "number": null
+      }
+    ]
+  },
+  {
+    "region": 7,
+    "code": "Ultra",
+    "regionalPokedexNumber": 338,
+    "nationalPokedexNumber": 625,
+    "sublistings": [
+      {
+        "number": null
+      },
+      {
+        "number": null
+      },
+      {
+        "number": 159
+      },
+      {
+        "number": null
+      }
+    ]
+  },
+  {
+    "region": 7,
+    "code": "Ultra",
+    "regionalPokedexNumber": 339,
+    "nationalPokedexNumber": 209,
+    "sublistings": [
+      {
+        "number": null
+      },
+      {
+        "number": null
+      },
+      {
+        "number": null
+      },
+      {
+        "number": 86
+      }
+    ]
+  },
+  {
+    "region": 7,
+    "code": "Ultra",
+    "regionalPokedexNumber": 340,
+    "nationalPokedexNumber": 210,
+    "sublistings": [
+      {
+        "number": null
+      },
+      {
+        "number": null
+      },
+      {
+        "number": null
+      },
+      {
+        "number": 87
+      }
+    ]
+  },
+  {
+    "region": 7,
+    "code": "Ultra",
+    "regionalPokedexNumber": 341,
+    "nationalPokedexNumber": 422,
+    "sublistings": [
+      {
+        "number": null
+      },
+      {
+        "number": null
+      },
+      {
+        "number": null
+      },
+      {
+        "number": 88
+      }
+    ]
+  },
+  {
+    "region": 7,
+    "code": "Ultra",
+    "regionalPokedexNumber": 342,
+    "nationalPokedexNumber": 423,
+    "sublistings": [
+      {
+        "number": null
+      },
+      {
+        "number": null
+      },
+      {
+        "number": null
+      },
+      {
+        "number": 89
+      }
+    ]
+  },
+  {
+    "region": 7,
+    "code": "Ultra",
+    "regionalPokedexNumber": 343,
+    "nationalPokedexNumber": 369,
+    "sublistings": [
+      {
+        "number": null
+      },
+      {
+        "number": null
+      },
+      {
+        "number": null
+      },
+      {
+        "number": 90
+      }
+    ]
+  },
+  {
+    "region": 7,
+    "code": "Ultra",
+    "regionalPokedexNumber": 344,
+    "nationalPokedexNumber": 781,
+    "sublistings": [
+      {
+        "number": null
+      },
+      {
+        "number": null
+      },
+      {
+        "number": null
+      },
+      {
+        "number": 91
+      }
+    ]
+  },
+  {
+    "region": 7,
+    "code": "Ultra",
+    "regionalPokedexNumber": 345,
+    "nationalPokedexNumber": 318,
+    "sublistings": [
+      {
+        "number": null
+      },
+      {
+        "number": null
+      },
+      {
+        "number": null
+      },
+      {
+        "number": 92
+      }
+    ]
+  },
+  {
+    "region": 7,
+    "code": "Ultra",
+    "regionalPokedexNumber": 346,
+    "nationalPokedexNumber": 319,
+    "sublistings": [
+      {
+        "number": null
+      },
+      {
+        "number": null
+      },
+      {
+        "number": null
+      },
+      {
+        "number": 93
+      }
+    ]
+  },
+  {
+    "region": 7,
+    "code": "Ultra",
+    "regionalPokedexNumber": 347,
+    "nationalPokedexNumber": 690,
+    "sublistings": [
+      {
+        "number": null
+      },
+      {
+        "number": null
+      },
+      {
+        "number": null
+      },
+      {
+        "number": 94
+      }
+    ]
+  },
+  {
+    "region": 7,
+    "code": "Ultra",
+    "regionalPokedexNumber": 348,
+    "nationalPokedexNumber": 691,
+    "sublistings": [
+      {
+        "number": null
+      },
+      {
+        "number": null
+      },
+      {
+        "number": null
+      },
+      {
+        "number": 95
+      }
+    ]
+  },
+  {
+    "region": 7,
+    "code": "Ultra",
+    "regionalPokedexNumber": 349,
+    "nationalPokedexNumber": 692,
+    "sublistings": [
+      {
+        "number": null
+      },
+      {
+        "number": null
+      },
+      {
+        "number": null
+      },
+      {
+        "number": 96
+      }
+    ]
+  },
+  {
+    "region": 7,
+    "code": "Ultra",
+    "regionalPokedexNumber": 350,
+    "nationalPokedexNumber": 693,
+    "sublistings": [
+      {
+        "number": null
+      },
+      {
+        "number": null
+      },
+      {
+        "number": null
+      },
+      {
+        "number": 97
+      }
+    ]
+  },
+  {
+    "region": 7,
+    "code": "Ultra",
+    "regionalPokedexNumber": 351,
+    "nationalPokedexNumber": 320,
+    "sublistings": [
+      {
+        "number": null
+      },
+      {
+        "number": null
+      },
+      {
+        "number": null
+      },
+      {
+        "number": 98
+      }
+    ]
+  },
+  {
+    "region": 7,
+    "code": "Ultra",
+    "regionalPokedexNumber": 352,
+    "nationalPokedexNumber": 321,
+    "sublistings": [
+      {
+        "number": null
+      },
+      {
+        "number": null
+      },
+      {
+        "number": null
+      },
+      {
+        "number": 99
+      }
+    ]
+  },
+  {
+    "region": 7,
+    "code": "Ultra",
+    "regionalPokedexNumber": 353,
+    "nationalPokedexNumber": 131,
+    "sublistings": [
+      {
+        "number": null
+      },
+      {
+        "number": null
+      },
+      {
+        "number": null
+      },
+      {
+        "number": 100
+      }
+    ]
+  },
+  {
+    "region": 7,
+    "code": "Ultra",
+    "regionalPokedexNumber": 354,
+    "nationalPokedexNumber": 357,
+    "sublistings": [
+      {
+        "number": null
+      },
+      {
+        "number": null
+      },
+      {
+        "number": null
+      },
+      {
+        "number": 101
+      }
+    ]
+  },
+  {
+    "region": 7,
+    "code": "Ultra",
+    "regionalPokedexNumber": 355,
+    "nationalPokedexNumber": 102,
+    "sublistings": [
+      {
+        "number": null
+      },
+      {
+        "number": null
+      },
+      {
+        "number": null
+      },
+      {
+        "number": 102
+      }
+    ]
+  },
+  {
+    "region": 7,
+    "code": "Ultra",
+    "regionalPokedexNumber": 356,
+    "nationalPokedexNumber": 103,
+    "sublistings": [
+      {
+        "number": null
+      },
+      {
+        "number": null
+      },
+      {
+        "number": null
+      },
+      {
+        "number": 103
+      }
+    ]
+  },
+  {
+    "region": 7,
+    "code": "Ultra",
+    "regionalPokedexNumber": 357,
+    "nationalPokedexNumber": 341,
+    "sublistings": [
+      {
+        "number": null
+      },
+      {
+        "number": null
+      },
+      {
+        "number": null
+      },
+      {
+        "number": 104
+      }
+    ]
+  },
+  {
+    "region": 7,
+    "code": "Ultra",
+    "regionalPokedexNumber": 358,
+    "nationalPokedexNumber": 342,
+    "sublistings": [
+      {
+        "number": null
+      },
+      {
+        "number": null
+      },
+      {
+        "number": null
+      },
+      {
+        "number": 105
+      }
+    ]
+  },
+  {
+    "region": 7,
+    "code": "Ultra",
+    "regionalPokedexNumber": 359,
+    "nationalPokedexNumber": 619,
+    "sublistings": [
+      {
+        "number": null
+      },
+      {
+        "number": null
+      },
+      {
+        "number": null
+      },
+      {
+        "number": 106
+      }
+    ]
+  },
+  {
+    "region": 7,
+    "code": "Ultra",
+    "regionalPokedexNumber": 360,
+    "nationalPokedexNumber": 620,
+    "sublistings": [
+      {
+        "number": null
+      },
+      {
+        "number": null
+      },
+      {
+        "number": null
+      },
+      {
+        "number": 107
+      }
+    ]
+  },
+  {
+    "region": 7,
+    "code": "Ultra",
+    "regionalPokedexNumber": 361,
+    "nationalPokedexNumber": 782,
+    "sublistings": [
+      {
+        "number": null
+      },
+      {
+        "number": null
+      },
+      {
+        "number": null
+      },
+      {
+        "number": 108
+      }
+    ]
+  },
+  {
+    "region": 7,
+    "code": "Ultra",
+    "regionalPokedexNumber": 362,
+    "nationalPokedexNumber": 783,
+    "sublistings": [
+      {
+        "number": null
+      },
+      {
+        "number": null
+      },
+      {
+        "number": null
+      },
+      {
+        "number": 109
+      }
+    ]
+  },
+  {
+    "region": 7,
+    "code": "Ultra",
+    "regionalPokedexNumber": 363,
+    "nationalPokedexNumber": 784,
+    "sublistings": [
+      {
+        "number": null
+      },
+      {
+        "number": null
+      },
+      {
+        "number": null
+      },
+      {
+        "number": 110
+      }
+    ]
+  },
+  {
+    "region": 7,
+    "code": "Ultra",
+    "regionalPokedexNumber": 364,
+    "nationalPokedexNumber": 587,
+    "sublistings": [
+      {
+        "number": null
+      },
+      {
+        "number": null
+      },
+      {
+        "number": null
+      },
+      {
+        "number": 111
+      }
+    ]
+  },
+  {
+    "region": 7,
+    "code": "Ultra",
+    "regionalPokedexNumber": 365,
+    "nationalPokedexNumber": 123,
+    "sublistings": [
+      {
+        "number": null
+      },
+      {
+        "number": null
+      },
+      {
+        "number": null
+      },
+      {
+        "number": 112
+      }
+    ]
+  },
+  {
+    "region": 7,
+    "code": "Ultra",
+    "regionalPokedexNumber": 366,
+    "nationalPokedexNumber": 212,
+    "sublistings": [
+      {
+        "number": null
+      },
+      {
+        "number": null
+      },
+      {
+        "number": null
+      },
+      {
+        "number": 113
+      }
+    ]
+  },
+  {
+    "region": 7,
+    "code": "Ultra",
+    "regionalPokedexNumber": 367,
+    "nationalPokedexNumber": 214,
+    "sublistings": [
+      {
+        "number": null
+      },
+      {
+        "number": null
+      },
+      {
+        "number": null
+      },
+      {
+        "number": 114
+      }
+    ]
+  },
+  {
+    "region": 7,
+    "code": "Ultra",
+    "regionalPokedexNumber": 368,
+    "nationalPokedexNumber": 190,
+    "sublistings": [
+      {
+        "number": null
+      },
+      {
+        "number": null
+      },
+      {
+        "number": null
+      },
+      {
+        "number": 115
+      }
+    ]
+  },
+  {
+    "region": 7,
+    "code": "Ultra",
+    "regionalPokedexNumber": 369,
+    "nationalPokedexNumber": 424,
+    "sublistings": [
+      {
+        "number": null
+      },
+      {
+        "number": null
+      },
+      {
+        "number": null
+      },
+      {
+        "number": 116
+      }
+    ]
+  },
+  {
+    "region": 7,
+    "code": "Ultra",
+    "regionalPokedexNumber": 370,
+    "nationalPokedexNumber": 667,
+    "sublistings": [
+      {
+        "number": null
+      },
+      {
+        "number": null
+      },
+      {
+        "number": null
+      },
+      {
+        "number": 117
+      }
+    ]
+  },
+  {
+    "region": 7,
+    "code": "Ultra",
+    "regionalPokedexNumber": 371,
+    "nationalPokedexNumber": 668,
+    "sublistings": [
+      {
+        "number": null
+      },
+      {
+        "number": null
+      },
+      {
+        "number": null
+      },
+      {
+        "number": 118
+      }
+    ]
+  },
+  {
+    "region": 7,
+    "code": "Ultra",
+    "regionalPokedexNumber": 372,
+    "nationalPokedexNumber": 200,
+    "sublistings": [
+      {
+        "number": null
+      },
+      {
+        "number": null
+      },
+      {
+        "number": null
+      },
+      {
+        "number": 119
+      }
+    ]
+  },
+  {
+    "region": 7,
+    "code": "Ultra",
+    "regionalPokedexNumber": 373,
+    "nationalPokedexNumber": 429,
+    "sublistings": [
+      {
+        "number": null
+      },
+      {
+        "number": null
+      },
+      {
+        "number": null
+      },
+      {
+        "number": 120
+      }
+    ]
+  },
+  {
+    "region": 7,
+    "code": "Ultra",
+    "regionalPokedexNumber": 374,
+    "nationalPokedexNumber": 621,
+    "sublistings": [
+      {
+        "number": null
+      },
+      {
+        "number": null
+      },
+      {
+        "number": null
+      },
+      {
+        "number": 121
+      }
+    ]
+  },
+  {
+    "region": 7,
+    "code": "Ultra",
+    "regionalPokedexNumber": 375,
+    "nationalPokedexNumber": 108,
+    "sublistings": [
+      {
+        "number": null
+      },
+      {
+        "number": null
+      },
+      {
+        "number": null
+      },
+      {
+        "number": 122
+      }
+    ]
+  },
+  {
+    "region": 7,
+    "code": "Ultra",
+    "regionalPokedexNumber": 376,
+    "nationalPokedexNumber": 463,
+    "sublistings": [
+      {
+        "number": null
+      },
+      {
+        "number": null
+      },
+      {
+        "number": null
+      },
+      {
+        "number": 123
+      }
+    ]
+  },
+  {
+    "region": 7,
+    "code": "Ultra",
+    "regionalPokedexNumber": 377,
+    "nationalPokedexNumber": 447,
+    "sublistings": [
+      {
+        "number": null
+      },
+      {
+        "number": null
+      },
+      {
+        "number": null
+      },
+      {
+        "number": 124
+      }
+    ]
+  },
+  {
+    "region": 7,
+    "code": "Ultra",
+    "regionalPokedexNumber": 378,
+    "nationalPokedexNumber": 448,
+    "sublistings": [
+      {
+        "number": null
+      },
+      {
+        "number": null
+      },
+      {
+        "number": null
+      },
+      {
+        "number": 125
+      }
+    ]
+  },
+  {
+    "region": 7,
+    "code": "Ultra",
+    "regionalPokedexNumber": 379,
+    "nationalPokedexNumber": 147,
+    "sublistings": [
+      {
+        "number": null
+      },
+      {
+        "number": null
+      },
+      {
+        "number": null
+      },
+      {
+        "number": 126
+      }
+    ]
+  },
+  {
+    "region": 7,
+    "code": "Ultra",
+    "regionalPokedexNumber": 380,
+    "nationalPokedexNumber": 148,
+    "sublistings": [
+      {
+        "number": null
+      },
+      {
+        "number": null
+      },
+      {
+        "number": null
+      },
+      {
+        "number": 127
+      }
+    ]
+  },
+  {
+    "region": 7,
+    "code": "Ultra",
+    "regionalPokedexNumber": 381,
+    "nationalPokedexNumber": 149,
+    "sublistings": [
+      {
+        "number": null
+      },
+      {
+        "number": null
+      },
+      {
+        "number": null
+      },
+      {
+        "number": 128
+      }
+    ]
+  },
+  {
+    "region": 7,
+    "code": "Ultra",
+    "regionalPokedexNumber": 382,
+    "nationalPokedexNumber": 142,
+    "sublistings": [
+      {
+        "number": null
+      },
+      {
+        "number": null
+      },
+      {
+        "number": null
+      },
+      {
+        "number": 129
+      }
+    ]
+  },
+  {
+    "region": 7,
+    "code": "Ultra",
+    "regionalPokedexNumber": 383,
+    "nationalPokedexNumber": 785,
+    "sublistings": [
+      {
+        "number": 150
+      },
+      {
+        "number": null
+      },
+      {
+        "number": null
+      },
+      {
+        "number": null
+      }
+    ]
+  },
+  {
+    "region": 7,
+    "code": "Ultra",
+    "regionalPokedexNumber": 384,
+    "nationalPokedexNumber": 786,
+    "sublistings": [
+      {
+        "number": null
+      },
+      {
+        "number": 160
+      },
+      {
+        "number": null
+      },
+      {
+        "number": null
+      }
+    ]
+  },
+  {
+    "region": 7,
+    "code": "Ultra",
+    "regionalPokedexNumber": 385,
+    "nationalPokedexNumber": 787,
+    "sublistings": [
+      {
+        "number": null
+      },
+      {
+        "number": null
+      },
+      {
+        "number": 160
+      },
+      {
+        "number": null
+      }
+    ]
+  },
+  {
+    "region": 7,
+    "code": "Ultra",
+    "regionalPokedexNumber": 386,
+    "nationalPokedexNumber": 788,
+    "sublistings": [
+      {
+        "number": null
+      },
+      {
+        "number": null
+      },
+      {
+        "number": null
+      },
+      {
+        "number": 130
+      }
+    ]
+  },
+  {
+    "region": 7,
+    "code": "Ultra",
+    "regionalPokedexNumber": 387,
+    "nationalPokedexNumber": 789,
+    "sublistings": [
+      {
+        "number": null
+      },
+      {
+        "number": null
+      },
+      {
+        "number": null
+      },
+      {
+        "number": null
+      }
+    ]
+  },
+  {
+    "region": 7,
+    "code": "Ultra",
+    "regionalPokedexNumber": 388,
+    "nationalPokedexNumber": 790,
+    "sublistings": [
+      {
+        "number": null
+      },
+      {
+        "number": null
+      },
+      {
+        "number": null
+      },
+      {
+        "number": null
+      }
+    ]
+  },
+  {
+    "region": 7,
+    "code": "Ultra",
+    "regionalPokedexNumber": 389,
+    "nationalPokedexNumber": 791,
+    "sublistings": [
+      {
+        "number": null
+      },
+      {
+        "number": null
+      },
+      {
+        "number": null
+      },
+      {
+        "number": null
+      }
+    ]
+  },
+  {
+    "region": 7,
+    "code": "Ultra",
+    "regionalPokedexNumber": 390,
+    "nationalPokedexNumber": 792,
+    "sublistings": [
+      {
+        "number": null
+      },
+      {
+        "number": null
+      },
+      {
+        "number": null
+      },
+      {
+        "number": null
+      }
+    ]
+  },
+  {
+    "region": 7,
+    "code": "Ultra",
+    "regionalPokedexNumber": 391,
+    "nationalPokedexNumber": 793,
+    "sublistings": [
+      {
+        "number": null
+      },
+      {
+        "number": null
+      },
+      {
+        "number": null
+      },
+      {
+        "number": null
+      }
+    ]
+  },
+  {
+    "region": 7,
+    "code": "Ultra",
+    "regionalPokedexNumber": 392,
+    "nationalPokedexNumber": 805,
+    "sublistings": [
+      {
+        "number": null
+      },
+      {
+        "number": null
+      },
+      {
+        "number": null
+      },
+      {
+        "number": null
+      }
+    ]
+  },
+  {
+    "region": 7,
+    "code": "Ultra",
+    "regionalPokedexNumber": 393,
+    "nationalPokedexNumber": 806,
+    "sublistings": [
+      {
+        "number": null
+      },
+      {
+        "number": null
+      },
+      {
+        "number": null
+      },
+      {
+        "number": null
+      }
+    ]
+  },
+  {
+    "region": 7,
+    "code": "Ultra",
+    "regionalPokedexNumber": 394,
+    "nationalPokedexNumber": 794,
+    "sublistings": [
+      {
+        "number": null
+      },
+      {
+        "number": null
+      },
+      {
+        "number": null
+      },
+      {
+        "number": null
+      }
+    ]
+  },
+  {
+    "region": 7,
+    "code": "Ultra",
+    "regionalPokedexNumber": 395,
+    "nationalPokedexNumber": 795,
+    "sublistings": [
+      {
+        "number": null
+      },
+      {
+        "number": null
+      },
+      {
+        "number": null
+      },
+      {
+        "number": null
+      }
+    ]
+  },
+  {
+    "region": 7,
+    "code": "Ultra",
+    "regionalPokedexNumber": 396,
+    "nationalPokedexNumber": 796,
+    "sublistings": [
+      {
+        "number": null
+      },
+      {
+        "number": null
+      },
+      {
+        "number": null
+      },
+      {
+        "number": null
+      }
+    ]
+  },
+  {
+    "region": 7,
+    "code": "Ultra",
+    "regionalPokedexNumber": 397,
+    "nationalPokedexNumber": 797,
+    "sublistings": [
+      {
+        "number": null
+      },
+      {
+        "number": null
+      },
+      {
+        "number": null
+      },
+      {
+        "number": null
+      }
+    ]
+  },
+  {
+    "region": 7,
+    "code": "Ultra",
+    "regionalPokedexNumber": 398,
+    "nationalPokedexNumber": 798,
+    "sublistings": [
+      {
+        "number": null
+      },
+      {
+        "number": null
+      },
+      {
+        "number": null
+      },
+      {
+        "number": null
+      }
+    ]
+  },
+  {
+    "region": 7,
+    "code": "Ultra",
+    "regionalPokedexNumber": 399,
+    "nationalPokedexNumber": 799,
+    "sublistings": [
+      {
+        "number": null
+      },
+      {
+        "number": null
+      },
+      {
+        "number": null
+      },
+      {
+        "number": null
+      }
+    ]
+  },
+  {
+    "region": 7,
+    "code": "Ultra",
+    "regionalPokedexNumber": 400,
+    "nationalPokedexNumber": 800,
+    "sublistings": [
+      {
+        "number": null
+      },
+      {
+        "number": null
+      },
+      {
+        "number": null
+      },
+      {
+        "number": null
+      }
+    ]
+  },
+  {
+    "region": 7,
+    "code": "Ultra",
+    "regionalPokedexNumber": 401,
+    "nationalPokedexNumber": 801,
+    "sublistings": [
+      {
+        "number": null
+      },
+      {
+        "number": null
+      },
+      {
+        "number": null
+      },
+      {
+        "number": null
+      }
+    ]
+  },
+  {
+    "region": 7,
+    "code": "Ultra",
+    "regionalPokedexNumber": 402,
+    "nationalPokedexNumber": 802,
+    "sublistings": [
+      {
+        "number": null
+      },
+      {
+        "number": null
+      },
+      {
+        "number": null
+      },
+      {
+        "number": null
+      }
+    ]
+  },
+  {
+    "region": 7,
+    "code": "Ultra",
+    "regionalPokedexNumber": 403,
+    "nationalPokedexNumber": 807,
+    "sublistings": [
+      {
+        "number": null
+      },
+      {
+        "number": null
+      },
+      {
+        "number": null
+      },
+      {
+        "number": null
+      }
+    ]
+  }
+]

@@ -1,4 +1,4 @@
-const { baseHandler } = require('./helpers');
+const { baseHandler, islandHandler } = require('./helpers');
 
 module.exports = {
   async kanto(name, $) {
@@ -72,11 +72,11 @@ module.exports = {
     });
   },
   async alola(name, $) {
-    // const bodys = Array.from($('table > tbody')).slice(0, -3);
-    // return await baseHandler($, bodys, { number: 5, name });
+    const bodys = Array.from($('table > tbody')).slice(0, -3);
+    return await islandHandler($, bodys, { number: 7, name });
   },
-  async alola_n(name, $) {
-    // const bodys = Array.from($('table > tbody')).slice(0, -3);
-    // return await baseHandler($, bodys, { number: 5, name, code: 'Ultra' });
+  async alola_u(name, $) {
+    const bodys = Array.from($('table > tbody')).slice(0, -3);
+    return await islandHandler($, bodys, { number: 7, name, code: 'Ultra' });
   }
 };

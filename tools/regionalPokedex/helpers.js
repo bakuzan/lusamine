@@ -58,7 +58,42 @@ async function baseHandler($, bodys, region) {
   return await writeOut(region.name, data);
 }
 
+async function islandHandler($, bodys, region) {
+  const json = bodys.reduce((result, body) => {
+    const rows = Array.from($('tr', body));
+
+    const items = rows.map((tr, idx) => {
+      if (idx === 0) {
+        return null;
+      }
+
+      const tds = $('td', tr);
+      const reg = tds.eq(0);
+      const subs = [tds.eq(1), tds.eq(2), tds.eq(3), tds.eq(4)];
+      const nat = tds.eq(5);
+
+      if (!reg || !nat) {
+        return null;
+      }
+
+      return {
+        region: region.number,
+        code: region.code || null,
+        regionalPokedexNumber: cleanNumber(reg),
+        nationalPokedexNumber: cleanNumber(nat),
+        sublistings: subs.map((td) => ({ number: cleanNumber(td) || null }))
+      };
+    });
+
+    return [...result, ...items];
+  }, []);
+
+  const data = json.filter((x) => !!x);
+  return await writeOut(region.name, data);
+}
+
 module.exports = {
   baseHandler,
+  islandHandler,
   writeOut
 };
