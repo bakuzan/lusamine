@@ -8,21 +8,27 @@ import Team from 'components/Team';
 import Sprite from 'components/Sprite';
 import { PokedexContext, TypeContext } from 'context';
 import Constants from 'constants/index';
+import { Pokedex } from 'constants/pokedex';
 import {
   getUrlQueryStringAsObject,
-  combineValuesIntoSet,
   createSetFromIdString,
   createIdStringFromSet,
   generateUniqueId,
   selectMembersFromPokedex,
-  teamsStore
+  teamsStore,
+  settingsStore
 } from 'utils/common';
 import { getPartySizeAlertMessage } from 'utils/feedback';
 import * as TPU from './TeamPlannerUtils';
 
 import './TeamPlanner.scss';
 
-const { Strings, Party } = Constants;
+const { Strings, Party, Routes } = Constants;
+
+const resolvePokedex = (m) =>
+  m.params.pokedexKey ||
+  settingsStore.get('defaultPokedex') ||
+  Pokedex.national;
 
 class PlannerPage extends React.Component {
   static contextType = PokedexContext;
@@ -31,9 +37,6 @@ class PlannerPage extends React.Component {
     super(props);
     this.state = {
       currentTeamName: '',
-      currentTeamIds: createSetFromIdString(
-        getUrlQueryStringAsObject(props.location).team
-      ),
       search: '',
       generations: TPU.generationDefaults,
       types: TPU.typeDefaults,
@@ -53,16 +56,14 @@ class PlannerPage extends React.Component {
     this.handleClearTeam = this.handleClearTeam.bind(this);
     this.handleRandomTeam = this.handleRandomTeam.bind(this);
     this.handleSaveTeam = this.handleSaveTeam.bind(this);
+    this.handleChangePokedex = this.handleChangePokedex.bind(this);
   }
 
   updateTeamQueryString(memberIds, newId) {
-    const { match, history } = this.props;
+    const { location, history } = this.props;
     const idStr = createIdStringFromSet(memberIds, newId);
-    const newTeamIds = combineValuesIntoSet(memberIds, newId);
 
-    this.setState({ currentTeamIds: newTeamIds }, () =>
-      history.push(`${match.path}?team=${idStr}`)
-    );
+    history.push(`${location.pathname}?team=${idStr}`);
   }
 
   handleNameInput(e) {
@@ -83,11 +84,14 @@ class PlannerPage extends React.Component {
   }
 
   handleSpriteSelection(dataId) {
-    if (this.state.currentTeamIds.size === Party.MAX_SIZE) {
+    const currentTeamIds = createSetFromIdString(
+      getUrlQueryStringAsObject(this.props.location).team
+    );
+    if (currentTeamIds.size === Party.MAX_SIZE) {
       return this.props.sendAlert(getPartySizeAlertMessage());
     }
 
-    this.updateTeamQueryString(this.state.currentTeamIds, dataId);
+    this.updateTeamQueryString(currentTeamIds, dataId);
   }
 
   handleMembersUpdate(membersIds) {
@@ -98,11 +102,15 @@ class PlannerPage extends React.Component {
     this.updateTeamQueryString(new Set([]));
   }
 
-  handleRandomTeam(dex, typeMatches) {
+  handleRandomTeam(dexData, typeMatches) {
     return () => {
-      const filters = { ...this.state };
+      const idString = getUrlQueryStringAsObject(this.props.location).team;
+      const currentTeamIds = createSetFromIdString(idString);
+      const activePokedex = resolvePokedex(this.props.match);
+      const filters = { ...this.state, currentTeamIds, activePokedex };
+
       const randomSetOfIds = TPU.selectRandomSetOfIds(
-        dex,
+        dexData,
         filters,
         typeMatches
       );
@@ -112,7 +120,9 @@ class PlannerPage extends React.Component {
   }
 
   handleSaveTeam() {
-    if (this.state.currentTeamIds.size === 0) {
+    const idString = getUrlQueryStringAsObject(this.props.location).team;
+    const currentTeamIds = createSetFromIdString(idString);
+    if (currentTeamIds.size === 0) {
       return;
     }
 
@@ -120,17 +130,33 @@ class PlannerPage extends React.Component {
     const saveTeamData = {
       [teamId]: {
         name: this.state.currentTeamName,
-        idString: createIdStringFromSet(this.state.currentTeamIds)
+        idString
       }
     };
 
     teamsStore.set(saveTeamData);
   }
 
+  handleChangePokedex(e) {
+    const { value } = e.target;
+    this.props.history.push(`${Routes.base}/${value}`);
+  }
+
   render() {
-    let pokedex = this.context;
-    const dexFilters = { ...this.state };
+    let pokeData = this.context;
+    const { location, match } = this.props;
+    const activePokedex = resolvePokedex(match);
+    const currentTeamIds = createSetFromIdString(
+      getUrlQueryStringAsObject(location).team
+    );
+
+    const dexFilters = { ...this.state, currentTeamIds, activePokedex };
+
     const filterProps = {
+      pokedexProps: {
+        value: activePokedex,
+        onChange: this.handleChangePokedex
+      },
       searchProps: {
         value: dexFilters.search,
         onChange: this.handleSearchInput
@@ -183,7 +209,7 @@ class PlannerPage extends React.Component {
         <TypeContext.Consumer>
           {(typeMatches) => {
             const filteredSprites = TPU.iteratePokedexToList(
-              pokedex,
+              pokeData,
               dexFilters,
               typeMatches
             );
@@ -194,7 +220,7 @@ class PlannerPage extends React.Component {
                   <Button
                     id="randomise-team"
                     isAction
-                    onClick={this.handleRandomTeam(pokedex, typeMatches)}
+                    onClick={this.handleRandomTeam(pokeData, typeMatches)}
                   >
                     Randomise
                   </Button>
@@ -220,8 +246,8 @@ class PlannerPage extends React.Component {
                   <Team
                     types={typeMatches}
                     members={selectMembersFromPokedex(
-                      pokedex,
-                      this.state.currentTeamIds
+                      pokeData.pokedex,
+                      currentTeamIds
                     )}
                     onMembersUpdate={this.handleMembersUpdate}
                   />

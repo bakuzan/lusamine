@@ -27,6 +27,8 @@ function cleanNumber(td) {
 }
 
 async function baseHandler($, bodys, region) {
+  const ids = {};
+
   const json = bodys.reduce((result, body) => {
     const rows = Array.from($('tr', body));
 
@@ -43,11 +45,16 @@ async function baseHandler($, bodys, region) {
         return null;
       }
 
+      const nationalPokedexNumber = cleanNumber(nat);
+      const formNumber = ids[nationalPokedexNumber];
+      ids[nationalPokedexNumber] = ids[nationalPokedexNumber] + 1 || 1;
+
       return {
         region: region.number,
         code: region.code || null,
         regionalPokedexNumber: cleanNumber(reg),
-        nationalPokedexNumber: cleanNumber(nat)
+        nationalPokedexNumber,
+        formSuffix: formNumber ? `_${formNumber}` : ''
       };
     });
 

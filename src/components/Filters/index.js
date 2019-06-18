@@ -2,8 +2,15 @@ import PropTypes from 'prop-types';
 import classNames from 'classnames';
 import React from 'react';
 
-import { ClearableInput, Tickbox, MultiSelect, useWindowSize } from 'mko';
+import {
+  ClearableInput,
+  Tickbox,
+  MultiSelect,
+  SelectBox,
+  useWindowSize
+} from 'mko';
 import Strings from 'constants/strings';
+import { pokedexOptions } from 'constants/pokedex';
 import { media } from 'utils/media';
 
 import './Filters.scss';
@@ -25,6 +32,13 @@ function Filters(props) {
         [`filters--hide-on_${props.hiddenOn}`]: hideOnCertainScreens
       })}
     >
+      <SelectBox
+        id="active-pokedex"
+        text="Active Pokedex"
+        {...props.pokedexProps}
+        options={pokedexOptions}
+        containerClassName={classNames(FILTERS_INPUT_CLASS)}
+      />
       <ClearableInput
         {...props.searchProps}
         id="search"
@@ -113,6 +127,10 @@ Filters.propTypes = {
   includeMegaProps: checkboxPropTypes,
   includeVariantsProps: checkboxPropTypes,
   startersOnlyProps: checkboxPropTypes,
+  pokedexProps: PropTypes.shape({
+    value: PropTypes.string,
+    onChange: PropTypes.func
+  }),
   hiddenOn: PropTypes.oneOf([Strings.large, Strings.small])
 };
 

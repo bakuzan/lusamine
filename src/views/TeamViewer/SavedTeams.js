@@ -45,7 +45,7 @@ class TeamViewer extends React.Component {
   }
 
   render() {
-    let pokedex = this.context;
+    let { pokedex } = this.context;
     const { savedTeams } = this.state;
 
     if (!this.state.loadedTeams) {

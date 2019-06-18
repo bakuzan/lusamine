@@ -19,7 +19,8 @@ module.exports = {
     return await baseHandler($, bodys, { number: 2, name, code: 'Johto' });
   },
   async hoenn(name, $) {
-    const bodys = Array.from($('table > tbody')).slice(0, -3);
+    const bds = Array.from($('table > tbody'));
+    const bodys = [...bds.slice(0, 4), ...bds.slice(5, -3)];
 
     return await baseHandler($, bodys, { number: 3, name });
   },

@@ -44,7 +44,7 @@ const TeamMember = React.memo(
     },
     ref
   ) {
-    const pokedex = useContext(PokedexContext);
+    const { pokedex } = useContext(PokedexContext);
     const [displayEvolveMenu, setDisplayEvolveMenu] = useState(false);
 
     const hasData = !data.isEmpty;

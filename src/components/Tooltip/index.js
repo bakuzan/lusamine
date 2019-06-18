@@ -1,7 +1,7 @@
 import './Tooltip.scss';
 import PropTypes from 'prop-types';
 import classNames from 'classnames';
-import React, { useState, useRef } from 'react';
+import React, { useState, useRef, useEffect } from 'react';
 
 function Tooltip({
   className,
@@ -14,6 +14,10 @@ function Tooltip({
 }) {
   const [{ hovered, at }, setHovered] = useState({ hovered: false, at: [] });
   const timer = useRef();
+
+  useEffect(() => {
+    return () => clearTimeout(timer.current);
+  }, [timer]);
 
   const style = usePosition
     ? { top: at[1], left: at[0], bottom: 'unset' }

@@ -9,7 +9,7 @@ import { selectMembersFromPokedexAllowDuplicates } from 'utils/common';
 import { getTrainerTeams } from 'data';
 
 function TrainerTeamViewer() {
-  const pokedex = useContext(PokedexContext);
+  const { pokedex } = useContext(PokedexContext);
   const typeMatches = useContext(TypeContext);
   const [teams] = useState(
     TVU.mapTrainerTeamsToDisplayModel(getTrainerTeams())

@@ -55,7 +55,21 @@ async function fetchPage(key) {
 
 async function run() {
   console.log(chalk.green('Regional Pokedex Scraper!'));
-  console.log(argv);
+
+  if (argv.help) {
+    console.log(`
+       /* Example usage
+        *
+        * npm run scrape-pokedex -- --key kanto
+        *
+        * Args
+        * --key STRING one of: ${Object.keys(urls).join(',')}
+        *
+        */
+    `);
+    process.exit(0);
+  }
+
   const invalidKey = !urls.hasOwnProperty(argv.key);
 
   if (!argv.key || invalidKey) {

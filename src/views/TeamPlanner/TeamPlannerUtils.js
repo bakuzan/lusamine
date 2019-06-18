@@ -58,8 +58,20 @@ function applyDexFilters(item, filters, typeMatches) {
   );
 }
 
-export function iteratePokedexToList(dex, filters, typeMatches) {
-  return Array.from(dex).reduce((acc, [_, item]) => {
+export function iteratePokedexToList(
+  { pokedex, regions },
+  filters,
+  typeMatches
+) {
+  const dexKey = regions[filters.activePokedex];
+  const dex = !dexKey
+    ? Array.from(pokedex)
+    : dexKey.map((x) => {
+        const pkmId = `p_${x.nationalPokedexNumber}${x.formSuffix}`;
+        return [pkmId, pokedex.get(pkmId)];
+      });
+
+  return dex.reduce((acc, [_, item]) => {
     if (applyDexFilters(item, filters, typeMatches)) {
       return acc;
     }
@@ -90,9 +102,9 @@ export const evolutionOptions = getEnumOptions(EvolutionForms, (k) =>
 );
 export const evolutionDefaults = getAllEnumValues(EvolutionForms);
 
-export const selectRandomSetOfIds = (dex, filters, typeMatches) => {
+export const selectRandomSetOfIds = (dexData, filters, typeMatches) => {
   const randomTeam = new Set([]);
-  const pokemon = iteratePokedexToList(dex, filters, typeMatches);
+  const pokemon = iteratePokedexToList(dexData, filters, typeMatches);
 
   return Array(6)
     .fill(null)

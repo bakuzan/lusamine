@@ -28,7 +28,7 @@ const systemMessages = [];
 function App({ match, location }) {
   useGlobalStyles();
 
-  const [pokedex] = useState(constructPokedex());
+  const [{ pokedex, regions }] = useState(constructPokedex());
   const [typeMatchups] = useState(getTypeMatchups());
   const [userMessages, setUserMessages] = useState(systemMessages);
 
@@ -44,10 +44,10 @@ function App({ match, location }) {
   );
   const hasMessages = messages.length > 0;
 
-  logData({ pokedex, typeMatchups });
+  logData({ pokedex, regions, typeMatchups });
 
   return (
-    <PokedexContext.Provider value={pokedex}>
+    <PokedexContext.Provider value={{ pokedex, regions }}>
       <TypeContext.Provider value={typeMatchups}>
         <div className="theme theme--default">
           <AppHelmet title={pageTitle} description={pageDescription} />
@@ -85,8 +85,7 @@ function App({ match, location }) {
                     component={Pokedex}
                   />
                   <Route
-                    exact
-                    path={match.url}
+                    path={`${match.url}/:pokedexKey?`}
                     render={(props) => (
                       <TeamPlanner {...props} sendAlert={triggerAlert} />
                     )}

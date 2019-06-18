@@ -21,7 +21,7 @@ import './Pokedex.scss';
 const FIRST_ID = `p_1`;
 
 function Pokedex({ match, location, history }) {
-  const pokedex = useContext(PokedexContext);
+  const { pokedex } = useContext(PokedexContext);
   const { baseDex, dexOptions, lastId } = useMemo(
     () => generateVanillaDex(pokedex),
     [pokedex]

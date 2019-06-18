@@ -1,7 +1,8 @@
 import React from 'react';
 
-import { Tickbox } from 'mko';
+import { Tickbox, SelectBox } from 'mko';
 import SETTINGS_DEFAULTS from 'constants/settings';
+import { pokedexOptions } from 'constants/pokedex';
 import { settingsStore } from 'utils/common';
 
 class Settings extends React.Component {
@@ -12,6 +13,7 @@ class Settings extends React.Component {
     };
 
     this.handleUserInput = this.handleUserInput.bind(this);
+    this.handleSelectChange = this.handleSelectChange.bind(this);
   }
 
   componentDidMount() {
@@ -21,6 +23,16 @@ class Settings extends React.Component {
   handleUserInput(e) {
     const { name, checked } = e.target;
     this.setState({ [name]: checked }, () =>
+      settingsStore.set({
+        ...SETTINGS_DEFAULTS,
+        ...this.state
+      })
+    );
+  }
+
+  handleSelectChange(e) {
+    const { value } = e.target;
+    this.setState({ defaultPokedex: value }, () =>
       settingsStore.set({
         ...SETTINGS_DEFAULTS,
         ...this.state
@@ -56,6 +68,14 @@ class Settings extends React.Component {
           text={`Enable Team Member Evolve\nChange Team Members with their evolutions with this shortcut.`}
           checked={settings.canEvolve}
           onChange={this.handleUserInput}
+        />
+        <SelectBox
+          id="default-pokedex"
+          containerClassName="settings__input settings__input--select-box"
+          text="Default Pokedex"
+          value={settings.defaultPokedex}
+          options={pokedexOptions}
+          onChange={this.handleSelectChange}
         />
       </div>
     );

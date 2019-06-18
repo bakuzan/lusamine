@@ -50,4 +50,8 @@ main {
   max-height: none;
   margin-bottom: 20px;
   white-space: pre-line;
+
+  &--select-box {
+    max-width: 150px;
+  }
 }

@@ -3,918 +3,1071 @@
     "region": 6,
     "code": "Central",
     "regionalPokedexNumber": 1,
-    "nationalPokedexNumber": 650
+    "nationalPokedexNumber": 650,
+    "formSuffix": ""
   },
   {
     "region": 6,
     "code": "Central",
     "regionalPokedexNumber": 2,
-    "nationalPokedexNumber": 651
+    "nationalPokedexNumber": 651,
+    "formSuffix": ""
   },
   {
     "region": 6,
     "code": "Central",
     "regionalPokedexNumber": 3,
-    "nationalPokedexNumber": 652
+    "nationalPokedexNumber": 652,
+    "formSuffix": ""
   },
   {
     "region": 6,
     "code": "Central",
     "regionalPokedexNumber": 4,
-    "nationalPokedexNumber": 653
+    "nationalPokedexNumber": 653,
+    "formSuffix": ""
   },
   {
     "region": 6,
     "code": "Central",
     "regionalPokedexNumber": 5,
-    "nationalPokedexNumber": 654
+    "nationalPokedexNumber": 654,
+    "formSuffix": ""
   },
   {
     "region": 6,
     "code": "Central",
     "regionalPokedexNumber": 6,
-    "nationalPokedexNumber": 655
+    "nationalPokedexNumber": 655,
+    "formSuffix": ""
   },
   {
     "region": 6,
     "code": "Central",
     "regionalPokedexNumber": 7,
-    "nationalPokedexNumber": 656
+    "nationalPokedexNumber": 656,
+    "formSuffix": ""
   },
   {
     "region": 6,
     "code": "Central",
     "regionalPokedexNumber": 8,
-    "nationalPokedexNumber": 657
+    "nationalPokedexNumber": 657,
+    "formSuffix": ""
   },
   {
     "region": 6,
     "code": "Central",
     "regionalPokedexNumber": 9,
-    "nationalPokedexNumber": 658
+    "nationalPokedexNumber": 658,
+    "formSuffix": ""
   },
   {
     "region": 6,
     "code": "Central",
     "regionalPokedexNumber": 10,
-    "nationalPokedexNumber": 659
+    "nationalPokedexNumber": 659,
+    "formSuffix": ""
   },
   {
     "region": 6,
     "code": "Central",
     "regionalPokedexNumber": 11,
-    "nationalPokedexNumber": 660
+    "nationalPokedexNumber": 660,
+    "formSuffix": ""
   },
   {
     "region": 6,
     "code": "Central",
     "regionalPokedexNumber": 12,
-    "nationalPokedexNumber": 263
+    "nationalPokedexNumber": 263,
+    "formSuffix": ""
   },
   {
     "region": 6,
     "code": "Central",
     "regionalPokedexNumber": 13,
-    "nationalPokedexNumber": 264
+    "nationalPokedexNumber": 264,
+    "formSuffix": ""
   },
   {
     "region": 6,
     "code": "Central",
     "regionalPokedexNumber": 14,
-    "nationalPokedexNumber": 661
+    "nationalPokedexNumber": 661,
+    "formSuffix": ""
   },
   {
     "region": 6,
     "code": "Central",
     "regionalPokedexNumber": 15,
-    "nationalPokedexNumber": 662
+    "nationalPokedexNumber": 662,
+    "formSuffix": ""
   },
   {
     "region": 6,
     "code": "Central",
     "regionalPokedexNumber": 16,
-    "nationalPokedexNumber": 663
+    "nationalPokedexNumber": 663,
+    "formSuffix": ""
   },
   {
     "region": 6,
     "code": "Central",
     "regionalPokedexNumber": 17,
-    "nationalPokedexNumber": 16
+    "nationalPokedexNumber": 16,
+    "formSuffix": ""
   },
   {
     "region": 6,
     "code": "Central",
     "regionalPokedexNumber": 18,
-    "nationalPokedexNumber": 17
+    "nationalPokedexNumber": 17,
+    "formSuffix": ""
   },
   {
     "region": 6,
     "code": "Central",
     "regionalPokedexNumber": 19,
-    "nationalPokedexNumber": 18
+    "nationalPokedexNumber": 18,
+    "formSuffix": ""
   },
   {
     "region": 6,
     "code": "Central",
     "regionalPokedexNumber": 20,
-    "nationalPokedexNumber": 664
+    "nationalPokedexNumber": 664,
+    "formSuffix": ""
   },
   {
     "region": 6,
     "code": "Central",
     "regionalPokedexNumber": 21,
-    "nationalPokedexNumber": 665
+    "nationalPokedexNumber": 665,
+    "formSuffix": ""
   },
   {
     "region": 6,
     "code": "Central",
     "regionalPokedexNumber": 22,
-    "nationalPokedexNumber": 666
+    "nationalPokedexNumber": 666,
+    "formSuffix": ""
   },
   {
     "region": 6,
     "code": "Central",
     "regionalPokedexNumber": 23,
-    "nationalPokedexNumber": 10
+    "nationalPokedexNumber": 10,
+    "formSuffix": ""
   },
   {
     "region": 6,
     "code": "Central",
     "regionalPokedexNumber": 24,
-    "nationalPokedexNumber": 11
+    "nationalPokedexNumber": 11,
+    "formSuffix": ""
   },
   {
     "region": 6,
     "code": "Central",
     "regionalPokedexNumber": 25,
-    "nationalPokedexNumber": 12
+    "nationalPokedexNumber": 12,
+    "formSuffix": ""
   },
   {
     "region": 6,
     "code": "Central",
     "regionalPokedexNumber": 26,
-    "nationalPokedexNumber": 13
+    "nationalPokedexNumber": 13,
+    "formSuffix": ""
   },
   {
     "region": 6,
     "code": "Central",
     "regionalPokedexNumber": 27,
-    "nationalPokedexNumber": 14
+    "nationalPokedexNumber": 14,
+    "formSuffix": ""
   },
   {
     "region": 6,
     "code": "Central",
     "regionalPokedexNumber": 28,
-    "nationalPokedexNumber": 15
+    "nationalPokedexNumber": 15,
+    "formSuffix": ""
   },
   {
     "region": 6,
     "code": "Central",
     "regionalPokedexNumber": 29,
-    "nationalPokedexNumber": 511
+    "nationalPokedexNumber": 511,
+    "formSuffix": ""
   },
   {
     "region": 6,
     "code": "Central",
     "regionalPokedexNumber": 30,
-    "nationalPokedexNumber": 512
+    "nationalPokedexNumber": 512,
+    "formSuffix": ""
   },
   {
     "region": 6,
     "code": "Central",
     "regionalPokedexNumber": 31,
-    "nationalPokedexNumber": 513
+    "nationalPokedexNumber": 513,
+    "formSuffix": ""
   },
   {
     "region": 6,
     "code": "Central",
     "regionalPokedexNumber": 32,
-    "nationalPokedexNumber": 514
+    "nationalPokedexNumber": 514,
+    "formSuffix": ""
   },
   {
     "region": 6,
     "code": "Central",
     "regionalPokedexNumber": 33,
-    "nationalPokedexNumber": 515
+    "nationalPokedexNumber": 515,
+    "formSuffix": ""
   },
   {
     "region": 6,
     "code": "Central",
     "regionalPokedexNumber": 34,
-    "nationalPokedexNumber": 516
+    "nationalPokedexNumber": 516,
+    "formSuffix": ""
   },
   {
     "region": 6,
     "code": "Central",
     "regionalPokedexNumber": 35,
-    "nationalPokedexNumber": 172
+    "nationalPokedexNumber": 172,
+    "formSuffix": ""
   },
   {
     "region": 6,
     "code": "Central",
     "regionalPokedexNumber": 36,
-    "nationalPokedexNumber": 25
+    "nationalPokedexNumber": 25,
+    "formSuffix": ""
   },
   {
     "region": 6,
     "code": "Central",
     "regionalPokedexNumber": 37,
-    "nationalPokedexNumber": 26
+    "nationalPokedexNumber": 26,
+    "formSuffix": ""
   },
   {
     "region": 6,
     "code": "Central",
     "regionalPokedexNumber": 38,
-    "nationalPokedexNumber": 399
+    "nationalPokedexNumber": 399,
+    "formSuffix": ""
   },
   {
     "region": 6,
     "code": "Central",
     "regionalPokedexNumber": 39,
-    "nationalPokedexNumber": 400
+    "nationalPokedexNumber": 400,
+    "formSuffix": ""
   },
   {
     "region": 6,
     "code": "Central",
     "regionalPokedexNumber": 40,
-    "nationalPokedexNumber": 206
+    "nationalPokedexNumber": 206,
+    "formSuffix": ""
   },
   {
     "region": 6,
     "code": "Central",
     "regionalPokedexNumber": 41,
-    "nationalPokedexNumber": 298
+    "nationalPokedexNumber": 298,
+    "formSuffix": ""
   },
   {
     "region": 6,
     "code": "Central",
     "regionalPokedexNumber": 42,
-    "nationalPokedexNumber": 183
+    "nationalPokedexNumber": 183,
+    "formSuffix": ""
   },
   {
     "region": 6,
     "code": "Central",
     "regionalPokedexNumber": 43,
-    "nationalPokedexNumber": 184
+    "nationalPokedexNumber": 184,
+    "formSuffix": ""
   },
   {
     "region": 6,
     "code": "Central",
     "regionalPokedexNumber": 44,
-    "nationalPokedexNumber": 412
+    "nationalPokedexNumber": 412,
+    "formSuffix": ""
   },
   {
     "region": 6,
     "code": "Central",
     "regionalPokedexNumber": 45,
-    "nationalPokedexNumber": 413
+    "nationalPokedexNumber": 413,
+    "formSuffix": ""
   },
   {
     "region": 6,
     "code": "Central",
     "regionalPokedexNumber": 46,
-    "nationalPokedexNumber": 414
+    "nationalPokedexNumber": 414,
+    "formSuffix": ""
   },
   {
     "region": 6,
     "code": "Central",
     "regionalPokedexNumber": 47,
-    "nationalPokedexNumber": 283
+    "nationalPokedexNumber": 283,
+    "formSuffix": ""
   },
   {
     "region": 6,
     "code": "Central",
     "regionalPokedexNumber": 48,
-    "nationalPokedexNumber": 284
+    "nationalPokedexNumber": 284,
+    "formSuffix": ""
   },
   {
     "region": 6,
     "code": "Central",
     "regionalPokedexNumber": 49,
-    "nationalPokedexNumber": 129
+    "nationalPokedexNumber": 129,
+    "formSuffix": ""
   },
   {
     "region": 6,
     "code": "Central",
     "regionalPokedexNumber": 50,
-    "nationalPokedexNumber": 130
+    "nationalPokedexNumber": 130,
+    "formSuffix": ""
   },
   {
     "region": 6,
     "code": "Central",
     "regionalPokedexNumber": 51,
-    "nationalPokedexNumber": 341
+    "nationalPokedexNumber": 341,
+    "formSuffix": ""
   },
   {
     "region": 6,
     "code": "Central",
     "regionalPokedexNumber": 52,
-    "nationalPokedexNumber": 342
+    "nationalPokedexNumber": 342,
+    "formSuffix": ""
   },
   {
     "region": 6,
     "code": "Central",
     "regionalPokedexNumber": 53,
-    "nationalPokedexNumber": 118
+    "nationalPokedexNumber": 118,
+    "formSuffix": ""
   },
   {
     "region": 6,
     "code": "Central",
     "regionalPokedexNumber": 54,
-    "nationalPokedexNumber": 119
+    "nationalPokedexNumber": 119,
+    "formSuffix": ""
   },
   {
     "region": 6,
     "code": "Central",
     "regionalPokedexNumber": 55,
-    "nationalPokedexNumber": 318
+    "nationalPokedexNumber": 318,
+    "formSuffix": ""
   },
   {
     "region": 6,
     "code": "Central",
     "regionalPokedexNumber": 56,
-    "nationalPokedexNumber": 319
+    "nationalPokedexNumber": 319,
+    "formSuffix": ""
   },
   {
     "region": 6,
     "code": "Central",
     "regionalPokedexNumber": 57,
-    "nationalPokedexNumber": 667
+    "nationalPokedexNumber": 667,
+    "formSuffix": ""
   },
   {
     "region": 6,
     "code": "Central",
     "regionalPokedexNumber": 58,
-    "nationalPokedexNumber": 668
+    "nationalPokedexNumber": 668,
+    "formSuffix": ""
   },
   {
     "region": 6,
     "code": "Central",
     "regionalPokedexNumber": 59,
-    "nationalPokedexNumber": 54
+    "nationalPokedexNumber": 54,
+    "formSuffix": ""
   },
   {
     "region": 6,
     "code": "Central",
     "regionalPokedexNumber": 60,
-    "nationalPokedexNumber": 55
+    "nationalPokedexNumber": 55,
+    "formSuffix": ""
   },
   {
     "region": 6,
     "code": "Central",
     "regionalPokedexNumber": 61,
-    "nationalPokedexNumber": 83
+    "nationalPokedexNumber": 83,
+    "formSuffix": ""
   },
   {
     "region": 6,
     "code": "Central",
     "regionalPokedexNumber": 62,
-    "nationalPokedexNumber": 447
+    "nationalPokedexNumber": 447,
+    "formSuffix": ""
   },
   {
     "region": 6,
     "code": "Central",
     "regionalPokedexNumber": 63,
-    "nationalPokedexNumber": 448
+    "nationalPokedexNumber": 448,
+    "formSuffix": ""
   },
   {
     "region": 6,
     "code": "Central",
     "regionalPokedexNumber": 64,
-    "nationalPokedexNumber": 280
+    "nationalPokedexNumber": 280,
+    "formSuffix": ""
   },
   {
     "region": 6,
     "code": "Central",
     "regionalPokedexNumber": 65,
-    "nationalPokedexNumber": 281
+    "nationalPokedexNumber": 281,
+    "formSuffix": ""
   },
   {
     "region": 6,
     "code": "Central",
     "regionalPokedexNumber": 66,
-    "nationalPokedexNumber": 282
+    "nationalPokedexNumber": 282,
+    "formSuffix": ""
   },
   {
     "region": 6,
     "code": "Central",
     "regionalPokedexNumber": 67,
-    "nationalPokedexNumber": 475
+    "nationalPokedexNumber": 475,
+    "formSuffix": ""
   },
   {
     "region": 6,
     "code": "Central",
     "regionalPokedexNumber": 68,
-    "nationalPokedexNumber": 669
+    "nationalPokedexNumber": 669,
+    "formSuffix": ""
   },
   {
     "region": 6,
     "code": "Central",
     "regionalPokedexNumber": 69,
-    "nationalPokedexNumber": 670
+    "nationalPokedexNumber": 670,
+    "formSuffix": ""
   },
   {
     "region": 6,
     "code": "Central",
     "regionalPokedexNumber": 70,
-    "nationalPokedexNumber": 671
+    "nationalPokedexNumber": 671,
+    "formSuffix": ""
   },
   {
     "region": 6,
     "code": "Central",
     "regionalPokedexNumber": 71,
-    "nationalPokedexNumber": 406
+    "nationalPokedexNumber": 406,
+    "formSuffix": ""
   },
   {
     "region": 6,
     "code": "Central",
     "regionalPokedexNumber": 72,
-    "nationalPokedexNumber": 315
+    "nationalPokedexNumber": 315,
+    "formSuffix": ""
   },
   {
     "region": 6,
     "code": "Central",
     "regionalPokedexNumber": 73,
-    "nationalPokedexNumber": 407
+    "nationalPokedexNumber": 407,
+    "formSuffix": ""
   },
   {
     "region": 6,
     "code": "Central",
     "regionalPokedexNumber": 74,
-    "nationalPokedexNumber": 165
+    "nationalPokedexNumber": 165,
+    "formSuffix": ""
   },
   {
     "region": 6,
     "code": "Central",
     "regionalPokedexNumber": 75,
-    "nationalPokedexNumber": 166
+    "nationalPokedexNumber": 166,
+    "formSuffix": ""
   },
   {
     "region": 6,
     "code": "Central",
     "regionalPokedexNumber": 76,
-    "nationalPokedexNumber": 415
+    "nationalPokedexNumber": 415,
+    "formSuffix": ""
   },
   {
     "region": 6,
     "code": "Central",
     "regionalPokedexNumber": 77,
-    "nationalPokedexNumber": 416
+    "nationalPokedexNumber": 416,
+    "formSuffix": ""
   },
   {
     "region": 6,
     "code": "Central",
     "regionalPokedexNumber": 78,
-    "nationalPokedexNumber": 300
+    "nationalPokedexNumber": 300,
+    "formSuffix": ""
   },
   {
     "region": 6,
     "code": "Central",
     "regionalPokedexNumber": 79,
-    "nationalPokedexNumber": 301
+    "nationalPokedexNumber": 301,
+    "formSuffix": ""
   },
   {
     "region": 6,
     "code": "Central",
     "regionalPokedexNumber": 80,
-    "nationalPokedexNumber": 1
+    "nationalPokedexNumber": 1,
+    "formSuffix": ""
   },
   {
     "region": 6,
     "code": "Central",
     "regionalPokedexNumber": 81,
-    "nationalPokedexNumber": 2
+    "nationalPokedexNumber": 2,
+    "formSuffix": ""
   },
   {
     "region": 6,
     "code": "Central",
     "regionalPokedexNumber": 82,
-    "nationalPokedexNumber": 3
+    "nationalPokedexNumber": 3,
+    "formSuffix": ""
   },
   {
     "region": 6,
     "code": "Central",
     "regionalPokedexNumber": 83,
-    "nationalPokedexNumber": 4
+    "nationalPokedexNumber": 4,
+    "formSuffix": ""
   },
   {
     "region": 6,
     "code": "Central",
     "regionalPokedexNumber": 84,
-    "nationalPokedexNumber": 5
+    "nationalPokedexNumber": 5,
+    "formSuffix": ""
   },
   {
     "region": 6,
     "code": "Central",
     "regionalPokedexNumber": 85,
-    "nationalPokedexNumber": 6
+    "nationalPokedexNumber": 6,
+    "formSuffix": ""
   },
   {
     "region": 6,
     "code": "Central",
     "regionalPokedexNumber": 86,
-    "nationalPokedexNumber": 7
+    "nationalPokedexNumber": 7,
+    "formSuffix": ""
   },
   {
     "region": 6,
     "code": "Central",
     "regionalPokedexNumber": 87,
-    "nationalPokedexNumber": 8
+    "nationalPokedexNumber": 8,
+    "formSuffix": ""
   },
   {
     "region": 6,
     "code": "Central",
     "regionalPokedexNumber": 88,
-    "nationalPokedexNumber": 9
+    "nationalPokedexNumber": 9,
+    "formSuffix": ""
   },
   {
     "region": 6,
     "code": "Central",
     "regionalPokedexNumber": 89,
-    "nationalPokedexNumber": 672
+    "nationalPokedexNumber": 672,
+    "formSuffix": ""
   },
   {
     "region": 6,
     "code": "Central",
     "regionalPokedexNumber": 90,
-    "nationalPokedexNumber": 673
+    "nationalPokedexNumber": 673,
+    "formSuffix": ""
   },
   {
     "region": 6,
     "code": "Central",
     "regionalPokedexNumber": 91,
-    "nationalPokedexNumber": 674
+    "nationalPokedexNumber": 674,
+    "formSuffix": ""
   },
   {
     "region": 6,
     "code": "Central",
     "regionalPokedexNumber": 92,
-    "nationalPokedexNumber": 675
+    "nationalPokedexNumber": 675,
+    "formSuffix": ""
   },
   {
     "region": 6,
     "code": "Central",
     "regionalPokedexNumber": 93,
-    "nationalPokedexNumber": 676
+    "nationalPokedexNumber": 676,
+    "formSuffix": ""
   },
   {
     "region": 6,
     "code": "Central",
     "regionalPokedexNumber": 94,
-    "nationalPokedexNumber": 84
+    "nationalPokedexNumber": 84,
+    "formSuffix": ""
   },
   {
     "region": 6,
     "code": "Central",
     "regionalPokedexNumber": 95,
-    "nationalPokedexNumber": 85
+    "nationalPokedexNumber": 85,
+    "formSuffix": ""
   },
   {
     "region": 6,
     "code": "Central",
     "regionalPokedexNumber": 96,
-    "nationalPokedexNumber": 311
+    "nationalPokedexNumber": 311,
+    "formSuffix": ""
   },
   {
     "region": 6,
     "code": "Central",
     "regionalPokedexNumber": 97,
-    "nationalPokedexNumber": 312
+    "nationalPokedexNumber": 312,
+    "formSuffix": ""
   },
   {
     "region": 6,
     "code": "Central",
     "regionalPokedexNumber": 98,
-    "nationalPokedexNumber": 316
+    "nationalPokedexNumber": 316,
+    "formSuffix": ""
   },
   {
     "region": 6,
     "code": "Central",
     "regionalPokedexNumber": 99,
-    "nationalPokedexNumber": 317
+    "nationalPokedexNumber": 317,
+    "formSuffix": ""
   },
   {
     "region": 6,
     "code": "Central",
     "regionalPokedexNumber": 100,
-    "nationalPokedexNumber": 559
+    "nationalPokedexNumber": 559,
+    "formSuffix": ""
   },
   {
     "region": 6,
     "code": "Central",
     "regionalPokedexNumber": 101,
-    "nationalPokedexNumber": 560
+    "nationalPokedexNumber": 560,
+    "formSuffix": ""
   },
   {
     "region": 6,
     "code": "Central",
     "regionalPokedexNumber": 102,
-    "nationalPokedexNumber": 63
+    "nationalPokedexNumber": 63,
+    "formSuffix": ""
   },
   {
     "region": 6,
     "code": "Central",
     "regionalPokedexNumber": 103,
-    "nationalPokedexNumber": 64
+    "nationalPokedexNumber": 64,
+    "formSuffix": ""
   },
   {
     "region": 6,
     "code": "Central",
     "regionalPokedexNumber": 104,
-    "nationalPokedexNumber": 65
+    "nationalPokedexNumber": 65,
+    "formSuffix": ""
   },
   {
     "region": 6,
     "code": "Central",
     "regionalPokedexNumber": 105,
-    "nationalPokedexNumber": 43
+    "nationalPokedexNumber": 43,
+    "formSuffix": ""
   },
   {
     "region": 6,
     "code": "Central",
     "regionalPokedexNumber": 106,
-    "nationalPokedexNumber": 44
+    "nationalPokedexNumber": 44,
+    "formSuffix": ""
   },
   {
     "region": 6,
     "code": "Central",
     "regionalPokedexNumber": 107,
-    "nationalPokedexNumber": 45
+    "nationalPokedexNumber": 45,
+    "formSuffix": ""
   },
   {
     "region": 6,
     "code": "Central",
     "regionalPokedexNumber": 108,
-    "nationalPokedexNumber": 182
+    "nationalPokedexNumber": 182,
+    "formSuffix": ""
   },
   {
     "region": 6,
     "code": "Central",
     "regionalPokedexNumber": 109,
-    "nationalPokedexNumber": 161
+    "nationalPokedexNumber": 161,
+    "formSuffix": ""
   },
   {
     "region": 6,
     "code": "Central",
     "regionalPokedexNumber": 110,
-    "nationalPokedexNumber": 162
+    "nationalPokedexNumber": 162,
+    "formSuffix": ""
   },
   {
     "region": 6,
     "code": "Central",
     "regionalPokedexNumber": 111,
-    "nationalPokedexNumber": 290
+    "nationalPokedexNumber": 290,
+    "formSuffix": ""
   },
   {
     "region": 6,
     "code": "Central",
     "regionalPokedexNumber": 112,
-    "nationalPokedexNumber": 291
+    "nationalPokedexNumber": 291,
+    "formSuffix": ""
   },
   {
     "region": 6,
     "code": "Central",
     "regionalPokedexNumber": 113,
-    "nationalPokedexNumber": 292
+    "nationalPokedexNumber": 292,
+    "formSuffix": ""
   },
   {
     "region": 6,
     "code": "Central",
     "regionalPokedexNumber": 114,
-    "nationalPokedexNumber": 677
+    "nationalPokedexNumber": 677,
+    "formSuffix": ""
   },
   {
     "region": 6,
     "code": "Central",
     "regionalPokedexNumber": 115,
-    "nationalPokedexNumber": 678
+    "nationalPokedexNumber": 678,
+    "formSuffix": ""
   },
   {
     "region": 6,
     "code": "Central",
     "regionalPokedexNumber": 116,
-    "nationalPokedexNumber": 352
+    "nationalPokedexNumber": 352,
+    "formSuffix": ""
   },
   {
     "region": 6,
     "code": "Central",
     "regionalPokedexNumber": 117,
-    "nationalPokedexNumber": 679
+    "nationalPokedexNumber": 679,
+    "formSuffix": ""
   },
   {
     "region": 6,
     "code": "Central",
     "regionalPokedexNumber": 118,
-    "nationalPokedexNumber": 680
+    "nationalPokedexNumber": 680,
+    "formSuffix": ""
   },
   {
     "region": 6,
     "code": "Central",
     "regionalPokedexNumber": 119,
-    "nationalPokedexNumber": 681
+    "nationalPokedexNumber": 681,
+    "formSuffix": ""
   },
   {
     "region": 6,
     "code": "Central",
     "regionalPokedexNumber": 120,
-    "nationalPokedexNumber": 543
+    "nationalPokedexNumber": 543,
+    "formSuffix": ""
   },
   {
     "region": 6,
     "code": "Central",
     "regionalPokedexNumber": 121,
-    "nationalPokedexNumber": 544
+    "nationalPokedexNumber": 544,
+    "formSuffix": ""
   },
   {
     "region": 6,
     "code": "Central",
     "regionalPokedexNumber": 122,
-    "nationalPokedexNumber": 545
+    "nationalPokedexNumber": 545,
+    "formSuffix": ""
   },
   {
     "region": 6,
     "code": "Central",
     "regionalPokedexNumber": 123,
-    "nationalPokedexNumber": 531
+    "nationalPokedexNumber": 531,
+    "formSuffix": ""
   },
   {
     "region": 6,
     "code": "Central",
     "regionalPokedexNumber": 124,
-    "nationalPokedexNumber": 235
+    "nationalPokedexNumber": 235,
+    "formSuffix": ""
   },
   {
     "region": 6,
     "code": "Central",
     "regionalPokedexNumber": 125,
-    "nationalPokedexNumber": 453
+    "nationalPokedexNumber": 453,
+    "formSuffix": ""
   },
   {
     "region": 6,
     "code": "Central",
     "regionalPokedexNumber": 126,
-    "nationalPokedexNumber": 454
+    "nationalPokedexNumber": 454,
+    "formSuffix": ""
   },
   {
     "region": 6,
     "code": "Central",
     "regionalPokedexNumber": 127,
-    "nationalPokedexNumber": 580
+    "nationalPokedexNumber": 580,
+    "formSuffix": ""
   },
   {
     "region": 6,
     "code": "Central",
     "regionalPokedexNumber": 128,
-    "nationalPokedexNumber": 581
+    "nationalPokedexNumber": 581,
+    "formSuffix": ""
   },
   {
     "region": 6,
     "code": "Central",
     "regionalPokedexNumber": 129,
-    "nationalPokedexNumber": 682
+    "nationalPokedexNumber": 682,
+    "formSuffix": ""
   },
   {
     "region": 6,
     "code": "Central",
     "regionalPokedexNumber": 130,
-    "nationalPokedexNumber": 683
+    "nationalPokedexNumber": 683,
+    "formSuffix": ""
   },
   {
     "region": 6,
     "code": "Central",
     "regionalPokedexNumber": 131,
-    "nationalPokedexNumber": 684
+    "nationalPokedexNumber": 684,
+    "formSuffix": ""
   },
   {
     "region": 6,
     "code": "Central",
     "regionalPokedexNumber": 132,
-    "nationalPokedexNumber": 685
+    "nationalPokedexNumber": 685,
+    "formSuffix": ""
   },
   {
     "region": 6,
     "code": "Central",
     "regionalPokedexNumber": 133,
-    "nationalPokedexNumber": 313
+    "nationalPokedexNumber": 313,
+    "formSuffix": ""
   },
   {
     "region": 6,
     "code": "Central",
     "regionalPokedexNumber": 134,
-    "nationalPokedexNumber": 314
+    "nationalPokedexNumber": 314,
+    "formSuffix": ""
   },
   {
     "region": 6,
     "code": "Central",
     "regionalPokedexNumber": 135,
-    "nationalPokedexNumber": 187
+    "nationalPokedexNumber": 187,
+    "formSuffix": ""
   },
   {
     "region": 6,
     "code": "Central",
     "regionalPokedexNumber": 136,
-    "nationalPokedexNumber": 188
+    "nationalPokedexNumber": 188,
+    "formSuffix": ""
   },
   {
     "region": 6,
     "code": "Central",
     "regionalPokedexNumber": 137,
-    "nationalPokedexNumber": 189
+    "nationalPokedexNumber": 189,
+    "formSuffix": ""
   },
   {
     "region": 6,
     "code": "Central",
     "regionalPokedexNumber": 138,
-    "nationalPokedexNumber": 446
+    "nationalPokedexNumber": 446,
+    "formSuffix": ""
   },
   {
     "region": 6,
     "code": "Central",
     "regionalPokedexNumber": 139,
-    "nationalPokedexNumber": 143
+    "nationalPokedexNumber": 143,
+    "formSuffix": ""
   },
   {
     "region": 6,
     "code": "Central",
     "regionalPokedexNumber": 140,
-    "nationalPokedexNumber": 293
+    "nationalPokedexNumber": 293,
+    "formSuffix": ""
   },
   {
     "region": 6,
     "code": "Central",
     "regionalPokedexNumber": 141,
-    "nationalPokedexNumber": 294
+    "nationalPokedexNumber": 294,
+    "formSuffix": ""
   },
   {
     "region": 6,
     "code": "Central",
     "regionalPokedexNumber": 142,
-    "nationalPokedexNumber": 295
+    "nationalPokedexNumber": 295,
+    "formSuffix": ""
   },
   {
     "region": 6,
     "code": "Central",
     "regionalPokedexNumber": 143,
-    "nationalPokedexNumber": 307
+    "nationalPokedexNumber": 307,
+    "formSuffix": ""
   },
   {
     "region": 6,
     "code": "Central",
     "regionalPokedexNumber": 144,
-    "nationalPokedexNumber": 308
+    "nationalPokedexNumber": 308,
+    "formSuffix": ""
   },
   {
     "region": 6,
     "code": "Central",
     "regionalPokedexNumber": 145,
-    "nationalPokedexNumber": 41
+    "nationalPokedexNumber": 41,
+    "formSuffix": ""
   },
   {
     "region": 6,
     "code": "Central",
     "regionalPokedexNumber": 146,
-    "nationalPokedexNumber": 42
+    "nationalPokedexNumber": 42,
+    "formSuffix": ""
   },
   {
     "region": 6,
     "code": "Central",
     "regionalPokedexNumber": 147,
-    "nationalPokedexNumber": 169
+    "nationalPokedexNumber": 169,
+    "formSuffix": ""
   },
   {
     "region": 6,
     "code": "Central",
     "regionalPokedexNumber": 148,
-    "nationalPokedexNumber": 610
+    "nationalPokedexNumber": 610,
+    "formSuffix": ""
   },
   {
     "region": 6,
     "code": "Central",
     "regionalPokedexNumber": 149,
-    "nationalPokedexNumber": 611
+    "nationalPokedexNumber": 611,
+    "formSuffix": ""
   },
   {
     "region": 6,
     "code": "Central",
     "regionalPokedexNumber": 150,
-    "nationalPokedexNumber": 612
+    "nationalPokedexNumber": 612,
+    "formSuffix": ""
   },
   {
     "region": 6,
     "code": "Central",
     "regionalPokedexNumber": 151,
-    "nationalPokedexNumber": 719
+    "nationalPokedexNumber": 719,
+    "formSuffix": ""
   },
   {
     "region": 6,
     "code": "Central",
     "regionalPokedexNumber": 152,
-    "nationalPokedexNumber": 720
+    "nationalPokedexNumber": 720,
+    "formSuffix": ""
   },
   {
     "region": 6,
     "code": "Central",
     "regionalPokedexNumber": 153,
-    "nationalPokedexNumber": 721
+    "nationalPokedexNumber": 721,
+    "formSuffix": ""
   }
 ]
