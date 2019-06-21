@@ -66,10 +66,14 @@ export function iteratePokedexToList(
   const dexKey = regions[filters.activePokedex];
   const dex = !dexKey
     ? Array.from(pokedex)
-    : dexKey.map((x) => {
+    : dexKey.reduce((p, x) => {
         const pkmId = `p_${x.nationalPokedexNumber}${x.formSuffix}`;
-        return [pkmId, pokedex.get(pkmId)];
-      });
+        const m = pokedex.get(pkmId);
+        if (!m) {
+          return p;
+        }
+        return [...p, [pkmId, m]];
+      }, []);
 
   return dex.reduce((acc, [_, item]) => {
     if (applyDexFilters(item, filters, typeMatches)) {
