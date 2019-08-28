@@ -146,9 +146,8 @@ class PlannerPage extends React.Component {
     let pokeData = this.context;
     const { location, match } = this.props;
     const activePokedex = resolvePokedex(match);
-    const currentTeamIds = createSetFromIdString(
-      getUrlQueryStringAsObject(location).team
-    );
+    const { team } = getUrlQueryStringAsObject(location);
+    const currentTeamIds = createSetFromIdString(team);
 
     const dexFilters = { ...this.state, currentTeamIds, activePokedex };
 
@@ -194,7 +193,7 @@ class PlannerPage extends React.Component {
         onChange: this.handleTickboxFilter
       }
     };
-
+    console.log('PLAN', location, team, currentTeamIds);
     return (
       <div className="team-planner">
         <div
