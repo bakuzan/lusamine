@@ -1,23 +1,23 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "c3521ff38f4ac2b06c98a45e4f0ae7d3",
+    "revision": "71cf8b90ac7c71f23d3e0f67b2542b0d",
     "url": "/lusamine/index.html"
   },
   {
-    "revision": "3806ad1642691db88015",
-    "url": "/lusamine/static/css/main.d081e76f.chunk.css"
+    "revision": "51493a0615670f8133c3",
+    "url": "/lusamine/static/css/main.b205e472.chunk.css"
   },
   {
-    "revision": "84706a6be79e55aaa373",
-    "url": "/lusamine/static/js/2.32a6697d.chunk.js"
+    "revision": "e122fe87d9e219b621e7",
+    "url": "/lusamine/static/js/2.fe688e7f.chunk.js"
   },
   {
-    "revision": "3806ad1642691db88015",
-    "url": "/lusamine/static/js/main.9617c3e7.chunk.js"
+    "revision": "51493a0615670f8133c3",
+    "url": "/lusamine/static/js/main.639818d5.chunk.js"
   },
   {
-    "revision": "fa521e0fd32484deed69",
-    "url": "/lusamine/static/js/runtime~main.a2c07b01.js"
+    "revision": "5204d57802d1a9117284",
+    "url": "/lusamine/static/js/runtime~main.4a7772c0.js"
   },
   {
     "revision": "520c5cad9346e603ac7c18a6a5ba917c",
