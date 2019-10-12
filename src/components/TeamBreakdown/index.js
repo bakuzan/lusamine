@@ -8,7 +8,7 @@ import List from 'components/List';
 import EffectiveTypePanel from 'components/TeamBreakdownPanel/EffectiveTypePanel';
 import StatBreakdownPanel from 'components/TeamBreakdownPanel/StatPanel';
 import * as TBU from './TeamBreakdownUtils';
-import { capitaliseEachWord } from 'utils/common';
+import { capitaliseEachWord, generateUniqueId } from 'utils/common';
 
 import './TeamBreakdown.scss';
 
@@ -18,7 +18,8 @@ class TeamBreakdown extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      isCollapsed: true
+      isCollapsed: true,
+      uniqueId: generateUniqueId()
     };
 
     this.handleToggle = this.handleToggle.bind(this);
@@ -52,6 +53,7 @@ class TeamBreakdown extends React.Component {
     const noMembers = members.size === 0;
     const showToggle = !alwaysOpen && !noMembers;
     const showContent = (!isCollapsed && !noMembers) || alwaysOpen;
+    const breakdownDescription = `breakdownDescription_${this.state.uniqueId}`;
 
     const mouseState = {
       onMouseEnter: this.handleMouseEnterLeave,
@@ -66,7 +68,15 @@ class TeamBreakdown extends React.Component {
     );
 
     return (
-      <div className={classNames('team-breakdown', className)}>
+      <div
+        className={classNames('team-breakdown', className)}
+        aria-describedby={breakdownDescription}
+      >
+        <p id={breakdownDescription} className="for-screenreader-only">
+          This is a breakdown of meta information about{' '}
+          {this.props.teamName || 'the team'}. This includes generation counts,
+          form counts, and various type weaknesses and strengths.
+        </p>
         {showToggle && (
           <Button
             id="toggle-breakdown"
@@ -160,6 +170,7 @@ TeamBreakdown.propTypes = {
   alwaysOpen: PropTypes.bool,
   filterZeroes: PropTypes.bool,
   typeBreakdownOnly: PropTypes.bool,
+  teamName: PropTypes.string,
   members: PropTypes.instanceOf(Map),
   onMouseState: PropTypes.func
 };

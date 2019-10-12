@@ -42,6 +42,8 @@ $theme-maps: (
 
   .button--link {
     color: $button-link--colour;
+
+    &:focus,
     &:hover {
       color: darken($button-link--colour, $button--darken-percentage);
     }

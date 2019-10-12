@@ -150,6 +150,7 @@ class Team extends React.PureComponent {
           )}
         />
         <TeamBreakdown
+          teamName={`team ${this.props.name || 'nameless'}`}
           members={this.state.members}
           onMouseState={this.handleMouseState}
         />

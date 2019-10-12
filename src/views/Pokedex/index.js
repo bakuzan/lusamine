@@ -87,7 +87,7 @@ function Pokedex({ match, location, history }) {
           disabled={isFirst}
           onClick={() => move(-1)}
         >
-          {isFirst ? '' : backward.text}
+          <span aria-hidden="true">{isFirst ? '' : backward.text}</span>
         </Button>
         {!isXSmall && (
           <SelectBox
@@ -106,7 +106,7 @@ function Pokedex({ match, location, history }) {
           disabled={isLast}
           onClick={() => move(1)}
         >
-          {isLast ? '' : forward.text}
+          <span aria-hidden="true">{isLast ? '' : forward.text}</span>
         </Button>
         {isXSmall && (
           <SelectBox
@@ -138,7 +138,9 @@ function Pokedex({ match, location, history }) {
               />
             </li>
           )}
-          {hasDevolves && <li className="evolution-tree__arrow" />}
+          {hasDevolves && (
+            <li className="evolution-tree__arrow" aria-label="Evolves to" />
+          )}
           <li>
             <List
               className="evolution-tree__list"
@@ -153,7 +155,9 @@ function Pokedex({ match, location, history }) {
               )}
             />
           </li>
-          {hasEvolves && <li className="evolution-tree__arrow" />}
+          {hasEvolves && (
+            <li className="evolution-tree__arrow" aria-label="Evolves to" />
+          )}
           {hasEvolves && (
             <li>
               <List
@@ -205,6 +209,7 @@ function Pokedex({ match, location, history }) {
             alwaysOpen
             filterZeroes
             typeBreakdownOnly
+            teamName={typeSourceMon.name}
             members={new Map([[typeSourceMon.id, typeSourceMon]])}
           />
         </section>

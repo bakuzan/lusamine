@@ -27,7 +27,7 @@ const { Strings, Party, Routes } = Constants;
 
 const resolvePokedex = (m) =>
   m.params.pokedexKey ||
-  settingsStore.get('defaultPokedex') ||
+  settingsStore.getKey('defaultPokedex') ||
   Pokedex.national;
 
 class PlannerPage extends React.Component {
@@ -193,7 +193,7 @@ class PlannerPage extends React.Component {
         onChange: this.handleTickboxFilter
       }
     };
-    console.log('PLAN', location, team, currentTeamIds);
+
     return (
       <div className="team-planner">
         <div
@@ -215,7 +215,16 @@ class PlannerPage extends React.Component {
 
             return (
               <div className="team-planner__container team-planner__container--width_80">
-                <div className="team-planner__button-actions">
+                <p id="actionsDescription" className="for-screenreader-only">
+                  Here are actions applicaable to the team creator. You can
+                  randomise the team creator members selecting from those
+                  available under the current filters, save the current team to
+                  the teams tab, or clear all the current team members.
+                </p>
+                <div
+                  className="team-planner__button-actions"
+                  aria-describedby="actionsDescription"
+                >
                   <Button
                     id="randomise-team"
                     isAction
@@ -234,7 +243,19 @@ class PlannerPage extends React.Component {
                     Clear team
                   </Button>
                 </div>
-                <div className="team-planner__team-creator">
+                <p
+                  id="teamCreatorDescription"
+                  className="for-screenreader-only"
+                >
+                  Create a savable pokemon team with a custom name. Drag and
+                  drop or use the direction arrows to reorder team members.
+                  Individual pokemon can be evolved or devolved using the
+                  evolution button between the reorder buttons.
+                </p>
+                <div
+                  className="team-planner__team-creator"
+                  aria-describedby="teamCreatorDescription"
+                >
                   <ClearableInput
                     id="current-team-name"
                     name="currentTeamName"

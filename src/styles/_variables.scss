@@ -64,5 +64,7 @@ $types--column-offset: -50px;
 $types--row-offset: -18px;
 
 $z-index: (
+  clearance: 50,
+  over: 1000,
   easter-egg: 100
 );

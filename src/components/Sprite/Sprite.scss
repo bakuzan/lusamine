@@ -11,6 +11,9 @@
 
   @include typed-colour-modifiers;
 }
+.tooltip--above .tooltip__content {
+  bottom: 100%;
+}
 
 .sprite__pokemon {
   @extend %image-element;

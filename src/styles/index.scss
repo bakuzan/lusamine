@@ -1,5 +1,5 @@
-@import './_variables';
-@import './_themes';
+@import './_variables.scss';
+@import './_themes.scss';
 
 @font-face {
   font-family: 'Roboto Mono';
@@ -54,4 +54,21 @@ main {
   &--select-box {
     max-width: 150px;
   }
+}
+
+// Screenreader
+.for-screenreader-only {
+  border: 0;
+  clip: rect(0, 0, 0, 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+}
+
+// Overrides
+.app-information {
+  z-index: map-get($z-index, clearance);
 }

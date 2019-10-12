@@ -27,6 +27,7 @@ export default {
     planner:
       'Pokémon team planning app for casual players. Save and share your Pokémon teams.',
     savedTeams: 'View previously saved pokemon teams',
+    trainerTeams: 'View pokemon teams from famous trainers in the games',
     settings: 'Adjustable application settings',
     pokedex: 'Browse the pokedex to view information about each pokemon'
   },

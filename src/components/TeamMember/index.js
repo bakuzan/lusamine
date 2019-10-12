@@ -138,9 +138,18 @@ const TeamMember = React.memo(
                 'team-member__npn--with-remove': canRemove
               })}
             >
+              <p
+                id={`pokedexDescription_${data.id}`}
+                className="for-screenreader-only"
+              >
+                Click the national pokedex number of{' '}
+                {capitaliseEachWord(data.name)} to go to the corresponding
+                pokedex page.
+              </p>
               <ButtonisedNavLink
                 className="team-member__pokedex-link"
                 to={pokedexUrl}
+                aria-describedby={`pokedexDescription_${data.id}`}
               >
                 {`#${data.nationalPokedexNumber}`}
               </ButtonisedNavLink>
@@ -167,7 +176,16 @@ const TeamMember = React.memo(
             <TypeBlock key={type.id} value={type.name} />
           ))}
         </div>
-        <div className={classNames('team-member__action-container')}>
+        <div
+          className={classNames('team-member__action-container')}
+          aria-describedby={`memberActions_${data.id}`}
+        >
+          <p id={`memberActions_${data.id}`} className="for-screenreader-only">
+            Here are a range of team member actions including the ability to
+            move the team member left or right in the team, and evolve/devolve
+            the team member. These actions can be enabled/disabled in the
+            settings page.
+          </p>
           {hasCustomActions && props.renderCustomActions({ data })}
           {canReOrder && (
             <LeftButton
