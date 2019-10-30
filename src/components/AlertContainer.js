@@ -1,7 +1,7 @@
 import PropTypes from 'prop-types';
 import React from 'react';
 
-import { Alert } from 'mko';
+import Alert from 'meiko/Alert';
 
 class AlertContainer extends React.Component {
   constructor(props) {

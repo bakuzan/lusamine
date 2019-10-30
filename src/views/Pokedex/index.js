@@ -1,7 +1,10 @@
 import React, { useContext, useMemo } from 'react';
 
 import { capitaliseEachWord } from 'ayaka/capitalise';
-import { List as MkoList, SelectBox, useWindowSize } from 'mko';
+import { default as MkoList } from 'meiko/List';
+import SelectBox from 'meiko/SelectBox';
+import { useWindowSize } from 'meiko/hooks/useWindowSize';
+
 import { Button } from 'components/Buttons';
 import TeamMember from 'components/TeamMember';
 import TeamBreakdown from 'components/TeamBreakdown';

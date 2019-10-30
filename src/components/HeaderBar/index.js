@@ -3,7 +3,8 @@ import PropTypes from 'prop-types';
 import React from 'react';
 
 import createListeners from 'ayaka/createListeners';
-import { Header, Image } from 'mko';
+import Header from 'meiko/Header';
+import Image from 'meiko/Image';
 import NavigationMenu from './NavigationMenu';
 import { getWindowScrollPosition } from 'utils/common';
 import Logo from 'assets/logo.png';

@@ -2,13 +2,12 @@ import PropTypes from 'prop-types';
 import classNames from 'classnames';
 import React from 'react';
 
-import {
-  ClearableInput,
-  Tickbox,
-  MultiSelect,
-  SelectBox,
-  useWindowSize
-} from 'mko';
+import ClearableInput from 'meiko/ClearableInput';
+import MultiSelect from 'meiko/MultiSelect';
+import SelectBox from 'meiko/SelectBox';
+import Tickbox from 'meiko/Tickbox';
+import { useWindowSize } from 'meiko/hooks/useWindowSize';
+
 import Strings from 'constants/strings';
 import { pokedexOptions } from 'constants/pokedex';
 import { media } from 'utils/media';

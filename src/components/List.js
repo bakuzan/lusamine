@@ -1,7 +1,7 @@
 import PropTypes from 'prop-types';
 import React from 'react';
 
-import { List as MkoList } from 'mko';
+import { default as MkoList } from 'meiko/List';
 import Strings from 'constants/strings';
 
 const List = ({ items, itemTemplate, ...props }) => {

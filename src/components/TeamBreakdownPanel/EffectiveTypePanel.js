@@ -2,7 +2,7 @@ import classNames from 'classnames';
 import PropTypes from 'prop-types';
 import React from 'react';
 
-import { Grid } from 'mko';
+import Grid from 'meiko/Grid';
 import TypeBlock from 'components/TypeBlock';
 import * as TBPU from './TeamBreakdownPanelUtils';
 

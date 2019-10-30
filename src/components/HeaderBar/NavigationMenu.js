@@ -1,6 +1,8 @@
 import React from 'react';
 
-import { DropdownMenu, useWindowSize, nano } from 'mko';
+import DropdownMenu from 'meiko/DropdownMenu';
+import { nano } from 'meiko/styles/nano';
+import { useWindowSize } from 'meiko/hooks/useWindowSize';
 import { ButtonisedNavLink } from 'components/Buttons';
 import Routes from 'constants/routes';
 import { isXS } from 'utils/media';

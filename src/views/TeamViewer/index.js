@@ -1,7 +1,7 @@
 import React from 'react';
 
 import { capitalise } from 'ayaka/capitalise';
-import { Tabs } from 'mko';
+import Tabs from 'meiko/Tabs';
 import SavedTeams from './SavedTeams';
 import TrainerTeams from './TrainerTeams';
 

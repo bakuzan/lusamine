@@ -2,7 +2,8 @@ import classNames from 'classnames';
 import React from 'react';
 
 import generateUniqueId from 'ayaka/generateUniqueId';
-import { Grid, ClearableInput } from 'mko';
+import ClearableInput from 'meiko/ClearableInput';
+import Grid from 'meiko/Grid';
 import { Button } from 'components/Buttons';
 import Filters from 'components/Filters';
 import Team from 'components/Team';

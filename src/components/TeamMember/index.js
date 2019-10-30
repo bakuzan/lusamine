@@ -3,7 +3,7 @@ import classNames from 'classnames';
 import React, { useState, useContext, useMemo } from 'react';
 
 import { capitaliseEachWord } from 'ayaka/capitalise';
-import { Icons } from 'mko';
+import Icons from 'meiko/constants/icons';
 import ArtCard from 'components/ArtCard';
 import {
   ClearButton,

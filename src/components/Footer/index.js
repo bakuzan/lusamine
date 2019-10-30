@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { NewTabLink } from 'mko';
+import NewTabLink from 'meiko/NewTabLink';
 
 import './Footer.scss';
 

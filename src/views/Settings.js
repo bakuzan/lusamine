@@ -1,6 +1,7 @@
 import React from 'react';
 
-import { Tickbox, SelectBox } from 'mko';
+import SelectBox from 'meiko/SelectBox';
+import Tickbox from 'meiko/Tickbox';
 import SETTINGS_DEFAULTS from 'constants/settings';
 import { pokedexOptions } from 'constants/pokedex';
 import { settingsStore } from 'utils/common';
