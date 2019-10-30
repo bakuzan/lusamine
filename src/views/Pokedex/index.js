@@ -1,5 +1,6 @@
 import React, { useContext, useMemo } from 'react';
 
+import { capitaliseEachWord } from 'ayaka/capitalise';
 import { List as MkoList, SelectBox, useWindowSize } from 'mko';
 import { Button } from 'components/Buttons';
 import TeamMember from 'components/TeamMember';
@@ -9,7 +10,7 @@ import PokedexMember from './PokedexMember';
 
 import { PokedexContext } from 'context';
 import Routes from 'constants/routes';
-import { getUrlQueryStringAsObject, capitaliseEachWord } from 'utils/common';
+import { getUrlQueryStringAsObject } from 'utils/common';
 import generateEvolutionOptions from 'utils/generateEvolutionOptions';
 import { isXS } from 'utils/media';
 import { merge, distinct } from 'utils/lists';

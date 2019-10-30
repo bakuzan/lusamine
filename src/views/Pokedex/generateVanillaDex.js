@@ -1,4 +1,5 @@
-import { iterateMapToArray, capitaliseEachWord } from 'utils/common';
+import { capitaliseEachWord } from 'ayaka/capitalise';
+import { iterateMapToArray } from 'utils/common';
 import {
   isMegaPokemon,
   isVariantPokemon,

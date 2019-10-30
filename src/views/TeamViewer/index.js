@@ -1,10 +1,11 @@
 import React from 'react';
 
+import { capitalise } from 'ayaka/capitalise';
 import { Tabs } from 'mko';
 import SavedTeams from './SavedTeams';
 import TrainerTeams from './TrainerTeams';
 
-import { getUrlQueryStringAsObject, capitalise } from 'utils/common';
+import { getUrlQueryStringAsObject } from 'utils/common';
 
 import './TeamViewer.scss';
 

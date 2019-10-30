@@ -2,7 +2,7 @@ import PropTypes from 'prop-types';
 import classNames from 'classnames';
 import React from 'react';
 
-import { capitaliseEachWord } from 'utils/common';
+import { capitaliseEachWord } from 'ayaka/capitalise';
 import { buildSelectorsForArtCard } from 'utils/selectors';
 
 import './ArtCard.scss';

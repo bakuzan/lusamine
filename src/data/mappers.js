@@ -1,4 +1,4 @@
-import { getKeyByValue } from 'utils/common';
+import getKeyByValue from 'ayaka/getKeyByValue';
 
 import Regions from 'constants/regions';
 import { getGeneration } from 'utils/derivedData';

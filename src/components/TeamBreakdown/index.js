@@ -2,13 +2,14 @@ import PropTypes from 'prop-types';
 import classNames from 'classnames';
 import React from 'react';
 
+import { capitaliseEachWord } from 'ayaka/capitalise';
+import generateUniqueId from 'ayaka/generateUniqueId';
 import { TypeContext } from 'context';
 import { Button } from 'components/Buttons';
 import List from 'components/List';
 import EffectiveTypePanel from 'components/TeamBreakdownPanel/EffectiveTypePanel';
 import StatBreakdownPanel from 'components/TeamBreakdownPanel/StatPanel';
 import * as TBU from './TeamBreakdownUtils';
-import { capitaliseEachWord, generateUniqueId } from 'utils/common';
 
 import './TeamBreakdown.scss';
 

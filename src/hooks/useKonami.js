@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 
-import { createListeners } from 'utils/common';
+import createListeners from 'ayaka/createListeners';
 
 const up = 'ArrowUp';
 const down = 'ArrowDown';

@@ -5,19 +5,6 @@ import Store from 'ayaka/localStorage';
 import Strings from 'constants/strings';
 import SETTINGS_DEFAULTS from 'constants/settings';
 
-export {
-  capitalise,
-  capitaliseEachWord,
-  separateAndCapitalise,
-  separateAndCapitaliseAll
-} from 'ayaka/capitalise';
-
-export { default as getKeyByValue } from 'ayaka/getKeyByValue';
-export { default as objectsAreEqual } from 'ayaka/objectsAreEqual';
-export { default as createListeners } from 'ayaka/createListeners';
-
-export { isString, generateUniqueId };
-
 export const getWindowScrollPosition = () =>
   window.scrollY || window.pageYOffset || document.documentElement.scrollTop;
 

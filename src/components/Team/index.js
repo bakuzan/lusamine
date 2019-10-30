@@ -1,8 +1,9 @@
 import PropTypes from 'prop-types';
 import classNames from 'classnames';
 import React from 'react';
+import { DndProvider } from 'react-dnd';
 
-import DnDBackend from 'components/DragAndDrop';
+import { getBackend } from '../DragAndDrop';
 import List from 'components/List';
 import TeamBreakdown from 'components/TeamBreakdown';
 import TeamMember, { TeamMemberDraggable } from 'components/TeamMember';
@@ -16,6 +17,8 @@ import {
 } from 'utils/common';
 
 import './Team.scss';
+
+const DNDBackend = getBackend();
 
 const highlightDefaultState = {
   dataType: null,
@@ -130,31 +133,35 @@ class Team extends React.PureComponent {
         : [null, TeamMember];
 
     return (
-      <div>
-        {this.props.name && <div className="team-name">{this.props.name}</div>}
-        <List
-          className={classNames('team')}
-          items={members}
-          itemTemplate={(item, i) => (
-            <Member
-              key={item.id}
-              index={i}
-              partyEndIndex={lastMemberIndex}
-              data={item}
-              isHighlighted={highlightMembers.includes(item.id)}
-              remove={removeMember}
-              move={moveMember}
-              moveDnD={moveMemberDnD}
-              evolve={evolveMember}
-            />
+      <DndProvider backend={DNDBackend} context={window}>
+        <div>
+          {this.props.name && (
+            <div className="team-name">{this.props.name}</div>
           )}
-        />
-        <TeamBreakdown
-          teamName={`team ${this.props.name || 'nameless'}`}
-          members={this.state.members}
-          onMouseState={this.handleMouseState}
-        />
-      </div>
+          <List
+            className={classNames('team')}
+            items={members}
+            itemTemplate={(item, i) => (
+              <Member
+                key={item.id}
+                index={i}
+                partyEndIndex={lastMemberIndex}
+                data={item}
+                isHighlighted={highlightMembers.includes(item.id)}
+                remove={removeMember}
+                move={moveMember}
+                moveDnD={moveMemberDnD}
+                evolve={evolveMember}
+              />
+            )}
+          />
+          <TeamBreakdown
+            teamName={`team ${this.props.name || 'nameless'}`}
+            members={this.state.members}
+            onMouseState={this.handleMouseState}
+          />
+        </div>
+      </DndProvider>
     );
   }
 }
@@ -166,4 +173,4 @@ Team.propTypes = {
   onMembersUpdate: PropTypes.func
 };
 
-export default DnDBackend(Team);
+export default Team;

@@ -1,5 +1,5 @@
+import generateUniqueId from 'ayaka/generateUniqueId';
 import Routes from 'constants/routes';
-import { generateUniqueId } from '../../utils/common';
 
 export function createTeamUrl(idString) {
   return `${Routes.base}/?team=${idString}`;

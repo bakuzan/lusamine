@@ -1,12 +1,9 @@
+import getKeyByValue from 'ayaka/getKeyByValue';
+import { separateAndCapitaliseAll } from 'ayaka/capitalise';
 import Strings from 'constants/strings';
 import Generations from 'constants/generations';
 import { EvolutionForms } from 'constants/evolutions';
-import {
-  iterateMapToArray,
-  iterateMapToArrayEntries,
-  separateAndCapitaliseAll,
-  getKeyByValue
-} from 'utils/common';
+import { iterateMapToArray, iterateMapToArrayEntries } from 'utils/common';
 
 function withFilterZeroes(m, filterZeroes) {
   if (filterZeroes) {

@@ -1,4 +1,4 @@
-import { capitaliseEachWord } from 'utils/common';
+import { capitaliseEachWord } from 'ayaka/capitalise';
 
 export const Pokedex = Object.freeze({
   national: 'national',

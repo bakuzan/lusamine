@@ -1,7 +1,7 @@
+import { capitalise, separateAndCapitaliseAll } from 'ayaka/capitalise';
 import Types from 'constants/types';
 import Generations from 'constants/generations';
 import { EvolutionForms } from 'constants/evolutions';
-import { capitalise, separateAndCapitaliseAll } from 'utils/common';
 import { isMegaPokemon, isVariantPokemon } from 'utils/derivedData';
 
 const padInt = (n) => `${n}`.padStart(3, '0');

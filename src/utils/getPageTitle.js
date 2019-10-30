@@ -1,5 +1,5 @@
+import { capitaliseEachWord } from 'ayaka/capitalise';
 import Strings from 'constants/strings';
-import { capitaliseEachWord } from 'utils/common';
 
 const TEAMS = 'teams';
 const SETTINGS = 'settings';

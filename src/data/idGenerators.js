@@ -1,4 +1,4 @@
-import { generateUniqueId } from 'utils/common';
+import generateUniqueId from 'ayaka/generateUniqueId';
 import Strings from 'constants/strings';
 
 const defaultIdSuffix = (o) => o.nationalPokedexNumber;

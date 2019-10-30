@@ -2,6 +2,7 @@ import PropTypes from 'prop-types';
 import classNames from 'classnames';
 import React, { useState, useContext, useMemo } from 'react';
 
+import { capitaliseEachWord } from 'ayaka/capitalise';
 import { Icons } from 'mko';
 import ArtCard from 'components/ArtCard';
 import {
@@ -19,7 +20,7 @@ import Routes from 'constants/routes';
 import Orders from 'constants/orders';
 import Party from 'constants/party';
 import { PokedexContext } from 'context';
-import { capitaliseEachWord } from 'utils/common';
+
 import generateEvolutionOptions from 'utils/generateEvolutionOptions';
 import { isNotBasePokemon } from 'utils/derivedData';
 import pokeball from 'assets/pokeball.png';

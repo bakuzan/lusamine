@@ -1,4 +1,4 @@
-import { generateUniqueId } from './common';
+import generateUniqueId from 'ayaka/generateUniqueId';
 
 export function getPartySizeAlertMessage() {
   return {

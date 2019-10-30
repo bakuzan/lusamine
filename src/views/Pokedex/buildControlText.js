@@ -1,4 +1,4 @@
-import { capitaliseEachWord } from 'utils/common';
+import { capitaliseEachWord } from 'ayaka/capitalise';
 
 export default function buildControlText(dex, dexOptions, activeId) {
   const index = dexOptions.findIndex((x) => x.value === activeId);

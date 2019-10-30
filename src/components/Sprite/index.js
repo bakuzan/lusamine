@@ -2,9 +2,9 @@ import PropTypes from 'prop-types';
 import classNames from 'classnames';
 import React from 'react';
 
+import { capitaliseEachWord } from 'ayaka/capitalise';
 import Tooltip from 'meiko/Tooltip';
-// import Tooltip from 'components/Tooltip';
-import { capitaliseEachWord } from 'utils/common';
+
 import { buildSelectorsForSprite } from 'utils/selectors';
 
 import './Sprite.scss';
