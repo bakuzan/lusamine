@@ -1,21 +1,27 @@
 {
   "files": {
-    "main.css": "/lusamine/static/css/main.2a7065ef.chunk.css",
-    "main.js": "/lusamine/static/js/main.7856b980.chunk.js",
-    "main.js.map": "/lusamine/static/js/main.7856b980.chunk.js.map",
-    "runtime~main.js": "/lusamine/static/js/runtime~main.4a7772c0.js",
-    "runtime~main.js.map": "/lusamine/static/js/runtime~main.4a7772c0.js.map",
-    "static/js/2.caed96be.chunk.js": "/lusamine/static/js/2.caed96be.chunk.js",
-    "static/js/2.caed96be.chunk.js.map": "/lusamine/static/js/2.caed96be.chunk.js.map",
+    "main.css": "/lusamine/static/css/main.17603b19.chunk.css",
+    "main.js": "/lusamine/static/js/main.ab6f5e0b.chunk.js",
+    "main.js.map": "/lusamine/static/js/main.ab6f5e0b.chunk.js.map",
+    "runtime-main.js": "/lusamine/static/js/runtime-main.71da81fa.js",
+    "runtime-main.js.map": "/lusamine/static/js/runtime-main.71da81fa.js.map",
+    "static/js/2.442e44a9.chunk.js": "/lusamine/static/js/2.442e44a9.chunk.js",
+    "static/js/2.442e44a9.chunk.js.map": "/lusamine/static/js/2.442e44a9.chunk.js.map",
     "index.html": "/lusamine/index.html",
-    "precache-manifest.84f8509d0729610b7c3ba8e4a3d33702.js": "/lusamine/precache-manifest.84f8509d0729610b7c3ba8e4a3d33702.js",
+    "precache-manifest.9b2cf0d4fce33894b93bc83d3350e227.js": "/lusamine/precache-manifest.9b2cf0d4fce33894b93bc83d3350e227.js",
     "service-worker.js": "/lusamine/service-worker.js",
-    "static/css/main.2a7065ef.chunk.css.map": "/lusamine/static/css/main.2a7065ef.chunk.css.map",
+    "static/css/main.17603b19.chunk.css.map": "/lusamine/static/css/main.17603b19.chunk.css.map",
     "static/media/ArtCard.scss": "/lusamine/static/media/art.f0c60420.webp",
     "static/media/pokemon-opening.ogg": "/lusamine/static/media/pokemon-opening.0d0730eb.ogg",
     "static/media/pokemon-opening.mp3": "/lusamine/static/media/pokemon-opening.7140bc35.mp3",
     "static/media/index.scss": "/lusamine/static/media/roboto-mono.e92cc0fb.woff2",
     "static/media/Sprite.scss": "/lusamine/static/media/sprites.cf9fc007.png",
     "static/media/TypeBlock.scss": "/lusamine/static/media/types.ecadccdc.webp"
-  }
+  },
+  "entrypoints": [
+    "static/js/runtime-main.71da81fa.js",
+    "static/js/2.442e44a9.chunk.js",
+    "static/css/main.17603b19.chunk.css",
+    "static/js/main.ab6f5e0b.chunk.js"
+  ]
 }
