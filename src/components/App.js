@@ -3,6 +3,7 @@ import { Switch, Route } from 'react-router-dom';
 
 import Alert from 'meiko/Alert';
 import AppInformation from 'meiko/AppInformation';
+import Toaster from 'meiko/Toaster';
 import { useGlobalStyles } from 'meiko/hooks/useGlobalStyles';
 
 import { ButtonisedNavLink } from 'components/Buttons';
@@ -110,6 +111,7 @@ function App({ match, location }) {
                     )}
                   />
                 </Switch>
+                <Toaster />
               </main>
             )}
           </AlertContainer>

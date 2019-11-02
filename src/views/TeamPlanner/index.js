@@ -4,6 +4,7 @@ import React from 'react';
 import generateUniqueId from 'ayaka/generateUniqueId';
 import ClearableInput from 'meiko/ClearableInput';
 import Grid from 'meiko/Grid';
+import toasterService from 'meiko/utils/toasterService';
 import { Button } from 'components/Buttons';
 import Filters from 'components/Filters';
 import Team from 'components/Team';
@@ -123,19 +124,26 @@ class PlannerPage extends React.Component {
   handleSaveTeam() {
     const idString = getUrlQueryStringAsObject(this.props.location).team;
     const currentTeamIds = createSetFromIdString(idString);
+
     if (currentTeamIds.size === 0) {
       return;
     }
 
     const teamId = generateUniqueId();
+    const teamName = this.state.currentTeamName || 'Team';
+
     const saveTeamData = {
       [teamId]: {
-        name: this.state.currentTeamName,
+        name: teamName,
         idString
       }
     };
 
     teamsStore.set(saveTeamData);
+    toasterService.success(
+      'Team saved.',
+      `${teamName} has been persisted locally.`
+    );
   }
 
   handleChangePokedex(e) {
