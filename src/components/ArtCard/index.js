@@ -7,12 +7,14 @@ import { buildSelectorsForArtCard } from 'utils/selectors';
 
 import './ArtCard.scss';
 
-function ArtCard({ className, data }) {
+function ArtCard({ className, containerClass, data }) {
   const backgroundPosition = data.artPosition;
   const artCardClasses = buildSelectorsForArtCard(data);
 
   return (
-    <div className={classNames('art-card', artCardClasses.types)}>
+    <div
+      className={classNames('art-card', artCardClasses.types, containerClass)}
+    >
       <div
         className={classNames(
           'art-card__pokemon',
@@ -31,6 +33,7 @@ function ArtCard({ className, data }) {
 }
 
 ArtCard.propTypes = {
+  containerClass: PropTypes.string,
   data: PropTypes.object
 };
 

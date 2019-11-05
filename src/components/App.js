@@ -16,6 +16,7 @@ import TeamPlanner from 'views/TeamPlanner';
 import TeamViewer from 'views/TeamViewer';
 import Settings from 'views/Settings';
 import Pokedex from 'views/Pokedex';
+import TeamStatistics from 'views/TeamStatistics';
 
 import Routes from 'constants/routes';
 import { PokedexContext, TypeContext } from 'context';
@@ -81,6 +82,10 @@ function App({ match, location }) {
                     component={TeamViewer}
                   />
                   <Route
+                    path={`${match.url}${Routes.teamStatistics}`}
+                    component={TeamStatistics}
+                  />
+                  <Route
                     path={`${match.url}${Routes.settings}`}
                     component={Settings}
                   />
@@ -96,7 +101,7 @@ function App({ match, location }) {
                   />
                   <Route
                     path="*"
-                    render={(props) => (
+                    render={() => (
                       <div>
                         <AppHelmet
                           title="Page not found"

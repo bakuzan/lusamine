@@ -21,7 +21,8 @@ export default {
     savedTeams: 'saved Pokémon teams',
     settings: 'settings',
     trainerTeams: 'trainer Pokémon teams',
-    pokedex: 'pokédex'
+    pokedex: 'pokédex',
+    teamStatistics: 'saved team statistics'
   },
   pageDescription: {
     planner:
@@ -29,7 +30,8 @@ export default {
     savedTeams: 'View previously saved pokemon teams',
     trainerTeams: 'View pokemon teams from famous trainers in the games',
     settings: 'Adjustable application settings',
-    pokedex: 'Browse the pokedex to view information about each pokemon'
+    pokedex: 'Browse the pokedex to view information about each pokemon',
+    teamStatistics: 'View statistics for previously saved pokemon teams'
   },
   scoreModifier: {
     none: 'none',

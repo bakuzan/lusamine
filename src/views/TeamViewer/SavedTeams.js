@@ -5,6 +5,7 @@ import { ClearButton, ButtonisedNavLink } from 'components/Buttons';
 import Team from 'components/Team';
 import TeamViewerMessage from 'components/TeamViewerMessage';
 import { PokedexContext, TypeContext } from 'context';
+import Routes from 'constants/routes';
 import * as TVU from './utils';
 import { teamsStore, selectMembersFromPokedex } from 'utils/common';
 
@@ -57,11 +58,22 @@ class TeamViewer extends React.Component {
     }
 
     const teams = TVU.mapSavedTeamsToDisplayModel(savedTeams);
+    const showTeamStatisticsLink = teams.length > 2;
 
     return (
       <TypeContext.Consumer>
         {(typeMatches) => (
           <div className="team-viewer">
+            {showTeamStatisticsLink && (
+              <div className="team-viewer__navigation">
+                <ButtonisedNavLink
+                  to={`${Routes.base}${Routes.teamStatistics}`}
+                  link
+                >
+                  See team statistics
+                </ButtonisedNavLink>
+              </div>
+            )}
             {teams.map((t) => (
               <div
                 key={t.id}

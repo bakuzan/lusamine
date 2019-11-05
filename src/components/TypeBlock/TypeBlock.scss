@@ -6,6 +6,10 @@
   background-color: transparent;
   background-image: url('../../assets/types.png');
   background-image: url('../../assets/types.webp');
+
+  &--center {
+    margin: 0 auto;
+  }
 }
 
 @for $n from 1 through length($types) {

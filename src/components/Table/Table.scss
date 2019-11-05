@@ -1,0 +1,27 @@
+.table {
+  th,
+  td {
+    padding: 2px 4px;
+    text-align: left;
+  }
+
+  &--striped {
+    > tbody > tr:nth-of-type(odd) {
+      background-color: var(--table-stripe-background-colour, #eee);
+    }
+  }
+
+  &--hovered {
+    > tbody > tr:hover {
+      background-color: var(--table-hover-background-colour, #ddd);
+    }
+  }
+
+  .center-align {
+    text-align: center;
+  }
+
+  .right-align {
+    text-align: right;
+  }
+}

@@ -4,6 +4,7 @@ export default Object.freeze({
   savedTeams: '/teams?tab=saved',
   trainerTeams: '/teams?tab=trainer',
   lusamineTeam: '/lusamine/?team=p_36,p_549,p_428,p_350,p_760',
+  teamStatistics: '/team-statistics',
   settings: '/settings',
   pokedex: '/pokedex'
 });

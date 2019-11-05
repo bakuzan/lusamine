@@ -4,6 +4,7 @@ import Strings from 'constants/strings';
 const TEAMS = 'teams';
 const SETTINGS = 'settings';
 const POKEDEX = 'pokedex';
+const STATISTICS = 'team-statistics';
 
 export default function getPageTitleForCurrentPath(pathname, search) {
   const path = `${pathname}${search}`;
@@ -16,6 +17,8 @@ export default function getPageTitleForCurrentPath(pathname, search) {
     key = 'settings';
   } else if (path.includes(POKEDEX)) {
     key = 'pokedex';
+  } else if (path.includes(STATISTICS)) {
+    key = 'teamStatistics';
   }
 
   const pageHeader = capitaliseEachWord(Strings.pageTitle[key]);

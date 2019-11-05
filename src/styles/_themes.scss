@@ -32,6 +32,9 @@ $theme-maps: (
   --tooltip-background: #{map-get($theme, tooltip-background)};
   --tooltip-colour: #{map-get($theme, tooltip-colour)};
 
+  --table-stripe-background-colour: #f2ec7d;
+  --table-hover-background-colour: #ede54e;
+
   // Overrides
   .has-float-label input:focus,
   .has-float-label select:focus {

@@ -1,0 +1,45 @@
+@import '../../styles/_variables.scss';
+@import '../../styles/_mixins.scss';
+
+.team-statistics {
+  &__title {
+    font-size: 1.25rem;
+    margin: 10px 0;
+  }
+
+  &__description {
+    white-space: pre-line;
+  }
+
+  &__data {
+    display: grid;
+    grid-template-columns: minmax(200px, 1fr) minmax(200px, 4fr);
+    grid-gap: 5px;
+  }
+
+  &__data-inner {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  &__card {
+    margin: auto;
+  }
+}
+
+.statistics {
+  margin: 20px 0;
+
+  @include respondTo(xs) {
+    margin: 10px auto;
+  }
+
+  &__title {
+    font-size: 1rem;
+    margin: 5px 0;
+  }
+
+  &__table {
+    min-width: 200px;
+  }
+}
