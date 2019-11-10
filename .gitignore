@@ -2,6 +2,7 @@
 
 # dependencies
 /node_modules
+env
 
 # testing
 /coverage
@@ -25,3 +26,7 @@ yarn-error.log*
 # temp files
 /tools/output
 /tools/cache
+
+# generated spritesheet staging area
+/tools/images/art.png
+/tools/images/sprites.png
