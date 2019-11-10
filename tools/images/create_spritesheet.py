@@ -73,7 +73,9 @@ if __name__ == "__main__":
         target_path = path.abspath(
             path.join(path_to_here, sheet)
         )
-        output_path = path_to_here + sep + "{0}.png".format(sheet)
+        output_path = path.abspath(
+            path.join(path_to_here, "{0}.png".format(sheet))
+        )
 
         output = concat_n_images(target_path)
         is_done = cv2.imwrite(output_path, output)
