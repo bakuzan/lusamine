@@ -12,7 +12,9 @@ COLUMNS = 30
 
 def concat_images(img_num, imga, imgb):
     """
-    Combines two color image ndarrays side-by-side.
+    Combines two image ndarrays.
+    imga is starts from 0, 0
+    imgb is placed according to the img_num in the appropriate x, y location
     """
     ha, wa = imga.shape[:2]
     hb, wb = imgb.shape[:2]
@@ -34,7 +36,7 @@ def concat_images(img_num, imga, imgb):
 
 def concat_n_images(images_directory):
     """
-    Combines N color images from a list of image paths.
+    Combines images from a directory.
     """
     output = None
     files = listdir(images_directory)
