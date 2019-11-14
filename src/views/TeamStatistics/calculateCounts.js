@@ -26,16 +26,25 @@ function separateEvolutionForms(pokemon) {
   ].sort((a, b) => b.count - a.count);
 }
 
-const mapToSortedArray = (m) =>
+export const mapToSortedArray = (m) =>
   Array.from(m)
     .map(([key, items]) => [key, items.length])
     .sort(([_, a], [__, b]) => b - a);
 
 export default function calculateCounts(pokedex, teams) {
+  const teamsCount = teams ? Object.keys(teams).length : 0;
+  const displayViewerMessage = teamsCount === 0;
+
+  if (displayViewerMessage) {
+    return {};
+  }
+
   const allTeamPokemon = combineTeamPokemon(pokedex, teams);
-  const groupedPokemon = mapToSortedArray(
-    groupBy(allTeamPokemon, (x) => x.nationalPokedexNumber)
-  );
+  const totalPokemonCount = allTeamPokemon.length;
+  const pokemon = groupBy(allTeamPokemon, (x) => x.nationalPokedexNumber);
+  const groupedPokemon = Array.from(pokemon)
+    .map(([key, items]) => [key, items.length])
+    .sort(([_, a], [__, b]) => b - a);
 
   const evolutionForms = separateEvolutionForms(allTeamPokemon);
   const types = mapToSortedArray(
@@ -46,7 +55,9 @@ export default function calculateCounts(pokedex, teams) {
   );
 
   return {
-    pokemon: groupedPokemon,
+    totalPokemonCount,
+    pokemon,
+    groupedPokemon,
     types,
     generations,
     evolutionForms

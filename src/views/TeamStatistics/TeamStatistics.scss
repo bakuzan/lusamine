@@ -13,8 +13,13 @@
 
   &__data {
     display: grid;
-    grid-template-columns: minmax(200px, 1fr) minmax(200px, 4fr);
+    grid-template-columns: minmax(225px, 1fr) minmax(200px, 4fr);
     grid-gap: 5px;
+  }
+
+  &__toggler {
+    padding: 0 10px;
+    margin: 0 5px;
   }
 
   &__data-inner {
@@ -41,5 +46,9 @@
 
   &__table {
     min-width: 200px;
+  }
+
+  &__expanded-row {
+    background-color: var(--pokemon-expanded--background-colour);
   }
 }

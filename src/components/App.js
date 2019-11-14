@@ -56,6 +56,7 @@ function App({ match, location }) {
       <TypeContext.Provider value={typeMatchups}>
         <div className="theme theme--default">
           <AppHelmet title={pageTitle} description={pageDescription} />
+
           <HeaderBar pageTitle={pageHeader} />
           {hasMessages && (
             <Alert
