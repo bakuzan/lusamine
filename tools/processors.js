@@ -4,17 +4,24 @@ const Enums = require('./enums');
 
 const buildOuputUrl = (fileName) => path.join('./tools/output', fileName);
 
-const checkImgForVariant = (td) => {
+function checkImgForVariant(td) {
   const src = td
     .children()
     .first()
     .children()
     .first()
     .attr('src');
-  return src && src.match(/AMS\.png$/);
-};
 
-function pokedexProcessor($) {
+  if (src && (src.match(/AMS\.png$/) || src.match(/ASMMS\.png$/))) {
+    return Enums.Regions.alola;
+  } else if (src && src.match(/GMS\.png$/)) {
+    return Enums.Regions.galar;
+  }
+
+  return false;
+}
+
+async function pokedexProcessor($) {
   const jsonEntries = Array.from($('table > tbody'))
     .slice(
       Enums.TABLE_COUNT_OFFSET,
@@ -24,13 +31,17 @@ function pokedexProcessor($) {
       return Array.from(data.children).reduce((acc, tr) => {
         const children = $('td', tr);
 
-        if (!children) return acc;
+        if (!children) {
+          return acc;
+        }
 
-        const isVariant =
+        const variantRegion =
           !children
             .first()
             .text()
             .trim() && checkImgForVariant(children.eq(2));
+
+        const isVariant = variantRegion !== false;
         const tdNPN = children.eq(1);
         const tdName = children.eq(3);
         const tdTypes = [children.eq(4), children.eq(5)];
@@ -38,17 +49,22 @@ function pokedexProcessor($) {
         const item = isVariant
           ? Mappers.mapElementsToVariantPokemonJson(
               tdNPN,
-              Enums.Regions.alola,
+              variantRegion,
               tdTypes
             )
           : Mappers.mapElementsToPokemonJson(tdNPN, tdName, tdTypes);
 
-        if (!item.nationalPokedexNumber) return acc;
+        if (!item.nationalPokedexNumber) {
+          return acc;
+        }
+
         return [...acc, item];
       }, result);
     }, []);
+
   const pokemon = jsonEntries.filter((x) => x.name);
   const variants = jsonEntries.filter((x) => !x.name);
+
   return [
     {
       fileName: buildOuputUrl('pokemon.json'),
@@ -61,7 +77,7 @@ function pokedexProcessor($) {
   ];
 }
 
-function evolutionProcessor($) {
+async function evolutionProcessor($) {
   const evolutions = Array.from($('table.roundy > tbody'))
     .slice(0, Enums.GENERATION_COUNT)
     .reduce(function(result, data) {
@@ -126,7 +142,7 @@ function evolutionProcessor($) {
   ];
 }
 
-function megaProcessor($) {
+async function megaProcessor($) {
   const megas = Array.from($('table.roundy > tbody'))
     .slice(0, 2)
     .reduce(function(result, data) {

@@ -19,7 +19,8 @@ const urls = {
   unova_n: `https://bulbapedia.bulbagarden.net/wiki/List_of_Pok%C3%A9mon_by_New_Unova_Pok%C3%A9dex_number`,
   kalos: `https://bulbapedia.bulbagarden.net/wiki/List_of_Pok%C3%A9mon_by_Kalos_Pok%C3%A9dex_number`, // 3 parter
   alola: `https://bulbapedia.bulbagarden.net/wiki/List_of_Pok%C3%A9mon_by_Alola_Pok%C3%A9dex_number_(Sun_and_Moon)`,
-  alola_u: `https://bulbapedia.bulbagarden.net/wiki/List_of_Pok%C3%A9mon_by_Alola_Pok%C3%A9dex_number_(Ultra_Sun_and_Ultra_Moon)`
+  alola_u: `https://bulbapedia.bulbagarden.net/wiki/List_of_Pok%C3%A9mon_by_Alola_Pok%C3%A9dex_number_(Ultra_Sun_and_Ultra_Moon)`,
+  galar: `https://bulbapedia.bulbagarden.net/wiki/List_of_Pokémon_by_Galar_Pokédex_number`
 };
 
 async function fetchPage(key) {
@@ -60,7 +61,7 @@ async function run() {
     console.log(`
        /* Example usage
         *
-        * npm run scrape-pokedex -- --key kanto
+        * npm run scrape:pokedex -- --key kanto
         *
         * Args
         * --key STRING one of: ${Object.keys(urls).join(',')}
@@ -74,7 +75,7 @@ async function run() {
 
   if (!argv.key || invalidKey) {
     console.log(chalk.bgWhite.red(`Regional Pokedex key is required.`));
-    console.log(chalk.yellow(`Example: npm run scrape-pokedex -- --key kanto`));
+    console.log(chalk.yellow(`Example: npm run scrape:pokedex -- --key kanto`));
 
     if (invalidKey) {
       console.log(chalk.bgWhite.red(`Invalid key: "${argv.key}"`));

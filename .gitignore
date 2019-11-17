@@ -24,8 +24,8 @@ yarn-debug.log*
 yarn-error.log*
 
 # temp files
-/tools/output
-/tools/cache
+/tools/output/*.json
+/tools/cache/*.html
 
 # generated spritesheet staging area
 /tools/images/art.png

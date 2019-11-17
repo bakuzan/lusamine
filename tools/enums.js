@@ -20,7 +20,8 @@ const Types = Object.freeze({
 });
 
 const Regions = Object.freeze({
-  alola: 7
+  alola: 7,
+  galar: 8
 });
 
 const Evolutions = Object.freeze({
@@ -42,7 +43,7 @@ const Evolutions = Object.freeze({
 });
 
 const TABLE_COUNT_OFFSET = 1;
-const GENERATION_COUNT = 7;
+const GENERATION_COUNT = 8;
 
 module.exports = {
   Types,
