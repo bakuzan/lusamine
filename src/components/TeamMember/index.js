@@ -92,6 +92,11 @@ const TeamMember = React.memo(
             columns={1}
             items={evolutions.asList()}
             itemTemplate={([text, x]) => {
+              const num = x.nationalPokedexNumber;
+              const form = x.form ? ` (${capitaliseEachWord(x.form)})` : '';
+              const fullName = capitaliseEachWord(`${x.name}${form}`);
+              const evolveTarget = `${text} #${num} ${fullName}`;
+
               return (
                 <li key={x.id}>
                   <Button
@@ -99,9 +104,7 @@ const TeamMember = React.memo(
                     aria-label={`${text} ${x.name}`}
                     onClick={() => evolve(data.id, x.id)}
                   >
-                    {`${text} #${x.nationalPokedexNumber} ${capitaliseEachWord(
-                      x.name
-                    )}`}
+                    {evolveTarget}
                   </Button>
                 </li>
               );
