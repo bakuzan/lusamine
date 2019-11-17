@@ -20,3 +20,11 @@ export const EvolutionForms = Object.freeze({
   notEvolved: 1,
   fullyEvolved: 2
 });
+
+const BURMY = 412;
+const WORMDAM = 413;
+
+const SHELLOS = 422;
+const GASTRODON = 423;
+
+export const evolvesToMatchedForm = [BURMY, WORMDAM, SHELLOS, GASTRODON];

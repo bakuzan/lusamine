@@ -1,3 +1,4 @@
+import { evolvesToMatchedForm } from 'constants/evolutions';
 import { isMegaPokemon, isVariantPokemon } from 'utils/derivedData';
 import { iterateMapToArray } from 'utils/common';
 import { merge, distinct } from 'utils/lists';
@@ -75,7 +76,13 @@ export default function generateEvolutionOptions(
         (isVariant &&
           (isVariantPokemon(x) || !dex.has(`v_${x.nationalPokedexNumber}`)));
 
-      return canDevolveTo && x.evolutions.some((e) => e.evolvesTo === npn);
+      return (
+        canDevolveTo &&
+        x.evolutions.some((e) => e.evolvesTo === npn) &&
+        (!evolvesToMatchedForm.includes(x.nationalPokedexNumber) ||
+          (evolvesToMatchedForm.includes(x.nationalPokedexNumber) &&
+            x.form === data.form))
+      );
     })
     .map((x) => x.id);
 
@@ -83,7 +90,28 @@ export default function generateEvolutionOptions(
     .map((pkmId) => [isMega ? 'Devolve to ' : 'Evolve to ', dex.get(pkmId)])
     .filter((x) => !!x[1]);
 
-  let evolves = [...targetIds].map((pkmId) => dex.get(pkmId));
+  let evolves = [...targetIds].reduce((p, pkmId) => {
+    const [prefix, num] = pkmId.split('_');
+    const pkmNPN = Number(num);
+    const isV = prefix === 'v';
+    const mon = dex.get(pkmId);
+
+    if (isV) {
+      return [...p, mon];
+    }
+
+    const evos = pokemon.filter(
+      (x) =>
+        !isVariantPokemon(x) &&
+        x.nationalPokedexNumber === pkmNPN &&
+        (!evolvesToMatchedForm.includes(x.nationalPokedexNumber) ||
+          (evolvesToMatchedForm.includes(x.nationalPokedexNumber) &&
+            x.form === data.form))
+    );
+
+    return [...p, ...evos];
+  }, []);
+
   evolves = exhaustive ? includeForms(pokemon, evolves) : evolves;
 
   const devolves = [...devolveIds].map((pkmId) => [
