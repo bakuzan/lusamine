@@ -18,9 +18,11 @@ function getNPNFromImg(td) {
     .children()
     .first();
   const src = el.attr('src');
+
   if (!src) {
     return Number(0);
   }
+
   const strNum = src.replace(/^.*\/|\D/g, '');
   return Number(strNum);
 }
@@ -104,10 +106,15 @@ function processEvolutionMechanism(howTxt) {
 }
 
 function mapElementsToPokemonJson(tdNPN, tdName, tdTypes) {
+  /* TODO
+   * > Find a way to set the form...
+   * > There doesn't seem to be a realiable one...
+   */
   return {
     nationalPokedexNumber: processTdNPN(tdNPN),
     name: extractName(tdName),
-    typeIds: processTdTypes(tdTypes)
+    typeIds: processTdTypes(tdTypes),
+    form: ''
   };
 }
 
@@ -119,16 +126,17 @@ function mapElementsToVariantPokemonJson(tdNPN, regionId, tdTypes) {
   };
 }
 
-function mapElementsToEvolutionJson(rawData) {
+function mapElementsToEvolutionJson(lastItem, rawData) {
   return rawData.map((r) => {
     const fromNPN = getNPNFromImg(r.from);
     const toNPN = getNPNFromImg(r.to);
     const how = r.how.text();
+
     return {
-      nationalPokedexNumber: fromNPN,
+      nationalPokedexNumber: fromNPN || lastItem.nationalPokedexNumber,
       evolvesTo: toNPN,
       mechanism: processEvolutionMechanism(how),
-      note: how
+      note: how.replace('→', '').trim()
     };
   });
 }

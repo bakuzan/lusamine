@@ -4,6 +4,9 @@ const Enums = require('./enums');
 
 const buildOuputUrl = (fileName) => path.join('./tools/output', fileName);
 
+const MATCH_ALOLA_FORM = /\d{1,}A.*MS.png$/;
+const MATCH_GALAR_FORM = /\d{1,}G.*MS.png$/;
+
 function checkImgForVariant(td) {
   const src = td
     .children()
@@ -12,9 +15,9 @@ function checkImgForVariant(td) {
     .first()
     .attr('src');
 
-  if (src && (src.match(/AMS\.png$/) || src.match(/ASMMS\.png$/))) {
+  if (src && src.match(MATCH_ALOLA_FORM)) {
     return Enums.Regions.alola;
-  } else if (src && src.match(/GMS\.png$/)) {
+  } else if (src && src.match(MATCH_GALAR_FORM)) {
     return Enums.Regions.galar;
   }
 
@@ -128,7 +131,8 @@ async function evolutionProcessor($) {
           });
         }
 
-        const items = Mappers.mapElementsToEvolutionJson(rawEvolutions);
+        const [prev] = acc.slice(-1);
+        const items = Mappers.mapElementsToEvolutionJson(prev, rawEvolutions);
 
         return [...acc, ...items];
       }, result);
