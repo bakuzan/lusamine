@@ -32,6 +32,8 @@ const resolvePokedex = (m) =>
   settingsStore.getKey('defaultPokedex') ||
   Pokedex.national;
 
+const MemoGrid = React.memo(Grid);
+
 class PlannerPage extends React.Component {
   static contextType = PokedexContext;
 
@@ -89,6 +91,7 @@ class PlannerPage extends React.Component {
     const currentTeamIds = createSetFromIdString(
       getUrlQueryStringAsObject(this.props.location).team
     );
+
     if (currentTeamIds.size === Party.MAX_SIZE) {
       return this.props.sendAlert(getPartySizeAlertMessage());
     }
@@ -158,6 +161,7 @@ class PlannerPage extends React.Component {
     const { team } = getUrlQueryStringAsObject(location);
     const currentTeamIds = createSetFromIdString(team);
 
+    const enableSpriteScrollbox = settingsStore.getKey('enableSpriteScrollbox');
     const dexFilters = { ...this.state, currentTeamIds, activePokedex };
 
     const filterProps = {
@@ -283,8 +287,10 @@ class PlannerPage extends React.Component {
                 </div>
                 <Filters hiddenOn={Strings.large} {...filterProps} />
                 {!!filteredSprites.length && (
-                  <Grid
-                    className="team-planner__sprite-list"
+                  <MemoGrid
+                    className={classNames('team-planner__sprite-list', {
+                      'team-planner__sprite-list--scrollbox': enableSpriteScrollbox
+                    })}
                     items={filteredSprites}
                   >
                     {(item) => (
@@ -294,10 +300,16 @@ class PlannerPage extends React.Component {
                         onClick={this.handleSpriteSelection}
                       />
                     )}
-                  </Grid>
+                  </MemoGrid>
                 )}
                 {!filteredSprites.length && (
-                  <div>No pokemon available for the current filters.</div>
+                  <div
+                    className={classNames('team-planner__no-results', {
+                      'team-planner__no-results--scrollbox': enableSpriteScrollbox
+                    })}
+                  >
+                    No pokemon available for the current filters.
+                  </div>
                 )}
               </div>
             );

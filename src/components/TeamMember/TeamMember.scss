@@ -92,17 +92,17 @@ $team-member--width-adjustment: $team-member--account-for-border +
     @extend %member-container;
     padding: 8px 0;
   }
-
-  &__evolution-button {
-    margin: auto;
-    white-space: pre-line;
-  }
 }
 
 .team-member__evolve.team-member__evolve {
   min-width: 25px;
   padding: 0;
   margin: 0 auto;
+}
+
+.team-member__evolution-button.team-member__evolution-button {
+  margin: auto;
+  white-space: pre-line;
 }
 
 .team-member__art {

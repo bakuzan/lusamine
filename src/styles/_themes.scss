@@ -36,6 +36,7 @@ $theme-maps: (
   --table-hover-background-colour: #ede54e;
 
   --pokemon-expanded--background-colour: #f2ec7d;
+  --team-planner--list-shadow-colour: #{$active-background};
 
   // Overrides
   .has-float-label input:focus,

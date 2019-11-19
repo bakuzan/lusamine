@@ -14,12 +14,15 @@
       flex: 1 1 20%;
       max-width: 20%;
     }
+
     &--width_80 {
       flex: 1 1 80%;
       max-width: 80%;
+      padding: 0 8px;
 
       @include respondToAll((xs, sm)) {
         max-width: 100%;
+        padding: 0;
       }
     }
 
@@ -45,11 +48,24 @@
     justify-content: flex-start;
     grid-column-gap: 2px;
 
-    @include respondTo(sm) {
+    &--scrollbox {
+      box-shadow: 0px 0px 5px 1px var(--team-planner--list-shadow-colour);
+      max-height: 370px;
+      overflow: hidden auto;
+    }
+
+    @include respondToAll((xs, sm)) {
       justify-content: space-evenly;
     }
-    @include respondTo(xs) {
-      justify-content: space-evenly;
+  }
+
+  &__no-results {
+    margin: 5px 0;
+    padding: 18px 0;
+
+    &--scrollbox {
+      box-shadow: 0px 0px 5px 1px var(--team-planner--list-shadow-colour);
+      padding: 18px 8px;
     }
   }
 }

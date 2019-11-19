@@ -3,5 +3,6 @@ export default Object.freeze({
   canDragAndDrop: true,
   canUseArrows: true,
   canEvolve: false,
+  enableSpriteScrollbox: false,
   defaultPokedex: 'national'
 });

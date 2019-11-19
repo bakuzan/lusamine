@@ -50,7 +50,7 @@ class Settings extends React.Component {
           id="can-dnd"
           containerClassName="settings__input"
           name="canDragAndDrop"
-          text={`Enable Drag and Drop\nMove Team Members by dragging the cards to the desired spot.`}
+          text={`Enable Drag and Drop\nMove team members by dragging the cards to the desired spot.`}
           checked={settings.canDragAndDrop}
           onChange={this.handleUserInput}
         />
@@ -58,7 +58,7 @@ class Settings extends React.Component {
           id="can-use-arrows"
           containerClassName="settings__input"
           name="canUseArrows"
-          text={`Enable Team Member Arrows\nMove Team Members with arrow buttons to the desired spot.`}
+          text={`Enable Team Member Arrows\nMove team members with arrow buttons to the desired spot.`}
           checked={settings.canUseArrows}
           onChange={this.handleUserInput}
         />
@@ -66,8 +66,16 @@ class Settings extends React.Component {
           id="can-evolve"
           containerClassName="settings__input"
           name="canEvolve"
-          text={`Enable Team Member Evolve\nChange Team Members with their evolutions with this shortcut.`}
+          text={`Enable Team Member Evolve\nChange team members with their evolutions with this shortcut.`}
           checked={settings.canEvolve}
+          onChange={this.handleUserInput}
+        />
+        <Tickbox
+          id="show-scrollbox"
+          containerClassName="settings__input"
+          name="enableSpriteScrollbox"
+          text={`Enable Sprite Scrollbox\nDisplay team planner sprite list in its own scrollable box.`}
+          checked={settings.enableSpriteScrollbox}
           onChange={this.handleUserInput}
         />
         <SelectBox

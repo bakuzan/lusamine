@@ -52,7 +52,7 @@ class TeamBreakdown extends React.Component {
     const isCollapsed = !alwaysOpen && this.state.isCollapsed;
     const renderNonTypes = !typeBreakdownOnly;
     const noMembers = members.size === 0;
-    const showToggle = !alwaysOpen && !noMembers;
+    const enableToggle = !alwaysOpen && !noMembers;
     const showContent = (!isCollapsed && !noMembers) || alwaysOpen;
     const breakdownDescription = `breakdownDescription_${this.state.uniqueId}`;
 
@@ -78,16 +78,17 @@ class TeamBreakdown extends React.Component {
           {this.props.teamName || 'the team'}. This includes generation counts,
           form counts, and various type weaknesses and strengths.
         </p>
-        {showToggle && (
-          <Button
-            id="toggle-breakdown"
-            isAction
-            className={classNames('team-breakdown__action')}
-            onClick={this.handleToggle}
-          >
-            {isCollapsed ? `Show team breakdown` : `Hide team breakdown`}
-          </Button>
-        )}
+
+        <Button
+          id="toggle-breakdown"
+          isAction
+          className={classNames('team-breakdown__action')}
+          disabled={!enableToggle}
+          onClick={this.handleToggle}
+        >
+          {isCollapsed ? `Show team breakdown` : `Hide team breakdown`}
+        </Button>
+
         {showContent && (
           <div
             className={classNames('team-breakdown__content', contentClassName)}
