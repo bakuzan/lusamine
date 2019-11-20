@@ -27,8 +27,8 @@ const Sprite = React.memo(function(props) {
         Click {capitalisedName} to add as a current team member.
       </p>
       <Tooltip
-        className="tooltip--above"
         contentId={`tooltip_${spriteId}`}
+        usePosition="above"
         delay={500}
         text={capitalisedName}
         center
