@@ -49,7 +49,13 @@ const checkPokemonId = (check) => (mon) => mon.id.startsWith(`${check}_`);
 export const isMegaPokemon = checkPokemonId(Strings.idPrefix.mega);
 export const isVariantPokemon = checkPokemonId(Strings.idPrefix.variant);
 export const isAltFormPokemon = (mon) => mon.id.split('_').length === 3;
+const isTrainerTeamMember = (mon) => mon.id.includes('-d');
 
 export function isNotBasePokemon(mon) {
-  return isMegaPokemon(mon) || isVariantPokemon(mon) || isAltFormPokemon(mon);
+  return (
+    isMegaPokemon(mon) ||
+    isVariantPokemon(mon) ||
+    isAltFormPokemon(mon) ||
+    isTrainerTeamMember(mon)
+  );
 }
