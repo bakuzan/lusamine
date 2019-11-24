@@ -117,7 +117,7 @@ const TeamMember = React.memo(
     const idSource = isNotBasePokemon(data)
       ? `p_${data.nationalPokedexNumber}`
       : data.id;
-    console.log(isNotBasePokemon(data), data.id);
+
     const pokedexUrl = `${Routes.base}${Routes.pokedex}/${idSource}`;
 
     return (

@@ -35,6 +35,7 @@ function EffectiveTypeBreakdownPanel({
         const score = memberIds.length;
         const typeStatusClass = TBPU.getClassForScore(score);
         const title = TBPU.getScoreDescription(panelModifier, score);
+        const label = TBPU.getScoreLabel(t.name, score);
         const mouseState = Object.keys(onMouseState).reduce(
           (p, k) => ({ ...p, [k]: () => onMouseState[k](id, t.id, memberIds) }),
           {}
@@ -49,10 +50,16 @@ function EffectiveTypeBreakdownPanel({
               typeStatusClass
             )}
             title={title}
+            aria-label={label}
             {...mouseState}
           >
             <TypeBlock value={t.name} />
-            <div className={classNames('breakdown-panel__count')}>{score}</div>
+            <div
+              className={classNames('breakdown-panel__count')}
+              aria-label={`${score} members`}
+            >
+              <span aria-hidden={true}>{score}</span>
+            </div>
           </li>
         );
       }}

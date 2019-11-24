@@ -2,7 +2,7 @@ import PropTypes from 'prop-types';
 import classNames from 'classnames';
 import React from 'react';
 
-import { capitaliseEachWord } from 'ayaka/capitalise';
+import { separateAndCapitalise } from 'ayaka/capitalise';
 import generateUniqueId from 'ayaka/generateUniqueId';
 import { TypeContext } from 'context';
 import { Button } from 'components/Buttons';
@@ -103,13 +103,17 @@ class TeamBreakdown extends React.Component {
                 itemTemplate={(item) => (
                   <li
                     key={item.key}
+                    aria-label={`${item.key} breakdown`}
                     className={classNames(
                       'team-breakdown__item',
                       'stat-breakdown-list__item'
                     )}
                   >
                     <div className={classNames('breakdown-item-title')}>
-                      <div className={classNames('breakdown-item-title__text')}>
+                      <div
+                        className={classNames('breakdown-item-title__text')}
+                        aria-hidden={true}
+                      >
                         {item.key}
                       </div>
                     </div>
@@ -130,28 +134,37 @@ class TeamBreakdown extends React.Component {
                 'type-breakdown-list'
               )}
               items={weaknessCounts}
-              itemTemplate={(item) => (
-                <li
-                  key={item.key}
-                  className={classNames(
-                    'team-breakdown__item',
-                    'type-breakdown-list__item'
-                  )}
-                >
-                  <div className={classNames('breakdown-item-title')}>
-                    <div className={classNames('breakdown-item-title__text')}>
-                      {capitaliseEachWord(item.key)}
+              itemTemplate={(item) => {
+                const effectiveBreakdownTitle = separateAndCapitalise(item.key);
+                const effectiveTypePanelLabel = `"${effectiveBreakdownTitle}" breakdown. A good score is ${item.goodCountModifier}.`;
+
+                return (
+                  <li
+                    key={item.key}
+                    aria-label={effectiveTypePanelLabel}
+                    className={classNames(
+                      'team-breakdown__item',
+                      'type-breakdown-list__item'
+                    )}
+                  >
+                    <div className={classNames('breakdown-item-title')}>
+                      <div
+                        className={classNames('breakdown-item-title__text')}
+                        aria-hidden={true}
+                      >
+                        {effectiveBreakdownTitle}
+                      </div>
                     </div>
-                  </div>
-                  <EffectiveTypePanel
-                    id={item.key}
-                    panelModifier={item.goodCountModifier}
-                    types={types}
-                    data={item.counts}
-                    onMouseState={{ ...mouseState }}
-                  />
-                </li>
-              )}
+                    <EffectiveTypePanel
+                      id={item.key}
+                      panelModifier={item.goodCountModifier}
+                      types={types}
+                      data={item.counts}
+                      onMouseState={{ ...mouseState }}
+                    />
+                  </li>
+                );
+              }}
             />
           </div>
         )}
