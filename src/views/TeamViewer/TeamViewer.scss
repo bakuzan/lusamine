@@ -9,15 +9,31 @@
 
   &__team {
     display: flex;
-    flex-direction: column;
     padding: 5px;
     border: 1px solid transparent;
     margin: 5px 0;
   }
+
+  &__controls {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+  }
 }
 
-.saved-team__actions {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+.saved-team {
+  &__inner {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+  }
+
+  &__actions {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__action {
+  }
 }

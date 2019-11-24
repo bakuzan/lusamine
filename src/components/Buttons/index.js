@@ -33,9 +33,13 @@ export const ClearButton = ({ className, ...props }) => (
   />
 );
 
-const ArrowButton = ({ className, help, ...props }) => (
+const ArrowButton = ({ className, help, unrounded, ...props }) => (
   <IconButton
-    className={classNames('arrow-button', className)}
+    className={classNames(
+      'arrow-button',
+      { 'arrow-button--square': unrounded },
+      className
+    )}
     aria-label={help}
     title={help}
     {...props}
@@ -43,11 +47,31 @@ const ArrowButton = ({ className, help, ...props }) => (
 );
 
 export const LeftButton = (props) => (
-  <ArrowButton {...props} icon={Icons.left} help="Move Left" />
+  <ArrowButton {...props} icon={Icons.left} help="Move left" />
 );
 
 export const RightButton = (props) => (
-  <ArrowButton {...props} icon={Icons.right} help="Move Right" />
+  <ArrowButton {...props} icon={Icons.right} help="Move right" />
+);
+
+export const UpButton = (props) => (
+  <ArrowButton
+    {...props}
+    icon={Icons.up}
+    className="arrow-button--up"
+    help="Move up"
+    unrounded
+  />
+);
+
+export const DownButton = (props) => (
+  <ArrowButton
+    {...props}
+    icon={Icons.down}
+    className="arrow-button--down"
+    help="Move down"
+    unrounded
+  />
 );
 
 export const ButtonisedNavLink = withButtonisation(

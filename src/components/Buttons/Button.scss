@@ -28,4 +28,26 @@
   &:before {
     transform: translateY(-45%);
   }
+
+  &--square {
+    border-radius: initial;
+    min-height: 36px;
+    min-width: 48px;
+
+    &::before {
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      height: auto;
+      margin: none;
+    }
+  }
+
+  &--up::before {
+    transform: translateY(25%);
+  }
+
+  &--down::before {
+    transform: translateY(-25%);
+  }
 }
