@@ -3,7 +3,7 @@ import classNames from 'classnames';
 import React from 'react';
 
 import { capitaliseEachWord } from 'ayaka/capitalise';
-import Tooltip from 'meiko/Tooltip';
+import Tooltip from './Tooltip';
 
 import { buildSelectorsForSprite } from 'utils/selectors';
 
@@ -22,13 +22,15 @@ const Sprite = React.memo(function(props) {
   );
 
   return (
-    <li className={classNames('margin-one', 'sprite', spriteClasses.types)}>
+    <div className={classNames('margin-one', 'sprite', spriteClasses.types)}>
       <p id={`describe_${spriteId}`} className="for-screenreader-only">
         Click {capitalisedName} to add as a current team member.
       </p>
       <Tooltip
         contentId={`tooltip_${spriteId}`}
+        className="sprite__tooltip"
         usePosition="above"
+        attachTo="main"
         delay={500}
         text={capitalisedName}
         center
@@ -49,7 +51,7 @@ const Sprite = React.memo(function(props) {
           aria-describedby={`describe_${spriteId}`}
         />
       </Tooltip>
-    </li>
+    </div>
   );
 });
 

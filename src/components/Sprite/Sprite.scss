@@ -39,3 +39,7 @@
     margin-top: $sprite-pokemon--margin-top-reduced;
   }
 }
+
+.portal-container .tooltip__content {
+  transition: all 0.6s fade-in-out 0s;
+}

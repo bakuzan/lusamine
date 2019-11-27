@@ -43,20 +43,20 @@
   }
 
   &__sprite-list {
-    grid-template-columns: repeat(auto-fit, 46px);
-    grid-auto-rows: 1fr;
-    justify-content: flex-start;
-    grid-column-gap: 2px;
+    // grid-template-columns: repeat(auto-fit, 46px);
+    // grid-auto-rows: 1fr;
+    // justify-content: flex-start;
+    // grid-column-gap: 2px;
 
     &--scrollbox {
       box-shadow: 0px 0px 5px 1px var(--team-planner--list-shadow-colour);
-      max-height: 370px;
-      overflow: hidden auto;
+      // max-height: 370px;
+      // overflow: hidden auto;
     }
 
-    @include respondToAll((xs, sm)) {
-      justify-content: space-evenly;
-    }
+    // @include respondToAll((xs, sm)) {
+    //   justify-content: space-evenly;
+    // }
   }
 
   &__no-results {

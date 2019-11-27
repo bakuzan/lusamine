@@ -3,12 +3,10 @@ import React from 'react';
 
 import generateUniqueId from 'ayaka/generateUniqueId';
 import ClearableInput from 'meiko/ClearableInput';
-import Grid from 'meiko/Grid';
 import toasterService from 'meiko/utils/toasterService';
 import { Button } from 'components/Buttons';
 import Filters from 'components/Filters';
 import Team from 'components/Team';
-import Sprite from 'components/Sprite';
 import { PokedexContext, TypeContext } from 'context';
 import Constants from 'constants/index';
 import { Pokedex } from 'constants/pokedex';
@@ -24,6 +22,7 @@ import { getPartySizeAlertMessage } from 'utils/feedback';
 import * as TPU from './TeamPlannerUtils';
 
 import './TeamPlanner.scss';
+import TeamPlannerGrid from './TeamPlannerGrid';
 
 const { Strings, Party, Routes } = Constants;
 
@@ -31,8 +30,6 @@ const resolvePokedex = (m) =>
   m.params.pokedexKey ||
   settingsStore.getKey('defaultPokedex') ||
   Pokedex.national;
-
-const MemoGrid = React.memo(Grid);
 
 class PlannerPage extends React.Component {
   static contextType = PokedexContext;
@@ -161,7 +158,6 @@ class PlannerPage extends React.Component {
     const { team } = getUrlQueryStringAsObject(location);
     const currentTeamIds = createSetFromIdString(team);
 
-    const enableSpriteScrollbox = settingsStore.getKey('enableSpriteScrollbox');
     const dexFilters = { ...this.state, currentTeamIds, activePokedex };
 
     const filterProps = {
@@ -286,31 +282,11 @@ class PlannerPage extends React.Component {
                   />
                 </div>
                 <Filters hiddenOn={Strings.large} {...filterProps} />
-                {!!filteredSprites.length && (
-                  <MemoGrid
-                    className={classNames('team-planner__sprite-list', {
-                      'team-planner__sprite-list--scrollbox': enableSpriteScrollbox
-                    })}
-                    items={filteredSprites}
-                  >
-                    {(item) => (
-                      <Sprite
-                        key={item.id}
-                        data={item}
-                        onClick={this.handleSpriteSelection}
-                      />
-                    )}
-                  </MemoGrid>
-                )}
-                {!filteredSprites.length && (
-                  <div
-                    className={classNames('team-planner__no-results', {
-                      'team-planner__no-results--scrollbox': enableSpriteScrollbox
-                    })}
-                  >
-                    No pokemon available for the current filters.
-                  </div>
-                )}
+
+                <TeamPlannerGrid
+                  items={filteredSprites}
+                  onItemClick={this.handleSpriteSelection}
+                />
               </div>
             );
           }}

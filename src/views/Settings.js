@@ -70,14 +70,6 @@ class Settings extends React.Component {
           checked={settings.canEvolve}
           onChange={this.handleUserInput}
         />
-        <Tickbox
-          id="show-scrollbox"
-          containerClassName="settings__input"
-          name="enableSpriteScrollbox"
-          text={`Enable Sprite Scrollbox\nDisplay team planner sprite list in its own scrollable box.`}
-          checked={settings.enableSpriteScrollbox}
-          onChange={this.handleUserInput}
-        />
         <SelectBox
           id="default-pokedex"
           containerClassName="settings__input settings__input--select-box"
