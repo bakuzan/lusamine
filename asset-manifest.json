@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/lusamine/static/css/main.3b4472f6.chunk.css",
-    "main.js": "/lusamine/static/js/main.ff5cb9d2.chunk.js",
-    "main.js.map": "/lusamine/static/js/main.ff5cb9d2.chunk.js.map",
+    "main.css": "/lusamine/static/css/main.8fea4cec.chunk.css",
+    "main.js": "/lusamine/static/js/main.c1b0db06.chunk.js",
+    "main.js.map": "/lusamine/static/js/main.c1b0db06.chunk.js.map",
     "runtime-main.js": "/lusamine/static/js/runtime-main.71da81fa.js",
     "runtime-main.js.map": "/lusamine/static/js/runtime-main.71da81fa.js.map",
     "static/js/2.7ca9fb80.chunk.js": "/lusamine/static/js/2.7ca9fb80.chunk.js",
     "static/js/2.7ca9fb80.chunk.js.map": "/lusamine/static/js/2.7ca9fb80.chunk.js.map",
     "index.html": "/lusamine/index.html",
-    "precache-manifest.e52734608ab4d1a74196d254141c34ef.js": "/lusamine/precache-manifest.e52734608ab4d1a74196d254141c34ef.js",
+    "precache-manifest.2688f1cf78a9ae4587fb1cef1c5093be.js": "/lusamine/precache-manifest.2688f1cf78a9ae4587fb1cef1c5093be.js",
     "service-worker.js": "/lusamine/service-worker.js",
-    "static/css/main.3b4472f6.chunk.css.map": "/lusamine/static/css/main.3b4472f6.chunk.css.map",
+    "static/css/main.8fea4cec.chunk.css.map": "/lusamine/static/css/main.8fea4cec.chunk.css.map",
     "static/media/ArtCard.scss": "/lusamine/static/media/art.f0c60420.webp",
     "static/media/pokemon-opening.ogg": "/lusamine/static/media/pokemon-opening.0d0730eb.ogg",
     "static/media/pokemon-opening.mp3": "/lusamine/static/media/pokemon-opening.7140bc35.mp3",
@@ -21,7 +21,7 @@
   "entrypoints": [
     "static/js/runtime-main.71da81fa.js",
     "static/js/2.7ca9fb80.chunk.js",
-    "static/css/main.3b4472f6.chunk.css",
-    "static/js/main.ff5cb9d2.chunk.js"
+    "static/css/main.8fea4cec.chunk.css",
+    "static/js/main.c1b0db06.chunk.js"
   ]
 }
