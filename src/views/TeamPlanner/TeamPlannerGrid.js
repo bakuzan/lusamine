@@ -34,34 +34,35 @@ function TeamPlannerGrid({ items, onItemClick }) {
 
   return (
     <div
-      ref={ref}
       className={classNames('team-planner__sprite-list', {
         'team-planner__sprite-list--scrollbox': enableSpriteScrollbox
       })}
     >
-      <Grid
-        style={{ position: 'static', overflowX: `hidden` }}
-        columnCount={columnCount}
-        columnWidth={ITEM_SIZE}
-        height={GRID_HEIGHT}
-        rowCount={rowCount}
-        rowHeight={ITEM_SIZE}
-        width={width}
-      >
-        {({ columnIndex, rowIndex, style }) => {
-          const item = matrix[rowIndex][columnIndex];
+      <div ref={ref}>
+        <Grid
+          style={{ position: 'static', overflowX: `hidden` }}
+          columnCount={columnCount}
+          columnWidth={ITEM_SIZE}
+          height={GRID_HEIGHT}
+          rowCount={rowCount}
+          rowHeight={ITEM_SIZE}
+          width={width}
+        >
+          {({ columnIndex, rowIndex, style }) => {
+            const item = matrix[rowIndex][columnIndex];
 
-          if (!item) {
-            return null;
-          }
+            if (!item) {
+              return null;
+            }
 
-          return (
-            <div key={item.id} style={style}>
-              <Sprite data={item} onClick={onItemClick} />
-            </div>
-          );
-        }}
-      </Grid>
+            return (
+              <div key={item.id} style={style}>
+                <Sprite data={item} onClick={onItemClick} />
+              </div>
+            );
+          }}
+        </Grid>
+      </div>
     </div>
   );
 }

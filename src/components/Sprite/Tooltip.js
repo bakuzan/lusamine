@@ -64,8 +64,7 @@ function Tooltip({
 
   const style = resolvePositioning(tooltip, other, usePosition, center);
 
-  function handleEnter(e) {
-    // const { clientX, clientY } = e;
+  function handleEnter() {
     if (!isEnabled) {
       return;
     }
@@ -113,7 +112,7 @@ function Tooltip({
 
   const TooltipContent = ({ hidden, readable }) => (
     <div
-      id={contentId}
+      id={(readable && contentId) || undefined}
       style={style}
       aria-hidden={!readable}
       className={classNames(
@@ -142,7 +141,7 @@ function Tooltip({
       {...props}
     >
       <TooltipContent hidden readable={isEnabled} />
-      {attachTo && (
+      {isEnabled && hovered && attachTo && (
         <Portal querySelector={attachTo}>
           <TooltipContent readable={false} />
         </Portal>
