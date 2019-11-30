@@ -23,23 +23,25 @@ function TrainerTeamViewer() {
             Click to open this team in the team creator where you can edit a new
             copy.
           </p>
-          <div className={classNames('saved-team__actions')}>
-            <ButtonisedNavLink
-              to={TVU.createTeamUrl(t.idString)}
-              link
-              aria-describedby={`loadTeam_${t.id}`}
-            >
-              Load team
-            </ButtonisedNavLink>
+          <div className="saved-team__inner">
+            <div className={classNames('saved-team__actions')}>
+              <ButtonisedNavLink
+                to={TVU.createTeamUrl(t.idString)}
+                link
+                aria-describedby={`loadTeam_${t.id}`}
+              >
+                Load team
+              </ButtonisedNavLink>
+            </div>
+            <Team
+              name={t.name}
+              types={typeMatches}
+              members={selectMembersFromPokedexAllowDuplicates(
+                pokedex,
+                t.memberIds
+              )}
+            />
           </div>
-          <Team
-            name={t.name}
-            types={typeMatches}
-            members={selectMembersFromPokedexAllowDuplicates(
-              pokedex,
-              t.memberIds
-            )}
-          />
         </div>
       ))}
     </div>
