@@ -71,8 +71,6 @@ class TeamViewer extends React.Component {
       {}
     );
 
-    console.log(savedTeams, teamKeys, teamId, direction, teams);
-
     const updatedTeams = teamsStore.replace(teams);
     this.setState({ savedTeams: updatedTeams });
   }
