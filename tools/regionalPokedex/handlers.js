@@ -79,5 +79,9 @@ module.exports = {
   async alola_u(name, $) {
     const bodys = Array.from($('table > tbody')).slice(0, -3);
     return await islandHandler($, bodys, { number: 7, name, code: 'Ultra' });
+  },
+  async galar(name, $) {
+    const bodys = Array.from($('table > tbody')).slice(1, -4);
+    return await baseHandler($, bodys, { number: 8, name });
   }
 };

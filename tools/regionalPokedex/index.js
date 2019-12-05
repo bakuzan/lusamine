@@ -27,7 +27,7 @@ async function run() {
     console.log(`
        /* Example usage
         *
-        * npm run scrape:pokedex -- --key kanto
+        * npm run scrape:region -- --key kanto
         *
         * Args
         * --key STRING one of: ${Object.keys(urls).join(',')}
@@ -41,7 +41,7 @@ async function run() {
 
   if (!argv.key || invalidKey) {
     console.log(chalk.bgWhite.red(`Regional Pokedex key is required.`));
-    console.log(chalk.yellow(`Example: npm run scrape:pokedex -- --key kanto`));
+    console.log(chalk.yellow(`Example: npm run scrape:region -- --key kanto`));
 
     if (invalidKey) {
       console.log(chalk.bgWhite.red(`Invalid key: "${argv.key}"`));
@@ -52,7 +52,7 @@ async function run() {
     process.exit(1);
   }
 
-  const $ = await fetchPage(argv.key, urls[key]);
+  const $ = await fetchPage(argv.key, urls[argv.key]);
   const handler = handlers[argv.key];
   if (!handler) {
     console.log(chalk.bgWhite.red(`Couldn't find handler for: ${argv.key}`));
