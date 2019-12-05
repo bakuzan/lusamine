@@ -34,18 +34,41 @@ def concat_images(img_num, imga, imgb):
     return new_img
 
 
+def scale_image(image, required_h, required_w):
+    h, w = image.shape[:2]
+
+    if required_h == h and required_w == w:
+        return image
+
+    dx = required_w / w
+    dy = required_h / h
+
+    print(
+        "Scaling image from {0}x{1} to {2}x{3}...".format(
+            w, h, required_w, required_h),
+        flush=True)
+
+    return cv2.resize(image, (0, 0), fx=dx, fy=dy)
+
+
 def concat_n_images(images_directory):
     """
     Combines images from a directory.
     """
     output = None
     files = listdir(images_directory)
+    img_h = 0
+    img_w = 0
 
     for i, filename in enumerate(files):
         img_path = images_directory + sep + filename
         img = cv2.imread(img_path, cv2.IMREAD_UNCHANGED)
 
+        if i == 0:
+            img_h, img_w = img.shape[:2]
+
         print("Adding {0}...".format(filename), flush=True)
+        img = scale_image(img, img_h, img_w)
 
         if i == 0:
             output = img
