@@ -1,10 +1,7 @@
 const chalk = require('chalk');
-const fs = require('fs');
-const path = require('path');
-const request = require('request-promise-native');
-const cheerio = require('cheerio');
 const argv = require('minimist')(process.argv.slice(2));
 
+const fetchPage = require('../readCachedFile');
 const handlers = require('./handlers');
 
 // https://bulbapedia.bulbagarden.net/wiki/Regional_Pokédex
@@ -22,37 +19,6 @@ const urls = {
   alola_u: `https://bulbapedia.bulbagarden.net/wiki/List_of_Pok%C3%A9mon_by_Alola_Pok%C3%A9dex_number_(Ultra_Sun_and_Ultra_Moon)`,
   galar: `https://bulbapedia.bulbagarden.net/wiki/List_of_Pokémon_by_Galar_Pokédex_number`
 };
-
-async function fetchPage(key) {
-  const url = urls[key];
-  const filename = path.resolve(
-    path.join(__dirname, '../cache', `${key}.html`)
-  );
-
-  try {
-    fs.accessSync(filename, fs.constants.R_OK);
-    console.log('Reading from cache');
-    const data = fs.readFileSync(filename, 'utf-8');
-    return cheerio.load(data);
-  } catch (err) {
-    console.error('Cache Empty, will request.');
-  }
-
-  try {
-    const html = await request(url);
-
-    fs.writeFile(filename, html, (err) => {
-      const message = err ? 'Failed to cache request' : 'Cached';
-      console.log(message);
-    });
-
-    return cheerio.load(html);
-  } catch (e) {
-    console.log(chalk.bgWhite.red('Request failed.'));
-    console.error(e);
-    process.exit(1);
-  }
-}
 
 async function run() {
   console.log(chalk.green('Regional Pokedex Scraper!'));
@@ -86,7 +52,7 @@ async function run() {
     process.exit(1);
   }
 
-  const $ = await fetchPage(argv.key);
+  const $ = await fetchPage(argv.key, urls[key]);
   const handler = handlers[argv.key];
   if (!handler) {
     console.log(chalk.bgWhite.red(`Couldn't find handler for: ${argv.key}`));

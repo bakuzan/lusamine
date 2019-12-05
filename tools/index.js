@@ -1,12 +1,10 @@
 const chalk = require('chalk');
 const fs = require('fs');
-const path = require('path');
-const request = require('request-promise-native');
-const cheerio = require('cheerio');
 const { promisify } = require('util');
 const argv = require('minimist')(process.argv.slice(2));
 
 const Processors = require('./processors');
+const fetchPage = require('./readCachedFile');
 
 const writeAsync = promisify(fs.writeFile);
 
@@ -58,31 +56,6 @@ const scrapeTargets = new Map([
   ]
 ]);
 
-async function fetchPage(key) {
-  const { url } = scrapeTargets.get(key);
-  const filename = path.resolve(path.join(__dirname, './cache', `${key}.html`));
-  console.log(key, __dirname, filename);
-  try {
-    fs.accessSync(filename, fs.constants.R_OK);
-    console.log('Reading from cache');
-    const data = fs.readFileSync(filename, 'utf-8');
-    return cheerio.load(data);
-  } catch (err) {
-    console.error('Cache Empty, will request.');
-  }
-
-  try {
-    const html = await request(url);
-    await writeAsync(filename, html);
-
-    return cheerio.load(html);
-  } catch (e) {
-    console.log(chalk.bgWhite.red('Request failed.'));
-    console.error(e);
-    process.exit(1);
-  }
-}
-
 async function run() {
   console.log(chalk.green('Pokedex Scraper!'));
 
@@ -116,7 +89,7 @@ async function run() {
   }
 
   const info = scrapeTargets.get(argv.key);
-  const $ = await fetchPage(argv.key);
+  const $ = await fetchPage(argv.key, info.url);
   const result = await scrapePokemonData($, info.processor);
 
   if (result) {
