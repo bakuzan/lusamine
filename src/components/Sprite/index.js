@@ -3,7 +3,7 @@ import classNames from 'classnames';
 import React from 'react';
 
 import { capitaliseEachWord } from 'ayaka/capitalise';
-import Tooltip from './Tooltip';
+import Tooltip from 'meiko/Tooltip';
 
 import { buildSelectorsForSprite } from 'utils/selectors';
 
