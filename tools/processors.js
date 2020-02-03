@@ -32,7 +32,7 @@ async function pokedexProcessor($) {
     )
     .reduce(function(result, data) {
       return Array.from(data.children).reduce((acc, tr) => {
-        const children = $('td', tr);
+        const children = $(tr).children();
 
         if (!children) {
           return acc;
@@ -85,10 +85,10 @@ async function evolutionProcessor($) {
     .slice(0, Enums.GENERATION_COUNT)
     .reduce(function(result, data) {
       return Array.from(data.children).reduce((acc, tr, i, trs) => {
-        const prevChildren = i !== 0 ? $('td', trs[i - 1]) : null;
-        const children = $('td', tr);
+        const prevChildren = i !== 0 ? $(trs[i - 1]).children() : null;
+        const children = $(tr).children();
 
-        if (!children || children.length === 0) {
+        if (!children || children.length < 3) {
           return acc;
         }
 
@@ -119,6 +119,15 @@ async function evolutionProcessor($) {
             });
           }
         } else {
+          if (!prevChildren) {
+            console.log(
+              'No previous?!',
+              children.eq(0).text(),
+              children.eq(1).text()
+            );
+            return acc;
+          }
+
           const prevIsSingle = prevChildren.length < 8;
           const fromName = prevIsSingle
             ? prevChildren.eq(0)
@@ -151,7 +160,7 @@ async function megaProcessor($) {
     .slice(0, 2)
     .reduce(function(result, data) {
       return Array.from(data.children).reduce((acc, tr) => {
-        const children = $('td', tr);
+        const children = $(tr).children();
 
         if (!children || children.length === 0) return acc;
         const isSecondMega = children.length === 4;

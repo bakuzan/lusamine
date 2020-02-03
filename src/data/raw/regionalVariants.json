@@ -50,6 +50,11 @@
     "typeIds": [16]
   },
   {
+    "nationalPokedexNumber": 52,
+    "regionId": 8,
+    "typeIds": [17]
+  },
+  {
     "nationalPokedexNumber": 53,
     "regionId": 7,
     "typeIds": [16]
@@ -70,6 +75,26 @@
     "typeIds": [9, 12]
   },
   {
+    "nationalPokedexNumber": 77,
+    "regionId": 8,
+    "typeIds": [13]
+  },
+  {
+    "nationalPokedexNumber": 78,
+    "regionId": 8,
+    "typeIds": [13, 18]
+  },
+  {
+    "nationalPokedexNumber": 79,
+    "regionId": 8,
+    "typeIds": [13]
+  },
+  {
+    "nationalPokedexNumber": 83,
+    "regionId": 8,
+    "typeIds": [5]
+  },
+  {
     "nationalPokedexNumber": 88,
     "regionId": 7,
     "typeIds": [7, 16]
@@ -88,5 +113,55 @@
     "nationalPokedexNumber": 105,
     "regionId": 7,
     "typeIds": [3, 11]
+  },
+  {
+    "nationalPokedexNumber": 110,
+    "regionId": 8,
+    "typeIds": [7, 18]
+  },
+  {
+    "nationalPokedexNumber": 122,
+    "regionId": 8,
+    "typeIds": [14, 13]
+  },
+  {
+    "nationalPokedexNumber": 222,
+    "regionId": 8,
+    "typeIds": [11]
+  },
+  {
+    "nationalPokedexNumber": 263,
+    "regionId": 8,
+    "typeIds": [16, 1]
+  },
+  {
+    "nationalPokedexNumber": 264,
+    "regionId": 8,
+    "typeIds": [16, 1]
+  },
+  {
+    "nationalPokedexNumber": 554,
+    "regionId": 8,
+    "typeIds": [14]
+  },
+  {
+    "nationalPokedexNumber": 555,
+    "regionId": 8,
+    "typeIds": [14]
+  },
+  {
+    "nationalPokedexNumber": 555,
+    "regionId": 8,
+    "typeIds": [14, 3]
+  },
+  {
+    "nationalPokedexNumber": 562,
+    "regionId": 8,
+    "typeIds": [8, 11]
+  },
+  {
+    "nationalPokedexNumber": 618,
+    "regionId": 8,
+    "typeIds": [8, 17]
   }
 ]

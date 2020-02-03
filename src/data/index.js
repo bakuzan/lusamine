@@ -25,6 +25,7 @@ import kalos_co from './raw/regionalPokedex/kalos_co.json';
 import kalos_mo from './raw/regionalPokedex/kalos_mo.json';
 import alola from './raw/regionalPokedex/alola.json';
 import alola_u from './raw/regionalPokedex/alola_u.json';
+import galar from './raw/regionalPokedex/galar.json';
 
 const SPRITES_PER_ROW = 30;
 const ART_PER_ROW = 30;
@@ -36,7 +37,7 @@ export function constructPokedex() {
 
   const pokedex = combineAndSortMaps(
     ([id, mon], order) => {
-      const sOffset = -41;
+      const sOffset = -40;
       const aOffset = -97;
       const sy = -2 + sOffset * Math.floor(order / SPRITES_PER_ROW);
       const sx = -1 + sOffset * (order % SPRITES_PER_ROW);
@@ -71,7 +72,8 @@ export function constructPokedex() {
       unova_n,
       kalos: [...kalos_ce, ...kalos_co, ...kalos_mo],
       alola,
-      alola_u
+      alola_u,
+      galar
     }
   };
 }
