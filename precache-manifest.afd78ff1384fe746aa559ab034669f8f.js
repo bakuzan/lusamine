@@ -1,23 +1,27 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "337b45b06298aa4563c3691236a15d70",
+    "revision": "f9f1514d2038acb45c3700489e3f8387",
     "url": "/lusamine/index.html"
   },
   {
-    "revision": "e4411d647eef41e557a7",
-    "url": "/lusamine/static/css/main.8fea4cec.chunk.css"
+    "revision": "dca4518440b5c3d44d7f",
+    "url": "/lusamine/static/css/main.583425d0.chunk.css"
   },
   {
-    "revision": "a466f4bbd923c2c8ae12",
-    "url": "/lusamine/static/js/2.7ca9fb80.chunk.js"
+    "revision": "9cda6c0c28561c1018f9",
+    "url": "/lusamine/static/js/2.63615047.chunk.js"
   },
   {
-    "revision": "e4411d647eef41e557a7",
-    "url": "/lusamine/static/js/main.c877fb87.chunk.js"
+    "revision": "bf23039b4e70a07c5aeb1b4010df3572",
+    "url": "/lusamine/static/js/2.63615047.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "60e1451ff0dd0284c863",
-    "url": "/lusamine/static/js/runtime-main.71da81fa.js"
+    "revision": "dca4518440b5c3d44d7f",
+    "url": "/lusamine/static/js/main.0f4074c2.chunk.js"
+  },
+  {
+    "revision": "17dfd07f8ee180342dfa",
+    "url": "/lusamine/static/js/runtime-main.91c60f54.js"
   },
   {
     "revision": "520c5cad9346e603ac7c18a6a5ba917c",
