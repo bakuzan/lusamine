@@ -37,7 +37,7 @@ async function baseHandler($, bodys, region) {
         return null;
       }
 
-      const tds = $('td', tr);
+      const tds = $(tr).children();
       const reg = tds.eq(0);
       const nat = tds.eq(1);
 
@@ -76,7 +76,7 @@ async function islandHandler($, bodys, region) {
         return null;
       }
 
-      const tds = $('td', tr);
+      const tds = $(tr).children();
       const reg = tds.eq(0);
       const subs = [tds.eq(1), tds.eq(2), tds.eq(3), tds.eq(4)];
       const nat = tds.eq(5);

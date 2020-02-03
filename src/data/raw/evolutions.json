@@ -246,6 +246,12 @@
     "note": "Friendship"
   },
   {
+    "nationalPokedexNumber": 52,
+    "evolvesTo": 863,
+    "mechanism": 1,
+    "note": "Level 28"
+  },
+  {
     "nationalPokedexNumber": 54,
     "evolvesTo": 55,
     "mechanism": 1,
@@ -354,6 +360,12 @@
     "note": "Level 40"
   },
   {
+    "nationalPokedexNumber": 77,
+    "evolvesTo": 78,
+    "mechanism": 1,
+    "note": "Level 40"
+  },
+  {
     "nationalPokedexNumber": 79,
     "evolvesTo": 80,
     "mechanism": 1,
@@ -376,6 +388,12 @@
     "evolvesTo": 462,
     "mechanism": 4,
     "note": "Level up in a special magnetic field"
+  },
+  {
+    "nationalPokedexNumber": 83,
+    "evolvesTo": 865,
+    "mechanism": 1,
+    "note": "Land 3 critical hits in a single battle"
   },
   {
     "nationalPokedexNumber": 84,
@@ -546,6 +564,12 @@
     "note": "Level up knowing Mimic"
   },
   {
+    "nationalPokedexNumber": 122,
+    "evolvesTo": 866,
+    "mechanism": 1,
+    "note": "Level 42"
+  },
+  {
     "nationalPokedexNumber": 123,
     "evolvesTo": 212,
     "mechanism": 14,
@@ -621,13 +645,13 @@
     "nationalPokedexNumber": 133,
     "evolvesTo": 470,
     "mechanism": 4,
-    "note": "Level up near Moss Rock"
+    "note": "Level up near Moss Rock or use Leaf Stone"
   },
   {
     "nationalPokedexNumber": 133,
     "evolvesTo": 471,
     "mechanism": 4,
-    "note": "Level up near Ice Rock"
+    "note": "Level up near Ice Rock or use Ice Stone"
   },
   {
     "nationalPokedexNumber": 133,
@@ -676,6 +700,12 @@
     "evolvesTo": 149,
     "mechanism": 1,
     "note": "Level 55"
+  },
+  {
+    "nationalPokedexNumber": 808,
+    "evolvesTo": 809,
+    "mechanism": 8,
+    "note": "400 Meltan Candy in Pokémon Go"
   },
   {
     "nationalPokedexNumber": 152,
@@ -894,6 +924,12 @@
     "note": "Level up knowing Ancient Power"
   },
   {
+    "nationalPokedexNumber": 222,
+    "evolvesTo": 864,
+    "mechanism": 1,
+    "note": "Level 38"
+  },
+  {
     "nationalPokedexNumber": 223,
     "evolvesTo": 224,
     "mechanism": 1,
@@ -978,9 +1014,15 @@
     "note": "Level 20"
   },
   {
+    "nationalPokedexNumber": 264,
+    "evolvesTo": 862,
+    "mechanism": 5,
+    "note": "Level 35 (night)"
+  },
+  {
     "nationalPokedexNumber": 265,
     "evolvesTo": 266,
-    "mechanism": 10,
+    "mechanism": 1,
     "note": "Level 7"
   },
   {
@@ -990,15 +1032,9 @@
     "note": "Level 10"
   },
   {
-    "nationalPokedexNumber": 265,
-    "evolvesTo": 268,
-    "mechanism": 10,
-    "note": "Level 7"
-  },
-  {
     "nationalPokedexNumber": 268,
     "evolvesTo": 269,
-    "mechanism": 1,
+    "mechanism": 10,
     "note": "Level 10"
   },
   {
@@ -1086,10 +1122,10 @@
     "note": "Level 20"
   },
   {
-    "nationalPokedexNumber": 291,
+    "nationalPokedexNumber": 290,
     "evolvesTo": 292,
     "mechanism": 9,
-    "note": "Free spaceAdditional Poké Ball"
+    "note": "Free space and Additional Poké Ball"
   },
   {
     "nationalPokedexNumber": 293,
@@ -1740,6 +1776,12 @@
     "note": "Level 35"
   },
   {
+    "nationalPokedexNumber": 554,
+    "evolvesTo": 555,
+    "mechanism": 11,
+    "note": "Ice Stone"
+  },
+  {
     "nationalPokedexNumber": 557,
     "evolvesTo": 558,
     "mechanism": 1,
@@ -1756,6 +1798,12 @@
     "evolvesTo": 563,
     "mechanism": 1,
     "note": "Level 34"
+  },
+  {
+    "nationalPokedexNumber": 562,
+    "evolvesTo": 867,
+    "mechanism": 11,
+    "note": "Under the stone bridge in Dusty Bowl after Yamask takes at least 49 HP in damage in one attack without fainting."
   },
   {
     "nationalPokedexNumber": 564,
@@ -2265,7 +2313,7 @@
     "nationalPokedexNumber": 737,
     "evolvesTo": 738,
     "mechanism": 4,
-    "note": "Level up in a special magnetic field"
+    "note": "Level up in a special magnetic field/Thunder Stone"
   },
   {
     "nationalPokedexNumber": 739,
@@ -2282,8 +2330,20 @@
   {
     "nationalPokedexNumber": 744,
     "evolvesTo": 745,
+    "mechanism": 8,
+    "note": "Level 25 (Pokémon Sun and Ultra Sun; day)"
+  },
+  {
+    "nationalPokedexNumber": 744,
+    "evolvesTo": 745,
+    "mechanism": 8,
+    "note": "Level 25 (Pokémon Moon and Ultra Moon; night)"
+  },
+  {
+    "nationalPokedexNumber": 744,
+    "evolvesTo": 745,
     "mechanism": 5,
-    "note": "Level 25"
+    "note": "Level 25 (between 5:00 and 5:59 PM)"
   },
   {
     "nationalPokedexNumber": 747,
@@ -2394,9 +2454,213 @@
     "note": "Level up knowing Dragon Pulse"
   },
   {
-    "nationalPokedexNumber": 808,
-    "evolvesTo": 809,
-    "mechanism": 8,
-    "note": "400 Meltan Candy in Pokémon Go"
+    "nationalPokedexNumber": 810,
+    "evolvesTo": 811,
+    "mechanism": 1,
+    "note": "Level 16"
+  },
+  {
+    "nationalPokedexNumber": 811,
+    "evolvesTo": 812,
+    "mechanism": 1,
+    "note": "Level 35"
+  },
+  {
+    "nationalPokedexNumber": 813,
+    "evolvesTo": 814,
+    "mechanism": 1,
+    "note": "Level 16"
+  },
+  {
+    "nationalPokedexNumber": 814,
+    "evolvesTo": 815,
+    "mechanism": 1,
+    "note": "Level 35"
+  },
+  {
+    "nationalPokedexNumber": 816,
+    "evolvesTo": 817,
+    "mechanism": 1,
+    "note": "Level 16"
+  },
+  {
+    "nationalPokedexNumber": 817,
+    "evolvesTo": 818,
+    "mechanism": 1,
+    "note": "Level 35"
+  },
+  {
+    "nationalPokedexNumber": 819,
+    "evolvesTo": 820,
+    "mechanism": 1,
+    "note": "Level 24"
+  },
+  {
+    "nationalPokedexNumber": 821,
+    "evolvesTo": 822,
+    "mechanism": 1,
+    "note": "Level 18"
+  },
+  {
+    "nationalPokedexNumber": 822,
+    "evolvesTo": 823,
+    "mechanism": 1,
+    "note": "Level 38"
+  },
+  {
+    "nationalPokedexNumber": 824,
+    "evolvesTo": 825,
+    "mechanism": 1,
+    "note": "Level 10"
+  },
+  {
+    "nationalPokedexNumber": 825,
+    "evolvesTo": 826,
+    "mechanism": 1,
+    "note": "Level 30"
+  },
+  {
+    "nationalPokedexNumber": 827,
+    "evolvesTo": 828,
+    "mechanism": 1,
+    "note": "Level 18"
+  },
+  {
+    "nationalPokedexNumber": 829,
+    "evolvesTo": 830,
+    "mechanism": 1,
+    "note": "Level 20"
+  },
+  {
+    "nationalPokedexNumber": 831,
+    "evolvesTo": 832,
+    "mechanism": 1,
+    "note": "Level 24"
+  },
+  {
+    "nationalPokedexNumber": 833,
+    "evolvesTo": 834,
+    "mechanism": 1,
+    "note": "Level 22"
+  },
+  {
+    "nationalPokedexNumber": 835,
+    "evolvesTo": 836,
+    "mechanism": 1,
+    "note": "Level 25"
+  },
+  {
+    "nationalPokedexNumber": 837,
+    "evolvesTo": 838,
+    "mechanism": 1,
+    "note": "Level 18"
+  },
+  {
+    "nationalPokedexNumber": 838,
+    "evolvesTo": 839,
+    "mechanism": 1,
+    "note": "Level 34"
+  },
+  {
+    "nationalPokedexNumber": 840,
+    "evolvesTo": 841,
+    "mechanism": 1,
+    "note": "Tart Apple"
+  },
+  {
+    "nationalPokedexNumber": 840,
+    "evolvesTo": 842,
+    "mechanism": 1,
+    "note": "Sweet Apple"
+  },
+  {
+    "nationalPokedexNumber": 843,
+    "evolvesTo": 844,
+    "mechanism": 1,
+    "note": "Level 36"
+  },
+  {
+    "nationalPokedexNumber": 846,
+    "evolvesTo": 847,
+    "mechanism": 1,
+    "note": "Level 26"
+  },
+  {
+    "nationalPokedexNumber": 848,
+    "evolvesTo": 849,
+    "mechanism": 1,
+    "note": "Level 30"
+  },
+  {
+    "nationalPokedexNumber": 850,
+    "evolvesTo": 851,
+    "mechanism": 1,
+    "note": "Level 28"
+  },
+  {
+    "nationalPokedexNumber": 852,
+    "evolvesTo": 853,
+    "mechanism": 3,
+    "note": "Level up knowing Taunt"
+  },
+  {
+    "nationalPokedexNumber": 854,
+    "evolvesTo": 855,
+    "mechanism": 1,
+    "note": "Chipped Pot or Cracked Pot"
+  },
+  {
+    "nationalPokedexNumber": 856,
+    "evolvesTo": 857,
+    "mechanism": 1,
+    "note": "Level 32"
+  },
+  {
+    "nationalPokedexNumber": 857,
+    "evolvesTo": 858,
+    "mechanism": 1,
+    "note": "Level 42"
+  },
+  {
+    "nationalPokedexNumber": 859,
+    "evolvesTo": 860,
+    "mechanism": 1,
+    "note": "Level 32"
+  },
+  {
+    "nationalPokedexNumber": 860,
+    "evolvesTo": 861,
+    "mechanism": 1,
+    "note": "Level 42"
+  },
+  {
+    "nationalPokedexNumber": 868,
+    "evolvesTo": 869,
+    "mechanism": 1,
+    "note": "Sweet when its Trainer spins and strikes a pose"
+  },
+  {
+    "nationalPokedexNumber": 872,
+    "evolvesTo": 873,
+    "mechanism": 5,
+    "note": "Friendship (night)"
+  },
+  {
+    "nationalPokedexNumber": 878,
+    "evolvesTo": 879,
+    "mechanism": 1,
+    "note": "Level 34"
+  },
+  {
+    "nationalPokedexNumber": 885,
+    "evolvesTo": 886,
+    "mechanism": 1,
+    "note": "Level 50"
+  },
+  {
+    "nationalPokedexNumber": 886,
+    "evolvesTo": 887,
+    "mechanism": 1,
+    "note": "Level 60"
   }
 ]

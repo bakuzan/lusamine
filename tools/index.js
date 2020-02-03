@@ -85,7 +85,7 @@ async function run() {
 
     console.log(chalk.yellow(`Valid keys are below.`));
     keys(scrapeTargets).forEach((k) => console.log(chalk.yellow(k)));
-    process.exit(1);
+    process.exit(0);
   }
 
   const info = scrapeTargets.get(argv.key);
@@ -97,7 +97,7 @@ async function run() {
     process.exit(0);
   } else {
     console.log(chalk.orange('Finished unsuccessfully'));
-    process.exit(1);
+    process.exit(0);
   }
 }
 

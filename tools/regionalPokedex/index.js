@@ -49,21 +49,22 @@ async function run() {
 
     console.log(chalk.yellow(`Valid keys are below.`));
     Object.keys(urls).forEach((k) => console.log(chalk.yellow(k)));
-    process.exit(1);
+    process.exit(0);
   }
 
   const $ = await fetchPage(argv.key, urls[argv.key]);
   const handler = handlers[argv.key];
   if (!handler) {
     console.log(chalk.bgWhite.red(`Couldn't find handler for: ${argv.key}`));
-    process.exit(1);
+    process.exit(0);
   }
 
   const result = await handler(argv.key, $);
   if (result) {
     process.exit(0);
   } else {
-    process.exit(1);
+    console.log('Process Failed.');
+    process.exit(0);
   }
 }
 

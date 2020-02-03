@@ -131,8 +131,18 @@
     "typeIds": [1, 6],
     "form": ""
   },
-  { "nationalPokedexNumber": 23, "name": "ekans", "typeIds": [7], "form": "" },
-  { "nationalPokedexNumber": 24, "name": "arbok", "typeIds": [7], "form": "" },
+  {
+    "nationalPokedexNumber": 23,
+    "name": "ekans",
+    "typeIds": [7],
+    "form": ""
+  },
+  {
+    "nationalPokedexNumber": 24,
+    "name": "arbok",
+    "typeIds": [7],
+    "form": ""
+  },
   {
     "nationalPokedexNumber": 25,
     "name": "pikachu",
@@ -205,7 +215,12 @@
     "typeIds": [18],
     "form": ""
   },
-  { "nationalPokedexNumber": 37, "name": "vulpix", "typeIds": [3], "form": "" },
+  {
+    "nationalPokedexNumber": 37,
+    "name": "vulpix",
+    "typeIds": [3],
+    "form": ""
+  },
   {
     "nationalPokedexNumber": 38,
     "name": "ninetales",
@@ -290,7 +305,12 @@
     "typeIds": [8],
     "form": ""
   },
-  { "nationalPokedexNumber": 52, "name": "meowth", "typeIds": [1], "form": "" },
+  {
+    "nationalPokedexNumber": 52,
+    "name": "meowth",
+    "typeIds": [1],
+    "form": ""
+  },
   {
     "nationalPokedexNumber": 53,
     "name": "persian",
@@ -309,7 +329,12 @@
     "typeIds": [4],
     "form": ""
   },
-  { "nationalPokedexNumber": 56, "name": "mankey", "typeIds": [5], "form": "" },
+  {
+    "nationalPokedexNumber": 56,
+    "name": "mankey",
+    "typeIds": [5],
+    "form": ""
+  },
   {
     "nationalPokedexNumber": 57,
     "name": "primeape",
@@ -346,7 +371,12 @@
     "typeIds": [4, 5],
     "form": ""
   },
-  { "nationalPokedexNumber": 63, "name": "abra", "typeIds": [13], "form": "" },
+  {
+    "nationalPokedexNumber": 63,
+    "name": "abra",
+    "typeIds": [13],
+    "form": ""
+  },
   {
     "nationalPokedexNumber": 64,
     "name": "kadabra",
@@ -359,7 +389,12 @@
     "typeIds": [13],
     "form": ""
   },
-  { "nationalPokedexNumber": 66, "name": "machop", "typeIds": [5], "form": "" },
+  {
+    "nationalPokedexNumber": 66,
+    "name": "machop",
+    "typeIds": [5],
+    "form": ""
+  },
   {
     "nationalPokedexNumber": 67,
     "name": "machoke",
@@ -420,7 +455,12 @@
     "typeIds": [9, 8],
     "form": ""
   },
-  { "nationalPokedexNumber": 77, "name": "ponyta", "typeIds": [3], "form": "" },
+  {
+    "nationalPokedexNumber": 77,
+    "name": "ponyta",
+    "typeIds": [3],
+    "form": ""
+  },
   {
     "nationalPokedexNumber": 78,
     "name": "rapidash",
@@ -469,15 +509,30 @@
     "typeIds": [1, 6],
     "form": ""
   },
-  { "nationalPokedexNumber": 86, "name": "seel", "typeIds": [4], "form": "" },
+  {
+    "nationalPokedexNumber": 86,
+    "name": "seel",
+    "typeIds": [4],
+    "form": ""
+  },
   {
     "nationalPokedexNumber": 87,
     "name": "dewgong",
     "typeIds": [4, 14],
     "form": ""
   },
-  { "nationalPokedexNumber": 88, "name": "grimer", "typeIds": [7], "form": "" },
-  { "nationalPokedexNumber": 89, "name": "muk", "typeIds": [7], "form": "" },
+  {
+    "nationalPokedexNumber": 88,
+    "name": "grimer",
+    "typeIds": [7],
+    "form": ""
+  },
+  {
+    "nationalPokedexNumber": 89,
+    "name": "muk",
+    "typeIds": [7],
+    "form": ""
+  },
   {
     "nationalPokedexNumber": 90,
     "name": "shellder",
@@ -520,8 +575,18 @@
     "typeIds": [13],
     "form": ""
   },
-  { "nationalPokedexNumber": 97, "name": "hypno", "typeIds": [13], "form": "" },
-  { "nationalPokedexNumber": 98, "name": "krabby", "typeIds": [4], "form": "" },
+  {
+    "nationalPokedexNumber": 97,
+    "name": "hypno",
+    "typeIds": [13],
+    "form": ""
+  },
+  {
+    "nationalPokedexNumber": 98,
+    "name": "krabby",
+    "typeIds": [4],
+    "form": ""
+  },
   {
     "nationalPokedexNumber": 99,
     "name": "kingler",
@@ -720,8 +785,18 @@
     "typeIds": [4, 14],
     "form": ""
   },
-  { "nationalPokedexNumber": 132, "name": "ditto", "typeIds": [1], "form": "" },
-  { "nationalPokedexNumber": 133, "name": "eevee", "typeIds": [1], "form": "" },
+  {
+    "nationalPokedexNumber": 132,
+    "name": "ditto",
+    "typeIds": [1],
+    "form": ""
+  },
+  {
+    "nationalPokedexNumber": 133,
+    "name": "eevee",
+    "typeIds": [1],
+    "form": ""
+  },
   {
     "nationalPokedexNumber": 134,
     "name": "vaporeon",
@@ -824,7 +899,12 @@
     "typeIds": [13],
     "form": ""
   },
-  { "nationalPokedexNumber": 151, "name": "mew", "typeIds": [13], "form": "" },
+  {
+    "nationalPokedexNumber": 151,
+    "name": "mew",
+    "typeIds": [13],
+    "form": ""
+  },
   {
     "nationalPokedexNumber": 152,
     "name": "chikorita",
@@ -1053,7 +1133,12 @@
     "typeIds": [2, 6],
     "form": ""
   },
-  { "nationalPokedexNumber": 190, "name": "aipom", "typeIds": [1], "form": "" },
+  {
+    "nationalPokedexNumber": 190,
+    "name": "aipom",
+    "typeIds": [1],
+    "form": ""
+  },
   {
     "nationalPokedexNumber": 191,
     "name": "sunkern",
@@ -1348,7 +1433,12 @@
     "typeIds": [12],
     "form": ""
   },
-  { "nationalPokedexNumber": 240, "name": "magby", "typeIds": [3], "form": "" },
+  {
+    "nationalPokedexNumber": 240,
+    "name": "magby",
+    "typeIds": [3],
+    "form": ""
+  },
   {
     "nationalPokedexNumber": 241,
     "name": "miltank",
@@ -1367,7 +1457,12 @@
     "typeIds": [12],
     "form": ""
   },
-  { "nationalPokedexNumber": 244, "name": "entei", "typeIds": [3], "form": "" },
+  {
+    "nationalPokedexNumber": 244,
+    "name": "entei",
+    "typeIds": [3],
+    "form": ""
+  },
   {
     "nationalPokedexNumber": 245,
     "name": "suicune",
@@ -2014,19 +2109,19 @@
     "nationalPokedexNumber": 351,
     "name": "castform",
     "typeIds": [3],
-    "form": "sunny"
+    "form": ""
   },
   {
     "nationalPokedexNumber": 351,
     "name": "castform",
     "typeIds": [4],
-    "form": "rainy"
+    "form": ""
   },
   {
     "nationalPokedexNumber": 351,
     "name": "castform",
     "typeIds": [14],
-    "form": "snowy"
+    "form": ""
   },
   {
     "nationalPokedexNumber": 352,
@@ -2215,21 +2310,9 @@
     "form": ""
   },
   {
-    "nationalPokedexNumber": 382,
-    "name": "primal kyogre",
-    "typeIds": [4],
-    "form": ""
-  },
-  {
     "nationalPokedexNumber": 383,
     "name": "groudon",
     "typeIds": [8],
-    "form": ""
-  },
-  {
-    "nationalPokedexNumber": 383,
-    "name": "primal groudon",
-    "typeIds": [8, 3],
     "form": ""
   },
   {
@@ -2254,19 +2337,19 @@
     "nationalPokedexNumber": 386,
     "name": "deoxys",
     "typeIds": [13],
-    "form": "attack"
+    "form": ""
   },
   {
     "nationalPokedexNumber": 386,
     "name": "deoxys",
     "typeIds": [13],
-    "form": "defense"
+    "form": ""
   },
   {
     "nationalPokedexNumber": 386,
     "name": "deoxys",
     "typeIds": [13],
-    "form": "speed"
+    "form": ""
   },
   {
     "nationalPokedexNumber": 387,
@@ -2428,13 +2511,13 @@
     "nationalPokedexNumber": 412,
     "name": "burmy",
     "typeIds": [10],
-    "form": "sandy"
+    "form": ""
   },
   {
     "nationalPokedexNumber": 412,
     "name": "burmy",
     "typeIds": [10],
-    "form": "trash"
+    "form": ""
   },
   {
     "nationalPokedexNumber": 413,
@@ -2446,13 +2529,13 @@
     "nationalPokedexNumber": 413,
     "name": "wormadam",
     "typeIds": [10, 8],
-    "form": "sandy"
+    "form": ""
   },
   {
     "nationalPokedexNumber": 413,
     "name": "wormadam",
     "typeIds": [10, 17],
-    "form": "trash"
+    "form": ""
   },
   {
     "nationalPokedexNumber": 414,
@@ -2512,7 +2595,7 @@
     "nationalPokedexNumber": 422,
     "name": "shellos",
     "typeIds": [4],
-    "form": "east"
+    "form": ""
   },
   {
     "nationalPokedexNumber": 423,
@@ -2524,7 +2607,7 @@
     "nationalPokedexNumber": 423,
     "name": "gastrodon",
     "typeIds": [4, 8],
-    "form": "east"
+    "form": ""
   },
   {
     "nationalPokedexNumber": 424,
@@ -2664,7 +2747,12 @@
     "typeIds": [1],
     "form": ""
   },
-  { "nationalPokedexNumber": 447, "name": "riolu", "typeIds": [5], "form": "" },
+  {
+    "nationalPokedexNumber": 447,
+    "name": "riolu",
+    "typeIds": [5],
+    "form": ""
+  },
   {
     "nationalPokedexNumber": 448,
     "name": "lucario",
@@ -2861,31 +2949,31 @@
     "nationalPokedexNumber": 479,
     "name": "rotom",
     "typeIds": [12, 3],
-    "form": "heat"
+    "form": ""
   },
   {
     "nationalPokedexNumber": 479,
     "name": "rotom",
     "typeIds": [12, 4],
-    "form": "wash"
+    "form": ""
   },
   {
     "nationalPokedexNumber": 479,
     "name": "rotom",
     "typeIds": [12, 14],
-    "form": "frost"
+    "form": ""
   },
   {
     "nationalPokedexNumber": 479,
     "name": "rotom",
     "typeIds": [12, 6],
-    "form": "fan"
+    "form": ""
   },
   {
     "nationalPokedexNumber": 479,
     "name": "rotom",
     "typeIds": [12, 2],
-    "form": "mow"
+    "form": ""
   },
   {
     "nationalPokedexNumber": 480,
@@ -2939,7 +3027,7 @@
     "nationalPokedexNumber": 487,
     "name": "giratina",
     "typeIds": [11, 15],
-    "form": "origin"
+    "form": ""
   },
   {
     "nationalPokedexNumber": 488,
@@ -2975,7 +3063,7 @@
     "nationalPokedexNumber": 492,
     "name": "shaymin",
     "typeIds": [2, 6],
-    "form": "sky"
+    "form": ""
   },
   {
     "nationalPokedexNumber": 493,
@@ -2989,7 +3077,12 @@
     "typeIds": [13, 3],
     "form": ""
   },
-  { "nationalPokedexNumber": 495, "name": "snivy", "typeIds": [2], "form": "" },
+  {
+    "nationalPokedexNumber": 495,
+    "name": "snivy",
+    "typeIds": [2],
+    "form": ""
+  },
   {
     "nationalPokedexNumber": 496,
     "name": "servine",
@@ -3002,7 +3095,12 @@
     "typeIds": [2],
     "form": ""
   },
-  { "nationalPokedexNumber": 498, "name": "tepig", "typeIds": [3], "form": "" },
+  {
+    "nationalPokedexNumber": 498,
+    "name": "tepig",
+    "typeIds": [3],
+    "form": ""
+  },
   {
     "nationalPokedexNumber": 499,
     "name": "pignite",
@@ -3145,7 +3243,7 @@
     "nationalPokedexNumber": 521,
     "name": "unfezant",
     "typeIds": [1, 6],
-    "form": "male"
+    "form": ""
   },
   {
     "nationalPokedexNumber": 522,
@@ -3243,8 +3341,18 @@
     "typeIds": [4, 8],
     "form": ""
   },
-  { "nationalPokedexNumber": 538, "name": "throh", "typeIds": [5], "form": "" },
-  { "nationalPokedexNumber": 539, "name": "sawk", "typeIds": [5], "form": "" },
+  {
+    "nationalPokedexNumber": 538,
+    "name": "throh",
+    "typeIds": [5],
+    "form": ""
+  },
+  {
+    "nationalPokedexNumber": 539,
+    "name": "sawk",
+    "typeIds": [5],
+    "form": ""
+  },
   {
     "nationalPokedexNumber": 540,
     "name": "sewaddle",
@@ -3315,7 +3423,7 @@
     "nationalPokedexNumber": 550,
     "name": "basculin",
     "typeIds": [4],
-    "form": "blue-striped"
+    "form": ""
   },
   {
     "nationalPokedexNumber": 551,
@@ -3351,7 +3459,7 @@
     "nationalPokedexNumber": 555,
     "name": "darmanitan",
     "typeIds": [3, 13],
-    "form": "zen"
+    "form": ""
   },
   {
     "nationalPokedexNumber": 556,
@@ -3579,7 +3687,7 @@
     "nationalPokedexNumber": 592,
     "name": "frillish",
     "typeIds": [4, 11],
-    "form": "male"
+    "form": ""
   },
   {
     "nationalPokedexNumber": 593,
@@ -3591,7 +3699,7 @@
     "nationalPokedexNumber": 593,
     "name": "jellicent",
     "typeIds": [4, 11],
-    "form": "male"
+    "form": ""
   },
   {
     "nationalPokedexNumber": 594,
@@ -3689,7 +3797,12 @@
     "typeIds": [11, 3],
     "form": ""
   },
-  { "nationalPokedexNumber": 610, "name": "axew", "typeIds": [15], "form": "" },
+  {
+    "nationalPokedexNumber": 610,
+    "name": "axew",
+    "typeIds": [15],
+    "form": ""
+  },
   {
     "nationalPokedexNumber": 611,
     "name": "fraxure",
@@ -3890,7 +4003,7 @@
   },
   {
     "nationalPokedexNumber": 644,
-    "name": "zekrom ",
+    "name": "zekrom",
     "typeIds": [15, 12],
     "form": ""
   },
@@ -3922,7 +4035,7 @@
     "nationalPokedexNumber": 648,
     "name": "meloetta",
     "typeIds": [1, 5],
-    "form": "pirouette"
+    "form": ""
   },
   {
     "nationalPokedexNumber": 649,
@@ -4345,18 +4458,6 @@
     "form": ""
   },
   {
-    "nationalPokedexNumber": 718,
-    "name": "zygarde",
-    "typeIds": [15, 8],
-    "form": "10%"
-  },
-  {
-    "nationalPokedexNumber": 718,
-    "name": "zygarde",
-    "typeIds": [15, 8],
-    "form": "complete"
-  },
-  {
     "nationalPokedexNumber": 719,
     "name": "diancie",
     "typeIds": [9, 18],
@@ -4372,7 +4473,7 @@
     "nationalPokedexNumber": 720,
     "name": "hoopa",
     "typeIds": [13, 16],
-    "form": "unbound"
+    "form": ""
   },
   {
     "nationalPokedexNumber": 721,
@@ -4541,18 +4642,6 @@
     "name": "lycanroc",
     "typeIds": [9],
     "form": ""
-  },
-  {
-    "nationalPokedexNumber": 745,
-    "name": "lycanroc",
-    "typeIds": [9],
-    "form": "midnight"
-  },
-  {
-    "nationalPokedexNumber": 745,
-    "name": "lycanroc",
-    "typeIds": [9],
-    "form": "dusk"
   },
   {
     "nationalPokedexNumber": 746,
@@ -4936,6 +5025,504 @@
     "nationalPokedexNumber": 809,
     "name": "melmetal",
     "typeIds": [17],
+    "form": ""
+  },
+  {
+    "nationalPokedexNumber": 810,
+    "name": "grookey",
+    "typeIds": [2],
+    "form": ""
+  },
+  {
+    "nationalPokedexNumber": 811,
+    "name": "thwackey",
+    "typeIds": [2],
+    "form": ""
+  },
+  {
+    "nationalPokedexNumber": 812,
+    "name": "rillaboom",
+    "typeIds": [2],
+    "form": ""
+  },
+  {
+    "nationalPokedexNumber": 813,
+    "name": "scorbunny",
+    "typeIds": [3],
+    "form": ""
+  },
+  {
+    "nationalPokedexNumber": 814,
+    "name": "raboot",
+    "typeIds": [3],
+    "form": ""
+  },
+  {
+    "nationalPokedexNumber": 815,
+    "name": "cinderace",
+    "typeIds": [3],
+    "form": ""
+  },
+  {
+    "nationalPokedexNumber": 816,
+    "name": "sobble",
+    "typeIds": [4],
+    "form": ""
+  },
+  {
+    "nationalPokedexNumber": 817,
+    "name": "drizzile",
+    "typeIds": [4],
+    "form": ""
+  },
+  {
+    "nationalPokedexNumber": 818,
+    "name": "inteleon",
+    "typeIds": [4],
+    "form": ""
+  },
+  {
+    "nationalPokedexNumber": 819,
+    "name": "skwovet",
+    "typeIds": [1],
+    "form": ""
+  },
+  {
+    "nationalPokedexNumber": 820,
+    "name": "greedent",
+    "typeIds": [1],
+    "form": ""
+  },
+  {
+    "nationalPokedexNumber": 821,
+    "name": "rookidee",
+    "typeIds": [6],
+    "form": ""
+  },
+  {
+    "nationalPokedexNumber": 822,
+    "name": "corvisquire",
+    "typeIds": [6],
+    "form": ""
+  },
+  {
+    "nationalPokedexNumber": 823,
+    "name": "corviknight",
+    "typeIds": [6, 17],
+    "form": ""
+  },
+  {
+    "nationalPokedexNumber": 824,
+    "name": "blipbug",
+    "typeIds": [10],
+    "form": ""
+  },
+  {
+    "nationalPokedexNumber": 825,
+    "name": "dottler",
+    "typeIds": [10, 13],
+    "form": ""
+  },
+  {
+    "nationalPokedexNumber": 826,
+    "name": "orbeetle",
+    "typeIds": [10, 13],
+    "form": ""
+  },
+  {
+    "nationalPokedexNumber": 827,
+    "name": "nickit",
+    "typeIds": [16],
+    "form": ""
+  },
+  {
+    "nationalPokedexNumber": 828,
+    "name": "thievul",
+    "typeIds": [16],
+    "form": ""
+  },
+  {
+    "nationalPokedexNumber": 829,
+    "name": "gossifleur",
+    "typeIds": [2],
+    "form": ""
+  },
+  {
+    "nationalPokedexNumber": 830,
+    "name": "eldegoss",
+    "typeIds": [2],
+    "form": ""
+  },
+  {
+    "nationalPokedexNumber": 831,
+    "name": "wooloo",
+    "typeIds": [1],
+    "form": ""
+  },
+  {
+    "nationalPokedexNumber": 832,
+    "name": "dubwool",
+    "typeIds": [1],
+    "form": ""
+  },
+  {
+    "nationalPokedexNumber": 833,
+    "name": "chewtle",
+    "typeIds": [4],
+    "form": ""
+  },
+  {
+    "nationalPokedexNumber": 834,
+    "name": "drednaw",
+    "typeIds": [4, 9],
+    "form": ""
+  },
+  {
+    "nationalPokedexNumber": 835,
+    "name": "yamper",
+    "typeIds": [12],
+    "form": ""
+  },
+  {
+    "nationalPokedexNumber": 836,
+    "name": "boltund",
+    "typeIds": [12],
+    "form": ""
+  },
+  {
+    "nationalPokedexNumber": 837,
+    "name": "rolycoly",
+    "typeIds": [9],
+    "form": ""
+  },
+  {
+    "nationalPokedexNumber": 838,
+    "name": "carkol",
+    "typeIds": [9, 3],
+    "form": ""
+  },
+  {
+    "nationalPokedexNumber": 839,
+    "name": "coalossal",
+    "typeIds": [9, 3],
+    "form": ""
+  },
+  {
+    "nationalPokedexNumber": 840,
+    "name": "applin",
+    "typeIds": [2, 15],
+    "form": ""
+  },
+  {
+    "nationalPokedexNumber": 841,
+    "name": "flapple",
+    "typeIds": [2, 15],
+    "form": ""
+  },
+  {
+    "nationalPokedexNumber": 842,
+    "name": "appletun",
+    "typeIds": [2, 15],
+    "form": ""
+  },
+  {
+    "nationalPokedexNumber": 843,
+    "name": "silicobra",
+    "typeIds": [8],
+    "form": ""
+  },
+  {
+    "nationalPokedexNumber": 844,
+    "name": "sandaconda",
+    "typeIds": [8],
+    "form": ""
+  },
+  {
+    "nationalPokedexNumber": 845,
+    "name": "cramorant",
+    "typeIds": [6, 4],
+    "form": ""
+  },
+  {
+    "nationalPokedexNumber": 846,
+    "name": "arrokuda",
+    "typeIds": [4],
+    "form": ""
+  },
+  {
+    "nationalPokedexNumber": 847,
+    "name": "barraskewda",
+    "typeIds": [4],
+    "form": ""
+  },
+  {
+    "nationalPokedexNumber": 848,
+    "name": "toxel",
+    "typeIds": [12, 7],
+    "form": ""
+  },
+  {
+    "nationalPokedexNumber": 849,
+    "name": "toxtricity",
+    "typeIds": [12, 7],
+    "form": ""
+  },
+  {
+    "nationalPokedexNumber": 850,
+    "name": "sizzlipede",
+    "typeIds": [3, 10],
+    "form": ""
+  },
+  {
+    "nationalPokedexNumber": 851,
+    "name": "centiskorch",
+    "typeIds": [3, 10],
+    "form": ""
+  },
+  {
+    "nationalPokedexNumber": 852,
+    "name": "clobbopus",
+    "typeIds": [5],
+    "form": ""
+  },
+  {
+    "nationalPokedexNumber": 853,
+    "name": "grapploct",
+    "typeIds": [5],
+    "form": ""
+  },
+  {
+    "nationalPokedexNumber": 854,
+    "name": "sinistea",
+    "typeIds": [11],
+    "form": ""
+  },
+  {
+    "nationalPokedexNumber": 855,
+    "name": "polteageist",
+    "typeIds": [11],
+    "form": ""
+  },
+  {
+    "nationalPokedexNumber": 856,
+    "name": "hatenna",
+    "typeIds": [13],
+    "form": ""
+  },
+  {
+    "nationalPokedexNumber": 857,
+    "name": "hattrem",
+    "typeIds": [13],
+    "form": ""
+  },
+  {
+    "nationalPokedexNumber": 858,
+    "name": "hatterene",
+    "typeIds": [13, 18],
+    "form": ""
+  },
+  {
+    "nationalPokedexNumber": 859,
+    "name": "impidimp",
+    "typeIds": [16, 18],
+    "form": ""
+  },
+  {
+    "nationalPokedexNumber": 860,
+    "name": "morgrem",
+    "typeIds": [16, 18],
+    "form": ""
+  },
+  {
+    "nationalPokedexNumber": 861,
+    "name": "grimmsnarl",
+    "typeIds": [16, 18],
+    "form": ""
+  },
+  {
+    "nationalPokedexNumber": 862,
+    "name": "obstagoon",
+    "typeIds": [16, 1],
+    "form": ""
+  },
+  {
+    "nationalPokedexNumber": 863,
+    "name": "perrserker",
+    "typeIds": [17],
+    "form": ""
+  },
+  {
+    "nationalPokedexNumber": 864,
+    "name": "cursola",
+    "typeIds": [11],
+    "form": ""
+  },
+  {
+    "nationalPokedexNumber": 865,
+    "name": "sirfetch'd",
+    "typeIds": [5],
+    "form": ""
+  },
+  {
+    "nationalPokedexNumber": 866,
+    "name": "mr. rime",
+    "typeIds": [14, 13],
+    "form": ""
+  },
+  {
+    "nationalPokedexNumber": 867,
+    "name": "runerigus",
+    "typeIds": [8, 11],
+    "form": ""
+  },
+  {
+    "nationalPokedexNumber": 868,
+    "name": "milcery",
+    "typeIds": [18],
+    "form": ""
+  },
+  {
+    "nationalPokedexNumber": 869,
+    "name": "alcremie",
+    "typeIds": [18],
+    "form": ""
+  },
+  {
+    "nationalPokedexNumber": 870,
+    "name": "falinks",
+    "typeIds": [5],
+    "form": ""
+  },
+  {
+    "nationalPokedexNumber": 871,
+    "name": "pincurchin",
+    "typeIds": [12],
+    "form": ""
+  },
+  {
+    "nationalPokedexNumber": 872,
+    "name": "snom",
+    "typeIds": [14, 10],
+    "form": ""
+  },
+  {
+    "nationalPokedexNumber": 873,
+    "name": "frosmoth",
+    "typeIds": [14, 10],
+    "form": ""
+  },
+  {
+    "nationalPokedexNumber": 874,
+    "name": "stonjourner",
+    "typeIds": [9],
+    "form": ""
+  },
+  {
+    "nationalPokedexNumber": 875,
+    "name": "eiscue",
+    "typeIds": [14],
+    "form": ""
+  },
+  {
+    "nationalPokedexNumber": 876,
+    "name": "indeedee",
+    "typeIds": [13, 1],
+    "form": ""
+  },
+  {
+    "nationalPokedexNumber": 877,
+    "name": "morpeko",
+    "typeIds": [12, 16],
+    "form": ""
+  },
+  {
+    "nationalPokedexNumber": 878,
+    "name": "cufant",
+    "typeIds": [17],
+    "form": ""
+  },
+  {
+    "nationalPokedexNumber": 879,
+    "name": "copperajah",
+    "typeIds": [17],
+    "form": ""
+  },
+  {
+    "nationalPokedexNumber": 880,
+    "name": "dracozolt",
+    "typeIds": [12, 15],
+    "form": ""
+  },
+  {
+    "nationalPokedexNumber": 881,
+    "name": "arctozolt",
+    "typeIds": [12, 14],
+    "form": ""
+  },
+  {
+    "nationalPokedexNumber": 882,
+    "name": "dracovish",
+    "typeIds": [4, 15],
+    "form": ""
+  },
+  {
+    "nationalPokedexNumber": 883,
+    "name": "arctovish",
+    "typeIds": [4, 14],
+    "form": ""
+  },
+  {
+    "nationalPokedexNumber": 884,
+    "name": "duraludon",
+    "typeIds": [17, 15],
+    "form": ""
+  },
+  {
+    "nationalPokedexNumber": 885,
+    "name": "dreepy",
+    "typeIds": [15, 11],
+    "form": ""
+  },
+  {
+    "nationalPokedexNumber": 886,
+    "name": "drakloak",
+    "typeIds": [15, 11],
+    "form": ""
+  },
+  {
+    "nationalPokedexNumber": 887,
+    "name": "dragapult",
+    "typeIds": [15, 11],
+    "form": ""
+  },
+  {
+    "nationalPokedexNumber": 888,
+    "name": "zacian",
+    "typeIds": [18],
+    "form": ""
+  },
+  {
+    "nationalPokedexNumber": 888,
+    "name": "zacian",
+    "typeIds": [18, 17],
+    "form": ""
+  },
+  {
+    "nationalPokedexNumber": 889,
+    "name": "zamazenta",
+    "typeIds": [5],
+    "form": ""
+  },
+  {
+    "nationalPokedexNumber": 889,
+    "name": "zamazenta",
+    "typeIds": [5, 17],
+    "form": ""
+  },
+  {
+    "nationalPokedexNumber": 890,
+    "name": "eternatus",
+    "typeIds": [7, 15],
     "form": ""
   }
 ]
