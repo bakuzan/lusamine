@@ -154,6 +154,7 @@ function mapElementsToMegaJson(tdData, tdTypes) {
 }
 
 module.exports = {
+  processTdNPN,
   mapElementsToPokemonJson,
   mapElementsToVariantPokemonJson,
   mapElementsToMegaJson,
