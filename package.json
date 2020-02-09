@@ -6,7 +6,6 @@
   "dependencies": {
     "ayaka": "file:../ayaka/build",
     "classnames": "^2.2.6",
-    "esm": "^3.2.25",
     "husky": "^3.1.0",
     "lint-staged": "^9.5.0",
     "meiko": "file:../meiko/build",
@@ -43,16 +42,24 @@
     "eject": "react-scripts eject",
     "deploy": "npm run build && gh-pages -d build",
     "scrape:data": "node ./tools/index.js",
-    "scrape:image": "node -r esm ./tools/images/index.js",
+    "scrape:image": "ts-node ./tools/images/index.ts",
     "scrape:region": "node ./tools/regionalPokedex/index.js"
   },
   "devDependencies": {
+    "@types/cheerio": "^0.22.16",
+    "@types/minimist": "^1.2.0",
     "chalk": "^2.4.2",
     "cheerio": "^1.0.0-rc.2",
     "gh-pages": "^2.0.1",
+    "medea": "file:../medea",
     "minimist": "^1.2.0",
     "request": "^2.88.0",
-    "request-promise-native": "^1.0.8"
+    "request-promise-native": "^1.0.8",
+    "ts-node": "^8.6.2",
+    "tslint": "^6.0.0",
+    "tslint-config-prettier": "^1.18.0",
+    "tslint-plugin-prettier": "^2.1.0",
+    "typescript": "^3.7.5"
   },
   "browserslist": [
     "> 1%",

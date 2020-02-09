@@ -1,6 +1,6 @@
-const { Types, Evolutions } = require('./enums');
+import { Types, Evolutions } from './enums';
 
-const extractName = (td) =>
+const extractName = (td: Cheerio) =>
   td
     .children()
     .first()
@@ -9,9 +9,9 @@ const extractName = (td) =>
 
 const fixNPNStringToInt = (str = '') => Number(str.replace(/\D/g, ''));
 
-const processTdNPN = (td) => fixNPNStringToInt(td.text() || '');
+const processTdNPN = (td: Cheerio) => fixNPNStringToInt(td.text() || '');
 
-function getNPNFromImg(td) {
+function getNPNFromImg(td: Cheerio) {
   const el = td
     .children()
     .first()
@@ -27,8 +27,8 @@ function getNPNFromImg(td) {
   return Number(strNum);
 }
 
-const processTdTypes = (tds) =>
-  tds.reduce((types, td) => {
+const processTdTypes = (tds: Cheerio[]) =>
+  tds.reduce<number[]>((types, td) => {
     if (!td || !td.children()) return types;
     const key = (
       td
@@ -38,11 +38,15 @@ const processTdTypes = (tds) =>
     )
       .toLowerCase()
       .trim();
-    if (!key) return types;
+
+    if (!key) {
+      return types;
+    }
+
     return [...types, Types[key]];
   }, []);
 
-function hasFactor(has) {
+function hasFactor(has: (s: string) => boolean) {
   return (
     (has('attack') && has('defense')) ||
     has('with remoraid') ||
@@ -51,7 +55,7 @@ function hasFactor(has) {
   );
 }
 
-function hasUnique(has) {
+function hasUnique(has: (s: string) => boolean) {
   return (
     has('level up with two hearts') ||
     has('maximum beautytrade') ||
@@ -62,9 +66,9 @@ function hasUnique(has) {
   );
 }
 
-function processEvolutionMechanism(howTxt) {
+function processEvolutionMechanism(howTxt: string) {
   const txt = howTxt.toLowerCase();
-  function has(t) {
+  function has(t: string) {
     return txt.includes(t);
   }
 
@@ -105,7 +109,11 @@ function processEvolutionMechanism(howTxt) {
   }
 }
 
-function mapElementsToPokemonJson(tdNPN, tdName, tdTypes) {
+function mapElementsToPokemonJson(
+  tdNPN: Cheerio,
+  tdName: Cheerio,
+  tdTypes: Cheerio[]
+) {
   /* TODO
    * > Find a way to set the form...
    * > There doesn't seem to be a realiable one...
@@ -118,7 +126,11 @@ function mapElementsToPokemonJson(tdNPN, tdName, tdTypes) {
   };
 }
 
-function mapElementsToVariantPokemonJson(tdNPN, regionId, tdTypes) {
+function mapElementsToVariantPokemonJson(
+  tdNPN: Cheerio,
+  regionId: number,
+  tdTypes: Cheerio[]
+) {
   return {
     nationalPokedexNumber: processTdNPN(tdNPN),
     regionId,
@@ -126,7 +138,7 @@ function mapElementsToVariantPokemonJson(tdNPN, regionId, tdTypes) {
   };
 }
 
-function mapElementsToEvolutionJson(lastItem, rawData) {
+function mapElementsToEvolutionJson(lastItem: any, rawData: any[]) {
   return rawData.map((r) => {
     const fromNPN = getNPNFromImg(r.from);
     const toNPN = getNPNFromImg(r.to);
@@ -141,8 +153,8 @@ function mapElementsToEvolutionJson(lastItem, rawData) {
   });
 }
 
-function mapElementsToMegaJson(tdData, tdTypes) {
-  const aHref = tdData.children('a').attr('href');
+function mapElementsToMegaJson(tdData: Cheerio, tdTypes: Cheerio[]) {
+  const aHref = tdData.children('a').attr('href') ?? '';
   const nationalPokedexNumber = fixNPNStringToInt(aHref);
   const strMatch = aHref.match(/_\w./g);
   const suffix = strMatch ? strMatch[0].split('')[1].toLowerCase() : '';
@@ -153,7 +165,7 @@ function mapElementsToMegaJson(tdData, tdTypes) {
   };
 }
 
-module.exports = {
+export default {
   processTdNPN,
   mapElementsToPokemonJson,
   mapElementsToVariantPokemonJson,

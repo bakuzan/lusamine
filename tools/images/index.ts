@@ -2,15 +2,14 @@ import chalk from 'chalk';
 import fs from 'fs';
 import path from 'path';
 import { promisify } from 'util';
-import minimist from 'minimist';
 
+import { createClient } from 'medea';
 import fetchPage from '../readCachedFile';
 import Enums from '../enums';
 import { checkImgForVariant } from '../processors';
 import Mappers from '../mappers';
 import { constructPokedex } from '../../src/data';
 
-const argv = minimist(process.argv.slice(2));
 const writeAsync = promisify(fs.writeFile);
 
 const POKEMON = 'pokemon';
@@ -19,37 +18,60 @@ const POKEMON_URL =
 
 const scrapeTargets = ['sprites', 'art'];
 
+type MissingEntry = {
+  npn: number;
+  name: string;
+  isVariant: boolean;
+  variantRegion: number;
+  sprite: string;
+  art: string;
+  filename: string;
+  reasons?: string[];
+};
+
+export default function filterFalsey<TValue>(
+  value: TValue | null | undefined
+): value is TValue {
+  return value !== null && value !== undefined;
+}
+
+async function validate(fn: () => Promise<boolean>, message: () => void) {
+  const passed = await fn();
+  if (!passed) {
+    message();
+    process.exit(0);
+  }
+}
+
 async function run() {
-  console.log(chalk.green('Image Scraper!'));
+  const windowColumns = process.stdout.columns || 80;
 
-  if (argv.help) {
-    console.log(`
-         /* Example usage
-          *
-          * npm run scrape:image -- --key sprites
-          *
-          * Args
-          * --key STRING one of: ${scrapeTargets.join(',')}
-          *
-          */
-      `);
+  const cli = createClient('Image scraper!', { windowColumns })
+    .addOption({
+      option: 'key',
+      shortcut: 'k',
+      description: `Image scrape target, either "sprites" or "art"`,
+      validate: (_, value: string) => scrapeTargets.includes(value)
+    })
+    .parse(process.argv)
+    .welcome();
+
+  if (!cli.any() || !cli.has('key')) {
+    // TODO
+    // Medea make the ability to enfore required props
+    cli.helpText();
     process.exit(0);
   }
 
-  const invalidKey = !scrapeTargets.includes(argv.key);
+  const imageFolder = cli.get('key');
 
-  if (!argv.key || invalidKey) {
-    console.log(chalk.bgWhite.red(`Image Data key is required.`));
-    console.log(chalk.yellow(`Example: npm run scrape:image -- --key sprites`));
-
-    if (invalidKey) {
-      console.log(chalk.bgWhite.red(`Invalid key: "${argv.key}"`));
-    }
-
-    console.log(chalk.yellow(`Valid keys are below.`));
-    scrapeTargets.forEach((k) => console.log(chalk.yellow(k)));
-    process.exit(0);
-  }
+  await validate(
+    async () => cli.validate('key'),
+    () =>
+      console.log(`
+        Invalid args supplied to image export (${imageFolder}).
+        Expected "sprites" or "art"`)
+  );
 
   const $ = await fetchPage(POKEMON, POKEMON_URL);
 
@@ -59,7 +81,7 @@ async function run() {
   );
 
   const items = tables
-    .reduce(
+    .reduce<(MissingEntry | null)[]>(
       (result, data) => [
         ...result,
         ...Array.from(data.children).map((tr) => {
@@ -70,12 +92,14 @@ async function run() {
           }
 
           const variantRegion =
-            !children
+            (!children
               .first()
               .text()
-              .trim() && checkImgForVariant(children.eq(2));
+              .trim() &&
+              checkImgForVariant(children.eq(2))) ||
+            0;
 
-          const isVariant = variantRegion !== false;
+          const isVariant = variantRegion !== 0;
           const tdNPN = children.eq(1);
           const td = children.eq(2);
           const img = td
@@ -85,8 +109,8 @@ async function run() {
             .first();
 
           const npn = Mappers.processTdNPN(tdNPN);
-          const name = img.attr('alt');
-          const src = img.attr('src');
+          const name = img.attr('alt') ?? '';
+          const src = img.attr('src') ?? '';
 
           if (!npn) {
             return null;
@@ -95,6 +119,7 @@ async function run() {
           const variantKey = Object.keys(Enums.Regions).find(
             (key) => Enums.Regions[key] === variantRegion
           );
+
           const artUrlPart = `${npn}${name}${
             isVariant ? `-${variantKey}` : ''
           }`;
@@ -112,25 +137,27 @@ async function run() {
       ],
       []
     )
-    .filter((x) => !!x);
+    .filter(filterFalsey);
 
   const { pokedex } = constructPokedex();
-  const currentItems = Array.from(pokedex.values()).filter(
+  const currentItems = Array.from<{ id: string }>(pokedex.values()).filter(
     (x) => !x.id.startsWith('m')
   );
 
-  const missing = [];
+  const missing: MissingEntry[] = [];
 
   items.forEach((item) => {
-    const reasons = [];
-    const imagePath = path.join(__dirname, './', argv.key, item.filename);
+    const reasons: string[] = [];
+    const imagePath = path.join(__dirname, './', imageFolder, item.filename);
 
     if (!fs.existsSync(imagePath)) {
       reasons.push('Image does not exist');
     }
 
     const itemId = item.isVariant
-      ? `v_${item.npn}${item.variantRegion > 7`_r${item.variantRegion}`}`
+      ? `v_${item.npn}${
+          item.variantRegion > 7 ? `_r${item.variantRegion}` : ''
+        }`
       : item.npn;
 
     if (!currentItems.find((x) => x.id === itemId)) {
@@ -142,7 +169,7 @@ async function run() {
     }
   });
 
-  const filename = path.join(__dirname, `./missing_${argv.key}.json`);
+  const filename = path.join(__dirname, `./missing_${imageFolder}.json`);
   await writeAsync(filename, JSON.stringify(missing, null, 2));
 
   /* TODO
@@ -153,7 +180,7 @@ async function run() {
    */
 
   console.log(
-    chalk.orange(
+    chalk.yellowBright(
       'The following counts do not include mega evolutions (48 as of Gen 8) or different base pokemon forms.'
     )
   );
