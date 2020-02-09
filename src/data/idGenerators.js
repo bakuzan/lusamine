@@ -15,7 +15,14 @@ const constructId = (c, fn = defaultIdSuffix) => (dataMap, obj) => {
 };
 
 export const generatePokemonId = constructId(Strings.idPrefix.regular);
-export const generateVariantPokemonId = constructId(Strings.idPrefix.variant);
+export const generateVariantPokemonId = constructId(
+  Strings.idPrefix.variant,
+  // Only suffix variants after gen 7 to prevent saved teams breaking
+  (o) =>
+    o.regionId > 7
+      ? `${o.nationalPokedexNumber}_r${o.regionId}`
+      : defaultIdSuffix(o)
+);
 export const generateMegaPokemonId = constructId(
   Strings.idPrefix.mega,
   (o) => `${o.nationalPokedexNumber}${o.suffix}`

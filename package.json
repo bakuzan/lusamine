@@ -6,6 +6,7 @@
   "dependencies": {
     "ayaka": "file:../ayaka/build",
     "classnames": "^2.2.6",
+    "esm": "^3.2.25",
     "husky": "^3.1.0",
     "lint-staged": "^9.5.0",
     "meiko": "file:../meiko/build",
@@ -42,7 +43,7 @@
     "eject": "react-scripts eject",
     "deploy": "npm run build && gh-pages -d build",
     "scrape:data": "node ./tools/index.js",
-    "scrape:image": "node ./tools/images/index.js",
+    "scrape:image": "node -r esm ./tools/images/index.js",
     "scrape:region": "node ./tools/regionalPokedex/index.js"
   },
   "devDependencies": {

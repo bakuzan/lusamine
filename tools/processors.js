@@ -193,6 +193,7 @@ async function megaProcessor($) {
 }
 
 module.exports = {
+  checkImgForVariant,
   pokedexProcessor,
   megaProcessor,
   evolutionProcessor
