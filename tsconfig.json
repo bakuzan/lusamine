@@ -1,0 +1,24 @@
+{
+  "compilerOptions": {
+    "allowSyntheticDefaultImports": true,
+    "alwaysStrict": true,
+    "baseUrl": ".",
+    "module": "commonjs",
+    "rootDir": "./tools",
+    "strict": true,
+    "forceConsistentCasingInFileNames": true,
+    "declaration": true,
+    "esModuleInterop": true,
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "sourceMap": true,
+    "moduleResolution": "node",
+    "experimentalDecorators": true,
+    "paths": {
+      "@/*": ["tools/*"]
+    },
+    "typeRoots": ["./tools/types", "node_modules/@types"]
+  },
+  "include": ["./tools/**/*", "node_modules/@types/node/globals.d.ts"],
+  "exclude": ["./src", "./build"]
+}

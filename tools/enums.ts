@@ -1,4 +1,4 @@
-const Types = Object.freeze({
+export const Types = Object.freeze({
   normal: 1,
   grass: 2,
   fire: 3,
@@ -19,12 +19,12 @@ const Types = Object.freeze({
   fairy: 18
 });
 
-const Regions = Object.freeze({
+export const Regions = Object.freeze({
   alola: 7,
   galar: 8
 });
 
-const Evolutions = Object.freeze({
+export const Evolutions = Object.freeze({
   leveling: 1,
   levelingHighFriendship: 2,
   levelingWithMove: 3,
@@ -42,10 +42,10 @@ const Evolutions = Object.freeze({
   tradeForPokemon: 15
 });
 
-const TABLE_COUNT_OFFSET = 1;
-const GENERATION_COUNT = 8;
+export const TABLE_COUNT_OFFSET = 1;
+export const GENERATION_COUNT = 8;
 
-module.exports = {
+export default {
   Types,
   Evolutions,
   Regions,

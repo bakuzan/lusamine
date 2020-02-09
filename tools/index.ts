@@ -1,20 +1,24 @@
-const chalk = require('chalk');
-const fs = require('fs');
-const { promisify } = require('util');
-const argv = require('minimist')(process.argv.slice(2));
+import chalk from 'chalk';
+import fs from 'fs';
+import { promisify } from 'util';
+import minimist from 'minimist';
 
-const Processors = require('./processors');
-const fetchPage = require('./readCachedFile');
+import Processors from './processors';
+import fetchPage from './readCachedFile';
 
+const argv = minimist(process.argv.slice(2));
 const writeAsync = promisify(fs.writeFile);
 
-const keys = (m) => Array.from(m.keys());
+const keys = (m: Map<any, any>) => Array.from(m.keys());
 
 const POKEMON = 'pokemon';
 const EVOLVE = 'evolve';
 const MEGA = 'mega';
 
-async function scrapePokemonData(htmlPage, processor) {
+async function scrapePokemonData(
+  htmlPage: CheerioStatic,
+  processor: (c: CheerioStatic) => Promise<{ fileName: string; json: any[] }[]>
+) {
   const data = await processor(htmlPage);
 
   for (let output of data) {
@@ -89,6 +93,11 @@ async function run() {
   }
 
   const info = scrapeTargets.get(argv.key);
+
+  if (!info) {
+    throw new Error('Scrape target unknown.');
+  }
+
   const $ = await fetchPage(argv.key, info.url);
   const result = await scrapePokemonData($, info.processor);
 
@@ -96,7 +105,7 @@ async function run() {
     console.log(chalk.blue('Finished successfully!'));
     process.exit(0);
   } else {
-    console.log(chalk.orange('Finished unsuccessfully'));
+    console.log(chalk.yellowBright('Finished unsuccessfully'));
     process.exit(0);
   }
 }
