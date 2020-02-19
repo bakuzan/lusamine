@@ -1,14 +1,18 @@
 import chalk from 'chalk';
 import fs from 'fs';
 import path from 'path';
+import { ask } from 'stdio';
 import { promisify } from 'util';
 
+import { capitalise } from 'ayaka/capitalise';
 import { createClient } from 'medea';
-import fetchPage from '../readCachedFile';
-import Enums from '../enums';
-import { checkImgForVariant } from '../processors';
-import Mappers from '../mappers';
-import { constructPokedex } from '../../src/data';
+import { constructPokedex } from '@src/data';
+
+import fetchPage from '@/readCachedFile';
+import Enums from '@/enums';
+import Mappers from '@/mappers';
+import { checkImgForVariant } from '@/processors';
+import { prop } from '@/utils';
 
 const writeAsync = promisify(fs.writeFile);
 
@@ -17,6 +21,13 @@ const POKEMON_URL =
   'https://bulbapedia.bulbagarden.net/wiki/List_of_Pokémon_by_National_Pokédex_number';
 
 const scrapeTargets = ['sprites', 'art'];
+const NO_IMAGE = 'Image does not exist';
+const NO_ENTRY = "Current items doesn't contain the entry";
+
+const noes = ['no', 'n'];
+const yeses = ['yes', 'y'];
+
+type RegionKeys = keyof typeof Enums.Regions;
 
 type MissingEntry = {
   npn: number;
@@ -109,6 +120,7 @@ async function run() {
             .first();
 
           const npn = Mappers.processTdNPN(tdNPN);
+          const paddedNpn = `${npn}`.padStart(3, '0');
           const name = img.attr('alt') ?? '';
           const src = img.attr('src') ?? '';
 
@@ -116,13 +128,13 @@ async function run() {
             return null;
           }
 
-          const variantKey = Object.keys(Enums.Regions).find(
-            (key) => Enums.Regions[key] === variantRegion
+          const regionKeys = Object.keys(Enums.Regions) as RegionKeys[];
+          const variantKey = regionKeys.find(
+            (key) => prop(Enums.Regions, key) === variantRegion
           );
 
-          const artUrlPart = `${npn}${name}${
-            isVariant ? `-${variantKey}` : ''
-          }`;
+          const artVariantSuff = variantKey ? `-${capitalise(variantKey)}` : '';
+          const artUrlPart = `${paddedNpn}${name}${artVariantSuff}`;
 
           return {
             npn,
@@ -131,7 +143,8 @@ async function run() {
             variantRegion,
             sprite: `https:${src}`,
             art: `https://bulbapedia.bulbagarden.net/wiki/File:${artUrlPart}.png`,
-            filename: `${npn}${isVariant ? `_r${variantRegion}` : ''}`
+            pokedex: `https://bulbapedia.bulbagarden.net/wiki/${name}_(Pokémon)`,
+            filename: `${paddedNpn}${isVariant ? `_r${variantRegion}` : ''}.png`
           };
         })
       ],
@@ -151,17 +164,14 @@ async function run() {
     const imagePath = path.join(__dirname, './', imageFolder, item.filename);
 
     if (!fs.existsSync(imagePath)) {
-      reasons.push('Image does not exist');
+      reasons.push(NO_IMAGE);
     }
 
-    const itemId = item.isVariant
-      ? `v_${item.npn}${
-          item.variantRegion > 7 ? `_r${item.variantRegion}` : ''
-        }`
-      : item.npn;
+    const vSuff = item.variantRegion > 7 ? `_r${item.variantRegion}` : '';
+    const itemId = item.isVariant ? `v_${item.npn}${vSuff}` : `p_${item.npn}`;
 
     if (!currentItems.find((x) => x.id === itemId)) {
-      reasons.push("Current items doesn't contain the entry");
+      reasons.push(NO_ENTRY);
     }
 
     if (reasons.length) {
@@ -172,23 +182,28 @@ async function run() {
   const filename = path.join(__dirname, `./missing_${imageFolder}.json`);
   await writeAsync(filename, JSON.stringify(missing, null, 2));
 
-  /* TODO
-   *
-   * Ask for user input (Y/N) which will:
-   * (N) exit
-   * (Y) download missing images into ./images/<name>
-   */
+  // TODO
+  // Refactor stdio code in medea
+  const answer = await ask('Would you like to download missing images?', {
+    options: [...yeses, ...noes],
+    maxRetries: 2
+  });
 
-  console.log(
-    chalk.yellowBright(
-      'The following counts do not include mega evolutions (48 as of Gen 8) or different base pokemon forms.'
-    )
-  );
-  console.log(
-    chalk.blue(
-      `Of the ${items.length} Items processed, ${missing.length} were deemed missing.`
-    )
-  );
+  if (yeses.includes(answer)) {
+    // TODO
+    // Download missing
+  } else {
+    console.log(
+      chalk.yellowBright(
+        'The following counts do not include mega evolutions (48 as of Gen 8) or different base pokemon forms.'
+      )
+    );
+    console.log(
+      chalk.blue(
+        `Of the ${items.length} Items processed, ${missing.length} were deemed missing.`
+      )
+    );
+  }
 
   console.log(chalk.blue('Finished successfully!'));
 

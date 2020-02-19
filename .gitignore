@@ -31,3 +31,4 @@ yarn-error.log*
 # generated spritesheet staging area
 /tools/images/art.png
 /tools/images/sprites.png
+/tools/images/*.json

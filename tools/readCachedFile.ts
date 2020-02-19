@@ -2,7 +2,7 @@ import chalk from 'chalk';
 import fs from 'fs';
 import path from 'path';
 import { promisify } from 'util';
-import request from 'request-promise-native';
+import got from 'got';
 import cheerio from 'cheerio';
 
 const writeAsync = promisify(fs.writeFile);
@@ -31,7 +31,8 @@ export default async function fetchPage(key: string, url: string) {
   }
 
   try {
-    const html = await request(url);
+    const response = await got(url);
+    const html = response.body;
     await writeAsync(filename, html);
 
     return cheerio.load(html);
