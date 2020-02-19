@@ -23,7 +23,7 @@
     "react-window": "^1.8.5"
   },
   "lint-staged": {
-    "{,src,tools}/**/*.{js,jsx,json,scss}": [
+    "{,src,tools}/**/*.{ts,js,jsx,json,scss}": [
       "prettier --single-quote --write",
       "git add"
     ]
@@ -42,7 +42,7 @@
     "eject": "react-scripts eject",
     "deploy": "npm run build && gh-pages -d build",
     "scrape:data": "node ./tools/index.js",
-    "scrape:image": "ts-node ./tools/images/index.ts",
+    "scrape:image": "ts-node -r tsconfig-paths/register ./tools/images/index.ts",
     "scrape:region": "node ./tools/regionalPokedex/index.js"
   },
   "devDependencies": {
@@ -51,11 +51,12 @@
     "chalk": "^2.4.2",
     "cheerio": "^1.0.0-rc.2",
     "gh-pages": "^2.0.1",
+    "got": "^10.5.7",
     "medea": "file:../medea",
     "minimist": "^1.2.0",
-    "request": "^2.88.0",
-    "request-promise-native": "^1.0.8",
+    "stdio": "^2.0.1",
     "ts-node": "^8.6.2",
+    "tsconfig-paths": "^3.9.0",
     "tslint": "^6.0.0",
     "tslint-config-prettier": "^1.18.0",
     "tslint-plugin-prettier": "^2.1.0",

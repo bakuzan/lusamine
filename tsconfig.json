@@ -3,21 +3,25 @@
     "allowSyntheticDefaultImports": true,
     "alwaysStrict": true,
     "baseUrl": ".",
+    "target": "ES2020",
     "module": "commonjs",
-    "rootDir": "./tools",
     "strict": true,
     "forceConsistentCasingInFileNames": true,
     "declaration": true,
     "esModuleInterop": true,
     "resolveJsonModule": true,
     "isolatedModules": true,
+    "noEmit": true,
     "sourceMap": true,
+    "allowJs": true,
     "moduleResolution": "node",
     "experimentalDecorators": true,
     "paths": {
-      "@/*": ["tools/*"]
-    },
-    "typeRoots": ["./tools/types", "node_modules/@types"]
+      "@/*": ["tools/*"],
+      "@src/*": ["src/*"],
+      "medea": ["node_modules/medea/dist"],
+      "*": ["src/*"]
+    }
   },
   "include": ["./tools/**/*", "node_modules/@types/node/globals.d.ts"],
   "exclude": ["./src", "./build"]

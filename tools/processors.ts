@@ -1,13 +1,17 @@
-const path = require('path');
-const Mappers = require('./mappers');
-const Enums = require('./enums');
+import path from 'path';
+import Mappers from './mappers';
+import Enums from './enums';
+import { PokemonInstance, isPokemon, isVariant } from './types/Pokemon';
+import { Evolution } from './types/Evolution';
+import { MegaPokemon } from './types/Mega';
 
-const buildOuputUrl = (fileName) => path.join('./tools/output', fileName);
+const buildOuputUrl = (fileName: string) =>
+  path.join('./tools/output', fileName);
 
 const MATCH_ALOLA_FORM = /\d{1,}A.*MS.png$/;
 const MATCH_GALAR_FORM = /\d{1,}G.*MS.png$/;
 
-function checkImgForVariant(td) {
+export function checkImgForVariant(td: Cheerio) {
   const src = td
     .children()
     .first()
@@ -24,7 +28,7 @@ function checkImgForVariant(td) {
   return false;
 }
 
-async function pokedexProcessor($) {
+async function pokedexProcessor($: CheerioAPI) {
   const jsonEntries = Array.from($('table > tbody'))
     .slice(
       Enums.TABLE_COUNT_OFFSET,
@@ -44,18 +48,18 @@ async function pokedexProcessor($) {
             .text()
             .trim() && checkImgForVariant(children.eq(2));
 
-        const isVariant = variantRegion !== false;
         const tdNPN = children.eq(1);
         const tdName = children.eq(3);
         const tdTypes = [children.eq(4), children.eq(5)];
 
-        const item = isVariant
-          ? Mappers.mapElementsToVariantPokemonJson(
-              tdNPN,
-              variantRegion,
-              tdTypes
-            )
-          : Mappers.mapElementsToPokemonJson(tdNPN, tdName, tdTypes);
+        const item =
+          variantRegion !== false
+            ? Mappers.mapElementsToVariantPokemonJson(
+                tdNPN,
+                variantRegion,
+                tdTypes
+              )
+            : Mappers.mapElementsToPokemonJson(tdNPN, tdName, tdTypes);
 
         if (!item.nationalPokedexNumber) {
           return acc;
@@ -63,10 +67,10 @@ async function pokedexProcessor($) {
 
         return [...acc, item];
       }, result);
-    }, []);
+    }, [] as PokemonInstance[]);
 
-  const pokemon = jsonEntries.filter((x) => x.name);
-  const variants = jsonEntries.filter((x) => !x.name);
+  const pokemon = jsonEntries.filter(isPokemon);
+  const variants = jsonEntries.filter(isVariant);
 
   return [
     {
@@ -80,7 +84,7 @@ async function pokedexProcessor($) {
   ];
 }
 
-async function evolutionProcessor($) {
+async function evolutionProcessor($: CheerioAPI) {
   const evolutions = Array.from($('table.roundy > tbody'))
     .slice(0, Enums.GENERATION_COUNT)
     .reduce(function(result, data) {
@@ -145,7 +149,7 @@ async function evolutionProcessor($) {
 
         return [...acc, ...items];
       }, result);
-    }, []);
+    }, [] as Evolution[]);
 
   return [
     {
@@ -155,14 +159,17 @@ async function evolutionProcessor($) {
   ];
 }
 
-async function megaProcessor($) {
+async function megaProcessor($: CheerioAPI) {
   const megas = Array.from($('table.roundy > tbody'))
     .slice(0, 2)
     .reduce(function(result, data) {
       return Array.from(data.children).reduce((acc, tr) => {
         const children = $(tr).children();
 
-        if (!children || children.length === 0) return acc;
+        if (!children || children.length === 0) {
+          return acc;
+        }
+
         const isSecondMega = children.length === 4;
         const tdData = isSecondMega ? children.first() : children.eq(4);
         const typeIndex = isSecondMega ? 1 : 5;
@@ -179,10 +186,13 @@ async function megaProcessor($) {
 
         const item = Mappers.mapElementsToMegaJson(tdData, tdTypes);
 
-        if (!item.nationalPokedexNumber) return acc;
+        if (!item.nationalPokedexNumber) {
+          return acc;
+        }
+
         return [...acc, item];
       }, result);
-    }, []);
+    }, [] as MegaPokemon[]);
 
   return [
     {
@@ -192,7 +202,7 @@ async function megaProcessor($) {
   ];
 }
 
-module.exports = {
+export default {
   checkImgForVariant,
   pokedexProcessor,
   megaProcessor,

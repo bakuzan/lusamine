@@ -1,4 +1,5 @@
 import { Types, Evolutions } from './enums';
+import { prop } from './utils';
 
 const extractName = (td: Cheerio) =>
   td
@@ -29,7 +30,10 @@ function getNPNFromImg(td: Cheerio) {
 
 const processTdTypes = (tds: Cheerio[]) =>
   tds.reduce<number[]>((types, td) => {
-    if (!td || !td.children()) return types;
+    if (!td || !td.children()) {
+      return types;
+    }
+
     const key = (
       td
         .children()
@@ -43,7 +47,7 @@ const processTdTypes = (tds: Cheerio[]) =>
       return types;
     }
 
-    return [...types, Types[key]];
+    return [...types, prop(Types, key as any)];
   }, []);
 
 function hasFactor(has: (s: string) => boolean) {
@@ -142,7 +146,7 @@ function mapElementsToEvolutionJson(lastItem: any, rawData: any[]) {
   return rawData.map((r) => {
     const fromNPN = getNPNFromImg(r.from);
     const toNPN = getNPNFromImg(r.to);
-    const how = r.how.text();
+    const how: string = r.how.text();
 
     return {
       nationalPokedexNumber: fromNPN || lastItem.nationalPokedexNumber,
