@@ -38,7 +38,7 @@ export function constructPokedex() {
   const pokedex = combineAndSortMaps(
     ([id, mon], order) => {
       const sOffset = -40;
-      const aOffset = -97;
+      const aOffset = -96;
       const sy = -2 + sOffset * Math.floor(order / SPRITES_PER_ROW);
       const sx = -1 + sOffset * (order % SPRITES_PER_ROW);
       const ay = 0 + aOffset * Math.floor((order + 1) / ART_PER_ROW);

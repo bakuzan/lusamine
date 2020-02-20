@@ -63,7 +63,7 @@ export function mapVariantsPokemonData(
     id,
     nationalPokedexNumber: data.nationalPokedexNumber,
     name: `${regionName} ${basePokemon.name}`,
-    form: '',
+    form: data.form ?? '',
     types: mapTypesToPokemon(data.typeIds, types),
     evolutions: mapEvolutionsToPokemon(evolutions),
     generation: getGeneration(data.nationalPokedexNumber)

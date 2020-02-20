@@ -1,0 +1,28 @@
+{
+  "compilerOptions": {
+    "allowSyntheticDefaultImports": true,
+    "alwaysStrict": true,
+    "baseUrl": ".",
+    "target": "ES2020",
+    "module": "commonjs",
+    "strict": true,
+    "forceConsistentCasingInFileNames": true,
+    "declaration": true,
+    "esModuleInterop": true,
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "noEmit": true,
+    "sourceMap": true,
+    "allowJs": true,
+    "moduleResolution": "node",
+    "experimentalDecorators": true,
+    "paths": {
+      "@/*": ["./*"],
+      "@src/*": ["../src/*"],
+      "medea": ["../node_modules/medea/dist"],
+      "*": ["../src/*"]
+    }
+  },
+  "include": ["./**/*", "../node_modules/@types/node/globals.d.ts"],
+  "exclude": ["../src", "../build"]
+}
