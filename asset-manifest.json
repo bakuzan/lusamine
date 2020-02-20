@@ -1,28 +1,28 @@
 {
   "files": {
-    "main.css": "/lusamine/static/css/main.583425d0.chunk.css",
-    "main.js": "/lusamine/static/js/main.0f4074c2.chunk.js",
-    "main.js.map": "/lusamine/static/js/main.0f4074c2.chunk.js.map",
+    "main.css": "/lusamine/static/css/main.5edfee4c.chunk.css",
+    "main.js": "/lusamine/static/js/main.01c32f12.chunk.js",
+    "main.js.map": "/lusamine/static/js/main.01c32f12.chunk.js.map",
     "runtime-main.js": "/lusamine/static/js/runtime-main.91c60f54.js",
     "runtime-main.js.map": "/lusamine/static/js/runtime-main.91c60f54.js.map",
-    "static/js/2.63615047.chunk.js": "/lusamine/static/js/2.63615047.chunk.js",
-    "static/js/2.63615047.chunk.js.map": "/lusamine/static/js/2.63615047.chunk.js.map",
+    "static/js/2.8c4df56d.chunk.js": "/lusamine/static/js/2.8c4df56d.chunk.js",
+    "static/js/2.8c4df56d.chunk.js.map": "/lusamine/static/js/2.8c4df56d.chunk.js.map",
     "index.html": "/lusamine/index.html",
-    "precache-manifest.afd78ff1384fe746aa559ab034669f8f.js": "/lusamine/precache-manifest.afd78ff1384fe746aa559ab034669f8f.js",
+    "precache-manifest.c4097ab2badcf9c030657b48ea73b637.js": "/lusamine/precache-manifest.c4097ab2badcf9c030657b48ea73b637.js",
     "service-worker.js": "/lusamine/service-worker.js",
-    "static/css/main.583425d0.chunk.css.map": "/lusamine/static/css/main.583425d0.chunk.css.map",
-    "static/js/2.63615047.chunk.js.LICENSE.txt": "/lusamine/static/js/2.63615047.chunk.js.LICENSE.txt",
-    "static/media/ArtCard.scss": "/lusamine/static/media/art.f0c60420.webp",
+    "static/css/main.5edfee4c.chunk.css.map": "/lusamine/static/css/main.5edfee4c.chunk.css.map",
+    "static/js/2.8c4df56d.chunk.js.LICENSE.txt": "/lusamine/static/js/2.8c4df56d.chunk.js.LICENSE.txt",
+    "static/media/ArtCard.scss": "/lusamine/static/media/art.f94417d4.png",
     "static/media/pokemon-opening.ogg": "/lusamine/static/media/pokemon-opening.0d0730eb.ogg",
     "static/media/pokemon-opening.mp3": "/lusamine/static/media/pokemon-opening.7140bc35.mp3",
     "static/media/index.scss": "/lusamine/static/media/roboto-mono.e92cc0fb.woff2",
-    "static/media/Sprite.scss": "/lusamine/static/media/sprites.cf9fc007.png",
+    "static/media/Sprite.scss": "/lusamine/static/media/sprites.e97dc208.png",
     "static/media/TypeBlock.scss": "/lusamine/static/media/types.ecadccdc.webp"
   },
   "entrypoints": [
     "static/js/runtime-main.91c60f54.js",
-    "static/js/2.63615047.chunk.js",
-    "static/css/main.583425d0.chunk.css",
-    "static/js/main.0f4074c2.chunk.js"
+    "static/js/2.8c4df56d.chunk.js",
+    "static/css/main.5edfee4c.chunk.css",
+    "static/js/main.01c32f12.chunk.js"
   ]
 }
