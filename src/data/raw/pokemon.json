@@ -5541,7 +5541,7 @@
     "nationalPokedexNumber": 888,
     "name": "zacian",
     "typeIds": [18, 17],
-    "form": ""
+    "form": "crowned"
   },
   {
     "nationalPokedexNumber": 889,
@@ -5553,7 +5553,7 @@
     "nationalPokedexNumber": 889,
     "name": "zamazenta",
     "typeIds": [5, 17],
-    "form": ""
+    "form": "crowned"
   },
   {
     "nationalPokedexNumber": 890,

@@ -1,7 +1,8 @@
 # Lusamine
 
-Currently under development.
 Critique and suggestions welcome.
+
+Note: Some images are a misized. These are fixed when and if better quality images can be found.
 
 # What?
 
@@ -16,4 +17,4 @@ I was looking for something to do and was inspired to develop this after seeing 
 
 This project was bootstrapped with [Create React App](https://github.com/facebookincubator/create-react-app).
 
-Pokémon is © of Nintendo, 1995-2019.
+Pokémon is © of Nintendo, 1995-2020.

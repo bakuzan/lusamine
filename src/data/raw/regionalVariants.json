@@ -152,7 +152,8 @@
   {
     "nationalPokedexNumber": 555,
     "regionId": 8,
-    "typeIds": [14, 3]
+    "typeIds": [14, 3],
+    "form": "zen"
   },
   {
     "nationalPokedexNumber": 562,

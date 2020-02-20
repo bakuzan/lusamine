@@ -214,8 +214,15 @@ async function run() {
           await pipeline(got.stream(url), fs.createWriteStream(imageFilename));
         }
       } else if (imageFolder === ImageScrapeTarget.Sprites) {
-        // TODO
-        // Download missing sprites...
+        for (const item of missing) {
+          const imageFilename = path.join(
+            __dirname,
+            `./${imageFolder}/${item.filename}`
+          );
+
+          const url = item.sprite;
+          await pipeline(got.stream(url), fs.createWriteStream(imageFilename));
+        }
       }
     }
   }

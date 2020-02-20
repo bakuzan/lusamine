@@ -42,7 +42,9 @@ export function transformVariantPokemonData(data) {
   return data.reduce((p, c) => {
     const id = IdGenerators.generateVariantPokemonId(p, c);
     const basePokemon = pokemon.find(
-      (x) => x.nationalPokedexNumber === c.nationalPokedexNumber
+      (x) =>
+        x.nationalPokedexNumber === c.nationalPokedexNumber &&
+        (!c.form || x.form === c.form)
     );
     const pokemonTypes = types.filter((x) => c.typeIds.includes(x.id));
     const pokemonEvolutions = evolutions.filter(
