@@ -15,7 +15,7 @@ export default async function fetchPage(key: string, url: string) {
 
   try {
     fs.accessSync(filename, fs.constants.R_OK);
-    console.log('Reading from cache');
+    console.log(`Reading ${key} from cache.`);
 
     const stats = fs.statSync(filename);
     const mtime = new Date(stats.mtime).getTime();
@@ -24,10 +24,10 @@ export default async function fetchPage(key: string, url: string) {
       const data = fs.readFileSync(filename, 'utf-8');
       return cheerio.load(data);
     } else {
-      console.log('Cache stale, will request.');
+      console.log(`Cache for ${key} is stale, will request.`);
     }
   } catch (err) {
-    console.error('Cache Empty, will request.');
+    console.error(`Cache for ${key} is empty, will request.`);
   }
 
   try {
@@ -37,7 +37,7 @@ export default async function fetchPage(key: string, url: string) {
 
     return cheerio.load(html);
   } catch (e) {
-    console.log(chalk.bgWhite.red('Request failed.'));
+    console.log(chalk.bgWhite.red(`Request for ${key} failed.`));
     console.error(e);
     process.exit(1);
   }

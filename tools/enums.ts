@@ -45,6 +45,11 @@ export const Evolutions = Object.freeze({
 export const TABLE_COUNT_OFFSET = 1;
 export const GENERATION_COUNT = 8;
 
+export enum ImageScrapeTarget {
+  Art = 'art',
+  Sprites = 'sprites'
+}
+
 export default {
   Types,
   Evolutions,
