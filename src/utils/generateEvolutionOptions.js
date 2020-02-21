@@ -21,6 +21,17 @@ function includeForms(pokemon, initial) {
   return distinct('id', merge(initial, forms));
 }
 
+function resolveVariantId(mon, rSuff, rnSuff) {
+  let id = `v_${mon.evolvesTo}`;
+  if (rSuff) {
+    id += `_${rSuff}`;
+  }
+  if (rnSuff) {
+    id += `_${rnSuff}`;
+  }
+  return id;
+}
+
 export default function generateEvolutionOptions(
   dex,
   data,
@@ -30,7 +41,10 @@ export default function generateEvolutionOptions(
   const pokemon = iterateMapToArray(dex);
   const isMega = isMegaPokemon(data);
   const isVariant = isVariantPokemon(data);
-  const variantExists = dex.has(`v_${npn}`);
+
+  const potentialVariantId = isVariant ? data.id : `v_${npn}`;
+  const variantExists = dex.has(potentialVariantId);
+  const [rSuff, rNumSuff] = data.id.split('_').slice(2);
 
   // Gather all forms of pokemon
   let forms = [];
@@ -41,7 +55,7 @@ export default function generateEvolutionOptions(
   // Get variants of current pokemon
   const variants = [data];
   if (variantExists && exhaustive) {
-    const variant = dex.get(`v_${npn}`);
+    const variant = dex.get(potentialVariantId);
     variants.push(variant);
   }
 
@@ -52,7 +66,7 @@ export default function generateEvolutionOptions(
 
   // Generate Evolution Ids
   const targetIds = evolutions.reduce((p, x) => {
-    const vId = `v_${x.evolvesTo}`;
+    const vId = resolveVariantId(x, rSuff, rNumSuff);
     const pId = `p_${x.evolvesTo}`;
     const hasV = dex.has(vId);
 
@@ -74,7 +88,8 @@ export default function generateEvolutionOptions(
       const canDevolveTo =
         (!isVariant && (!isVariantPokemon(x) || exhaustive)) ||
         (isVariant &&
-          (isVariantPokemon(x) || !dex.has(`v_${x.nationalPokedexNumber}`)));
+          (isVariantPokemon(x) ||
+            !dex.has(resolveVariantId(x, rSuff, rNumSuff))));
 
       return (
         canDevolveTo &&
@@ -94,15 +109,10 @@ export default function generateEvolutionOptions(
     const [prefix, num] = pkmId.split('_');
     const pkmNPN = Number(num);
     const isV = prefix === 'v';
-    const mon = dex.get(pkmId);
-
-    if (isV) {
-      return [...p, mon];
-    }
 
     const evos = pokemon.filter(
       (x) =>
-        !isVariantPokemon(x) &&
+        isV === isVariantPokemon(x) &&
         x.nationalPokedexNumber === pkmNPN &&
         (!evolvesToMatchedForm.includes(x.nationalPokedexNumber) ||
           (evolvesToMatchedForm.includes(x.nationalPokedexNumber) &&
