@@ -13,7 +13,9 @@ export function transformPokemonData(data) {
     const isStarter = starters.includes(c.nationalPokedexNumber);
     const pokemonTypes = types.filter((x) => c.typeIds.includes(x.id));
     const pokemonEvolutions = evolutions.filter(
-      (x) => x.nationalPokedexNumber === c.nationalPokedexNumber
+      (x) =>
+        x.nationalPokedexNumber === c.nationalPokedexNumber &&
+        (!x.regionId || x.regionId === c.regionId)
     );
 
     return p.set(
@@ -48,7 +50,9 @@ export function transformVariantPokemonData(data) {
     );
     const pokemonTypes = types.filter((x) => c.typeIds.includes(x.id));
     const pokemonEvolutions = evolutions.filter(
-      (x) => x.nationalPokedexNumber === c.nationalPokedexNumber
+      (x) =>
+        x.nationalPokedexNumber === c.nationalPokedexNumber &&
+        (!x.regionId || x.regionId === c.regionId)
     );
 
     return p.set(

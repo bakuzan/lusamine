@@ -249,7 +249,8 @@
     "nationalPokedexNumber": 52,
     "evolvesTo": 863,
     "mechanism": 1,
-    "note": "Level 28"
+    "note": "Level 28",
+    "regionId": 8
   },
   {
     "nationalPokedexNumber": 54,
@@ -1017,7 +1018,8 @@
     "nationalPokedexNumber": 264,
     "evolvesTo": 862,
     "mechanism": 5,
-    "note": "Level 35 (night)"
+    "note": "Level 35 (night)",
+    "regionId": 8
   },
   {
     "nationalPokedexNumber": 265,
