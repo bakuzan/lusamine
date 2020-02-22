@@ -48,7 +48,9 @@ const checkPokemonId = (check) => (mon) => mon.id.startsWith(`${check}_`);
 
 export const isMegaPokemon = checkPokemonId(Strings.idPrefix.mega);
 export const isVariantPokemon = checkPokemonId(Strings.idPrefix.variant);
-export const isAltFormPokemon = (mon) => mon.id.split('_').length === 3;
+export const isAltFormPokemon = (mon) =>
+  mon.id.split('_').length === 3 && !isVariantPokemon(mon);
+
 const isTrainerTeamMember = (mon) => mon.id.includes('-d');
 
 export function isNotBasePokemon(mon) {
@@ -58,4 +60,13 @@ export function isNotBasePokemon(mon) {
     isAltFormPokemon(mon) ||
     isTrainerTeamMember(mon)
   );
+}
+
+const getIdParts = (id) => id.split('_').slice(2);
+
+export function isVariantRegionMatch(p1, p2) {
+  const [r1, f1] = getIdParts(p1.id);
+  const [r2, f2] = getIdParts(p2.id);
+
+  return isVariantPokemon(p1) && isVariantPokemon(p2) && r1 === r2 && f1 === f2;
 }

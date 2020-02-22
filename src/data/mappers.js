@@ -17,10 +17,14 @@ function mapEvolutionsToPokemon(evolutions) {
   return evolutions
     .map((e) => ({
       evolvesTo: e.evolvesTo,
-      mechanism: e.mechanism
+      mechanism: e.mechanism,
+      regionId: e.regionId ?? null
     }))
     .filter((o, i, arr) => {
-      const index = arr.findIndex((x) => x.evolvesTo === o.evolvesTo);
+      const index = arr.findIndex(
+        (x) => x.evolvesTo === o.evolvesTo && x.regionId === o.regionId
+      );
+
       return index === i;
     });
 }

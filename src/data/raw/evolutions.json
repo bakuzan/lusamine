@@ -568,7 +568,8 @@
     "nationalPokedexNumber": 122,
     "evolvesTo": 866,
     "mechanism": 1,
-    "note": "Level 42"
+    "note": "Level 42",
+    "regionId": 8
   },
   {
     "nationalPokedexNumber": 123,

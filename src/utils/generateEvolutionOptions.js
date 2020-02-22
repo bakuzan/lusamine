@@ -1,5 +1,10 @@
 import { evolvesToMatchedForm } from 'constants/evolutions';
-import { isMegaPokemon, isVariantPokemon } from 'utils/derivedData';
+import {
+  isMegaPokemon,
+  isVariantPokemon,
+  isVariantRegionMatch,
+  isAltFormPokemon
+} from 'utils/derivedData';
 import { iterateMapToArray } from 'utils/common';
 import { merge, distinct } from 'utils/lists';
 
@@ -55,12 +60,12 @@ function getDevolves(dex, data, exhaustive) {
       !isVariant &&
       (!isVariantPokemon(x) ||
         (isVariantPokemon(x) &&
-          x.evolutions.some((e) => e.evolvesTo === npn)) ||
+          x.evolutions.some((e) => e.evolvesTo === npn && e.regionId)) ||
         exhaustive);
 
     const variantMatch =
       isVariant &&
-      (isVariantPokemon(x) ||
+      (isVariantRegionMatch(data, x) ||
         !dex.has(resolveVariantId(x.nationalPokedexNumber, rSuff, rNumSuff)));
 
     const matchedFormCondition =
@@ -68,14 +73,6 @@ function getDevolves(dex, data, exhaustive) {
       (evolvesToMatchedForm.includes(x.nationalPokedexNumber) &&
         x.form === data.form);
 
-    if (x.nationalPokedexNumber === 52)
-      console.log(
-        data,
-        'Test devolve > ',
-        x,
-        variantMatch,
-        resolveVariantId(x.nationalPokedexNumber, rSuff, rNumSuff)
-      );
     return (
       (nonVariantMatch || variantMatch) &&
       x.evolutions.some((e) => e.evolvesTo === npn) &&
@@ -90,47 +87,42 @@ function getEvolves(dex, data, exhaustive) {
   const { nationalPokedexNumber: npn, evolutions } = data;
   const pokemon = iterateMapToArray(dex);
   const isVariant = isVariantPokemon(data);
-  const [rSuff, rNumSuff] = data.id.split('_').slice(2);
 
   const regionals = pokemon.filter(
     (x) => x.nationalPokedexNumber === npn && isVariantPokemon(x)
   );
 
-  const variantExists = regionals.length > 0;
+  const hasRegional = evolutions.some((e) => e.regionId);
+  let evolves = evolutions
+    .filter((e) => !hasRegional || (hasRegional && e.regionId))
+    .reduce((p, x) => {
+      const vs = pokemon.filter(
+        (m) =>
+          m.nationalPokedexNumber === x.evolvesTo &&
+          !isAltFormPokemon(m) &&
+          (isVariant === isVariantRegionMatch(data, m) || x.regionId)
+      );
 
-  const targetIds = evolutions.reduce((p, x) => {
-    const vId = resolveVariantId(x.evolvesTo, rSuff, rNumSuff);
-    const pId = `p_${x.evolvesTo}`;
-    const hasV = dex.has(vId);
+      const hasV = vs.some((v) => isVariantPokemon(v));
 
-    let xIds = [];
-    if (isVariant && !exhaustive) {
-      xIds = [vId];
-    } else if (hasV && (!variantExists || exhaustive)) {
-      xIds = [pId, vId];
-    } else {
-      xIds = [pId];
-    }
+      let xMons = [];
+      if (isVariant && !exhaustive) {
+        xMons = vs.filter((v) => hasV === isVariantPokemon(v));
+      } else if (hasV && (!regionals.length || exhaustive)) {
+        xMons = vs;
+      } else {
+        xMons = vs.filter((v) => !isVariantPokemon(v));
+      }
 
-    return [...p, ...xIds];
-  }, []);
-
-  let evolves = [...targetIds].reduce((p, pkmId) => {
-    const [prefix, num] = pkmId.split('_');
-    const pkmNPN = Number(num);
-    const isV = prefix === 'v';
-
-    const evos = pokemon.filter(
-      (x) =>
-        isV === isVariantPokemon(x) &&
-        x.nationalPokedexNumber === pkmNPN &&
-        (!evolvesToMatchedForm.includes(x.nationalPokedexNumber) ||
+      const evos = xMons.filter(
+        (x) =>
+          !evolvesToMatchedForm.includes(x.nationalPokedexNumber) ||
           (evolvesToMatchedForm.includes(x.nationalPokedexNumber) &&
-            x.form === data.form))
-    );
+            x.form === data.form)
+      );
 
-    return [...p, ...evos];
-  }, []);
+      return [...p, ...evos];
+    }, []);
 
   evolves = exhaustive ? includeForms(pokemon, evolves) : evolves;
   return evolves.map((x) => ['Evolve to ', x]);
@@ -141,6 +133,9 @@ export default function generateEvolutionOptions(
   data,
   exhaustive = false
 ) {
+  // TODO
+  // early exit for empty mon
+
   const variants = [data];
   let forms = [];
 
