@@ -394,7 +394,8 @@
     "nationalPokedexNumber": 83,
     "evolvesTo": 865,
     "mechanism": 1,
-    "note": "Land 3 critical hits in a single battle"
+    "note": "Land 3 critical hits in a single battle",
+    "regionId": 8
   },
   {
     "nationalPokedexNumber": 84,
@@ -929,7 +930,8 @@
     "nationalPokedexNumber": 222,
     "evolvesTo": 864,
     "mechanism": 1,
-    "note": "Level 38"
+    "note": "Level 38",
+    "regionId": 8
   },
   {
     "nationalPokedexNumber": 223,
@@ -1806,7 +1808,8 @@
     "nationalPokedexNumber": 562,
     "evolvesTo": 867,
     "mechanism": 11,
-    "note": "Under the stone bridge in Dusty Bowl after Yamask takes at least 49 HP in damage in one attack without fainting."
+    "note": "Under the stone bridge in Dusty Bowl after Yamask takes at least 49 HP in damage in one attack without fainting.",
+    "regionId": 8
   },
   {
     "nationalPokedexNumber": 564,

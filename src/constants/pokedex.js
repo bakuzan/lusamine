@@ -13,7 +13,8 @@ export const Pokedex = Object.freeze({
   unova_n: 'unova new',
   kalos: 'kalos',
   alola: 'alola',
-  alola_u: 'alola ultra'
+  alola_u: 'alola ultra',
+  galar: 'galar'
 });
 
 export const pokedexOptions = Object.keys(Pokedex).map((k) => ({
