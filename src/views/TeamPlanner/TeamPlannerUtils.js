@@ -67,12 +67,16 @@ export function iteratePokedexToList(
   const dex = !dexKey
     ? Array.from(pokedex)
     : dexKey.reduce((p, x) => {
-        const pkmId = `p_${x.nationalPokedexNumber}${x.formSuffix}`;
-        const m = pokedex.get(pkmId);
+        const region = x.region > 7 ? `_r${x.region}` : '';
+        const m =
+          pokedex.get(`v_${x.nationalPokedexNumber}${region}`) ??
+          pokedex.get(`p_${x.nationalPokedexNumber}${x.formSuffix}`);
+
         if (!m) {
           return p;
         }
-        return [...p, [pkmId, m]];
+
+        return [...p, [m.id, m]];
       }, []);
 
   return dex.reduce((acc, [_, item]) => {
@@ -96,6 +100,7 @@ export const generationOptions = getEnumOptions(
   Generations,
   (k) => `${capitalise(k.slice(0, 3))} ${k.slice(-1)}`
 );
+
 export const generationDefaults = getAllEnumValues(Generations);
 
 export const typeOptions = getEnumOptions(Types, (k) => capitalise(k));
@@ -104,6 +109,7 @@ export const typeDefaults = getAllEnumValues(Types);
 export const evolutionOptions = getEnumOptions(EvolutionForms, (k) =>
   separateAndCapitaliseAll(k)
 );
+
 export const evolutionDefaults = getAllEnumValues(EvolutionForms);
 
 export const selectRandomSetOfIds = (dexData, filters, typeMatches) => {
