@@ -1,35 +1,38 @@
-const { baseHandler, islandHandler } = require('./helpers');
+import { baseHandler, islandHandler } from './helpers';
 
-module.exports = {
-  async kanto(name, $) {
+const handlers: Record<
+  string,
+  (name: string, $: CheerioStatic) => Promise<boolean>
+> = {
+  async kanto(name: string, $: CheerioStatic) {
     const bodys = Array.from($('table > tbody'))
       .slice(0, -3)
       .filter((_, i) => i !== 4);
 
     return await baseHandler($, bodys, { number: 1, name });
   },
-  async new(name, $) {
+  async new(name: string, $: CheerioStatic) {
     const bodys = Array.from($('table > tbody')).slice(0, -3);
 
     return await baseHandler($, bodys, { number: 2, name });
   },
-  async johto(name, $) {
+  async johto(name: string, $: CheerioStatic) {
     const bodys = Array.from($('table > tbody')).slice(0, -3);
 
     return await baseHandler($, bodys, { number: 2, name, code: 'Johto' });
   },
-  async hoenn(name, $) {
+  async hoenn(name: string, $: CheerioStatic) {
     const bds = Array.from($('table > tbody'));
     const bodys = [...bds.slice(0, 4), ...bds.slice(5, -3)];
 
     return await baseHandler($, bodys, { number: 3, name });
   },
-  async hoenn_oras(name, $) {
+  async hoenn_oras(name: string, $: CheerioStatic) {
     const bodys = Array.from($('table > tbody')).slice(0, -3);
 
     return await baseHandler($, bodys, { number: 3, name, code: 'ORAS' });
   },
-  async sinnoh(name, $) {
+  async sinnoh(name: string, $: CheerioStatic) {
     const bodys_pt = Array.from($('table > tbody')).slice(0, -3);
     const bodys = bodys_pt.slice(0, -1);
 
@@ -40,17 +43,17 @@ module.exports = {
       code: 'Platinum'
     });
   },
-  async unova(name, $) {
+  async unova(name: string, $: CheerioStatic) {
     const bodys = Array.from($('table > tbody')).slice(0, -3);
 
     return await baseHandler($, bodys, { number: 5, name });
   },
-  async unova_n(name, $) {
+  async unova_n(name: string, $: CheerioStatic) {
     const bodys = Array.from($('table > tbody')).slice(0, -3);
 
     return await baseHandler($, bodys, { number: 5, name, code: 'New' });
   },
-  async kalos(name, $) {
+  async kalos(name: string, $: CheerioStatic) {
     const bodys = Array.from($('table > tbody'));
     const central = bodys.slice(0, 4);
     const coastal = bodys.slice(4, 8);
@@ -72,16 +75,18 @@ module.exports = {
       code: 'Mountain'
     });
   },
-  async alola(name, $) {
+  async alola(name: string, $: CheerioStatic) {
     const bodys = Array.from($('table > tbody')).slice(0, -3);
     return await islandHandler($, bodys, { number: 7, name });
   },
-  async alola_u(name, $) {
+  async alola_u(name: string, $: CheerioStatic) {
     const bodys = Array.from($('table > tbody')).slice(0, -3);
     return await islandHandler($, bodys, { number: 7, name, code: 'Ultra' });
   },
-  async galar(name, $) {
+  async galar(name: string, $: CheerioStatic) {
     const bodys = Array.from($('table > tbody')).slice(1, -4);
     return await baseHandler($, bodys, { number: 8, name });
   }
 };
+
+export default handlers;

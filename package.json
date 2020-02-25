@@ -43,7 +43,7 @@
     "deploy": "npm run build && gh-pages -d build",
     "scrape:data": "ts-node -P ./tools/tsconfig.json -r tsconfig-paths/register ./tools/index.ts",
     "scrape:image": "ts-node -P ./tools/tsconfig.json -r tsconfig-paths/register ./tools/images/index.ts",
-    "scrape:region": "node ./tools/regionalPokedex/index.js",
+    "scrape:region": "ts-node -P ./tools/tsconfig.json -r tsconfig-paths/register ./tools/regionalPokedex/index.ts",
     "check-images": "ts-node -P ./tools/tsconfig.json -r tsconfig-paths/register ./tools/images/compareImageFolders.ts"
   },
   "devDependencies": {

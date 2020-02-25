@@ -1,11 +1,13 @@
-const chalk = require('chalk');
-const argv = require('minimist')(process.argv.slice(2));
+import chalk from 'chalk';
+import minimist from 'minimist';
 
-const fetchPage = require('../readCachedFile');
-const handlers = require('./handlers');
+import fetchPage from '../readCachedFile';
+import handlers from './handlers';
+
+const argv = minimist(process.argv.slice(2));
 
 // https://bulbapedia.bulbagarden.net/wiki/Regional_Pokédex
-const urls = {
+const urls: Record<string, string> = {
   kanto: `https://bulbapedia.bulbagarden.net/wiki/List_of_Pok%C3%A9mon_by_Kanto_Pok%C3%A9dex_number`, // (?) LG PE
   new: `https://bulbapedia.bulbagarden.net/wiki/List_of_Pok%C3%A9mon_by_New_Pok%C3%A9dex_number`,
   johto: `https://bulbapedia.bulbagarden.net/wiki/List_of_Pok%C3%A9mon_by_Johto_Pok%C3%A9dex_number`,

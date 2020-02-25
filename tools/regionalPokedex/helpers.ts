@@ -1,7 +1,23 @@
-const fs = require('fs');
-const path = require('path');
+import fs from 'fs';
+import path from 'path';
+import { filterFalsey } from '@/utils';
 
-function writeOut(name, json) {
+interface HandlerRegion {
+  name: string;
+  number: number;
+  code?: string;
+}
+
+interface RegionEntry {
+  region: number;
+  code: string | null;
+  regionalPokedexNumber: number;
+  nationalPokedexNumber: number;
+  sublistings?: { number: number | null }[];
+  formSuffix: string;
+}
+
+export function writeOut(name: string, json: any): Promise<boolean> {
   const fileName = path.resolve(path.join(__dirname, `../output/${name}.json`));
 
   return new Promise((resolve) => {
@@ -17,7 +33,7 @@ function writeOut(name, json) {
   });
 }
 
-function cleanNumber(td) {
+function cleanNumber(td: Cheerio) {
   return Number(
     td
       .text()
@@ -26,8 +42,12 @@ function cleanNumber(td) {
   );
 }
 
-async function baseHandler($, bodys, region) {
-  const ids = {};
+export async function baseHandler(
+  $: CheerioStatic,
+  bodys: CheerioElement[],
+  region: HandlerRegion
+) {
+  const ids: Record<number, number> = {};
 
   const json = bodys.reduce((result, body) => {
     const rows = Array.from($('tr', body));
@@ -45,9 +65,10 @@ async function baseHandler($, bodys, region) {
         return null;
       }
 
+      // TODO regional variant check!!
       const nationalPokedexNumber = cleanNumber(nat);
-      const formNumber = ids[nationalPokedexNumber];
-      ids[nationalPokedexNumber] = ids[nationalPokedexNumber] + 1 || 1;
+      const formNumber = ids[nationalPokedexNumber] ?? 0;
+      ids[nationalPokedexNumber] = ids[nationalPokedexNumber] + 1;
 
       return {
         region: region.number,
@@ -59,14 +80,18 @@ async function baseHandler($, bodys, region) {
     });
 
     return [...result, ...items];
-  }, []);
+  }, [] as (RegionEntry | null)[]);
 
-  const data = json.filter((x) => !!x);
+  const data = json.filter(filterFalsey);
   return await writeOut(region.name, data);
 }
 
-async function islandHandler($, bodys, region) {
-  const ids = {};
+export async function islandHandler(
+  $: CheerioStatic,
+  bodys: CheerioElement[],
+  region: HandlerRegion
+) {
+  const ids: Record<number, number> = {};
 
   const json = bodys.reduce((result, body) => {
     const rows = Array.from($('tr', body));
@@ -85,9 +110,10 @@ async function islandHandler($, bodys, region) {
         return null;
       }
 
+      // TODO regional variant check!!
       const nationalPokedexNumber = cleanNumber(nat);
-      const formNumber = ids[nationalPokedexNumber];
-      ids[nationalPokedexNumber] = ids[nationalPokedexNumber] + 1 || 1;
+      const formNumber = ids[nationalPokedexNumber] ?? 0;
+      ids[nationalPokedexNumber] = ids[nationalPokedexNumber] + 1;
 
       return {
         region: region.number,
@@ -100,14 +126,8 @@ async function islandHandler($, bodys, region) {
     });
 
     return [...result, ...items];
-  }, []);
+  }, [] as (RegionEntry | null)[]);
 
-  const data = json.filter((x) => !!x);
+  const data = json.filter((x) => x !== null);
   return await writeOut(region.name, data);
 }
-
-module.exports = {
-  baseHandler,
-  islandHandler,
-  writeOut
-};

@@ -17,3 +17,9 @@ export function getFirstValidAttributeValue(
 
   throw new Error('Not valid value found');
 }
+
+export function filterFalsey<TValue>(
+  value: TValue | null | undefined
+): value is TValue {
+  return value !== null && value !== undefined;
+}

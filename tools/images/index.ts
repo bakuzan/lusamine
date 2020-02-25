@@ -4,6 +4,7 @@ import path from 'path';
 import { ask } from 'stdio';
 import { promisify } from 'util';
 import stream from 'stream';
+import got from 'got';
 
 import { capitalise } from 'ayaka/capitalise';
 import { createClient } from 'medea';
@@ -13,8 +14,7 @@ import fetchPage from '@/readCachedFile';
 import Enums, { ImageScrapeTarget } from '@/enums';
 import Mappers from '@/mappers';
 import { checkImgForVariant } from '@/processors';
-import { getFirstValidAttributeValue, prop } from '@/utils';
-import got from 'got/dist/source';
+import { filterFalsey, getFirstValidAttributeValue, prop } from '@/utils';
 
 const writeAsync = promisify(fs.writeFile);
 const pipeline = promisify(stream.pipeline);
@@ -41,12 +41,6 @@ type MissingEntry = {
   filename: string;
   reasons?: string[];
 };
-
-export default function filterFalsey<TValue>(
-  value: TValue | null | undefined
-): value is TValue {
-  return value !== null && value !== undefined;
-}
 
 async function validate(fn: () => Promise<boolean>, message: () => void) {
   const passed = await fn();
