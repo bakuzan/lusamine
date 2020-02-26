@@ -1,6 +1,6 @@
 import fs from 'fs';
 import path from 'path';
-import { filterFalsey } from '@/utils';
+import { filterFalsey, checkImgForVariant } from '@/utils';
 
 interface HandlerRegion {
   name: string;
@@ -15,6 +15,7 @@ interface RegionEntry {
   nationalPokedexNumber: number;
   sublistings?: { number: number | null }[];
   formSuffix: string;
+  isVariant: boolean;
 }
 
 export function writeOut(name: string, json: any): Promise<boolean> {
@@ -47,7 +48,7 @@ export async function baseHandler(
   bodys: CheerioElement[],
   region: HandlerRegion
 ) {
-  const ids: Record<number, number> = {};
+  const ids: Record<string, number | undefined> = {};
 
   const json = bodys.reduce((result, body) => {
     const rows = Array.from($('tr', body));
@@ -60,22 +61,28 @@ export async function baseHandler(
       const tds = $(tr).children();
       const reg = tds.eq(0);
       const nat = tds.eq(1);
+      const img = tds.eq(2);
 
       if (!reg || !nat) {
         return null;
       }
 
-      // TODO regional variant check!!
+      const isVariant = !!checkImgForVariant(img);
       const nationalPokedexNumber = cleanNumber(nat);
-      const formNumber = ids[nationalPokedexNumber] ?? 0;
-      ids[nationalPokedexNumber] = ids[nationalPokedexNumber] + 1;
+      const npnCode = isVariant
+        ? `v_${nationalPokedexNumber}_r${region.number}`
+        : `p_${nationalPokedexNumber}`;
+
+      const formNumber = ids[npnCode] ?? 0;
+      ids[npnCode] = formNumber + 1;
 
       return {
         region: region.number,
         code: region.code || null,
         regionalPokedexNumber: cleanNumber(reg),
         nationalPokedexNumber,
-        formSuffix: formNumber ? `_${formNumber}` : ''
+        formSuffix: formNumber ? `_${formNumber}` : '',
+        isVariant
       };
     });
 
@@ -91,7 +98,7 @@ export async function islandHandler(
   bodys: CheerioElement[],
   region: HandlerRegion
 ) {
-  const ids: Record<number, number> = {};
+  const ids: Record<string, number | undefined> = {};
 
   const json = bodys.reduce((result, body) => {
     const rows = Array.from($('tr', body));
@@ -105,15 +112,20 @@ export async function islandHandler(
       const reg = tds.eq(0);
       const subs = [tds.eq(1), tds.eq(2), tds.eq(3), tds.eq(4)];
       const nat = tds.eq(5);
+      const img = tds.eq(6);
 
       if (!reg || !nat) {
         return null;
       }
 
-      // TODO regional variant check!!
+      const isVariant = !!checkImgForVariant(img);
       const nationalPokedexNumber = cleanNumber(nat);
-      const formNumber = ids[nationalPokedexNumber] ?? 0;
-      ids[nationalPokedexNumber] = ids[nationalPokedexNumber] + 1;
+      const npnCode = isVariant
+        ? `v_${nationalPokedexNumber}_r${region.number}`
+        : `p_${nationalPokedexNumber}`;
+
+      const formNumber = ids[npnCode] ?? 0;
+      ids[npnCode] = formNumber + 1;
 
       return {
         region: region.number,
@@ -121,7 +133,8 @@ export async function islandHandler(
         regionalPokedexNumber: cleanNumber(reg),
         nationalPokedexNumber,
         sublistings: subs.map((td) => ({ number: cleanNumber(td) || null })),
-        formSuffix: formNumber ? `_${formNumber}` : ''
+        formSuffix: formNumber ? `_${formNumber}` : '',
+        isVariant
       };
     });
 

@@ -46,6 +46,7 @@ export const generateEmptySlots = () => {
 
 const checkPokemonId = (check) => (mon) => mon.id.startsWith(`${check}_`);
 
+export const isEmptyPokemon = (mon) => mon.nationalPokedexNumber === 0;
 export const isMegaPokemon = checkPokemonId(Strings.idPrefix.mega);
 export const isVariantPokemon = checkPokemonId(Strings.idPrefix.variant);
 export const isAltFormPokemon = (mon) =>

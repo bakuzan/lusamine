@@ -68,9 +68,9 @@ export function iteratePokedexToList(
     ? Array.from(pokedex)
     : dexKey.reduce((p, x) => {
         const region = x.region > 7 ? `_r${x.region}` : '';
-        const m =
-          pokedex.get(`v_${x.nationalPokedexNumber}${region}`) ??
-          pokedex.get(`p_${x.nationalPokedexNumber}${x.formSuffix}`);
+        const m = x.isVariant
+          ? pokedex.get(`v_${x.nationalPokedexNumber}${region}${x.formSuffix}`)
+          : pokedex.get(`p_${x.nationalPokedexNumber}${x.formSuffix}`);
 
         if (!m) {
           return p;

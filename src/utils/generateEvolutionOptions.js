@@ -1,9 +1,11 @@
+import orderBy from 'ayaka/orderBy';
 import { evolvesToMatchedForm } from 'constants/evolutions';
 import {
   isMegaPokemon,
   isVariantPokemon,
   isVariantRegionMatch,
-  isAltFormPokemon
+  isAltFormPokemon,
+  isEmptyPokemon
 } from 'utils/derivedData';
 import { iterateMapToArray } from 'utils/common';
 import { merge, distinct } from 'utils/lists';
@@ -80,21 +82,32 @@ function getDevolves(dex, data, exhaustive) {
     );
   });
 
-  return devolves.map((x) => ['Devolve to ', x]);
+  return orderBy(devolves, ['id']).map((x) => ['Devolve to ', x]);
 }
 
 function getEvolves(dex, data, exhaustive) {
-  const { nationalPokedexNumber: npn, evolutions } = data;
+  const { nationalPokedexNumber: npn, evolutions: baseEvolutions } = data;
   const pokemon = iterateMapToArray(dex);
   const isVariant = isVariantPokemon(data);
+  let evolutions = [...baseEvolutions];
 
   const regionals = pokemon.filter(
     (x) => x.nationalPokedexNumber === npn && isVariantPokemon(x)
   );
 
+  if (exhaustive) {
+    const otherEvos = regionals.reduce((p, c) => [...p, ...c.evolutions], []);
+    evolutions = [...evolutions, ...otherEvos].filter(
+      (o, i, arr) =>
+        arr.findIndex(
+          (x) => x.evolvesTo === o.evolvesTo && x.regionId === o.regionId
+        ) === i
+    );
+  }
+
   const hasRegional = evolutions.some((e) => e.regionId);
   let evolves = evolutions
-    .filter((e) => !hasRegional || (hasRegional && e.regionId))
+    .filter((e) => exhaustive || !hasRegional || (hasRegional && e.regionId))
     .reduce((p, x) => {
       const vs = pokemon.filter(
         (m) =>
@@ -125,7 +138,7 @@ function getEvolves(dex, data, exhaustive) {
     }, []);
 
   evolves = exhaustive ? includeForms(pokemon, evolves) : evolves;
-  return evolves.map((x) => ['Evolve to ', x]);
+  return orderBy(evolves, ['id']).map((x) => ['Evolve to ', x]);
 }
 
 export default function generateEvolutionOptions(
@@ -133,8 +146,21 @@ export default function generateEvolutionOptions(
   data,
   exhaustive = false
 ) {
-  // TODO
-  // early exit for empty mon
+  if (isEmptyPokemon(data)) {
+    return {
+      devolves: [],
+      evolves: [],
+      forms: [],
+      megas: [],
+      variants: [],
+      asList() {
+        return [];
+      },
+      count() {
+        return 0;
+      }
+    };
+  }
 
   const variants = [data];
   let forms = [];

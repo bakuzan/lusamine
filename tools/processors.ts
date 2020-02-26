@@ -4,31 +4,12 @@ import Enums from './enums';
 import { PokemonInstance, isPokemon, isVariant } from './types/Pokemon';
 import { Evolution } from './types/Evolution';
 import { MegaPokemon } from './types/Mega';
+import { checkImgForVariant } from './utils';
 
 const buildOuputUrl = (fileName: string) =>
   path.join('./tools/output', fileName);
 
-const MATCH_ALOLA_FORM = /\d{1,}A.*MS.png$/;
-const MATCH_GALAR_FORM = /\d{1,}G.*MS.png$/;
-
-export function checkImgForVariant(td: Cheerio) {
-  const src = td
-    .children()
-    .first()
-    .children()
-    .first()
-    .attr('src');
-
-  if (src && src.match(MATCH_ALOLA_FORM)) {
-    return Enums.Regions.alola;
-  } else if (src && src.match(MATCH_GALAR_FORM)) {
-    return Enums.Regions.galar;
-  }
-
-  return false;
-}
-
-async function pokedexProcessor($: CheerioAPI) {
+async function pokedexProcessor($: CheerioStatic) {
   const jsonEntries = Array.from($('table > tbody'))
     .slice(
       Enums.TABLE_COUNT_OFFSET,
@@ -84,7 +65,7 @@ async function pokedexProcessor($: CheerioAPI) {
   ];
 }
 
-async function evolutionProcessor($: CheerioAPI) {
+async function evolutionProcessor($: CheerioStatic) {
   const evolutions = Array.from($('table.roundy > tbody'))
     .slice(0, Enums.GENERATION_COUNT)
     .reduce(function(result, data) {
@@ -159,7 +140,7 @@ async function evolutionProcessor($: CheerioAPI) {
   ];
 }
 
-async function megaProcessor($: CheerioAPI) {
+async function megaProcessor($: CheerioStatic) {
   const megas = Array.from($('table.roundy > tbody'))
     .slice(0, 2)
     .reduce(function(result, data) {
