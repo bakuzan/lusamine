@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/lusamine/static/css/main.5edfee4c.chunk.css",
-    "main.js": "/lusamine/static/js/main.c1de6c24.chunk.js",
-    "main.js.map": "/lusamine/static/js/main.c1de6c24.chunk.js.map",
+    "main.js": "/lusamine/static/js/main.f9a68a5c.chunk.js",
+    "main.js.map": "/lusamine/static/js/main.f9a68a5c.chunk.js.map",
     "runtime-main.js": "/lusamine/static/js/runtime-main.91c60f54.js",
     "runtime-main.js.map": "/lusamine/static/js/runtime-main.91c60f54.js.map",
     "static/js/2.881e12c5.chunk.js": "/lusamine/static/js/2.881e12c5.chunk.js",
     "static/js/2.881e12c5.chunk.js.map": "/lusamine/static/js/2.881e12c5.chunk.js.map",
     "index.html": "/lusamine/index.html",
-    "precache-manifest.154c65659ae863eeafe0ed0ab3132fc3.js": "/lusamine/precache-manifest.154c65659ae863eeafe0ed0ab3132fc3.js",
+    "precache-manifest.5f4f3dc97c373c70e4e99d94ea8a3662.js": "/lusamine/precache-manifest.5f4f3dc97c373c70e4e99d94ea8a3662.js",
     "service-worker.js": "/lusamine/service-worker.js",
     "static/css/main.5edfee4c.chunk.css.map": "/lusamine/static/css/main.5edfee4c.chunk.css.map",
     "static/js/2.881e12c5.chunk.js.LICENSE.txt": "/lusamine/static/js/2.881e12c5.chunk.js.LICENSE.txt",
@@ -23,6 +23,6 @@
     "static/js/runtime-main.91c60f54.js",
     "static/js/2.881e12c5.chunk.js",
     "static/css/main.5edfee4c.chunk.css",
-    "static/js/main.c1de6c24.chunk.js"
+    "static/js/main.f9a68a5c.chunk.js"
   ]
 }
