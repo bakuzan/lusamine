@@ -82,7 +82,10 @@ function getDevolves(dex, data, exhaustive) {
     );
   });
 
-  return orderBy(devolves, ['id']).map((x) => ['Devolve to ', x]);
+  return orderBy(devolves, ['nationalPokedexNumber', 'id']).map((x) => [
+    'Devolve to ',
+    x
+  ]);
 }
 
 function getEvolves(dex, data, exhaustive) {
@@ -138,7 +141,10 @@ function getEvolves(dex, data, exhaustive) {
     }, []);
 
   evolves = exhaustive ? includeForms(pokemon, evolves) : evolves;
-  return orderBy(evolves, ['id']).map((x) => ['Evolve to ', x]);
+  return orderBy(evolves, ['nationalPokedexNumber', 'id']).map((x) => [
+    'Evolve to ',
+    x
+  ]);
 }
 
 export default function generateEvolutionOptions(
