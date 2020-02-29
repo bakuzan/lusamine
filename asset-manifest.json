@@ -1,17 +1,17 @@
 {
   "files": {
     "main.css": "/lusamine/static/css/main.5edfee4c.chunk.css",
-    "main.js": "/lusamine/static/js/main.f9a68a5c.chunk.js",
-    "main.js.map": "/lusamine/static/js/main.f9a68a5c.chunk.js.map",
+    "main.js": "/lusamine/static/js/main.5074aef1.chunk.js",
+    "main.js.map": "/lusamine/static/js/main.5074aef1.chunk.js.map",
     "runtime-main.js": "/lusamine/static/js/runtime-main.91c60f54.js",
     "runtime-main.js.map": "/lusamine/static/js/runtime-main.91c60f54.js.map",
-    "static/js/2.881e12c5.chunk.js": "/lusamine/static/js/2.881e12c5.chunk.js",
-    "static/js/2.881e12c5.chunk.js.map": "/lusamine/static/js/2.881e12c5.chunk.js.map",
+    "static/js/2.80cf6e4d.chunk.js": "/lusamine/static/js/2.80cf6e4d.chunk.js",
+    "static/js/2.80cf6e4d.chunk.js.map": "/lusamine/static/js/2.80cf6e4d.chunk.js.map",
     "index.html": "/lusamine/index.html",
-    "precache-manifest.5f4f3dc97c373c70e4e99d94ea8a3662.js": "/lusamine/precache-manifest.5f4f3dc97c373c70e4e99d94ea8a3662.js",
+    "precache-manifest.1aafc684b36c23365378fabe61e395c1.js": "/lusamine/precache-manifest.1aafc684b36c23365378fabe61e395c1.js",
     "service-worker.js": "/lusamine/service-worker.js",
     "static/css/main.5edfee4c.chunk.css.map": "/lusamine/static/css/main.5edfee4c.chunk.css.map",
-    "static/js/2.881e12c5.chunk.js.LICENSE.txt": "/lusamine/static/js/2.881e12c5.chunk.js.LICENSE.txt",
+    "static/js/2.80cf6e4d.chunk.js.LICENSE.txt": "/lusamine/static/js/2.80cf6e4d.chunk.js.LICENSE.txt",
     "static/media/ArtCard.scss": "/lusamine/static/media/art.f94417d4.png",
     "static/media/pokemon-opening.ogg": "/lusamine/static/media/pokemon-opening.0d0730eb.ogg",
     "static/media/pokemon-opening.mp3": "/lusamine/static/media/pokemon-opening.7140bc35.mp3",
@@ -21,8 +21,8 @@
   },
   "entrypoints": [
     "static/js/runtime-main.91c60f54.js",
-    "static/js/2.881e12c5.chunk.js",
+    "static/js/2.80cf6e4d.chunk.js",
     "static/css/main.5edfee4c.chunk.css",
-    "static/js/main.f9a68a5c.chunk.js"
+    "static/js/main.5074aef1.chunk.js"
   ]
 }
