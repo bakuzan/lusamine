@@ -5,10 +5,13 @@ import {
   isVariantPokemon,
   isVariantRegionMatch,
   isAltFormPokemon,
-  isEmptyPokemon
+  isEmptyPokemon,
+  isBasePokemon
 } from 'utils/derivedData';
 import { iterateMapToArray } from 'utils/common';
 import { merge, distinct } from 'utils/lists';
+
+export const orderKeys = ['nationalPokedexNumber', 'id'];
 
 function formsForNPN(mons, npn) {
   return mons.filter(
@@ -53,7 +56,7 @@ function getMegaEvolutions(dex, data) {
 }
 
 function getDevolves(dex, data, exhaustive) {
-  const { nationalPokedexNumber: npn } = data;
+  const { nationalPokedexNumber: npn, generation } = data;
   const isVariant = isVariantPokemon(data);
   const [rSuff, rNumSuff] = data.id.split('_').slice(2);
 
@@ -75,17 +78,19 @@ function getDevolves(dex, data, exhaustive) {
       (evolvesToMatchedForm.includes(x.nationalPokedexNumber) &&
         x.form === data.form);
 
+    const hasRegional = x.evolutions.some((e) => e.regionId);
+    const hasEvolutionCondition = x.evolutions.some(
+      (e) => e.evolvesTo === npn && (!hasRegional || e.regionId === generation)
+    );
+
     return (
       (nonVariantMatch || variantMatch) &&
-      x.evolutions.some((e) => e.evolvesTo === npn) &&
+      hasEvolutionCondition &&
       matchedFormCondition
     );
   });
 
-  return orderBy(devolves, ['nationalPokedexNumber', 'id']).map((x) => [
-    'Devolve to ',
-    x
-  ]);
+  return orderBy(devolves, orderKeys).map((x) => ['Devolve to ', x]);
 }
 
 function getEvolves(dex, data, exhaustive) {
@@ -119,7 +124,7 @@ function getEvolves(dex, data, exhaustive) {
           (isVariant === isVariantRegionMatch(data, m) || x.regionId)
       );
 
-      const hasV = vs.some((v) => isVariantPokemon(v));
+      const hasV = vs.some(isVariantPokemon);
 
       let xMons = [];
       if (isVariant && !exhaustive) {
@@ -127,7 +132,7 @@ function getEvolves(dex, data, exhaustive) {
       } else if (hasV && (!regionals.length || exhaustive)) {
         xMons = vs;
       } else {
-        xMons = vs.filter((v) => !isVariantPokemon(v));
+        xMons = vs.filter(isBasePokemon);
       }
 
       const evos = xMons.filter(
@@ -141,10 +146,7 @@ function getEvolves(dex, data, exhaustive) {
     }, []);
 
   evolves = exhaustive ? includeForms(pokemon, evolves) : evolves;
-  return orderBy(evolves, ['nationalPokedexNumber', 'id']).map((x) => [
-    'Evolve to ',
-    x
-  ]);
+  return orderBy(evolves, orderKeys).map((x) => ['Evolve to ', x]);
 }
 
 export default function generateEvolutionOptions(
@@ -186,9 +188,9 @@ export default function generateEvolutionOptions(
   return {
     devolves: getDevolves(dex, data, exhaustive),
     evolves: getEvolves(dex, data, exhaustive),
-    forms,
+    forms: orderBy(forms, orderKeys),
     megas: getMegaEvolutions(dex, data),
-    variants,
+    variants: orderBy(variants, orderKeys),
     asList() {
       return [...this.devolves, ...this.evolves, ...this.megas];
     },

@@ -1,6 +1,7 @@
 import React, { useContext, useMemo } from 'react';
 
 import { capitaliseEachWord } from 'ayaka/capitalise';
+import orderBy from 'ayaka/orderBy';
 import { default as MkoList } from 'meiko/List';
 import SelectBox from 'meiko/SelectBox';
 import { useWindowSize } from 'meiko/hooks/useWindowSize';
@@ -14,7 +15,9 @@ import PokedexMember from './PokedexMember';
 import { PokedexContext } from 'context';
 import Routes from 'constants/routes';
 import { getUrlQueryStringAsObject } from 'utils/common';
-import generateEvolutionOptions from 'utils/generateEvolutionOptions';
+import generateEvolutionOptions, {
+  orderKeys
+} from 'utils/generateEvolutionOptions';
 import { isXS } from 'utils/media';
 import { merge, distinct } from 'utils/lists';
 import buildControlText from './buildControlText';
@@ -149,7 +152,7 @@ function Pokedex({ match, location, history }) {
             <List
               className="evolution-tree__list"
               columns={1}
-              items={distinct('id', merge(variants, forms))}
+              items={orderBy(distinct('id', merge(variants, forms)), orderKeys)}
               itemTemplate={(item) => (
                 <PokedexMember
                   key={item.id}

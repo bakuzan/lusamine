@@ -63,6 +63,8 @@ export function isNotBasePokemon(mon) {
   );
 }
 
+export const isBasePokemon = (mon) => !isNotBasePokemon(mon);
+
 const getIdParts = (id) => id.split('_').slice(2);
 
 export function isVariantRegionMatch(p1, p2) {
