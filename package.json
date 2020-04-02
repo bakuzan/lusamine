@@ -6,35 +6,33 @@
   "dependencies": {
     "ayaka": "file:../ayaka/build",
     "classnames": "^2.2.6",
-    "husky": "^3.1.0",
-    "lint-staged": "^9.5.0",
+    "husky": "^4.2.3",
+    "lint-staged": "^10.1.1",
     "meiko": "file:../meiko/build",
-    "nano-css": "^5.2.1",
+    "nano-css": "^5.3.0",
     "node-sass": "^4.13.1",
-    "prettier": "^1.19.1",
-    "react": "^16.12.0",
-    "react-dnd": "^9.5.1",
-    "react-dnd-html5-backend": "^9.5.1",
-    "react-dnd-touch-backend": "^9.5.1",
-    "react-dom": "^16.12.0",
+    "prettier": "^2.0.2",
+    "react": "^16.13.1",
+    "react-dnd": "^10.0.2",
+    "react-dnd-html5-backend": "^10.0.2",
+    "react-dnd-touch-backend": "^10.0.2",
+    "react-dom": "^16.13.1",
     "react-helmet-async": "^1.0.4",
     "react-router-dom": "^5.1.2",
-    "react-scripts": "3.3.1",
+    "react-scripts": "3.4.1",
     "react-window": "^1.8.5"
   },
   "lint-staged": {
     "{,src,tools}/**/*.{ts,js,jsx,json,scss}": [
-      "prettier --single-quote --write",
-      "git add"
+      "prettier --write"
     ]
   },
   "husky": {
     "hooks": {
-      "pre-commit": "npm run precommit-msg && npm run lint"
+      "pre-commit": "npm run lint"
     }
   },
   "scripts": {
-    "precommit-msg": "echo 'Precommit checks...'",
     "lint": "lint-staged",
     "start": "for /f %i in ('git rev-parse --abbrev-ref HEAD') do set REACT_APP_BRANCH=%i && react-scripts start",
     "build": "for /f %i in ('git rev-parse --abbrev-ref HEAD') do set REACT_APP_BRANCH=%i && react-scripts build",
@@ -47,21 +45,21 @@
     "check-images": "ts-node -P ./tools/tsconfig.json -r tsconfig-paths/register ./tools/images/compareImageFolders.ts"
   },
   "devDependencies": {
-    "@types/cheerio": "^0.22.16",
+    "@types/cheerio": "^0.22.17",
     "@types/minimist": "^1.2.0",
     "chalk": "^2.4.2",
-    "cheerio": "^1.0.0-rc.2",
-    "gh-pages": "^2.0.1",
-    "got": "^10.5.7",
+    "cheerio": "^1.0.0-rc.3",
+    "gh-pages": "^2.2.0",
+    "got": "^10.7.0",
     "medea": "file:../medea",
-    "minimist": "^1.2.2",
-    "stdio": "^2.0.1",
-    "ts-node": "^8.6.2",
+    "minimist": "^1.2.5",
+    "stdio": "^2.1.1",
+    "ts-node": "^8.8.1",
     "tsconfig-paths": "^3.9.0",
-    "tslint": "^6.0.0",
+    "tslint": "^6.1.1",
     "tslint-config-prettier": "^1.18.0",
-    "tslint-plugin-prettier": "^2.1.0",
-    "typescript": "^3.7.5"
+    "tslint-plugin-prettier": "^2.3.0",
+    "typescript": "^3.8.3"
   },
   "browserslist": [
     "> 1%",
