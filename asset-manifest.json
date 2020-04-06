@@ -1,17 +1,17 @@
 {
   "files": {
     "main.css": "/lusamine/static/css/main.5edfee4c.chunk.css",
-    "main.js": "/lusamine/static/js/main.5074aef1.chunk.js",
-    "main.js.map": "/lusamine/static/js/main.5074aef1.chunk.js.map",
-    "runtime-main.js": "/lusamine/static/js/runtime-main.91c60f54.js",
-    "runtime-main.js.map": "/lusamine/static/js/runtime-main.91c60f54.js.map",
-    "static/js/2.80cf6e4d.chunk.js": "/lusamine/static/js/2.80cf6e4d.chunk.js",
-    "static/js/2.80cf6e4d.chunk.js.map": "/lusamine/static/js/2.80cf6e4d.chunk.js.map",
+    "main.js": "/lusamine/static/js/main.87a4ac4c.chunk.js",
+    "main.js.map": "/lusamine/static/js/main.87a4ac4c.chunk.js.map",
+    "runtime-main.js": "/lusamine/static/js/runtime-main.a2701236.js",
+    "runtime-main.js.map": "/lusamine/static/js/runtime-main.a2701236.js.map",
+    "static/js/2.64cc980b.chunk.js": "/lusamine/static/js/2.64cc980b.chunk.js",
+    "static/js/2.64cc980b.chunk.js.map": "/lusamine/static/js/2.64cc980b.chunk.js.map",
     "index.html": "/lusamine/index.html",
-    "precache-manifest.1aafc684b36c23365378fabe61e395c1.js": "/lusamine/precache-manifest.1aafc684b36c23365378fabe61e395c1.js",
+    "precache-manifest.87158144d28b9e3432831e24b6fdc460.js": "/lusamine/precache-manifest.87158144d28b9e3432831e24b6fdc460.js",
     "service-worker.js": "/lusamine/service-worker.js",
     "static/css/main.5edfee4c.chunk.css.map": "/lusamine/static/css/main.5edfee4c.chunk.css.map",
-    "static/js/2.80cf6e4d.chunk.js.LICENSE.txt": "/lusamine/static/js/2.80cf6e4d.chunk.js.LICENSE.txt",
+    "static/js/2.64cc980b.chunk.js.LICENSE.txt": "/lusamine/static/js/2.64cc980b.chunk.js.LICENSE.txt",
     "static/media/ArtCard.scss": "/lusamine/static/media/art.f94417d4.png",
     "static/media/pokemon-opening.ogg": "/lusamine/static/media/pokemon-opening.0d0730eb.ogg",
     "static/media/pokemon-opening.mp3": "/lusamine/static/media/pokemon-opening.7140bc35.mp3",
@@ -20,9 +20,9 @@
     "static/media/TypeBlock.scss": "/lusamine/static/media/types.ecadccdc.webp"
   },
   "entrypoints": [
-    "static/js/runtime-main.91c60f54.js",
-    "static/js/2.80cf6e4d.chunk.js",
+    "static/js/runtime-main.a2701236.js",
+    "static/js/2.64cc980b.chunk.js",
     "static/css/main.5edfee4c.chunk.css",
-    "static/js/main.5074aef1.chunk.js"
+    "static/js/main.87a4ac4c.chunk.js"
   ]
 }
