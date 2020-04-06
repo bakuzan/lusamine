@@ -3,6 +3,7 @@ import classNames from 'classnames';
 import React, { useState, useContext, useMemo } from 'react';
 
 import { capitaliseEachWord } from 'ayaka/capitalise';
+import generateUniqueId from 'ayaka/generateUniqueId';
 import Icons from 'meiko/constants/icons';
 import ArtCard from 'components/ArtCard';
 import {
@@ -46,6 +47,7 @@ const TeamMember = React.memo(
     ref
   ) {
     const { pokedex } = useContext(PokedexContext);
+    const [memberId] = useState(() => `${data.id}_${generateUniqueId()}`);
     const [displayEvolveMenu, setDisplayEvolveMenu] = useState(false);
 
     const hasData = !data.isEmpty;
@@ -67,7 +69,7 @@ const TeamMember = React.memo(
       return (
         <li
           ref={ref}
-          id={data.id}
+          id={memberId}
           className={classNames(
             'team-member',
             {
@@ -123,7 +125,7 @@ const TeamMember = React.memo(
     return (
       <li
         ref={ref}
-        id={data.id}
+        id={memberId}
         className={classNames(
           'team-member',
           {
@@ -143,7 +145,7 @@ const TeamMember = React.memo(
               })}
             >
               <p
-                id={`pokedexDescription_${data.id}`}
+                id={`pokedexDescription_${memberId}`}
                 className="for-screenreader-only"
               >
                 Click the national pokedex number of{' '}
@@ -153,7 +155,7 @@ const TeamMember = React.memo(
               <ButtonisedNavLink
                 className="team-member__pokedex-link"
                 to={pokedexUrl}
-                aria-describedby={`pokedexDescription_${data.id}`}
+                aria-describedby={`pokedexDescription_${memberId}`}
               >
                 {`#${data.nationalPokedexNumber}`}
               </ButtonisedNavLink>
@@ -182,9 +184,9 @@ const TeamMember = React.memo(
         </div>
         <div
           className={classNames('team-member__action-container')}
-          aria-describedby={`memberActions_${data.id}`}
+          aria-describedby={`memberActions_${memberId}`}
         >
-          <p id={`memberActions_${data.id}`} className="for-screenreader-only">
+          <p id={`memberActions_${memberId}`} className="for-screenreader-only">
             Here are a range of team member actions including the ability to
             move the team member left or right in the team, and evolve/devolve
             the team member. These actions can be enabled/disabled in the

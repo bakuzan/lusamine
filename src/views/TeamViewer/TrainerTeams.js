@@ -34,6 +34,7 @@ function TrainerTeamViewer() {
               </ButtonisedNavLink>
             </div>
             <Team
+              id={t.id}
               name={t.name}
               types={typeMatches}
               members={selectMembersFromPokedexAllowDuplicates(

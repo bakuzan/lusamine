@@ -153,6 +153,7 @@ class TeamViewer extends React.Component {
                       />
                     </div>
                     <Team
+                      id={t.id}
                       name={t.name}
                       types={typeMatches}
                       members={selectMembersFromPokedex(pokedex, t.memberIds)}

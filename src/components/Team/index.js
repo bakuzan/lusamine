@@ -156,6 +156,7 @@ class Team extends React.PureComponent {
             )}
           />
           <TeamBreakdown
+            id={this.props.id}
             teamName={`team ${this.props.name || 'nameless'}`}
             members={this.state.members}
             onMouseState={this.handleMouseState}
@@ -167,6 +168,7 @@ class Team extends React.PureComponent {
 }
 
 Team.propTypes = {
+  id: PropTypes.string,
   name: PropTypes.string,
   types: PropTypes.object.isRequired,
   members: PropTypes.object,

@@ -126,7 +126,11 @@ function Pokedex({ match, location, history }) {
           />
         )}
       </div>
-      {activeMon && <TeamMember data={activeMon} />}
+      {activeMon && (
+        <MkoList>
+          {[<TeamMember key="activeMember" data={activeMon} />]}
+        </MkoList>
+      )}
       <div className="pokedex__information pokemon-information">
         <MkoList className="pokemon-information__block pokemon-information__block--large evolution-tree">
           {hasDevolves && (

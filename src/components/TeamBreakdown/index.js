@@ -49,6 +49,7 @@ class TeamBreakdown extends React.Component {
       members
     } = this.props;
 
+    const teamId = this.props.id;
     const isCollapsed = !alwaysOpen && this.state.isCollapsed;
     const renderNonTypes = !typeBreakdownOnly;
     const noMembers = members.size === 0;
@@ -80,7 +81,7 @@ class TeamBreakdown extends React.Component {
         </p>
         {!alwaysOpen && (
           <Button
-            id="toggle-breakdown"
+            id={`toggle-breakdown${teamId ? `_${teamId}` : ''}`}
             isAction
             className={classNames('team-breakdown__action')}
             disabled={!enableToggle}
