@@ -15,9 +15,8 @@ import PokedexMember from './PokedexMember';
 import { PokedexContext } from 'context';
 import Routes from 'constants/routes';
 import { getUrlQueryStringAsObject } from 'utils/common';
-import generateEvolutionOptions, {
-  orderKeys
-} from 'utils/generateEvolutionOptions';
+import generateEvolutionOptions from 'utils/generateEvolutionOptions';
+import { orderKeys } from 'utils/generateEvolutionOptions/helpers';
 import { isXS } from 'utils/media';
 import { merge, distinct } from 'utils/lists';
 import buildControlText from './buildControlText';
