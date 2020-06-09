@@ -37,9 +37,7 @@ function createEmptyPokemon() {
 }
 
 export const generateEmptySlots = () => {
-  const emptySlots = Array(Party.MAX_SIZE)
-    .fill(null)
-    .map(createEmptyPokemon);
+  const emptySlots = Array(Party.MAX_SIZE).fill(null).map(createEmptyPokemon);
 
   return new Map(emptySlots);
 };
@@ -73,3 +71,5 @@ export function isVariantRegionMatch(p1, p2) {
 
   return isVariantPokemon(p1) && isVariantPokemon(p2) && r1 === r2 && f1 === f2;
 }
+
+export const hasForm = (mon) => mon.form !== '';

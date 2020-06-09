@@ -1,10 +1,11 @@
 import orderBy from 'ayaka/orderBy';
-import { evolvesToMatchedForm } from 'constants/evolutions';
+import { evolvesToMatchedForm, excludeAltForm } from 'constants/evolutions';
 import {
   isVariantPokemon,
   isVariantRegionMatch,
   isAltFormPokemon,
-  isBasePokemon
+  isBasePokemon,
+  hasForm
 } from 'utils/derivedData';
 import { iterateMapToArray } from 'utils/common';
 
@@ -14,6 +15,7 @@ export default function getEvolves(dex, data, exhaustive) {
   const { nationalPokedexNumber: npn, evolutions: baseEvolutions } = data;
   const pokemon = iterateMapToArray(dex);
   const isVariant = isVariantPokemon(data);
+  const hasAForm = hasForm(data);
   let evolutions = [...baseEvolutions];
 
   const regionals = pokemon.filter(
@@ -37,7 +39,6 @@ export default function getEvolves(dex, data, exhaustive) {
       const vs = pokemon.filter(
         (m) =>
           m.nationalPokedexNumber === x.evolvesTo &&
-          !isAltFormPokemon(m) &&
           (isVariant === isVariantRegionMatch(data, m) || x.regionId)
       );
 
@@ -49,18 +50,32 @@ export default function getEvolves(dex, data, exhaustive) {
       } else if (hasV && (!regionals.length || exhaustive)) {
         xMons = vs;
       } else {
-        xMons = vs.filter(isBasePokemon);
+        xMons = vs.filter((x) => isBasePokemon(x) || isAltFormPokemon(x));
       }
 
       const evos = xMons.filter(
         (x) =>
-          !evolvesToMatchedForm.includes(x.nationalPokedexNumber) ||
+          (!evolvesToMatchedForm.includes(x.nationalPokedexNumber) &&
+            !(excludeAltForm.includes(x.nationalPokedexNumber) && x.form)) ||
           (evolvesToMatchedForm.includes(x.nationalPokedexNumber) &&
             x.form === data.form)
       );
 
       return [...p, ...evos];
     }, []);
+
+  // Special temporary state "sideways" evolves
+  // E.g. Darmanitan <-> Darmanitan (Zen)
+  if (!exhaustive && excludeAltForm.includes(npn)) {
+    evolves.push(
+      ...pokemon.filter(
+        (m) =>
+          npn === m.nationalPokedexNumber &&
+          isVariant === isVariantPokemon(m) &&
+          hasAForm !== hasForm(m)
+      )
+    );
+  }
 
   evolves = exhaustive ? includeForms(pokemon, evolves) : evolves;
   return orderBy(evolves, orderKeys).map((x) => ['Evolve to ', x]);
