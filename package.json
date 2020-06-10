@@ -29,7 +29,7 @@
   },
   "husky": {
     "hooks": {
-      "pre-commit": "npm run lint"
+      "pre-commit": "npm run lint && npm run test:once"
     }
   },
   "scripts": {
@@ -37,7 +37,8 @@
     "start": "for /f %i in ('git rev-parse --abbrev-ref HEAD') do set REACT_APP_BRANCH=%i && react-scripts start",
     "build": "for /f %i in ('git rev-parse --abbrev-ref HEAD') do set REACT_APP_BRANCH=%i && react-scripts build",
     "test": "react-scripts test --env=jsdom",
-    "eject": "react-scripts eject",
+    "test:once": "react-scripts test --env=jsdom --watchAll=false",
+    "test:coverage": "react-scripts test --env=jsdom --coverage",
     "deploy": "npm run build && gh-pages -d build",
     "scrape:data": "ts-node -P ./tools/tsconfig.json -r tsconfig-paths/register ./tools/index.ts",
     "scrape:image": "ts-node -P ./tools/tsconfig.json -r tsconfig-paths/register ./tools/images/index.ts",
