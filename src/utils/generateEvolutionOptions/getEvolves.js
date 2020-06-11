@@ -65,13 +65,14 @@ export default function getEvolves(dex, data, exhaustive) {
     }, []);
 
   // Special temporary state "sideways" evolves
-  // E.g. Darmanitan <-> Darmanitan (Zen)
+  // E.g. Darmanitan -> Darmanitan (Zen)
   if (!exhaustive && excludeAltForm.includes(npn)) {
     evolves.push(
       ...pokemon.filter(
         (m) =>
           npn === m.nationalPokedexNumber &&
           isVariant === isVariantPokemon(m) &&
+          !hasAForm &&
           hasAForm !== hasForm(m)
       )
     );

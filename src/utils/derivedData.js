@@ -65,11 +65,16 @@ export const isBasePokemon = (mon) => !isNotBasePokemon(mon);
 
 const getIdParts = (id) => id.split('_').slice(2);
 
-export function isVariantRegionMatch(p1, p2) {
+export function isVariantRegionMatch(p1, p2, matchForms = true) {
   const [r1, f1] = getIdParts(p1.id);
   const [r2, f2] = getIdParts(p2.id);
 
-  return isVariantPokemon(p1) && isVariantPokemon(p2) && r1 === r2 && f1 === f2;
+  return (
+    isVariantPokemon(p1) &&
+    isVariantPokemon(p2) &&
+    r1 === r2 &&
+    ((matchForms && f1 === f2) || !matchForms)
+  );
 }
 
 export const hasForm = (mon) => mon.form !== '';

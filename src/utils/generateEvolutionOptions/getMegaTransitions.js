@@ -1,6 +1,6 @@
 import { isMegaPokemon } from 'utils/derivedData';
 
-export default function getMegaEvolutions(dex, data) {
+export default function getMegaTransitions(dex, data) {
   const { nationalPokedexNumber: npn } = data;
   const isMega = isMegaPokemon(data);
 

@@ -1,23 +1,25 @@
 import { capitaliseEachWord } from 'ayaka/capitalise';
 import Strings from 'constants/strings';
 
-const TEAMS = 'teams';
-const SETTINGS = 'settings';
-const POKEDEX = 'pokedex';
-const STATISTICS = 'team-statistics';
+export const RouteKeyWords = {
+  TEAMS: 'teams',
+  SETTINGS: 'settings',
+  POKEDEX: 'pokedex',
+  STATISTICS: 'team-statistics'
+};
 
 export default function getPageTitleForCurrentPath(pathname, search) {
   const path = `${pathname}${search}`;
 
   let key = 'planner';
 
-  if (path.includes(TEAMS)) {
+  if (path.includes(RouteKeyWords.TEAMS)) {
     key = path.includes('Trainer') ? 'trainerTeams' : 'savedTeams';
-  } else if (path.includes(SETTINGS)) {
+  } else if (path.includes(RouteKeyWords.SETTINGS)) {
     key = 'settings';
-  } else if (path.includes(POKEDEX)) {
+  } else if (path.includes(RouteKeyWords.POKEDEX)) {
     key = 'pokedex';
-  } else if (path.includes(STATISTICS)) {
+  } else if (path.includes(RouteKeyWords.STATISTICS)) {
     key = 'teamStatistics';
   }
 

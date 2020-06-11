@@ -14,6 +14,7 @@ it('should return empty options for empty pokemon', () => {
   const mon = { nationalPokedexNumber: 0 };
   const result = generateEvolutionOptions(pokedex, mon);
 
+  expect(result.asList()).toEqual([]);
   expect(result.count()).toEqual(0);
   expect(result.forms.length).toEqual(0);
   expect(result.variants.length).toEqual(0);
@@ -90,13 +91,13 @@ it('should return options for pokemon (no evolution)', () => {
 
 it('should return options for mega pokemon (with lower levels)', () => {
   const mon = pokedex.get('m_181');
-  const expected = devolvesTo(pokedex.get('p_180'), pokedex.get('p_181'));
+  const expected = devolvesTo(pokedex.get('p_181'));
 
   const result = generateEvolutionOptions(pokedex, mon);
 
   expect(result.asList()).toEqual(expected);
   expect(result.count()).toEqual(expected.length);
-  expect(result.devolves.length).toEqual(1);
+  expect(result.devolves.length).toEqual(0);
   expect(result.evolves.length).toEqual(0);
   expect(result.megas.length).toEqual(1);
 });
@@ -170,16 +171,16 @@ it('should return options for pokemon (with regional evolution)', () => {
 
 // Special pokemon specific cases...
 
-xit('should return options for pokemon (with regional evolution - far`fetchd case)', () => {
-  const mon = pokedex.get('p_83');
-  const expected = evolvesTo(pokedex.get('v_83_r8'));
+it(`should return options for pokemon (with regional evolution - sirfetch'd case)`, () => {
+  const mon = pokedex.get('p_865');
+  const expected = devolvesTo(pokedex.get('v_83_r8'));
 
   const result = generateEvolutionOptions(pokedex, mon);
 
   expect(result.asList()).toEqual(expected);
   expect(result.count()).toEqual(expected.length);
-  expect(result.devolves.length).toEqual(0);
-  expect(result.evolves.length).toEqual(1);
+  expect(result.devolves.length).toEqual(1);
+  expect(result.evolves.length).toEqual(0);
 });
 
 it('should return options for regional variant (evolve to regular pokemon - meowth case)', () => {
@@ -379,5 +380,55 @@ it('should return options for form pokemon (devolve to matching variant type pok
   expect(result.evolves.length).toEqual(1);
 });
 
-// TODO add the zen evolve/devolves!!!
-// TODO test the other utils..
+it('should return options for form pokemon (devolve to matching variant type pokemon, base pokemon - darmanitan case)', () => {
+  let mon = pokedex.get('p_555_1');
+  let expected = devolvesTo(pokedex.get('p_555'));
+
+  let result = generateEvolutionOptions(pokedex, mon);
+
+  expect(result.asList()).toEqual(expected);
+  expect(result.count()).toEqual(expected.length);
+  expect(result.devolves.length).toEqual(1);
+  expect(result.evolves.length).toEqual(0);
+
+  mon = pokedex.get('v_555_r8_1');
+  expected = devolvesTo(pokedex.get('v_555_r8'));
+
+  result = generateEvolutionOptions(pokedex, mon);
+
+  expect(result.asList()).toEqual(expected);
+  expect(result.count()).toEqual(expected.length);
+  expect(result.devolves.length).toEqual(1);
+  expect(result.evolves.length).toEqual(0);
+});
+
+// Exhaustive
+it('should return options for pokemon (exhaustive)', () => {
+  const mon = pokedex.get('p_52');
+  const expected = evolvesTo(
+    pokedex.get('p_53'),
+    pokedex.get('v_53'),
+    pokedex.get('p_863')
+  );
+
+  const result = generateEvolutionOptions(pokedex, mon, true);
+
+  expect(result.asList()).toEqual(expected);
+  expect(result.count()).toEqual(expected.length);
+  expect(result.devolves.length).toEqual(0);
+  expect(result.evolves.length).toEqual(3);
+  expect(result.variants.length).toEqual(3);
+});
+
+it('should return options for pokemon (exhaustive, with devolves)', () => {
+  const mon = pokedex.get('p_53');
+  const expected = devolvesTo(pokedex.get('p_52'), pokedex.get('v_52'));
+
+  const result = generateEvolutionOptions(pokedex, mon, true);
+
+  expect(result.asList()).toEqual(expected);
+  expect(result.count()).toEqual(expected.length);
+  expect(result.devolves.length).toEqual(2);
+  expect(result.evolves.length).toEqual(0);
+  expect(result.variants.length).toEqual(2);
+});

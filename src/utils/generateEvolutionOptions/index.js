@@ -5,7 +5,7 @@ import { iterateMapToArray } from 'utils/common';
 
 import getEvolves from './getEvolves';
 import getDevolves from './getDevolves';
-import getMegaEvolves from './getMegaEvolves';
+import getMegaTransitions from './getMegaTransitions';
 import { formsForNPN, orderKeys } from './helpers';
 
 export default function generateEvolutionOptions(
@@ -48,7 +48,7 @@ export default function generateEvolutionOptions(
     devolves: getDevolves(dex, data, exhaustive),
     evolves: getEvolves(dex, data, exhaustive),
     forms: orderBy(forms, orderKeys),
-    megas: getMegaEvolves(dex, data),
+    megas: getMegaTransitions(dex, data),
     variants: orderBy(variants, orderKeys),
     asList() {
       return [...this.devolves, ...this.evolves, ...this.megas];
