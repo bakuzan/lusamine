@@ -6,7 +6,12 @@ const readdirAsync = promisify(fs.readdir);
 
 function report(name: string, list: string[]) {
   console.log(`\n${name}:`);
-  list.forEach((s) => console.log(s));
+
+  if (list.length) {
+    list.forEach((s) => console.log(s));
+  } else {
+    console.log('None.');
+  }
 }
 
 async function run() {

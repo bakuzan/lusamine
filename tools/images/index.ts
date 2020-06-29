@@ -13,8 +13,12 @@ import { constructPokedex } from '@src/data';
 import fetchPage from '@/readCachedFile';
 import Enums, { ImageScrapeTarget } from '@/enums';
 import Mappers from '@/mappers';
-import { checkImgForVariant } from '@/processors';
-import { filterFalsey, getFirstValidAttributeValue, prop } from '@/utils';
+import {
+  checkImgForVariant,
+  filterFalsey,
+  getFirstValidAttributeValue,
+  prop
+} from '@/utils';
 
 const writeAsync = promisify(fs.writeFile);
 const pipeline = promisify(stream.pipeline);
