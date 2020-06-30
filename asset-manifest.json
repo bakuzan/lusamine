@@ -1,28 +1,28 @@
 {
   "files": {
-    "main.css": "/lusamine/static/css/main.5edfee4c.chunk.css",
-    "main.js": "/lusamine/static/js/main.dcc7ff05.chunk.js",
-    "main.js.map": "/lusamine/static/js/main.dcc7ff05.chunk.js.map",
-    "runtime-main.js": "/lusamine/static/js/runtime-main.a2701236.js",
-    "runtime-main.js.map": "/lusamine/static/js/runtime-main.a2701236.js.map",
-    "static/js/2.bb6c6352.chunk.js": "/lusamine/static/js/2.bb6c6352.chunk.js",
-    "static/js/2.bb6c6352.chunk.js.map": "/lusamine/static/js/2.bb6c6352.chunk.js.map",
+    "main.css": "/lusamine/static/css/main.877124c3.chunk.css",
+    "main.js": "/lusamine/static/js/main.eefc52fb.chunk.js",
+    "main.js.map": "/lusamine/static/js/main.eefc52fb.chunk.js.map",
+    "runtime-main.js": "/lusamine/static/js/runtime-main.91c60f54.js",
+    "runtime-main.js.map": "/lusamine/static/js/runtime-main.91c60f54.js.map",
+    "static/js/2.885e2696.chunk.js": "/lusamine/static/js/2.885e2696.chunk.js",
+    "static/js/2.885e2696.chunk.js.map": "/lusamine/static/js/2.885e2696.chunk.js.map",
     "index.html": "/lusamine/index.html",
-    "precache-manifest.b6ab29badc4be684d5ddbf0498f5737a.js": "/lusamine/precache-manifest.b6ab29badc4be684d5ddbf0498f5737a.js",
+    "precache-manifest.0ac8912961b0b95672cb83432c643c71.js": "/lusamine/precache-manifest.0ac8912961b0b95672cb83432c643c71.js",
     "service-worker.js": "/lusamine/service-worker.js",
-    "static/css/main.5edfee4c.chunk.css.map": "/lusamine/static/css/main.5edfee4c.chunk.css.map",
-    "static/js/2.bb6c6352.chunk.js.LICENSE.txt": "/lusamine/static/js/2.bb6c6352.chunk.js.LICENSE.txt",
-    "static/media/ArtCard.scss": "/lusamine/static/media/art.f94417d4.png",
+    "static/css/main.877124c3.chunk.css.map": "/lusamine/static/css/main.877124c3.chunk.css.map",
+    "static/js/2.885e2696.chunk.js.LICENSE.txt": "/lusamine/static/js/2.885e2696.chunk.js.LICENSE.txt",
+    "static/media/ArtCard.scss": "/lusamine/static/media/art.1cd4efae.webp",
     "static/media/pokemon-opening.ogg": "/lusamine/static/media/pokemon-opening.0d0730eb.ogg",
     "static/media/pokemon-opening.mp3": "/lusamine/static/media/pokemon-opening.7140bc35.mp3",
     "static/media/index.scss": "/lusamine/static/media/roboto-mono.e92cc0fb.woff2",
-    "static/media/Sprite.scss": "/lusamine/static/media/sprites.e97dc208.png",
+    "static/media/Sprite.scss": "/lusamine/static/media/sprites.76157acd.png",
     "static/media/TypeBlock.scss": "/lusamine/static/media/types.ecadccdc.webp"
   },
   "entrypoints": [
-    "static/js/runtime-main.a2701236.js",
-    "static/js/2.bb6c6352.chunk.js",
-    "static/css/main.5edfee4c.chunk.css",
-    "static/js/main.dcc7ff05.chunk.js"
+    "static/js/runtime-main.91c60f54.js",
+    "static/js/2.885e2696.chunk.js",
+    "static/css/main.877124c3.chunk.css",
+    "static/js/main.eefc52fb.chunk.js"
   ]
 }
