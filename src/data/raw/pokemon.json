@@ -5560,5 +5560,29 @@
     "name": "eternatus",
     "typeIds": [7, 15],
     "form": ""
+  },
+  {
+    "nationalPokedexNumber": 891,
+    "name": "kubfu",
+    "typeIds": [5],
+    "form": ""
+  },
+  {
+    "nationalPokedexNumber": 892,
+    "name": "urshifu",
+    "typeIds": [5, 16],
+    "form": "single strike"
+  },
+  {
+    "nationalPokedexNumber": 892,
+    "name": "urshifu",
+    "typeIds": [5, 4],
+    "form": "rapid strike"
+  },
+  {
+    "nationalPokedexNumber": 893,
+    "name": "zarude",
+    "typeIds": [16, 2],
+    "form": ""
   }
 ]

@@ -432,3 +432,17 @@ it('should return options for pokemon (exhaustive, with devolves)', () => {
   expect(result.evolves.length).toEqual(0);
   expect(result.variants.length).toEqual(2);
 });
+
+it('should return options for variant pokemon (do not return mega options)', () => {
+  const mon = pokedex.get('v_80_r8');
+  const expected = devolvesTo(pokedex.get('v_79_r8'));
+
+  const result = generateEvolutionOptions(pokedex, mon, true);
+
+  expect(result.asList()).toEqual(expected);
+  expect(result.count()).toEqual(expected.length);
+  expect(result.devolves.length).toEqual(1);
+  expect(result.evolves.length).toEqual(0);
+  expect(result.variants.length).toEqual(2);
+  expect(result.megas.length).toEqual(0);
+});

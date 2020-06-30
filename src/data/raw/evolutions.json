@@ -105,7 +105,7 @@
     "nationalPokedexNumber": 25,
     "evolvesTo": 26,
     "mechanism": 11,
-    "note": "Thunder Stone"
+    "note": "Thunder Stone (Alola)"
   },
   {
     "nationalPokedexNumber": 27,
@@ -379,6 +379,12 @@
     "note": "Trade holding King's Rock"
   },
   {
+    "nationalPokedexNumber": 79,
+    "evolvesTo": 80,
+    "mechanism": 1,
+    "note": "Galarica Cuff"
+  },
+  {
     "nationalPokedexNumber": 81,
     "evolvesTo": 82,
     "mechanism": 1,
@@ -388,7 +394,7 @@
     "nationalPokedexNumber": 82,
     "evolvesTo": 462,
     "mechanism": 4,
-    "note": "Level up in a special magnetic field"
+    "note": "Level up in a special magnetic field or use Thunder Stone (SwSh)"
   },
   {
     "nationalPokedexNumber": 83,
@@ -467,13 +473,13 @@
     "nationalPokedexNumber": 102,
     "evolvesTo": 103,
     "mechanism": 11,
-    "note": "Leaf Stone"
+    "note": "Leaf Stone (Alola)"
   },
   {
     "nationalPokedexNumber": 104,
     "evolvesTo": 105,
-    "mechanism": 1,
-    "note": "Level 28"
+    "mechanism": 5,
+    "note": "Level 28 (night)"
   },
   {
     "nationalPokedexNumber": 236,
@@ -503,7 +509,7 @@
     "nationalPokedexNumber": 109,
     "evolvesTo": 110,
     "mechanism": 1,
-    "note": "Level 35"
+    "note": "Level 35 (Galar)"
   },
   {
     "nationalPokedexNumber": 111,
@@ -648,13 +654,13 @@
     "nationalPokedexNumber": 133,
     "evolvesTo": 470,
     "mechanism": 4,
-    "note": "Level up near Moss Rock or use Leaf Stone"
+    "note": "Level up near Moss Rock or use Leaf Stone (SwSh)"
   },
   {
     "nationalPokedexNumber": 133,
     "evolvesTo": 471,
     "mechanism": 4,
-    "note": "Level up near Ice Rock or use Ice Stone"
+    "note": "Level up near Ice Rock or use Ice Stone (SwSh)"
   },
   {
     "nationalPokedexNumber": 133,
@@ -1040,7 +1046,7 @@
     "nationalPokedexNumber": 268,
     "evolvesTo": 269,
     "mechanism": 10,
-    "note": "Level 10"
+    "note": "Cascoon"
   },
   {
     "nationalPokedexNumber": 270,
@@ -2445,13 +2451,13 @@
     "nationalPokedexNumber": 790,
     "evolvesTo": 791,
     "mechanism": 8,
-    "note": "Level 53 (Pokémon Sun and Ultra Sun)"
+    "note": "Level 53 (Pokémon Sun, Ultra Sun, and Sword)"
   },
   {
     "nationalPokedexNumber": 790,
     "evolvesTo": 792,
     "mechanism": 8,
-    "note": "Level 53 (Pokémon Moon and Ultra Moon)"
+    "note": "Level 53 (Pokémon Moon, Ultra Moon, and Shield)"
   },
   {
     "nationalPokedexNumber": 803,
@@ -2668,5 +2674,17 @@
     "evolvesTo": 887,
     "mechanism": 1,
     "note": "Level 60"
+  },
+  {
+    "nationalPokedexNumber": 891,
+    "evolvesTo": 892,
+    "mechanism": 1,
+    "note": "Train in The Tower of Darkness (Single Strike Style)"
+  },
+  {
+    "nationalPokedexNumber": 891,
+    "evolvesTo": 892,
+    "mechanism": 1,
+    "note": "Train in The Tower of Waters (Rapid Strike Style)"
   }
 ]

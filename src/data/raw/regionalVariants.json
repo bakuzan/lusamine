@@ -90,6 +90,11 @@
     "typeIds": [13]
   },
   {
+    "nationalPokedexNumber": 80,
+    "regionId": 8,
+    "typeIds": [7, 13]
+  },
+  {
     "nationalPokedexNumber": 83,
     "regionId": 8,
     "typeIds": [5]

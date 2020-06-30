@@ -1,9 +1,13 @@
-import { isMegaPokemon } from 'utils/derivedData';
+import { isMegaPokemon, isVariantPokemon } from 'utils/derivedData';
 
 export default function getMegaTransitions(dex, data) {
   const { nationalPokedexNumber: npn } = data;
-  const isMega = isMegaPokemon(data);
 
+  if (isVariantPokemon(data)) {
+    return [];
+  }
+
+  const isMega = isMegaPokemon(data);
   const megaIds = isMega
     ? [`p_${npn}`]
     : [`m_${npn}`, `m_${npn}x`, `m_${npn}y`];
