@@ -22,7 +22,7 @@ export function writeOut(name: string, json: any): Promise<boolean> {
   const fileName = path.resolve(path.join(__dirname, `../output/${name}.json`));
 
   return new Promise((resolve) => {
-    fs.writeFile(fileName, JSON.stringify(json, null, 2), function(err) {
+    fs.writeFile(fileName, JSON.stringify(json, null, 2), function (err) {
       if (err) {
         console.error(`Failed to write ${fileName}`, err);
         return resolve(false);
@@ -34,18 +34,13 @@ export function writeOut(name: string, json: any): Promise<boolean> {
   });
 }
 
-function cleanNumber(td: Cheerio) {
-  return Number(
-    td
-      .text()
-      .trim()
-      .slice(1)
-  );
+function cleanNumber(td: cheerio.Cheerio) {
+  return Number(td.text().trim().slice(1));
 }
 
 export async function baseHandler(
-  $: CheerioStatic,
-  bodys: CheerioElement[],
+  $: cheerio.Root,
+  bodys: cheerio.Element[],
   region: HandlerRegion
 ) {
   const ids: Record<string, number | undefined> = {};
@@ -94,8 +89,8 @@ export async function baseHandler(
 }
 
 export async function islandHandler(
-  $: CheerioStatic,
-  bodys: CheerioElement[],
+  $: cheerio.Root,
+  bodys: cheerio.Element[],
   region: HandlerRegion
 ) {
   const ids: Record<string, number | undefined> = {};

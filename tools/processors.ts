@@ -9,13 +9,13 @@ import { checkImgForVariant } from './utils';
 const buildOuputUrl = (fileName: string) =>
   path.join('./tools/output', fileName);
 
-async function pokedexProcessor($: CheerioStatic) {
+async function pokedexProcessor($: cheerio.Root) {
   const jsonEntries = Array.from($('table > tbody'))
     .slice(
       Enums.TABLE_COUNT_OFFSET,
       Enums.GENERATION_COUNT + Enums.TABLE_COUNT_OFFSET
     )
-    .reduce(function(result, data) {
+    .reduce(function (result, data) {
       return Array.from(data.children).reduce((acc, tr) => {
         const children = $(tr).children();
 
@@ -24,10 +24,7 @@ async function pokedexProcessor($: CheerioStatic) {
         }
 
         const variantRegion =
-          !children
-            .first()
-            .text()
-            .trim() && checkImgForVariant(children.eq(2));
+          !children.first().text().trim() && checkImgForVariant(children.eq(2));
 
         const tdNPN = children.eq(1);
         const tdName = children.eq(3);
@@ -65,10 +62,10 @@ async function pokedexProcessor($: CheerioStatic) {
   ];
 }
 
-async function evolutionProcessor($: CheerioStatic) {
+async function evolutionProcessor($: cheerio.Root) {
   const evolutions = Array.from($('table.roundy > tbody'))
     .slice(0, Enums.GENERATION_COUNT)
-    .reduce(function(result, data) {
+    .reduce(function (result, data) {
       return Array.from(data.children).reduce((acc, tr, i, trs) => {
         const prevChildren = i !== 0 ? $(trs[i - 1]).children() : null;
         const children = $(tr).children();
@@ -140,10 +137,10 @@ async function evolutionProcessor($: CheerioStatic) {
   ];
 }
 
-async function megaProcessor($: CheerioStatic) {
+async function megaProcessor($: cheerio.Root) {
   const megas = Array.from($('table.roundy > tbody'))
     .slice(0, 2)
-    .reduce(function(result, data) {
+    .reduce(function (result, data) {
       return Array.from(data.children).reduce((acc, tr) => {
         const children = $(tr).children();
 
@@ -155,14 +152,8 @@ async function megaProcessor($: CheerioStatic) {
         const tdData = isSecondMega ? children.first() : children.eq(4);
         const typeIndex = isSecondMega ? 1 : 5;
         const tdTypes = [
-          children
-            .eq(typeIndex)
-            .children()
-            .eq(0),
-          children
-            .eq(typeIndex)
-            .children()
-            .eq(1)
+          children.eq(typeIndex).children().eq(0),
+          children.eq(typeIndex).children().eq(1)
         ];
 
         const item = Mappers.mapElementsToMegaJson(tdData, tdTypes);

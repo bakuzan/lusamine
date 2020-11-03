@@ -130,6 +130,26 @@
     "typeIds": [14, 13]
   },
   {
+    "nationalPokedexNumber": 144,
+    "regionId": 8,
+    "typeIds": [13, 6]
+  },
+  {
+    "nationalPokedexNumber": 145,
+    "regionId": 8,
+    "typeIds": [5, 6]
+  },
+  {
+    "nationalPokedexNumber": 146,
+    "regionId": 8,
+    "typeIds": [16, 6]
+  },
+  {
+    "nationalPokedexNumber": 199,
+    "regionId": 8,
+    "typeIds": [7, 13]
+  },
+  {
     "nationalPokedexNumber": 222,
     "regionId": 8,
     "typeIds": [11]

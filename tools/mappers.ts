@@ -1,47 +1,32 @@
 import { Types, Evolutions } from './enums';
 import { prop } from './utils';
 
-const extractName = (td: Cheerio) =>
-  td
-    .children()
-    .first()
-    .text()
-    .toLowerCase();
+const extractName = (td: cheerio.Cheerio) =>
+  td.children().first().text().toLowerCase();
 
 const fixNPNStringToInt = (str = '') => Number(str.replace(/\D/g, ''));
 
-const processTdNPN = (td: Cheerio) => fixNPNStringToInt(td.text() || '');
+const processTdNPN = (td: cheerio.Cheerio) =>
+  fixNPNStringToInt(td.text() || '');
 
-function getNPNFromImg(td: Cheerio) {
-  const el = td
-    .children()
-    .first()
-    .children()
-    .first();
-  const src = el.attr('src');
+function getNPNFromImg(td: cheerio.Cheerio) {
+  const src = td.find('img').attr('src');
 
   if (!src) {
     return Number(0);
   }
 
-  const strNum = src.replace(/^.*\/|\D/g, '');
+  const strNum = src.replace(/^.*\/|MS.*$/g, '');
   return Number(strNum);
 }
 
-const processTdTypes = (tds: Cheerio[]) =>
+const processTdTypes = (tds: cheerio.Cheerio[]) =>
   tds.reduce<number[]>((types, td) => {
     if (!td || !td.children()) {
       return types;
     }
 
-    const key = (
-      td
-        .children()
-        .first()
-        .text() || ''
-    )
-      .toLowerCase()
-      .trim();
+    const key = (td.children().first().text() || '').toLowerCase().trim();
 
     if (!key) {
       return types;
@@ -114,9 +99,9 @@ function processEvolutionMechanism(howTxt: string) {
 }
 
 function mapElementsToPokemonJson(
-  tdNPN: Cheerio,
-  tdName: Cheerio,
-  tdTypes: Cheerio[]
+  tdNPN: cheerio.Cheerio,
+  tdName: cheerio.Cheerio,
+  tdTypes: cheerio.Cheerio[]
 ) {
   /* TODO
    * > Find a way to set the form...
@@ -131,9 +116,9 @@ function mapElementsToPokemonJson(
 }
 
 function mapElementsToVariantPokemonJson(
-  tdNPN: Cheerio,
+  tdNPN: cheerio.Cheerio,
   regionId: number,
-  tdTypes: Cheerio[]
+  tdTypes: cheerio.Cheerio[]
 ) {
   return {
     nationalPokedexNumber: processTdNPN(tdNPN),
@@ -157,7 +142,10 @@ function mapElementsToEvolutionJson(lastItem: any, rawData: any[]) {
   });
 }
 
-function mapElementsToMegaJson(tdData: Cheerio, tdTypes: Cheerio[]) {
+function mapElementsToMegaJson(
+  tdData: cheerio.Cheerio,
+  tdTypes: cheerio.Cheerio[]
+) {
   const aHref = tdData.children('a').attr('href') ?? '';
   const nationalPokedexNumber = fixNPNStringToInt(aHref);
   const strMatch = aHref.match(/_\w./g);

@@ -2,37 +2,37 @@ import { baseHandler, islandHandler } from './helpers';
 
 const handlers: Record<
   string,
-  (name: string, $: CheerioStatic) => Promise<boolean>
+  (name: string, $: cheerio.Root) => Promise<boolean>
 > = {
-  async kanto(name: string, $: CheerioStatic) {
+  async kanto(name: string, $: cheerio.Root) {
     const bodys = Array.from($('table > tbody'))
       .slice(0, -3)
       .filter((_, i) => i !== 4);
 
     return await baseHandler($, bodys, { number: 1, name });
   },
-  async new(name: string, $: CheerioStatic) {
+  async new(name: string, $: cheerio.Root) {
     const bodys = Array.from($('table > tbody')).slice(0, -3);
 
     return await baseHandler($, bodys, { number: 2, name });
   },
-  async johto(name: string, $: CheerioStatic) {
+  async johto(name: string, $: cheerio.Root) {
     const bodys = Array.from($('table > tbody')).slice(0, -3);
 
     return await baseHandler($, bodys, { number: 2, name, code: 'Johto' });
   },
-  async hoenn(name: string, $: CheerioStatic) {
+  async hoenn(name: string, $: cheerio.Root) {
     const bds = Array.from($('table > tbody'));
     const bodys = [...bds.slice(0, 4), ...bds.slice(5, -3)];
 
     return await baseHandler($, bodys, { number: 3, name });
   },
-  async hoenn_oras(name: string, $: CheerioStatic) {
+  async hoenn_oras(name: string, $: cheerio.Root) {
     const bodys = Array.from($('table > tbody')).slice(0, -3);
 
     return await baseHandler($, bodys, { number: 3, name, code: 'ORAS' });
   },
-  async sinnoh(name: string, $: CheerioStatic) {
+  async sinnoh(name: string, $: cheerio.Root) {
     const bodys_pt = Array.from($('table > tbody')).slice(0, -3);
     const bodys = bodys_pt.slice(0, -1);
 
@@ -43,17 +43,17 @@ const handlers: Record<
       code: 'Platinum'
     });
   },
-  async unova(name: string, $: CheerioStatic) {
+  async unova(name: string, $: cheerio.Root) {
     const bodys = Array.from($('table > tbody')).slice(0, -3);
 
     return await baseHandler($, bodys, { number: 5, name });
   },
-  async unova_n(name: string, $: CheerioStatic) {
+  async unova_n(name: string, $: cheerio.Root) {
     const bodys = Array.from($('table > tbody')).slice(0, -3);
 
     return await baseHandler($, bodys, { number: 5, name, code: 'New' });
   },
-  async kalos(name: string, $: CheerioStatic) {
+  async kalos(name: string, $: cheerio.Root) {
     const bodys = Array.from($('table > tbody'));
     const central = bodys.slice(0, 4);
     const coastal = bodys.slice(4, 8);
@@ -75,15 +75,15 @@ const handlers: Record<
       code: 'Mountain'
     });
   },
-  async alola(name: string, $: CheerioStatic) {
+  async alola(name: string, $: cheerio.Root) {
     const bodys = Array.from($('table > tbody')).slice(0, -3);
     return await islandHandler($, bodys, { number: 7, name });
   },
-  async alola_u(name: string, $: CheerioStatic) {
+  async alola_u(name: string, $: cheerio.Root) {
     const bodys = Array.from($('table > tbody')).slice(0, -3);
     return await islandHandler($, bodys, { number: 7, name, code: 'Ultra' });
   },
-  async galar(name: string, $: CheerioStatic) {
+  async galar(name: string, $: cheerio.Root) {
     const bodys = Array.from($('table > tbody')).slice(1, -4);
     return await baseHandler($, bodys, { number: 8, name });
   }

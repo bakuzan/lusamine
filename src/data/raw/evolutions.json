@@ -385,6 +385,12 @@
     "note": "Galarica Cuff"
   },
   {
+    "nationalPokedexNumber": 79,
+    "evolvesTo": 199,
+    "mechanism": 1,
+    "note": "Galarian Wreath"
+  },
+  {
     "nationalPokedexNumber": 81,
     "evolvesTo": 82,
     "mechanism": 1,
@@ -473,7 +479,19 @@
     "nationalPokedexNumber": 102,
     "evolvesTo": 103,
     "mechanism": 11,
+    "note": "Leaf Stone"
+  },
+  {
+    "nationalPokedexNumber": 102,
+    "evolvesTo": 103,
+    "mechanism": 11,
     "note": "Leaf Stone (Alola)"
+  },
+  {
+    "nationalPokedexNumber": 104,
+    "evolvesTo": 105,
+    "mechanism": 1,
+    "note": "Level 28"
   },
   {
     "nationalPokedexNumber": 104,

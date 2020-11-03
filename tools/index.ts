@@ -16,8 +16,8 @@ const EVOLVE = 'evolve';
 const MEGA = 'mega';
 
 async function scrapePokemonData(
-  htmlPage: CheerioStatic,
-  processor: (c: CheerioStatic) => Promise<{ fileName: string; json: any[] }[]>
+  htmlPage: cheerio.Root,
+  processor: (c: cheerio.Root) => Promise<{ fileName: string; json: any[] }[]>
 ) {
   const data = await processor(htmlPage);
 

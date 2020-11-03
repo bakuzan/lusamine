@@ -6,7 +6,7 @@ export function prop<T, K extends keyof T>(obj: T, key: K) {
 }
 
 export function getFirstValidAttributeValue(
-  $: CheerioStatic,
+  $: cheerio.Root,
   items: ScrapeOption[]
 ) {
   for (const item of items) {
@@ -25,16 +25,11 @@ export function filterFalsey<TValue>(
   return value !== null && value !== undefined;
 }
 
-const MATCH_ALOLA_FORM = /\d{1,}A.*MS.png$/;
-const MATCH_GALAR_FORM = /\d{1,}G.*MS.png$/;
+const MATCH_ALOLA_FORM = /\d{1,}A.*MS.*\.png$/;
+const MATCH_GALAR_FORM = /\d{1,}G.*MS.*\.png$/;
 
-export function checkImgForVariant(td: Cheerio) {
-  const src = td
-    .children()
-    .first()
-    .children()
-    .first()
-    .attr('src');
+export function checkImgForVariant(td: cheerio.Cheerio) {
+  const src = td.find('img').attr('src');
 
   if (src && src.match(MATCH_ALOLA_FORM)) {
     return Enums.Regions.alola;

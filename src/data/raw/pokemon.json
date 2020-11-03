@@ -5584,5 +5584,47 @@
     "name": "zarude",
     "typeIds": [16, 2],
     "form": ""
+  },
+  {
+    "nationalPokedexNumber": 894,
+    "name": "regieleki",
+    "typeIds": [12],
+    "form": ""
+  },
+  {
+    "nationalPokedexNumber": 895,
+    "name": "regidrago",
+    "typeIds": [15],
+    "form": ""
+  },
+  {
+    "nationalPokedexNumber": 896,
+    "name": "glastrier",
+    "typeIds": [14],
+    "form": ""
+  },
+  {
+    "nationalPokedexNumber": 897,
+    "name": "spectrier",
+    "typeIds": [11],
+    "form": ""
+  },
+  {
+    "nationalPokedexNumber": 898,
+    "name": "calyrex",
+    "typeIds": [13, 2],
+    "form": ""
+  },
+  {
+    "nationalPokedexNumber": 898,
+    "name": "calyrex",
+    "typeIds": [13, 14],
+    "form": "ice rider"
+  },
+  {
+    "nationalPokedexNumber": 898,
+    "name": "calyrex",
+    "typeIds": [13, 11],
+    "form": "shadow rider"
   }
 ]
