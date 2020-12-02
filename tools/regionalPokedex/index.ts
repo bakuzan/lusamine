@@ -19,7 +19,9 @@ const urls: Record<string, string> = {
   kalos: `https://bulbapedia.bulbagarden.net/wiki/List_of_Pok%C3%A9mon_by_Kalos_Pok%C3%A9dex_number`, // 3 parter
   alola: `https://bulbapedia.bulbagarden.net/wiki/List_of_Pok%C3%A9mon_by_Alola_Pok%C3%A9dex_number_(Sun_and_Moon)`,
   alola_u: `https://bulbapedia.bulbagarden.net/wiki/List_of_Pok%C3%A9mon_by_Alola_Pok%C3%A9dex_number_(Ultra_Sun_and_Ultra_Moon)`,
-  galar: `https://bulbapedia.bulbagarden.net/wiki/List_of_Pokémon_by_Galar_Pokédex_number`
+  galar: `https://bulbapedia.bulbagarden.net/wiki/List_of_Pokémon_by_Galar_Pokédex_number`,
+  galar_isle_of_armor: `https://bulbapedia.bulbagarden.net/wiki/List_of_Pok%C3%A9mon_by_Isle_of_Armor_Pok%C3%A9dex_number`,
+  galar_crown_tundra: `https://bulbapedia.bulbagarden.net/wiki/List_of_Pok%C3%A9mon_by_Crown_Tundra_Pok%C3%A9dex_number`
 };
 
 async function run() {

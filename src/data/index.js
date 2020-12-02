@@ -26,6 +26,8 @@ import kalos_mo from './raw/regionalPokedex/kalos_mo.json';
 import alola from './raw/regionalPokedex/alola.json';
 import alola_u from './raw/regionalPokedex/alola_u.json';
 import galar from './raw/regionalPokedex/galar.json';
+import galar_isle_of_armor from './raw/regionalPokedex/galar_isle_of_armor.json';
+import galar_crown_tundra from './raw/regionalPokedex/galar_crown_tundra.json';
 
 const SPRITES_PER_ROW = 30;
 const ART_PER_ROW = 30;
@@ -73,7 +75,9 @@ export function constructPokedex() {
       kalos: [...kalos_ce, ...kalos_co, ...kalos_mo],
       alola,
       alola_u,
-      galar
+      galar,
+      galar_isle_of_armor,
+      galar_crown_tundra
     }
   };
 }

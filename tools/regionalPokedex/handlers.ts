@@ -86,6 +86,22 @@ const handlers: Record<
   async galar(name: string, $: cheerio.Root) {
     const bodys = Array.from($('table > tbody')).slice(1, -4);
     return await baseHandler($, bodys, { number: 8, name });
+  },
+  async galar_isle_of_armor(name: string, $: cheerio.Root) {
+    const bodys = Array.from($('table > tbody')).slice(1, -3);
+    return await baseHandler($, bodys, {
+      number: 8,
+      name,
+      code: 'Isle of Armor'
+    });
+  },
+  async galar_crown_tundra(name: string, $: cheerio.Root) {
+    const bodys = Array.from($('table > tbody')).slice(1, -3);
+    return await baseHandler($, bodys, {
+      number: 8,
+      name,
+      code: 'Crown Tundra'
+    });
   }
 };
 

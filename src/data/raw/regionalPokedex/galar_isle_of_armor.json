@@ -1,0 +1,1778 @@
+[
+  {
+    "region": 8,
+    "code": "Isle of Armor",
+    "regionalPokedexNumber": 1,
+    "nationalPokedexNumber": 79,
+    "formSuffix": "",
+    "isVariant": true
+  },
+  {
+    "region": 8,
+    "code": "Isle of Armor",
+    "regionalPokedexNumber": 1,
+    "nationalPokedexNumber": 79,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 8,
+    "code": "Isle of Armor",
+    "regionalPokedexNumber": 2,
+    "nationalPokedexNumber": 80,
+    "formSuffix": "",
+    "isVariant": true
+  },
+  {
+    "region": 8,
+    "code": "Isle of Armor",
+    "regionalPokedexNumber": 2,
+    "nationalPokedexNumber": 80,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 8,
+    "code": "Isle of Armor",
+    "regionalPokedexNumber": 3,
+    "nationalPokedexNumber": 199,
+    "formSuffix": "",
+    "isVariant": true
+  },
+  {
+    "region": 8,
+    "code": "Isle of Armor",
+    "regionalPokedexNumber": 3,
+    "nationalPokedexNumber": 199,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 8,
+    "code": "Isle of Armor",
+    "regionalPokedexNumber": 4,
+    "nationalPokedexNumber": 427,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 8,
+    "code": "Isle of Armor",
+    "regionalPokedexNumber": 5,
+    "nationalPokedexNumber": 428,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 8,
+    "code": "Isle of Armor",
+    "regionalPokedexNumber": 6,
+    "nationalPokedexNumber": 440,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 8,
+    "code": "Isle of Armor",
+    "regionalPokedexNumber": 7,
+    "nationalPokedexNumber": 113,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 8,
+    "code": "Isle of Armor",
+    "regionalPokedexNumber": 8,
+    "nationalPokedexNumber": 242,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 8,
+    "code": "Isle of Armor",
+    "regionalPokedexNumber": 9,
+    "nationalPokedexNumber": 819,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 8,
+    "code": "Isle of Armor",
+    "regionalPokedexNumber": 10,
+    "nationalPokedexNumber": 820,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 8,
+    "code": "Isle of Armor",
+    "regionalPokedexNumber": 11,
+    "nationalPokedexNumber": 174,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 8,
+    "code": "Isle of Armor",
+    "regionalPokedexNumber": 12,
+    "nationalPokedexNumber": 39,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 8,
+    "code": "Isle of Armor",
+    "regionalPokedexNumber": 13,
+    "nationalPokedexNumber": 40,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 8,
+    "code": "Isle of Armor",
+    "regionalPokedexNumber": 14,
+    "nationalPokedexNumber": 824,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 8,
+    "code": "Isle of Armor",
+    "regionalPokedexNumber": 15,
+    "nationalPokedexNumber": 825,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 8,
+    "code": "Isle of Armor",
+    "regionalPokedexNumber": 16,
+    "nationalPokedexNumber": 826,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 8,
+    "code": "Isle of Armor",
+    "regionalPokedexNumber": 17,
+    "nationalPokedexNumber": 753,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 8,
+    "code": "Isle of Armor",
+    "regionalPokedexNumber": 18,
+    "nationalPokedexNumber": 754,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 8,
+    "code": "Isle of Armor",
+    "regionalPokedexNumber": 19,
+    "nationalPokedexNumber": 840,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 8,
+    "code": "Isle of Armor",
+    "regionalPokedexNumber": 20,
+    "nationalPokedexNumber": 841,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 8,
+    "code": "Isle of Armor",
+    "regionalPokedexNumber": 21,
+    "nationalPokedexNumber": 842,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 8,
+    "code": "Isle of Armor",
+    "regionalPokedexNumber": 22,
+    "nationalPokedexNumber": 661,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 8,
+    "code": "Isle of Armor",
+    "regionalPokedexNumber": 23,
+    "nationalPokedexNumber": 662,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 8,
+    "code": "Isle of Armor",
+    "regionalPokedexNumber": 24,
+    "nationalPokedexNumber": 663,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 8,
+    "code": "Isle of Armor",
+    "regionalPokedexNumber": 25,
+    "nationalPokedexNumber": 403,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 8,
+    "code": "Isle of Armor",
+    "regionalPokedexNumber": 26,
+    "nationalPokedexNumber": 404,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 8,
+    "code": "Isle of Armor",
+    "regionalPokedexNumber": 27,
+    "nationalPokedexNumber": 405,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 8,
+    "code": "Isle of Armor",
+    "regionalPokedexNumber": 28,
+    "nationalPokedexNumber": 707,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 8,
+    "code": "Isle of Armor",
+    "regionalPokedexNumber": 29,
+    "nationalPokedexNumber": 624,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 8,
+    "code": "Isle of Armor",
+    "regionalPokedexNumber": 30,
+    "nationalPokedexNumber": 625,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 8,
+    "code": "Isle of Armor",
+    "regionalPokedexNumber": 31,
+    "nationalPokedexNumber": 63,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 8,
+    "code": "Isle of Armor",
+    "regionalPokedexNumber": 32,
+    "nationalPokedexNumber": 64,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 8,
+    "code": "Isle of Armor",
+    "regionalPokedexNumber": 33,
+    "nationalPokedexNumber": 65,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 8,
+    "code": "Isle of Armor",
+    "regionalPokedexNumber": 34,
+    "nationalPokedexNumber": 280,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 8,
+    "code": "Isle of Armor",
+    "regionalPokedexNumber": 35,
+    "nationalPokedexNumber": 281,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 8,
+    "code": "Isle of Armor",
+    "regionalPokedexNumber": 36,
+    "nationalPokedexNumber": 282,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 8,
+    "code": "Isle of Armor",
+    "regionalPokedexNumber": 37,
+    "nationalPokedexNumber": 475,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 8,
+    "code": "Isle of Armor",
+    "regionalPokedexNumber": 38,
+    "nationalPokedexNumber": 98,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 8,
+    "code": "Isle of Armor",
+    "regionalPokedexNumber": 39,
+    "nationalPokedexNumber": 99,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 8,
+    "code": "Isle of Armor",
+    "regionalPokedexNumber": 40,
+    "nationalPokedexNumber": 72,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 8,
+    "code": "Isle of Armor",
+    "regionalPokedexNumber": 41,
+    "nationalPokedexNumber": 73,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 8,
+    "code": "Isle of Armor",
+    "regionalPokedexNumber": 42,
+    "nationalPokedexNumber": 129,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 8,
+    "code": "Isle of Armor",
+    "regionalPokedexNumber": 43,
+    "nationalPokedexNumber": 130,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 8,
+    "code": "Isle of Armor",
+    "regionalPokedexNumber": 44,
+    "nationalPokedexNumber": 223,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 8,
+    "code": "Isle of Armor",
+    "regionalPokedexNumber": 45,
+    "nationalPokedexNumber": 224,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 8,
+    "code": "Isle of Armor",
+    "regionalPokedexNumber": 46,
+    "nationalPokedexNumber": 458,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 8,
+    "code": "Isle of Armor",
+    "regionalPokedexNumber": 47,
+    "nationalPokedexNumber": 226,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 8,
+    "code": "Isle of Armor",
+    "regionalPokedexNumber": 48,
+    "nationalPokedexNumber": 278,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 8,
+    "code": "Isle of Armor",
+    "regionalPokedexNumber": 49,
+    "nationalPokedexNumber": 279,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 8,
+    "code": "Isle of Armor",
+    "regionalPokedexNumber": 50,
+    "nationalPokedexNumber": 451,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 8,
+    "code": "Isle of Armor",
+    "regionalPokedexNumber": 51,
+    "nationalPokedexNumber": 452,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 8,
+    "code": "Isle of Armor",
+    "regionalPokedexNumber": 52,
+    "nationalPokedexNumber": 206,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 8,
+    "code": "Isle of Armor",
+    "regionalPokedexNumber": 53,
+    "nationalPokedexNumber": 626,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 8,
+    "code": "Isle of Armor",
+    "regionalPokedexNumber": 54,
+    "nationalPokedexNumber": 108,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 8,
+    "code": "Isle of Armor",
+    "regionalPokedexNumber": 55,
+    "nationalPokedexNumber": 463,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 8,
+    "code": "Isle of Armor",
+    "regionalPokedexNumber": 56,
+    "nationalPokedexNumber": 833,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 8,
+    "code": "Isle of Armor",
+    "regionalPokedexNumber": 57,
+    "nationalPokedexNumber": 834,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 8,
+    "code": "Isle of Armor",
+    "regionalPokedexNumber": 58,
+    "nationalPokedexNumber": 194,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 8,
+    "code": "Isle of Armor",
+    "regionalPokedexNumber": 59,
+    "nationalPokedexNumber": 195,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 8,
+    "code": "Isle of Armor",
+    "regionalPokedexNumber": 60,
+    "nationalPokedexNumber": 704,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 8,
+    "code": "Isle of Armor",
+    "regionalPokedexNumber": 61,
+    "nationalPokedexNumber": 705,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 8,
+    "code": "Isle of Armor",
+    "regionalPokedexNumber": 62,
+    "nationalPokedexNumber": 706,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 8,
+    "code": "Isle of Armor",
+    "regionalPokedexNumber": 63,
+    "nationalPokedexNumber": 621,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 8,
+    "code": "Isle of Armor",
+    "regionalPokedexNumber": 64,
+    "nationalPokedexNumber": 616,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 8,
+    "code": "Isle of Armor",
+    "regionalPokedexNumber": 65,
+    "nationalPokedexNumber": 617,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 8,
+    "code": "Isle of Armor",
+    "regionalPokedexNumber": 66,
+    "nationalPokedexNumber": 588,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 8,
+    "code": "Isle of Armor",
+    "regionalPokedexNumber": 67,
+    "nationalPokedexNumber": 589,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 8,
+    "code": "Isle of Armor",
+    "regionalPokedexNumber": 68,
+    "nationalPokedexNumber": 1,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 8,
+    "code": "Isle of Armor",
+    "regionalPokedexNumber": 69,
+    "nationalPokedexNumber": 2,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 8,
+    "code": "Isle of Armor",
+    "regionalPokedexNumber": 70,
+    "nationalPokedexNumber": 3,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 8,
+    "code": "Isle of Armor",
+    "regionalPokedexNumber": 71,
+    "nationalPokedexNumber": 7,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 8,
+    "code": "Isle of Armor",
+    "regionalPokedexNumber": 72,
+    "nationalPokedexNumber": 8,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 8,
+    "code": "Isle of Armor",
+    "regionalPokedexNumber": 73,
+    "nationalPokedexNumber": 9,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 8,
+    "code": "Isle of Armor",
+    "regionalPokedexNumber": 74,
+    "nationalPokedexNumber": 543,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 8,
+    "code": "Isle of Armor",
+    "regionalPokedexNumber": 75,
+    "nationalPokedexNumber": 544,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 8,
+    "code": "Isle of Armor",
+    "regionalPokedexNumber": 76,
+    "nationalPokedexNumber": 545,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 8,
+    "code": "Isle of Armor",
+    "regionalPokedexNumber": 77,
+    "nationalPokedexNumber": 590,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 8,
+    "code": "Isle of Armor",
+    "regionalPokedexNumber": 78,
+    "nationalPokedexNumber": 591,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 8,
+    "code": "Isle of Armor",
+    "regionalPokedexNumber": 79,
+    "nationalPokedexNumber": 764,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 8,
+    "code": "Isle of Armor",
+    "regionalPokedexNumber": 80,
+    "nationalPokedexNumber": 114,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 8,
+    "code": "Isle of Armor",
+    "regionalPokedexNumber": 81,
+    "nationalPokedexNumber": 465,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 8,
+    "code": "Isle of Armor",
+    "regionalPokedexNumber": 82,
+    "nationalPokedexNumber": 453,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 8,
+    "code": "Isle of Armor",
+    "regionalPokedexNumber": 83,
+    "nationalPokedexNumber": 454,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 8,
+    "code": "Isle of Armor",
+    "regionalPokedexNumber": 84,
+    "nationalPokedexNumber": 172,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 8,
+    "code": "Isle of Armor",
+    "regionalPokedexNumber": 85,
+    "nationalPokedexNumber": 25,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 8,
+    "code": "Isle of Armor",
+    "regionalPokedexNumber": 86,
+    "nationalPokedexNumber": 26,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 8,
+    "code": "Isle of Armor",
+    "regionalPokedexNumber": 86,
+    "nationalPokedexNumber": 26,
+    "formSuffix": "",
+    "isVariant": true
+  },
+  {
+    "region": 8,
+    "code": "Isle of Armor",
+    "regionalPokedexNumber": 87,
+    "nationalPokedexNumber": 570,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 8,
+    "code": "Isle of Armor",
+    "regionalPokedexNumber": 88,
+    "nationalPokedexNumber": 571,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 8,
+    "code": "Isle of Armor",
+    "regionalPokedexNumber": 89,
+    "nationalPokedexNumber": 765,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 8,
+    "code": "Isle of Armor",
+    "regionalPokedexNumber": 90,
+    "nationalPokedexNumber": 766,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 8,
+    "code": "Isle of Armor",
+    "regionalPokedexNumber": 91,
+    "nationalPokedexNumber": 341,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 8,
+    "code": "Isle of Armor",
+    "regionalPokedexNumber": 92,
+    "nationalPokedexNumber": 342,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 8,
+    "code": "Isle of Armor",
+    "regionalPokedexNumber": 93,
+    "nationalPokedexNumber": 845,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 8,
+    "code": "Isle of Armor",
+    "regionalPokedexNumber": 94,
+    "nationalPokedexNumber": 118,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 8,
+    "code": "Isle of Armor",
+    "regionalPokedexNumber": 95,
+    "nationalPokedexNumber": 119,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 8,
+    "code": "Isle of Armor",
+    "regionalPokedexNumber": 96,
+    "nationalPokedexNumber": 846,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 8,
+    "code": "Isle of Armor",
+    "regionalPokedexNumber": 97,
+    "nationalPokedexNumber": 847,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 8,
+    "code": "Isle of Armor",
+    "regionalPokedexNumber": 98,
+    "nationalPokedexNumber": 120,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 8,
+    "code": "Isle of Armor",
+    "regionalPokedexNumber": 99,
+    "nationalPokedexNumber": 121,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 8,
+    "code": "Isle of Armor",
+    "regionalPokedexNumber": 100,
+    "nationalPokedexNumber": 891,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 8,
+    "code": "Isle of Armor",
+    "regionalPokedexNumber": 101,
+    "nationalPokedexNumber": 892,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 8,
+    "code": "Isle of Armor",
+    "regionalPokedexNumber": 101,
+    "nationalPokedexNumber": 892,
+    "formSuffix": "_1",
+    "isVariant": false
+  },
+  {
+    "region": 8,
+    "code": "Isle of Armor",
+    "regionalPokedexNumber": 102,
+    "nationalPokedexNumber": 587,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 8,
+    "code": "Isle of Armor",
+    "regionalPokedexNumber": 103,
+    "nationalPokedexNumber": 702,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 8,
+    "code": "Isle of Armor",
+    "regionalPokedexNumber": 104,
+    "nationalPokedexNumber": 877,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 8,
+    "code": "Isle of Armor",
+    "regionalPokedexNumber": 105,
+    "nationalPokedexNumber": 81,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 8,
+    "code": "Isle of Armor",
+    "regionalPokedexNumber": 106,
+    "nationalPokedexNumber": 82,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 8,
+    "code": "Isle of Armor",
+    "regionalPokedexNumber": 107,
+    "nationalPokedexNumber": 462,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 8,
+    "code": "Isle of Armor",
+    "regionalPokedexNumber": 108,
+    "nationalPokedexNumber": 686,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 8,
+    "code": "Isle of Armor",
+    "regionalPokedexNumber": 109,
+    "nationalPokedexNumber": 687,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 8,
+    "code": "Isle of Armor",
+    "regionalPokedexNumber": 110,
+    "nationalPokedexNumber": 746,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 8,
+    "code": "Isle of Armor",
+    "regionalPokedexNumber": 111,
+    "nationalPokedexNumber": 318,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 8,
+    "code": "Isle of Armor",
+    "regionalPokedexNumber": 112,
+    "nationalPokedexNumber": 319,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 8,
+    "code": "Isle of Armor",
+    "regionalPokedexNumber": 113,
+    "nationalPokedexNumber": 506,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 8,
+    "code": "Isle of Armor",
+    "regionalPokedexNumber": 114,
+    "nationalPokedexNumber": 507,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 8,
+    "code": "Isle of Armor",
+    "regionalPokedexNumber": 115,
+    "nationalPokedexNumber": 508,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 8,
+    "code": "Isle of Armor",
+    "regionalPokedexNumber": 116,
+    "nationalPokedexNumber": 128,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 8,
+    "code": "Isle of Armor",
+    "regionalPokedexNumber": 117,
+    "nationalPokedexNumber": 241,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 8,
+    "code": "Isle of Armor",
+    "regionalPokedexNumber": 118,
+    "nationalPokedexNumber": 123,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 8,
+    "code": "Isle of Armor",
+    "regionalPokedexNumber": 119,
+    "nationalPokedexNumber": 212,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 8,
+    "code": "Isle of Armor",
+    "regionalPokedexNumber": 120,
+    "nationalPokedexNumber": 127,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 8,
+    "code": "Isle of Armor",
+    "regionalPokedexNumber": 121,
+    "nationalPokedexNumber": 214,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 8,
+    "code": "Isle of Armor",
+    "regionalPokedexNumber": 122,
+    "nationalPokedexNumber": 557,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 8,
+    "code": "Isle of Armor",
+    "regionalPokedexNumber": 123,
+    "nationalPokedexNumber": 558,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 8,
+    "code": "Isle of Armor",
+    "regionalPokedexNumber": 124,
+    "nationalPokedexNumber": 767,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 8,
+    "code": "Isle of Armor",
+    "regionalPokedexNumber": 125,
+    "nationalPokedexNumber": 768,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 8,
+    "code": "Isle of Armor",
+    "regionalPokedexNumber": 126,
+    "nationalPokedexNumber": 871,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 8,
+    "code": "Isle of Armor",
+    "regionalPokedexNumber": 127,
+    "nationalPokedexNumber": 747,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 8,
+    "code": "Isle of Armor",
+    "regionalPokedexNumber": 128,
+    "nationalPokedexNumber": 748,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 8,
+    "code": "Isle of Armor",
+    "regionalPokedexNumber": 129,
+    "nationalPokedexNumber": 852,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 8,
+    "code": "Isle of Armor",
+    "regionalPokedexNumber": 130,
+    "nationalPokedexNumber": 853,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 8,
+    "code": "Isle of Armor",
+    "regionalPokedexNumber": 131,
+    "nationalPokedexNumber": 90,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 8,
+    "code": "Isle of Armor",
+    "regionalPokedexNumber": 132,
+    "nationalPokedexNumber": 91,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 8,
+    "code": "Isle of Armor",
+    "regionalPokedexNumber": 133,
+    "nationalPokedexNumber": 769,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 8,
+    "code": "Isle of Armor",
+    "regionalPokedexNumber": 134,
+    "nationalPokedexNumber": 770,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 8,
+    "code": "Isle of Armor",
+    "regionalPokedexNumber": 135,
+    "nationalPokedexNumber": 425,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 8,
+    "code": "Isle of Armor",
+    "regionalPokedexNumber": 136,
+    "nationalPokedexNumber": 426,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 8,
+    "code": "Isle of Armor",
+    "regionalPokedexNumber": 137,
+    "nationalPokedexNumber": 339,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 8,
+    "code": "Isle of Armor",
+    "regionalPokedexNumber": 138,
+    "nationalPokedexNumber": 340,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 8,
+    "code": "Isle of Armor",
+    "regionalPokedexNumber": 139,
+    "nationalPokedexNumber": 298,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 8,
+    "code": "Isle of Armor",
+    "regionalPokedexNumber": 140,
+    "nationalPokedexNumber": 183,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 8,
+    "code": "Isle of Armor",
+    "regionalPokedexNumber": 141,
+    "nationalPokedexNumber": 184,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 8,
+    "code": "Isle of Armor",
+    "regionalPokedexNumber": 142,
+    "nationalPokedexNumber": 60,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 8,
+    "code": "Isle of Armor",
+    "regionalPokedexNumber": 143,
+    "nationalPokedexNumber": 61,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 8,
+    "code": "Isle of Armor",
+    "regionalPokedexNumber": 144,
+    "nationalPokedexNumber": 62,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 8,
+    "code": "Isle of Armor",
+    "regionalPokedexNumber": 145,
+    "nationalPokedexNumber": 186,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 8,
+    "code": "Isle of Armor",
+    "regionalPokedexNumber": 146,
+    "nationalPokedexNumber": 54,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 8,
+    "code": "Isle of Armor",
+    "regionalPokedexNumber": 147,
+    "nationalPokedexNumber": 55,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 8,
+    "code": "Isle of Armor",
+    "regionalPokedexNumber": 148,
+    "nationalPokedexNumber": 293,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 8,
+    "code": "Isle of Armor",
+    "regionalPokedexNumber": 149,
+    "nationalPokedexNumber": 294,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 8,
+    "code": "Isle of Armor",
+    "regionalPokedexNumber": 150,
+    "nationalPokedexNumber": 295,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 8,
+    "code": "Isle of Armor",
+    "regionalPokedexNumber": 151,
+    "nationalPokedexNumber": 527,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 8,
+    "code": "Isle of Armor",
+    "regionalPokedexNumber": 152,
+    "nationalPokedexNumber": 528,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 8,
+    "code": "Isle of Armor",
+    "regionalPokedexNumber": 153,
+    "nationalPokedexNumber": 227,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 8,
+    "code": "Isle of Armor",
+    "regionalPokedexNumber": 154,
+    "nationalPokedexNumber": 524,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 8,
+    "code": "Isle of Armor",
+    "regionalPokedexNumber": 155,
+    "nationalPokedexNumber": 525,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 8,
+    "code": "Isle of Armor",
+    "regionalPokedexNumber": 156,
+    "nationalPokedexNumber": 526,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 8,
+    "code": "Isle of Armor",
+    "regionalPokedexNumber": 157,
+    "nationalPokedexNumber": 744,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 8,
+    "code": "Isle of Armor",
+    "regionalPokedexNumber": 158,
+    "nationalPokedexNumber": 745,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 8,
+    "code": "Isle of Armor",
+    "regionalPokedexNumber": 159,
+    "nationalPokedexNumber": 757,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 8,
+    "code": "Isle of Armor",
+    "regionalPokedexNumber": 160,
+    "nationalPokedexNumber": 758,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 8,
+    "code": "Isle of Armor",
+    "regionalPokedexNumber": 161,
+    "nationalPokedexNumber": 559,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 8,
+    "code": "Isle of Armor",
+    "regionalPokedexNumber": 162,
+    "nationalPokedexNumber": 560,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 8,
+    "code": "Isle of Armor",
+    "regionalPokedexNumber": 163,
+    "nationalPokedexNumber": 619,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 8,
+    "code": "Isle of Armor",
+    "regionalPokedexNumber": 164,
+    "nationalPokedexNumber": 620,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 8,
+    "code": "Isle of Armor",
+    "regionalPokedexNumber": 165,
+    "nationalPokedexNumber": 782,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 8,
+    "code": "Isle of Armor",
+    "regionalPokedexNumber": 166,
+    "nationalPokedexNumber": 783,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 8,
+    "code": "Isle of Armor",
+    "regionalPokedexNumber": 167,
+    "nationalPokedexNumber": 784,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 8,
+    "code": "Isle of Armor",
+    "regionalPokedexNumber": 168,
+    "nationalPokedexNumber": 27,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 8,
+    "code": "Isle of Armor",
+    "regionalPokedexNumber": 168,
+    "nationalPokedexNumber": 27,
+    "formSuffix": "",
+    "isVariant": true
+  },
+  {
+    "region": 8,
+    "code": "Isle of Armor",
+    "regionalPokedexNumber": 169,
+    "nationalPokedexNumber": 28,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 8,
+    "code": "Isle of Armor",
+    "regionalPokedexNumber": 169,
+    "nationalPokedexNumber": 28,
+    "formSuffix": "",
+    "isVariant": true
+  },
+  {
+    "region": 8,
+    "code": "Isle of Armor",
+    "regionalPokedexNumber": 170,
+    "nationalPokedexNumber": 104,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 8,
+    "code": "Isle of Armor",
+    "regionalPokedexNumber": 171,
+    "nationalPokedexNumber": 105,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 8,
+    "code": "Isle of Armor",
+    "regionalPokedexNumber": 171,
+    "nationalPokedexNumber": 105,
+    "formSuffix": "",
+    "isVariant": true
+  },
+  {
+    "region": 8,
+    "code": "Isle of Armor",
+    "regionalPokedexNumber": 172,
+    "nationalPokedexNumber": 115,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 8,
+    "code": "Isle of Armor",
+    "regionalPokedexNumber": 173,
+    "nationalPokedexNumber": 324,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 8,
+    "code": "Isle of Armor",
+    "regionalPokedexNumber": 174,
+    "nationalPokedexNumber": 843,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 8,
+    "code": "Isle of Armor",
+    "regionalPokedexNumber": 175,
+    "nationalPokedexNumber": 844,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 8,
+    "code": "Isle of Armor",
+    "regionalPokedexNumber": 176,
+    "nationalPokedexNumber": 551,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 8,
+    "code": "Isle of Armor",
+    "regionalPokedexNumber": 177,
+    "nationalPokedexNumber": 552,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 8,
+    "code": "Isle of Armor",
+    "regionalPokedexNumber": 178,
+    "nationalPokedexNumber": 553,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 8,
+    "code": "Isle of Armor",
+    "regionalPokedexNumber": 179,
+    "nationalPokedexNumber": 627,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 8,
+    "code": "Isle of Armor",
+    "regionalPokedexNumber": 180,
+    "nationalPokedexNumber": 628,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 8,
+    "code": "Isle of Armor",
+    "regionalPokedexNumber": 181,
+    "nationalPokedexNumber": 629,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 8,
+    "code": "Isle of Armor",
+    "regionalPokedexNumber": 182,
+    "nationalPokedexNumber": 630,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 8,
+    "code": "Isle of Armor",
+    "regionalPokedexNumber": 183,
+    "nationalPokedexNumber": 111,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 8,
+    "code": "Isle of Armor",
+    "regionalPokedexNumber": 184,
+    "nationalPokedexNumber": 112,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 8,
+    "code": "Isle of Armor",
+    "regionalPokedexNumber": 185,
+    "nationalPokedexNumber": 464,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 8,
+    "code": "Isle of Armor",
+    "regionalPokedexNumber": 186,
+    "nationalPokedexNumber": 636,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 8,
+    "code": "Isle of Armor",
+    "regionalPokedexNumber": 187,
+    "nationalPokedexNumber": 637,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 8,
+    "code": "Isle of Armor",
+    "regionalPokedexNumber": 188,
+    "nationalPokedexNumber": 170,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 8,
+    "code": "Isle of Armor",
+    "regionalPokedexNumber": 189,
+    "nationalPokedexNumber": 171,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 8,
+    "code": "Isle of Armor",
+    "regionalPokedexNumber": 190,
+    "nationalPokedexNumber": 320,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 8,
+    "code": "Isle of Armor",
+    "regionalPokedexNumber": 191,
+    "nationalPokedexNumber": 321,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 8,
+    "code": "Isle of Armor",
+    "regionalPokedexNumber": 192,
+    "nationalPokedexNumber": 592,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 8,
+    "code": "Isle of Armor",
+    "regionalPokedexNumber": 192,
+    "nationalPokedexNumber": 592,
+    "formSuffix": "_1",
+    "isVariant": false
+  },
+  {
+    "region": 8,
+    "code": "Isle of Armor",
+    "regionalPokedexNumber": 193,
+    "nationalPokedexNumber": 593,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 8,
+    "code": "Isle of Armor",
+    "regionalPokedexNumber": 193,
+    "nationalPokedexNumber": 593,
+    "formSuffix": "_1",
+    "isVariant": false
+  },
+  {
+    "region": 8,
+    "code": "Isle of Armor",
+    "regionalPokedexNumber": 194,
+    "nationalPokedexNumber": 690,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 8,
+    "code": "Isle of Armor",
+    "regionalPokedexNumber": 195,
+    "nationalPokedexNumber": 691,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 8,
+    "code": "Isle of Armor",
+    "regionalPokedexNumber": 196,
+    "nationalPokedexNumber": 692,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 8,
+    "code": "Isle of Armor",
+    "regionalPokedexNumber": 197,
+    "nationalPokedexNumber": 693,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 8,
+    "code": "Isle of Armor",
+    "regionalPokedexNumber": 198,
+    "nationalPokedexNumber": 116,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 8,
+    "code": "Isle of Armor",
+    "regionalPokedexNumber": 199,
+    "nationalPokedexNumber": 117,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 8,
+    "code": "Isle of Armor",
+    "regionalPokedexNumber": 200,
+    "nationalPokedexNumber": 230,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 8,
+    "code": "Isle of Armor",
+    "regionalPokedexNumber": 201,
+    "nationalPokedexNumber": 548,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 8,
+    "code": "Isle of Armor",
+    "regionalPokedexNumber": 202,
+    "nationalPokedexNumber": 549,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 8,
+    "code": "Isle of Armor",
+    "regionalPokedexNumber": 203,
+    "nationalPokedexNumber": 415,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 8,
+    "code": "Isle of Armor",
+    "regionalPokedexNumber": 204,
+    "nationalPokedexNumber": 416,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 8,
+    "code": "Isle of Armor",
+    "regionalPokedexNumber": 205,
+    "nationalPokedexNumber": 102,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 8,
+    "code": "Isle of Armor",
+    "regionalPokedexNumber": 206,
+    "nationalPokedexNumber": 103,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 8,
+    "code": "Isle of Armor",
+    "regionalPokedexNumber": 206,
+    "nationalPokedexNumber": 103,
+    "formSuffix": "",
+    "isVariant": true
+  },
+  {
+    "region": 8,
+    "code": "Isle of Armor",
+    "regionalPokedexNumber": 207,
+    "nationalPokedexNumber": 132,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 8,
+    "code": "Isle of Armor",
+    "regionalPokedexNumber": 208,
+    "nationalPokedexNumber": 137,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 8,
+    "code": "Isle of Armor",
+    "regionalPokedexNumber": 209,
+    "nationalPokedexNumber": 233,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 8,
+    "code": "Isle of Armor",
+    "regionalPokedexNumber": 210,
+    "nationalPokedexNumber": 474,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 8,
+    "code": "Isle of Armor",
+    "regionalPokedexNumber": 211,
+    "nationalPokedexNumber": 893,
+    "formSuffix": "",
+    "isVariant": false
+  }
+]

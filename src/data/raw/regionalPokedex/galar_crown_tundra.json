@@ -1,0 +1,1802 @@
+[
+  {
+    "region": 8,
+    "code": "Crown Tundra",
+    "regionalPokedexNumber": 1,
+    "nationalPokedexNumber": 872,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 8,
+    "code": "Crown Tundra",
+    "regionalPokedexNumber": 2,
+    "nationalPokedexNumber": 873,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 8,
+    "code": "Crown Tundra",
+    "regionalPokedexNumber": 3,
+    "nationalPokedexNumber": 831,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 8,
+    "code": "Crown Tundra",
+    "regionalPokedexNumber": 4,
+    "nationalPokedexNumber": 832,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 8,
+    "code": "Crown Tundra",
+    "regionalPokedexNumber": 5,
+    "nationalPokedexNumber": 819,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 8,
+    "code": "Crown Tundra",
+    "regionalPokedexNumber": 6,
+    "nationalPokedexNumber": 820,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 8,
+    "code": "Crown Tundra",
+    "regionalPokedexNumber": 7,
+    "nationalPokedexNumber": 220,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 8,
+    "code": "Crown Tundra",
+    "regionalPokedexNumber": 8,
+    "nationalPokedexNumber": 221,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 8,
+    "code": "Crown Tundra",
+    "regionalPokedexNumber": 9,
+    "nationalPokedexNumber": 473,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 8,
+    "code": "Crown Tundra",
+    "regionalPokedexNumber": 10,
+    "nationalPokedexNumber": 439,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 8,
+    "code": "Crown Tundra",
+    "regionalPokedexNumber": 11,
+    "nationalPokedexNumber": 122,
+    "formSuffix": "",
+    "isVariant": true
+  },
+  {
+    "region": 8,
+    "code": "Crown Tundra",
+    "regionalPokedexNumber": 11,
+    "nationalPokedexNumber": 122,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 8,
+    "code": "Crown Tundra",
+    "regionalPokedexNumber": 12,
+    "nationalPokedexNumber": 866,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 8,
+    "code": "Crown Tundra",
+    "regionalPokedexNumber": 13,
+    "nationalPokedexNumber": 238,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 8,
+    "code": "Crown Tundra",
+    "regionalPokedexNumber": 14,
+    "nationalPokedexNumber": 124,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 8,
+    "code": "Crown Tundra",
+    "regionalPokedexNumber": 15,
+    "nationalPokedexNumber": 239,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 8,
+    "code": "Crown Tundra",
+    "regionalPokedexNumber": 16,
+    "nationalPokedexNumber": 125,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 8,
+    "code": "Crown Tundra",
+    "regionalPokedexNumber": 17,
+    "nationalPokedexNumber": 466,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 8,
+    "code": "Crown Tundra",
+    "regionalPokedexNumber": 18,
+    "nationalPokedexNumber": 240,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 8,
+    "code": "Crown Tundra",
+    "regionalPokedexNumber": 19,
+    "nationalPokedexNumber": 126,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 8,
+    "code": "Crown Tundra",
+    "regionalPokedexNumber": 20,
+    "nationalPokedexNumber": 467,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 8,
+    "code": "Crown Tundra",
+    "regionalPokedexNumber": 21,
+    "nationalPokedexNumber": 531,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 8,
+    "code": "Crown Tundra",
+    "regionalPokedexNumber": 22,
+    "nationalPokedexNumber": 582,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 8,
+    "code": "Crown Tundra",
+    "regionalPokedexNumber": 23,
+    "nationalPokedexNumber": 583,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 8,
+    "code": "Crown Tundra",
+    "regionalPokedexNumber": 24,
+    "nationalPokedexNumber": 584,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 8,
+    "code": "Crown Tundra",
+    "regionalPokedexNumber": 25,
+    "nationalPokedexNumber": 361,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 8,
+    "code": "Crown Tundra",
+    "regionalPokedexNumber": 26,
+    "nationalPokedexNumber": 362,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 8,
+    "code": "Crown Tundra",
+    "regionalPokedexNumber": 27,
+    "nationalPokedexNumber": 478,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 8,
+    "code": "Crown Tundra",
+    "regionalPokedexNumber": 28,
+    "nationalPokedexNumber": 215,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 8,
+    "code": "Crown Tundra",
+    "regionalPokedexNumber": 29,
+    "nationalPokedexNumber": 461,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 8,
+    "code": "Crown Tundra",
+    "regionalPokedexNumber": 30,
+    "nationalPokedexNumber": 615,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 8,
+    "code": "Crown Tundra",
+    "regionalPokedexNumber": 31,
+    "nationalPokedexNumber": 459,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 8,
+    "code": "Crown Tundra",
+    "regionalPokedexNumber": 32,
+    "nationalPokedexNumber": 460,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 8,
+    "code": "Crown Tundra",
+    "regionalPokedexNumber": 33,
+    "nationalPokedexNumber": 708,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 8,
+    "code": "Crown Tundra",
+    "regionalPokedexNumber": 34,
+    "nationalPokedexNumber": 709,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 8,
+    "code": "Crown Tundra",
+    "regionalPokedexNumber": 35,
+    "nationalPokedexNumber": 333,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 8,
+    "code": "Crown Tundra",
+    "regionalPokedexNumber": 36,
+    "nationalPokedexNumber": 334,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 8,
+    "code": "Crown Tundra",
+    "regionalPokedexNumber": 37,
+    "nationalPokedexNumber": 859,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 8,
+    "code": "Crown Tundra",
+    "regionalPokedexNumber": 38,
+    "nationalPokedexNumber": 860,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 8,
+    "code": "Crown Tundra",
+    "regionalPokedexNumber": 39,
+    "nationalPokedexNumber": 861,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 8,
+    "code": "Crown Tundra",
+    "regionalPokedexNumber": 40,
+    "nationalPokedexNumber": 856,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 8,
+    "code": "Crown Tundra",
+    "regionalPokedexNumber": 41,
+    "nationalPokedexNumber": 857,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 8,
+    "code": "Crown Tundra",
+    "regionalPokedexNumber": 42,
+    "nationalPokedexNumber": 858,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 8,
+    "code": "Crown Tundra",
+    "regionalPokedexNumber": 43,
+    "nationalPokedexNumber": 173,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 8,
+    "code": "Crown Tundra",
+    "regionalPokedexNumber": 44,
+    "nationalPokedexNumber": 35,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 8,
+    "code": "Crown Tundra",
+    "regionalPokedexNumber": 45,
+    "nationalPokedexNumber": 36,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 8,
+    "code": "Crown Tundra",
+    "regionalPokedexNumber": 46,
+    "nationalPokedexNumber": 778,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 8,
+    "code": "Crown Tundra",
+    "regionalPokedexNumber": 47,
+    "nationalPokedexNumber": 442,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 8,
+    "code": "Crown Tundra",
+    "regionalPokedexNumber": 48,
+    "nationalPokedexNumber": 607,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 8,
+    "code": "Crown Tundra",
+    "regionalPokedexNumber": 49,
+    "nationalPokedexNumber": 608,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 8,
+    "code": "Crown Tundra",
+    "regionalPokedexNumber": 50,
+    "nationalPokedexNumber": 609,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 8,
+    "code": "Crown Tundra",
+    "regionalPokedexNumber": 51,
+    "nationalPokedexNumber": 574,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 8,
+    "code": "Crown Tundra",
+    "regionalPokedexNumber": 52,
+    "nationalPokedexNumber": 575,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 8,
+    "code": "Crown Tundra",
+    "regionalPokedexNumber": 53,
+    "nationalPokedexNumber": 576,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 8,
+    "code": "Crown Tundra",
+    "regionalPokedexNumber": 54,
+    "nationalPokedexNumber": 577,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 8,
+    "code": "Crown Tundra",
+    "regionalPokedexNumber": 55,
+    "nationalPokedexNumber": 578,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 8,
+    "code": "Crown Tundra",
+    "regionalPokedexNumber": 56,
+    "nationalPokedexNumber": 579,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 8,
+    "code": "Crown Tundra",
+    "regionalPokedexNumber": 57,
+    "nationalPokedexNumber": 532,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 8,
+    "code": "Crown Tundra",
+    "regionalPokedexNumber": 58,
+    "nationalPokedexNumber": 533,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 8,
+    "code": "Crown Tundra",
+    "regionalPokedexNumber": 59,
+    "nationalPokedexNumber": 534,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 8,
+    "code": "Crown Tundra",
+    "regionalPokedexNumber": 60,
+    "nationalPokedexNumber": 339,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 8,
+    "code": "Crown Tundra",
+    "regionalPokedexNumber": 61,
+    "nationalPokedexNumber": 340,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 8,
+    "code": "Crown Tundra",
+    "regionalPokedexNumber": 62,
+    "nationalPokedexNumber": 129,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 8,
+    "code": "Crown Tundra",
+    "regionalPokedexNumber": 63,
+    "nationalPokedexNumber": 130,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 8,
+    "code": "Crown Tundra",
+    "regionalPokedexNumber": 64,
+    "nationalPokedexNumber": 550,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 8,
+    "code": "Crown Tundra",
+    "regionalPokedexNumber": 64,
+    "nationalPokedexNumber": 550,
+    "formSuffix": "_1",
+    "isVariant": false
+  },
+  {
+    "region": 8,
+    "code": "Crown Tundra",
+    "regionalPokedexNumber": 65,
+    "nationalPokedexNumber": 29,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 8,
+    "code": "Crown Tundra",
+    "regionalPokedexNumber": 66,
+    "nationalPokedexNumber": 30,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 8,
+    "code": "Crown Tundra",
+    "regionalPokedexNumber": 67,
+    "nationalPokedexNumber": 31,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 8,
+    "code": "Crown Tundra",
+    "regionalPokedexNumber": 68,
+    "nationalPokedexNumber": 32,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 8,
+    "code": "Crown Tundra",
+    "regionalPokedexNumber": 69,
+    "nationalPokedexNumber": 33,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 8,
+    "code": "Crown Tundra",
+    "regionalPokedexNumber": 70,
+    "nationalPokedexNumber": 34,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 8,
+    "code": "Crown Tundra",
+    "regionalPokedexNumber": 71,
+    "nationalPokedexNumber": 263,
+    "formSuffix": "",
+    "isVariant": true
+  },
+  {
+    "region": 8,
+    "code": "Crown Tundra",
+    "regionalPokedexNumber": 71,
+    "nationalPokedexNumber": 263,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 8,
+    "code": "Crown Tundra",
+    "regionalPokedexNumber": 72,
+    "nationalPokedexNumber": 264,
+    "formSuffix": "",
+    "isVariant": true
+  },
+  {
+    "region": 8,
+    "code": "Crown Tundra",
+    "regionalPokedexNumber": 72,
+    "nationalPokedexNumber": 264,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 8,
+    "code": "Crown Tundra",
+    "regionalPokedexNumber": 73,
+    "nationalPokedexNumber": 862,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 8,
+    "code": "Crown Tundra",
+    "regionalPokedexNumber": 74,
+    "nationalPokedexNumber": 133,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 8,
+    "code": "Crown Tundra",
+    "regionalPokedexNumber": 75,
+    "nationalPokedexNumber": 134,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 8,
+    "code": "Crown Tundra",
+    "regionalPokedexNumber": 76,
+    "nationalPokedexNumber": 135,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 8,
+    "code": "Crown Tundra",
+    "regionalPokedexNumber": 77,
+    "nationalPokedexNumber": 136,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 8,
+    "code": "Crown Tundra",
+    "regionalPokedexNumber": 78,
+    "nationalPokedexNumber": 197,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 8,
+    "code": "Crown Tundra",
+    "regionalPokedexNumber": 79,
+    "nationalPokedexNumber": 196,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 8,
+    "code": "Crown Tundra",
+    "regionalPokedexNumber": 80,
+    "nationalPokedexNumber": 471,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 8,
+    "code": "Crown Tundra",
+    "regionalPokedexNumber": 81,
+    "nationalPokedexNumber": 470,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 8,
+    "code": "Crown Tundra",
+    "regionalPokedexNumber": 82,
+    "nationalPokedexNumber": 700,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 8,
+    "code": "Crown Tundra",
+    "regionalPokedexNumber": 83,
+    "nationalPokedexNumber": 696,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 8,
+    "code": "Crown Tundra",
+    "regionalPokedexNumber": 84,
+    "nationalPokedexNumber": 697,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 8,
+    "code": "Crown Tundra",
+    "regionalPokedexNumber": 85,
+    "nationalPokedexNumber": 698,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 8,
+    "code": "Crown Tundra",
+    "regionalPokedexNumber": 86,
+    "nationalPokedexNumber": 699,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 8,
+    "code": "Crown Tundra",
+    "regionalPokedexNumber": 87,
+    "nationalPokedexNumber": 436,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 8,
+    "code": "Crown Tundra",
+    "regionalPokedexNumber": 88,
+    "nationalPokedexNumber": 437,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 8,
+    "code": "Crown Tundra",
+    "regionalPokedexNumber": 89,
+    "nationalPokedexNumber": 874,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 8,
+    "code": "Crown Tundra",
+    "regionalPokedexNumber": 90,
+    "nationalPokedexNumber": 875,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 8,
+    "code": "Crown Tundra",
+    "regionalPokedexNumber": 91,
+    "nationalPokedexNumber": 751,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 8,
+    "code": "Crown Tundra",
+    "regionalPokedexNumber": 92,
+    "nationalPokedexNumber": 752,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 8,
+    "code": "Crown Tundra",
+    "regionalPokedexNumber": 93,
+    "nationalPokedexNumber": 595,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 8,
+    "code": "Crown Tundra",
+    "regionalPokedexNumber": 94,
+    "nationalPokedexNumber": 596,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 8,
+    "code": "Crown Tundra",
+    "regionalPokedexNumber": 95,
+    "nationalPokedexNumber": 588,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 8,
+    "code": "Crown Tundra",
+    "regionalPokedexNumber": 96,
+    "nationalPokedexNumber": 589,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 8,
+    "code": "Crown Tundra",
+    "regionalPokedexNumber": 97,
+    "nationalPokedexNumber": 616,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 8,
+    "code": "Crown Tundra",
+    "regionalPokedexNumber": 98,
+    "nationalPokedexNumber": 617,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 8,
+    "code": "Crown Tundra",
+    "regionalPokedexNumber": 99,
+    "nationalPokedexNumber": 850,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 8,
+    "code": "Crown Tundra",
+    "regionalPokedexNumber": 100,
+    "nationalPokedexNumber": 851,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 8,
+    "code": "Crown Tundra",
+    "regionalPokedexNumber": 101,
+    "nationalPokedexNumber": 632,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 8,
+    "code": "Crown Tundra",
+    "regionalPokedexNumber": 102,
+    "nationalPokedexNumber": 631,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 8,
+    "code": "Crown Tundra",
+    "regionalPokedexNumber": 103,
+    "nationalPokedexNumber": 554,
+    "formSuffix": "",
+    "isVariant": true
+  },
+  {
+    "region": 8,
+    "code": "Crown Tundra",
+    "regionalPokedexNumber": 103,
+    "nationalPokedexNumber": 554,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 8,
+    "code": "Crown Tundra",
+    "regionalPokedexNumber": 104,
+    "nationalPokedexNumber": 555,
+    "formSuffix": "",
+    "isVariant": true
+  },
+  {
+    "region": 8,
+    "code": "Crown Tundra",
+    "regionalPokedexNumber": 104,
+    "nationalPokedexNumber": 555,
+    "formSuffix": "_1",
+    "isVariant": true
+  },
+  {
+    "region": 8,
+    "code": "Crown Tundra",
+    "regionalPokedexNumber": 104,
+    "nationalPokedexNumber": 555,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 8,
+    "code": "Crown Tundra",
+    "regionalPokedexNumber": 104,
+    "nationalPokedexNumber": 555,
+    "formSuffix": "_1",
+    "isVariant": false
+  },
+  {
+    "region": 8,
+    "code": "Crown Tundra",
+    "regionalPokedexNumber": 105,
+    "nationalPokedexNumber": 77,
+    "formSuffix": "",
+    "isVariant": true
+  },
+  {
+    "region": 8,
+    "code": "Crown Tundra",
+    "regionalPokedexNumber": 105,
+    "nationalPokedexNumber": 77,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 8,
+    "code": "Crown Tundra",
+    "regionalPokedexNumber": 106,
+    "nationalPokedexNumber": 78,
+    "formSuffix": "",
+    "isVariant": true
+  },
+  {
+    "region": 8,
+    "code": "Crown Tundra",
+    "regionalPokedexNumber": 106,
+    "nationalPokedexNumber": 78,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 8,
+    "code": "Crown Tundra",
+    "regionalPokedexNumber": 107,
+    "nationalPokedexNumber": 359,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 8,
+    "code": "Crown Tundra",
+    "regionalPokedexNumber": 108,
+    "nationalPokedexNumber": 878,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 8,
+    "code": "Crown Tundra",
+    "regionalPokedexNumber": 109,
+    "nationalPokedexNumber": 879,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 8,
+    "code": "Crown Tundra",
+    "regionalPokedexNumber": 110,
+    "nationalPokedexNumber": 885,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 8,
+    "code": "Crown Tundra",
+    "regionalPokedexNumber": 111,
+    "nationalPokedexNumber": 886,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 8,
+    "code": "Crown Tundra",
+    "regionalPokedexNumber": 112,
+    "nationalPokedexNumber": 887,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 8,
+    "code": "Crown Tundra",
+    "regionalPokedexNumber": 113,
+    "nationalPokedexNumber": 371,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 8,
+    "code": "Crown Tundra",
+    "regionalPokedexNumber": 114,
+    "nationalPokedexNumber": 372,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 8,
+    "code": "Crown Tundra",
+    "regionalPokedexNumber": 115,
+    "nationalPokedexNumber": 373,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 8,
+    "code": "Crown Tundra",
+    "regionalPokedexNumber": 116,
+    "nationalPokedexNumber": 443,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 8,
+    "code": "Crown Tundra",
+    "regionalPokedexNumber": 117,
+    "nationalPokedexNumber": 444,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 8,
+    "code": "Crown Tundra",
+    "regionalPokedexNumber": 118,
+    "nationalPokedexNumber": 445,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 8,
+    "code": "Crown Tundra",
+    "regionalPokedexNumber": 119,
+    "nationalPokedexNumber": 621,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 8,
+    "code": "Crown Tundra",
+    "regionalPokedexNumber": 120,
+    "nationalPokedexNumber": 225,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 8,
+    "code": "Crown Tundra",
+    "regionalPokedexNumber": 121,
+    "nationalPokedexNumber": 613,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 8,
+    "code": "Crown Tundra",
+    "regionalPokedexNumber": 122,
+    "nationalPokedexNumber": 614,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 8,
+    "code": "Crown Tundra",
+    "regionalPokedexNumber": 123,
+    "nationalPokedexNumber": 138,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 8,
+    "code": "Crown Tundra",
+    "regionalPokedexNumber": 124,
+    "nationalPokedexNumber": 139,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 8,
+    "code": "Crown Tundra",
+    "regionalPokedexNumber": 125,
+    "nationalPokedexNumber": 140,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 8,
+    "code": "Crown Tundra",
+    "regionalPokedexNumber": 126,
+    "nationalPokedexNumber": 141,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 8,
+    "code": "Crown Tundra",
+    "regionalPokedexNumber": 127,
+    "nationalPokedexNumber": 142,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 8,
+    "code": "Crown Tundra",
+    "regionalPokedexNumber": 128,
+    "nationalPokedexNumber": 703,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 8,
+    "code": "Crown Tundra",
+    "regionalPokedexNumber": 129,
+    "nationalPokedexNumber": 374,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 8,
+    "code": "Crown Tundra",
+    "regionalPokedexNumber": 130,
+    "nationalPokedexNumber": 375,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 8,
+    "code": "Crown Tundra",
+    "regionalPokedexNumber": 131,
+    "nationalPokedexNumber": 376,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 8,
+    "code": "Crown Tundra",
+    "regionalPokedexNumber": 132,
+    "nationalPokedexNumber": 854,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 8,
+    "code": "Crown Tundra",
+    "regionalPokedexNumber": 133,
+    "nationalPokedexNumber": 855,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 8,
+    "code": "Crown Tundra",
+    "regionalPokedexNumber": 134,
+    "nationalPokedexNumber": 447,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 8,
+    "code": "Crown Tundra",
+    "regionalPokedexNumber": 135,
+    "nationalPokedexNumber": 448,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 8,
+    "code": "Crown Tundra",
+    "regionalPokedexNumber": 136,
+    "nationalPokedexNumber": 633,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 8,
+    "code": "Crown Tundra",
+    "regionalPokedexNumber": 137,
+    "nationalPokedexNumber": 634,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 8,
+    "code": "Crown Tundra",
+    "regionalPokedexNumber": 138,
+    "nationalPokedexNumber": 635,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 8,
+    "code": "Crown Tundra",
+    "regionalPokedexNumber": 139,
+    "nationalPokedexNumber": 246,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 8,
+    "code": "Crown Tundra",
+    "regionalPokedexNumber": 140,
+    "nationalPokedexNumber": 247,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 8,
+    "code": "Crown Tundra",
+    "regionalPokedexNumber": 141,
+    "nationalPokedexNumber": 248,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 8,
+    "code": "Crown Tundra",
+    "regionalPokedexNumber": 142,
+    "nationalPokedexNumber": 712,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 8,
+    "code": "Crown Tundra",
+    "regionalPokedexNumber": 143,
+    "nationalPokedexNumber": 713,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 8,
+    "code": "Crown Tundra",
+    "regionalPokedexNumber": 144,
+    "nationalPokedexNumber": 41,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 8,
+    "code": "Crown Tundra",
+    "regionalPokedexNumber": 145,
+    "nationalPokedexNumber": 42,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 8,
+    "code": "Crown Tundra",
+    "regionalPokedexNumber": 146,
+    "nationalPokedexNumber": 169,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 8,
+    "code": "Crown Tundra",
+    "regionalPokedexNumber": 147,
+    "nationalPokedexNumber": 564,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 8,
+    "code": "Crown Tundra",
+    "regionalPokedexNumber": 148,
+    "nationalPokedexNumber": 565,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 8,
+    "code": "Crown Tundra",
+    "regionalPokedexNumber": 149,
+    "nationalPokedexNumber": 566,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 8,
+    "code": "Crown Tundra",
+    "regionalPokedexNumber": 150,
+    "nationalPokedexNumber": 567,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 8,
+    "code": "Crown Tundra",
+    "regionalPokedexNumber": 151,
+    "nationalPokedexNumber": 343,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 8,
+    "code": "Crown Tundra",
+    "regionalPokedexNumber": 152,
+    "nationalPokedexNumber": 344,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 8,
+    "code": "Crown Tundra",
+    "regionalPokedexNumber": 153,
+    "nationalPokedexNumber": 622,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 8,
+    "code": "Crown Tundra",
+    "regionalPokedexNumber": 154,
+    "nationalPokedexNumber": 623,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 8,
+    "code": "Crown Tundra",
+    "regionalPokedexNumber": 155,
+    "nationalPokedexNumber": 835,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 8,
+    "code": "Crown Tundra",
+    "regionalPokedexNumber": 156,
+    "nationalPokedexNumber": 836,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 8,
+    "code": "Crown Tundra",
+    "regionalPokedexNumber": 157,
+    "nationalPokedexNumber": 877,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 8,
+    "code": "Crown Tundra",
+    "regionalPokedexNumber": 158,
+    "nationalPokedexNumber": 871,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 8,
+    "code": "Crown Tundra",
+    "regionalPokedexNumber": 159,
+    "nationalPokedexNumber": 363,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 8,
+    "code": "Crown Tundra",
+    "regionalPokedexNumber": 160,
+    "nationalPokedexNumber": 364,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 8,
+    "code": "Crown Tundra",
+    "regionalPokedexNumber": 161,
+    "nationalPokedexNumber": 365,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 8,
+    "code": "Crown Tundra",
+    "regionalPokedexNumber": 162,
+    "nationalPokedexNumber": 781,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 8,
+    "code": "Crown Tundra",
+    "regionalPokedexNumber": 163,
+    "nationalPokedexNumber": 821,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 8,
+    "code": "Crown Tundra",
+    "regionalPokedexNumber": 164,
+    "nationalPokedexNumber": 822,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 8,
+    "code": "Crown Tundra",
+    "regionalPokedexNumber": 165,
+    "nationalPokedexNumber": 823,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 8,
+    "code": "Crown Tundra",
+    "regionalPokedexNumber": 166,
+    "nationalPokedexNumber": 829,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 8,
+    "code": "Crown Tundra",
+    "regionalPokedexNumber": 167,
+    "nationalPokedexNumber": 830,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 8,
+    "code": "Crown Tundra",
+    "regionalPokedexNumber": 168,
+    "nationalPokedexNumber": 546,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 8,
+    "code": "Crown Tundra",
+    "regionalPokedexNumber": 169,
+    "nationalPokedexNumber": 547,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 8,
+    "code": "Crown Tundra",
+    "regionalPokedexNumber": 170,
+    "nationalPokedexNumber": 213,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 8,
+    "code": "Crown Tundra",
+    "regionalPokedexNumber": 171,
+    "nationalPokedexNumber": 876,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 8,
+    "code": "Crown Tundra",
+    "regionalPokedexNumber": 172,
+    "nationalPokedexNumber": 446,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 8,
+    "code": "Crown Tundra",
+    "regionalPokedexNumber": 173,
+    "nationalPokedexNumber": 143,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 8,
+    "code": "Crown Tundra",
+    "regionalPokedexNumber": 174,
+    "nationalPokedexNumber": 302,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 8,
+    "code": "Crown Tundra",
+    "regionalPokedexNumber": 175,
+    "nationalPokedexNumber": 303,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 8,
+    "code": "Crown Tundra",
+    "regionalPokedexNumber": 176,
+    "nationalPokedexNumber": 837,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 8,
+    "code": "Crown Tundra",
+    "regionalPokedexNumber": 177,
+    "nationalPokedexNumber": 838,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 8,
+    "code": "Crown Tundra",
+    "regionalPokedexNumber": 178,
+    "nationalPokedexNumber": 839,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 8,
+    "code": "Crown Tundra",
+    "regionalPokedexNumber": 179,
+    "nationalPokedexNumber": 597,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 8,
+    "code": "Crown Tundra",
+    "regionalPokedexNumber": 180,
+    "nationalPokedexNumber": 598,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 8,
+    "code": "Crown Tundra",
+    "regionalPokedexNumber": 181,
+    "nationalPokedexNumber": 714,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 8,
+    "code": "Crown Tundra",
+    "regionalPokedexNumber": 182,
+    "nationalPokedexNumber": 715,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 8,
+    "code": "Crown Tundra",
+    "regionalPokedexNumber": 183,
+    "nationalPokedexNumber": 345,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 8,
+    "code": "Crown Tundra",
+    "regionalPokedexNumber": 184,
+    "nationalPokedexNumber": 346,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 8,
+    "code": "Crown Tundra",
+    "regionalPokedexNumber": 185,
+    "nationalPokedexNumber": 347,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 8,
+    "code": "Crown Tundra",
+    "regionalPokedexNumber": 186,
+    "nationalPokedexNumber": 348,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 8,
+    "code": "Crown Tundra",
+    "regionalPokedexNumber": 187,
+    "nationalPokedexNumber": 369,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 8,
+    "code": "Crown Tundra",
+    "regionalPokedexNumber": 188,
+    "nationalPokedexNumber": 349,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 8,
+    "code": "Crown Tundra",
+    "regionalPokedexNumber": 189,
+    "nationalPokedexNumber": 350,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 8,
+    "code": "Crown Tundra",
+    "regionalPokedexNumber": 190,
+    "nationalPokedexNumber": 131,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 8,
+    "code": "Crown Tundra",
+    "regionalPokedexNumber": 191,
+    "nationalPokedexNumber": 304,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 8,
+    "code": "Crown Tundra",
+    "regionalPokedexNumber": 192,
+    "nationalPokedexNumber": 305,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 8,
+    "code": "Crown Tundra",
+    "regionalPokedexNumber": 193,
+    "nationalPokedexNumber": 306,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 8,
+    "code": "Crown Tundra",
+    "regionalPokedexNumber": 194,
+    "nationalPokedexNumber": 147,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 8,
+    "code": "Crown Tundra",
+    "regionalPokedexNumber": 195,
+    "nationalPokedexNumber": 148,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 8,
+    "code": "Crown Tundra",
+    "regionalPokedexNumber": 196,
+    "nationalPokedexNumber": 149,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 8,
+    "code": "Crown Tundra",
+    "regionalPokedexNumber": 197,
+    "nationalPokedexNumber": 377,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 8,
+    "code": "Crown Tundra",
+    "regionalPokedexNumber": 198,
+    "nationalPokedexNumber": 378,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 8,
+    "code": "Crown Tundra",
+    "regionalPokedexNumber": 199,
+    "nationalPokedexNumber": 379,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 8,
+    "code": "Crown Tundra",
+    "regionalPokedexNumber": 200,
+    "nationalPokedexNumber": 894,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 8,
+    "code": "Crown Tundra",
+    "regionalPokedexNumber": 201,
+    "nationalPokedexNumber": 895,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 8,
+    "code": "Crown Tundra",
+    "regionalPokedexNumber": 202,
+    "nationalPokedexNumber": 144,
+    "formSuffix": "",
+    "isVariant": true
+  },
+  {
+    "region": 8,
+    "code": "Crown Tundra",
+    "regionalPokedexNumber": 202,
+    "nationalPokedexNumber": 144,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 8,
+    "code": "Crown Tundra",
+    "regionalPokedexNumber": 203,
+    "nationalPokedexNumber": 145,
+    "formSuffix": "",
+    "isVariant": true
+  },
+  {
+    "region": 8,
+    "code": "Crown Tundra",
+    "regionalPokedexNumber": 203,
+    "nationalPokedexNumber": 145,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 8,
+    "code": "Crown Tundra",
+    "regionalPokedexNumber": 204,
+    "nationalPokedexNumber": 146,
+    "formSuffix": "",
+    "isVariant": true
+  },
+  {
+    "region": 8,
+    "code": "Crown Tundra",
+    "regionalPokedexNumber": 204,
+    "nationalPokedexNumber": 146,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 8,
+    "code": "Crown Tundra",
+    "regionalPokedexNumber": 205,
+    "nationalPokedexNumber": 638,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 8,
+    "code": "Crown Tundra",
+    "regionalPokedexNumber": 206,
+    "nationalPokedexNumber": 639,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 8,
+    "code": "Crown Tundra",
+    "regionalPokedexNumber": 207,
+    "nationalPokedexNumber": 640,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 8,
+    "code": "Crown Tundra",
+    "regionalPokedexNumber": 208,
+    "nationalPokedexNumber": 896,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 8,
+    "code": "Crown Tundra",
+    "regionalPokedexNumber": 209,
+    "nationalPokedexNumber": 897,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 8,
+    "code": "Crown Tundra",
+    "regionalPokedexNumber": 210,
+    "nationalPokedexNumber": 898,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 8,
+    "code": "Crown Tundra",
+    "regionalPokedexNumber": 210,
+    "nationalPokedexNumber": 898,
+    "formSuffix": "_1",
+    "isVariant": false
+  },
+  {
+    "region": 8,
+    "code": "Crown Tundra",
+    "regionalPokedexNumber": 210,
+    "nationalPokedexNumber": 898,
+    "formSuffix": "_2",
+    "isVariant": false
+  }
+]
