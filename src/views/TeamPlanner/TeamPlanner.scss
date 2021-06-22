@@ -59,7 +59,7 @@
   }
 }
 
-.scroll-to-filters {
+.scroll-to-filters.scroll-to-filters {
   @include respondToAll((sm, md, lg)) {
     display: none;
   }
