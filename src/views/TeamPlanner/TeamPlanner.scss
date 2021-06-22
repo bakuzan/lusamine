@@ -20,14 +20,14 @@
       max-width: 80%;
       padding: 0 8px;
 
-      @include respondToAll((xs, sm)) {
+      @include respondToAll((xxs, xs, sm)) {
         max-width: 100%;
         padding: 0;
       }
     }
 
     &--hide-on_small {
-      @include respondToAll((xs, sm)) {
+      @include respondToAll((xxs, xs, sm)) {
         display: none;
       }
     }
@@ -57,4 +57,15 @@
       padding: 18px 8px;
     }
   }
+}
+
+.scroll-to-filters {
+  @include respondToAll((sm, md, lg)) {
+    display: none;
+  }
+
+  min-height: 25px;
+  min-width: 2rem;
+  padding: 5px;
+  margin: 0 5px;
 }

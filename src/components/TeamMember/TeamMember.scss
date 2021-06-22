@@ -16,6 +16,7 @@ $team-member--width-adjustment: $team-member--account-for-border +
   display: flex;
   flex-direction: column;
   align-items: center;
+  min-width: 105px;
   width: calc(100% / 6 - #{$team-member--width-adjustment});
   padding: $team-member--padding;
   border: $team-member--border-width solid transparent;

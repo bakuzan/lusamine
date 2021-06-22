@@ -19,7 +19,7 @@
     display: flex;
     width: 100%;
 
-    @include respondTo(xs) {
+    @include respondToAll((xxs, xs)) {
       flex-wrap: wrap;
     }
   }
@@ -30,7 +30,7 @@
   }
 
   &__options.pokedex__options {
-    @include respondTo(xs) {
+    @include respondToAll((xxs, xs)) {
       flex-basis: 100%;
     }
   }
@@ -44,7 +44,7 @@
   display: flex;
   width: 100%;
 
-  @include respondTo(xs) {
+  @include respondToAll((xxs, xs)) {
     flex-direction: column;
   }
 

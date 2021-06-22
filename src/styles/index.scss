@@ -75,3 +75,15 @@ main {
 .app-information {
   z-index: map-get($z-index, clearance);
 }
+
+.alert-container.alert-container {
+  @include respondTo(xxs) {
+    left: 10px;
+    transform: translateX(0);
+    width: 90%;
+  }
+}
+
+.lusamine-alert.lusamine-alert {
+  min-width: 300px;
+}

@@ -3,6 +3,7 @@ export default {
   // screen sizes
   large: 'large',
   small: 'small',
+  xsmall: 'xsmall',
   idPrefix: {
     regular: 'p',
     mega: 'm',

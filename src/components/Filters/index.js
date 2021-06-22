@@ -18,18 +18,22 @@ const FILTERS_INPUT_CLASS = 'filters__input';
 
 function Filters(props) {
   const hideOnCertainScreens = !!props.hiddenOn;
-  const shouldHide = media.get(props.hiddenOn);
+  const hiddenOn =
+    props.hiddenOn instanceof Array ? props.hiddenOn : [props.hiddenOn];
+
+  const shouldHide = hiddenOn.map((x) => media.get(x));
   const size = useWindowSize();
 
-  if (shouldHide(size.width)) {
+  if (shouldHide.some((fn) => fn(size.width))) {
     return null;
   }
 
   return (
     <section
-      className={classNames('filters', {
-        [`filters--hide-on_${props.hiddenOn}`]: hideOnCertainScreens
-      })}
+      className={classNames(
+        'filters',
+        hideOnCertainScreens && hiddenOn.map((x) => `filters--hide-on_${x}`)
+      )}
     >
       <SelectBox
         id="active-pokedex"
@@ -114,6 +118,12 @@ const checkboxPropTypes = PropTypes.shape({
   onChange: PropTypes.func
 }).isRequired;
 
+const hiddenOnType = PropTypes.oneOf([
+  Strings.large,
+  Strings.small,
+  Strings.xsmall
+]);
+
 Filters.propTypes = {
   searchProps: PropTypes.shape({
     value: PropTypes.string,
@@ -130,7 +140,7 @@ Filters.propTypes = {
     value: PropTypes.string,
     onChange: PropTypes.func
   }),
-  hiddenOn: PropTypes.oneOf([Strings.large, Strings.small])
+  hiddenOn: PropTypes.oneOfType([hiddenOnType, PropTypes.arrayOf(hiddenOnType)])
 };
 
 export default Filters;

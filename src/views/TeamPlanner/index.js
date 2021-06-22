@@ -4,8 +4,11 @@ import React from 'react';
 import generateUniqueId from 'ayaka/generateUniqueId';
 import ClearableInput from 'meiko/ClearableInput';
 import toasterService from 'meiko/utils/toasterService';
+import MkoIcons from 'meiko/constants/icons';
+
 import { Button } from 'components/Buttons';
 import Filters from 'components/Filters';
+import TeamPlannerGrid from './TeamPlannerGrid';
 import Team from 'components/Team';
 import { PokedexContext, TypeContext } from 'context';
 import Constants from 'constants/index';
@@ -22,7 +25,6 @@ import { getPartySizeAlertMessage } from 'utils/feedback';
 import * as TPU from './TeamPlannerUtils';
 
 import './TeamPlanner.scss';
-import TeamPlannerGrid from './TeamPlannerGrid';
 
 const { Strings, Party, Routes } = Constants;
 
@@ -212,7 +214,10 @@ class PlannerPage extends React.Component {
             'team-planner__container--hide-on_small'
           )}
         >
-          <Filters hiddenOn={Strings.small} {...filterProps} />
+          <Filters
+            hiddenOn={[Strings.xsmall, Strings.small]}
+            {...filterProps}
+          />
         </div>
         <TypeContext.Consumer>
           {(typeMatches) => {
@@ -234,6 +239,21 @@ class PlannerPage extends React.Component {
                   className="team-planner__button-actions"
                   aria-describedby="actionsDescription"
                 >
+                  <Button
+                    id="jump-to-options"
+                    className="scroll-to-filters"
+                    isAction
+                    icon={MkoIcons.down}
+                    title="Scroll down to options"
+                    aria-label="Scroll down to options"
+                    onClick={() => {
+                      const rect = document
+                        .getElementById('scroll-down-anchor')
+                        .getBoundingClientRect();
+
+                      window.scrollTo(0, rect.top ?? 0);
+                    }}
+                  />
                   <Button
                     id="randomise-team"
                     isAction
@@ -281,6 +301,7 @@ class PlannerPage extends React.Component {
                     onMembersUpdate={this.handleMembersUpdate}
                   />
                 </div>
+                <div id="scroll-down-anchor"></div>
                 <Filters hiddenOn={Strings.large} {...filterProps} />
 
                 <TeamPlannerGrid
