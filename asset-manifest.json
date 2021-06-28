@@ -1,15 +1,13 @@
 {
   "files": {
     "main.css": "/lusamine/static/css/main.1567cae9.chunk.css",
-    "main.js": "/lusamine/static/js/main.5c74aaba.chunk.js",
-    "main.js.map": "/lusamine/static/js/main.5c74aaba.chunk.js.map",
+    "main.js": "/lusamine/static/js/main.9ac10e98.chunk.js",
+    "main.js.map": "/lusamine/static/js/main.9ac10e98.chunk.js.map",
     "runtime-main.js": "/lusamine/static/js/runtime-main.a9ccca4f.js",
     "runtime-main.js.map": "/lusamine/static/js/runtime-main.a9ccca4f.js.map",
     "static/js/2.7d362e95.chunk.js": "/lusamine/static/js/2.7d362e95.chunk.js",
     "static/js/2.7d362e95.chunk.js.map": "/lusamine/static/js/2.7d362e95.chunk.js.map",
     "index.html": "/lusamine/index.html",
-    "service-worker.js": "/lusamine/service-worker.js",
-    "service-worker.js.map": "/lusamine/service-worker.js.map",
     "static/css/main.1567cae9.chunk.css.map": "/lusamine/static/css/main.1567cae9.chunk.css.map",
     "static/js/2.7d362e95.chunk.js.LICENSE.txt": "/lusamine/static/js/2.7d362e95.chunk.js.LICENSE.txt",
     "static/media/ArtCard.scss": "/lusamine/static/media/art.be6ee3d0.png",
@@ -23,6 +21,6 @@
     "static/js/runtime-main.a9ccca4f.js",
     "static/js/2.7d362e95.chunk.js",
     "static/css/main.1567cae9.chunk.css",
-    "static/js/main.5c74aaba.chunk.js"
+    "static/js/main.9ac10e98.chunk.js"
   ]
 }
