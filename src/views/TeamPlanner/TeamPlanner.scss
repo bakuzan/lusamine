@@ -36,6 +36,14 @@
   &__button-actions {
     display: flex;
     justify-content: flex-end;
+
+    @include respondTo(xxs) {
+      flex-wrap: wrap;
+
+      > * {
+        margin: 5px 0;
+      }
+    }
   }
 
   &__team-creator {
@@ -68,4 +76,8 @@
   min-width: 2rem;
   padding: 5px;
   margin: 0 5px;
+
+  @include respondTo(xxs) {
+    margin: 5px;
+  }
 }

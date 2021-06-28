@@ -24,7 +24,7 @@ $team-member--width-adjustment: $team-member--account-for-border +
   // Hack to ensure nice screenshot in drag preview
   transform: translate3d(0, 0, 0);
 
-  @include respondTo(xs) {
+  @include respondToAll((xxs, xs)) {
     width: calc(100% / 3 - #{$team-member--width-adjustment});
   }
 

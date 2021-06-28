@@ -156,8 +156,9 @@ class PlannerPage extends React.Component {
   render() {
     let pokeData = this.context;
     const { location, match } = this.props;
-    const activePokedex = resolvePokedex(match);
     const { team } = getUrlQueryStringAsObject(location);
+
+    const activePokedex = resolvePokedex(match);
     const currentTeamIds = createSetFromIdString(team);
 
     const dexFilters = { ...this.state, currentTeamIds, activePokedex };
