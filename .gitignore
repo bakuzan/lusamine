@@ -3,6 +3,7 @@
 # dependencies
 /node_modules
 env
+.husky
 
 # testing
 /coverage
