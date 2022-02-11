@@ -9,7 +9,7 @@
     "lint-staged": "^12.3.3",
     "meiko": "file:../meiko/build",
     "nano-css": "^5.3.4",
-    "node-sass": "^6.0.1",
+    "node-sass": "^7.0.0",
     "prettier": "^2.5.1",
     "react": "^17.0.2",
     "react-dnd": "^11.1.3",
