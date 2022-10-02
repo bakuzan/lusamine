@@ -1,4 +1,5 @@
 import React from 'react';
+import { useLocation, useNavigate } from 'react-router-dom';
 
 import { capitalise } from 'ayaka/capitalise';
 import Tabs from 'meiko/Tabs';
@@ -9,13 +10,16 @@ import { getUrlQueryStringAsObject } from 'utils/common';
 
 import './TeamViewer.scss';
 
-function TeamViewer({ match, location, history, ...props }) {
-  function handleTabChange(name) {
-    history.replace(`${match.url}?tab=${name}`);
-  }
+function TeamViewer(props) {
+  const location = useLocation();
+  const navigate = useNavigate();
 
   const query = getUrlQueryStringAsObject(location);
   const activeTab = capitalise(query.tab || 'Saved');
+
+  function handleTabChange(name) {
+    navigate(`${location.pathname}?tab=${name}`, { replace: true });
+  }
 
   return (
     <Tabs.Container activeTab={activeTab} onChange={handleTabChange}>

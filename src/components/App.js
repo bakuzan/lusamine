@@ -1,5 +1,5 @@
 import React, { useState, useMemo } from 'react';
-import { Switch, Route } from 'react-router-dom';
+import { Routes, Route, useLocation } from 'react-router-dom';
 
 import Alert from 'meiko/Alert';
 import AppInformation from 'meiko/AppInformation';
@@ -18,21 +18,25 @@ import Settings from 'views/Settings';
 import Pokedex from 'views/Pokedex';
 import TeamStatistics from 'views/TeamStatistics';
 
-import Routes from 'constants/routes';
+import RoutePaths from 'constants/routes';
 import { PokedexContext, TypeContext } from 'context';
 import { constructPokedex, getTypeMatchups } from 'data';
 import { settingsStore } from 'utils/common';
 import logData from 'utils/logData';
 import getPageTitleForCurrentPath from 'utils/getPageTitle';
 
+/* eslint-disable no-undef */
 const BRANCH = process.env.REACT_APP_BRANCH;
 const VERSION = process.env.REACT_APP_VERSION;
+/* eslint-enable no-undef */
 
+const homePageUrl = RoutePaths.base;
 const systemMessages = [];
 
-function App({ match, location }) {
+function App() {
   useGlobalStyles();
 
+  const location = useLocation();
   const [{ pokedex, regions }] = useState(constructPokedex());
   const [typeMatchups] = useState(getTypeMatchups());
   const [userMessages, setUserMessages] = useState(systemMessages);
@@ -77,32 +81,41 @@ function App({ match, location }) {
           <AlertContainer>
             {(triggerAlert) => (
               <main>
-                <Switch>
+                <Routes>
                   <Route
-                    path={`${match.url}${Routes.teams}`}
-                    component={TeamViewer}
+                    path={`${RoutePaths.teams}`}
+                    element={<TeamViewer />}
                   />
+
                   <Route
-                    path={`${match.url}${Routes.teamStatistics}`}
-                    component={TeamStatistics}
+                    path={`${RoutePaths.teamStatistics}`}
+                    element={<TeamStatistics />}
                   />
+
                   <Route
-                    path={`${match.url}${Routes.settings}`}
-                    component={Settings}
+                    path={`${RoutePaths.settings}`}
+                    element={<Settings />}
                   />
-                  <Route
-                    path={`${match.url}${Routes.pokedex}/:id?`}
-                    component={Pokedex}
-                  />
-                  <Route
-                    path={`${match.url}/:pokedexKey?`}
-                    render={(props) => (
-                      <TeamPlanner {...props} sendAlert={triggerAlert} />
-                    )}
-                  />
+
+                  <Route path={RoutePaths.pokedex}>
+                    <Route index element={<Pokedex />} />
+                    <Route path={`:id`} element={<Pokedex />} />
+                  </Route>
+
+                  <Route path="/">
+                    <Route
+                      index
+                      element={<TeamPlanner sendAlert={triggerAlert} />}
+                    />
+                    <Route
+                      path={`:pokedexKey`}
+                      element={<TeamPlanner sendAlert={triggerAlert} />}
+                    />
+                  </Route>
+
                   <Route
                     path="*"
-                    render={() => (
+                    element={
                       <div>
                         <AppHelmet
                           title="Page not found"
@@ -110,13 +123,13 @@ function App({ match, location }) {
                         />
                         <p>Page not found</p>
                         <p>You appear lost...</p>
-                        <ButtonisedNavLink to={match.url} link>
+                        <ButtonisedNavLink to={homePageUrl} link>
                           Return to the homepage
                         </ButtonisedNavLink>
                       </div>
-                    )}
+                    }
                   />
-                </Switch>
+                </Routes>
                 <Toaster />
               </main>
             )}

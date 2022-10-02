@@ -4,13 +4,13 @@ function isBrowser() {
 
 export default function isTouchDevice() {
   if (isBrowser()) {
-    var confirmed =
+    const confirmed =
       'ontouchstart' in window ||
       navigator.maxTouchPoints > 0 ||
       navigator.msMaxTouchPoints > 0;
 
     if (confirmed) {
-      var html = document.getElementsByTagName('html')[0];
+      const html = document.getElementsByTagName('html')[0];
       html.classList.add('touchevents');
     }
 

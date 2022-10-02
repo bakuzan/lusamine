@@ -39,7 +39,7 @@ class TeamBreakdown extends React.Component {
   }
 
   render() {
-    let types = this.context;
+    const types = this.context;
     const {
       className,
       contentClassName,

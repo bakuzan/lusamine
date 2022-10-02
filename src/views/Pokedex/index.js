@@ -1,4 +1,5 @@
 import React, { useContext, useMemo } from 'react';
+import { useLocation, useNavigate, useParams } from 'react-router-dom';
 
 import { capitaliseEachWord } from 'ayaka/capitalise';
 import orderBy from 'ayaka/orderBy';
@@ -26,8 +27,13 @@ import './Pokedex.scss';
 
 const FIRST_ID = `p_1`;
 
-function Pokedex({ match, location, history }) {
+function Pokedex() {
   const { pokedex } = useContext(PokedexContext);
+  const location = useLocation();
+  const params = useParams();
+  const navigate = useNavigate();
+  const currentUrl = location.pathname;
+
   const { baseDex, dexOptions, lastId } = useMemo(
     () => generateVanillaDex(pokedex),
     [pokedex]
@@ -36,10 +42,8 @@ function Pokedex({ match, location, history }) {
   const size = useWindowSize();
   const isXSmall = isXS(size.width);
 
-  const { params } = match;
   const activeId = params.id || FIRST_ID;
   const activeMon = baseDex.get(activeId);
-
   const { typeSourceId } = getUrlQueryStringAsObject(location);
   const typeSourceMon = pokedex.get(typeSourceId) || activeMon;
 
@@ -48,7 +52,7 @@ function Pokedex({ match, location, history }) {
 
   function changeActivePokemon(e) {
     const newId = e.target.value;
-    history.push(`${Routes.base}${Routes.pokedex}/${newId}`);
+    navigate(`${Routes.base}${Routes.pokedex}/${newId}`);
   }
 
   if (!activeMon) {
@@ -80,7 +84,7 @@ function Pokedex({ match, location, history }) {
   function move(direction) {
     const index = dexOptions.findIndex((x) => x.value === activeId);
     const mon = dexOptions[index + direction];
-    history.push(`${Routes.base}${Routes.pokedex}/${mon.value}`);
+    navigate(`${Routes.base}${Routes.pokedex}/${mon.value}`);
   }
 
   return (
@@ -142,7 +146,7 @@ function Pokedex({ match, location, history }) {
                   <PokedexMember
                     key={item.id}
                     data={item}
-                    currentPath={match.url}
+                    currentPath={currentUrl}
                   />
                 )}
               />
@@ -160,7 +164,7 @@ function Pokedex({ match, location, history }) {
                 <PokedexMember
                   key={item.id}
                   data={item}
-                  currentPath={match.url}
+                  currentPath={currentUrl}
                 />
               )}
             />
@@ -178,7 +182,7 @@ function Pokedex({ match, location, history }) {
                   <PokedexMember
                     key={item.id}
                     data={item}
-                    currentPath={match.url}
+                    currentPath={currentUrl}
                   />
                 )}
               />
@@ -194,7 +198,7 @@ function Pokedex({ match, location, history }) {
                   <PokedexMember
                     key={item.id}
                     data={item}
-                    currentPath={match.url}
+                    currentPath={currentUrl}
                   />
                 )}
               />

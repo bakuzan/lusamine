@@ -23,7 +23,7 @@ function NavigationLinks({ onItemClick }) {
         key={PLANNER}
         id={PLANNER}
         className="header-bar__link"
-        exact
+        end
         to={Routes.base}
         onClick={onItemClick}
       >

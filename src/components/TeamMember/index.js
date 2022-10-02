@@ -14,7 +14,7 @@ import {
   IconButton,
   ButtonisedNavLink
 } from 'components/Buttons';
-import { withDragAndDrop } from 'components/DragAndDrop';
+import { withDragAndDropHooks } from 'components/DragAndDrop';
 import TypeBlock from 'components/TypeBlock';
 import List from 'components/List';
 import Routes from 'constants/routes';
@@ -59,10 +59,10 @@ const TeamMember = React.memo(
     const isFirst = index === Party.START_INDEX;
     const isLast = index === partyEndIndex;
 
-    const evolutions = useMemo(() => generateEvolutionOptions(pokedex, data), [
-      pokedex,
-      data
-    ]);
+    const evolutions = useMemo(
+      () => generateEvolutionOptions(pokedex, data),
+      [pokedex, data]
+    );
     const disableEvolve = evolutions.count() === 0;
 
     if (displayEvolveMenu) {
@@ -126,6 +126,7 @@ const TeamMember = React.memo(
       <li
         ref={ref}
         id={memberId}
+        data-handler-id={props.handlerId}
         className={classNames(
           'team-member',
           {
@@ -235,4 +236,4 @@ TeamMember.propTypes = {
 };
 
 export default TeamMember;
-export const TeamMemberDraggable = withDragAndDrop(TeamMember, ArtCard);
+export const TeamMemberDraggable = withDragAndDropHooks(TeamMember);

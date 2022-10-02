@@ -1,5 +1,5 @@
 import classNames from 'classnames';
-import React from 'react';
+import React, { useContext, useState } from 'react';
 
 import generateUniqueId from 'ayaka/generateUniqueId';
 import ClearableInput from 'meiko/ClearableInput';
@@ -25,93 +25,86 @@ import { getPartySizeAlertMessage } from 'utils/feedback';
 import * as TPU from './TeamPlannerUtils';
 
 import './TeamPlanner.scss';
+import { useLocation, useNavigate, useParams } from 'react-router-dom';
 
 const { Strings, Party, Routes } = Constants;
 
-const resolvePokedex = (m) =>
-  m.params.pokedexKey ||
+const resolvePokedex = (params) =>
+  params.pokedexKey ||
   settingsStore.getKey('defaultPokedex') ||
   Pokedex.national;
 
-class PlannerPage extends React.Component {
-  static contextType = PokedexContext;
+function PlannerPage({ sendAlert }) {
+  const pokeData = useContext(PokedexContext);
+  const location = useLocation();
+  const params = useParams();
+  const navigate = useNavigate();
 
-  constructor(props) {
-    super(props);
-    this.state = {
-      currentTeamName: '',
-      search: '',
-      generations: TPU.generationDefaults,
-      types: TPU.typeDefaults,
-      resists: TPU.typeDefaults,
-      evolutions: TPU.evolutionDefaults,
-      includeMega: true,
-      includeVariants: true,
-      startersOnly: false
-    };
+  const [state, setStateDumb] = useState({
+    currentTeamName: '',
+    search: '',
+    generations: TPU.generationDefaults,
+    types: TPU.typeDefaults,
+    resists: TPU.typeDefaults,
+    evolutions: TPU.evolutionDefaults,
+    includeMega: true,
+    includeVariants: true,
+    startersOnly: false
+  });
 
-    this.handleNameInput = this.handleNameInput.bind(this);
-    this.handleSearchInput = this.handleSearchInput.bind(this);
-    this.handleMultiSelectFilter = this.handleMultiSelectFilter.bind(this);
-    this.handleTickboxFilter = this.handleTickboxFilter.bind(this);
-    this.handleSpriteSelection = this.handleSpriteSelection.bind(this);
-    this.handleMembersUpdate = this.handleMembersUpdate.bind(this);
-    this.handleClearTeam = this.handleClearTeam.bind(this);
-    this.handleRandomTeam = this.handleRandomTeam.bind(this);
-    this.handleSaveTeam = this.handleSaveTeam.bind(this);
-    this.handleChangePokedex = this.handleChangePokedex.bind(this);
+  function setState(obj) {
+    setStateDumb((s) => ({ ...s, ...obj }));
   }
 
-  updateTeamQueryString(memberIds, newId) {
-    const { location, history } = this.props;
+  function updateTeamQueryString(memberIds, newId) {
     const idStr = createIdStringFromSet(memberIds, newId);
 
-    history.push(`${location.pathname}?team=${idStr}`);
+    navigate(`${location.pathname}?team=${idStr}`);
   }
 
-  handleNameInput(e) {
-    this.setState({ currentTeamName: e.target.value });
+  function handleNameInput(e) {
+    setState({ currentTeamName: e.target.value });
   }
 
-  handleSearchInput(e) {
-    this.setState({ search: e.target.value.toLowerCase() });
+  function handleSearchInput(e) {
+    setState({ search: e.target.value.toLowerCase() });
   }
 
-  handleMultiSelectFilter(value, name) {
-    this.setState({ [name]: value });
+  function handleMultiSelectFilter(value, name) {
+    setState({ [name]: value });
   }
 
-  handleTickboxFilter(e) {
+  function handleTickboxFilter(e) {
     const { name, checked } = e.target;
-    this.setState({ [name]: checked });
+    setState({ [name]: checked });
   }
 
-  handleSpriteSelection(dataId) {
+  function handleSpriteSelection(dataId) {
     const currentTeamIds = createSetFromIdString(
-      getUrlQueryStringAsObject(this.props.location).team
+      getUrlQueryStringAsObject(location).team
     );
 
     if (currentTeamIds.size === Party.MAX_SIZE) {
-      return this.props.sendAlert(getPartySizeAlertMessage());
+      return sendAlert(getPartySizeAlertMessage());
     }
 
-    this.updateTeamQueryString(currentTeamIds, dataId);
+    updateTeamQueryString(currentTeamIds, dataId);
   }
 
-  handleMembersUpdate(membersIds) {
-    this.updateTeamQueryString(membersIds);
+  function handleMembersUpdate(membersIds) {
+    updateTeamQueryString(membersIds);
   }
 
-  handleClearTeam() {
-    this.updateTeamQueryString(new Set([]));
+  function handleClearTeam() {
+    updateTeamQueryString(new Set([]));
   }
 
-  handleRandomTeam(dexData, typeMatches) {
+  function handleRandomTeam(dexData, typeMatches) {
     return () => {
-      const idString = getUrlQueryStringAsObject(this.props.location).team;
+      const idString = getUrlQueryStringAsObject(location).team;
       const currentTeamIds = createSetFromIdString(idString);
-      const activePokedex = resolvePokedex(this.props.match);
-      const filters = { ...this.state, currentTeamIds, activePokedex };
+      const activePokedex = resolvePokedex(params);
+      const filters = { ...state, currentTeamIds, activePokedex };
 
       const randomSetOfIds = TPU.selectRandomSetOfIds(
         dexData,
@@ -119,12 +112,12 @@ class PlannerPage extends React.Component {
         typeMatches
       );
 
-      this.updateTeamQueryString(randomSetOfIds);
+      updateTeamQueryString(randomSetOfIds);
     };
   }
 
-  handleSaveTeam() {
-    const idString = getUrlQueryStringAsObject(this.props.location).team;
+  function handleSaveTeam() {
+    const idString = getUrlQueryStringAsObject(location).team;
     const currentTeamIds = createSetFromIdString(idString);
 
     if (currentTeamIds.size === 0) {
@@ -132,7 +125,7 @@ class PlannerPage extends React.Component {
     }
 
     const teamId = generateUniqueId();
-    const teamName = this.state.currentTeamName || 'Team';
+    const teamName = state.currentTeamName || 'Team';
 
     const saveTeamData = {
       [teamId]: {
@@ -148,174 +141,158 @@ class PlannerPage extends React.Component {
     );
   }
 
-  handleChangePokedex(e) {
+  function handleChangePokedex(e) {
     const { value } = e.target;
-    this.props.history.push(`${Routes.base}/${value}`);
+    navigate(`${Routes.base}/${value}`);
   }
 
-  render() {
-    let pokeData = this.context;
-    const { location, match } = this.props;
-    const { team } = getUrlQueryStringAsObject(location);
+  const { team } = getUrlQueryStringAsObject(location);
+  const activePokedex = resolvePokedex(params);
+  const currentTeamIds = createSetFromIdString(team);
+  const dexFilters = { ...state, currentTeamIds, activePokedex };
 
-    const activePokedex = resolvePokedex(match);
-    const currentTeamIds = createSetFromIdString(team);
+  const filterProps = {
+    pokedexProps: {
+      value: activePokedex,
+      onChange: handleChangePokedex
+    },
+    searchProps: {
+      value: dexFilters.search,
+      onChange: handleSearchInput
+    },
+    generationProps: {
+      values: dexFilters.generations,
+      options: TPU.generationOptions,
+      onUpdate: handleMultiSelectFilter
+    },
+    typeProps: {
+      values: dexFilters.types,
+      options: TPU.typeOptions,
+      onUpdate: handleMultiSelectFilter
+    },
+    resistsProps: {
+      values: dexFilters.resists,
+      options: TPU.typeOptions,
+      onUpdate: handleMultiSelectFilter
+    },
+    evolutionsProps: {
+      values: dexFilters.evolutions,
+      options: TPU.evolutionOptions,
+      onUpdate: handleMultiSelectFilter
+    },
+    includeMegaProps: {
+      checked: dexFilters.includeMega,
+      onChange: handleTickboxFilter
+    },
+    includeVariantsProps: {
+      checked: dexFilters.includeVariants,
+      onChange: handleTickboxFilter
+    },
+    startersOnlyProps: {
+      checked: dexFilters.startersOnly,
+      onChange: handleTickboxFilter
+    }
+  };
 
-    const dexFilters = { ...this.state, currentTeamIds, activePokedex };
+  return (
+    <div className="team-planner">
+      <div
+        className={classNames(
+          'team-planner__container',
+          'team-planner__container--width_20',
+          'team-planner__container--hide-on_small'
+        )}
+      >
+        <Filters hiddenOn={[Strings.xsmall, Strings.small]} {...filterProps} />
+      </div>
+      <TypeContext.Consumer>
+        {(typeMatches) => {
+          const filteredSprites = TPU.iteratePokedexToList(
+            pokeData,
+            dexFilters,
+            typeMatches
+          );
 
-    const filterProps = {
-      pokedexProps: {
-        value: activePokedex,
-        onChange: this.handleChangePokedex
-      },
-      searchProps: {
-        value: dexFilters.search,
-        onChange: this.handleSearchInput
-      },
-      generationProps: {
-        values: dexFilters.generations,
-        options: TPU.generationOptions,
-        onUpdate: this.handleMultiSelectFilter
-      },
-      typeProps: {
-        values: dexFilters.types,
-        options: TPU.typeOptions,
-        onUpdate: this.handleMultiSelectFilter
-      },
-      resistsProps: {
-        values: dexFilters.resists,
-        options: TPU.typeOptions,
-        onUpdate: this.handleMultiSelectFilter
-      },
-      evolutionsProps: {
-        values: dexFilters.evolutions,
-        options: TPU.evolutionOptions,
-        onUpdate: this.handleMultiSelectFilter
-      },
-      includeMegaProps: {
-        checked: dexFilters.includeMega,
-        onChange: this.handleTickboxFilter
-      },
-      includeVariantsProps: {
-        checked: dexFilters.includeVariants,
-        onChange: this.handleTickboxFilter
-      },
-      startersOnlyProps: {
-        checked: dexFilters.startersOnly,
-        onChange: this.handleTickboxFilter
-      }
-    };
+          return (
+            <div className="team-planner__container team-planner__container--width_80">
+              <p id="actionsDescription" className="for-screenreader-only">
+                Here are actions applicaable to the team creator. You can
+                randomise the team creator members selecting from those
+                available under the current filters, save the current team to
+                the teams tab, or clear all the current team members.
+              </p>
+              <div
+                className="team-planner__button-actions"
+                aria-describedby="actionsDescription"
+              >
+                <Button
+                  id="jump-to-options"
+                  className="scroll-to-filters"
+                  isAction
+                  icon={MkoIcons.down}
+                  title="Scroll down to options"
+                  aria-label="Scroll down to options"
+                  onClick={() => {
+                    const rect = document
+                      .getElementById('scroll-down-anchor')
+                      .getBoundingClientRect();
 
-    return (
-      <div className="team-planner">
-        <div
-          className={classNames(
-            'team-planner__container',
-            'team-planner__container--width_20',
-            'team-planner__container--hide-on_small'
-          )}
-        >
-          <Filters
-            hiddenOn={[Strings.xsmall, Strings.small]}
-            {...filterProps}
-          />
-        </div>
-        <TypeContext.Consumer>
-          {(typeMatches) => {
-            const filteredSprites = TPU.iteratePokedexToList(
-              pokeData,
-              dexFilters,
-              typeMatches
-            );
-
-            return (
-              <div className="team-planner__container team-planner__container--width_80">
-                <p id="actionsDescription" className="for-screenreader-only">
-                  Here are actions applicaable to the team creator. You can
-                  randomise the team creator members selecting from those
-                  available under the current filters, save the current team to
-                  the teams tab, or clear all the current team members.
-                </p>
-                <div
-                  className="team-planner__button-actions"
-                  aria-describedby="actionsDescription"
+                    window.scrollTo(0, rect.top ?? 0);
+                  }}
+                />
+                <Button
+                  id="randomise-team"
+                  isAction
+                  onClick={handleRandomTeam(pokeData, typeMatches)}
                 >
-                  <Button
-                    id="jump-to-options"
-                    className="scroll-to-filters"
-                    isAction
-                    icon={MkoIcons.down}
-                    title="Scroll down to options"
-                    aria-label="Scroll down to options"
-                    onClick={() => {
-                      const rect = document
-                        .getElementById('scroll-down-anchor')
-                        .getBoundingClientRect();
-
-                      window.scrollTo(0, rect.top ?? 0);
-                    }}
-                  />
-                  <Button
-                    id="randomise-team"
-                    isAction
-                    onClick={this.handleRandomTeam(pokeData, typeMatches)}
-                  >
-                    Randomise
-                  </Button>
-                  <Button id="save-team" isAction onClick={this.handleSaveTeam}>
-                    Save team
-                  </Button>
-                  <Button
-                    id="clear-team"
-                    isAction
-                    onClick={this.handleClearTeam}
-                  >
-                    Clear team
-                  </Button>
-                </div>
-                <p
-                  id="teamCreatorDescription"
-                  className="for-screenreader-only"
-                >
-                  Create a savable pokemon team with a custom name. Drag and
-                  drop or use the direction arrows to reorder team members.
-                  Individual pokemon can be evolved or devolved using the
-                  evolution button between the reorder buttons.
-                </p>
-                <div
-                  className="team-planner__team-creator"
-                  aria-describedby="teamCreatorDescription"
-                >
-                  <ClearableInput
-                    id="current-team-name"
-                    name="currentTeamName"
-                    label="Team Name"
-                    value={this.state.currentTeamName}
-                    onChange={this.handleNameInput}
-                  />
-                  <Team
-                    types={typeMatches}
-                    members={selectMembersFromPokedex(
-                      pokeData.pokedex,
-                      currentTeamIds
-                    )}
-                    onMembersUpdate={this.handleMembersUpdate}
-                  />
-                </div>
-                <div id="scroll-down-anchor"></div>
-                <Filters hiddenOn={Strings.large} {...filterProps} />
-
-                <TeamPlannerGrid
-                  items={filteredSprites}
-                  onItemClick={this.handleSpriteSelection}
+                  Randomise
+                </Button>
+                <Button id="save-team" isAction onClick={handleSaveTeam}>
+                  Save team
+                </Button>
+                <Button id="clear-team" isAction onClick={handleClearTeam}>
+                  Clear team
+                </Button>
+              </div>
+              <p id="teamCreatorDescription" className="for-screenreader-only">
+                Create a savable pokemon team with a custom name. Drag and drop
+                or use the direction arrows to reorder team members. Individual
+                pokemon can be evolved or devolved using the evolution button
+                between the reorder buttons.
+              </p>
+              <div
+                className="team-planner__team-creator"
+                aria-describedby="teamCreatorDescription"
+              >
+                <ClearableInput
+                  id="current-team-name"
+                  name="currentTeamName"
+                  label="Team Name"
+                  value={state.currentTeamName}
+                  onChange={handleNameInput}
+                />
+                <Team
+                  types={typeMatches}
+                  members={selectMembersFromPokedex(
+                    pokeData.pokedex,
+                    currentTeamIds
+                  )}
+                  onMembersUpdate={handleMembersUpdate}
                 />
               </div>
-            );
-          }}
-        </TypeContext.Consumer>
-      </div>
-    );
-  }
+              <div id="scroll-down-anchor"></div>
+              <Filters hiddenOn={Strings.large} {...filterProps} />
+
+              <TeamPlannerGrid
+                items={filteredSprites}
+                onItemClick={handleSpriteSelection}
+              />
+            </div>
+          );
+        }}
+      </TypeContext.Consumer>
+    </div>
+  );
 }
 
 export default PlannerPage;

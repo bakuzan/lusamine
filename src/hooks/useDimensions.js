@@ -1,3 +1,4 @@
+/* eslint-disable no-inner-declarations */
 import { useState, useCallback, useLayoutEffect } from 'react';
 
 function addEvent(event, cb) {

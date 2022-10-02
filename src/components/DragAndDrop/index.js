@@ -1,11 +1,11 @@
-import React from 'react';
-import { findDOMNode } from 'react-dom';
+import React, { useRef } from 'react';
 import { HTML5Backend } from 'react-dnd-html5-backend';
 import { TouchBackend } from 'react-dnd-touch-backend';
+import { useDrag, useDrop } from 'react-dnd';
 
-import withDropTarget from './Target';
-import withDragSource from './Source';
+import DnDType from 'constants/dndType';
 import isTouchDevice from './supportsTouch';
+import { hover } from './useDropUtils';
 
 export function getBackend() {
   if (isTouchDevice()) {
@@ -15,28 +15,44 @@ export function getBackend() {
   }
 }
 
-export function withDragAndDrop(WrappedComponent, PlaceholderComponent) {
-  class DragAndDropWrapper extends React.Component {
-    render() {
-      const {
-        connectDropTarget,
-        connectDragSource,
-        connectDragPreview,
-        ...props
-      } = this.props;
+export function withDragAndDropHooks(WrappedComponent) {
+  return function DragAndDropWrapper(props) {
+    const draggableItemData = {
+      index: props.index,
+      data: props.data,
+      moveDnD: props.moveDnD
+    };
 
-      return (
-        <WrappedComponent
-          {...props}
-          ref={(instance) => {
-            const element = findDOMNode(instance);
-            connectDragSource(element);
-            connectDropTarget(element);
-          }}
-        />
-      );
-    }
-  }
+    const ref = useRef(null);
+    const [dropProps, drop] = useDrop(() => ({
+      accept: DnDType.teamMember,
+      hover: (itemHolding, monitor) =>
+        hover(monitor, itemHolding, draggableItemData, ref),
+      canDrop(item) {
+        return !item.data.isEmpty;
+      },
+      collect: (monitor) => ({
+        isOver: monitor.isOver(),
+        canDrop: monitor.canDrop(),
+        handlerId: monitor.getHandlerId()
+      })
+    }));
 
-  return withDragSource(withDropTarget(DragAndDropWrapper));
+    const [dragProps, drag, _dragPreview] = useDrag(() => ({
+      type: DnDType.teamMember,
+      item: draggableItemData,
+      canDrag() {
+        return !draggableItemData.isEmpty;
+      },
+      collect: (monitor) => ({
+        isDragging: !!monitor.isDragging()
+      })
+    }));
+
+    drag(drop(ref));
+
+    return (
+      <WrappedComponent {...props} {...dragProps} {...dropProps} ref={ref} />
+    );
+  };
 }

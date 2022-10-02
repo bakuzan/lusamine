@@ -49,4 +49,5 @@ const withDropTarget = DropTarget(
   memberTarget,
   collectTarget
 );
+
 export default withDropTarget;
