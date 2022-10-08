@@ -31,7 +31,6 @@ class Team extends React.PureComponent {
     super(props);
     this.state = {
       emptyMembers: generateEmptySlots(),
-      members: new Map([]),
       settings: settingsStore.get(),
       highlight: { ...highlightDefaultState }
     };
@@ -43,19 +42,6 @@ class Team extends React.PureComponent {
     this.handleMouseState = this.handleMouseState.bind(this);
   }
 
-  static getDerivedStateFromProps(nextProps, prevState) {
-    const members = iterateKeysToArray(nextProps.members);
-    const oldMembers = iterateKeysToArray(prevState.members);
-
-    if (members !== oldMembers) {
-      return {
-        members: nextProps.members
-      };
-    }
-
-    return null;
-  }
-
   padPartyToSixMembers(members) {
     const emptys = iterateMapToArray(this.state.emptyMembers);
     const memArr = iterateMapToArray(members);
@@ -63,14 +49,14 @@ class Team extends React.PureComponent {
   }
 
   handleMemberRemove(dataId) {
-    const members = new Map([...this.state.members.entries()]);
+    const members = new Map([...this.props.members.entries()]);
     members.delete(dataId);
     const memberIds = new Set(iterateKeysToArray(members));
     this.props.onMembersUpdate(memberIds);
   }
 
   handleMemberMove(dataId, direction) {
-    const members = iterateKeysToArray(this.state.members);
+    const members = iterateKeysToArray(this.props.members);
     const oldIndex = members.findIndex((x) => x === dataId);
     const newIndex = oldIndex + direction;
     const newOrderMembers = swapArrayPositions(members, oldIndex, newIndex);
@@ -79,7 +65,7 @@ class Team extends React.PureComponent {
   }
 
   handleMemberEvolve(dataId, evolveToId) {
-    const members = iterateKeysToArray(this.state.members);
+    const members = iterateKeysToArray(this.props.members);
     const newMembers = members.map((x) => (x === dataId ? evolveToId : x));
     const memberIds = new Set(newMembers);
     this.props.onMembersUpdate(memberIds);
@@ -90,12 +76,13 @@ class Team extends React.PureComponent {
       return; // ignore these
     }
 
-    const members = iterateKeysToArray(this.state.members);
+    const members = iterateKeysToArray(this.props.members);
     const newOrderMembers = moveToNewArrayPosition(
       members,
       dragIndex,
       hoverIndex
     );
+
     const memberIds = new Set(newOrderMembers);
     this.props.onMembersUpdate(memberIds);
   }
@@ -116,8 +103,8 @@ class Team extends React.PureComponent {
     const { highlight, settings } = this.state;
 
     const highlightMembers = highlight.memberIds;
-    const lastMemberIndex = this.state.members.size - 1;
-    const members = this.padPartyToSixMembers(this.state.members);
+    const lastMemberIndex = this.props.members.size - 1;
+    const members = this.padPartyToSixMembers(this.props.members);
 
     const canRemove = !!this.props.onMembersUpdate;
     const canReOrder = !!this.props.onMembersUpdate;
@@ -158,7 +145,7 @@ class Team extends React.PureComponent {
           <TeamBreakdown
             id={this.props.id}
             teamName={`team ${this.props.name || 'nameless'}`}
-            members={this.state.members}
+            members={this.props.members}
             onMouseState={this.handleMouseState}
           />
         </div>

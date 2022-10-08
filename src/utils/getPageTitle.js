@@ -8,8 +8,8 @@ export const RouteKeyWords = {
   STATISTICS: 'team-statistics'
 };
 
-export default function getPageTitleForCurrentPath(pathname, search) {
-  const path = `${pathname}${search}`;
+export default function getPageTitleForCurrentPath(pathname) {
+  const path = `${pathname}`;
 
   let key = 'planner';
 

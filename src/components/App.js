@@ -41,10 +41,10 @@ function App() {
   const [typeMatchups] = useState(getTypeMatchups());
   const [userMessages, setUserMessages] = useState(systemMessages);
 
-  const { pathname, search } = location;
+  const { pathname } = location;
   const { pageTitle, pageHeader, pageDescription } = useMemo(
-    () => getPageTitleForCurrentPath(pathname, search),
-    [pathname, search]
+    () => getPageTitleForCurrentPath(pathname),
+    [pathname]
   );
 
   const settings = settingsStore.get();

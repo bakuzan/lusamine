@@ -5,7 +5,7 @@ export function hover(monitor, heldItem, hoveredItem, hoveredRef) {
 
   const { data: dragItem, index: dragIndex } = heldItem;
   const { data: hoverItem, index: hoverIndex } = hoveredItem;
-  console.log(`HAS ELEMENT > `, { dragItem, dragIndex, hoverIndex, hoverItem });
+
   if (
     dragItem.id === hoverItem.id ||
     dragIndex === hoverIndex ||
@@ -18,12 +18,6 @@ export function hover(monitor, heldItem, hoveredItem, hoveredRef) {
   const hoverMiddleX = (hoverBoundingRect.right - hoverBoundingRect.left) / 2;
   const clientOffset = monitor.getClientOffset();
   const hoverClientX = clientOffset.x - hoverBoundingRect.left;
-  console.log(`CAN DO > `, {
-    dragIndex,
-    hoverIndex,
-    hoverClientX,
-    hoverMiddleX
-  });
 
   // Dragging right
   if (dragIndex < hoverIndex && hoverClientX < hoverMiddleX) {
@@ -34,7 +28,8 @@ export function hover(monitor, heldItem, hoveredItem, hoveredRef) {
   if (dragIndex > hoverIndex && hoverClientX > hoverMiddleX) {
     return;
   }
-  console.log(`MOVE > `, dragIndex, hoverIndex);
+
+  // Perform the move if all conditions pass
   heldItem.moveDnD(dragIndex, hoverIndex);
 
   // Prevents thrashing
