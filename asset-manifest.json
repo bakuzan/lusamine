@@ -1,26 +1,22 @@
 {
   "files": {
-    "main.css": "/lusamine/static/css/main.1567cae9.chunk.css",
-    "main.js": "/lusamine/static/js/main.9ac10e98.chunk.js",
-    "main.js.map": "/lusamine/static/js/main.9ac10e98.chunk.js.map",
-    "runtime-main.js": "/lusamine/static/js/runtime-main.a9ccca4f.js",
-    "runtime-main.js.map": "/lusamine/static/js/runtime-main.a9ccca4f.js.map",
-    "static/js/2.7d362e95.chunk.js": "/lusamine/static/js/2.7d362e95.chunk.js",
-    "static/js/2.7d362e95.chunk.js.map": "/lusamine/static/js/2.7d362e95.chunk.js.map",
+    "main.css": "/lusamine/static/css/main.f5d8297d.css",
+    "main.js": "/lusamine/static/js/main.9a66516b.js",
+    "static/media/art.png": "/lusamine/static/media/art.be6ee3d01c372b342fe1.png",
+    "static/media/pokemon-opening.ogg": "/lusamine/static/media/pokemon-opening.0ded29511f62611e9abe.ogg",
+    "static/media/art.webp": "/lusamine/static/media/art.346c78123695b4b6054d.webp",
+    "static/media/pokemon-opening.mp3": "/lusamine/static/media/pokemon-opening.bb0ef64745e5504700d5.mp3",
+    "static/media/sprites.png": "/lusamine/static/media/sprites.0247b187b34a87419549.png",
+    "static/media/sprites.webp": "/lusamine/static/media/sprites.d26b01a305a4f602b658.webp",
+    "static/media/roboto-mono.woff2": "/lusamine/static/media/roboto-mono.f1dc10a756c2c544588b.woff2",
+    "static/media/types.png": "/lusamine/static/media/types.8ff0b3a3ac79a391c109.png",
+    "static/media/types.webp": "/lusamine/static/media/types.9e004d4b5b28ab943655.webp",
     "index.html": "/lusamine/index.html",
-    "static/css/main.1567cae9.chunk.css.map": "/lusamine/static/css/main.1567cae9.chunk.css.map",
-    "static/js/2.7d362e95.chunk.js.LICENSE.txt": "/lusamine/static/js/2.7d362e95.chunk.js.LICENSE.txt",
-    "static/media/ArtCard.scss": "/lusamine/static/media/art.be6ee3d0.png",
-    "static/media/pokemon-opening.0ded2951.ogg": "/lusamine/static/media/pokemon-opening.0ded2951.ogg",
-    "static/media/pokemon-opening.bb0ef647.mp3": "/lusamine/static/media/pokemon-opening.bb0ef647.mp3",
-    "static/media/index.scss": "/lusamine/static/media/roboto-mono.f1dc10a7.woff2",
-    "static/media/Sprite.scss": "/lusamine/static/media/sprites.d26b01a3.webp",
-    "static/media/TypeBlock.scss": "/lusamine/static/media/types.9e004d4b.webp"
+    "main.f5d8297d.css.map": "/lusamine/static/css/main.f5d8297d.css.map",
+    "main.9a66516b.js.map": "/lusamine/static/js/main.9a66516b.js.map"
   },
   "entrypoints": [
-    "static/js/runtime-main.a9ccca4f.js",
-    "static/js/2.7d362e95.chunk.js",
-    "static/css/main.1567cae9.chunk.css",
-    "static/js/main.9ac10e98.chunk.js"
+    "static/css/main.f5d8297d.css",
+    "static/js/main.9a66516b.js"
   ]
 }
