@@ -1,3 +1,4 @@
+import PropTypes from 'prop-types';
 import classNames from 'classnames';
 import React, { useContext, useState } from 'react';
 
@@ -294,5 +295,9 @@ function PlannerPage({ sendAlert }) {
     </div>
   );
 }
+
+PlannerPage.propTypes = {
+  sendAlert: PropTypes.func.isRequired
+};
 
 export default PlannerPage;

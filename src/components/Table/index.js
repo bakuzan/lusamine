@@ -27,6 +27,7 @@ Table.defaultProps = {
 
 Table.propTypes = {
   headers: PropTypes.element.isRequired,
+  className: PropTypes.string,
   children: PropTypes.arrayOf(PropTypes.element),
   hovered: PropTypes.bool,
   striped: PropTypes.bool

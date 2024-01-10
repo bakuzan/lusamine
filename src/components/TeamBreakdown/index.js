@@ -181,6 +181,7 @@ TeamBreakdown.defaultProps = {
 };
 
 TeamBreakdown.propTypes = {
+  id: PropTypes.string,
   className: PropTypes.string,
   contentClassName: PropTypes.string,
   alwaysOpen: PropTypes.bool,

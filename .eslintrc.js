@@ -3,7 +3,12 @@ module.exports = {
     browser: true,
     es6: true
   },
-  extends: ['eslint:recommended', 'prettier'],
+  extends: [
+    'eslint:recommended',
+    'plugin:react/recommended',
+    'plugin:react-hooks/recommended',
+    'prettier'
+  ],
   parser: '@typescript-eslint/parser',
   parserOptions: {
     project: ['./jsconfig.json'],
@@ -12,7 +17,8 @@ module.exports = {
   plugins: [
     'eslint-plugin-prefer-arrow',
     'eslint-plugin-jsdoc',
-    'eslint-plugin-react'
+    'eslint-plugin-react',
+    'eslint-plugin-react-hooks'
   ],
   root: true,
   rules: {
@@ -41,7 +47,7 @@ module.exports = {
     indent: 'off',
     'jsdoc/check-alignment': 'error',
     'jsdoc/check-indentation': 'error',
-    'jsdoc/newline-after-description': 'error',
+    'jsdoc/newline-after-description': 'off',
     'linebreak-style': 'off',
     'max-classes-per-file': ['error', 1],
     'max-len': 'off',
@@ -87,6 +93,8 @@ module.exports = {
     'quote-props': 'off',
     quotes: 'off',
     radix: 'error',
+    'react/display-name': 'off',
+
     'react/jsx-curly-spacing': 'off',
     'react/jsx-equals-spacing': 'off',
     'react/jsx-tag-spacing': [

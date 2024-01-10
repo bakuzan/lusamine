@@ -1,3 +1,4 @@
+/* eslint-disable react/prop-types */
 import React, { useRef } from 'react';
 import { HTML5Backend } from 'react-dnd-html5-backend';
 import { TouchBackend } from 'react-dnd-touch-backend';
@@ -24,30 +25,36 @@ export function withDragAndDropHooks(WrappedComponent) {
     };
 
     const ref = useRef(null);
-    const [dropProps, drop] = useDrop(() => ({
-      accept: DnDType.teamMember,
-      hover: (itemHolding, monitor) =>
-        hover(monitor, itemHolding, draggableItemData, ref),
-      canDrop(item) {
-        return !item.data.isEmpty;
-      },
-      collect: (monitor) => ({
-        isOver: monitor.isOver(),
-        canDrop: monitor.canDrop(),
-        handlerId: monitor.getHandlerId()
-      })
-    }));
+    const [dropProps, drop] = useDrop(
+      () => ({
+        accept: DnDType.teamMember,
+        hover: (itemHolding, monitor) =>
+          hover(monitor, itemHolding, draggableItemData, ref),
+        canDrop(item) {
+          return !item.data.isEmpty;
+        },
+        collect: (monitor) => ({
+          isOver: monitor.isOver(),
+          canDrop: monitor.canDrop(),
+          handlerId: monitor.getHandlerId()
+        })
+      }),
+      [draggableItemData]
+    );
 
-    const [dragProps, drag, _dragPreview] = useDrag(() => ({
-      type: DnDType.teamMember,
-      item: draggableItemData,
-      canDrag() {
-        return !draggableItemData.isEmpty;
-      },
-      collect: (monitor) => ({
-        isDragging: !!monitor.isDragging()
-      })
-    }));
+    const [dragProps, drag, _dragPreview] = useDrag(
+      () => ({
+        type: DnDType.teamMember,
+        item: draggableItemData,
+        canDrag() {
+          return !draggableItemData.isEmpty;
+        },
+        collect: (monitor) => ({
+          isDragging: !!monitor.isDragging()
+        })
+      }),
+      [draggableItemData]
+    );
 
     drag(drop(ref));
 

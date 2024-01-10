@@ -34,6 +34,7 @@ function ArtCard({ className, containerClass, data }) {
 
 ArtCard.propTypes = {
   containerClass: PropTypes.string,
+  className: PropTypes.string,
   data: PropTypes.object
 };
 

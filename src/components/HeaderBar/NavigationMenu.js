@@ -1,3 +1,4 @@
+import PropTypes from 'prop-types';
 import React from 'react';
 
 import DropdownMenu from 'meiko/DropdownMenu';
@@ -59,6 +60,10 @@ function NavigationLinks({ onItemClick }) {
     </React.Fragment>
   );
 }
+
+NavigationLinks.propTypes = {
+  onItemClick: PropTypes.func
+};
 
 const menuIcon = '\u22EE';
 const menuLabel = 'Open navigation menu';

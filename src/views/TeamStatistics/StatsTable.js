@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import Table from 'components/Table';
 
 function StatsTable({ label, ...props }) {
@@ -9,5 +10,9 @@ function StatsTable({ label, ...props }) {
     </div>
   );
 }
+
+StatsTable.propTypes = {
+  label: PropTypes.string.isRequired
+};
 
 export default StatsTable;
