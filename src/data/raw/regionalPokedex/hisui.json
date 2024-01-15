@@ -1,0 +1,6602 @@
+[
+  {
+    "region": 8,
+    "code": "Hisui",
+    "regionalPokedexNumber": 2,
+    "nationalPokedexNumber": 723,
+    "sublistings": [
+      {
+        "number": null
+      },
+      {
+        "number": null
+      },
+      {
+        "number": null
+      },
+      {
+        "number": null
+      },
+      {
+        "number": null
+      }
+    ],
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 8,
+    "code": "Hisui",
+    "regionalPokedexNumber": 3,
+    "nationalPokedexNumber": 724,
+    "sublistings": [
+      {
+        "number": null
+      },
+      {
+        "number": null
+      },
+      {
+        "number": null
+      },
+      {
+        "number": null
+      },
+      {
+        "number": null
+      }
+    ],
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 8,
+    "code": "Hisui",
+    "regionalPokedexNumber": 4,
+    "nationalPokedexNumber": 155,
+    "sublistings": [
+      {
+        "number": null
+      },
+      {
+        "number": null
+      },
+      {
+        "number": null
+      },
+      {
+        "number": null
+      },
+      {
+        "number": null
+      }
+    ],
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 8,
+    "code": "Hisui",
+    "regionalPokedexNumber": 5,
+    "nationalPokedexNumber": 156,
+    "sublistings": [
+      {
+        "number": null
+      },
+      {
+        "number": null
+      },
+      {
+        "number": null
+      },
+      {
+        "number": null
+      },
+      {
+        "number": null
+      }
+    ],
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 8,
+    "code": "Hisui",
+    "regionalPokedexNumber": 6,
+    "nationalPokedexNumber": 157,
+    "sublistings": [
+      {
+        "number": null
+      },
+      {
+        "number": null
+      },
+      {
+        "number": null
+      },
+      {
+        "number": null
+      },
+      {
+        "number": null
+      }
+    ],
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 8,
+    "code": "Hisui",
+    "regionalPokedexNumber": 7,
+    "nationalPokedexNumber": 501,
+    "sublistings": [
+      {
+        "number": null
+      },
+      {
+        "number": null
+      },
+      {
+        "number": null
+      },
+      {
+        "number": null
+      },
+      {
+        "number": null
+      }
+    ],
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 8,
+    "code": "Hisui",
+    "regionalPokedexNumber": 8,
+    "nationalPokedexNumber": 502,
+    "sublistings": [
+      {
+        "number": null
+      },
+      {
+        "number": null
+      },
+      {
+        "number": null
+      },
+      {
+        "number": null
+      },
+      {
+        "number": null
+      }
+    ],
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 8,
+    "code": "Hisui",
+    "regionalPokedexNumber": 9,
+    "nationalPokedexNumber": 503,
+    "sublistings": [
+      {
+        "number": null
+      },
+      {
+        "number": null
+      },
+      {
+        "number": null
+      },
+      {
+        "number": null
+      },
+      {
+        "number": null
+      }
+    ],
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 8,
+    "code": "Hisui",
+    "regionalPokedexNumber": 10,
+    "nationalPokedexNumber": 399,
+    "sublistings": [
+      {
+        "number": 10
+      },
+      {
+        "number": 10
+      },
+      {
+        "number": 10
+      },
+      {
+        "number": null
+      },
+      {
+        "number": 10
+      }
+    ],
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 8,
+    "code": "Hisui",
+    "regionalPokedexNumber": 11,
+    "nationalPokedexNumber": 400,
+    "sublistings": [
+      {
+        "number": 11
+      },
+      {
+        "number": 11
+      },
+      {
+        "number": 11
+      },
+      {
+        "number": null
+      },
+      {
+        "number": 11
+      }
+    ],
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 8,
+    "code": "Hisui",
+    "regionalPokedexNumber": 12,
+    "nationalPokedexNumber": 396,
+    "sublistings": [
+      {
+        "number": 12
+      },
+      {
+        "number": null
+      },
+      {
+        "number": 12
+      },
+      {
+        "number": null
+      },
+      {
+        "number": null
+      }
+    ],
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 8,
+    "code": "Hisui",
+    "regionalPokedexNumber": 13,
+    "nationalPokedexNumber": 397,
+    "sublistings": [
+      {
+        "number": 13
+      },
+      {
+        "number": null
+      },
+      {
+        "number": 13
+      },
+      {
+        "number": null
+      },
+      {
+        "number": null
+      }
+    ],
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 8,
+    "code": "Hisui",
+    "regionalPokedexNumber": 14,
+    "nationalPokedexNumber": 398,
+    "sublistings": [
+      {
+        "number": 14
+      },
+      {
+        "number": null
+      },
+      {
+        "number": 14
+      },
+      {
+        "number": null
+      },
+      {
+        "number": null
+      }
+    ],
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 8,
+    "code": "Hisui",
+    "regionalPokedexNumber": 15,
+    "nationalPokedexNumber": 403,
+    "sublistings": [
+      {
+        "number": 15
+      },
+      {
+        "number": null
+      },
+      {
+        "number": null
+      },
+      {
+        "number": 15
+      },
+      {
+        "number": null
+      }
+    ],
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 8,
+    "code": "Hisui",
+    "regionalPokedexNumber": 16,
+    "nationalPokedexNumber": 404,
+    "sublistings": [
+      {
+        "number": 16
+      },
+      {
+        "number": null
+      },
+      {
+        "number": null
+      },
+      {
+        "number": 16
+      },
+      {
+        "number": null
+      }
+    ],
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 8,
+    "code": "Hisui",
+    "regionalPokedexNumber": 17,
+    "nationalPokedexNumber": 405,
+    "sublistings": [
+      {
+        "number": 17
+      },
+      {
+        "number": null
+      },
+      {
+        "number": null
+      },
+      {
+        "number": 17
+      },
+      {
+        "number": null
+      }
+    ],
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 8,
+    "code": "Hisui",
+    "regionalPokedexNumber": 18,
+    "nationalPokedexNumber": 265,
+    "sublistings": [
+      {
+        "number": 18
+      },
+      {
+        "number": null
+      },
+      {
+        "number": 18
+      },
+      {
+        "number": null
+      },
+      {
+        "number": null
+      }
+    ],
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 8,
+    "code": "Hisui",
+    "regionalPokedexNumber": 19,
+    "nationalPokedexNumber": 266,
+    "sublistings": [
+      {
+        "number": 19
+      },
+      {
+        "number": null
+      },
+      {
+        "number": 19
+      },
+      {
+        "number": null
+      },
+      {
+        "number": null
+      }
+    ],
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 8,
+    "code": "Hisui",
+    "regionalPokedexNumber": 20,
+    "nationalPokedexNumber": 267,
+    "sublistings": [
+      {
+        "number": 20
+      },
+      {
+        "number": null
+      },
+      {
+        "number": 20
+      },
+      {
+        "number": null
+      },
+      {
+        "number": null
+      }
+    ],
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 8,
+    "code": "Hisui",
+    "regionalPokedexNumber": 21,
+    "nationalPokedexNumber": 268,
+    "sublistings": [
+      {
+        "number": 21
+      },
+      {
+        "number": null
+      },
+      {
+        "number": 21
+      },
+      {
+        "number": null
+      },
+      {
+        "number": null
+      }
+    ],
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 8,
+    "code": "Hisui",
+    "regionalPokedexNumber": 22,
+    "nationalPokedexNumber": 269,
+    "sublistings": [
+      {
+        "number": 22
+      },
+      {
+        "number": null
+      },
+      {
+        "number": 22
+      },
+      {
+        "number": null
+      },
+      {
+        "number": null
+      }
+    ],
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 8,
+    "code": "Hisui",
+    "regionalPokedexNumber": 23,
+    "nationalPokedexNumber": 77,
+    "sublistings": [
+      {
+        "number": 23
+      },
+      {
+        "number": null
+      },
+      {
+        "number": null
+      },
+      {
+        "number": null
+      },
+      {
+        "number": null
+      }
+    ],
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 8,
+    "code": "Hisui",
+    "regionalPokedexNumber": 24,
+    "nationalPokedexNumber": 78,
+    "sublistings": [
+      {
+        "number": 24
+      },
+      {
+        "number": null
+      },
+      {
+        "number": null
+      },
+      {
+        "number": null
+      },
+      {
+        "number": null
+      }
+    ],
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 8,
+    "code": "Hisui",
+    "regionalPokedexNumber": 25,
+    "nationalPokedexNumber": 133,
+    "sublistings": [
+      {
+        "number": 25
+      },
+      {
+        "number": null
+      },
+      {
+        "number": 25
+      },
+      {
+        "number": null
+      },
+      {
+        "number": 25
+      }
+    ],
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 8,
+    "code": "Hisui",
+    "regionalPokedexNumber": 26,
+    "nationalPokedexNumber": 134,
+    "sublistings": [
+      {
+        "number": 26
+      },
+      {
+        "number": null
+      },
+      {
+        "number": 26
+      },
+      {
+        "number": null
+      },
+      {
+        "number": 26
+      }
+    ],
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 8,
+    "code": "Hisui",
+    "regionalPokedexNumber": 27,
+    "nationalPokedexNumber": 135,
+    "sublistings": [
+      {
+        "number": 27
+      },
+      {
+        "number": null
+      },
+      {
+        "number": 27
+      },
+      {
+        "number": null
+      },
+      {
+        "number": 27
+      }
+    ],
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 8,
+    "code": "Hisui",
+    "regionalPokedexNumber": 28,
+    "nationalPokedexNumber": 136,
+    "sublistings": [
+      {
+        "number": 28
+      },
+      {
+        "number": null
+      },
+      {
+        "number": 28
+      },
+      {
+        "number": null
+      },
+      {
+        "number": 28
+      }
+    ],
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 8,
+    "code": "Hisui",
+    "regionalPokedexNumber": 29,
+    "nationalPokedexNumber": 196,
+    "sublistings": [
+      {
+        "number": 29
+      },
+      {
+        "number": null
+      },
+      {
+        "number": 29
+      },
+      {
+        "number": null
+      },
+      {
+        "number": 29
+      }
+    ],
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 8,
+    "code": "Hisui",
+    "regionalPokedexNumber": 30,
+    "nationalPokedexNumber": 197,
+    "sublistings": [
+      {
+        "number": 30
+      },
+      {
+        "number": null
+      },
+      {
+        "number": 30
+      },
+      {
+        "number": null
+      },
+      {
+        "number": 30
+      }
+    ],
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 8,
+    "code": "Hisui",
+    "regionalPokedexNumber": 31,
+    "nationalPokedexNumber": 470,
+    "sublistings": [
+      {
+        "number": 31
+      },
+      {
+        "number": null
+      },
+      {
+        "number": 31
+      },
+      {
+        "number": null
+      },
+      {
+        "number": 31
+      }
+    ],
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 8,
+    "code": "Hisui",
+    "regionalPokedexNumber": 32,
+    "nationalPokedexNumber": 471,
+    "sublistings": [
+      {
+        "number": 32
+      },
+      {
+        "number": null
+      },
+      {
+        "number": 32
+      },
+      {
+        "number": null
+      },
+      {
+        "number": 32
+      }
+    ],
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 8,
+    "code": "Hisui",
+    "regionalPokedexNumber": 33,
+    "nationalPokedexNumber": 700,
+    "sublistings": [
+      {
+        "number": 33
+      },
+      {
+        "number": null
+      },
+      {
+        "number": 33
+      },
+      {
+        "number": null
+      },
+      {
+        "number": 33
+      }
+    ],
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 8,
+    "code": "Hisui",
+    "regionalPokedexNumber": 34,
+    "nationalPokedexNumber": 41,
+    "sublistings": [
+      {
+        "number": 34
+      },
+      {
+        "number": 34
+      },
+      {
+        "number": null
+      },
+      {
+        "number": 34
+      },
+      {
+        "number": 34
+      }
+    ],
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 8,
+    "code": "Hisui",
+    "regionalPokedexNumber": 35,
+    "nationalPokedexNumber": 42,
+    "sublistings": [
+      {
+        "number": 35
+      },
+      {
+        "number": 35
+      },
+      {
+        "number": null
+      },
+      {
+        "number": 35
+      },
+      {
+        "number": 35
+      }
+    ],
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 8,
+    "code": "Hisui",
+    "regionalPokedexNumber": 36,
+    "nationalPokedexNumber": 169,
+    "sublistings": [
+      {
+        "number": 36
+      },
+      {
+        "number": 36
+      },
+      {
+        "number": null
+      },
+      {
+        "number": 36
+      },
+      {
+        "number": 36
+      }
+    ],
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 8,
+    "code": "Hisui",
+    "regionalPokedexNumber": 37,
+    "nationalPokedexNumber": 425,
+    "sublistings": [
+      {
+        "number": 37
+      },
+      {
+        "number": null
+      },
+      {
+        "number": 37
+      },
+      {
+        "number": null
+      },
+      {
+        "number": 37
+      }
+    ],
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 8,
+    "code": "Hisui",
+    "regionalPokedexNumber": 38,
+    "nationalPokedexNumber": 426,
+    "sublistings": [
+      {
+        "number": 38
+      },
+      {
+        "number": null
+      },
+      {
+        "number": 38
+      },
+      {
+        "number": null
+      },
+      {
+        "number": 38
+      }
+    ],
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 8,
+    "code": "Hisui",
+    "regionalPokedexNumber": 39,
+    "nationalPokedexNumber": 401,
+    "sublistings": [
+      {
+        "number": 39
+      },
+      {
+        "number": 39
+      },
+      {
+        "number": null
+      },
+      {
+        "number": null
+      },
+      {
+        "number": null
+      }
+    ],
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 8,
+    "code": "Hisui",
+    "regionalPokedexNumber": 40,
+    "nationalPokedexNumber": 402,
+    "sublistings": [
+      {
+        "number": 40
+      },
+      {
+        "number": 40
+      },
+      {
+        "number": null
+      },
+      {
+        "number": null
+      },
+      {
+        "number": null
+      }
+    ],
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 8,
+    "code": "Hisui",
+    "regionalPokedexNumber": 41,
+    "nationalPokedexNumber": 418,
+    "sublistings": [
+      {
+        "number": 41
+      },
+      {
+        "number": null
+      },
+      {
+        "number": 41
+      },
+      {
+        "number": null
+      },
+      {
+        "number": null
+      }
+    ],
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 8,
+    "code": "Hisui",
+    "regionalPokedexNumber": 42,
+    "nationalPokedexNumber": 419,
+    "sublistings": [
+      {
+        "number": 42
+      },
+      {
+        "number": null
+      },
+      {
+        "number": 42
+      },
+      {
+        "number": null
+      },
+      {
+        "number": null
+      }
+    ],
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 8,
+    "code": "Hisui",
+    "regionalPokedexNumber": 43,
+    "nationalPokedexNumber": 412,
+    "sublistings": [
+      {
+        "number": 43
+      },
+      {
+        "number": 43
+      },
+      {
+        "number": 43
+      },
+      {
+        "number": 43
+      },
+      {
+        "number": 43
+      }
+    ],
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 8,
+    "code": "Hisui",
+    "regionalPokedexNumber": 43,
+    "nationalPokedexNumber": 412,
+    "sublistings": [
+      {
+        "number": 43
+      },
+      {
+        "number": 43
+      },
+      {
+        "number": 43
+      },
+      {
+        "number": 43
+      },
+      {
+        "number": 43
+      }
+    ],
+    "formSuffix": "",
+    "isVariant": true
+  },
+  {
+    "region": 8,
+    "code": "Hisui",
+    "regionalPokedexNumber": 43,
+    "nationalPokedexNumber": 412,
+    "sublistings": [
+      {
+        "number": 43
+      },
+      {
+        "number": 43
+      },
+      {
+        "number": 43
+      },
+      {
+        "number": 43
+      },
+      {
+        "number": 43
+      }
+    ],
+    "formSuffix": "_1",
+    "isVariant": false
+  },
+  {
+    "region": 8,
+    "code": "Hisui",
+    "regionalPokedexNumber": 44,
+    "nationalPokedexNumber": 413,
+    "sublistings": [
+      {
+        "number": 44
+      },
+      {
+        "number": 44
+      },
+      {
+        "number": 44
+      },
+      {
+        "number": 44
+      },
+      {
+        "number": 44
+      }
+    ],
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 8,
+    "code": "Hisui",
+    "regionalPokedexNumber": 44,
+    "nationalPokedexNumber": 413,
+    "sublistings": [
+      {
+        "number": 44
+      },
+      {
+        "number": 44
+      },
+      {
+        "number": 44
+      },
+      {
+        "number": 44
+      },
+      {
+        "number": 44
+      }
+    ],
+    "formSuffix": "",
+    "isVariant": true
+  },
+  {
+    "region": 8,
+    "code": "Hisui",
+    "regionalPokedexNumber": 44,
+    "nationalPokedexNumber": 413,
+    "sublistings": [
+      {
+        "number": 44
+      },
+      {
+        "number": 44
+      },
+      {
+        "number": 44
+      },
+      {
+        "number": 44
+      },
+      {
+        "number": 44
+      }
+    ],
+    "formSuffix": "_1",
+    "isVariant": false
+  },
+  {
+    "region": 8,
+    "code": "Hisui",
+    "regionalPokedexNumber": 45,
+    "nationalPokedexNumber": 414,
+    "sublistings": [
+      {
+        "number": 45
+      },
+      {
+        "number": 45
+      },
+      {
+        "number": 45
+      },
+      {
+        "number": 45
+      },
+      {
+        "number": 45
+      }
+    ],
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 8,
+    "code": "Hisui",
+    "regionalPokedexNumber": 46,
+    "nationalPokedexNumber": 74,
+    "sublistings": [
+      {
+        "number": 46
+      },
+      {
+        "number": 46
+      },
+      {
+        "number": 46
+      },
+      {
+        "number": 46
+      },
+      {
+        "number": 46
+      }
+    ],
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 8,
+    "code": "Hisui",
+    "regionalPokedexNumber": 47,
+    "nationalPokedexNumber": 75,
+    "sublistings": [
+      {
+        "number": 47
+      },
+      {
+        "number": 47
+      },
+      {
+        "number": 47
+      },
+      {
+        "number": 47
+      },
+      {
+        "number": 47
+      }
+    ],
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 8,
+    "code": "Hisui",
+    "regionalPokedexNumber": 48,
+    "nationalPokedexNumber": 76,
+    "sublistings": [
+      {
+        "number": 48
+      },
+      {
+        "number": 48
+      },
+      {
+        "number": 48
+      },
+      {
+        "number": 48
+      },
+      {
+        "number": 48
+      }
+    ],
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 8,
+    "code": "Hisui",
+    "regionalPokedexNumber": 49,
+    "nationalPokedexNumber": 234,
+    "sublistings": [
+      {
+        "number": 49
+      },
+      {
+        "number": null
+      },
+      {
+        "number": 49
+      },
+      {
+        "number": 49
+      },
+      {
+        "number": 49
+      }
+    ],
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 8,
+    "code": "Hisui",
+    "regionalPokedexNumber": 50,
+    "nationalPokedexNumber": 899,
+    "sublistings": [
+      {
+        "number": 50
+      },
+      {
+        "number": null
+      },
+      {
+        "number": 50
+      },
+      {
+        "number": 50
+      },
+      {
+        "number": 50
+      }
+    ],
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 8,
+    "code": "Hisui",
+    "regionalPokedexNumber": 51,
+    "nationalPokedexNumber": 446,
+    "sublistings": [
+      {
+        "number": 51
+      },
+      {
+        "number": null
+      },
+      {
+        "number": null
+      },
+      {
+        "number": null
+      },
+      {
+        "number": 51
+      }
+    ],
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 8,
+    "code": "Hisui",
+    "regionalPokedexNumber": 52,
+    "nationalPokedexNumber": 143,
+    "sublistings": [
+      {
+        "number": 52
+      },
+      {
+        "number": null
+      },
+      {
+        "number": null
+      },
+      {
+        "number": null
+      },
+      {
+        "number": 52
+      }
+    ],
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 8,
+    "code": "Hisui",
+    "regionalPokedexNumber": 53,
+    "nationalPokedexNumber": 46,
+    "sublistings": [
+      {
+        "number": 53
+      },
+      {
+        "number": 53
+      },
+      {
+        "number": 53
+      },
+      {
+        "number": 53
+      },
+      {
+        "number": null
+      }
+    ],
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 8,
+    "code": "Hisui",
+    "regionalPokedexNumber": 54,
+    "nationalPokedexNumber": 47,
+    "sublistings": [
+      {
+        "number": 54
+      },
+      {
+        "number": 54
+      },
+      {
+        "number": 54
+      },
+      {
+        "number": 54
+      },
+      {
+        "number": null
+      }
+    ],
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 8,
+    "code": "Hisui",
+    "regionalPokedexNumber": 55,
+    "nationalPokedexNumber": 172,
+    "sublistings": [
+      {
+        "number": 55
+      },
+      {
+        "number": 55
+      },
+      {
+        "number": 55
+      },
+      {
+        "number": null
+      },
+      {
+        "number": null
+      }
+    ],
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 8,
+    "code": "Hisui",
+    "regionalPokedexNumber": 56,
+    "nationalPokedexNumber": 25,
+    "sublistings": [
+      {
+        "number": 56
+      },
+      {
+        "number": 56
+      },
+      {
+        "number": 56
+      },
+      {
+        "number": null
+      },
+      {
+        "number": null
+      }
+    ],
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 8,
+    "code": "Hisui",
+    "regionalPokedexNumber": 57,
+    "nationalPokedexNumber": 26,
+    "sublistings": [
+      {
+        "number": 57
+      },
+      {
+        "number": 57
+      },
+      {
+        "number": 57
+      },
+      {
+        "number": null
+      },
+      {
+        "number": null
+      }
+    ],
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 8,
+    "code": "Hisui",
+    "regionalPokedexNumber": 58,
+    "nationalPokedexNumber": 63,
+    "sublistings": [
+      {
+        "number": 58
+      },
+      {
+        "number": null
+      },
+      {
+        "number": null
+      },
+      {
+        "number": null
+      },
+      {
+        "number": 58
+      }
+    ],
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 8,
+    "code": "Hisui",
+    "regionalPokedexNumber": 59,
+    "nationalPokedexNumber": 64,
+    "sublistings": [
+      {
+        "number": 59
+      },
+      {
+        "number": null
+      },
+      {
+        "number": null
+      },
+      {
+        "number": null
+      },
+      {
+        "number": 59
+      }
+    ],
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 8,
+    "code": "Hisui",
+    "regionalPokedexNumber": 60,
+    "nationalPokedexNumber": 65,
+    "sublistings": [
+      {
+        "number": 60
+      },
+      {
+        "number": null
+      },
+      {
+        "number": null
+      },
+      {
+        "number": null
+      },
+      {
+        "number": 60
+      }
+    ],
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 8,
+    "code": "Hisui",
+    "regionalPokedexNumber": 61,
+    "nationalPokedexNumber": 390,
+    "sublistings": [
+      {
+        "number": 61
+      },
+      {
+        "number": null
+      },
+      {
+        "number": null
+      },
+      {
+        "number": null
+      },
+      {
+        "number": null
+      }
+    ],
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 8,
+    "code": "Hisui",
+    "regionalPokedexNumber": 62,
+    "nationalPokedexNumber": 391,
+    "sublistings": [
+      {
+        "number": 62
+      },
+      {
+        "number": null
+      },
+      {
+        "number": null
+      },
+      {
+        "number": null
+      },
+      {
+        "number": null
+      }
+    ],
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 8,
+    "code": "Hisui",
+    "regionalPokedexNumber": 63,
+    "nationalPokedexNumber": 392,
+    "sublistings": [
+      {
+        "number": 63
+      },
+      {
+        "number": null
+      },
+      {
+        "number": null
+      },
+      {
+        "number": null
+      },
+      {
+        "number": null
+      }
+    ],
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 8,
+    "code": "Hisui",
+    "regionalPokedexNumber": 64,
+    "nationalPokedexNumber": 427,
+    "sublistings": [
+      {
+        "number": 64
+      },
+      {
+        "number": null
+      },
+      {
+        "number": null
+      },
+      {
+        "number": null
+      },
+      {
+        "number": 64
+      }
+    ],
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 8,
+    "code": "Hisui",
+    "regionalPokedexNumber": 65,
+    "nationalPokedexNumber": 428,
+    "sublistings": [
+      {
+        "number": 65
+      },
+      {
+        "number": null
+      },
+      {
+        "number": null
+      },
+      {
+        "number": null
+      },
+      {
+        "number": 65
+      }
+    ],
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 8,
+    "code": "Hisui",
+    "regionalPokedexNumber": 66,
+    "nationalPokedexNumber": 420,
+    "sublistings": [
+      {
+        "number": 66
+      },
+      {
+        "number": 66
+      },
+      {
+        "number": null
+      },
+      {
+        "number": 66
+      },
+      {
+        "number": null
+      }
+    ],
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 8,
+    "code": "Hisui",
+    "regionalPokedexNumber": 67,
+    "nationalPokedexNumber": 421,
+    "sublistings": [
+      {
+        "number": 67
+      },
+      {
+        "number": 67
+      },
+      {
+        "number": null
+      },
+      {
+        "number": 67
+      },
+      {
+        "number": null
+      }
+    ],
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 8,
+    "code": "Hisui",
+    "regionalPokedexNumber": 68,
+    "nationalPokedexNumber": 54,
+    "sublistings": [
+      {
+        "number": 68
+      },
+      {
+        "number": 68
+      },
+      {
+        "number": 68
+      },
+      {
+        "number": 68
+      },
+      {
+        "number": null
+      }
+    ],
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 8,
+    "code": "Hisui",
+    "regionalPokedexNumber": 69,
+    "nationalPokedexNumber": 55,
+    "sublistings": [
+      {
+        "number": 69
+      },
+      {
+        "number": 69
+      },
+      {
+        "number": 69
+      },
+      {
+        "number": 69
+      },
+      {
+        "number": null
+      }
+    ],
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 8,
+    "code": "Hisui",
+    "regionalPokedexNumber": 70,
+    "nationalPokedexNumber": 415,
+    "sublistings": [
+      {
+        "number": 70
+      },
+      {
+        "number": 70
+      },
+      {
+        "number": 70
+      },
+      {
+        "number": null
+      },
+      {
+        "number": null
+      }
+    ],
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 8,
+    "code": "Hisui",
+    "regionalPokedexNumber": 71,
+    "nationalPokedexNumber": 416,
+    "sublistings": [
+      {
+        "number": 71
+      },
+      {
+        "number": 71
+      },
+      {
+        "number": 71
+      },
+      {
+        "number": null
+      },
+      {
+        "number": null
+      }
+    ],
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 8,
+    "code": "Hisui",
+    "regionalPokedexNumber": 72,
+    "nationalPokedexNumber": 123,
+    "sublistings": [
+      {
+        "number": 72
+      },
+      {
+        "number": null
+      },
+      {
+        "number": null
+      },
+      {
+        "number": 72
+      },
+      {
+        "number": null
+      }
+    ],
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 8,
+    "code": "Hisui",
+    "regionalPokedexNumber": 73,
+    "nationalPokedexNumber": 900,
+    "sublistings": [
+      {
+        "number": 73
+      },
+      {
+        "number": null
+      },
+      {
+        "number": null
+      },
+      {
+        "number": 73
+      },
+      {
+        "number": null
+      }
+    ],
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 8,
+    "code": "Hisui",
+    "regionalPokedexNumber": 74,
+    "nationalPokedexNumber": 212,
+    "sublistings": [
+      {
+        "number": 74
+      },
+      {
+        "number": null
+      },
+      {
+        "number": null
+      },
+      {
+        "number": 74
+      },
+      {
+        "number": null
+      }
+    ],
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 8,
+    "code": "Hisui",
+    "regionalPokedexNumber": 75,
+    "nationalPokedexNumber": 214,
+    "sublistings": [
+      {
+        "number": 75
+      },
+      {
+        "number": null
+      },
+      {
+        "number": null
+      },
+      {
+        "number": 75
+      },
+      {
+        "number": null
+      }
+    ],
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 8,
+    "code": "Hisui",
+    "regionalPokedexNumber": 76,
+    "nationalPokedexNumber": 439,
+    "sublistings": [
+      {
+        "number": 76
+      },
+      {
+        "number": null
+      },
+      {
+        "number": null
+      },
+      {
+        "number": null
+      },
+      {
+        "number": null
+      }
+    ],
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 8,
+    "code": "Hisui",
+    "regionalPokedexNumber": 77,
+    "nationalPokedexNumber": 122,
+    "sublistings": [
+      {
+        "number": 77
+      },
+      {
+        "number": null
+      },
+      {
+        "number": null
+      },
+      {
+        "number": null
+      },
+      {
+        "number": null
+      }
+    ],
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 8,
+    "code": "Hisui",
+    "regionalPokedexNumber": 78,
+    "nationalPokedexNumber": 190,
+    "sublistings": [
+      {
+        "number": 78
+      },
+      {
+        "number": null
+      },
+      {
+        "number": 78
+      },
+      {
+        "number": null
+      },
+      {
+        "number": 78
+      }
+    ],
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 8,
+    "code": "Hisui",
+    "regionalPokedexNumber": 79,
+    "nationalPokedexNumber": 424,
+    "sublistings": [
+      {
+        "number": 79
+      },
+      {
+        "number": null
+      },
+      {
+        "number": 79
+      },
+      {
+        "number": null
+      },
+      {
+        "number": 79
+      }
+    ],
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 8,
+    "code": "Hisui",
+    "regionalPokedexNumber": 80,
+    "nationalPokedexNumber": 129,
+    "sublistings": [
+      {
+        "number": 80
+      },
+      {
+        "number": null
+      },
+      {
+        "number": 80
+      },
+      {
+        "number": 80
+      },
+      {
+        "number": null
+      }
+    ],
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 8,
+    "code": "Hisui",
+    "regionalPokedexNumber": 81,
+    "nationalPokedexNumber": 130,
+    "sublistings": [
+      {
+        "number": 81
+      },
+      {
+        "number": null
+      },
+      {
+        "number": 81
+      },
+      {
+        "number": 81
+      },
+      {
+        "number": null
+      }
+    ],
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 8,
+    "code": "Hisui",
+    "regionalPokedexNumber": 82,
+    "nationalPokedexNumber": 422,
+    "sublistings": [
+      {
+        "number": 82
+      },
+      {
+        "number": null
+      },
+      {
+        "number": 82
+      },
+      {
+        "number": null
+      },
+      {
+        "number": null
+      }
+    ],
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 8,
+    "code": "Hisui",
+    "regionalPokedexNumber": 82,
+    "nationalPokedexNumber": 422,
+    "sublistings": [
+      {
+        "number": 82
+      },
+      {
+        "number": null
+      },
+      {
+        "number": 82
+      },
+      {
+        "number": null
+      },
+      {
+        "number": null
+      }
+    ],
+    "formSuffix": "_1",
+    "isVariant": false
+  },
+  {
+    "region": 8,
+    "code": "Hisui",
+    "regionalPokedexNumber": 83,
+    "nationalPokedexNumber": 423,
+    "sublistings": [
+      {
+        "number": 83
+      },
+      {
+        "number": null
+      },
+      {
+        "number": 83
+      },
+      {
+        "number": null
+      },
+      {
+        "number": null
+      }
+    ],
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 8,
+    "code": "Hisui",
+    "regionalPokedexNumber": 83,
+    "nationalPokedexNumber": 423,
+    "sublistings": [
+      {
+        "number": 83
+      },
+      {
+        "number": null
+      },
+      {
+        "number": 83
+      },
+      {
+        "number": null
+      },
+      {
+        "number": null
+      }
+    ],
+    "formSuffix": "_1",
+    "isVariant": false
+  },
+  {
+    "region": 8,
+    "code": "Hisui",
+    "regionalPokedexNumber": 84,
+    "nationalPokedexNumber": 211,
+    "sublistings": [
+      {
+        "number": null
+      },
+      {
+        "number": null
+      },
+      {
+        "number": 84
+      },
+      {
+        "number": null
+      },
+      {
+        "number": null
+      }
+    ],
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 8,
+    "code": "Hisui",
+    "regionalPokedexNumber": 85,
+    "nationalPokedexNumber": 904,
+    "sublistings": [
+      {
+        "number": null
+      },
+      {
+        "number": null
+      },
+      {
+        "number": 85
+      },
+      {
+        "number": null
+      },
+      {
+        "number": null
+      }
+    ],
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 8,
+    "code": "Hisui",
+    "regionalPokedexNumber": 86,
+    "nationalPokedexNumber": 440,
+    "sublistings": [
+      {
+        "number": 86
+      },
+      {
+        "number": null
+      },
+      {
+        "number": 86
+      },
+      {
+        "number": null
+      },
+      {
+        "number": 86
+      }
+    ],
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 8,
+    "code": "Hisui",
+    "regionalPokedexNumber": 87,
+    "nationalPokedexNumber": 113,
+    "sublistings": [
+      {
+        "number": 87
+      },
+      {
+        "number": null
+      },
+      {
+        "number": 87
+      },
+      {
+        "number": null
+      },
+      {
+        "number": 87
+      }
+    ],
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 8,
+    "code": "Hisui",
+    "regionalPokedexNumber": 88,
+    "nationalPokedexNumber": 242,
+    "sublistings": [
+      {
+        "number": 88
+      },
+      {
+        "number": null
+      },
+      {
+        "number": 88
+      },
+      {
+        "number": null
+      },
+      {
+        "number": 88
+      }
+    ],
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 8,
+    "code": "Hisui",
+    "regionalPokedexNumber": 89,
+    "nationalPokedexNumber": 406,
+    "sublistings": [
+      {
+        "number": null
+      },
+      {
+        "number": 89
+      },
+      {
+        "number": null
+      },
+      {
+        "number": 89
+      },
+      {
+        "number": null
+      }
+    ],
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 8,
+    "code": "Hisui",
+    "regionalPokedexNumber": 90,
+    "nationalPokedexNumber": 315,
+    "sublistings": [
+      {
+        "number": null
+      },
+      {
+        "number": 90
+      },
+      {
+        "number": null
+      },
+      {
+        "number": 90
+      },
+      {
+        "number": null
+      }
+    ],
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 8,
+    "code": "Hisui",
+    "regionalPokedexNumber": 91,
+    "nationalPokedexNumber": 407,
+    "sublistings": [
+      {
+        "number": null
+      },
+      {
+        "number": 91
+      },
+      {
+        "number": null
+      },
+      {
+        "number": 91
+      },
+      {
+        "number": null
+      }
+    ],
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 8,
+    "code": "Hisui",
+    "regionalPokedexNumber": 92,
+    "nationalPokedexNumber": 455,
+    "sublistings": [
+      {
+        "number": null
+      },
+      {
+        "number": 92
+      },
+      {
+        "number": null
+      },
+      {
+        "number": 92
+      },
+      {
+        "number": null
+      }
+    ],
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 8,
+    "code": "Hisui",
+    "regionalPokedexNumber": 93,
+    "nationalPokedexNumber": 548,
+    "sublistings": [
+      {
+        "number": null
+      },
+      {
+        "number": 93
+      },
+      {
+        "number": null
+      },
+      {
+        "number": null
+      },
+      {
+        "number": null
+      }
+    ],
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 8,
+    "code": "Hisui",
+    "regionalPokedexNumber": 94,
+    "nationalPokedexNumber": 549,
+    "sublistings": [
+      {
+        "number": null
+      },
+      {
+        "number": 94
+      },
+      {
+        "number": null
+      },
+      {
+        "number": null
+      },
+      {
+        "number": null
+      }
+    ],
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 8,
+    "code": "Hisui",
+    "regionalPokedexNumber": 95,
+    "nationalPokedexNumber": 114,
+    "sublistings": [
+      {
+        "number": null
+      },
+      {
+        "number": 95
+      },
+      {
+        "number": 95
+      },
+      {
+        "number": null
+      },
+      {
+        "number": null
+      }
+    ],
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 8,
+    "code": "Hisui",
+    "regionalPokedexNumber": 96,
+    "nationalPokedexNumber": 465,
+    "sublistings": [
+      {
+        "number": null
+      },
+      {
+        "number": 96
+      },
+      {
+        "number": 96
+      },
+      {
+        "number": null
+      },
+      {
+        "number": null
+      }
+    ],
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 8,
+    "code": "Hisui",
+    "regionalPokedexNumber": 97,
+    "nationalPokedexNumber": 339,
+    "sublistings": [
+      {
+        "number": null
+      },
+      {
+        "number": 97
+      },
+      {
+        "number": null
+      },
+      {
+        "number": 97
+      },
+      {
+        "number": null
+      }
+    ],
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 8,
+    "code": "Hisui",
+    "regionalPokedexNumber": 98,
+    "nationalPokedexNumber": 340,
+    "sublistings": [
+      {
+        "number": null
+      },
+      {
+        "number": 98
+      },
+      {
+        "number": null
+      },
+      {
+        "number": 98
+      },
+      {
+        "number": null
+      }
+    ],
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 8,
+    "code": "Hisui",
+    "regionalPokedexNumber": 99,
+    "nationalPokedexNumber": 453,
+    "sublistings": [
+      {
+        "number": null
+      },
+      {
+        "number": 99
+      },
+      {
+        "number": 99
+      },
+      {
+        "number": 99
+      },
+      {
+        "number": null
+      }
+    ],
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 8,
+    "code": "Hisui",
+    "regionalPokedexNumber": 100,
+    "nationalPokedexNumber": 454,
+    "sublistings": [
+      {
+        "number": null
+      },
+      {
+        "number": 100
+      },
+      {
+        "number": 100
+      },
+      {
+        "number": 100
+      },
+      {
+        "number": null
+      }
+    ],
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 8,
+    "code": "Hisui",
+    "regionalPokedexNumber": 101,
+    "nationalPokedexNumber": 280,
+    "sublistings": [
+      {
+        "number": null
+      },
+      {
+        "number": 101
+      },
+      {
+        "number": null
+      },
+      {
+        "number": null
+      },
+      {
+        "number": 101
+      }
+    ],
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 8,
+    "code": "Hisui",
+    "regionalPokedexNumber": 102,
+    "nationalPokedexNumber": 281,
+    "sublistings": [
+      {
+        "number": null
+      },
+      {
+        "number": 102
+      },
+      {
+        "number": null
+      },
+      {
+        "number": null
+      },
+      {
+        "number": 102
+      }
+    ],
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 8,
+    "code": "Hisui",
+    "regionalPokedexNumber": 103,
+    "nationalPokedexNumber": 282,
+    "sublistings": [
+      {
+        "number": null
+      },
+      {
+        "number": 103
+      },
+      {
+        "number": null
+      },
+      {
+        "number": null
+      },
+      {
+        "number": 103
+      }
+    ],
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 8,
+    "code": "Hisui",
+    "regionalPokedexNumber": 104,
+    "nationalPokedexNumber": 475,
+    "sublistings": [
+      {
+        "number": null
+      },
+      {
+        "number": 104
+      },
+      {
+        "number": null
+      },
+      {
+        "number": null
+      },
+      {
+        "number": 104
+      }
+    ],
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 8,
+    "code": "Hisui",
+    "regionalPokedexNumber": 105,
+    "nationalPokedexNumber": 193,
+    "sublistings": [
+      {
+        "number": null
+      },
+      {
+        "number": 105
+      },
+      {
+        "number": null
+      },
+      {
+        "number": 105
+      },
+      {
+        "number": null
+      }
+    ],
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 8,
+    "code": "Hisui",
+    "regionalPokedexNumber": 106,
+    "nationalPokedexNumber": 469,
+    "sublistings": [
+      {
+        "number": null
+      },
+      {
+        "number": 106
+      },
+      {
+        "number": null
+      },
+      {
+        "number": 106
+      },
+      {
+        "number": null
+      }
+    ],
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 8,
+    "code": "Hisui",
+    "regionalPokedexNumber": 107,
+    "nationalPokedexNumber": 449,
+    "sublistings": [
+      {
+        "number": null
+      },
+      {
+        "number": 107
+      },
+      {
+        "number": null
+      },
+      {
+        "number": 107
+      },
+      {
+        "number": null
+      }
+    ],
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 8,
+    "code": "Hisui",
+    "regionalPokedexNumber": 108,
+    "nationalPokedexNumber": 450,
+    "sublistings": [
+      {
+        "number": null
+      },
+      {
+        "number": 108
+      },
+      {
+        "number": null
+      },
+      {
+        "number": 108
+      },
+      {
+        "number": null
+      }
+    ],
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 8,
+    "code": "Hisui",
+    "regionalPokedexNumber": 109,
+    "nationalPokedexNumber": 417,
+    "sublistings": [
+      {
+        "number": null
+      },
+      {
+        "number": 109
+      },
+      {
+        "number": null
+      },
+      {
+        "number": null
+      },
+      {
+        "number": null
+      }
+    ],
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 8,
+    "code": "Hisui",
+    "regionalPokedexNumber": 110,
+    "nationalPokedexNumber": 434,
+    "sublistings": [
+      {
+        "number": null
+      },
+      {
+        "number": 110
+      },
+      {
+        "number": null
+      },
+      {
+        "number": 110
+      },
+      {
+        "number": null
+      }
+    ],
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 8,
+    "code": "Hisui",
+    "regionalPokedexNumber": 111,
+    "nationalPokedexNumber": 435,
+    "sublistings": [
+      {
+        "number": null
+      },
+      {
+        "number": 111
+      },
+      {
+        "number": null
+      },
+      {
+        "number": 111
+      },
+      {
+        "number": null
+      }
+    ],
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 8,
+    "code": "Hisui",
+    "regionalPokedexNumber": 112,
+    "nationalPokedexNumber": 216,
+    "sublistings": [
+      {
+        "number": null
+      },
+      {
+        "number": 112
+      },
+      {
+        "number": null
+      },
+      {
+        "number": 112
+      },
+      {
+        "number": null
+      }
+    ],
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 8,
+    "code": "Hisui",
+    "regionalPokedexNumber": 113,
+    "nationalPokedexNumber": 217,
+    "sublistings": [
+      {
+        "number": null
+      },
+      {
+        "number": 113
+      },
+      {
+        "number": null
+      },
+      {
+        "number": 113
+      },
+      {
+        "number": null
+      }
+    ],
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 8,
+    "code": "Hisui",
+    "regionalPokedexNumber": 114,
+    "nationalPokedexNumber": 901,
+    "sublistings": [
+      {
+        "number": null
+      },
+      {
+        "number": 114
+      },
+      {
+        "number": null
+      },
+      {
+        "number": 114
+      },
+      {
+        "number": null
+      }
+    ],
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 8,
+    "code": "Hisui",
+    "regionalPokedexNumber": 115,
+    "nationalPokedexNumber": 704,
+    "sublistings": [
+      {
+        "number": null
+      },
+      {
+        "number": 115
+      },
+      {
+        "number": null
+      },
+      {
+        "number": 115
+      },
+      {
+        "number": null
+      }
+    ],
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 8,
+    "code": "Hisui",
+    "regionalPokedexNumber": 116,
+    "nationalPokedexNumber": 705,
+    "sublistings": [
+      {
+        "number": null
+      },
+      {
+        "number": 116
+      },
+      {
+        "number": null
+      },
+      {
+        "number": 116
+      },
+      {
+        "number": null
+      }
+    ],
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 8,
+    "code": "Hisui",
+    "regionalPokedexNumber": 117,
+    "nationalPokedexNumber": 706,
+    "sublistings": [
+      {
+        "number": null
+      },
+      {
+        "number": 117
+      },
+      {
+        "number": null
+      },
+      {
+        "number": 117
+      },
+      {
+        "number": null
+      }
+    ],
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 8,
+    "code": "Hisui",
+    "regionalPokedexNumber": 118,
+    "nationalPokedexNumber": 95,
+    "sublistings": [
+      {
+        "number": null
+      },
+      {
+        "number": 118
+      },
+      {
+        "number": null
+      },
+      {
+        "number": 118
+      },
+      {
+        "number": null
+      }
+    ],
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 8,
+    "code": "Hisui",
+    "regionalPokedexNumber": 119,
+    "nationalPokedexNumber": 208,
+    "sublistings": [
+      {
+        "number": null
+      },
+      {
+        "number": 119
+      },
+      {
+        "number": null
+      },
+      {
+        "number": 119
+      },
+      {
+        "number": null
+      }
+    ],
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 8,
+    "code": "Hisui",
+    "regionalPokedexNumber": 120,
+    "nationalPokedexNumber": 111,
+    "sublistings": [
+      {
+        "number": null
+      },
+      {
+        "number": 120
+      },
+      {
+        "number": null
+      },
+      {
+        "number": 120
+      },
+      {
+        "number": null
+      }
+    ],
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 8,
+    "code": "Hisui",
+    "regionalPokedexNumber": 121,
+    "nationalPokedexNumber": 112,
+    "sublistings": [
+      {
+        "number": null
+      },
+      {
+        "number": 121
+      },
+      {
+        "number": null
+      },
+      {
+        "number": 121
+      },
+      {
+        "number": null
+      }
+    ],
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 8,
+    "code": "Hisui",
+    "regionalPokedexNumber": 122,
+    "nationalPokedexNumber": 464,
+    "sublistings": [
+      {
+        "number": null
+      },
+      {
+        "number": 122
+      },
+      {
+        "number": null
+      },
+      {
+        "number": 122
+      },
+      {
+        "number": null
+      }
+    ],
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 8,
+    "code": "Hisui",
+    "regionalPokedexNumber": 123,
+    "nationalPokedexNumber": 438,
+    "sublistings": [
+      {
+        "number": null
+      },
+      {
+        "number": 123
+      },
+      {
+        "number": null
+      },
+      {
+        "number": 123
+      },
+      {
+        "number": null
+      }
+    ],
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 8,
+    "code": "Hisui",
+    "regionalPokedexNumber": 124,
+    "nationalPokedexNumber": 185,
+    "sublistings": [
+      {
+        "number": null
+      },
+      {
+        "number": 124
+      },
+      {
+        "number": null
+      },
+      {
+        "number": 124
+      },
+      {
+        "number": null
+      }
+    ],
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 8,
+    "code": "Hisui",
+    "regionalPokedexNumber": 125,
+    "nationalPokedexNumber": 108,
+    "sublistings": [
+      {
+        "number": null
+      },
+      {
+        "number": 125
+      },
+      {
+        "number": null
+      },
+      {
+        "number": null
+      },
+      {
+        "number": 125
+      }
+    ],
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 8,
+    "code": "Hisui",
+    "regionalPokedexNumber": 126,
+    "nationalPokedexNumber": 463,
+    "sublistings": [
+      {
+        "number": null
+      },
+      {
+        "number": 126
+      },
+      {
+        "number": null
+      },
+      {
+        "number": null
+      },
+      {
+        "number": 126
+      }
+    ],
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 8,
+    "code": "Hisui",
+    "regionalPokedexNumber": 127,
+    "nationalPokedexNumber": 175,
+    "sublistings": [
+      {
+        "number": 127
+      },
+      {
+        "number": 127
+      },
+      {
+        "number": 127
+      },
+      {
+        "number": null
+      },
+      {
+        "number": null
+      }
+    ],
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 8,
+    "code": "Hisui",
+    "regionalPokedexNumber": 128,
+    "nationalPokedexNumber": 176,
+    "sublistings": [
+      {
+        "number": 128
+      },
+      {
+        "number": 128
+      },
+      {
+        "number": 128
+      },
+      {
+        "number": null
+      },
+      {
+        "number": null
+      }
+    ],
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 8,
+    "code": "Hisui",
+    "regionalPokedexNumber": 129,
+    "nationalPokedexNumber": 468,
+    "sublistings": [
+      {
+        "number": 129
+      },
+      {
+        "number": 129
+      },
+      {
+        "number": 129
+      },
+      {
+        "number": null
+      },
+      {
+        "number": null
+      }
+    ],
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 8,
+    "code": "Hisui",
+    "regionalPokedexNumber": 130,
+    "nationalPokedexNumber": 387,
+    "sublistings": [
+      {
+        "number": null
+      },
+      {
+        "number": 130
+      },
+      {
+        "number": null
+      },
+      {
+        "number": null
+      },
+      {
+        "number": null
+      }
+    ],
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 8,
+    "code": "Hisui",
+    "regionalPokedexNumber": 131,
+    "nationalPokedexNumber": 388,
+    "sublistings": [
+      {
+        "number": null
+      },
+      {
+        "number": 131
+      },
+      {
+        "number": null
+      },
+      {
+        "number": null
+      },
+      {
+        "number": null
+      }
+    ],
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 8,
+    "code": "Hisui",
+    "regionalPokedexNumber": 132,
+    "nationalPokedexNumber": 389,
+    "sublistings": [
+      {
+        "number": null
+      },
+      {
+        "number": 132
+      },
+      {
+        "number": null
+      },
+      {
+        "number": null
+      },
+      {
+        "number": null
+      }
+    ],
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 8,
+    "code": "Hisui",
+    "regionalPokedexNumber": 133,
+    "nationalPokedexNumber": 137,
+    "sublistings": [
+      {
+        "number": null
+      },
+      {
+        "number": null
+      },
+      {
+        "number": null
+      },
+      {
+        "number": null
+      },
+      {
+        "number": null
+      }
+    ],
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 8,
+    "code": "Hisui",
+    "regionalPokedexNumber": 134,
+    "nationalPokedexNumber": 233,
+    "sublistings": [
+      {
+        "number": null
+      },
+      {
+        "number": null
+      },
+      {
+        "number": null
+      },
+      {
+        "number": null
+      },
+      {
+        "number": null
+      }
+    ],
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 8,
+    "code": "Hisui",
+    "regionalPokedexNumber": 135,
+    "nationalPokedexNumber": 474,
+    "sublistings": [
+      {
+        "number": null
+      },
+      {
+        "number": null
+      },
+      {
+        "number": null
+      },
+      {
+        "number": null
+      },
+      {
+        "number": null
+      }
+    ],
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 8,
+    "code": "Hisui",
+    "regionalPokedexNumber": 136,
+    "nationalPokedexNumber": 92,
+    "sublistings": [
+      {
+        "number": null
+      },
+      {
+        "number": 136
+      },
+      {
+        "number": null
+      },
+      {
+        "number": 136
+      },
+      {
+        "number": 136
+      }
+    ],
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 8,
+    "code": "Hisui",
+    "regionalPokedexNumber": 137,
+    "nationalPokedexNumber": 93,
+    "sublistings": [
+      {
+        "number": null
+      },
+      {
+        "number": 137
+      },
+      {
+        "number": null
+      },
+      {
+        "number": 137
+      },
+      {
+        "number": 137
+      }
+    ],
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 8,
+    "code": "Hisui",
+    "regionalPokedexNumber": 138,
+    "nationalPokedexNumber": 94,
+    "sublistings": [
+      {
+        "number": null
+      },
+      {
+        "number": 138
+      },
+      {
+        "number": null
+      },
+      {
+        "number": 138
+      },
+      {
+        "number": 138
+      }
+    ],
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 8,
+    "code": "Hisui",
+    "regionalPokedexNumber": 139,
+    "nationalPokedexNumber": 442,
+    "sublistings": [
+      {
+        "number": null
+      },
+      {
+        "number": null
+      },
+      {
+        "number": null
+      },
+      {
+        "number": null
+      },
+      {
+        "number": null
+      }
+    ],
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 8,
+    "code": "Hisui",
+    "regionalPokedexNumber": 140,
+    "nationalPokedexNumber": 198,
+    "sublistings": [
+      {
+        "number": null
+      },
+      {
+        "number": 140
+      },
+      {
+        "number": 140
+      },
+      {
+        "number": null
+      },
+      {
+        "number": null
+      }
+    ],
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 8,
+    "code": "Hisui",
+    "regionalPokedexNumber": 141,
+    "nationalPokedexNumber": 430,
+    "sublistings": [
+      {
+        "number": null
+      },
+      {
+        "number": 141
+      },
+      {
+        "number": 141
+      },
+      {
+        "number": null
+      },
+      {
+        "number": null
+      }
+    ],
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 8,
+    "code": "Hisui",
+    "regionalPokedexNumber": 142,
+    "nationalPokedexNumber": 201,
+    "sublistings": [
+      {
+        "number": null
+      },
+      {
+        "number": null
+      },
+      {
+        "number": null
+      },
+      {
+        "number": null
+      },
+      {
+        "number": null
+      }
+    ],
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 8,
+    "code": "Hisui",
+    "regionalPokedexNumber": 143,
+    "nationalPokedexNumber": 363,
+    "sublistings": [
+      {
+        "number": null
+      },
+      {
+        "number": null
+      },
+      {
+        "number": 143
+      },
+      {
+        "number": null
+      },
+      {
+        "number": null
+      }
+    ],
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 8,
+    "code": "Hisui",
+    "regionalPokedexNumber": 144,
+    "nationalPokedexNumber": 364,
+    "sublistings": [
+      {
+        "number": null
+      },
+      {
+        "number": null
+      },
+      {
+        "number": 144
+      },
+      {
+        "number": null
+      },
+      {
+        "number": null
+      }
+    ],
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 8,
+    "code": "Hisui",
+    "regionalPokedexNumber": 145,
+    "nationalPokedexNumber": 365,
+    "sublistings": [
+      {
+        "number": null
+      },
+      {
+        "number": null
+      },
+      {
+        "number": 145
+      },
+      {
+        "number": null
+      },
+      {
+        "number": null
+      }
+    ],
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 8,
+    "code": "Hisui",
+    "regionalPokedexNumber": 146,
+    "nationalPokedexNumber": 223,
+    "sublistings": [
+      {
+        "number": null
+      },
+      {
+        "number": null
+      },
+      {
+        "number": 146
+      },
+      {
+        "number": null
+      },
+      {
+        "number": null
+      }
+    ],
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 8,
+    "code": "Hisui",
+    "regionalPokedexNumber": 147,
+    "nationalPokedexNumber": 224,
+    "sublistings": [
+      {
+        "number": null
+      },
+      {
+        "number": null
+      },
+      {
+        "number": 147
+      },
+      {
+        "number": null
+      },
+      {
+        "number": null
+      }
+    ],
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 8,
+    "code": "Hisui",
+    "regionalPokedexNumber": 148,
+    "nationalPokedexNumber": 451,
+    "sublistings": [
+      {
+        "number": null
+      },
+      {
+        "number": null
+      },
+      {
+        "number": 148
+      },
+      {
+        "number": null
+      },
+      {
+        "number": null
+      }
+    ],
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 8,
+    "code": "Hisui",
+    "regionalPokedexNumber": 149,
+    "nationalPokedexNumber": 452,
+    "sublistings": [
+      {
+        "number": null
+      },
+      {
+        "number": null
+      },
+      {
+        "number": 149
+      },
+      {
+        "number": null
+      },
+      {
+        "number": null
+      }
+    ],
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 8,
+    "code": "Hisui",
+    "regionalPokedexNumber": 150,
+    "nationalPokedexNumber": 58,
+    "sublistings": [
+      {
+        "number": null
+      },
+      {
+        "number": null
+      },
+      {
+        "number": 150
+      },
+      {
+        "number": null
+      },
+      {
+        "number": null
+      }
+    ],
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 8,
+    "code": "Hisui",
+    "regionalPokedexNumber": 151,
+    "nationalPokedexNumber": 59,
+    "sublistings": [
+      {
+        "number": null
+      },
+      {
+        "number": null
+      },
+      {
+        "number": 151
+      },
+      {
+        "number": null
+      },
+      {
+        "number": null
+      }
+    ],
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 8,
+    "code": "Hisui",
+    "regionalPokedexNumber": 152,
+    "nationalPokedexNumber": 431,
+    "sublistings": [
+      {
+        "number": null
+      },
+      {
+        "number": null
+      },
+      {
+        "number": 152
+      },
+      {
+        "number": null
+      },
+      {
+        "number": 152
+      }
+    ],
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 8,
+    "code": "Hisui",
+    "regionalPokedexNumber": 153,
+    "nationalPokedexNumber": 432,
+    "sublistings": [
+      {
+        "number": null
+      },
+      {
+        "number": null
+      },
+      {
+        "number": 153
+      },
+      {
+        "number": null
+      },
+      {
+        "number": 153
+      }
+    ],
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 8,
+    "code": "Hisui",
+    "regionalPokedexNumber": 154,
+    "nationalPokedexNumber": 66,
+    "sublistings": [
+      {
+        "number": 154
+      },
+      {
+        "number": null
+      },
+      {
+        "number": 154
+      },
+      {
+        "number": 154
+      },
+      {
+        "number": 154
+      }
+    ],
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 8,
+    "code": "Hisui",
+    "regionalPokedexNumber": 155,
+    "nationalPokedexNumber": 67,
+    "sublistings": [
+      {
+        "number": 155
+      },
+      {
+        "number": null
+      },
+      {
+        "number": 155
+      },
+      {
+        "number": 155
+      },
+      {
+        "number": 155
+      }
+    ],
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 8,
+    "code": "Hisui",
+    "regionalPokedexNumber": 156,
+    "nationalPokedexNumber": 68,
+    "sublistings": [
+      {
+        "number": 156
+      },
+      {
+        "number": null
+      },
+      {
+        "number": 156
+      },
+      {
+        "number": 156
+      },
+      {
+        "number": 156
+      }
+    ],
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 8,
+    "code": "Hisui",
+    "regionalPokedexNumber": 157,
+    "nationalPokedexNumber": 441,
+    "sublistings": [
+      {
+        "number": null
+      },
+      {
+        "number": null
+      },
+      {
+        "number": 157
+      },
+      {
+        "number": null
+      },
+      {
+        "number": null
+      }
+    ],
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 8,
+    "code": "Hisui",
+    "regionalPokedexNumber": 158,
+    "nationalPokedexNumber": 355,
+    "sublistings": [
+      {
+        "number": null
+      },
+      {
+        "number": null
+      },
+      {
+        "number": 158
+      },
+      {
+        "number": null
+      },
+      {
+        "number": 158
+      }
+    ],
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 8,
+    "code": "Hisui",
+    "regionalPokedexNumber": 159,
+    "nationalPokedexNumber": 356,
+    "sublistings": [
+      {
+        "number": null
+      },
+      {
+        "number": null
+      },
+      {
+        "number": 159
+      },
+      {
+        "number": null
+      },
+      {
+        "number": 159
+      }
+    ],
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 8,
+    "code": "Hisui",
+    "regionalPokedexNumber": 160,
+    "nationalPokedexNumber": 477,
+    "sublistings": [
+      {
+        "number": null
+      },
+      {
+        "number": null
+      },
+      {
+        "number": 160
+      },
+      {
+        "number": null
+      },
+      {
+        "number": 160
+      }
+    ],
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 8,
+    "code": "Hisui",
+    "regionalPokedexNumber": 161,
+    "nationalPokedexNumber": 393,
+    "sublistings": [
+      {
+        "number": null
+      },
+      {
+        "number": null
+      },
+      {
+        "number": 161
+      },
+      {
+        "number": null
+      },
+      {
+        "number": null
+      }
+    ],
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 8,
+    "code": "Hisui",
+    "regionalPokedexNumber": 162,
+    "nationalPokedexNumber": 394,
+    "sublistings": [
+      {
+        "number": null
+      },
+      {
+        "number": null
+      },
+      {
+        "number": 162
+      },
+      {
+        "number": null
+      },
+      {
+        "number": null
+      }
+    ],
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 8,
+    "code": "Hisui",
+    "regionalPokedexNumber": 163,
+    "nationalPokedexNumber": 395,
+    "sublistings": [
+      {
+        "number": null
+      },
+      {
+        "number": null
+      },
+      {
+        "number": 163
+      },
+      {
+        "number": null
+      },
+      {
+        "number": null
+      }
+    ],
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 8,
+    "code": "Hisui",
+    "regionalPokedexNumber": 164,
+    "nationalPokedexNumber": 458,
+    "sublistings": [
+      {
+        "number": null
+      },
+      {
+        "number": null
+      },
+      {
+        "number": 164
+      },
+      {
+        "number": null
+      },
+      {
+        "number": null
+      }
+    ],
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 8,
+    "code": "Hisui",
+    "regionalPokedexNumber": 165,
+    "nationalPokedexNumber": 226,
+    "sublistings": [
+      {
+        "number": null
+      },
+      {
+        "number": null
+      },
+      {
+        "number": 165
+      },
+      {
+        "number": null
+      },
+      {
+        "number": null
+      }
+    ],
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 8,
+    "code": "Hisui",
+    "regionalPokedexNumber": 166,
+    "nationalPokedexNumber": 550,
+    "sublistings": [
+      {
+        "number": null
+      },
+      {
+        "number": null
+      },
+      {
+        "number": 166
+      },
+      {
+        "number": 166
+      },
+      {
+        "number": 166
+      }
+    ],
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 8,
+    "code": "Hisui",
+    "regionalPokedexNumber": 167,
+    "nationalPokedexNumber": 902,
+    "sublistings": [
+      {
+        "number": null
+      },
+      {
+        "number": null
+      },
+      {
+        "number": 167
+      },
+      {
+        "number": 167
+      },
+      {
+        "number": 167
+      }
+    ],
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 8,
+    "code": "Hisui",
+    "regionalPokedexNumber": 167,
+    "nationalPokedexNumber": 902,
+    "sublistings": [
+      {
+        "number": null
+      },
+      {
+        "number": null
+      },
+      {
+        "number": 167
+      },
+      {
+        "number": 167
+      },
+      {
+        "number": 167
+      }
+    ],
+    "formSuffix": "_1",
+    "isVariant": false
+  },
+  {
+    "region": 8,
+    "code": "Hisui",
+    "regionalPokedexNumber": 168,
+    "nationalPokedexNumber": 37,
+    "sublistings": [
+      {
+        "number": null
+      },
+      {
+        "number": null
+      },
+      {
+        "number": 168
+      },
+      {
+        "number": null
+      },
+      {
+        "number": null
+      }
+    ],
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 8,
+    "code": "Hisui",
+    "regionalPokedexNumber": 168,
+    "nationalPokedexNumber": 37,
+    "sublistings": [
+      {
+        "number": null
+      },
+      {
+        "number": null
+      },
+      {
+        "number": 168
+      },
+      {
+        "number": null
+      },
+      {
+        "number": null
+      }
+    ],
+    "formSuffix": "",
+    "isVariant": true
+  },
+  {
+    "region": 8,
+    "code": "Hisui",
+    "regionalPokedexNumber": 169,
+    "nationalPokedexNumber": 38,
+    "sublistings": [
+      {
+        "number": null
+      },
+      {
+        "number": null
+      },
+      {
+        "number": 169
+      },
+      {
+        "number": null
+      },
+      {
+        "number": null
+      }
+    ],
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 8,
+    "code": "Hisui",
+    "regionalPokedexNumber": 169,
+    "nationalPokedexNumber": 38,
+    "sublistings": [
+      {
+        "number": null
+      },
+      {
+        "number": null
+      },
+      {
+        "number": 169
+      },
+      {
+        "number": null
+      },
+      {
+        "number": null
+      }
+    ],
+    "formSuffix": "",
+    "isVariant": true
+  },
+  {
+    "region": 8,
+    "code": "Hisui",
+    "regionalPokedexNumber": 170,
+    "nationalPokedexNumber": 72,
+    "sublistings": [
+      {
+        "number": null
+      },
+      {
+        "number": null
+      },
+      {
+        "number": 170
+      },
+      {
+        "number": null
+      },
+      {
+        "number": null
+      }
+    ],
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 8,
+    "code": "Hisui",
+    "regionalPokedexNumber": 171,
+    "nationalPokedexNumber": 73,
+    "sublistings": [
+      {
+        "number": null
+      },
+      {
+        "number": null
+      },
+      {
+        "number": 171
+      },
+      {
+        "number": null
+      },
+      {
+        "number": null
+      }
+    ],
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 8,
+    "code": "Hisui",
+    "regionalPokedexNumber": 172,
+    "nationalPokedexNumber": 456,
+    "sublistings": [
+      {
+        "number": null
+      },
+      {
+        "number": null
+      },
+      {
+        "number": 172
+      },
+      {
+        "number": null
+      },
+      {
+        "number": null
+      }
+    ],
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 8,
+    "code": "Hisui",
+    "regionalPokedexNumber": 173,
+    "nationalPokedexNumber": 457,
+    "sublistings": [
+      {
+        "number": null
+      },
+      {
+        "number": null
+      },
+      {
+        "number": 173
+      },
+      {
+        "number": null
+      },
+      {
+        "number": null
+      }
+    ],
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 8,
+    "code": "Hisui",
+    "regionalPokedexNumber": 174,
+    "nationalPokedexNumber": 240,
+    "sublistings": [
+      {
+        "number": null
+      },
+      {
+        "number": null
+      },
+      {
+        "number": 174
+      },
+      {
+        "number": null
+      },
+      {
+        "number": null
+      }
+    ],
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 8,
+    "code": "Hisui",
+    "regionalPokedexNumber": 175,
+    "nationalPokedexNumber": 126,
+    "sublistings": [
+      {
+        "number": null
+      },
+      {
+        "number": null
+      },
+      {
+        "number": 175
+      },
+      {
+        "number": null
+      },
+      {
+        "number": null
+      }
+    ],
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 8,
+    "code": "Hisui",
+    "regionalPokedexNumber": 176,
+    "nationalPokedexNumber": 467,
+    "sublistings": [
+      {
+        "number": null
+      },
+      {
+        "number": null
+      },
+      {
+        "number": 176
+      },
+      {
+        "number": null
+      },
+      {
+        "number": null
+      }
+    ],
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 8,
+    "code": "Hisui",
+    "regionalPokedexNumber": 177,
+    "nationalPokedexNumber": 81,
+    "sublistings": [
+      {
+        "number": null
+      },
+      {
+        "number": null
+      },
+      {
+        "number": null
+      },
+      {
+        "number": 177
+      },
+      {
+        "number": null
+      }
+    ],
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 8,
+    "code": "Hisui",
+    "regionalPokedexNumber": 178,
+    "nationalPokedexNumber": 82,
+    "sublistings": [
+      {
+        "number": null
+      },
+      {
+        "number": null
+      },
+      {
+        "number": null
+      },
+      {
+        "number": 178
+      },
+      {
+        "number": null
+      }
+    ],
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 8,
+    "code": "Hisui",
+    "regionalPokedexNumber": 179,
+    "nationalPokedexNumber": 462,
+    "sublistings": [
+      {
+        "number": null
+      },
+      {
+        "number": null
+      },
+      {
+        "number": null
+      },
+      {
+        "number": 179
+      },
+      {
+        "number": null
+      }
+    ],
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 8,
+    "code": "Hisui",
+    "regionalPokedexNumber": 180,
+    "nationalPokedexNumber": 436,
+    "sublistings": [
+      {
+        "number": null
+      },
+      {
+        "number": null
+      },
+      {
+        "number": null
+      },
+      {
+        "number": 180
+      },
+      {
+        "number": 180
+      }
+    ],
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 8,
+    "code": "Hisui",
+    "regionalPokedexNumber": 181,
+    "nationalPokedexNumber": 437,
+    "sublistings": [
+      {
+        "number": null
+      },
+      {
+        "number": null
+      },
+      {
+        "number": null
+      },
+      {
+        "number": 181
+      },
+      {
+        "number": 181
+      }
+    ],
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 8,
+    "code": "Hisui",
+    "regionalPokedexNumber": 182,
+    "nationalPokedexNumber": 239,
+    "sublistings": [
+      {
+        "number": null
+      },
+      {
+        "number": null
+      },
+      {
+        "number": null
+      },
+      {
+        "number": 182
+      },
+      {
+        "number": 182
+      }
+    ],
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 8,
+    "code": "Hisui",
+    "regionalPokedexNumber": 183,
+    "nationalPokedexNumber": 125,
+    "sublistings": [
+      {
+        "number": null
+      },
+      {
+        "number": null
+      },
+      {
+        "number": null
+      },
+      {
+        "number": 183
+      },
+      {
+        "number": 183
+      }
+    ],
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 8,
+    "code": "Hisui",
+    "regionalPokedexNumber": 184,
+    "nationalPokedexNumber": 466,
+    "sublistings": [
+      {
+        "number": null
+      },
+      {
+        "number": null
+      },
+      {
+        "number": null
+      },
+      {
+        "number": 184
+      },
+      {
+        "number": 184
+      }
+    ],
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 8,
+    "code": "Hisui",
+    "regionalPokedexNumber": 185,
+    "nationalPokedexNumber": 207,
+    "sublistings": [
+      {
+        "number": null
+      },
+      {
+        "number": null
+      },
+      {
+        "number": null
+      },
+      {
+        "number": 185
+      },
+      {
+        "number": 185
+      }
+    ],
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 8,
+    "code": "Hisui",
+    "regionalPokedexNumber": 186,
+    "nationalPokedexNumber": 472,
+    "sublistings": [
+      {
+        "number": null
+      },
+      {
+        "number": null
+      },
+      {
+        "number": null
+      },
+      {
+        "number": 186
+      },
+      {
+        "number": 186
+      }
+    ],
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 8,
+    "code": "Hisui",
+    "regionalPokedexNumber": 187,
+    "nationalPokedexNumber": 443,
+    "sublistings": [
+      {
+        "number": null
+      },
+      {
+        "number": null
+      },
+      {
+        "number": null
+      },
+      {
+        "number": 187
+      },
+      {
+        "number": 187
+      }
+    ],
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 8,
+    "code": "Hisui",
+    "regionalPokedexNumber": 188,
+    "nationalPokedexNumber": 444,
+    "sublistings": [
+      {
+        "number": null
+      },
+      {
+        "number": null
+      },
+      {
+        "number": null
+      },
+      {
+        "number": 188
+      },
+      {
+        "number": 188
+      }
+    ],
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 8,
+    "code": "Hisui",
+    "regionalPokedexNumber": 189,
+    "nationalPokedexNumber": 445,
+    "sublistings": [
+      {
+        "number": null
+      },
+      {
+        "number": null
+      },
+      {
+        "number": null
+      },
+      {
+        "number": 189
+      },
+      {
+        "number": 189
+      }
+    ],
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 8,
+    "code": "Hisui",
+    "regionalPokedexNumber": 190,
+    "nationalPokedexNumber": 299,
+    "sublistings": [
+      {
+        "number": null
+      },
+      {
+        "number": null
+      },
+      {
+        "number": null
+      },
+      {
+        "number": 190
+      },
+      {
+        "number": null
+      }
+    ],
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 8,
+    "code": "Hisui",
+    "regionalPokedexNumber": 191,
+    "nationalPokedexNumber": 476,
+    "sublistings": [
+      {
+        "number": null
+      },
+      {
+        "number": null
+      },
+      {
+        "number": null
+      },
+      {
+        "number": 191
+      },
+      {
+        "number": null
+      }
+    ],
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 8,
+    "code": "Hisui",
+    "regionalPokedexNumber": 192,
+    "nationalPokedexNumber": 100,
+    "sublistings": [
+      {
+        "number": null
+      },
+      {
+        "number": null
+      },
+      {
+        "number": null
+      },
+      {
+        "number": 192
+      },
+      {
+        "number": null
+      }
+    ],
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 8,
+    "code": "Hisui",
+    "regionalPokedexNumber": 193,
+    "nationalPokedexNumber": 101,
+    "sublistings": [
+      {
+        "number": null
+      },
+      {
+        "number": null
+      },
+      {
+        "number": null
+      },
+      {
+        "number": 193
+      },
+      {
+        "number": null
+      }
+    ],
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 8,
+    "code": "Hisui",
+    "regionalPokedexNumber": 194,
+    "nationalPokedexNumber": 479,
+    "sublistings": [
+      {
+        "number": null
+      },
+      {
+        "number": null
+      },
+      {
+        "number": null
+      },
+      {
+        "number": 194
+      },
+      {
+        "number": null
+      }
+    ],
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 8,
+    "code": "Hisui",
+    "regionalPokedexNumber": 194,
+    "nationalPokedexNumber": 479,
+    "sublistings": [
+      {
+        "number": null
+      },
+      {
+        "number": null
+      },
+      {
+        "number": null
+      },
+      {
+        "number": 194
+      },
+      {
+        "number": null
+      }
+    ],
+    "formSuffix": "_1",
+    "isVariant": false
+  },
+  {
+    "region": 8,
+    "code": "Hisui",
+    "regionalPokedexNumber": 194,
+    "nationalPokedexNumber": 479,
+    "sublistings": [
+      {
+        "number": null
+      },
+      {
+        "number": null
+      },
+      {
+        "number": null
+      },
+      {
+        "number": 194
+      },
+      {
+        "number": null
+      }
+    ],
+    "formSuffix": "_2",
+    "isVariant": false
+  },
+  {
+    "region": 8,
+    "code": "Hisui",
+    "regionalPokedexNumber": 194,
+    "nationalPokedexNumber": 479,
+    "sublistings": [
+      {
+        "number": null
+      },
+      {
+        "number": null
+      },
+      {
+        "number": null
+      },
+      {
+        "number": 194
+      },
+      {
+        "number": null
+      }
+    ],
+    "formSuffix": "_3",
+    "isVariant": false
+  },
+  {
+    "region": 8,
+    "code": "Hisui",
+    "regionalPokedexNumber": 194,
+    "nationalPokedexNumber": 479,
+    "sublistings": [
+      {
+        "number": null
+      },
+      {
+        "number": null
+      },
+      {
+        "number": null
+      },
+      {
+        "number": 194
+      },
+      {
+        "number": null
+      }
+    ],
+    "formSuffix": "_4",
+    "isVariant": false
+  },
+  {
+    "region": 8,
+    "code": "Hisui",
+    "regionalPokedexNumber": 194,
+    "nationalPokedexNumber": 479,
+    "sublistings": [
+      {
+        "number": null
+      },
+      {
+        "number": null
+      },
+      {
+        "number": null
+      },
+      {
+        "number": 194
+      },
+      {
+        "number": null
+      }
+    ],
+    "formSuffix": "_5",
+    "isVariant": false
+  },
+  {
+    "region": 8,
+    "code": "Hisui",
+    "regionalPokedexNumber": 195,
+    "nationalPokedexNumber": 433,
+    "sublistings": [
+      {
+        "number": null
+      },
+      {
+        "number": null
+      },
+      {
+        "number": null
+      },
+      {
+        "number": 195
+      },
+      {
+        "number": 195
+      }
+    ],
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 8,
+    "code": "Hisui",
+    "regionalPokedexNumber": 196,
+    "nationalPokedexNumber": 358,
+    "sublistings": [
+      {
+        "number": null
+      },
+      {
+        "number": null
+      },
+      {
+        "number": null
+      },
+      {
+        "number": 196
+      },
+      {
+        "number": 196
+      }
+    ],
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 8,
+    "code": "Hisui",
+    "regionalPokedexNumber": 197,
+    "nationalPokedexNumber": 200,
+    "sublistings": [
+      {
+        "number": null
+      },
+      {
+        "number": null
+      },
+      {
+        "number": null
+      },
+      {
+        "number": 197
+      },
+      {
+        "number": 197
+      }
+    ],
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 8,
+    "code": "Hisui",
+    "regionalPokedexNumber": 198,
+    "nationalPokedexNumber": 429,
+    "sublistings": [
+      {
+        "number": null
+      },
+      {
+        "number": null
+      },
+      {
+        "number": null
+      },
+      {
+        "number": 198
+      },
+      {
+        "number": 198
+      }
+    ],
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 8,
+    "code": "Hisui",
+    "regionalPokedexNumber": 199,
+    "nationalPokedexNumber": 173,
+    "sublistings": [
+      {
+        "number": null
+      },
+      {
+        "number": null
+      },
+      {
+        "number": null
+      },
+      {
+        "number": 199
+      },
+      {
+        "number": null
+      }
+    ],
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 8,
+    "code": "Hisui",
+    "regionalPokedexNumber": 200,
+    "nationalPokedexNumber": 35,
+    "sublistings": [
+      {
+        "number": null
+      },
+      {
+        "number": null
+      },
+      {
+        "number": null
+      },
+      {
+        "number": 200
+      },
+      {
+        "number": null
+      }
+    ],
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 8,
+    "code": "Hisui",
+    "regionalPokedexNumber": 201,
+    "nationalPokedexNumber": 36,
+    "sublistings": [
+      {
+        "number": null
+      },
+      {
+        "number": null
+      },
+      {
+        "number": null
+      },
+      {
+        "number": 201
+      },
+      {
+        "number": null
+      }
+    ],
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 8,
+    "code": "Hisui",
+    "regionalPokedexNumber": 202,
+    "nationalPokedexNumber": 215,
+    "sublistings": [
+      {
+        "number": null
+      },
+      {
+        "number": null
+      },
+      {
+        "number": null
+      },
+      {
+        "number": 202
+      },
+      {
+        "number": 202
+      }
+    ],
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 8,
+    "code": "Hisui",
+    "regionalPokedexNumber": 202,
+    "nationalPokedexNumber": 215,
+    "sublistings": [
+      {
+        "number": null
+      },
+      {
+        "number": null
+      },
+      {
+        "number": null
+      },
+      {
+        "number": 202
+      },
+      {
+        "number": 202
+      }
+    ],
+    "formSuffix": "_1",
+    "isVariant": false
+  },
+  {
+    "region": 8,
+    "code": "Hisui",
+    "regionalPokedexNumber": 203,
+    "nationalPokedexNumber": 903,
+    "sublistings": [
+      {
+        "number": null
+      },
+      {
+        "number": null
+      },
+      {
+        "number": null
+      },
+      {
+        "number": 203
+      },
+      {
+        "number": 203
+      }
+    ],
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 8,
+    "code": "Hisui",
+    "regionalPokedexNumber": 204,
+    "nationalPokedexNumber": 461,
+    "sublistings": [
+      {
+        "number": null
+      },
+      {
+        "number": null
+      },
+      {
+        "number": null
+      },
+      {
+        "number": 204
+      },
+      {
+        "number": 204
+      }
+    ],
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 8,
+    "code": "Hisui",
+    "regionalPokedexNumber": 205,
+    "nationalPokedexNumber": 361,
+    "sublistings": [
+      {
+        "number": null
+      },
+      {
+        "number": null
+      },
+      {
+        "number": null
+      },
+      {
+        "number": null
+      },
+      {
+        "number": 205
+      }
+    ],
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 8,
+    "code": "Hisui",
+    "regionalPokedexNumber": 206,
+    "nationalPokedexNumber": 362,
+    "sublistings": [
+      {
+        "number": null
+      },
+      {
+        "number": null
+      },
+      {
+        "number": null
+      },
+      {
+        "number": null
+      },
+      {
+        "number": 206
+      }
+    ],
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 8,
+    "code": "Hisui",
+    "regionalPokedexNumber": 207,
+    "nationalPokedexNumber": 478,
+    "sublistings": [
+      {
+        "number": null
+      },
+      {
+        "number": null
+      },
+      {
+        "number": null
+      },
+      {
+        "number": null
+      },
+      {
+        "number": 207
+      }
+    ],
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 8,
+    "code": "Hisui",
+    "regionalPokedexNumber": 208,
+    "nationalPokedexNumber": 408,
+    "sublistings": [
+      {
+        "number": null
+      },
+      {
+        "number": null
+      },
+      {
+        "number": null
+      },
+      {
+        "number": null
+      },
+      {
+        "number": null
+      }
+    ],
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 8,
+    "code": "Hisui",
+    "regionalPokedexNumber": 209,
+    "nationalPokedexNumber": 409,
+    "sublistings": [
+      {
+        "number": null
+      },
+      {
+        "number": null
+      },
+      {
+        "number": null
+      },
+      {
+        "number": null
+      },
+      {
+        "number": null
+      }
+    ],
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 8,
+    "code": "Hisui",
+    "regionalPokedexNumber": 210,
+    "nationalPokedexNumber": 410,
+    "sublistings": [
+      {
+        "number": null
+      },
+      {
+        "number": null
+      },
+      {
+        "number": null
+      },
+      {
+        "number": null
+      },
+      {
+        "number": null
+      }
+    ],
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 8,
+    "code": "Hisui",
+    "regionalPokedexNumber": 211,
+    "nationalPokedexNumber": 411,
+    "sublistings": [
+      {
+        "number": null
+      },
+      {
+        "number": null
+      },
+      {
+        "number": null
+      },
+      {
+        "number": null
+      },
+      {
+        "number": null
+      }
+    ],
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 8,
+    "code": "Hisui",
+    "regionalPokedexNumber": 212,
+    "nationalPokedexNumber": 220,
+    "sublistings": [
+      {
+        "number": null
+      },
+      {
+        "number": null
+      },
+      {
+        "number": null
+      },
+      {
+        "number": null
+      },
+      {
+        "number": 212
+      }
+    ],
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 8,
+    "code": "Hisui",
+    "regionalPokedexNumber": 213,
+    "nationalPokedexNumber": 221,
+    "sublistings": [
+      {
+        "number": null
+      },
+      {
+        "number": null
+      },
+      {
+        "number": null
+      },
+      {
+        "number": null
+      },
+      {
+        "number": 213
+      }
+    ],
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 8,
+    "code": "Hisui",
+    "regionalPokedexNumber": 214,
+    "nationalPokedexNumber": 473,
+    "sublistings": [
+      {
+        "number": null
+      },
+      {
+        "number": null
+      },
+      {
+        "number": null
+      },
+      {
+        "number": null
+      },
+      {
+        "number": 214
+      }
+    ],
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 8,
+    "code": "Hisui",
+    "regionalPokedexNumber": 215,
+    "nationalPokedexNumber": 712,
+    "sublistings": [
+      {
+        "number": null
+      },
+      {
+        "number": null
+      },
+      {
+        "number": null
+      },
+      {
+        "number": null
+      },
+      {
+        "number": 215
+      }
+    ],
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 8,
+    "code": "Hisui",
+    "regionalPokedexNumber": 216,
+    "nationalPokedexNumber": 713,
+    "sublistings": [
+      {
+        "number": null
+      },
+      {
+        "number": null
+      },
+      {
+        "number": null
+      },
+      {
+        "number": null
+      },
+      {
+        "number": 216
+      }
+    ],
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 8,
+    "code": "Hisui",
+    "regionalPokedexNumber": 217,
+    "nationalPokedexNumber": 459,
+    "sublistings": [
+      {
+        "number": null
+      },
+      {
+        "number": null
+      },
+      {
+        "number": null
+      },
+      {
+        "number": null
+      },
+      {
+        "number": 217
+      }
+    ],
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 8,
+    "code": "Hisui",
+    "regionalPokedexNumber": 218,
+    "nationalPokedexNumber": 460,
+    "sublistings": [
+      {
+        "number": null
+      },
+      {
+        "number": null
+      },
+      {
+        "number": null
+      },
+      {
+        "number": null
+      },
+      {
+        "number": 218
+      }
+    ],
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 8,
+    "code": "Hisui",
+    "regionalPokedexNumber": 219,
+    "nationalPokedexNumber": 570,
+    "sublistings": [
+      {
+        "number": null
+      },
+      {
+        "number": null
+      },
+      {
+        "number": null
+      },
+      {
+        "number": null
+      },
+      {
+        "number": 219
+      }
+    ],
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 8,
+    "code": "Hisui",
+    "regionalPokedexNumber": 220,
+    "nationalPokedexNumber": 571,
+    "sublistings": [
+      {
+        "number": null
+      },
+      {
+        "number": null
+      },
+      {
+        "number": null
+      },
+      {
+        "number": null
+      },
+      {
+        "number": 220
+      }
+    ],
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 8,
+    "code": "Hisui",
+    "regionalPokedexNumber": 221,
+    "nationalPokedexNumber": 627,
+    "sublistings": [
+      {
+        "number": null
+      },
+      {
+        "number": null
+      },
+      {
+        "number": null
+      },
+      {
+        "number": null
+      },
+      {
+        "number": 221
+      }
+    ],
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 8,
+    "code": "Hisui",
+    "regionalPokedexNumber": 222,
+    "nationalPokedexNumber": 628,
+    "sublistings": [
+      {
+        "number": null
+      },
+      {
+        "number": null
+      },
+      {
+        "number": null
+      },
+      {
+        "number": null
+      },
+      {
+        "number": 222
+      }
+    ],
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 8,
+    "code": "Hisui",
+    "regionalPokedexNumber": 223,
+    "nationalPokedexNumber": 447,
+    "sublistings": [
+      {
+        "number": null
+      },
+      {
+        "number": null
+      },
+      {
+        "number": null
+      },
+      {
+        "number": null
+      },
+      {
+        "number": 223
+      }
+    ],
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 8,
+    "code": "Hisui",
+    "regionalPokedexNumber": 224,
+    "nationalPokedexNumber": 448,
+    "sublistings": [
+      {
+        "number": null
+      },
+      {
+        "number": null
+      },
+      {
+        "number": null
+      },
+      {
+        "number": null
+      },
+      {
+        "number": 224
+      }
+    ],
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 8,
+    "code": "Hisui",
+    "regionalPokedexNumber": 225,
+    "nationalPokedexNumber": 480,
+    "sublistings": [
+      {
+        "number": null
+      },
+      {
+        "number": null
+      },
+      {
+        "number": null
+      },
+      {
+        "number": null
+      },
+      {
+        "number": 225
+      }
+    ],
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 8,
+    "code": "Hisui",
+    "regionalPokedexNumber": 226,
+    "nationalPokedexNumber": 481,
+    "sublistings": [
+      {
+        "number": 226
+      },
+      {
+        "number": null
+      },
+      {
+        "number": null
+      },
+      {
+        "number": null
+      },
+      {
+        "number": null
+      }
+    ],
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 8,
+    "code": "Hisui",
+    "regionalPokedexNumber": 227,
+    "nationalPokedexNumber": 482,
+    "sublistings": [
+      {
+        "number": null
+      },
+      {
+        "number": 227
+      },
+      {
+        "number": null
+      },
+      {
+        "number": null
+      },
+      {
+        "number": null
+      }
+    ],
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 8,
+    "code": "Hisui",
+    "regionalPokedexNumber": 228,
+    "nationalPokedexNumber": 485,
+    "sublistings": [
+      {
+        "number": null
+      },
+      {
+        "number": null
+      },
+      {
+        "number": 228
+      },
+      {
+        "number": null
+      },
+      {
+        "number": null
+      }
+    ],
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 8,
+    "code": "Hisui",
+    "regionalPokedexNumber": 229,
+    "nationalPokedexNumber": 486,
+    "sublistings": [
+      {
+        "number": null
+      },
+      {
+        "number": null
+      },
+      {
+        "number": null
+      },
+      {
+        "number": null
+      },
+      {
+        "number": 229
+      }
+    ],
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 8,
+    "code": "Hisui",
+    "regionalPokedexNumber": 230,
+    "nationalPokedexNumber": 488,
+    "sublistings": [
+      {
+        "number": null
+      },
+      {
+        "number": null
+      },
+      {
+        "number": null
+      },
+      {
+        "number": 230
+      },
+      {
+        "number": null
+      }
+    ],
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 8,
+    "code": "Hisui",
+    "regionalPokedexNumber": 231,
+    "nationalPokedexNumber": 641,
+    "sublistings": [
+      {
+        "number": null
+      },
+      {
+        "number": null
+      },
+      {
+        "number": null
+      },
+      {
+        "number": null
+      },
+      {
+        "number": 231
+      }
+    ],
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 8,
+    "code": "Hisui",
+    "regionalPokedexNumber": 231,
+    "nationalPokedexNumber": 641,
+    "sublistings": [
+      {
+        "number": null
+      },
+      {
+        "number": null
+      },
+      {
+        "number": null
+      },
+      {
+        "number": null
+      },
+      {
+        "number": 231
+      }
+    ],
+    "formSuffix": "_1",
+    "isVariant": false
+  },
+  {
+    "region": 8,
+    "code": "Hisui",
+    "regionalPokedexNumber": 232,
+    "nationalPokedexNumber": 642,
+    "sublistings": [
+      {
+        "number": null
+      },
+      {
+        "number": null
+      },
+      {
+        "number": 232
+      },
+      {
+        "number": null
+      },
+      {
+        "number": null
+      }
+    ],
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 8,
+    "code": "Hisui",
+    "regionalPokedexNumber": 232,
+    "nationalPokedexNumber": 642,
+    "sublistings": [
+      {
+        "number": null
+      },
+      {
+        "number": null
+      },
+      {
+        "number": 232
+      },
+      {
+        "number": null
+      },
+      {
+        "number": null
+      }
+    ],
+    "formSuffix": "_1",
+    "isVariant": false
+  },
+  {
+    "region": 8,
+    "code": "Hisui",
+    "regionalPokedexNumber": 233,
+    "nationalPokedexNumber": 645,
+    "sublistings": [
+      {
+        "number": 233
+      },
+      {
+        "number": null
+      },
+      {
+        "number": null
+      },
+      {
+        "number": null
+      },
+      {
+        "number": null
+      }
+    ],
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 8,
+    "code": "Hisui",
+    "regionalPokedexNumber": 233,
+    "nationalPokedexNumber": 645,
+    "sublistings": [
+      {
+        "number": 233
+      },
+      {
+        "number": null
+      },
+      {
+        "number": null
+      },
+      {
+        "number": null
+      },
+      {
+        "number": null
+      }
+    ],
+    "formSuffix": "_1",
+    "isVariant": false
+  },
+  {
+    "region": 8,
+    "code": "Hisui",
+    "regionalPokedexNumber": 234,
+    "nationalPokedexNumber": 905,
+    "sublistings": [
+      {
+        "number": null
+      },
+      {
+        "number": 234
+      },
+      {
+        "number": null
+      },
+      {
+        "number": null
+      },
+      {
+        "number": null
+      }
+    ],
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 8,
+    "code": "Hisui",
+    "regionalPokedexNumber": 234,
+    "nationalPokedexNumber": 905,
+    "sublistings": [
+      {
+        "number": null
+      },
+      {
+        "number": 234
+      },
+      {
+        "number": null
+      },
+      {
+        "number": null
+      },
+      {
+        "number": null
+      }
+    ],
+    "formSuffix": "_1",
+    "isVariant": false
+  },
+  {
+    "region": 8,
+    "code": "Hisui",
+    "regionalPokedexNumber": 235,
+    "nationalPokedexNumber": 483,
+    "sublistings": [
+      {
+        "number": null
+      },
+      {
+        "number": null
+      },
+      {
+        "number": null
+      },
+      {
+        "number": null
+      },
+      {
+        "number": null
+      }
+    ],
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 8,
+    "code": "Hisui",
+    "regionalPokedexNumber": 235,
+    "nationalPokedexNumber": 483,
+    "sublistings": [
+      {
+        "number": null
+      },
+      {
+        "number": null
+      },
+      {
+        "number": null
+      },
+      {
+        "number": null
+      },
+      {
+        "number": null
+      }
+    ],
+    "formSuffix": "_1",
+    "isVariant": false
+  },
+  {
+    "region": 8,
+    "code": "Hisui",
+    "regionalPokedexNumber": 236,
+    "nationalPokedexNumber": 484,
+    "sublistings": [
+      {
+        "number": null
+      },
+      {
+        "number": null
+      },
+      {
+        "number": null
+      },
+      {
+        "number": null
+      },
+      {
+        "number": null
+      }
+    ],
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 8,
+    "code": "Hisui",
+    "regionalPokedexNumber": 236,
+    "nationalPokedexNumber": 484,
+    "sublistings": [
+      {
+        "number": null
+      },
+      {
+        "number": null
+      },
+      {
+        "number": null
+      },
+      {
+        "number": null
+      },
+      {
+        "number": null
+      }
+    ],
+    "formSuffix": "_1",
+    "isVariant": false
+  },
+  {
+    "region": 8,
+    "code": "Hisui",
+    "regionalPokedexNumber": 237,
+    "nationalPokedexNumber": 487,
+    "sublistings": [
+      {
+        "number": null
+      },
+      {
+        "number": null
+      },
+      {
+        "number": null
+      },
+      {
+        "number": null
+      },
+      {
+        "number": null
+      }
+    ],
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 8,
+    "code": "Hisui",
+    "regionalPokedexNumber": 237,
+    "nationalPokedexNumber": 487,
+    "sublistings": [
+      {
+        "number": null
+      },
+      {
+        "number": null
+      },
+      {
+        "number": null
+      },
+      {
+        "number": null
+      },
+      {
+        "number": null
+      }
+    ],
+    "formSuffix": "_1",
+    "isVariant": false
+  },
+  {
+    "region": 8,
+    "code": "Hisui",
+    "regionalPokedexNumber": 238,
+    "nationalPokedexNumber": 493,
+    "sublistings": [
+      {
+        "number": null
+      },
+      {
+        "number": null
+      },
+      {
+        "number": null
+      },
+      {
+        "number": null
+      },
+      {
+        "number": null
+      }
+    ],
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 8,
+    "code": "Hisui",
+    "regionalPokedexNumber": 239,
+    "nationalPokedexNumber": 489,
+    "sublistings": [
+      {
+        "number": null
+      },
+      {
+        "number": null
+      },
+      {
+        "number": null
+      },
+      {
+        "number": null
+      },
+      {
+        "number": null
+      }
+    ],
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 8,
+    "code": "Hisui",
+    "regionalPokedexNumber": 240,
+    "nationalPokedexNumber": 490,
+    "sublistings": [
+      {
+        "number": null
+      },
+      {
+        "number": null
+      },
+      {
+        "number": null
+      },
+      {
+        "number": null
+      },
+      {
+        "number": null
+      }
+    ],
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 8,
+    "code": "Hisui",
+    "regionalPokedexNumber": 241,
+    "nationalPokedexNumber": 492,
+    "sublistings": [
+      {
+        "number": null
+      },
+      {
+        "number": null
+      },
+      {
+        "number": null
+      },
+      {
+        "number": null
+      },
+      {
+        "number": null
+      }
+    ],
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 8,
+    "code": "Hisui",
+    "regionalPokedexNumber": 241,
+    "nationalPokedexNumber": 492,
+    "sublistings": [
+      {
+        "number": null
+      },
+      {
+        "number": null
+      },
+      {
+        "number": null
+      },
+      {
+        "number": null
+      },
+      {
+        "number": null
+      }
+    ],
+    "formSuffix": "_1",
+    "isVariant": false
+  },
+  {
+    "region": 8,
+    "code": "Hisui",
+    "regionalPokedexNumber": 242,
+    "nationalPokedexNumber": 491,
+    "sublistings": [
+      {
+        "number": null
+      },
+      {
+        "number": null
+      },
+      {
+        "number": null
+      },
+      {
+        "number": null
+      },
+      {
+        "number": null
+      }
+    ],
+    "formSuffix": "",
+    "isVariant": false
+  }
+]

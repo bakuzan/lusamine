@@ -105,6 +105,12 @@
     "nationalPokedexNumber": 25,
     "evolvesTo": 26,
     "mechanism": 11,
+    "note": "Thunder Stone"
+  },
+  {
+    "nationalPokedexNumber": 25,
+    "evolvesTo": 26,
+    "mechanism": 11,
     "note": "Thunder Stone (Alola)"
   },
   {
@@ -265,6 +271,12 @@
     "note": "Level 28"
   },
   {
+    "nationalPokedexNumber": 57,
+    "evolvesTo": 979,
+    "mechanism": 1,
+    "note": "Use Rage Fist 20 times"
+  },
+  {
     "nationalPokedexNumber": 58,
     "evolvesTo": 59,
     "mechanism": 11,
@@ -341,12 +353,6 @@
     "evolvesTo": 76,
     "mechanism": 13,
     "note": "Trade"
-  },
-  {
-    "nationalPokedexNumber": 74,
-    "evolvesTo": 75,
-    "mechanism": 1,
-    "note": "Level 25"
   },
   {
     "nationalPokedexNumber": 75,
@@ -476,6 +482,12 @@
     "note": "Level 30"
   },
   {
+    "nationalPokedexNumber": 100,
+    "evolvesTo": 101,
+    "mechanism": 11,
+    "note": "Leaf Stone"
+  },
+  {
     "nationalPokedexNumber": 102,
     "evolvesTo": 103,
     "mechanism": 11,
@@ -522,6 +534,12 @@
     "evolvesTo": 463,
     "mechanism": 3,
     "note": "Level up knowing Rollout"
+  },
+  {
+    "nationalPokedexNumber": 109,
+    "evolvesTo": 110,
+    "mechanism": 1,
+    "note": "Level 35"
   },
   {
     "nationalPokedexNumber": 109,
@@ -601,6 +619,12 @@
     "evolvesTo": 212,
     "mechanism": 14,
     "note": "Trade holding Metal Coat"
+  },
+  {
+    "nationalPokedexNumber": 123,
+    "evolvesTo": 900,
+    "mechanism": 1,
+    "note": "Black Augurite (Hisui)"
   },
   {
     "nationalPokedexNumber": 238,
@@ -885,6 +909,12 @@
     "note": "Level 20"
   },
   {
+    "nationalPokedexNumber": 194,
+    "evolvesTo": 980,
+    "mechanism": 1,
+    "note": "Level 20"
+  },
+  {
     "nationalPokedexNumber": 198,
     "evolvesTo": 430,
     "mechanism": 11,
@@ -903,10 +933,22 @@
     "note": "Level 15"
   },
   {
+    "nationalPokedexNumber": 203,
+    "evolvesTo": 981,
+    "mechanism": 3,
+    "note": "Level up knowing Twin Beam"
+  },
+  {
     "nationalPokedexNumber": 204,
     "evolvesTo": 205,
     "mechanism": 1,
     "note": "Level 31"
+  },
+  {
+    "nationalPokedexNumber": 206,
+    "evolvesTo": 982,
+    "mechanism": 3,
+    "note": "Level up knowing Hyper Drill"
   },
   {
     "nationalPokedexNumber": 207,
@@ -921,16 +963,34 @@
     "note": "Level 23"
   },
   {
+    "nationalPokedexNumber": 211,
+    "evolvesTo": 904,
+    "mechanism": 1,
+    "note": "Use Barb Barrage in the strong style 20 times (Hisui)"
+  },
+  {
     "nationalPokedexNumber": 215,
     "evolvesTo": 461,
-    "mechanism": 6,
-    "note": "Level up holding Razor Claw at night"
+    "mechanism": 1,
+    "note": "Level up with Razor Claw at night"
+  },
+  {
+    "nationalPokedexNumber": 215,
+    "evolvesTo": 903,
+    "mechanism": 1,
+    "note": "Level up with Razor Claw during the day"
   },
   {
     "nationalPokedexNumber": 216,
     "evolvesTo": 217,
     "mechanism": 1,
     "note": "Level 30"
+  },
+  {
+    "nationalPokedexNumber": 217,
+    "evolvesTo": 901,
+    "mechanism": 1,
+    "note": "Peat Block during full moon (Hisui)"
   },
   {
     "nationalPokedexNumber": 218,
@@ -980,6 +1040,12 @@
     "evolvesTo": 232,
     "mechanism": 1,
     "note": "Level 25"
+  },
+  {
+    "nationalPokedexNumber": 234,
+    "evolvesTo": 899,
+    "mechanism": 1,
+    "note": "Use Psyshield Bash in the agile style 20 times (Hisui)"
   },
   {
     "nationalPokedexNumber": 246,
@@ -1310,7 +1376,7 @@
     "nationalPokedexNumber": 349,
     "evolvesTo": 350,
     "mechanism": 9,
-    "note": "Level up with maximum BeautyTrade holding Prism Scale"
+    "note": "Level up with maximum Beauty;Trade holding Prism Scale"
   },
   {
     "nationalPokedexNumber": 353,
@@ -1509,12 +1575,6 @@
     "evolvesTo": 421,
     "mechanism": 1,
     "note": "Level 25"
-  },
-  {
-    "nationalPokedexNumber": 422,
-    "evolvesTo": 423,
-    "mechanism": 1,
-    "note": "Level 30"
   },
   {
     "nationalPokedexNumber": 422,
@@ -1787,6 +1847,12 @@
     "note": "Sun Stone"
   },
   {
+    "nationalPokedexNumber": 550,
+    "evolvesTo": 902,
+    "mechanism": 1,
+    "note": "Take 294 damage in recoil"
+  },
+  {
     "nationalPokedexNumber": 551,
     "evolvesTo": 552,
     "mechanism": 1,
@@ -1914,24 +1980,6 @@
     "note": "Level 34"
   },
   {
-    "nationalPokedexNumber": 585,
-    "evolvesTo": 586,
-    "mechanism": 1,
-    "note": "Level 34"
-  },
-  {
-    "nationalPokedexNumber": 585,
-    "evolvesTo": 586,
-    "mechanism": 1,
-    "note": "Level 34"
-  },
-  {
-    "nationalPokedexNumber": 585,
-    "evolvesTo": 586,
-    "mechanism": 1,
-    "note": "Level 34"
-  },
-  {
     "nationalPokedexNumber": 588,
     "evolvesTo": 589,
     "mechanism": 15,
@@ -2044,6 +2092,12 @@
     "evolvesTo": 625,
     "mechanism": 1,
     "note": "Level 52"
+  },
+  {
+    "nationalPokedexNumber": 625,
+    "evolvesTo": 983,
+    "mechanism": 1,
+    "note": "Level up after defeating three Bisharp that hold a Leader's Crest"
   },
   {
     "nationalPokedexNumber": 627,
@@ -2205,7 +2259,7 @@
     "nationalPokedexNumber": 686,
     "evolvesTo": 687,
     "mechanism": 9,
-    "note": "Level 30 with 3DS held upside down"
+    "note": "Level 30 with game system held upside down"
   },
   {
     "nationalPokedexNumber": 688,
@@ -2349,7 +2403,7 @@
     "nationalPokedexNumber": 739,
     "evolvesTo": 740,
     "mechanism": 4,
-    "note": "Level up at Mount Lanakila"
+    "note": "Level up at Mount Lanakila;Ice StoneSV"
   },
   {
     "nationalPokedexNumber": 742,
@@ -2373,7 +2427,7 @@
     "nationalPokedexNumber": 744,
     "evolvesTo": 745,
     "mechanism": 5,
-    "note": "Level 25 (between 5:00 and 5:59 PM)"
+    "note": "Level 25 (evening)"
   },
   {
     "nationalPokedexNumber": 747,
@@ -2604,6 +2658,18 @@
     "note": "Sweet Apple"
   },
   {
+    "nationalPokedexNumber": 840,
+    "evolvesTo": 1011,
+    "mechanism": 1,
+    "note": "Syrupy Apple"
+  },
+  {
+    "nationalPokedexNumber": 1011,
+    "evolvesTo": 1019,
+    "mechanism": 1,
+    "note": "Level up knowing Dragon Cheer"
+  },
+  {
     "nationalPokedexNumber": 843,
     "evolvesTo": 844,
     "mechanism": 1,
@@ -2682,6 +2748,12 @@
     "note": "Level 34"
   },
   {
+    "nationalPokedexNumber": 884,
+    "evolvesTo": 1018,
+    "mechanism": 1,
+    "note": "Metal Alloy"
+  },
+  {
     "nationalPokedexNumber": 885,
     "evolvesTo": 886,
     "mechanism": 1,
@@ -2697,12 +2769,264 @@
     "nationalPokedexNumber": 891,
     "evolvesTo": 892,
     "mechanism": 1,
-    "note": "Train in The Tower of Darkness (Single Strike Style)"
+    "note": "Train in The Tower of Darkness, Scroll of Darkness(Single Strike Style)"
   },
   {
     "nationalPokedexNumber": 891,
     "evolvesTo": 892,
     "mechanism": 1,
-    "note": "Train in The Tower of Waters (Rapid Strike Style)"
+    "note": "Train in The Tower of Waters, Scroll of Waters (Rapid Strike Style)"
+  },
+  {
+    "nationalPokedexNumber": 906,
+    "evolvesTo": 907,
+    "mechanism": 1,
+    "note": "Level 16"
+  },
+  {
+    "nationalPokedexNumber": 907,
+    "evolvesTo": 908,
+    "mechanism": 1,
+    "note": "Level 36"
+  },
+  {
+    "nationalPokedexNumber": 909,
+    "evolvesTo": 910,
+    "mechanism": 1,
+    "note": "Level 16"
+  },
+  {
+    "nationalPokedexNumber": 910,
+    "evolvesTo": 911,
+    "mechanism": 1,
+    "note": "Level 36"
+  },
+  {
+    "nationalPokedexNumber": 912,
+    "evolvesTo": 913,
+    "mechanism": 1,
+    "note": "Level 16"
+  },
+  {
+    "nationalPokedexNumber": 913,
+    "evolvesTo": 914,
+    "mechanism": 1,
+    "note": "Level 36"
+  },
+  {
+    "nationalPokedexNumber": 915,
+    "evolvesTo": 916,
+    "mechanism": 1,
+    "note": "Level 18"
+  },
+  {
+    "nationalPokedexNumber": 917,
+    "evolvesTo": 918,
+    "mechanism": 1,
+    "note": "Level 15"
+  },
+  {
+    "nationalPokedexNumber": 919,
+    "evolvesTo": 920,
+    "mechanism": 1,
+    "note": "Level 24"
+  },
+  {
+    "nationalPokedexNumber": 921,
+    "evolvesTo": 922,
+    "mechanism": 1,
+    "note": "Level 18"
+  },
+  {
+    "nationalPokedexNumber": 922,
+    "evolvesTo": 923,
+    "mechanism": 1,
+    "note": "Walk 1000 steps using the Let's Go feature"
+  },
+  {
+    "nationalPokedexNumber": 924,
+    "evolvesTo": 925,
+    "mechanism": 1,
+    "note": "Level 25 in a fight"
+  },
+  {
+    "nationalPokedexNumber": 926,
+    "evolvesTo": 927,
+    "mechanism": 1,
+    "note": "Level 26"
+  },
+  {
+    "nationalPokedexNumber": 928,
+    "evolvesTo": 929,
+    "mechanism": 1,
+    "note": "Level 25"
+  },
+  {
+    "nationalPokedexNumber": 929,
+    "evolvesTo": 930,
+    "mechanism": 1,
+    "note": "Level 35"
+  },
+  {
+    "nationalPokedexNumber": 932,
+    "evolvesTo": 933,
+    "mechanism": 1,
+    "note": "Level 24"
+  },
+  {
+    "nationalPokedexNumber": 933,
+    "evolvesTo": 934,
+    "mechanism": 1,
+    "note": "Level 38"
+  },
+  {
+    "nationalPokedexNumber": 935,
+    "evolvesTo": 936,
+    "mechanism": 1,
+    "note": "Auspicious Armor"
+  },
+  {
+    "nationalPokedexNumber": 935,
+    "evolvesTo": 937,
+    "mechanism": 1,
+    "note": "Malicious Armor"
+  },
+  {
+    "nationalPokedexNumber": 938,
+    "evolvesTo": 939,
+    "mechanism": 11,
+    "note": "Thunder Stone"
+  },
+  {
+    "nationalPokedexNumber": 940,
+    "evolvesTo": 941,
+    "mechanism": 1,
+    "note": "Level 25"
+  },
+  {
+    "nationalPokedexNumber": 942,
+    "evolvesTo": 943,
+    "mechanism": 1,
+    "note": "Level 30"
+  },
+  {
+    "nationalPokedexNumber": 944,
+    "evolvesTo": 945,
+    "mechanism": 1,
+    "note": "Level 28"
+  },
+  {
+    "nationalPokedexNumber": 946,
+    "evolvesTo": 947,
+    "mechanism": 1,
+    "note": "Walk 1000 steps using the Let's Go feature"
+  },
+  {
+    "nationalPokedexNumber": 948,
+    "evolvesTo": 949,
+    "mechanism": 1,
+    "note": "Level 30"
+  },
+  {
+    "nationalPokedexNumber": 951,
+    "evolvesTo": 952,
+    "mechanism": 11,
+    "note": "Fire Stone"
+  },
+  {
+    "nationalPokedexNumber": 953,
+    "evolvesTo": 954,
+    "mechanism": 1,
+    "note": "Walk 1000 steps using the Let's Go feature"
+  },
+  {
+    "nationalPokedexNumber": 955,
+    "evolvesTo": 956,
+    "mechanism": 1,
+    "note": "Level 35"
+  },
+  {
+    "nationalPokedexNumber": 957,
+    "evolvesTo": 958,
+    "mechanism": 1,
+    "note": "Level 24"
+  },
+  {
+    "nationalPokedexNumber": 958,
+    "evolvesTo": 959,
+    "mechanism": 1,
+    "note": "Level 38"
+  },
+  {
+    "nationalPokedexNumber": 960,
+    "evolvesTo": 961,
+    "mechanism": 1,
+    "note": "Level 26"
+  },
+  {
+    "nationalPokedexNumber": 963,
+    "evolvesTo": 964,
+    "mechanism": 1,
+    "note": "Level 38 while in a Union Circle group"
+  },
+  {
+    "nationalPokedexNumber": 965,
+    "evolvesTo": 966,
+    "mechanism": 1,
+    "note": "Level 40"
+  },
+  {
+    "nationalPokedexNumber": 969,
+    "evolvesTo": 970,
+    "mechanism": 1,
+    "note": "Level 35"
+  },
+  {
+    "nationalPokedexNumber": 971,
+    "evolvesTo": 972,
+    "mechanism": 5,
+    "note": "Level 30 (night)"
+  },
+  {
+    "nationalPokedexNumber": 974,
+    "evolvesTo": 975,
+    "mechanism": 11,
+    "note": "Ice Stone"
+  },
+  {
+    "nationalPokedexNumber": 996,
+    "evolvesTo": 997,
+    "mechanism": 1,
+    "note": "Level 35"
+  },
+  {
+    "nationalPokedexNumber": 997,
+    "evolvesTo": 998,
+    "mechanism": 1,
+    "note": "Level 54"
+  },
+  {
+    "nationalPokedexNumber": 999,
+    "evolvesTo": 1000,
+    "mechanism": 1,
+    "note": "Collect 999 Gimmighoul Coins"
+  },
+  {
+    "nationalPokedexNumber": 999,
+    "evolvesTo": 1000,
+    "mechanism": 1,
+    "note": ""
+  },
+  {
+    "nationalPokedexNumber": 1012,
+    "evolvesTo": 1013,
+    "mechanism": 1,
+    "note": "Unremarkable Teacup or Masterpiece Teacup"
+  },
+  {
+    "nationalPokedexNumber": 808,
+    "evolvesTo": 809,
+    "mechanism": 8,
+    "note": "400 Meltan Candy in Pokémon GO"
   }
 ]

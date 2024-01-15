@@ -1,0 +1,3202 @@
+[
+  {
+    "region": 9,
+    "code": "Paldea",
+    "regionalPokedexNumber": 1,
+    "nationalPokedexNumber": 906,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 9,
+    "code": "Paldea",
+    "regionalPokedexNumber": 2,
+    "nationalPokedexNumber": 907,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 9,
+    "code": "Paldea",
+    "regionalPokedexNumber": 3,
+    "nationalPokedexNumber": 908,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 9,
+    "code": "Paldea",
+    "regionalPokedexNumber": 4,
+    "nationalPokedexNumber": 909,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 9,
+    "code": "Paldea",
+    "regionalPokedexNumber": 5,
+    "nationalPokedexNumber": 910,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 9,
+    "code": "Paldea",
+    "regionalPokedexNumber": 6,
+    "nationalPokedexNumber": 911,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 9,
+    "code": "Paldea",
+    "regionalPokedexNumber": 7,
+    "nationalPokedexNumber": 912,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 9,
+    "code": "Paldea",
+    "regionalPokedexNumber": 8,
+    "nationalPokedexNumber": 913,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 9,
+    "code": "Paldea",
+    "regionalPokedexNumber": 9,
+    "nationalPokedexNumber": 914,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 9,
+    "code": "Paldea",
+    "regionalPokedexNumber": 10,
+    "nationalPokedexNumber": 915,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 9,
+    "code": "Paldea",
+    "regionalPokedexNumber": 11,
+    "nationalPokedexNumber": 916,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 9,
+    "code": "Paldea",
+    "regionalPokedexNumber": 12,
+    "nationalPokedexNumber": 917,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 9,
+    "code": "Paldea",
+    "regionalPokedexNumber": 13,
+    "nationalPokedexNumber": 918,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 9,
+    "code": "Paldea",
+    "regionalPokedexNumber": 14,
+    "nationalPokedexNumber": 919,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 9,
+    "code": "Paldea",
+    "regionalPokedexNumber": 15,
+    "nationalPokedexNumber": 920,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 9,
+    "code": "Paldea",
+    "regionalPokedexNumber": 16,
+    "nationalPokedexNumber": 187,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 9,
+    "code": "Paldea",
+    "regionalPokedexNumber": 17,
+    "nationalPokedexNumber": 188,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 9,
+    "code": "Paldea",
+    "regionalPokedexNumber": 18,
+    "nationalPokedexNumber": 189,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 9,
+    "code": "Paldea",
+    "regionalPokedexNumber": 19,
+    "nationalPokedexNumber": 661,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 9,
+    "code": "Paldea",
+    "regionalPokedexNumber": 20,
+    "nationalPokedexNumber": 662,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 9,
+    "code": "Paldea",
+    "regionalPokedexNumber": 21,
+    "nationalPokedexNumber": 663,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 9,
+    "code": "Paldea",
+    "regionalPokedexNumber": 22,
+    "nationalPokedexNumber": 921,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 9,
+    "code": "Paldea",
+    "regionalPokedexNumber": 23,
+    "nationalPokedexNumber": 922,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 9,
+    "code": "Paldea",
+    "regionalPokedexNumber": 24,
+    "nationalPokedexNumber": 923,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 9,
+    "code": "Paldea",
+    "regionalPokedexNumber": 25,
+    "nationalPokedexNumber": 228,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 9,
+    "code": "Paldea",
+    "regionalPokedexNumber": 26,
+    "nationalPokedexNumber": 229,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 9,
+    "code": "Paldea",
+    "regionalPokedexNumber": 27,
+    "nationalPokedexNumber": 734,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 9,
+    "code": "Paldea",
+    "regionalPokedexNumber": 28,
+    "nationalPokedexNumber": 735,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 9,
+    "code": "Paldea",
+    "regionalPokedexNumber": 29,
+    "nationalPokedexNumber": 819,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 9,
+    "code": "Paldea",
+    "regionalPokedexNumber": 30,
+    "nationalPokedexNumber": 820,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 9,
+    "code": "Paldea",
+    "regionalPokedexNumber": 31,
+    "nationalPokedexNumber": 191,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 9,
+    "code": "Paldea",
+    "regionalPokedexNumber": 32,
+    "nationalPokedexNumber": 192,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 9,
+    "code": "Paldea",
+    "regionalPokedexNumber": 33,
+    "nationalPokedexNumber": 401,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 9,
+    "code": "Paldea",
+    "regionalPokedexNumber": 34,
+    "nationalPokedexNumber": 402,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 9,
+    "code": "Paldea",
+    "regionalPokedexNumber": 35,
+    "nationalPokedexNumber": 664,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 9,
+    "code": "Paldea",
+    "regionalPokedexNumber": 36,
+    "nationalPokedexNumber": 665,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 9,
+    "code": "Paldea",
+    "regionalPokedexNumber": 37,
+    "nationalPokedexNumber": 666,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 9,
+    "code": "Paldea",
+    "regionalPokedexNumber": 38,
+    "nationalPokedexNumber": 415,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 9,
+    "code": "Paldea",
+    "regionalPokedexNumber": 39,
+    "nationalPokedexNumber": 416,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 9,
+    "code": "Paldea",
+    "regionalPokedexNumber": 40,
+    "nationalPokedexNumber": 821,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 9,
+    "code": "Paldea",
+    "regionalPokedexNumber": 41,
+    "nationalPokedexNumber": 822,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 9,
+    "code": "Paldea",
+    "regionalPokedexNumber": 42,
+    "nationalPokedexNumber": 823,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 9,
+    "code": "Paldea",
+    "regionalPokedexNumber": 43,
+    "nationalPokedexNumber": 440,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 9,
+    "code": "Paldea",
+    "regionalPokedexNumber": 44,
+    "nationalPokedexNumber": 113,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 9,
+    "code": "Paldea",
+    "regionalPokedexNumber": 45,
+    "nationalPokedexNumber": 242,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 9,
+    "code": "Paldea",
+    "regionalPokedexNumber": 46,
+    "nationalPokedexNumber": 298,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 9,
+    "code": "Paldea",
+    "regionalPokedexNumber": 47,
+    "nationalPokedexNumber": 183,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 9,
+    "code": "Paldea",
+    "regionalPokedexNumber": 48,
+    "nationalPokedexNumber": 184,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 9,
+    "code": "Paldea",
+    "regionalPokedexNumber": 49,
+    "nationalPokedexNumber": 283,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 9,
+    "code": "Paldea",
+    "regionalPokedexNumber": 50,
+    "nationalPokedexNumber": 284,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 9,
+    "code": "Paldea",
+    "regionalPokedexNumber": 51,
+    "nationalPokedexNumber": 418,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 9,
+    "code": "Paldea",
+    "regionalPokedexNumber": 52,
+    "nationalPokedexNumber": 419,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 9,
+    "code": "Paldea",
+    "regionalPokedexNumber": 53,
+    "nationalPokedexNumber": 194,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 9,
+    "code": "Paldea",
+    "regionalPokedexNumber": 54,
+    "nationalPokedexNumber": 980,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 9,
+    "code": "Paldea",
+    "regionalPokedexNumber": 55,
+    "nationalPokedexNumber": 54,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 9,
+    "code": "Paldea",
+    "regionalPokedexNumber": 56,
+    "nationalPokedexNumber": 55,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 9,
+    "code": "Paldea",
+    "regionalPokedexNumber": 57,
+    "nationalPokedexNumber": 833,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 9,
+    "code": "Paldea",
+    "regionalPokedexNumber": 58,
+    "nationalPokedexNumber": 834,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 9,
+    "code": "Paldea",
+    "regionalPokedexNumber": 59,
+    "nationalPokedexNumber": 174,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 9,
+    "code": "Paldea",
+    "regionalPokedexNumber": 60,
+    "nationalPokedexNumber": 39,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 9,
+    "code": "Paldea",
+    "regionalPokedexNumber": 61,
+    "nationalPokedexNumber": 40,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 9,
+    "code": "Paldea",
+    "regionalPokedexNumber": 62,
+    "nationalPokedexNumber": 280,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 9,
+    "code": "Paldea",
+    "regionalPokedexNumber": 63,
+    "nationalPokedexNumber": 281,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 9,
+    "code": "Paldea",
+    "regionalPokedexNumber": 64,
+    "nationalPokedexNumber": 282,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 9,
+    "code": "Paldea",
+    "regionalPokedexNumber": 65,
+    "nationalPokedexNumber": 475,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 9,
+    "code": "Paldea",
+    "regionalPokedexNumber": 66,
+    "nationalPokedexNumber": 96,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 9,
+    "code": "Paldea",
+    "regionalPokedexNumber": 67,
+    "nationalPokedexNumber": 97,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 9,
+    "code": "Paldea",
+    "regionalPokedexNumber": 68,
+    "nationalPokedexNumber": 92,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 9,
+    "code": "Paldea",
+    "regionalPokedexNumber": 69,
+    "nationalPokedexNumber": 93,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 9,
+    "code": "Paldea",
+    "regionalPokedexNumber": 70,
+    "nationalPokedexNumber": 94,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 9,
+    "code": "Paldea",
+    "regionalPokedexNumber": 71,
+    "nationalPokedexNumber": 924,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 9,
+    "code": "Paldea",
+    "regionalPokedexNumber": 72,
+    "nationalPokedexNumber": 925,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 9,
+    "code": "Paldea",
+    "regionalPokedexNumber": 73,
+    "nationalPokedexNumber": 172,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 9,
+    "code": "Paldea",
+    "regionalPokedexNumber": 74,
+    "nationalPokedexNumber": 25,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 9,
+    "code": "Paldea",
+    "regionalPokedexNumber": 75,
+    "nationalPokedexNumber": 26,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 9,
+    "code": "Paldea",
+    "regionalPokedexNumber": 76,
+    "nationalPokedexNumber": 926,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 9,
+    "code": "Paldea",
+    "regionalPokedexNumber": 77,
+    "nationalPokedexNumber": 927,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 9,
+    "code": "Paldea",
+    "regionalPokedexNumber": 78,
+    "nationalPokedexNumber": 287,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 9,
+    "code": "Paldea",
+    "regionalPokedexNumber": 79,
+    "nationalPokedexNumber": 288,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 9,
+    "code": "Paldea",
+    "regionalPokedexNumber": 80,
+    "nationalPokedexNumber": 289,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 9,
+    "code": "Paldea",
+    "regionalPokedexNumber": 81,
+    "nationalPokedexNumber": 761,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 9,
+    "code": "Paldea",
+    "regionalPokedexNumber": 82,
+    "nationalPokedexNumber": 762,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 9,
+    "code": "Paldea",
+    "regionalPokedexNumber": 83,
+    "nationalPokedexNumber": 763,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 9,
+    "code": "Paldea",
+    "regionalPokedexNumber": 84,
+    "nationalPokedexNumber": 928,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 9,
+    "code": "Paldea",
+    "regionalPokedexNumber": 85,
+    "nationalPokedexNumber": 929,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 9,
+    "code": "Paldea",
+    "regionalPokedexNumber": 86,
+    "nationalPokedexNumber": 930,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 9,
+    "code": "Paldea",
+    "regionalPokedexNumber": 87,
+    "nationalPokedexNumber": 438,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 9,
+    "code": "Paldea",
+    "regionalPokedexNumber": 88,
+    "nationalPokedexNumber": 185,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 9,
+    "code": "Paldea",
+    "regionalPokedexNumber": 89,
+    "nationalPokedexNumber": 744,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 9,
+    "code": "Paldea",
+    "regionalPokedexNumber": 90,
+    "nationalPokedexNumber": 745,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 9,
+    "code": "Paldea",
+    "regionalPokedexNumber": 91,
+    "nationalPokedexNumber": 837,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 9,
+    "code": "Paldea",
+    "regionalPokedexNumber": 92,
+    "nationalPokedexNumber": 838,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 9,
+    "code": "Paldea",
+    "regionalPokedexNumber": 93,
+    "nationalPokedexNumber": 839,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 9,
+    "code": "Paldea",
+    "regionalPokedexNumber": 94,
+    "nationalPokedexNumber": 403,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 9,
+    "code": "Paldea",
+    "regionalPokedexNumber": 95,
+    "nationalPokedexNumber": 404,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 9,
+    "code": "Paldea",
+    "regionalPokedexNumber": 96,
+    "nationalPokedexNumber": 405,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 9,
+    "code": "Paldea",
+    "regionalPokedexNumber": 97,
+    "nationalPokedexNumber": 396,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 9,
+    "code": "Paldea",
+    "regionalPokedexNumber": 98,
+    "nationalPokedexNumber": 397,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 9,
+    "code": "Paldea",
+    "regionalPokedexNumber": 99,
+    "nationalPokedexNumber": 398,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 9,
+    "code": "Paldea",
+    "regionalPokedexNumber": 100,
+    "nationalPokedexNumber": 741,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 9,
+    "code": "Paldea",
+    "regionalPokedexNumber": 101,
+    "nationalPokedexNumber": 179,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 9,
+    "code": "Paldea",
+    "regionalPokedexNumber": 102,
+    "nationalPokedexNumber": 180,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 9,
+    "code": "Paldea",
+    "regionalPokedexNumber": 103,
+    "nationalPokedexNumber": 181,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 9,
+    "code": "Paldea",
+    "regionalPokedexNumber": 104,
+    "nationalPokedexNumber": 548,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 9,
+    "code": "Paldea",
+    "regionalPokedexNumber": 105,
+    "nationalPokedexNumber": 549,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 9,
+    "code": "Paldea",
+    "regionalPokedexNumber": 106,
+    "nationalPokedexNumber": 285,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 9,
+    "code": "Paldea",
+    "regionalPokedexNumber": 107,
+    "nationalPokedexNumber": 286,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 9,
+    "code": "Paldea",
+    "regionalPokedexNumber": 108,
+    "nationalPokedexNumber": 840,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 9,
+    "code": "Paldea",
+    "regionalPokedexNumber": 109,
+    "nationalPokedexNumber": 841,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 9,
+    "code": "Paldea",
+    "regionalPokedexNumber": 110,
+    "nationalPokedexNumber": 842,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 9,
+    "code": "Paldea",
+    "regionalPokedexNumber": 111,
+    "nationalPokedexNumber": 325,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 9,
+    "code": "Paldea",
+    "regionalPokedexNumber": 112,
+    "nationalPokedexNumber": 326,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 9,
+    "code": "Paldea",
+    "regionalPokedexNumber": 113,
+    "nationalPokedexNumber": 931,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 9,
+    "code": "Paldea",
+    "regionalPokedexNumber": 114,
+    "nationalPokedexNumber": 200,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 9,
+    "code": "Paldea",
+    "regionalPokedexNumber": 115,
+    "nationalPokedexNumber": 429,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 9,
+    "code": "Paldea",
+    "regionalPokedexNumber": 116,
+    "nationalPokedexNumber": 296,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 9,
+    "code": "Paldea",
+    "regionalPokedexNumber": 117,
+    "nationalPokedexNumber": 297,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 9,
+    "code": "Paldea",
+    "regionalPokedexNumber": 118,
+    "nationalPokedexNumber": 739,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 9,
+    "code": "Paldea",
+    "regionalPokedexNumber": 119,
+    "nationalPokedexNumber": 740,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 9,
+    "code": "Paldea",
+    "regionalPokedexNumber": 120,
+    "nationalPokedexNumber": 757,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 9,
+    "code": "Paldea",
+    "regionalPokedexNumber": 121,
+    "nationalPokedexNumber": 758,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 9,
+    "code": "Paldea",
+    "regionalPokedexNumber": 122,
+    "nationalPokedexNumber": 231,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 9,
+    "code": "Paldea",
+    "regionalPokedexNumber": 123,
+    "nationalPokedexNumber": 232,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 9,
+    "code": "Paldea",
+    "regionalPokedexNumber": 124,
+    "nationalPokedexNumber": 878,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 9,
+    "code": "Paldea",
+    "regionalPokedexNumber": 125,
+    "nationalPokedexNumber": 879,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 9,
+    "code": "Paldea",
+    "regionalPokedexNumber": 126,
+    "nationalPokedexNumber": 443,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 9,
+    "code": "Paldea",
+    "regionalPokedexNumber": 127,
+    "nationalPokedexNumber": 444,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 9,
+    "code": "Paldea",
+    "regionalPokedexNumber": 128,
+    "nationalPokedexNumber": 445,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 9,
+    "code": "Paldea",
+    "regionalPokedexNumber": 129,
+    "nationalPokedexNumber": 932,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 9,
+    "code": "Paldea",
+    "regionalPokedexNumber": 130,
+    "nationalPokedexNumber": 933,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 9,
+    "code": "Paldea",
+    "regionalPokedexNumber": 131,
+    "nationalPokedexNumber": 934,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 9,
+    "code": "Paldea",
+    "regionalPokedexNumber": 132,
+    "nationalPokedexNumber": 278,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 9,
+    "code": "Paldea",
+    "regionalPokedexNumber": 133,
+    "nationalPokedexNumber": 279,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 9,
+    "code": "Paldea",
+    "regionalPokedexNumber": 134,
+    "nationalPokedexNumber": 129,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 9,
+    "code": "Paldea",
+    "regionalPokedexNumber": 135,
+    "nationalPokedexNumber": 130,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 9,
+    "code": "Paldea",
+    "regionalPokedexNumber": 136,
+    "nationalPokedexNumber": 846,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 9,
+    "code": "Paldea",
+    "regionalPokedexNumber": 137,
+    "nationalPokedexNumber": 847,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 9,
+    "code": "Paldea",
+    "regionalPokedexNumber": 138,
+    "nationalPokedexNumber": 550,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 9,
+    "code": "Paldea",
+    "regionalPokedexNumber": 139,
+    "nationalPokedexNumber": 316,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 9,
+    "code": "Paldea",
+    "regionalPokedexNumber": 140,
+    "nationalPokedexNumber": 317,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 9,
+    "code": "Paldea",
+    "regionalPokedexNumber": 141,
+    "nationalPokedexNumber": 52,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 9,
+    "code": "Paldea",
+    "regionalPokedexNumber": 142,
+    "nationalPokedexNumber": 53,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 9,
+    "code": "Paldea",
+    "regionalPokedexNumber": 143,
+    "nationalPokedexNumber": 425,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 9,
+    "code": "Paldea",
+    "regionalPokedexNumber": 144,
+    "nationalPokedexNumber": 426,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 9,
+    "code": "Paldea",
+    "regionalPokedexNumber": 145,
+    "nationalPokedexNumber": 669,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 9,
+    "code": "Paldea",
+    "regionalPokedexNumber": 146,
+    "nationalPokedexNumber": 670,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 9,
+    "code": "Paldea",
+    "regionalPokedexNumber": 147,
+    "nationalPokedexNumber": 671,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 9,
+    "code": "Paldea",
+    "regionalPokedexNumber": 148,
+    "nationalPokedexNumber": 50,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 9,
+    "code": "Paldea",
+    "regionalPokedexNumber": 149,
+    "nationalPokedexNumber": 51,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 9,
+    "code": "Paldea",
+    "regionalPokedexNumber": 150,
+    "nationalPokedexNumber": 324,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 9,
+    "code": "Paldea",
+    "regionalPokedexNumber": 151,
+    "nationalPokedexNumber": 322,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 9,
+    "code": "Paldea",
+    "regionalPokedexNumber": 152,
+    "nationalPokedexNumber": 323,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 9,
+    "code": "Paldea",
+    "regionalPokedexNumber": 153,
+    "nationalPokedexNumber": 436,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 9,
+    "code": "Paldea",
+    "regionalPokedexNumber": 154,
+    "nationalPokedexNumber": 437,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 9,
+    "code": "Paldea",
+    "regionalPokedexNumber": 155,
+    "nationalPokedexNumber": 610,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 9,
+    "code": "Paldea",
+    "regionalPokedexNumber": 156,
+    "nationalPokedexNumber": 611,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 9,
+    "code": "Paldea",
+    "regionalPokedexNumber": 157,
+    "nationalPokedexNumber": 612,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 9,
+    "code": "Paldea",
+    "regionalPokedexNumber": 158,
+    "nationalPokedexNumber": 56,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 9,
+    "code": "Paldea",
+    "regionalPokedexNumber": 159,
+    "nationalPokedexNumber": 57,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 9,
+    "code": "Paldea",
+    "regionalPokedexNumber": 160,
+    "nationalPokedexNumber": 979,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 9,
+    "code": "Paldea",
+    "regionalPokedexNumber": 161,
+    "nationalPokedexNumber": 307,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 9,
+    "code": "Paldea",
+    "regionalPokedexNumber": 162,
+    "nationalPokedexNumber": 308,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 9,
+    "code": "Paldea",
+    "regionalPokedexNumber": 163,
+    "nationalPokedexNumber": 447,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 9,
+    "code": "Paldea",
+    "regionalPokedexNumber": 164,
+    "nationalPokedexNumber": 448,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 9,
+    "code": "Paldea",
+    "regionalPokedexNumber": 165,
+    "nationalPokedexNumber": 935,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 9,
+    "code": "Paldea",
+    "regionalPokedexNumber": 166,
+    "nationalPokedexNumber": 936,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 9,
+    "code": "Paldea",
+    "regionalPokedexNumber": 167,
+    "nationalPokedexNumber": 937,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 9,
+    "code": "Paldea",
+    "regionalPokedexNumber": 168,
+    "nationalPokedexNumber": 339,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 9,
+    "code": "Paldea",
+    "regionalPokedexNumber": 169,
+    "nationalPokedexNumber": 340,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 9,
+    "code": "Paldea",
+    "regionalPokedexNumber": 170,
+    "nationalPokedexNumber": 938,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 9,
+    "code": "Paldea",
+    "regionalPokedexNumber": 171,
+    "nationalPokedexNumber": 939,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 9,
+    "code": "Paldea",
+    "regionalPokedexNumber": 172,
+    "nationalPokedexNumber": 704,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 9,
+    "code": "Paldea",
+    "regionalPokedexNumber": 173,
+    "nationalPokedexNumber": 705,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 9,
+    "code": "Paldea",
+    "regionalPokedexNumber": 174,
+    "nationalPokedexNumber": 706,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 9,
+    "code": "Paldea",
+    "regionalPokedexNumber": 175,
+    "nationalPokedexNumber": 453,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 9,
+    "code": "Paldea",
+    "regionalPokedexNumber": 176,
+    "nationalPokedexNumber": 454,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 9,
+    "code": "Paldea",
+    "regionalPokedexNumber": 177,
+    "nationalPokedexNumber": 940,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 9,
+    "code": "Paldea",
+    "regionalPokedexNumber": 178,
+    "nationalPokedexNumber": 941,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 9,
+    "code": "Paldea",
+    "regionalPokedexNumber": 179,
+    "nationalPokedexNumber": 133,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 9,
+    "code": "Paldea",
+    "regionalPokedexNumber": 180,
+    "nationalPokedexNumber": 134,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 9,
+    "code": "Paldea",
+    "regionalPokedexNumber": 181,
+    "nationalPokedexNumber": 135,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 9,
+    "code": "Paldea",
+    "regionalPokedexNumber": 182,
+    "nationalPokedexNumber": 136,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 9,
+    "code": "Paldea",
+    "regionalPokedexNumber": 183,
+    "nationalPokedexNumber": 196,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 9,
+    "code": "Paldea",
+    "regionalPokedexNumber": 184,
+    "nationalPokedexNumber": 197,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 9,
+    "code": "Paldea",
+    "regionalPokedexNumber": 185,
+    "nationalPokedexNumber": 470,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 9,
+    "code": "Paldea",
+    "regionalPokedexNumber": 186,
+    "nationalPokedexNumber": 471,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 9,
+    "code": "Paldea",
+    "regionalPokedexNumber": 187,
+    "nationalPokedexNumber": 700,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 9,
+    "code": "Paldea",
+    "regionalPokedexNumber": 188,
+    "nationalPokedexNumber": 206,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 9,
+    "code": "Paldea",
+    "regionalPokedexNumber": 189,
+    "nationalPokedexNumber": 982,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 9,
+    "code": "Paldea",
+    "regionalPokedexNumber": 190,
+    "nationalPokedexNumber": 585,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 9,
+    "code": "Paldea",
+    "regionalPokedexNumber": 191,
+    "nationalPokedexNumber": 586,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 9,
+    "code": "Paldea",
+    "regionalPokedexNumber": 192,
+    "nationalPokedexNumber": 203,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 9,
+    "code": "Paldea",
+    "regionalPokedexNumber": 193,
+    "nationalPokedexNumber": 981,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 9,
+    "code": "Paldea",
+    "regionalPokedexNumber": 194,
+    "nationalPokedexNumber": 88,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 9,
+    "code": "Paldea",
+    "regionalPokedexNumber": 195,
+    "nationalPokedexNumber": 89,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 9,
+    "code": "Paldea",
+    "regionalPokedexNumber": 196,
+    "nationalPokedexNumber": 942,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 9,
+    "code": "Paldea",
+    "regionalPokedexNumber": 197,
+    "nationalPokedexNumber": 943,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 9,
+    "code": "Paldea",
+    "regionalPokedexNumber": 198,
+    "nationalPokedexNumber": 848,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 9,
+    "code": "Paldea",
+    "regionalPokedexNumber": 199,
+    "nationalPokedexNumber": 849,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 9,
+    "code": "Paldea",
+    "regionalPokedexNumber": 200,
+    "nationalPokedexNumber": 702,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 9,
+    "code": "Paldea",
+    "regionalPokedexNumber": 201,
+    "nationalPokedexNumber": 417,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 9,
+    "code": "Paldea",
+    "regionalPokedexNumber": 202,
+    "nationalPokedexNumber": 944,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 9,
+    "code": "Paldea",
+    "regionalPokedexNumber": 203,
+    "nationalPokedexNumber": 945,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 9,
+    "code": "Paldea",
+    "regionalPokedexNumber": 204,
+    "nationalPokedexNumber": 234,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 9,
+    "code": "Paldea",
+    "regionalPokedexNumber": 205,
+    "nationalPokedexNumber": 590,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 9,
+    "code": "Paldea",
+    "regionalPokedexNumber": 206,
+    "nationalPokedexNumber": 591,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 9,
+    "code": "Paldea",
+    "regionalPokedexNumber": 207,
+    "nationalPokedexNumber": 100,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 9,
+    "code": "Paldea",
+    "regionalPokedexNumber": 208,
+    "nationalPokedexNumber": 101,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 9,
+    "code": "Paldea",
+    "regionalPokedexNumber": 209,
+    "nationalPokedexNumber": 81,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 9,
+    "code": "Paldea",
+    "regionalPokedexNumber": 210,
+    "nationalPokedexNumber": 82,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 9,
+    "code": "Paldea",
+    "regionalPokedexNumber": 211,
+    "nationalPokedexNumber": 462,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 9,
+    "code": "Paldea",
+    "regionalPokedexNumber": 212,
+    "nationalPokedexNumber": 132,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 9,
+    "code": "Paldea",
+    "regionalPokedexNumber": 213,
+    "nationalPokedexNumber": 58,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 9,
+    "code": "Paldea",
+    "regionalPokedexNumber": 214,
+    "nationalPokedexNumber": 59,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 9,
+    "code": "Paldea",
+    "regionalPokedexNumber": 215,
+    "nationalPokedexNumber": 216,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 9,
+    "code": "Paldea",
+    "regionalPokedexNumber": 216,
+    "nationalPokedexNumber": 217,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 9,
+    "code": "Paldea",
+    "regionalPokedexNumber": 217,
+    "nationalPokedexNumber": 335,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 9,
+    "code": "Paldea",
+    "regionalPokedexNumber": 218,
+    "nationalPokedexNumber": 336,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 9,
+    "code": "Paldea",
+    "regionalPokedexNumber": 219,
+    "nationalPokedexNumber": 333,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 9,
+    "code": "Paldea",
+    "regionalPokedexNumber": 220,
+    "nationalPokedexNumber": 334,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 9,
+    "code": "Paldea",
+    "regionalPokedexNumber": 221,
+    "nationalPokedexNumber": 672,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 9,
+    "code": "Paldea",
+    "regionalPokedexNumber": 222,
+    "nationalPokedexNumber": 673,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 9,
+    "code": "Paldea",
+    "regionalPokedexNumber": 223,
+    "nationalPokedexNumber": 128,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 9,
+    "code": "Paldea",
+    "regionalPokedexNumber": 224,
+    "nationalPokedexNumber": 667,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 9,
+    "code": "Paldea",
+    "regionalPokedexNumber": 225,
+    "nationalPokedexNumber": 668,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 9,
+    "code": "Paldea",
+    "regionalPokedexNumber": 226,
+    "nationalPokedexNumber": 434,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 9,
+    "code": "Paldea",
+    "regionalPokedexNumber": 227,
+    "nationalPokedexNumber": 435,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 9,
+    "code": "Paldea",
+    "regionalPokedexNumber": 228,
+    "nationalPokedexNumber": 570,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 9,
+    "code": "Paldea",
+    "regionalPokedexNumber": 229,
+    "nationalPokedexNumber": 571,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 9,
+    "code": "Paldea",
+    "regionalPokedexNumber": 230,
+    "nationalPokedexNumber": 215,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 9,
+    "code": "Paldea",
+    "regionalPokedexNumber": 231,
+    "nationalPokedexNumber": 461,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 9,
+    "code": "Paldea",
+    "regionalPokedexNumber": 232,
+    "nationalPokedexNumber": 198,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 9,
+    "code": "Paldea",
+    "regionalPokedexNumber": 233,
+    "nationalPokedexNumber": 430,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 9,
+    "code": "Paldea",
+    "regionalPokedexNumber": 234,
+    "nationalPokedexNumber": 574,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 9,
+    "code": "Paldea",
+    "regionalPokedexNumber": 235,
+    "nationalPokedexNumber": 575,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 9,
+    "code": "Paldea",
+    "regionalPokedexNumber": 236,
+    "nationalPokedexNumber": 576,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 9,
+    "code": "Paldea",
+    "regionalPokedexNumber": 237,
+    "nationalPokedexNumber": 854,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 9,
+    "code": "Paldea",
+    "regionalPokedexNumber": 238,
+    "nationalPokedexNumber": 855,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 9,
+    "code": "Paldea",
+    "regionalPokedexNumber": 239,
+    "nationalPokedexNumber": 778,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 9,
+    "code": "Paldea",
+    "regionalPokedexNumber": 240,
+    "nationalPokedexNumber": 707,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 9,
+    "code": "Paldea",
+    "regionalPokedexNumber": 241,
+    "nationalPokedexNumber": 876,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 9,
+    "code": "Paldea",
+    "regionalPokedexNumber": 242,
+    "nationalPokedexNumber": 946,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 9,
+    "code": "Paldea",
+    "regionalPokedexNumber": 243,
+    "nationalPokedexNumber": 947,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 9,
+    "code": "Paldea",
+    "regionalPokedexNumber": 244,
+    "nationalPokedexNumber": 948,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 9,
+    "code": "Paldea",
+    "regionalPokedexNumber": 245,
+    "nationalPokedexNumber": 949,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 9,
+    "code": "Paldea",
+    "regionalPokedexNumber": 246,
+    "nationalPokedexNumber": 357,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 9,
+    "code": "Paldea",
+    "regionalPokedexNumber": 247,
+    "nationalPokedexNumber": 753,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 9,
+    "code": "Paldea",
+    "regionalPokedexNumber": 248,
+    "nationalPokedexNumber": 754,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 9,
+    "code": "Paldea",
+    "regionalPokedexNumber": 249,
+    "nationalPokedexNumber": 950,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 9,
+    "code": "Paldea",
+    "regionalPokedexNumber": 250,
+    "nationalPokedexNumber": 951,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 9,
+    "code": "Paldea",
+    "regionalPokedexNumber": 251,
+    "nationalPokedexNumber": 952,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 9,
+    "code": "Paldea",
+    "regionalPokedexNumber": 252,
+    "nationalPokedexNumber": 331,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 9,
+    "code": "Paldea",
+    "regionalPokedexNumber": 253,
+    "nationalPokedexNumber": 332,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 9,
+    "code": "Paldea",
+    "regionalPokedexNumber": 254,
+    "nationalPokedexNumber": 953,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 9,
+    "code": "Paldea",
+    "regionalPokedexNumber": 255,
+    "nationalPokedexNumber": 954,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 9,
+    "code": "Paldea",
+    "regionalPokedexNumber": 256,
+    "nationalPokedexNumber": 48,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 9,
+    "code": "Paldea",
+    "regionalPokedexNumber": 257,
+    "nationalPokedexNumber": 49,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 9,
+    "code": "Paldea",
+    "regionalPokedexNumber": 258,
+    "nationalPokedexNumber": 204,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 9,
+    "code": "Paldea",
+    "regionalPokedexNumber": 259,
+    "nationalPokedexNumber": 205,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 9,
+    "code": "Paldea",
+    "regionalPokedexNumber": 260,
+    "nationalPokedexNumber": 123,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 9,
+    "code": "Paldea",
+    "regionalPokedexNumber": 261,
+    "nationalPokedexNumber": 212,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 9,
+    "code": "Paldea",
+    "regionalPokedexNumber": 262,
+    "nationalPokedexNumber": 214,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 9,
+    "code": "Paldea",
+    "regionalPokedexNumber": 263,
+    "nationalPokedexNumber": 955,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 9,
+    "code": "Paldea",
+    "regionalPokedexNumber": 264,
+    "nationalPokedexNumber": 956,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 9,
+    "code": "Paldea",
+    "regionalPokedexNumber": 265,
+    "nationalPokedexNumber": 449,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 9,
+    "code": "Paldea",
+    "regionalPokedexNumber": 266,
+    "nationalPokedexNumber": 450,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 9,
+    "code": "Paldea",
+    "regionalPokedexNumber": 267,
+    "nationalPokedexNumber": 551,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 9,
+    "code": "Paldea",
+    "regionalPokedexNumber": 268,
+    "nationalPokedexNumber": 552,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 9,
+    "code": "Paldea",
+    "regionalPokedexNumber": 269,
+    "nationalPokedexNumber": 553,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 9,
+    "code": "Paldea",
+    "regionalPokedexNumber": 270,
+    "nationalPokedexNumber": 843,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 9,
+    "code": "Paldea",
+    "regionalPokedexNumber": 271,
+    "nationalPokedexNumber": 844,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 9,
+    "code": "Paldea",
+    "regionalPokedexNumber": 272,
+    "nationalPokedexNumber": 749,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 9,
+    "code": "Paldea",
+    "regionalPokedexNumber": 273,
+    "nationalPokedexNumber": 750,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 9,
+    "code": "Paldea",
+    "regionalPokedexNumber": 274,
+    "nationalPokedexNumber": 636,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 9,
+    "code": "Paldea",
+    "regionalPokedexNumber": 275,
+    "nationalPokedexNumber": 637,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 9,
+    "code": "Paldea",
+    "regionalPokedexNumber": 276,
+    "nationalPokedexNumber": 371,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 9,
+    "code": "Paldea",
+    "regionalPokedexNumber": 277,
+    "nationalPokedexNumber": 372,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 9,
+    "code": "Paldea",
+    "regionalPokedexNumber": 278,
+    "nationalPokedexNumber": 373,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 9,
+    "code": "Paldea",
+    "regionalPokedexNumber": 279,
+    "nationalPokedexNumber": 957,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 9,
+    "code": "Paldea",
+    "regionalPokedexNumber": 280,
+    "nationalPokedexNumber": 958,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 9,
+    "code": "Paldea",
+    "regionalPokedexNumber": 281,
+    "nationalPokedexNumber": 959,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 9,
+    "code": "Paldea",
+    "regionalPokedexNumber": 282,
+    "nationalPokedexNumber": 856,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 9,
+    "code": "Paldea",
+    "regionalPokedexNumber": 283,
+    "nationalPokedexNumber": 857,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 9,
+    "code": "Paldea",
+    "regionalPokedexNumber": 284,
+    "nationalPokedexNumber": 858,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 9,
+    "code": "Paldea",
+    "regionalPokedexNumber": 285,
+    "nationalPokedexNumber": 859,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 9,
+    "code": "Paldea",
+    "regionalPokedexNumber": 286,
+    "nationalPokedexNumber": 860,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 9,
+    "code": "Paldea",
+    "regionalPokedexNumber": 287,
+    "nationalPokedexNumber": 861,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 9,
+    "code": "Paldea",
+    "regionalPokedexNumber": 288,
+    "nationalPokedexNumber": 960,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 9,
+    "code": "Paldea",
+    "regionalPokedexNumber": 289,
+    "nationalPokedexNumber": 961,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 9,
+    "code": "Paldea",
+    "regionalPokedexNumber": 290,
+    "nationalPokedexNumber": 962,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 9,
+    "code": "Paldea",
+    "regionalPokedexNumber": 291,
+    "nationalPokedexNumber": 963,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 9,
+    "code": "Paldea",
+    "regionalPokedexNumber": 292,
+    "nationalPokedexNumber": 964,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 9,
+    "code": "Paldea",
+    "regionalPokedexNumber": 293,
+    "nationalPokedexNumber": 965,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 9,
+    "code": "Paldea",
+    "regionalPokedexNumber": 294,
+    "nationalPokedexNumber": 966,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 9,
+    "code": "Paldea",
+    "regionalPokedexNumber": 295,
+    "nationalPokedexNumber": 967,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 9,
+    "code": "Paldea",
+    "regionalPokedexNumber": 296,
+    "nationalPokedexNumber": 968,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 9,
+    "code": "Paldea",
+    "regionalPokedexNumber": 297,
+    "nationalPokedexNumber": 302,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 9,
+    "code": "Paldea",
+    "regionalPokedexNumber": 298,
+    "nationalPokedexNumber": 353,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 9,
+    "code": "Paldea",
+    "regionalPokedexNumber": 299,
+    "nationalPokedexNumber": 354,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 9,
+    "code": "Paldea",
+    "regionalPokedexNumber": 300,
+    "nationalPokedexNumber": 870,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 9,
+    "code": "Paldea",
+    "regionalPokedexNumber": 301,
+    "nationalPokedexNumber": 701,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 9,
+    "code": "Paldea",
+    "regionalPokedexNumber": 302,
+    "nationalPokedexNumber": 442,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 9,
+    "code": "Paldea",
+    "regionalPokedexNumber": 303,
+    "nationalPokedexNumber": 714,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 9,
+    "code": "Paldea",
+    "regionalPokedexNumber": 304,
+    "nationalPokedexNumber": 715,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 9,
+    "code": "Paldea",
+    "regionalPokedexNumber": 305,
+    "nationalPokedexNumber": 885,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 9,
+    "code": "Paldea",
+    "regionalPokedexNumber": 306,
+    "nationalPokedexNumber": 886,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 9,
+    "code": "Paldea",
+    "regionalPokedexNumber": 307,
+    "nationalPokedexNumber": 887,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 9,
+    "code": "Paldea",
+    "regionalPokedexNumber": 308,
+    "nationalPokedexNumber": 969,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 9,
+    "code": "Paldea",
+    "regionalPokedexNumber": 309,
+    "nationalPokedexNumber": 970,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 9,
+    "code": "Paldea",
+    "regionalPokedexNumber": 310,
+    "nationalPokedexNumber": 479,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 9,
+    "code": "Paldea",
+    "regionalPokedexNumber": 311,
+    "nationalPokedexNumber": 971,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 9,
+    "code": "Paldea",
+    "regionalPokedexNumber": 312,
+    "nationalPokedexNumber": 972,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 9,
+    "code": "Paldea",
+    "regionalPokedexNumber": 313,
+    "nationalPokedexNumber": 765,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 9,
+    "code": "Paldea",
+    "regionalPokedexNumber": 314,
+    "nationalPokedexNumber": 766,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 9,
+    "code": "Paldea",
+    "regionalPokedexNumber": 315,
+    "nationalPokedexNumber": 775,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 9,
+    "code": "Paldea",
+    "regionalPokedexNumber": 316,
+    "nationalPokedexNumber": 246,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 9,
+    "code": "Paldea",
+    "regionalPokedexNumber": 317,
+    "nationalPokedexNumber": 247,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 9,
+    "code": "Paldea",
+    "regionalPokedexNumber": 318,
+    "nationalPokedexNumber": 248,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 9,
+    "code": "Paldea",
+    "regionalPokedexNumber": 319,
+    "nationalPokedexNumber": 874,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 9,
+    "code": "Paldea",
+    "regionalPokedexNumber": 320,
+    "nationalPokedexNumber": 875,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 9,
+    "code": "Paldea",
+    "regionalPokedexNumber": 321,
+    "nationalPokedexNumber": 871,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 9,
+    "code": "Paldea",
+    "regionalPokedexNumber": 322,
+    "nationalPokedexNumber": 769,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 9,
+    "code": "Paldea",
+    "regionalPokedexNumber": 323,
+    "nationalPokedexNumber": 770,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 9,
+    "code": "Paldea",
+    "regionalPokedexNumber": 324,
+    "nationalPokedexNumber": 79,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 9,
+    "code": "Paldea",
+    "regionalPokedexNumber": 325,
+    "nationalPokedexNumber": 80,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 9,
+    "code": "Paldea",
+    "regionalPokedexNumber": 326,
+    "nationalPokedexNumber": 199,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 9,
+    "code": "Paldea",
+    "regionalPokedexNumber": 327,
+    "nationalPokedexNumber": 422,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 9,
+    "code": "Paldea",
+    "regionalPokedexNumber": 328,
+    "nationalPokedexNumber": 423,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 9,
+    "code": "Paldea",
+    "regionalPokedexNumber": 329,
+    "nationalPokedexNumber": 90,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 9,
+    "code": "Paldea",
+    "regionalPokedexNumber": 330,
+    "nationalPokedexNumber": 91,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 9,
+    "code": "Paldea",
+    "regionalPokedexNumber": 331,
+    "nationalPokedexNumber": 211,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 9,
+    "code": "Paldea",
+    "regionalPokedexNumber": 332,
+    "nationalPokedexNumber": 370,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 9,
+    "code": "Paldea",
+    "regionalPokedexNumber": 333,
+    "nationalPokedexNumber": 456,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 9,
+    "code": "Paldea",
+    "regionalPokedexNumber": 334,
+    "nationalPokedexNumber": 457,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 9,
+    "code": "Paldea",
+    "regionalPokedexNumber": 335,
+    "nationalPokedexNumber": 779,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 9,
+    "code": "Paldea",
+    "regionalPokedexNumber": 336,
+    "nationalPokedexNumber": 594,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 9,
+    "code": "Paldea",
+    "regionalPokedexNumber": 337,
+    "nationalPokedexNumber": 690,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 9,
+    "code": "Paldea",
+    "regionalPokedexNumber": 338,
+    "nationalPokedexNumber": 691,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 9,
+    "code": "Paldea",
+    "regionalPokedexNumber": 339,
+    "nationalPokedexNumber": 692,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 9,
+    "code": "Paldea",
+    "regionalPokedexNumber": 340,
+    "nationalPokedexNumber": 693,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 9,
+    "code": "Paldea",
+    "regionalPokedexNumber": 341,
+    "nationalPokedexNumber": 602,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 9,
+    "code": "Paldea",
+    "regionalPokedexNumber": 342,
+    "nationalPokedexNumber": 603,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 9,
+    "code": "Paldea",
+    "regionalPokedexNumber": 343,
+    "nationalPokedexNumber": 604,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 9,
+    "code": "Paldea",
+    "regionalPokedexNumber": 344,
+    "nationalPokedexNumber": 747,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 9,
+    "code": "Paldea",
+    "regionalPokedexNumber": 345,
+    "nationalPokedexNumber": 748,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 9,
+    "code": "Paldea",
+    "regionalPokedexNumber": 346,
+    "nationalPokedexNumber": 973,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 9,
+    "code": "Paldea",
+    "regionalPokedexNumber": 347,
+    "nationalPokedexNumber": 147,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 9,
+    "code": "Paldea",
+    "regionalPokedexNumber": 348,
+    "nationalPokedexNumber": 148,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 9,
+    "code": "Paldea",
+    "regionalPokedexNumber": 349,
+    "nationalPokedexNumber": 149,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 9,
+    "code": "Paldea",
+    "regionalPokedexNumber": 350,
+    "nationalPokedexNumber": 872,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 9,
+    "code": "Paldea",
+    "regionalPokedexNumber": 351,
+    "nationalPokedexNumber": 873,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 9,
+    "code": "Paldea",
+    "regionalPokedexNumber": 352,
+    "nationalPokedexNumber": 459,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 9,
+    "code": "Paldea",
+    "regionalPokedexNumber": 353,
+    "nationalPokedexNumber": 460,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 9,
+    "code": "Paldea",
+    "regionalPokedexNumber": 354,
+    "nationalPokedexNumber": 225,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 9,
+    "code": "Paldea",
+    "regionalPokedexNumber": 355,
+    "nationalPokedexNumber": 613,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 9,
+    "code": "Paldea",
+    "regionalPokedexNumber": 356,
+    "nationalPokedexNumber": 614,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 9,
+    "code": "Paldea",
+    "regionalPokedexNumber": 357,
+    "nationalPokedexNumber": 361,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 9,
+    "code": "Paldea",
+    "regionalPokedexNumber": 358,
+    "nationalPokedexNumber": 362,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 9,
+    "code": "Paldea",
+    "regionalPokedexNumber": 359,
+    "nationalPokedexNumber": 478,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 9,
+    "code": "Paldea",
+    "regionalPokedexNumber": 360,
+    "nationalPokedexNumber": 615,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 9,
+    "code": "Paldea",
+    "regionalPokedexNumber": 361,
+    "nationalPokedexNumber": 974,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 9,
+    "code": "Paldea",
+    "regionalPokedexNumber": 362,
+    "nationalPokedexNumber": 975,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 9,
+    "code": "Paldea",
+    "regionalPokedexNumber": 363,
+    "nationalPokedexNumber": 712,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 9,
+    "code": "Paldea",
+    "regionalPokedexNumber": 364,
+    "nationalPokedexNumber": 713,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 9,
+    "code": "Paldea",
+    "regionalPokedexNumber": 365,
+    "nationalPokedexNumber": 627,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 9,
+    "code": "Paldea",
+    "regionalPokedexNumber": 366,
+    "nationalPokedexNumber": 628,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 9,
+    "code": "Paldea",
+    "regionalPokedexNumber": 367,
+    "nationalPokedexNumber": 624,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 9,
+    "code": "Paldea",
+    "regionalPokedexNumber": 368,
+    "nationalPokedexNumber": 625,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 9,
+    "code": "Paldea",
+    "regionalPokedexNumber": 369,
+    "nationalPokedexNumber": 983,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 9,
+    "code": "Paldea",
+    "regionalPokedexNumber": 370,
+    "nationalPokedexNumber": 633,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 9,
+    "code": "Paldea",
+    "regionalPokedexNumber": 371,
+    "nationalPokedexNumber": 634,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 9,
+    "code": "Paldea",
+    "regionalPokedexNumber": 372,
+    "nationalPokedexNumber": 635,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 9,
+    "code": "Paldea",
+    "regionalPokedexNumber": 373,
+    "nationalPokedexNumber": 976,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 9,
+    "code": "Paldea",
+    "regionalPokedexNumber": 374,
+    "nationalPokedexNumber": 977,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 9,
+    "code": "Paldea",
+    "regionalPokedexNumber": 375,
+    "nationalPokedexNumber": 978,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 9,
+    "code": "Paldea",
+    "regionalPokedexNumber": 376,
+    "nationalPokedexNumber": 984,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 9,
+    "code": "Paldea",
+    "regionalPokedexNumber": 377,
+    "nationalPokedexNumber": 985,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 9,
+    "code": "Paldea",
+    "regionalPokedexNumber": 378,
+    "nationalPokedexNumber": 986,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 9,
+    "code": "Paldea",
+    "regionalPokedexNumber": 379,
+    "nationalPokedexNumber": 987,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 9,
+    "code": "Paldea",
+    "regionalPokedexNumber": 380,
+    "nationalPokedexNumber": 988,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 9,
+    "code": "Paldea",
+    "regionalPokedexNumber": 381,
+    "nationalPokedexNumber": 989,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 9,
+    "code": "Paldea",
+    "regionalPokedexNumber": 382,
+    "nationalPokedexNumber": 990,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 9,
+    "code": "Paldea",
+    "regionalPokedexNumber": 383,
+    "nationalPokedexNumber": 991,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 9,
+    "code": "Paldea",
+    "regionalPokedexNumber": 384,
+    "nationalPokedexNumber": 992,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 9,
+    "code": "Paldea",
+    "regionalPokedexNumber": 385,
+    "nationalPokedexNumber": 993,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 9,
+    "code": "Paldea",
+    "regionalPokedexNumber": 386,
+    "nationalPokedexNumber": 994,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 9,
+    "code": "Paldea",
+    "regionalPokedexNumber": 387,
+    "nationalPokedexNumber": 995,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 9,
+    "code": "Paldea",
+    "regionalPokedexNumber": 388,
+    "nationalPokedexNumber": 996,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 9,
+    "code": "Paldea",
+    "regionalPokedexNumber": 389,
+    "nationalPokedexNumber": 997,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 9,
+    "code": "Paldea",
+    "regionalPokedexNumber": 390,
+    "nationalPokedexNumber": 998,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 9,
+    "code": "Paldea",
+    "regionalPokedexNumber": 391,
+    "nationalPokedexNumber": 999,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 9,
+    "code": "Paldea",
+    "regionalPokedexNumber": 392,
+    "nationalPokedexNumber": 1000,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 9,
+    "code": "Paldea",
+    "regionalPokedexNumber": 393,
+    "nationalPokedexNumber": 1001,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 9,
+    "code": "Paldea",
+    "regionalPokedexNumber": 394,
+    "nationalPokedexNumber": 1002,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 9,
+    "code": "Paldea",
+    "regionalPokedexNumber": 395,
+    "nationalPokedexNumber": 1003,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 9,
+    "code": "Paldea",
+    "regionalPokedexNumber": 396,
+    "nationalPokedexNumber": 1004,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 9,
+    "code": "Paldea",
+    "regionalPokedexNumber": 397,
+    "nationalPokedexNumber": 1005,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 9,
+    "code": "Paldea",
+    "regionalPokedexNumber": 398,
+    "nationalPokedexNumber": 1006,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 9,
+    "code": "Paldea",
+    "regionalPokedexNumber": 399,
+    "nationalPokedexNumber": 1007,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 9,
+    "code": "Paldea",
+    "regionalPokedexNumber": 400,
+    "nationalPokedexNumber": 1008,
+    "formSuffix": "",
+    "isVariant": false
+  }
+]

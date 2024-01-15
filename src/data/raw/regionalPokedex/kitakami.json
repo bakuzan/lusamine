@@ -1,0 +1,1602 @@
+[
+  {
+    "region": 9,
+    "code": "Kitakami",
+    "regionalPokedexNumber": 1,
+    "nationalPokedexNumber": 167,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 9,
+    "code": "Kitakami",
+    "regionalPokedexNumber": 2,
+    "nationalPokedexNumber": 168,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 9,
+    "code": "Kitakami",
+    "regionalPokedexNumber": 3,
+    "nationalPokedexNumber": 193,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 9,
+    "code": "Kitakami",
+    "regionalPokedexNumber": 4,
+    "nationalPokedexNumber": 469,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 9,
+    "code": "Kitakami",
+    "regionalPokedexNumber": 5,
+    "nationalPokedexNumber": 194,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 9,
+    "code": "Kitakami",
+    "regionalPokedexNumber": 6,
+    "nationalPokedexNumber": 195,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 9,
+    "code": "Kitakami",
+    "regionalPokedexNumber": 7,
+    "nationalPokedexNumber": 261,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 9,
+    "code": "Kitakami",
+    "regionalPokedexNumber": 8,
+    "nationalPokedexNumber": 262,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 9,
+    "code": "Kitakami",
+    "regionalPokedexNumber": 9,
+    "nationalPokedexNumber": 313,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 9,
+    "code": "Kitakami",
+    "regionalPokedexNumber": 10,
+    "nationalPokedexNumber": 314,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 9,
+    "code": "Kitakami",
+    "regionalPokedexNumber": 11,
+    "nationalPokedexNumber": 341,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 9,
+    "code": "Kitakami",
+    "regionalPokedexNumber": 12,
+    "nationalPokedexNumber": 342,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 9,
+    "code": "Kitakami",
+    "regionalPokedexNumber": 13,
+    "nationalPokedexNumber": 540,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 9,
+    "code": "Kitakami",
+    "regionalPokedexNumber": 14,
+    "nationalPokedexNumber": 541,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 9,
+    "code": "Kitakami",
+    "regionalPokedexNumber": 15,
+    "nationalPokedexNumber": 542,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 9,
+    "code": "Kitakami",
+    "regionalPokedexNumber": 16,
+    "nationalPokedexNumber": 742,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 9,
+    "code": "Kitakami",
+    "regionalPokedexNumber": 17,
+    "nationalPokedexNumber": 743,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 9,
+    "code": "Kitakami",
+    "regionalPokedexNumber": 18,
+    "nationalPokedexNumber": 23,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 9,
+    "code": "Kitakami",
+    "regionalPokedexNumber": 19,
+    "nationalPokedexNumber": 24,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 9,
+    "code": "Kitakami",
+    "regionalPokedexNumber": 20,
+    "nationalPokedexNumber": 172,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 9,
+    "code": "Kitakami",
+    "regionalPokedexNumber": 21,
+    "nationalPokedexNumber": 25,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 9,
+    "code": "Kitakami",
+    "regionalPokedexNumber": 22,
+    "nationalPokedexNumber": 26,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 9,
+    "code": "Kitakami",
+    "regionalPokedexNumber": 23,
+    "nationalPokedexNumber": 69,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 9,
+    "code": "Kitakami",
+    "regionalPokedexNumber": 24,
+    "nationalPokedexNumber": 70,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 9,
+    "code": "Kitakami",
+    "regionalPokedexNumber": 25,
+    "nationalPokedexNumber": 71,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 9,
+    "code": "Kitakami",
+    "regionalPokedexNumber": 26,
+    "nationalPokedexNumber": 161,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 9,
+    "code": "Kitakami",
+    "regionalPokedexNumber": 27,
+    "nationalPokedexNumber": 162,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 9,
+    "code": "Kitakami",
+    "regionalPokedexNumber": 28,
+    "nationalPokedexNumber": 396,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 9,
+    "code": "Kitakami",
+    "regionalPokedexNumber": 29,
+    "nationalPokedexNumber": 397,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 9,
+    "code": "Kitakami",
+    "regionalPokedexNumber": 30,
+    "nationalPokedexNumber": 398,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 9,
+    "code": "Kitakami",
+    "regionalPokedexNumber": 31,
+    "nationalPokedexNumber": 753,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 9,
+    "code": "Kitakami",
+    "regionalPokedexNumber": 32,
+    "nationalPokedexNumber": 754,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 9,
+    "code": "Kitakami",
+    "regionalPokedexNumber": 33,
+    "nationalPokedexNumber": 840,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 9,
+    "code": "Kitakami",
+    "regionalPokedexNumber": 34,
+    "nationalPokedexNumber": 841,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 9,
+    "code": "Kitakami",
+    "regionalPokedexNumber": 35,
+    "nationalPokedexNumber": 842,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 9,
+    "code": "Kitakami",
+    "regionalPokedexNumber": 36,
+    "nationalPokedexNumber": 1011,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 9,
+    "code": "Kitakami",
+    "regionalPokedexNumber": 37,
+    "nationalPokedexNumber": 37,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 9,
+    "code": "Kitakami",
+    "regionalPokedexNumber": 38,
+    "nationalPokedexNumber": 38,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 9,
+    "code": "Kitakami",
+    "regionalPokedexNumber": 39,
+    "nationalPokedexNumber": 60,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 9,
+    "code": "Kitakami",
+    "regionalPokedexNumber": 40,
+    "nationalPokedexNumber": 61,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 9,
+    "code": "Kitakami",
+    "regionalPokedexNumber": 41,
+    "nationalPokedexNumber": 62,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 9,
+    "code": "Kitakami",
+    "regionalPokedexNumber": 42,
+    "nationalPokedexNumber": 186,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 9,
+    "code": "Kitakami",
+    "regionalPokedexNumber": 43,
+    "nationalPokedexNumber": 129,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 9,
+    "code": "Kitakami",
+    "regionalPokedexNumber": 44,
+    "nationalPokedexNumber": 130,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 9,
+    "code": "Kitakami",
+    "regionalPokedexNumber": 45,
+    "nationalPokedexNumber": 163,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 9,
+    "code": "Kitakami",
+    "regionalPokedexNumber": 46,
+    "nationalPokedexNumber": 164,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 9,
+    "code": "Kitakami",
+    "regionalPokedexNumber": 47,
+    "nationalPokedexNumber": 190,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 9,
+    "code": "Kitakami",
+    "regionalPokedexNumber": 48,
+    "nationalPokedexNumber": 424,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 9,
+    "code": "Kitakami",
+    "regionalPokedexNumber": 49,
+    "nationalPokedexNumber": 214,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 9,
+    "code": "Kitakami",
+    "regionalPokedexNumber": 50,
+    "nationalPokedexNumber": 220,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 9,
+    "code": "Kitakami",
+    "regionalPokedexNumber": 51,
+    "nationalPokedexNumber": 221,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 9,
+    "code": "Kitakami",
+    "regionalPokedexNumber": 52,
+    "nationalPokedexNumber": 473,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 9,
+    "code": "Kitakami",
+    "regionalPokedexNumber": 53,
+    "nationalPokedexNumber": 234,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 9,
+    "code": "Kitakami",
+    "regionalPokedexNumber": 54,
+    "nationalPokedexNumber": 273,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 9,
+    "code": "Kitakami",
+    "regionalPokedexNumber": 55,
+    "nationalPokedexNumber": 274,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 9,
+    "code": "Kitakami",
+    "regionalPokedexNumber": 56,
+    "nationalPokedexNumber": 275,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 9,
+    "code": "Kitakami",
+    "regionalPokedexNumber": 57,
+    "nationalPokedexNumber": 280,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 9,
+    "code": "Kitakami",
+    "regionalPokedexNumber": 58,
+    "nationalPokedexNumber": 281,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 9,
+    "code": "Kitakami",
+    "regionalPokedexNumber": 59,
+    "nationalPokedexNumber": 282,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 9,
+    "code": "Kitakami",
+    "regionalPokedexNumber": 60,
+    "nationalPokedexNumber": 475,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 9,
+    "code": "Kitakami",
+    "regionalPokedexNumber": 61,
+    "nationalPokedexNumber": 401,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 9,
+    "code": "Kitakami",
+    "regionalPokedexNumber": 62,
+    "nationalPokedexNumber": 402,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 9,
+    "code": "Kitakami",
+    "regionalPokedexNumber": 63,
+    "nationalPokedexNumber": 417,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 9,
+    "code": "Kitakami",
+    "regionalPokedexNumber": 64,
+    "nationalPokedexNumber": 447,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 9,
+    "code": "Kitakami",
+    "regionalPokedexNumber": 65,
+    "nationalPokedexNumber": 448,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 9,
+    "code": "Kitakami",
+    "regionalPokedexNumber": 66,
+    "nationalPokedexNumber": 548,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 9,
+    "code": "Kitakami",
+    "regionalPokedexNumber": 67,
+    "nationalPokedexNumber": 549,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 9,
+    "code": "Kitakami",
+    "regionalPokedexNumber": 68,
+    "nationalPokedexNumber": 708,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 9,
+    "code": "Kitakami",
+    "regionalPokedexNumber": 69,
+    "nationalPokedexNumber": 709,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 9,
+    "code": "Kitakami",
+    "regionalPokedexNumber": 70,
+    "nationalPokedexNumber": 744,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 9,
+    "code": "Kitakami",
+    "regionalPokedexNumber": 71,
+    "nationalPokedexNumber": 745,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 9,
+    "code": "Kitakami",
+    "regionalPokedexNumber": 72,
+    "nationalPokedexNumber": 819,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 9,
+    "code": "Kitakami",
+    "regionalPokedexNumber": 73,
+    "nationalPokedexNumber": 820,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 9,
+    "code": "Kitakami",
+    "regionalPokedexNumber": 74,
+    "nationalPokedexNumber": 948,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 9,
+    "code": "Kitakami",
+    "regionalPokedexNumber": 75,
+    "nationalPokedexNumber": 949,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 9,
+    "code": "Kitakami",
+    "regionalPokedexNumber": 76,
+    "nationalPokedexNumber": 1012,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 9,
+    "code": "Kitakami",
+    "regionalPokedexNumber": 77,
+    "nationalPokedexNumber": 1013,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 9,
+    "code": "Kitakami",
+    "regionalPokedexNumber": 78,
+    "nationalPokedexNumber": 58,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 9,
+    "code": "Kitakami",
+    "regionalPokedexNumber": 79,
+    "nationalPokedexNumber": 59,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 9,
+    "code": "Kitakami",
+    "regionalPokedexNumber": 80,
+    "nationalPokedexNumber": 74,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 9,
+    "code": "Kitakami",
+    "regionalPokedexNumber": 81,
+    "nationalPokedexNumber": 75,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 9,
+    "code": "Kitakami",
+    "regionalPokedexNumber": 82,
+    "nationalPokedexNumber": 76,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 9,
+    "code": "Kitakami",
+    "regionalPokedexNumber": 83,
+    "nationalPokedexNumber": 438,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 9,
+    "code": "Kitakami",
+    "regionalPokedexNumber": 84,
+    "nationalPokedexNumber": 185,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 9,
+    "code": "Kitakami",
+    "regionalPokedexNumber": 85,
+    "nationalPokedexNumber": 532,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 9,
+    "code": "Kitakami",
+    "regionalPokedexNumber": 86,
+    "nationalPokedexNumber": 533,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 9,
+    "code": "Kitakami",
+    "regionalPokedexNumber": 87,
+    "nationalPokedexNumber": 534,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 9,
+    "code": "Kitakami",
+    "regionalPokedexNumber": 88,
+    "nationalPokedexNumber": 714,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 9,
+    "code": "Kitakami",
+    "regionalPokedexNumber": 89,
+    "nationalPokedexNumber": 715,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 9,
+    "code": "Kitakami",
+    "regionalPokedexNumber": 90,
+    "nationalPokedexNumber": 846,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 9,
+    "code": "Kitakami",
+    "regionalPokedexNumber": 91,
+    "nationalPokedexNumber": 847,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 9,
+    "code": "Kitakami",
+    "regionalPokedexNumber": 92,
+    "nationalPokedexNumber": 856,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 9,
+    "code": "Kitakami",
+    "regionalPokedexNumber": 93,
+    "nationalPokedexNumber": 857,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 9,
+    "code": "Kitakami",
+    "regionalPokedexNumber": 94,
+    "nationalPokedexNumber": 858,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 9,
+    "code": "Kitakami",
+    "regionalPokedexNumber": 95,
+    "nationalPokedexNumber": 877,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 9,
+    "code": "Kitakami",
+    "regionalPokedexNumber": 96,
+    "nationalPokedexNumber": 968,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 9,
+    "code": "Kitakami",
+    "regionalPokedexNumber": 97,
+    "nationalPokedexNumber": 924,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 9,
+    "code": "Kitakami",
+    "regionalPokedexNumber": 98,
+    "nationalPokedexNumber": 925,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 9,
+    "code": "Kitakami",
+    "regionalPokedexNumber": 99,
+    "nationalPokedexNumber": 56,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 9,
+    "code": "Kitakami",
+    "regionalPokedexNumber": 100,
+    "nationalPokedexNumber": 57,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 9,
+    "code": "Kitakami",
+    "regionalPokedexNumber": 101,
+    "nationalPokedexNumber": 979,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 9,
+    "code": "Kitakami",
+    "regionalPokedexNumber": 102,
+    "nationalPokedexNumber": 446,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 9,
+    "code": "Kitakami",
+    "regionalPokedexNumber": 103,
+    "nationalPokedexNumber": 143,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 9,
+    "code": "Kitakami",
+    "regionalPokedexNumber": 104,
+    "nationalPokedexNumber": 270,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 9,
+    "code": "Kitakami",
+    "regionalPokedexNumber": 105,
+    "nationalPokedexNumber": 271,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 9,
+    "code": "Kitakami",
+    "regionalPokedexNumber": 106,
+    "nationalPokedexNumber": 272,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 9,
+    "code": "Kitakami",
+    "regionalPokedexNumber": 107,
+    "nationalPokedexNumber": 299,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 9,
+    "code": "Kitakami",
+    "regionalPokedexNumber": 108,
+    "nationalPokedexNumber": 476,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 9,
+    "code": "Kitakami",
+    "regionalPokedexNumber": 109,
+    "nationalPokedexNumber": 403,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 9,
+    "code": "Kitakami",
+    "regionalPokedexNumber": 110,
+    "nationalPokedexNumber": 404,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 9,
+    "code": "Kitakami",
+    "regionalPokedexNumber": 111,
+    "nationalPokedexNumber": 405,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 9,
+    "code": "Kitakami",
+    "regionalPokedexNumber": 112,
+    "nationalPokedexNumber": 736,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 9,
+    "code": "Kitakami",
+    "regionalPokedexNumber": 113,
+    "nationalPokedexNumber": 737,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 9,
+    "code": "Kitakami",
+    "regionalPokedexNumber": 114,
+    "nationalPokedexNumber": 738,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 9,
+    "code": "Kitakami",
+    "regionalPokedexNumber": 115,
+    "nationalPokedexNumber": 741,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 9,
+    "code": "Kitakami",
+    "regionalPokedexNumber": 116,
+    "nationalPokedexNumber": 27,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 9,
+    "code": "Kitakami",
+    "regionalPokedexNumber": 117,
+    "nationalPokedexNumber": 28,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 9,
+    "code": "Kitakami",
+    "regionalPokedexNumber": 118,
+    "nationalPokedexNumber": 92,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 9,
+    "code": "Kitakami",
+    "regionalPokedexNumber": 119,
+    "nationalPokedexNumber": 93,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 9,
+    "code": "Kitakami",
+    "regionalPokedexNumber": 120,
+    "nationalPokedexNumber": 94,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 9,
+    "code": "Kitakami",
+    "regionalPokedexNumber": 121,
+    "nationalPokedexNumber": 207,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 9,
+    "code": "Kitakami",
+    "regionalPokedexNumber": 122,
+    "nationalPokedexNumber": 472,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 9,
+    "code": "Kitakami",
+    "regionalPokedexNumber": 123,
+    "nationalPokedexNumber": 228,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 9,
+    "code": "Kitakami",
+    "regionalPokedexNumber": 124,
+    "nationalPokedexNumber": 229,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 9,
+    "code": "Kitakami",
+    "regionalPokedexNumber": 125,
+    "nationalPokedexNumber": 325,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 9,
+    "code": "Kitakami",
+    "regionalPokedexNumber": 126,
+    "nationalPokedexNumber": 326,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 9,
+    "code": "Kitakami",
+    "regionalPokedexNumber": 127,
+    "nationalPokedexNumber": 629,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 9,
+    "code": "Kitakami",
+    "regionalPokedexNumber": 128,
+    "nationalPokedexNumber": 630,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 9,
+    "code": "Kitakami",
+    "regionalPokedexNumber": 129,
+    "nationalPokedexNumber": 749,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 9,
+    "code": "Kitakami",
+    "regionalPokedexNumber": 130,
+    "nationalPokedexNumber": 750,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 9,
+    "code": "Kitakami",
+    "regionalPokedexNumber": 131,
+    "nationalPokedexNumber": 782,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 9,
+    "code": "Kitakami",
+    "regionalPokedexNumber": 132,
+    "nationalPokedexNumber": 783,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 9,
+    "code": "Kitakami",
+    "regionalPokedexNumber": 133,
+    "nationalPokedexNumber": 784,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 9,
+    "code": "Kitakami",
+    "regionalPokedexNumber": 134,
+    "nationalPokedexNumber": 962,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 9,
+    "code": "Kitakami",
+    "regionalPokedexNumber": 135,
+    "nationalPokedexNumber": 109,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 9,
+    "code": "Kitakami",
+    "regionalPokedexNumber": 136,
+    "nationalPokedexNumber": 110,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 9,
+    "code": "Kitakami",
+    "regionalPokedexNumber": 137,
+    "nationalPokedexNumber": 619,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 9,
+    "code": "Kitakami",
+    "regionalPokedexNumber": 138,
+    "nationalPokedexNumber": 620,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 9,
+    "code": "Kitakami",
+    "regionalPokedexNumber": 139,
+    "nationalPokedexNumber": 355,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 9,
+    "code": "Kitakami",
+    "regionalPokedexNumber": 140,
+    "nationalPokedexNumber": 356,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 9,
+    "code": "Kitakami",
+    "regionalPokedexNumber": 141,
+    "nationalPokedexNumber": 477,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 9,
+    "code": "Kitakami",
+    "regionalPokedexNumber": 142,
+    "nationalPokedexNumber": 433,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 9,
+    "code": "Kitakami",
+    "regionalPokedexNumber": 143,
+    "nationalPokedexNumber": 358,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 9,
+    "code": "Kitakami",
+    "regionalPokedexNumber": 144,
+    "nationalPokedexNumber": 218,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 9,
+    "code": "Kitakami",
+    "regionalPokedexNumber": 145,
+    "nationalPokedexNumber": 219,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 9,
+    "code": "Kitakami",
+    "regionalPokedexNumber": 146,
+    "nationalPokedexNumber": 607,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 9,
+    "code": "Kitakami",
+    "regionalPokedexNumber": 147,
+    "nationalPokedexNumber": 608,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 9,
+    "code": "Kitakami",
+    "regionalPokedexNumber": 148,
+    "nationalPokedexNumber": 609,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 9,
+    "code": "Kitakami",
+    "regionalPokedexNumber": 149,
+    "nationalPokedexNumber": 283,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 9,
+    "code": "Kitakami",
+    "regionalPokedexNumber": 150,
+    "nationalPokedexNumber": 284,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 9,
+    "code": "Kitakami",
+    "regionalPokedexNumber": 151,
+    "nationalPokedexNumber": 173,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 9,
+    "code": "Kitakami",
+    "regionalPokedexNumber": 152,
+    "nationalPokedexNumber": 35,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 9,
+    "code": "Kitakami",
+    "regionalPokedexNumber": 153,
+    "nationalPokedexNumber": 36,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 9,
+    "code": "Kitakami",
+    "regionalPokedexNumber": 154,
+    "nationalPokedexNumber": 436,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 9,
+    "code": "Kitakami",
+    "regionalPokedexNumber": 155,
+    "nationalPokedexNumber": 437,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 9,
+    "code": "Kitakami",
+    "regionalPokedexNumber": 156,
+    "nationalPokedexNumber": 969,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 9,
+    "code": "Kitakami",
+    "regionalPokedexNumber": 157,
+    "nationalPokedexNumber": 970,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 9,
+    "code": "Kitakami",
+    "regionalPokedexNumber": 158,
+    "nationalPokedexNumber": 349,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 9,
+    "code": "Kitakami",
+    "regionalPokedexNumber": 159,
+    "nationalPokedexNumber": 350,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 9,
+    "code": "Kitakami",
+    "regionalPokedexNumber": 160,
+    "nationalPokedexNumber": 206,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 9,
+    "code": "Kitakami",
+    "regionalPokedexNumber": 161,
+    "nationalPokedexNumber": 982,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 9,
+    "code": "Kitakami",
+    "regionalPokedexNumber": 162,
+    "nationalPokedexNumber": 339,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 9,
+    "code": "Kitakami",
+    "regionalPokedexNumber": 163,
+    "nationalPokedexNumber": 340,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 9,
+    "code": "Kitakami",
+    "regionalPokedexNumber": 164,
+    "nationalPokedexNumber": 443,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 9,
+    "code": "Kitakami",
+    "regionalPokedexNumber": 165,
+    "nationalPokedexNumber": 444,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 9,
+    "code": "Kitakami",
+    "regionalPokedexNumber": 166,
+    "nationalPokedexNumber": 445,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 9,
+    "code": "Kitakami",
+    "regionalPokedexNumber": 167,
+    "nationalPokedexNumber": 703,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 9,
+    "code": "Kitakami",
+    "regionalPokedexNumber": 168,
+    "nationalPokedexNumber": 757,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 9,
+    "code": "Kitakami",
+    "regionalPokedexNumber": 169,
+    "nationalPokedexNumber": 758,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 9,
+    "code": "Kitakami",
+    "regionalPokedexNumber": 170,
+    "nationalPokedexNumber": 215,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 9,
+    "code": "Kitakami",
+    "regionalPokedexNumber": 171,
+    "nationalPokedexNumber": 461,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 9,
+    "code": "Kitakami",
+    "regionalPokedexNumber": 172,
+    "nationalPokedexNumber": 361,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 9,
+    "code": "Kitakami",
+    "regionalPokedexNumber": 173,
+    "nationalPokedexNumber": 362,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 9,
+    "code": "Kitakami",
+    "regionalPokedexNumber": 174,
+    "nationalPokedexNumber": 478,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 9,
+    "code": "Kitakami",
+    "regionalPokedexNumber": 175,
+    "nationalPokedexNumber": 602,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 9,
+    "code": "Kitakami",
+    "regionalPokedexNumber": 176,
+    "nationalPokedexNumber": 603,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 9,
+    "code": "Kitakami",
+    "regionalPokedexNumber": 177,
+    "nationalPokedexNumber": 604,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 9,
+    "code": "Kitakami",
+    "regionalPokedexNumber": 178,
+    "nationalPokedexNumber": 704,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 9,
+    "code": "Kitakami",
+    "regionalPokedexNumber": 179,
+    "nationalPokedexNumber": 705,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 9,
+    "code": "Kitakami",
+    "regionalPokedexNumber": 180,
+    "nationalPokedexNumber": 706,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 9,
+    "code": "Kitakami",
+    "regionalPokedexNumber": 181,
+    "nationalPokedexNumber": 580,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 9,
+    "code": "Kitakami",
+    "regionalPokedexNumber": 182,
+    "nationalPokedexNumber": 581,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 9,
+    "code": "Kitakami",
+    "regionalPokedexNumber": 183,
+    "nationalPokedexNumber": 833,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 9,
+    "code": "Kitakami",
+    "regionalPokedexNumber": 184,
+    "nationalPokedexNumber": 834,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 9,
+    "code": "Kitakami",
+    "regionalPokedexNumber": 185,
+    "nationalPokedexNumber": 845,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 9,
+    "code": "Kitakami",
+    "regionalPokedexNumber": 186,
+    "nationalPokedexNumber": 624,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 9,
+    "code": "Kitakami",
+    "regionalPokedexNumber": 187,
+    "nationalPokedexNumber": 625,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 9,
+    "code": "Kitakami",
+    "regionalPokedexNumber": 188,
+    "nationalPokedexNumber": 983,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 9,
+    "code": "Kitakami",
+    "regionalPokedexNumber": 189,
+    "nationalPokedexNumber": 778,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 9,
+    "code": "Kitakami",
+    "regionalPokedexNumber": 190,
+    "nationalPokedexNumber": 859,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 9,
+    "code": "Kitakami",
+    "regionalPokedexNumber": 191,
+    "nationalPokedexNumber": 860,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 9,
+    "code": "Kitakami",
+    "regionalPokedexNumber": 192,
+    "nationalPokedexNumber": 861,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 9,
+    "code": "Kitakami",
+    "regionalPokedexNumber": 193,
+    "nationalPokedexNumber": 876,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 9,
+    "code": "Kitakami",
+    "regionalPokedexNumber": 194,
+    "nationalPokedexNumber": 550,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 9,
+    "code": "Kitakami",
+    "regionalPokedexNumber": 195,
+    "nationalPokedexNumber": 902,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 9,
+    "code": "Kitakami",
+    "regionalPokedexNumber": 196,
+    "nationalPokedexNumber": 901,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 9,
+    "code": "Kitakami",
+    "regionalPokedexNumber": 197,
+    "nationalPokedexNumber": 1014,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 9,
+    "code": "Kitakami",
+    "regionalPokedexNumber": 198,
+    "nationalPokedexNumber": 1015,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 9,
+    "code": "Kitakami",
+    "regionalPokedexNumber": 199,
+    "nationalPokedexNumber": 1016,
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 9,
+    "code": "Kitakami",
+    "regionalPokedexNumber": 200,
+    "nationalPokedexNumber": 1017,
+    "formSuffix": "",
+    "isVariant": false
+  }
+]

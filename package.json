@@ -21,10 +21,10 @@
     "sass": "^1.69.7"
   },
   "lint-staged": {
-    "{,src,tools}/**/*.{ts,js,jsx,json}": [
+    "{,src,tools}/**/*.{ts,js,jsx}": [
       "eslint --fix"
     ],
-    "{,src,tools}/**/*.{,scss}": [
+    "{,src,tools}/**/*.{,scss,json}": [
       "prettier --write"
     ]
   },

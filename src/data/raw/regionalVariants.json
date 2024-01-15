@@ -60,6 +60,16 @@
     "typeIds": [16]
   },
   {
+    "nationalPokedexNumber": 58,
+    "regionId": 9,
+    "typeIds": [3, 9]
+  },
+  {
+    "nationalPokedexNumber": 59,
+    "regionId": 9,
+    "typeIds": [3, 9]
+  },
+  {
     "nationalPokedexNumber": 74,
     "regionId": 7,
     "typeIds": [9, 12]
@@ -110,6 +120,16 @@
     "typeIds": [7, 16]
   },
   {
+    "nationalPokedexNumber": 100,
+    "regionId": 9,
+    "typeIds": [12, 2]
+  },
+  {
+    "nationalPokedexNumber": 101,
+    "regionId": 9,
+    "typeIds": [12, 2]
+  },
+  {
     "nationalPokedexNumber": 103,
     "regionId": 7,
     "typeIds": [2, 15]
@@ -145,9 +165,24 @@
     "typeIds": [16, 6]
   },
   {
+    "nationalPokedexNumber": 157,
+    "regionId": 9,
+    "typeIds": [3, 11]
+  },
+  {
     "nationalPokedexNumber": 199,
     "regionId": 8,
     "typeIds": [7, 13]
+  },
+  {
+    "nationalPokedexNumber": 211,
+    "regionId": 9,
+    "typeIds": [16, 7]
+  },
+  {
+    "nationalPokedexNumber": 215,
+    "regionId": 9,
+    "typeIds": [5, 7]
   },
   {
     "nationalPokedexNumber": 222,
@@ -163,6 +198,16 @@
     "nationalPokedexNumber": 264,
     "regionId": 8,
     "typeIds": [16, 1]
+  },
+  {
+    "nationalPokedexNumber": 503,
+    "regionId": 9,
+    "typeIds": [4, 16]
+  },
+  {
+    "nationalPokedexNumber": 549,
+    "regionId": 9,
+    "typeIds": [2, 5]
   },
   {
     "nationalPokedexNumber": 554,
@@ -186,8 +231,43 @@
     "typeIds": [8, 11]
   },
   {
+    "nationalPokedexNumber": 570,
+    "regionId": 9,
+    "typeIds": [1, 11]
+  },
+  {
+    "nationalPokedexNumber": 571,
+    "regionId": 9,
+    "typeIds": [1, 11]
+  },
+  {
     "nationalPokedexNumber": 618,
     "regionId": 8,
     "typeIds": [8, 17]
+  },
+  {
+    "nationalPokedexNumber": 628,
+    "regionId": 9,
+    "typeIds": [13, 6]
+  },
+  {
+    "nationalPokedexNumber": 705,
+    "regionId": 9,
+    "typeIds": [17, 15]
+  },
+  {
+    "nationalPokedexNumber": 706,
+    "regionId": 9,
+    "typeIds": [17, 15]
+  },
+  {
+    "nationalPokedexNumber": 713,
+    "regionId": 9,
+    "typeIds": [14, 9]
+  },
+  {
+    "nationalPokedexNumber": 724,
+    "regionId": 9,
+    "typeIds": [2, 5]
   }
 ]

@@ -5626,5 +5626,863 @@
     "name": "calyrex",
     "typeIds": [13, 11],
     "form": "shadow rider"
+  },
+  {
+    "nationalPokedexNumber": 899,
+    "name": "wyrdeer",
+    "typeIds": [1, 13],
+    "form": ""
+  },
+  {
+    "nationalPokedexNumber": 900,
+    "name": "kleavor",
+    "typeIds": [10, 9],
+    "form": ""
+  },
+  {
+    "nationalPokedexNumber": 901,
+    "name": "ursaluna",
+    "typeIds": [8, 1],
+    "form": ""
+  },
+  {
+    "nationalPokedexNumber": 902,
+    "name": "basculegion",
+    "typeIds": [4, 11],
+    "form": "male"
+  },
+  {
+    "nationalPokedexNumber": 902,
+    "name": "basculegion",
+    "typeIds": [4, 11],
+    "form": "female"
+  },
+  {
+    "nationalPokedexNumber": 903,
+    "name": "sneasler",
+    "typeIds": [5, 7],
+    "form": ""
+  },
+  {
+    "nationalPokedexNumber": 904,
+    "name": "overqwil",
+    "typeIds": [16, 7],
+    "form": ""
+  },
+  {
+    "nationalPokedexNumber": 905,
+    "name": "enamorus",
+    "typeIds": [18, 6],
+    "form": "incarnate"
+  },
+  {
+    "nationalPokedexNumber": 905,
+    "name": "enamorus",
+    "typeIds": [18, 6],
+    "form": "therian"
+  },
+  {
+    "nationalPokedexNumber": 906,
+    "name": "sprigatito",
+    "typeIds": [2],
+    "form": ""
+  },
+  {
+    "nationalPokedexNumber": 907,
+    "name": "floragato",
+    "typeIds": [2],
+    "form": ""
+  },
+  {
+    "nationalPokedexNumber": 908,
+    "name": "meowscarada",
+    "typeIds": [2, 16],
+    "form": ""
+  },
+  {
+    "nationalPokedexNumber": 909,
+    "name": "fuecoco",
+    "typeIds": [3],
+    "form": ""
+  },
+  {
+    "nationalPokedexNumber": 910,
+    "name": "crocalor",
+    "typeIds": [3],
+    "form": ""
+  },
+  {
+    "nationalPokedexNumber": 911,
+    "name": "skeledirge",
+    "typeIds": [3, 11],
+    "form": ""
+  },
+  {
+    "nationalPokedexNumber": 912,
+    "name": "quaxly",
+    "typeIds": [4],
+    "form": ""
+  },
+  {
+    "nationalPokedexNumber": 913,
+    "name": "quaxwell",
+    "typeIds": [4],
+    "form": ""
+  },
+  {
+    "nationalPokedexNumber": 914,
+    "name": "quaquaval",
+    "typeIds": [4, 5],
+    "form": ""
+  },
+  {
+    "nationalPokedexNumber": 915,
+    "name": "lechonk",
+    "typeIds": [1],
+    "form": ""
+  },
+  {
+    "nationalPokedexNumber": 916,
+    "name": "oinkologne",
+    "typeIds": [1],
+    "form": "male"
+  },
+  {
+    "nationalPokedexNumber": 916,
+    "name": "oinkologne",
+    "typeIds": [1],
+    "form": "female"
+  },
+  {
+    "nationalPokedexNumber": 917,
+    "name": "tarountula",
+    "typeIds": [10],
+    "form": ""
+  },
+  {
+    "nationalPokedexNumber": 918,
+    "name": "spidops",
+    "typeIds": [10],
+    "form": ""
+  },
+  {
+    "nationalPokedexNumber": 919,
+    "name": "nymble",
+    "typeIds": [10],
+    "form": ""
+  },
+  {
+    "nationalPokedexNumber": 920,
+    "name": "lokix",
+    "typeIds": [10, 16],
+    "form": ""
+  },
+  {
+    "nationalPokedexNumber": 921,
+    "name": "pawmi",
+    "typeIds": [12],
+    "form": ""
+  },
+  {
+    "nationalPokedexNumber": 922,
+    "name": "pawmo",
+    "typeIds": [12, 5],
+    "form": ""
+  },
+  {
+    "nationalPokedexNumber": 923,
+    "name": "pawmot",
+    "typeIds": [12, 5],
+    "form": ""
+  },
+  {
+    "nationalPokedexNumber": 924,
+    "name": "tandemaus",
+    "typeIds": [1],
+    "form": ""
+  },
+  {
+    "nationalPokedexNumber": 925,
+    "name": "maushold",
+    "typeIds": [1],
+    "form": "family of three"
+  },
+  {
+    "nationalPokedexNumber": 925,
+    "name": "maushold",
+    "typeIds": [1],
+    "form": "family of four"
+  },
+  {
+    "nationalPokedexNumber": 926,
+    "name": "fidough",
+    "typeIds": [18],
+    "form": ""
+  },
+  {
+    "nationalPokedexNumber": 927,
+    "name": "dachsbun",
+    "typeIds": [18],
+    "form": ""
+  },
+  {
+    "nationalPokedexNumber": 928,
+    "name": "smoliv",
+    "typeIds": [2, 1],
+    "form": ""
+  },
+  {
+    "nationalPokedexNumber": 929,
+    "name": "dolliv",
+    "typeIds": [2, 1],
+    "form": ""
+  },
+  {
+    "nationalPokedexNumber": 930,
+    "name": "arboliva",
+    "typeIds": [2, 1],
+    "form": ""
+  },
+  {
+    "nationalPokedexNumber": 931,
+    "name": "squawkabilly",
+    "typeIds": [1, 6],
+    "form": "green"
+  },
+  {
+    "nationalPokedexNumber": 931,
+    "name": "squawkabilly",
+    "typeIds": [1, 6],
+    "form": "blue"
+  },
+  {
+    "nationalPokedexNumber": 931,
+    "name": "squawkabilly",
+    "typeIds": [1, 6],
+    "form": "yellow"
+  },
+  {
+    "nationalPokedexNumber": 931,
+    "name": "squawkabilly",
+    "typeIds": [1, 6],
+    "form": "white"
+  },
+  {
+    "nationalPokedexNumber": 932,
+    "name": "nacli",
+    "typeIds": [9],
+    "form": ""
+  },
+  {
+    "nationalPokedexNumber": 933,
+    "name": "naclstack",
+    "typeIds": [9],
+    "form": ""
+  },
+  {
+    "nationalPokedexNumber": 934,
+    "name": "garganacl",
+    "typeIds": [9],
+    "form": ""
+  },
+  {
+    "nationalPokedexNumber": 935,
+    "name": "charcadet",
+    "typeIds": [3],
+    "form": ""
+  },
+  {
+    "nationalPokedexNumber": 936,
+    "name": "armarouge",
+    "typeIds": [3, 13],
+    "form": ""
+  },
+  {
+    "nationalPokedexNumber": 937,
+    "name": "ceruledge",
+    "typeIds": [3, 11],
+    "form": ""
+  },
+  {
+    "nationalPokedexNumber": 938,
+    "name": "tadbulb",
+    "typeIds": [12],
+    "form": ""
+  },
+  {
+    "nationalPokedexNumber": 939,
+    "name": "bellibolt",
+    "typeIds": [12],
+    "form": ""
+  },
+  {
+    "nationalPokedexNumber": 940,
+    "name": "wattrel",
+    "typeIds": [12, 6],
+    "form": ""
+  },
+  {
+    "nationalPokedexNumber": 941,
+    "name": "kilowattrel",
+    "typeIds": [12, 6],
+    "form": ""
+  },
+  {
+    "nationalPokedexNumber": 942,
+    "name": "maschiff",
+    "typeIds": [16],
+    "form": ""
+  },
+  {
+    "nationalPokedexNumber": 943,
+    "name": "mabosstiff",
+    "typeIds": [16],
+    "form": ""
+  },
+  {
+    "nationalPokedexNumber": 944,
+    "name": "shroodle",
+    "typeIds": [7, 1],
+    "form": ""
+  },
+  {
+    "nationalPokedexNumber": 945,
+    "name": "grafaiai",
+    "typeIds": [7, 1],
+    "form": ""
+  },
+  {
+    "nationalPokedexNumber": 946,
+    "name": "bramblin",
+    "typeIds": [2, 11],
+    "form": ""
+  },
+  {
+    "nationalPokedexNumber": 947,
+    "name": "brambleghast",
+    "typeIds": [2, 11],
+    "form": ""
+  },
+  {
+    "nationalPokedexNumber": 948,
+    "name": "toedscool",
+    "typeIds": [8, 2],
+    "form": ""
+  },
+  {
+    "nationalPokedexNumber": 949,
+    "name": "toedscruel",
+    "typeIds": [8, 2],
+    "form": ""
+  },
+  {
+    "nationalPokedexNumber": 950,
+    "name": "klawf",
+    "typeIds": [9],
+    "form": ""
+  },
+  {
+    "nationalPokedexNumber": 951,
+    "name": "capsakid",
+    "typeIds": [2],
+    "form": ""
+  },
+  {
+    "nationalPokedexNumber": 952,
+    "name": "scovillain",
+    "typeIds": [2, 3],
+    "form": ""
+  },
+  {
+    "nationalPokedexNumber": 953,
+    "name": "rellor",
+    "typeIds": [10],
+    "form": ""
+  },
+  {
+    "nationalPokedexNumber": 954,
+    "name": "rabsca",
+    "typeIds": [10, 13],
+    "form": ""
+  },
+  {
+    "nationalPokedexNumber": 955,
+    "name": "flittle",
+    "typeIds": [13],
+    "form": ""
+  },
+  {
+    "nationalPokedexNumber": 956,
+    "name": "espathra",
+    "typeIds": [13],
+    "form": ""
+  },
+  {
+    "nationalPokedexNumber": 957,
+    "name": "tinkatink",
+    "typeIds": [18, 17],
+    "form": ""
+  },
+  {
+    "nationalPokedexNumber": 958,
+    "name": "tinkatuff",
+    "typeIds": [18, 17],
+    "form": ""
+  },
+  {
+    "nationalPokedexNumber": 959,
+    "name": "tinkaton",
+    "typeIds": [18, 17],
+    "form": ""
+  },
+  {
+    "nationalPokedexNumber": 960,
+    "name": "wiglett",
+    "typeIds": [4],
+    "form": ""
+  },
+  {
+    "nationalPokedexNumber": 961,
+    "name": "wugtrio",
+    "typeIds": [4],
+    "form": ""
+  },
+  {
+    "nationalPokedexNumber": 962,
+    "name": "bombirdier",
+    "typeIds": [6, 16],
+    "form": ""
+  },
+  {
+    "nationalPokedexNumber": 963,
+    "name": "finizen",
+    "typeIds": [4],
+    "form": ""
+  },
+  {
+    "nationalPokedexNumber": 964,
+    "name": "palafin",
+    "typeIds": [4],
+    "form": "zero"
+  },
+  {
+    "nationalPokedexNumber": 964,
+    "name": "palafin",
+    "typeIds": [4],
+    "form": "hero"
+  },
+  {
+    "nationalPokedexNumber": 965,
+    "name": "varoom",
+    "typeIds": [17, 7],
+    "form": ""
+  },
+  {
+    "nationalPokedexNumber": 966,
+    "name": "revavroom",
+    "typeIds": [17, 7],
+    "form": ""
+  },
+  {
+    "nationalPokedexNumber": 967,
+    "name": "cyclizar",
+    "typeIds": [15, 1],
+    "form": ""
+  },
+  {
+    "nationalPokedexNumber": 968,
+    "name": "orthworm",
+    "typeIds": [17],
+    "form": ""
+  },
+  {
+    "nationalPokedexNumber": 969,
+    "name": "glimmet",
+    "typeIds": [9, 7],
+    "form": ""
+  },
+  {
+    "nationalPokedexNumber": 970,
+    "name": "glimmora",
+    "typeIds": [9, 7],
+    "form": ""
+  },
+  {
+    "nationalPokedexNumber": 971,
+    "name": "greavard",
+    "typeIds": [11],
+    "form": ""
+  },
+  {
+    "nationalPokedexNumber": 972,
+    "name": "houndstone",
+    "typeIds": [11],
+    "form": ""
+  },
+  {
+    "nationalPokedexNumber": 973,
+    "name": "flamigo",
+    "typeIds": [6, 5],
+    "form": ""
+  },
+  {
+    "nationalPokedexNumber": 974,
+    "name": "cetoddle",
+    "typeIds": [14],
+    "form": ""
+  },
+  {
+    "nationalPokedexNumber": 975,
+    "name": "cetitan",
+    "typeIds": [14],
+    "form": ""
+  },
+  {
+    "nationalPokedexNumber": 976,
+    "name": "veluza",
+    "typeIds": [4, 13],
+    "form": ""
+  },
+  {
+    "nationalPokedexNumber": 977,
+    "name": "dondozo",
+    "typeIds": [4],
+    "form": ""
+  },
+  {
+    "nationalPokedexNumber": 978,
+    "name": "tatsugiri",
+    "typeIds": [15, 4],
+    "form": "curly"
+  },
+  {
+    "nationalPokedexNumber": 978,
+    "name": "tatsugiri",
+    "typeIds": [15, 4],
+    "form": "droopy"
+  },
+  {
+    "nationalPokedexNumber": 978,
+    "name": "tatsugiri",
+    "typeIds": [15, 4],
+    "form": "stretchy"
+  },
+  {
+    "nationalPokedexNumber": 979,
+    "name": "annihilape",
+    "typeIds": [5, 11],
+    "form": ""
+  },
+  {
+    "nationalPokedexNumber": 980,
+    "name": "clodsire",
+    "typeIds": [7, 8],
+    "form": ""
+  },
+  {
+    "nationalPokedexNumber": 981,
+    "name": "farigiraf",
+    "typeIds": [1, 13],
+    "form": ""
+  },
+  {
+    "nationalPokedexNumber": 982,
+    "name": "dudunsparce",
+    "typeIds": [1],
+    "form": "two-segment"
+  },
+  {
+    "nationalPokedexNumber": 982,
+    "name": "dudunsparce",
+    "typeIds": [1],
+    "form": "three-segment"
+  },
+  {
+    "nationalPokedexNumber": 983,
+    "name": "kingambit",
+    "typeIds": [16, 17],
+    "form": ""
+  },
+  {
+    "nationalPokedexNumber": 984,
+    "name": "great tusk",
+    "typeIds": [8, 5],
+    "form": ""
+  },
+  {
+    "nationalPokedexNumber": 985,
+    "name": "scream tail",
+    "typeIds": [18, 13],
+    "form": ""
+  },
+  {
+    "nationalPokedexNumber": 986,
+    "name": "brute bonnet",
+    "typeIds": [2, 16],
+    "form": ""
+  },
+  {
+    "nationalPokedexNumber": 987,
+    "name": "flutter mane",
+    "typeIds": [11, 18],
+    "form": ""
+  },
+  {
+    "nationalPokedexNumber": 988,
+    "name": "slither wing",
+    "typeIds": [10, 5],
+    "form": ""
+  },
+  {
+    "nationalPokedexNumber": 989,
+    "name": "sandy shocks",
+    "typeIds": [12, 8],
+    "form": ""
+  },
+  {
+    "nationalPokedexNumber": 990,
+    "name": "iron treads",
+    "typeIds": [8, 17],
+    "form": ""
+  },
+  {
+    "nationalPokedexNumber": 991,
+    "name": "iron bundle",
+    "typeIds": [14, 4],
+    "form": ""
+  },
+  {
+    "nationalPokedexNumber": 992,
+    "name": "iron hands",
+    "typeIds": [5, 12],
+    "form": ""
+  },
+  {
+    "nationalPokedexNumber": 993,
+    "name": "iron jugulis",
+    "typeIds": [16, 6],
+    "form": ""
+  },
+  {
+    "nationalPokedexNumber": 994,
+    "name": "iron moth",
+    "typeIds": [3, 7],
+    "form": ""
+  },
+  {
+    "nationalPokedexNumber": 995,
+    "name": "iron thorns",
+    "typeIds": [9, 12],
+    "form": ""
+  },
+  {
+    "nationalPokedexNumber": 996,
+    "name": "frigibax",
+    "typeIds": [15, 14],
+    "form": ""
+  },
+  {
+    "nationalPokedexNumber": 997,
+    "name": "arctibax",
+    "typeIds": [15, 14],
+    "form": ""
+  },
+  {
+    "nationalPokedexNumber": 998,
+    "name": "baxcalibur",
+    "typeIds": [15, 14],
+    "form": ""
+  },
+  {
+    "nationalPokedexNumber": 999,
+    "name": "gimmighoul",
+    "typeIds": [11],
+    "form": "chest"
+  },
+  {
+    "nationalPokedexNumber": 999,
+    "name": "gimmighoul",
+    "typeIds": [11],
+    "form": "roaming"
+  },
+  {
+    "nationalPokedexNumber": 1000,
+    "name": "gholdengo",
+    "typeIds": [17, 11],
+    "form": ""
+  },
+  {
+    "nationalPokedexNumber": 1001,
+    "name": "wo-chien",
+    "typeIds": [16, 2],
+    "form": ""
+  },
+  {
+    "nationalPokedexNumber": 1002,
+    "name": "chien-pao",
+    "typeIds": [16, 14],
+    "form": ""
+  },
+  {
+    "nationalPokedexNumber": 1003,
+    "name": "ting-lu",
+    "typeIds": [16, 8],
+    "form": ""
+  },
+  {
+    "nationalPokedexNumber": 1004,
+    "name": "chi-yu",
+    "typeIds": [16, 3],
+    "form": ""
+  },
+  {
+    "nationalPokedexNumber": 1005,
+    "name": "roaring moon",
+    "typeIds": [15, 16],
+    "form": ""
+  },
+  {
+    "nationalPokedexNumber": 1006,
+    "name": "iron valiant",
+    "typeIds": [18, 5],
+    "form": ""
+  },
+  {
+    "nationalPokedexNumber": 1007,
+    "name": "koraidon",
+    "typeIds": [5, 15],
+    "form": "apex"
+  },
+  {
+    "nationalPokedexNumber": 1008,
+    "name": "miraidon",
+    "typeIds": [12, 15],
+    "form": "ultimate"
+  },
+  {
+    "nationalPokedexNumber": 1009,
+    "name": "walking wake",
+    "typeIds": [4, 15],
+    "form": ""
+  },
+  {
+    "nationalPokedexNumber": 1010,
+    "name": "iron leaves",
+    "typeIds": [2, 13],
+    "form": ""
+  },
+  {
+    "nationalPokedexNumber": 1011,
+    "name": "dipplin",
+    "typeIds": [2, 15],
+    "form": ""
+  },
+  {
+    "nationalPokedexNumber": 1012,
+    "name": "poltchageist",
+    "typeIds": [2, 11],
+    "form": ""
+  },
+  {
+    "nationalPokedexNumber": 1013,
+    "name": "sinistcha",
+    "typeIds": [2, 11],
+    "form": ""
+  },
+  {
+    "nationalPokedexNumber": 1014,
+    "name": "okidogi",
+    "typeIds": [7, 5],
+    "form": ""
+  },
+  {
+    "nationalPokedexNumber": 1015,
+    "name": "munkidori",
+    "typeIds": [7, 13],
+    "form": ""
+  },
+  {
+    "nationalPokedexNumber": 1016,
+    "name": "fezandipiti",
+    "typeIds": [7, 18],
+    "form": ""
+  },
+  {
+    "nationalPokedexNumber": 1017,
+    "name": "ogerpon",
+    "typeIds": [2],
+    "form": "teal"
+  },
+  {
+    "nationalPokedexNumber": 1017,
+    "name": "ogerpon",
+    "typeIds": [2],
+    "form": "wellspring"
+  },
+  {
+    "nationalPokedexNumber": 1017,
+    "name": "ogerpon",
+    "typeIds": [2],
+    "form": "hearthflame"
+  },
+  {
+    "nationalPokedexNumber": 1017,
+    "name": "ogerpon",
+    "typeIds": [2],
+    "form": "cornerstone"
+  },
+  {
+    "nationalPokedexNumber": 1018,
+    "name": "archaludon",
+    "typeIds": [17, 15],
+    "form": ""
+  },
+  {
+    "nationalPokedexNumber": 1019,
+    "name": "hydrapple",
+    "typeIds": [2, 15],
+    "form": ""
+  },
+  {
+    "nationalPokedexNumber": 1020,
+    "name": "gouging fire",
+    "typeIds": [3, 15],
+    "form": ""
+  },
+  {
+    "nationalPokedexNumber": 1021,
+    "name": "raging bolt",
+    "typeIds": [12, 15],
+    "form": ""
+  },
+  {
+    "nationalPokedexNumber": 1022,
+    "name": "iron boulder",
+    "typeIds": [9, 13],
+    "form": ""
+  },
+  {
+    "nationalPokedexNumber": 1023,
+    "name": "iron crown",
+    "typeIds": [17, 13],
+    "form": ""
+  },
+  {
+    "nationalPokedexNumber": 1024,
+    "name": "terapagos",
+    "typeIds": [1],
+    "form": "normal"
+  },
+  {
+    "nationalPokedexNumber": 1024,
+    "name": "terapagos",
+    "typeIds": [1],
+    "form": "terastal"
+  },
+  {
+    "nationalPokedexNumber": 1025,
+    "name": "pecharunt",
+    "typeIds": [7, 11],
+    "form": ""
   }
 ]
