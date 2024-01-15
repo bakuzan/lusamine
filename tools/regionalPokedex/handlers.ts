@@ -1,4 +1,4 @@
-import { baseHandler, islandHandler } from './helpers';
+import { areaHandler, baseHandler, islandHandler } from './helpers';
 
 const handlers: Record<
   string,
@@ -101,6 +101,26 @@ const handlers: Record<
       number: 8,
       name,
       code: 'Crown Tundra'
+    });
+  },
+  async hisui(name: string, $: cheerio.Root) {
+    const bodys = Array.from($('table > tbody')).slice(1, -3);
+    return await areaHandler($, bodys, { number: 8, name, code: 'Hisui' });
+  },
+  async paldea(name: string, $: cheerio.Root) {
+    const bodys = Array.from($('table > tbody')).slice(1, 9);
+    return await baseHandler($, bodys, {
+      number: 9,
+      name,
+      code: 'Paldea'
+    });
+  },
+  async kitakami(name: string, $: cheerio.Root) {
+    const bodys = Array.from($('table > tbody')).slice(0, 4);
+    return await baseHandler($, bodys, {
+      number: 9,
+      name,
+      code: 'Kitakami'
     });
   }
 };

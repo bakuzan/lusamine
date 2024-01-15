@@ -1,3 +1,5 @@
+import { typedKeys } from 'medea';
+
 import { ScrapeOption } from './types/ScrapeOption';
 import Enums from './enums';
 
@@ -25,8 +27,8 @@ export function filterFalsey<TValue>(
   return value !== null && value !== undefined;
 }
 
-const MATCH_ALOLA_FORM = /\d{1,}A.*MS.*\.png$/;
-const MATCH_GALAR_FORM = /\d{1,}G.*MS.*\.png$/;
+const MATCH_ALOLA_FORM = /\d{1,}A\.png$/;
+const MATCH_GALAR_FORM = /\d{1,}G\.png$/;
 
 export function checkImgForVariant(td: cheerio.Cheerio) {
   const src = td.find('img').attr('src');
@@ -35,6 +37,14 @@ export function checkImgForVariant(td: cheerio.Cheerio) {
     return Enums.Regions.alola;
   } else if (src && src.match(MATCH_GALAR_FORM)) {
     return Enums.Regions.galar;
+  }
+
+  for (let regionKey of typedKeys(Enums.Regions)) {
+    const regex = new RegExp(`${regionKey}\.png$`, 'i'); // eslint-disable-line no-useless-escape
+
+    if (src && src.match(regex)) {
+      return Enums.Regions[regionKey];
+    }
   }
 
   return false;

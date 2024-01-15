@@ -96,7 +96,7 @@ async function run() {
     .reduce<(MissingEntry | null)[]>(
       (result, data) => [
         ...result,
-        ...Array.from(data.children).map((tr) => {
+        ...Array.from($(data).children()).map((tr) => {
           const children = $(tr).children();
 
           if (!children) {
@@ -104,21 +104,14 @@ async function run() {
           }
 
           const variantRegion =
-            (!children
-              .first()
-              .text()
-              .trim() &&
+            (!children.first().text().trim() &&
               checkImgForVariant(children.eq(2))) ||
             0;
 
           const isVariant = variantRegion !== 0;
           const tdNPN = children.eq(1);
           const td = children.eq(2);
-          const img = td
-            .children()
-            .first()
-            .children()
-            .first();
+          const img = td.children().first().children().first();
 
           const npn = Mappers.processTdNPN(tdNPN);
           const paddedNpn = `${npn}`.padStart(3, '0');

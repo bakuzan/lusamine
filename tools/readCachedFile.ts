@@ -7,8 +7,8 @@ import cheerio from 'cheerio';
 
 const writeAsync = promisify(fs.writeFile);
 
-const ONE_HOUR = 1000 * 60 * 60;
-const CACHE_STALE_TIME = ONE_HOUR;
+// const ONE_HOUR = 1000 * 60 * 60;
+const CACHE_STALE_TIME = Infinity; // ONE_HOUR;
 
 export default async function fetchPage(key: string, url: string) {
   const filename = path.resolve(path.join(__dirname, './cache', `${key}.html`));

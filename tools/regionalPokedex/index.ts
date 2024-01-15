@@ -21,7 +21,10 @@ const urls: Record<string, string> = {
   alola_u: `https://bulbapedia.bulbagarden.net/wiki/List_of_Pok%C3%A9mon_by_Alola_Pok%C3%A9dex_number_(Ultra_Sun_and_Ultra_Moon)`,
   galar: `https://bulbapedia.bulbagarden.net/wiki/List_of_Pokémon_by_Galar_Pokédex_number`,
   galar_isle_of_armor: `https://bulbapedia.bulbagarden.net/wiki/List_of_Pok%C3%A9mon_by_Isle_of_Armor_Pok%C3%A9dex_number`,
-  galar_crown_tundra: `https://bulbapedia.bulbagarden.net/wiki/List_of_Pok%C3%A9mon_by_Crown_Tundra_Pok%C3%A9dex_number`
+  galar_crown_tundra: `https://bulbapedia.bulbagarden.net/wiki/List_of_Pok%C3%A9mon_by_Crown_Tundra_Pok%C3%A9dex_number`,
+  hisui: `https://bulbapedia.bulbagarden.net/wiki/List_of_Pok%C3%A9mon_by_Hisui_Pok%C3%A9dex_number`,
+  paldea: `https://bulbapedia.bulbagarden.net/wiki/List_of_Pok%C3%A9mon_by_Paldea_Pok%C3%A9dex_number`,
+  kitakami: `https://bulbapedia.bulbagarden.net/wiki/List_of_Pok%C3%A9mon_by_Kitakami_Pok%C3%A9dex_number`
 };
 
 async function run() {
@@ -72,4 +75,4 @@ async function run() {
   }
 }
 
-run();
+run(); // eslint-disable-line @typescript-eslint\no-floating-promises

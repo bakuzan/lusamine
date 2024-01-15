@@ -1,4 +1,5 @@
 import { Types, Evolutions } from './enums';
+import { EvolutionProcessingItem } from './types/EvolutionProcessingItem';
 import { prop } from './utils';
 
 const extractName = (td: cheerio.Cheerio) =>
@@ -9,14 +10,15 @@ const fixNPNStringToInt = (str = '') => Number(str.replace(/\D/g, ''));
 const processTdNPN = (td: cheerio.Cheerio) =>
   fixNPNStringToInt(td.text() || '');
 
-function getNPNFromImg(td: cheerio.Cheerio) {
+function getNPNFromImg(td: cheerio.Cheerio, variant = false) {
   const src = td.find('img').attr('src');
 
   if (!src) {
     return Number(0);
   }
 
-  const strNum = src.replace(/^.*\/|MS.*$/g, '');
+  const index = variant ? 1 : 0;
+  const strNum = src.split('-').reverse()[index].replace(/\D/g, ''); // src.replace(/^.*\/|MS.*$/g, '');
   return Number(strNum);
 }
 
@@ -121,17 +123,20 @@ function mapElementsToVariantPokemonJson(
   tdTypes: cheerio.Cheerio[]
 ) {
   return {
-    nationalPokedexNumber: processTdNPN(tdNPN),
+    nationalPokedexNumber: getNPNFromImg(tdNPN, true),
     regionId,
     typeIds: processTdTypes(tdTypes)
   };
 }
 
-function mapElementsToEvolutionJson(lastItem: any, rawData: any[]) {
+function mapElementsToEvolutionJson(
+  lastItem: { nationalPokedexNumber: number },
+  rawData: EvolutionProcessingItem[]
+) {
   return rawData.map((r) => {
     const fromNPN = getNPNFromImg(r.from);
     const toNPN = getNPNFromImg(r.to);
-    const how: string = r.how.text();
+    const how = r.how.text();
 
     return {
       nationalPokedexNumber: fromNPN || lastItem.nationalPokedexNumber,

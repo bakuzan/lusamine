@@ -9,14 +9,14 @@ import { checkImgForVariant } from './utils';
 const buildOuputUrl = (fileName: string) =>
   path.join('./tools/output', fileName);
 
-async function pokedexProcessor($: cheerio.Root) {
+function pokedexProcessor($: cheerio.Root) {
   const jsonEntries = Array.from($('table > tbody'))
     .slice(
       Enums.TABLE_COUNT_OFFSET,
       Enums.GENERATION_COUNT + Enums.TABLE_COUNT_OFFSET
     )
-    .reduce(function (result, data) {
-      return Array.from(data.children).reduce((acc, tr) => {
+    .reduce((result, data) => {
+      return Array.from($(data).children()).reduce((acc, tr) => {
         const children = $(tr).children();
 
         if (!children) {
@@ -24,20 +24,25 @@ async function pokedexProcessor($: cheerio.Root) {
         }
 
         const variantRegion =
-          !children.first().text().trim() && checkImgForVariant(children.eq(2));
+          !children.first().text().trim() &&
+          checkImgForVariant(children.first());
 
-        const tdNPN = children.eq(1);
-        const tdName = children.eq(3);
-        const tdTypes = [children.eq(4), children.eq(5)];
+        const isVariantItem = variantRegion !== false;
+        const tdNPN = children.eq(0);
+        const tdName = children.eq(2);
 
-        const item =
-          variantRegion !== false
-            ? Mappers.mapElementsToVariantPokemonJson(
-                tdNPN,
-                variantRegion,
-                tdTypes
-              )
-            : Mappers.mapElementsToPokemonJson(tdNPN, tdName, tdTypes);
+        let item;
+        if (isVariantItem) {
+          const tdTypes = [children.eq(2), children.eq(3)];
+          item = Mappers.mapElementsToVariantPokemonJson(
+            tdNPN,
+            variantRegion,
+            tdTypes
+          );
+        } else {
+          const tdTypes = [children.eq(3), children.eq(4)];
+          item = Mappers.mapElementsToPokemonJson(tdNPN, tdName, tdTypes);
+        }
 
         if (!item.nationalPokedexNumber) {
           return acc;
@@ -62,11 +67,11 @@ async function pokedexProcessor($: cheerio.Root) {
   ];
 }
 
-async function evolutionProcessor($: cheerio.Root) {
+function evolutionProcessor($: cheerio.Root) {
   const evolutions = Array.from($('table.roundy > tbody'))
-    .slice(0, Enums.GENERATION_COUNT)
-    .reduce(function (result, data) {
-      return Array.from(data.children).reduce((acc, tr, i, trs) => {
+    .slice(0, Enums.GENERATION_COUNT + 2) // Paldea/Kitakami, Other
+    .reduce((result, data) => {
+      return Array.from($(data).children()).reduce((acc, tr, i, trs) => {
         const prevChildren = i !== 0 ? $(trs[i - 1]).children() : null;
         const children = $(tr).children();
 
@@ -137,11 +142,12 @@ async function evolutionProcessor($: cheerio.Root) {
   ];
 }
 
-async function megaProcessor($: cheerio.Root) {
+// 2024-01-15: No longer works, however, it seems like there will be no new mega pokemon.
+function megaProcessor($: cheerio.Root) {
   const megas = Array.from($('table.roundy > tbody'))
     .slice(0, 2)
-    .reduce(function (result, data) {
-      return Array.from(data.children).reduce((acc, tr) => {
+    .reduce((result, data) => {
+      return Array.from($(data).children()).reduce((acc, tr) => {
         const children = $(tr).children();
 
         if (!children || children.length === 0) {

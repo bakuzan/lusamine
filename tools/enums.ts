@@ -21,7 +21,8 @@ export const Types = Object.freeze({
 
 export const Regions = Object.freeze({
   alola: 7,
-  galar: 8
+  galar: 8,
+  hisui: 9
 });
 
 export const Evolutions = Object.freeze({
@@ -43,7 +44,7 @@ export const Evolutions = Object.freeze({
 });
 
 export const TABLE_COUNT_OFFSET = 1;
-export const GENERATION_COUNT = 8;
+export const GENERATION_COUNT = 9;
 
 export enum ImageScrapeTarget {
   Art = 'art',

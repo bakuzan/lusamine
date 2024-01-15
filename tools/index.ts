@@ -17,9 +17,9 @@ const MEGA = 'mega';
 
 async function scrapePokemonData(
   htmlPage: cheerio.Root,
-  processor: (c: cheerio.Root) => Promise<{ fileName: string; json: any[] }[]>
+  processor: (c: cheerio.Root) => { fileName: string; json: any[] }[]
 ) {
-  const data = await processor(htmlPage);
+  const data = processor(htmlPage);
 
   for (let output of data) {
     const { fileName, json } = output;
@@ -38,16 +38,14 @@ const scrapeTargets = new Map([
   [
     POKEMON,
     {
-      url:
-        'https://bulbapedia.bulbagarden.net/wiki/List_of_Pokémon_by_National_Pokédex_number',
+      url: 'https://bulbapedia.bulbagarden.net/wiki/List_of_Pokémon_by_National_Pokédex_number',
       processor: Processors.pokedexProcessor
     }
   ],
   [
     EVOLVE,
     {
-      url:
-        'https://bulbapedia.bulbagarden.net/wiki/List_of_Pokémon_by_evolution_family',
+      url: 'https://bulbapedia.bulbagarden.net/wiki/List_of_Pokémon_by_evolution_family',
       processor: Processors.evolutionProcessor
     }
   ],

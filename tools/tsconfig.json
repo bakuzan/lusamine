@@ -3,8 +3,7 @@
     "allowSyntheticDefaultImports": true,
     "alwaysStrict": true,
     "baseUrl": ".",
-    "target": "ES2020",
-    "module": "commonjs",
+    "target": "ES2022",
     "strict": true,
     "forceConsistentCasingInFileNames": true,
     "declaration": true,
@@ -14,7 +13,8 @@
     "noEmit": true,
     "sourceMap": true,
     "allowJs": true,
-    "moduleResolution": "node",
+    "moduleResolution": "Node16",
+    "module": "Node16",
     "experimentalDecorators": true,
     "paths": {
       "@/*": ["./*"],
@@ -23,6 +23,10 @@
       "*": ["../src/*"]
     }
   },
-  "include": ["./**/*", "../node_modules/@types/node/globals.d.ts"],
+  "include": [
+    "./**/*",
+    "../node_modules/@types/node/globals.d.ts",
+    "../node_modules/@types/cheerio"
+  ],
   "exclude": ["../src", "../build"]
 }
