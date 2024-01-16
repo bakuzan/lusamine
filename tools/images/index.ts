@@ -105,18 +105,20 @@ async function run() {
 
           const variantRegion =
             (!children.first().text().trim() &&
-              checkImgForVariant(children.eq(2))) ||
+              checkImgForVariant(children.first())) ||
             0;
 
           const isVariant = variantRegion !== 0;
-          const tdNPN = children.eq(1);
-          const td = children.eq(2);
+          const tdNPN = children.eq(0);
+          const td = children.eq(1);
           const img = td.children().first().children().first();
 
           const npn = Mappers.processTdNPN(tdNPN);
           const paddedNpn = `${npn}`.padStart(3, '0');
           const name = img.attr('alt') ?? '';
-          const src = img.attr('src') ?? '';
+          const imgFilename = img.attr('src')?.split('/').pop();
+          const srcUrl = img.attr('srcset')?.split(' ')[0] ?? '';
+          const src = srcUrl.split('/').slice(0, -1).join('/');
 
           if (!npn) {
             return null;
@@ -135,8 +137,8 @@ async function run() {
             name,
             isVariant,
             variantRegion,
-            sprite: `https:${src}`,
-            art: `https://bulbapedia.bulbagarden.net/wiki/File:${artUrlPart}.png`,
+            sprite: `https:${src}/${imgFilename}`, // They have removed sprites!
+            art: `https:${srcUrl}`,
             pokedex: `https://bulbapedia.bulbagarden.net/wiki/${name}_(Pokémon)`,
             filename: `${paddedNpn}${isVariant ? `_r${variantRegion}` : ''}.png`
           };
@@ -192,16 +194,16 @@ async function run() {
             `./${imageFolder}/${item.filename}`
           );
 
-          const $page = await fetchPage(item.filename, item.art);
-          const href = getFirstValidAttributeValue($page, [
-            {
-              selector: '.mw-filepage-other-resolutions > a:first-child',
-              attr: 'href'
-            },
-            { selector: '.fullMedia > a:first-child', attr: 'href' }
-          ]);
-
-          const url = `https:${href}`;
+          // const $page = await fetchPage(item.filename, item.art);
+          // const href = getFirstValidAttributeValue($page, [
+          //   {
+          //     selector: '.mw-filepage-other-resolutions > a:first-child',
+          //     attr: 'href'
+          //   },
+          //   { selector: '.fullMedia > a:first-child', attr: 'href' }
+          // ]);
+          const npn = `${item.npn}`.padStart(3, '0');
+          const url = `https://assets.pokemon.com/assets/cms2/img/pokedex/detail/${npn}.png`; //`https:${href}`;
           await pipeline(got.stream(url), fs.createWriteStream(imageFilename));
         }
       } else if (imageFolder === ImageScrapeTarget.Sprites) {
