@@ -6,5 +6,8 @@ export default Object.freeze({
   unova: 5,
   kalos: 6,
   alola: 7,
-  galar: 8
+  galar: 8,
+  hisui: 9,
+  paldea: 10,
+  kitakami: 11
 });
