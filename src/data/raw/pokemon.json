@@ -6480,6 +6480,12 @@
     "form": "terastal"
   },
   {
+    "nationalPokedexNumber": 1024,
+    "name": "terapagos",
+    "typeIds": [1],
+    "form": "stellar"
+  },
+  {
     "nationalPokedexNumber": 1025,
     "name": "pecharunt",
     "typeIds": [7, 11],
