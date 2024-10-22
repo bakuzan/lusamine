@@ -139,7 +139,7 @@ module.exports = {
         'eslint:recommended',
         'prettier'
       ],
-      plugins: ['@typescript-eslint', '@typescript-eslint/tslint'],
+      plugins: ['@typescript-eslint'],
       rules: {
         '@typescript-eslint/adjacent-overload-signatures': 'error',
         '@typescript-eslint/array-type': [
@@ -233,16 +233,7 @@ module.exports = {
         ],
         '@typescript-eslint/type-annotation-spacing': 'off',
         '@typescript-eslint/typedef': 'off',
-        '@typescript-eslint/unified-signatures': 'error',
-        '@typescript-eslint/tslint/config': [
-          'error',
-          {
-            rules: {
-              prettier: true,
-              whitespace: [true, 'check-module']
-            }
-          }
-        ]
+        '@typescript-eslint/unified-signatures': 'error'
       }
     }
   ]

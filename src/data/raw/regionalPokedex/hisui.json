@@ -2,6 +2,31 @@
   {
     "region": 8,
     "code": "Hisui",
+    "regionalPokedexNumber": 1,
+    "nationalPokedexNumber": 722,
+    "sublistings": [
+      {
+        "number": null
+      },
+      {
+        "number": null
+      },
+      {
+        "number": null
+      },
+      {
+        "number": null
+      },
+      {
+        "number": null
+      }
+    ],
+    "formSuffix": "",
+    "isVariant": false
+  },
+  {
+    "region": 8,
+    "code": "Hisui",
     "regionalPokedexNumber": 2,
     "nationalPokedexNumber": 723,
     "sublistings": [

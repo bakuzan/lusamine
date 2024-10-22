@@ -3,7 +3,7 @@ import fs from 'fs';
 import path from 'path';
 import { promisify } from 'util';
 import got from 'got';
-import cheerio from 'cheerio';
+import * as cheerio from 'cheerio';
 
 const writeAsync = promisify(fs.writeFile);
 
@@ -11,6 +11,7 @@ const writeAsync = promisify(fs.writeFile);
 const CACHE_STALE_TIME = Infinity; // ONE_HOUR;
 
 export default async function fetchPage(key: string, url: string) {
+  // eslint-disable-next-line no-undef
   const filename = path.resolve(path.join(__dirname, './cache', `${key}.html`));
 
   try {
@@ -39,6 +40,7 @@ export default async function fetchPage(key: string, url: string) {
   } catch (e) {
     console.log(chalk.bgWhite.red(`Request for ${key} failed.`));
     console.error(e);
+    // eslint-disable-next-line no-undef
     process.exit(1);
   }
 }
