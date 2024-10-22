@@ -4,20 +4,16 @@ import React from 'react';
 
 import './TypeBlock.scss';
 
-const TypeBlock = React.memo(function TypeBlock(props) {
+const TypeBlock = React.memo(function TypeBlock({ center = false, ...props }) {
   return (
     <div
       className={classNames('type', `type--${props.value}`, {
-        'type--center': props.center
+        'type--center': center
       })}
       aria-label={`Type: ${props.value}`}
     />
   );
 });
-
-TypeBlock.defaultProps = {
-  center: false
-};
 
 TypeBlock.propTypes = {
   value: PropTypes.string.isRequired,

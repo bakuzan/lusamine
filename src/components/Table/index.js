@@ -4,7 +4,14 @@ import React from 'react';
 
 import './Table.scss';
 
-function Table({ className, headers, children, hovered, striped, ...props }) {
+function Table({
+  className,
+  headers,
+  children,
+  hovered = false,
+  striped = false,
+  ...props
+}) {
   return (
     <table
       className={classNames(
@@ -19,11 +26,6 @@ function Table({ className, headers, children, hovered, striped, ...props }) {
     </table>
   );
 }
-
-Table.defaultProps = {
-  hovered: false,
-  striped: false
-};
 
 Table.propTypes = {
   headers: PropTypes.element.isRequired,

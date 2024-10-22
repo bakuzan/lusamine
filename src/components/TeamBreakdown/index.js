@@ -43,10 +43,10 @@ class TeamBreakdown extends React.Component {
     const {
       className,
       contentClassName,
-      alwaysOpen,
-      filterZeroes,
-      typeBreakdownOnly,
-      members
+      members,
+      alwaysOpen = false,
+      filterZeroes = false,
+      typeBreakdownOnly = false
     } = this.props;
 
     const teamId = this.props.id;
@@ -173,12 +173,6 @@ class TeamBreakdown extends React.Component {
     );
   }
 }
-
-TeamBreakdown.defaultProps = {
-  alwaysOpen: false,
-  filterZeroes: false,
-  typeBreakdownOnly: false
-};
 
 TeamBreakdown.propTypes = {
   id: PropTypes.string,

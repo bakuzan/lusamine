@@ -20,7 +20,7 @@ const EXPANDED_PROPS = {
   icon: '+'
 };
 
-function PokemonContent({ data, isExpanded, onToggle }) {
+function PokemonContent({ data, isExpanded = false, onToggle = null }) {
   const hasToggle = !!onToggle;
   const expandProps = isExpanded ? COLLAPSED_PROPS : EXPANDED_PROPS;
 
@@ -44,11 +44,6 @@ function PokemonContent({ data, isExpanded, onToggle }) {
     </div>
   );
 }
-
-PokemonContent.defaultProps = {
-  isExpanded: false,
-  onToggle: null
-};
 
 PokemonContent.propTypes = {
   isExpanded: PropTypes.bool,
