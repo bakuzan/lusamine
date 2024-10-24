@@ -8,7 +8,7 @@ import warnings
 
 
 COLUMNS = 30
-
+PADDING = 10
 
 def concat_images(img_num, imga, imgb):
     """
@@ -39,6 +39,18 @@ def scale_image(image, required_h, required_w):
 
     if required_h == h and required_w == w:
         return image
+
+    hori = 0
+    vert = 0
+    
+    # If the image isn't square, it means the image has no built-in padding
+    # We will square and pad the image so it is more uniform in size with the other images
+    if h != w:
+        vert = (math.ceil((w - h) / 2) if h < w else 0) + PADDING
+        hori = (math.ceil((h - w) / 2) if h > w else 0) + PADDING
+        image = cv2.copyMakeBorder(image, vert, vert, hori, hori, cv2.BORDER_CONSTANT)
+        h += vert * 2
+        w += hori * 2
 
     dx = required_w / w
     dy = required_h / h
