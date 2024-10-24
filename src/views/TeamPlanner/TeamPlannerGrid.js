@@ -7,7 +7,7 @@ import chunk from 'ayaka/chunk';
 import Sprite from 'components/Sprite';
 import { useDimensions } from 'hooks/useDimensions';
 
-const ITEM_SIZE = 46;
+const ITEM_SIZE = 45;
 const GRID_HEIGHT = 370;
 const FALLBACK_WIDTH = 460;
 

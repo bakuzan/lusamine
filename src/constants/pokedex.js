@@ -16,7 +16,10 @@ export const Pokedex = Object.freeze({
   alola_u: 'alola ultra',
   galar: 'galar',
   galar_isle_of_armor: 'galar isle of armor',
-  galar_crown_tundra: 'galar crown tundra'
+  galar_crown_tundra: 'galar crown tundra',
+  hisui: 'hisui',
+  paldea: 'paldea',
+  kitakami: 'kitakami'
 });
 
 function capitaliseEachWordOver2Characters(str) {

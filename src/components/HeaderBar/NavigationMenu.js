@@ -84,7 +84,9 @@ function NavigationMenu() {
         aria-label={menuLabel}
         title={menuLabel}
       >
-        {(closeMenu) => <NavigationLinks onItemClick={closeMenu} />}
+        {(closeMenu) => {
+          return <NavigationLinks onItemClick={closeMenu} />;
+        }}
       </DropdownMenu>
     );
   }

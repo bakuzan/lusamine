@@ -28,6 +28,9 @@ import alola_u from './raw/regionalPokedex/alola_u.json';
 import galar from './raw/regionalPokedex/galar.json';
 import galar_isle_of_armor from './raw/regionalPokedex/galar_isle_of_armor.json';
 import galar_crown_tundra from './raw/regionalPokedex/galar_crown_tundra.json';
+import hisui from './raw/regionalPokedex/hisui.json';
+import paldea from './raw/regionalPokedex/paldea.json';
+import kitakami from './raw/regionalPokedex/kitakami.json';
 
 const SPRITES_PER_ROW = 30;
 const ART_PER_ROW = 30;
@@ -77,7 +80,10 @@ export function constructPokedex() {
       alola_u,
       galar,
       galar_isle_of_armor,
-      galar_crown_tundra
+      galar_crown_tundra,
+      hisui,
+      paldea,
+      kitakami
     }
   };
 }

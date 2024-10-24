@@ -42,5 +42,17 @@
   {
     "name": "Trace - LGE Champion",
     "memberIds": ["p_18", "p_45", "p_105", "p_78", "p_80", "p_26"]
+  },
+  {
+    "name": "Leon - Galar Champion",
+    "memberIds": ["p_681", "p_887", "p_612", "p_866", "p_818", "p_6"]
+  },
+  {
+    "name": "Geeta - Paldea Top Champion",
+    "memberIds": ["p_956", "p_673", "p_976", "p_713", "p_983", "p_970"]
+  },
+  {
+    "name": "Drayton - BB League Elite Four",
+    "memberIds": ["p_149", "p_330", "p_612", "p_254", "p_230", "p_1018"]
   }
 ]
