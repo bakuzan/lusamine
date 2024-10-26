@@ -18,7 +18,7 @@
     "react-helmet-async": "^2.0.5",
     "react-router-dom": "^6.27.0",
     "react-window": "^1.8.10",
-    "sass": "^1.80.3"
+    "sass": "^1.80.4"
   },
   "lint-staged": {
     "{,src,tools}/**/*.{ts,js,jsx}": [
@@ -40,24 +40,24 @@
     "scrape:image": "ts-node -P ./tools/tsconfig.json -r tsconfig-paths/register ./tools/images/index.ts",
     "scrape:region": "ts-node -P ./tools/tsconfig.json -r tsconfig-paths/register ./tools/regionalPokedex/index.ts",
     "check-images": "ts-node -P ./tools/tsconfig.json -r tsconfig-paths/register ./tools/images/compareImageFolders.ts",
-    "prepare": "husky install"
+    "prepare": "husky"
   },
   "devDependencies": {
     "@types/cheerio": "^0.22.35",
     "@types/minimist": "^1.2.5",
-    "@typescript-eslint/eslint-plugin": "^6.21.0",
-    "@typescript-eslint/parser": "^6.21.0",
+    "@typescript-eslint/eslint-plugin": "^8.11.0",
+    "@typescript-eslint/parser": "^8.11.0",
     "chalk": "^4.1.2",
     "cheerio": "1.0.0",
-    "eslint": "^8.57.1",
+    "eslint": "^9.13.0",
     "eslint-config-prettier": "^9.1.0",
-    "eslint-plugin-jsdoc": "^48.11.0",
+    "eslint-plugin-jsdoc": "^50.4.3",
     "eslint-plugin-prefer-arrow": "^1.2.3",
-    "eslint-plugin-react": "^7.37.1",
-    "eslint-plugin-react-hooks": "^4.6.2",
+    "eslint-plugin-react": "^7.37.2",
+    "eslint-plugin-react-hooks": "^5.0.0",
     "gh-pages": "^6.2.0",
     "got": "^11.8.6",
-    "husky": "^8.0.3",
+    "husky": "^9.1.6",
     "medea": "file:../medea",
     "minimist": "^1.2.8",
     "react-scripts": "5.0.1",
